@@ -99,6 +99,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "FR🇫🇷",
+                "DE🇩🇪",
+                "US🇺🇸",
                 "KR🇰🇷"
             ]
         },
@@ -106,7 +109,46 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@OutlineVpnOfficial | KR🇰🇷 | ak1853.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou:10086 | 459.4ms | 0️⃣1️⃣"
+                "@iP_CF | FR🇫🇷 | 162.19.83.9:443 | 89.43ms | 0️⃣1️⃣",
+                "@iP_CF | FR🇫🇷 | 57.128.74.169:443 | 87.85ms | 0️⃣2️⃣",
+                "@v2raycollectordonate | FR🇫🇷 | 149.202.82.172:7306 | 80.53ms | 0️⃣1️⃣",
+                "@iP_CF | DE🇩🇪 | 57.129.1.20:443 | 93.13ms | 0️⃣3️⃣",
+                "@free4allVPN | US🇺🇸 | 205.134.180.147:443 | 3.26ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | US🇺🇸 | 727.outline-vpn.cloud:443 | 70.18ms | 0️⃣1️⃣",
+                "@OutlineVpnOfficial | KR🇰🇷 | ak1853.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou:10086 | 429.11ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "@iP_CF | FR🇫🇷 | 162.19.83.9:443 | 89.43ms | 0️⃣1️⃣",
+                "@iP_CF | FR🇫🇷 | 57.128.74.169:443 | 87.85ms | 0️⃣2️⃣",
+                "@v2raycollectordonate | FR🇫🇷 | 149.202.82.172:7306 | 80.53ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "@iP_CF | DE🇩🇪 | 57.129.1.20:443 | 93.13ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "@free4allVPN | US🇺🇸 | 205.134.180.147:443 | 3.26ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | US🇺🇸 | 727.outline-vpn.cloud:443 | 70.18ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -116,14 +158,74 @@
             "tag": "KR🇰🇷",
             "type": "urltest",
             "outbounds": [
-                "@OutlineVpnOfficial | KR🇰🇷 | ak1853.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou:10086 | 459.4ms | 0️⃣1️⃣"
+                "@OutlineVpnOfficial | KR🇰🇷 | ak1853.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou:10086 | 429.11ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@OutlineVpnOfficial | KR🇰🇷 | ak1853.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou:10086 | 459.4ms | 0️⃣1️⃣",
+            "tag": "@iP_CF | FR🇫🇷 | 162.19.83.9:443 | 89.43ms | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "162.19.83.9",
+            "server_port": 443,
+            "method": "aes-256-cfb",
+            "password": "asdKkaskJKfnsa",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@iP_CF | FR🇫🇷 | 57.128.74.169:443 | 87.85ms | 0️⃣2️⃣",
+            "type": "shadowsocks",
+            "server": "57.128.74.169",
+            "server_port": 443,
+            "method": "aes-256-cfb",
+            "password": "asdKkaskJKfnsa",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@v2raycollectordonate | FR🇫🇷 | 149.202.82.172:7306 | 80.53ms | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "149.202.82.172",
+            "server_port": 7306,
+            "method": "aes-256-gcm",
+            "password": "FoOiGlkAA9yPEGP",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@iP_CF | DE🇩🇪 | 57.129.1.20:443 | 93.13ms | 0️⃣3️⃣",
+            "type": "shadowsocks",
+            "server": "57.129.1.20",
+            "server_port": 443,
+            "method": "aes-256-cfb",
+            "password": "asdKkaskJKfnsa",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@free4allVPN | US🇺🇸 | 205.134.180.147:443 | 3.26ms | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "205.134.180.147",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "9Bvkw5aupNy8",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@vmess_vless_v2rayng | US🇺🇸 | 727.outline-vpn.cloud:443 | 70.18ms | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "727.outline-vpn.cloud",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "j4wkIrreHEdC",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@OutlineVpnOfficial | KR🇰🇷 | ak1853.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou:10086 | 429.11ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "ak1853.www.outline.network.fr8678825324247b8176d59f83c30bd94d23d2e3ac5cd4a743bkwqeikvdyufr.cyou",
             "server_port": 10086,
