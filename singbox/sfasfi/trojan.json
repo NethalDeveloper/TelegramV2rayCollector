@@ -102,9 +102,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "DE🇩🇪",
                 "SE🇸🇪",
                 "FR🇫🇷",
+                "DE🇩🇪",
                 "HK🇭🇰",
                 "US🇺🇸",
                 "KZ🇰🇿"
@@ -114,25 +114,15 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | DE🇩🇪 | 3.66.68.39:22222 | 159.5ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | DE🇩🇪 | 89.163.220.99:443 | 152.61ms | 0️⃣1️⃣",
-                "@DirectVPN | SE🇸🇪 | 13.49.186.234:22222 | 175.26ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 35.181.201.102:22222 | 151.83ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.237.92.163:22222 | 152.13ms | 0️⃣3️⃣",
-                "@oneclickvpnkeys | HK🇭🇰 | download2hkt.windowsupdatea.com:443 | 170.8ms | 0️⃣2️⃣",
-                "@VmessProtocol | US🇺🇸 | 208.115.233.80:443 | 10.59ms | 0️⃣1️⃣",
-                "@VmessProtocol | KZ🇰🇿 | p1.09vpn.com:2083 | 238.32ms | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "@PrivateVPNs | DE🇩🇪 | 3.66.68.39:22222 | 159.5ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | DE🇩🇪 | 89.163.220.99:443 | 152.61ms | 0️⃣1️⃣"
+                "@PrivateVPNs | SE🇸🇪 | 16.16.153.200:22222 | 182.3ms | 0️⃣1️⃣",
+                "@DirectVPN | SE🇸🇪 | 13.49.186.234:22222 | 160.5ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 51.20.228.116:22222 | 163.54ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 35.181.201.102:22222 | 132.71ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 15.237.92.163:22222 | 139.51ms | 0️⃣3️⃣",
+                "@oneclickvpnkeys | DE🇩🇪 | 89.163.220.99:443 | 138.37ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | HK🇭🇰 | download2hkt.windowsupdatea.com:443 | 195.24ms | 0️⃣2️⃣",
+                "@VmessProtocol | US🇺🇸 | 208.115.233.80:443 | 8.54ms | 0️⃣1️⃣",
+                "@VmessProtocol | KZ🇰🇿 | p1.09vpn.com:2083 | 246.26ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,7 +132,8 @@
             "tag": "SE🇸🇪",
             "type": "urltest",
             "outbounds": [
-                "@DirectVPN | SE🇸🇪 | 13.49.186.234:22222 | 175.26ms | 0️⃣1️⃣"
+                "@PrivateVPNs | SE🇸🇪 | 16.16.153.200:22222 | 182.3ms | 0️⃣1️⃣",
+                "@DirectVPN | SE🇸🇪 | 13.49.186.234:22222 | 160.5ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -152,8 +143,19 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@DirectVPN | FR🇫🇷 | 35.181.201.102:22222 | 151.83ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.237.92.163:22222 | 152.13ms | 0️⃣3️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 51.20.228.116:22222 | 163.54ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 35.181.201.102:22222 | 132.71ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 15.237.92.163:22222 | 139.51ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "@oneclickvpnkeys | DE🇩🇪 | 89.163.220.99:443 | 138.37ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -163,7 +165,7 @@
             "tag": "HK🇭🇰",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | HK🇭🇰 | download2hkt.windowsupdatea.com:443 | 170.8ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | HK🇭🇰 | download2hkt.windowsupdatea.com:443 | 195.24ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -173,7 +175,7 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | US🇺🇸 | 208.115.233.80:443 | 10.59ms | 0️⃣1️⃣"
+                "@VmessProtocol | US🇺🇸 | 208.115.233.80:443 | 8.54ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -183,16 +185,16 @@
             "tag": "KZ🇰🇿",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | KZ🇰🇿 | p1.09vpn.com:2083 | 238.32ms | 0️⃣3️⃣"
+                "@VmessProtocol | KZ🇰🇿 | p1.09vpn.com:2083 | 246.26ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | DE🇩🇪 | 3.66.68.39:22222 | 159.5ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | SE🇸🇪 | 16.16.153.200:22222 | 182.3ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "3.66.68.39",
+            "server": "16.16.153.200",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -211,28 +213,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | DE🇩🇪 | 89.163.220.99:443 | 152.61ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "89.163.220.99",
-            "server_port": 443,
-            "password": "29ea82cf-f956-42b2-a5dc-35feea39e7ff",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "glc-de1.windowsupdatea.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@DirectVPN | SE🇸🇪 | 13.49.186.234:22222 | 175.26ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | SE🇸🇪 | 13.49.186.234:22222 | 160.5ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "13.49.186.234",
             "server_port": 22222,
@@ -253,7 +234,28 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 35.181.201.102:22222 | 151.83ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 51.20.228.116:22222 | 163.54ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "51.20.228.116",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | FR🇫🇷 | 35.181.201.102:22222 | 132.71ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "35.181.201.102",
             "server_port": 22222,
@@ -274,7 +276,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 15.237.92.163:22222 | 152.13ms | 0️⃣3️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 15.237.92.163:22222 | 139.51ms | 0️⃣3️⃣",
             "type": "trojan",
             "server": "15.237.92.163",
             "server_port": 22222,
@@ -295,7 +297,28 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | HK🇭🇰 | download2hkt.windowsupdatea.com:443 | 170.8ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | DE🇩🇪 | 89.163.220.99:443 | 138.37ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "89.163.220.99",
+            "server_port": 443,
+            "password": "29ea82cf-f956-42b2-a5dc-35feea39e7ff",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glc-de1.windowsupdatea.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@oneclickvpnkeys | HK🇭🇰 | download2hkt.windowsupdatea.com:443 | 195.24ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "download2hkt.windowsupdatea.com",
             "server_port": 443,
@@ -316,7 +339,7 @@
             }
         },
         {
-            "tag": "@VmessProtocol | US🇺🇸 | 208.115.233.80:443 | 10.59ms | 0️⃣1️⃣",
+            "tag": "@VmessProtocol | US🇺🇸 | 208.115.233.80:443 | 8.54ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "208.115.233.80",
             "server_port": 443,
@@ -337,7 +360,7 @@
             }
         },
         {
-            "tag": "@VmessProtocol | KZ🇰🇿 | p1.09vpn.com:2083 | 238.32ms | 0️⃣3️⃣",
+            "tag": "@VmessProtocol | KZ🇰🇿 | p1.09vpn.com:2083 | 246.26ms | 0️⃣3️⃣",
             "type": "trojan",
             "server": "p1.09vpn.com",
             "server_port": 2083,
