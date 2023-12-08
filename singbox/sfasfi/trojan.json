@@ -102,9 +102,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "IE🇮🇪",
                 "SE🇸🇪",
                 "FR🇫🇷",
+                "DE🇩🇪",
                 "US🇺🇸",
                 "MT🇲🇹"
             ]
@@ -113,25 +113,15 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | IE🇮🇪 | 99.80.254.107:22222 | 76.8ms | 0️⃣1️⃣",
-                "@PrivateVPNs | SE🇸🇪 | 13.48.206.3:22222 | 132.39ms | 0️⃣2️⃣",
-                "@DirectVPN | SE🇸🇪 | 16.171.78.181:22222 | 161.04ms | 0️⃣1️⃣",
-                "@DirectVPN | SE🇸🇪 | 63.246.112.210:22222 | 108.61ms | 0️⃣2️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 51.20.36.84:22222 | 108.18ms | 0️⃣3️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.154.196:22222 | 84.46ms | 0️⃣3️⃣",
-                "@yaney_01 | FR🇫🇷 | fr1-t.sshmax.xyz:80 | 90.7ms | 0️⃣1️⃣",
-                "@proxystore11 | US🇺🇸 | proxystore11.ddns.net:443 | 417.31ms | 0️⃣1️⃣",
-                "@proxystore11 | MT🇲🇹 | 193.227.99.55:443 | 5.4ms | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "IE🇮🇪",
-            "type": "urltest",
-            "outbounds": [
-                "@PrivateVPNs | IE🇮🇪 | 99.80.254.107:22222 | 76.8ms | 0️⃣1️⃣"
+                "@PrivateVPNs | SE🇸🇪 | 13.48.206.3:22222 | 125ms | 0️⃣1️⃣",
+                "@DirectVPN | SE🇸🇪 | 63.246.112.210:22222 | 108.47ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 51.20.36.84:22222 | 108ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.39.154.196:22222 | 121.18ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.38.146.22:22222 | 144.89ms | 0️⃣3️⃣",
+                "@yaney_01 | FR🇫🇷 | fr1-t.sshmax.xyz:80 | 414.62ms | 0️⃣1️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 18.153.188.159:22222 | 143.52ms | 0️⃣3️⃣",
+                "@proxystore11 | US🇺🇸 | proxystore11.ddns.net:443 | 74.33ms | 0️⃣1️⃣",
+                "@proxystore11 | MT🇲🇹 | 193.227.99.55:443 | 5.62ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -141,9 +131,8 @@
             "tag": "SE🇸🇪",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | SE🇸🇪 | 13.48.206.3:22222 | 132.39ms | 0️⃣2️⃣",
-                "@DirectVPN | SE🇸🇪 | 16.171.78.181:22222 | 161.04ms | 0️⃣1️⃣",
-                "@DirectVPN | SE🇸🇪 | 63.246.112.210:22222 | 108.61ms | 0️⃣2️⃣"
+                "@PrivateVPNs | SE🇸🇪 | 13.48.206.3:22222 | 125ms | 0️⃣1️⃣",
+                "@DirectVPN | SE🇸🇪 | 63.246.112.210:22222 | 108.47ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -153,9 +142,20 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 51.20.36.84:22222 | 108.18ms | 0️⃣3️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.154.196:22222 | 84.46ms | 0️⃣3️⃣",
-                "@yaney_01 | FR🇫🇷 | fr1-t.sshmax.xyz:80 | 90.7ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 51.20.36.84:22222 | 108ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.39.154.196:22222 | 121.18ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.38.146.22:22222 | 144.89ms | 0️⃣3️⃣",
+                "@yaney_01 | FR🇫🇷 | fr1-t.sshmax.xyz:80 | 414.62ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "@PrivateVPNs | DE🇩🇪 | 18.153.188.159:22222 | 143.52ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -165,7 +165,7 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@proxystore11 | US🇺🇸 | proxystore11.ddns.net:443 | 417.31ms | 0️⃣1️⃣"
+                "@proxystore11 | US🇺🇸 | proxystore11.ddns.net:443 | 74.33ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -175,35 +175,14 @@
             "tag": "MT🇲🇹",
             "type": "urltest",
             "outbounds": [
-                "@proxystore11 | MT🇲🇹 | 193.227.99.55:443 | 5.4ms | 0️⃣2️⃣"
+                "@proxystore11 | MT🇲🇹 | 193.227.99.55:443 | 5.62ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | IE🇮🇪 | 99.80.254.107:22222 | 76.8ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "99.80.254.107",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trj.rollingnext.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | SE🇸🇪 | 13.48.206.3:22222 | 132.39ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | SE🇸🇪 | 13.48.206.3:22222 | 125ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "13.48.206.3",
             "server_port": 22222,
@@ -224,28 +203,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | SE🇸🇪 | 16.171.78.181:22222 | 161.04ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "16.171.78.181",
-            "server_port": 22222,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trj.rollingnext.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@DirectVPN | SE🇸🇪 | 63.246.112.210:22222 | 108.61ms | 0️⃣2️⃣",
+            "tag": "@DirectVPN | SE🇸🇪 | 63.246.112.210:22222 | 108.47ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "63.246.112.210",
             "server_port": 22222,
@@ -266,7 +224,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 51.20.36.84:22222 | 108.18ms | 0️⃣3️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 51.20.36.84:22222 | 108ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "51.20.36.84",
             "server_port": 22222,
@@ -287,7 +245,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.39.154.196:22222 | 84.46ms | 0️⃣3️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 13.39.154.196:22222 | 121.18ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "13.39.154.196",
             "server_port": 22222,
@@ -308,7 +266,28 @@
             }
         },
         {
-            "tag": "@yaney_01 | FR🇫🇷 | fr1-t.sshmax.xyz:80 | 90.7ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 13.38.146.22:22222 | 144.89ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "13.38.146.22",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@yaney_01 | FR🇫🇷 | fr1-t.sshmax.xyz:80 | 414.62ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "141.94.221.127",
             "server_port": 80,
@@ -320,7 +299,28 @@
             }
         },
         {
-            "tag": "@proxystore11 | US🇺🇸 | proxystore11.ddns.net:443 | 417.31ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | DE🇩🇪 | 18.153.188.159:22222 | 143.52ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "18.153.188.159",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@proxystore11 | US🇺🇸 | proxystore11.ddns.net:443 | 74.33ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "proxystore11.ddns.net",
             "server_port": 443,
@@ -348,7 +348,7 @@
             }
         },
         {
-            "tag": "@proxystore11 | MT🇲🇹 | 193.227.99.55:443 | 5.4ms | 0️⃣2️⃣",
+            "tag": "@proxystore11 | MT🇲🇹 | 193.227.99.55:443 | 5.62ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "193.227.99.55",
             "server_port": 443,
