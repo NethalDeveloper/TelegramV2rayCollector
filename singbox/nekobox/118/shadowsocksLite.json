@@ -104,27 +104,39 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@VmessProtocol | FR🇫🇷 | 141.95.106.33:1080 | 107.06ms | 0️⃣1️⃣",
-                "@VmessProtocol | US🇺🇸 | 94.131.115.129:38108 | 126.18ms | 0️⃣2️⃣",
-                "@bright_vpn | GB🇬🇧 | 212.102.53.198:443 | 94.72ms | 0️⃣1️⃣",
-                "@bright_vpn | FR🇫🇷 | 51.178.87.37:810 | 107.1ms | 0️⃣2️⃣"
+                "@iP_CF | US🇺🇸 | beacomf.xyz:8080 | 182.28ms | 0️⃣1️⃣",
+                "@VmessProtocol | FR🇫🇷 | 141.95.106.33:1080 | 154.14ms | 0️⃣1️⃣",
+                "@VmessProtocol | US🇺🇸 | 94.131.115.129:38108 | 175.82ms | 0️⃣2️⃣",
+                "@bright_vpn | GB🇬🇧 | 212.102.53.198:443 | 142ms | 0️⃣1️⃣",
+                "@bright_vpn | FR🇫🇷 | 51.178.87.37:810 | 150.64ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | FR🇫🇷 | 141.95.106.33:1080 | 107.06ms | 0️⃣1️⃣",
-                "@VmessProtocol | US🇺🇸 | 94.131.115.129:38108 | 126.18ms | 0️⃣2️⃣",
-                "@bright_vpn | GB🇬🇧 | 212.102.53.198:443 | 94.72ms | 0️⃣1️⃣",
-                "@bright_vpn | FR🇫🇷 | 51.178.87.37:810 | 107.1ms | 0️⃣2️⃣"
+                "@iP_CF | US🇺🇸 | beacomf.xyz:8080 | 182.28ms | 0️⃣1️⃣",
+                "@VmessProtocol | FR🇫🇷 | 141.95.106.33:1080 | 154.14ms | 0️⃣1️⃣",
+                "@VmessProtocol | US🇺🇸 | 94.131.115.129:38108 | 175.82ms | 0️⃣2️⃣",
+                "@bright_vpn | GB🇬🇧 | 212.102.53.198:443 | 142ms | 0️⃣1️⃣",
+                "@bright_vpn | FR🇫🇷 | 51.178.87.37:810 | 150.64ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@VmessProtocol | FR🇫🇷 | 141.95.106.33:1080 | 107.06ms | 0️⃣1️⃣",
+            "tag": "@iP_CF | US🇺🇸 | beacomf.xyz:8080 | 182.28ms | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "beacomf.xyz",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "T1pb7XxxrolvPSb0u2xSOA",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@VmessProtocol | FR🇫🇷 | 141.95.106.33:1080 | 154.14ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "141.95.106.33",
             "server_port": 1080,
@@ -134,7 +146,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@VmessProtocol | US🇺🇸 | 94.131.115.129:38108 | 126.18ms | 0️⃣2️⃣",
+            "tag": "@VmessProtocol | US🇺🇸 | 94.131.115.129:38108 | 175.82ms | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "94.131.115.129",
             "server_port": 38108,
@@ -144,7 +156,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@bright_vpn | GB🇬🇧 | 212.102.53.198:443 | 94.72ms | 0️⃣1️⃣",
+            "tag": "@bright_vpn | GB🇬🇧 | 212.102.53.198:443 | 142ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "212.102.53.198",
             "server_port": 443,
@@ -154,7 +166,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@bright_vpn | FR🇫🇷 | 51.178.87.37:810 | 107.1ms | 0️⃣2️⃣",
+            "tag": "@bright_vpn | FR🇫🇷 | 51.178.87.37:810 | 150.64ms | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "51.178.87.37",
             "server_port": 810,
