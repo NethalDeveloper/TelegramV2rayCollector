@@ -104,46 +104,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "FR🇫🇷",
-                "SE🇸🇪",
                 "DE🇩🇪",
-                "HK🇭🇰"
+                "FR🇫🇷",
+                "GB🇬🇧",
+                "SG🇸🇬",
+                "JP🇯🇵"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 51.20.159.163:22222 | 120.32ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.236.105.58:22222 | 158.18ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.117.212:22222 | 96.82ms | 0️⃣3️⃣",
-                "@PrivateVPNs | SE🇸🇪 | 13.49.140.23:22222 | 105.77ms | 0️⃣2️⃣",
-                "@DirectVPN | SE🇸🇪 | 16.170.181.247:22222 | 165.52ms | 0️⃣1️⃣",
-                "@PrivateVPNs | DE🇩🇪 | 18.184.2.32:22222 | 89.47ms | 0️⃣3️⃣",
-                "@yaney_01 | HK🇭🇰 | my02.trojanyyds.xyz:443 | 390.09ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "FR🇫🇷",
-            "type": "urltest",
-            "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 51.20.159.163:22222 | 120.32ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.236.105.58:22222 | 158.18ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.117.212:22222 | 96.82ms | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "SE🇸🇪",
-            "type": "urltest",
-            "outbounds": [
-                "@PrivateVPNs | SE🇸🇪 | 13.49.140.23:22222 | 105.77ms | 0️⃣2️⃣",
-                "@DirectVPN | SE🇸🇪 | 16.170.181.247:22222 | 165.52ms | 0️⃣1️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 18.184.2.32:22222 | 158.1ms | 0️⃣1️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 18.153.220.189:22222 | 200.21ms | 0️⃣2️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.39.117.5:22222 | 169.83ms | 0️⃣3️⃣",
+                "@DirectVPN | GB🇬🇧 | 18.169.195.55:22222 | 151.47ms | 0️⃣1️⃣",
+                "@DirectVPN | GB🇬🇧 | 35.176.231.230:22222 | 152.32ms | 0️⃣2️⃣",
+                "@yaney_01 | SG🇸🇬 | a25.zgc.su:567 | 330.17ms | 0️⃣1️⃣",
+                "@yaney_01 | JP🇯🇵 | my02.trojanyyds.xyz:443 | 461.02ms | 0️⃣2️⃣",
+                "@yaney_01 | JP🇯🇵 | hk03.trojanyyds.xyz:443 | 277.34ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -153,129 +132,57 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | DE🇩🇪 | 18.184.2.32:22222 | 89.47ms | 0️⃣3️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 18.184.2.32:22222 | 158.1ms | 0️⃣1️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 18.153.220.189:22222 | 200.21ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "HK🇭🇰",
+            "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@yaney_01 | HK🇭🇰 | my02.trojanyyds.xyz:443 | 390.09ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.39.117.5:22222 | 169.83ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 51.20.159.163:22222 | 120.32ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "51.20.159.163",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trj.rollingnext.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "@DirectVPN | GB🇬🇧 | 18.169.195.55:22222 | 151.47ms | 0️⃣1️⃣",
+                "@DirectVPN | GB🇬🇧 | 35.176.231.230:22222 | 152.32ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 15.236.105.58:22222 | 158.18ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "15.236.105.58",
-            "server_port": 22222,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trj.rollingnext.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "@yaney_01 | SG🇸🇬 | a25.zgc.su:567 | 330.17ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.39.117.212:22222 | 96.82ms | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "13.39.117.212",
-            "server_port": 22222,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trj.rollingnext.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
+            "tag": "JP🇯🇵",
+            "type": "urltest",
+            "outbounds": [
+                "@yaney_01 | JP🇯🇵 | my02.trojanyyds.xyz:443 | 461.02ms | 0️⃣2️⃣",
+                "@yaney_01 | JP🇯🇵 | hk03.trojanyyds.xyz:443 | 277.34ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | SE🇸🇪 | 13.49.140.23:22222 | 105.77ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "13.49.140.23",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trj.rollingnext.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@DirectVPN | SE🇸🇪 | 16.170.181.247:22222 | 165.52ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "16.170.181.247",
-            "server_port": 22222,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trj.rollingnext.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | DE🇩🇪 | 18.184.2.32:22222 | 89.47ms | 0️⃣3️⃣",
+            "tag": "@PrivateVPNs | DE🇩🇪 | 18.184.2.32:22222 | 158.1ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "18.184.2.32",
             "server_port": 22222,
@@ -296,9 +203,117 @@
             }
         },
         {
-            "tag": "@yaney_01 | HK🇭🇰 | my02.trojanyyds.xyz:443 | 390.09ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | DE🇩🇪 | 18.153.220.189:22222 | 200.21ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "18.153.220.189",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.39.117.5:22222 | 169.83ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "13.39.117.5",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | GB🇬🇧 | 18.169.195.55:22222 | 151.47ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "18.169.195.55",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | GB🇬🇧 | 35.176.231.230:22222 | 152.32ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "35.176.231.230",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@yaney_01 | SG🇸🇬 | a25.zgc.su:567 | 330.17ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "a25.zgc.su",
+            "server_port": 567,
+            "password": "2d8a021a-0ba2-4a3c-bbd1-f63b743c2920",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@yaney_01 | JP🇯🇵 | my02.trojanyyds.xyz:443 | 461.02ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "my02.trojanyyds.xyz",
+            "server_port": 443,
+            "password": "93ec7261-1c92-4149-848a-26b6fb9fc4ce",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@yaney_01 | JP🇯🇵 | hk03.trojanyyds.xyz:443 | 277.34ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "hk03.trojanyyds.xyz",
             "server_port": 443,
             "password": "93ec7261-1c92-4149-848a-26b6fb9fc4ce",
             "multiplex": {
