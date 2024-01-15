@@ -102,79 +102,35 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@PrivateVPNs | DE🇩🇪 | 3.75.36.106:22222 | 106.12ms | 0️⃣1️⃣",
-                "@PrivateVPNs | DE🇩🇪 | 3.64.97.195:22222 | 139.24ms | 0️⃣2️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 35.180.145.160:22222 | 115.72ms | 0️⃣3️⃣",
-                "@DirectVPN | GB🇬🇧 | 52.56.70.218:22222 | 111.73ms | 0️⃣1️⃣",
-                "@DirectVPN | IE🇮🇪 | 108.128.191.227:22222 | 112.24ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | www.snappfooding.com:2053 | 47.66ms | 0️⃣1️⃣",
-                "@ConfigsHUB | US🇺🇸 | 64.176.162.24:443 | 155.77ms | 0️⃣1️⃣",
-                "@yaney_01 | JP🇯🇵 | my02.trojanyyds.xyz:443 | 595.67ms | 0️⃣1️⃣",
-                "@yaney_01 | HK🇭🇰 | hk03.trojanyyds.xyz:443 | 569.35ms | 0️⃣2️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 35.180.145.160:22222 | 98.47ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.36.148.224:22222 | 90.37ms | 0️⃣2️⃣",
+                "@PrivateVPNs | GB🇬🇧 | 52.56.76.65:22222 | 90.77ms | 0️⃣3️⃣",
+                "@DirectVPN | IE🇮🇪 | 108.128.191.227:22222 | 96ms | 0️⃣1️⃣",
+                "@DirectVPN | US🇺🇸 | 3.14.187.87:22222 | 69.35ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | www.snappfooding.com:2053 | 136.16ms | 0️⃣1️⃣",
+                "@yaney_01 | HK🇭🇰 | my02.trojanyyds.xyz:443 | 319.21ms | 0️⃣1️⃣",
+                "@yaney_01 | JP🇯🇵 | hk03.trojanyyds.xyz:443 | 363.76ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | DE🇩🇪 | 3.75.36.106:22222 | 106.12ms | 0️⃣1️⃣",
-                "@PrivateVPNs | DE🇩🇪 | 3.64.97.195:22222 | 139.24ms | 0️⃣2️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 35.180.145.160:22222 | 115.72ms | 0️⃣3️⃣",
-                "@DirectVPN | GB🇬🇧 | 52.56.70.218:22222 | 111.73ms | 0️⃣1️⃣",
-                "@DirectVPN | IE🇮🇪 | 108.128.191.227:22222 | 112.24ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | www.snappfooding.com:2053 | 47.66ms | 0️⃣1️⃣",
-                "@ConfigsHUB | US🇺🇸 | 64.176.162.24:443 | 155.77ms | 0️⃣1️⃣",
-                "@yaney_01 | JP🇯🇵 | my02.trojanyyds.xyz:443 | 595.67ms | 0️⃣1️⃣",
-                "@yaney_01 | HK🇭🇰 | hk03.trojanyyds.xyz:443 | 569.35ms | 0️⃣2️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 35.180.145.160:22222 | 98.47ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.36.148.224:22222 | 90.37ms | 0️⃣2️⃣",
+                "@PrivateVPNs | GB🇬🇧 | 52.56.76.65:22222 | 90.77ms | 0️⃣3️⃣",
+                "@DirectVPN | IE🇮🇪 | 108.128.191.227:22222 | 96ms | 0️⃣1️⃣",
+                "@DirectVPN | US🇺🇸 | 3.14.187.87:22222 | 69.35ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | www.snappfooding.com:2053 | 136.16ms | 0️⃣1️⃣",
+                "@yaney_01 | HK🇭🇰 | my02.trojanyyds.xyz:443 | 319.21ms | 0️⃣1️⃣",
+                "@yaney_01 | JP🇯🇵 | hk03.trojanyyds.xyz:443 | 363.76ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | DE🇩🇪 | 3.75.36.106:22222 | 106.12ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "3.75.36.106",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.miwan.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | DE🇩🇪 | 3.64.97.195:22222 | 139.24ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "3.64.97.195",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.miwan.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 35.180.145.160:22222 | 115.72ms | 0️⃣3️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 35.180.145.160:22222 | 98.47ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "35.180.145.160",
             "server_port": 22222,
@@ -195,11 +151,11 @@
             }
         },
         {
-            "tag": "@DirectVPN | GB🇬🇧 | 52.56.70.218:22222 | 111.73ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.36.148.224:22222 | 90.37ms | 0️⃣2️⃣",
             "type": "trojan",
-            "server": "52.56.70.218",
+            "server": "13.36.148.224",
             "server_port": 22222,
-            "password": "telegram-id-directvpn",
+            "password": "telegram-id-privatevpns",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -207,7 +163,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "trj.rollingnext.co.uk",
+                "server_name": "trojan.miwan.co.uk",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -216,7 +172,28 @@
             }
         },
         {
-            "tag": "@DirectVPN | IE🇮🇪 | 108.128.191.227:22222 | 112.24ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | GB🇬🇧 | 52.56.76.65:22222 | 90.77ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "52.56.76.65",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.miwan.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | IE🇮🇪 | 108.128.191.227:22222 | 96ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "108.128.191.227",
             "server_port": 22222,
@@ -237,7 +214,28 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | www.snappfooding.com:2053 | 47.66ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | US🇺🇸 | 3.14.187.87:22222 | 69.35ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "3.14.187.87",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trj.rollingnext.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@oneclickvpnkeys | US🇺🇸 | www.snappfooding.com:2053 | 136.16ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "www.snappfooding.com",
             "server_port": 2053,
@@ -265,28 +263,7 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | US🇺🇸 | 64.176.162.24:443 | 155.77ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "64.176.162.24",
-            "server_port": 443,
-            "password": "wkmY1R4EcP",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "z-v1-zzzh.ashx.net",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@yaney_01 | JP🇯🇵 | my02.trojanyyds.xyz:443 | 595.67ms | 0️⃣1️⃣",
+            "tag": "@yaney_01 | HK🇭🇰 | my02.trojanyyds.xyz:443 | 319.21ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "my02.trojanyyds.xyz",
             "server_port": 443,
@@ -298,7 +275,7 @@
             }
         },
         {
-            "tag": "@yaney_01 | HK🇭🇰 | hk03.trojanyyds.xyz:443 | 569.35ms | 0️⃣2️⃣",
+            "tag": "@yaney_01 | JP🇯🇵 | hk03.trojanyyds.xyz:443 | 363.76ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "hk03.trojanyyds.xyz",
             "server_port": 443,
