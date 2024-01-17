@@ -105,9 +105,10 @@
             "outbounds": [
                 "URL-TEST",
                 "DE🇩🇪",
-                "SE🇸🇪",
                 "FR🇫🇷",
+                "GB🇬🇧",
                 "SG🇸🇬",
+                "RELAY🚩",
                 "JP🇯🇵",
                 "HK🇭🇰"
             ]
@@ -116,14 +117,17 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | DE🇩🇪 | 18.199.48.78:22222 | 174.66ms | 0️⃣1️⃣",
-                "@DirectVPN | SE🇸🇪 | 16.170.179.219:22222 | 168.85ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.130.142:22222 | 154.41ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | SG🇸🇬 | vpnpool.liangyuandiancloud.com:443 | 441.57ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | SG🇸🇬 | vpnhat.liangyuandiancloud.com:443 | 464.85ms | 0️⃣2️⃣",
-                "@yaney_01 | SG🇸🇬 | a25.zgc.su:567 | 328.62ms | 0️⃣1️⃣",
-                "@yaney_01 | JP🇯🇵 | my02.trojanyyds.xyz:443 | 290.42ms | 0️⃣2️⃣",
-                "@yaney_01 | HK🇭🇰 | hk03.trojanyyds.xyz:443 | 445.39ms | 0️⃣3️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 18.199.48.78:22222 | 146.37ms | 0️⃣1️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 3.127.171.227:22222 | 158.52ms | 0️⃣2️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 52.47.194.216:22222 | 153.36ms | 0️⃣3️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.39.130.142:22222 | 178.67ms | 0️⃣1️⃣",
+                "@DirectVPN | GB🇬🇧 | 18.135.140.236:22222 | 176.82ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | SG🇸🇬 | vpnpool.liangyuandiancloud.com:443 | 388.12ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | SG🇸🇬 | vpnhat.liangyuandiancloud.com:443 | 390.88ms | 0️⃣2️⃣",
+                "@yaney_01 | SG🇸🇬 | a25.zgc.su:567 | 384.95ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | RELAY🚩 | cdn-13.cdn2cdn.com:2083 | 54.66ms | 0️⃣3️⃣",
+                "@yaney_01 | JP🇯🇵 | my02.trojanyyds.xyz:443 | 289.85ms | 0️⃣2️⃣",
+                "@yaney_01 | HK🇭🇰 | hk03.trojanyyds.xyz:443 | 277.27ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,17 +137,8 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | DE🇩🇪 | 18.199.48.78:22222 | 174.66ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "SE🇸🇪",
-            "type": "urltest",
-            "outbounds": [
-                "@DirectVPN | SE🇸🇪 | 16.170.179.219:22222 | 168.85ms | 0️⃣1️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 18.199.48.78:22222 | 146.37ms | 0️⃣1️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 3.127.171.227:22222 | 158.52ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -153,7 +148,18 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@DirectVPN | FR🇫🇷 | 13.39.130.142:22222 | 154.41ms | 0️⃣2️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 52.47.194.216:22222 | 153.36ms | 0️⃣3️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.39.130.142:22222 | 178.67ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "@DirectVPN | GB🇬🇧 | 18.135.140.236:22222 | 176.82ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -163,9 +169,19 @@
             "tag": "SG🇸🇬",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | SG🇸🇬 | vpnpool.liangyuandiancloud.com:443 | 441.57ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | SG🇸🇬 | vpnhat.liangyuandiancloud.com:443 | 464.85ms | 0️⃣2️⃣",
-                "@yaney_01 | SG🇸🇬 | a25.zgc.su:567 | 328.62ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | SG🇸🇬 | vpnpool.liangyuandiancloud.com:443 | 388.12ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | SG🇸🇬 | vpnhat.liangyuandiancloud.com:443 | 390.88ms | 0️⃣2️⃣",
+                "@yaney_01 | SG🇸🇬 | a25.zgc.su:567 | 384.95ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "@oneclickvpnkeys | RELAY🚩 | cdn-13.cdn2cdn.com:2083 | 54.66ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -175,7 +191,7 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "@yaney_01 | JP🇯🇵 | my02.trojanyyds.xyz:443 | 290.42ms | 0️⃣2️⃣"
+                "@yaney_01 | JP🇯🇵 | my02.trojanyyds.xyz:443 | 289.85ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -185,14 +201,14 @@
             "tag": "HK🇭🇰",
             "type": "urltest",
             "outbounds": [
-                "@yaney_01 | HK🇭🇰 | hk03.trojanyyds.xyz:443 | 445.39ms | 0️⃣3️⃣"
+                "@yaney_01 | HK🇭🇰 | hk03.trojanyyds.xyz:443 | 277.27ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | DE🇩🇪 | 18.199.48.78:22222 | 174.66ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | DE🇩🇪 | 18.199.48.78:22222 | 146.37ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "18.199.48.78",
             "server_port": 22222,
@@ -213,11 +229,11 @@
             }
         },
         {
-            "tag": "@DirectVPN | SE🇸🇪 | 16.170.179.219:22222 | 168.85ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | DE🇩🇪 | 3.127.171.227:22222 | 158.52ms | 0️⃣2️⃣",
             "type": "trojan",
-            "server": "16.170.179.219",
+            "server": "3.127.171.227",
             "server_port": 22222,
-            "password": "telegram-id-directvpn",
+            "password": "telegram-id-privatevpns",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -234,7 +250,28 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.39.130.142:22222 | 154.41ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 52.47.194.216:22222 | 153.36ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "52.47.194.216",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.miwan.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | FR🇫🇷 | 13.39.130.142:22222 | 178.67ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "13.39.130.142",
             "server_port": 22222,
@@ -255,7 +292,28 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | SG🇸🇬 | vpnpool.liangyuandiancloud.com:443 | 441.57ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | GB🇬🇧 | 18.135.140.236:22222 | 176.82ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "18.135.140.236",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.miwan.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@oneclickvpnkeys | SG🇸🇬 | vpnpool.liangyuandiancloud.com:443 | 388.12ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "vpnpool.liangyuandiancloud.com",
             "server_port": 443,
@@ -276,7 +334,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | SG🇸🇬 | vpnhat.liangyuandiancloud.com:443 | 464.85ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | SG🇸🇬 | vpnhat.liangyuandiancloud.com:443 | 390.88ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "vpnhat.liangyuandiancloud.com",
             "server_port": 443,
@@ -297,7 +355,7 @@
             }
         },
         {
-            "tag": "@yaney_01 | SG🇸🇬 | a25.zgc.su:567 | 328.62ms | 0️⃣1️⃣",
+            "tag": "@yaney_01 | SG🇸🇬 | a25.zgc.su:567 | 384.95ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "a25.zgc.su",
             "server_port": 567,
@@ -309,7 +367,35 @@
             }
         },
         {
-            "tag": "@yaney_01 | JP🇯🇵 | my02.trojanyyds.xyz:443 | 290.42ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | RELAY🚩 | cdn-13.cdn2cdn.com:2083 | 54.66ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "cdn-13.cdn2cdn.com",
+            "server_port": 2083,
+            "password": "qG9K8AGnn9XH5jUqeFu96g",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "cdn13.cdn2cdn.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "cdn13.cdn2cdn.com"
+                }
+            }
+        },
+        {
+            "tag": "@yaney_01 | JP🇯🇵 | my02.trojanyyds.xyz:443 | 289.85ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "my02.trojanyyds.xyz",
             "server_port": 443,
@@ -321,7 +407,7 @@
             }
         },
         {
-            "tag": "@yaney_01 | HK🇭🇰 | hk03.trojanyyds.xyz:443 | 445.39ms | 0️⃣3️⃣",
+            "tag": "@yaney_01 | HK🇭🇰 | hk03.trojanyyds.xyz:443 | 277.27ms | 0️⃣3️⃣",
             "type": "trojan",
             "server": "hk03.trojanyyds.xyz",
             "server_port": 443,
