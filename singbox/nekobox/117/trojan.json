@@ -99,36 +99,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "IE🇮🇪",
                 "SE🇸🇪",
+                "DE🇩🇪",
                 "FR🇫🇷",
-                "RELAY🚩",
-                "SG🇸🇬"
+                "US🇺🇸",
+                "RELAY🚩"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | IE🇮🇪 | 52.17.78.251:22222 | 136.47ms | 0️⃣1️⃣",
-                "@PrivateVPNs | SE🇸🇪 | 13.51.49.187:22222 | 193.74ms | 0️⃣2️⃣",
-                "@PrivateVPNs | SE🇸🇪 | 13.51.103.168:22222 | 182.81ms | 0️⃣3️⃣",
-                "@DirectVPN | SE🇸🇪 | 13.48.237.142:22222 | 174.44ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 51.21.12.110:22222 | 174.27ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.188.222.69:22222 | 153.02ms | 0️⃣3️⃣",
-                "@proxyymeliii | RELAY🚩 | gr.tucn-serves.info:8443 | 113.85ms | 0️⃣1️⃣",
-                "@v2ray1_ng | RELAY🚩 | www.speedtest.net:443 | 3.57ms | 0️⃣1️⃣",
-                "@VmessProtocol | SG🇸🇬 | 149.28.151.140:443 | 169.31ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "IE🇮🇪",
-            "type": "urltest",
-            "outbounds": [
-                "@PrivateVPNs | IE🇮🇪 | 52.17.78.251:22222 | 136.47ms | 0️⃣1️⃣"
+                "@PrivateVPNs | SE🇸🇪 | 13.51.49.187:22222 | 111.27ms | 0️⃣1️⃣",
+                "@PrivateVPNs | SE🇸🇪 | 13.51.103.168:22222 | 113.56ms | 0️⃣2️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 52.28.35.164:22222 | 120.56ms | 0️⃣3️⃣",
+                "@DirectVPN | FR🇫🇷 | 51.21.12.110:22222 | 163.53ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 15.188.222.69:22222 | 104.86ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 15.188.255.241:22222 | 83.03ms | 0️⃣3️⃣",
+                "@proxyymeliii | US🇺🇸 | gr.tucn-serves.info:8443 | 200.39ms | 0️⃣1️⃣",
+                "@v2ray1_ng | RELAY🚩 | www.speedtest.net:443 | 13.58ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -138,9 +127,18 @@
             "tag": "SE🇸🇪",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | SE🇸🇪 | 13.51.49.187:22222 | 193.74ms | 0️⃣2️⃣",
-                "@PrivateVPNs | SE🇸🇪 | 13.51.103.168:22222 | 182.81ms | 0️⃣3️⃣",
-                "@DirectVPN | SE🇸🇪 | 13.48.237.142:22222 | 174.44ms | 0️⃣1️⃣"
+                "@PrivateVPNs | SE🇸🇪 | 13.51.49.187:22222 | 111.27ms | 0️⃣1️⃣",
+                "@PrivateVPNs | SE🇸🇪 | 13.51.103.168:22222 | 113.56ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "@PrivateVPNs | DE🇩🇪 | 52.28.35.164:22222 | 120.56ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -150,8 +148,19 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@DirectVPN | FR🇫🇷 | 51.21.12.110:22222 | 174.27ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.188.222.69:22222 | 153.02ms | 0️⃣3️⃣"
+                "@DirectVPN | FR🇫🇷 | 51.21.12.110:22222 | 163.53ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 15.188.222.69:22222 | 104.86ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 15.188.255.241:22222 | 83.03ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "@proxyymeliii | US🇺🇸 | gr.tucn-serves.info:8443 | 200.39ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -161,46 +170,14 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@proxyymeliii | RELAY🚩 | gr.tucn-serves.info:8443 | 113.85ms | 0️⃣1️⃣",
-                "@v2ray1_ng | RELAY🚩 | www.speedtest.net:443 | 3.57ms | 0️⃣1️⃣"
+                "@v2ray1_ng | RELAY🚩 | www.speedtest.net:443 | 13.58ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "SG🇸🇬",
-            "type": "urltest",
-            "outbounds": [
-                "@VmessProtocol | SG🇸🇬 | 149.28.151.140:443 | 169.31ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "@PrivateVPNs | IE🇮🇪 | 52.17.78.251:22222 | 136.47ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "52.17.78.251",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.miwan.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | SE🇸🇪 | 13.51.49.187:22222 | 193.74ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | SE🇸🇪 | 13.51.49.187:22222 | 111.27ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "13.51.49.187",
             "server_port": 22222,
@@ -221,7 +198,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | SE🇸🇪 | 13.51.103.168:22222 | 182.81ms | 0️⃣3️⃣",
+            "tag": "@PrivateVPNs | SE🇸🇪 | 13.51.103.168:22222 | 113.56ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "13.51.103.168",
             "server_port": 22222,
@@ -242,11 +219,11 @@
             }
         },
         {
-            "tag": "@DirectVPN | SE🇸🇪 | 13.48.237.142:22222 | 174.44ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | DE🇩🇪 | 52.28.35.164:22222 | 120.56ms | 0️⃣3️⃣",
             "type": "trojan",
-            "server": "13.48.237.142",
+            "server": "52.28.35.164",
             "server_port": 22222,
-            "password": "telegram-id-directvpn",
+            "password": "telegram-id-privatevpns",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -263,7 +240,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 51.21.12.110:22222 | 174.27ms | 0️⃣2️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 51.21.12.110:22222 | 163.53ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "51.21.12.110",
             "server_port": 22222,
@@ -284,7 +261,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 15.188.222.69:22222 | 153.02ms | 0️⃣3️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 15.188.222.69:22222 | 104.86ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "15.188.222.69",
             "server_port": 22222,
@@ -305,7 +282,28 @@
             }
         },
         {
-            "tag": "@proxyymeliii | RELAY🚩 | gr.tucn-serves.info:8443 | 113.85ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 15.188.255.241:22222 | 83.03ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "15.188.255.241",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.miwan.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@proxyymeliii | US🇺🇸 | gr.tucn-serves.info:8443 | 200.39ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "gr.tucn-serves.info",
             "server_port": 8443,
@@ -333,7 +331,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | RELAY🚩 | www.speedtest.net:443 | 3.57ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | RELAY🚩 | www.speedtest.net:443 | 13.58ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "www.speedtest.net",
             "server_port": 443,
@@ -357,27 +355,6 @@
                 "path": "\/\/ws",
                 "headers": {
                     "Host": "maintains-newton-b-bless.trycloudflare.com"
-                }
-            }
-        },
-        {
-            "tag": "@VmessProtocol | SG🇸🇬 | 149.28.151.140:443 | 169.31ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "149.28.151.140",
-            "server_port": 443,
-            "password": "842b5f9dd11e458d8613c907c4cc5723",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.gpt123.one",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
                 }
             }
         },
