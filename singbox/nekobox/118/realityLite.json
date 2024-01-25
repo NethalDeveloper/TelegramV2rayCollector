@@ -104,66 +104,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @iP_CF | GB🇬🇧 | 198.244.211.128:26660 | 146.4ms | 0️⃣1️⃣",
-                "REALITY | @v2ray_swhil | DE🇩🇪 | german.mmdtitaniom.com:443 | 217.43ms | 0️⃣2️⃣",
-                "REALITY | @VmessProtocol | IR🇮🇷 | 91.107.249.141:52391 | 158.27ms | 0️⃣1️⃣",
-                "REALITY | @V2rayngninja | US🇺🇸 | 172.233.57.232:443 | 149.89ms | 0️⃣2️⃣",
-                "REALITY | @fnet00 | DE🇩🇪 | 49.13.72.241:443 | 159.29ms | 0️⃣1️⃣",
-                "REALITY | @polproxy | DE🇩🇪 | 159.69.126.121:31642 | 159.48ms | 0️⃣1️⃣"
+                "REALITY | @v2ray_swhil | DE🇩🇪 | german.mmdtitaniom.com:443 | 215.52ms | 0️⃣2️⃣",
+                "REALITY | @V2rayngninja | US🇺🇸 | 172.233.57.232:443 | 134.4ms | 0️⃣2️⃣",
+                "REALITY | @fnet00 | DE🇩🇪 | 49.13.72.241:443 | 143.56ms | 0️⃣1️⃣",
+                "REALITY | @polproxy | DE🇩🇪 | 159.69.126.121:31642 | 144.23ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @iP_CF | GB🇬🇧 | 198.244.211.128:26660 | 146.4ms | 0️⃣1️⃣",
-                "REALITY | @v2ray_swhil | DE🇩🇪 | german.mmdtitaniom.com:443 | 217.43ms | 0️⃣2️⃣",
-                "REALITY | @VmessProtocol | IR🇮🇷 | 91.107.249.141:52391 | 158.27ms | 0️⃣1️⃣",
-                "REALITY | @V2rayngninja | US🇺🇸 | 172.233.57.232:443 | 149.89ms | 0️⃣2️⃣",
-                "REALITY | @fnet00 | DE🇩🇪 | 49.13.72.241:443 | 159.29ms | 0️⃣1️⃣",
-                "REALITY | @polproxy | DE🇩🇪 | 159.69.126.121:31642 | 159.48ms | 0️⃣1️⃣"
+                "REALITY | @v2ray_swhil | DE🇩🇪 | german.mmdtitaniom.com:443 | 215.52ms | 0️⃣2️⃣",
+                "REALITY | @V2rayngninja | US🇺🇸 | 172.233.57.232:443 | 134.4ms | 0️⃣2️⃣",
+                "REALITY | @fnet00 | DE🇩🇪 | 49.13.72.241:443 | 143.56ms | 0️⃣1️⃣",
+                "REALITY | @polproxy | DE🇩🇪 | 159.69.126.121:31642 | 144.23ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @iP_CF | GB🇬🇧 | 198.244.211.128:26660 | 146.4ms | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "198.244.211.128",
-            "server_port": 26660,
-            "uuid": "b0bd8f69-f1bb-463b-9871-9c7430d061a3",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ea.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "HtcttM7t1OcuHNAtwnKH6XRmHyromTAy2yLapp9vamM",
-                    "short_id": "00bfc73e"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "REALITY | @v2ray_swhil | DE🇩🇪 | german.mmdtitaniom.com:443 | 217.43ms | 0️⃣2️⃣",
+            "tag": "REALITY | @v2ray_swhil | DE🇩🇪 | german.mmdtitaniom.com:443 | 215.52ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "german.mmdtitaniom.com",
             "server_port": 443,
@@ -198,35 +159,7 @@
             }
         },
         {
-            "tag": "REALITY | @VmessProtocol | IR🇮🇷 | 91.107.249.141:52391 | 158.27ms | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "91.107.249.141",
-            "server_port": 52391,
-            "uuid": "fd881ed5-1c65-422e-a0ef-505690c4c3f3",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "discord.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "aLE5KaEL109tMDAisa1qRPFMzgBsNiZXCLzNZ0S-hmY",
-                    "short_id": "366fba16"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @V2rayngninja | US🇺🇸 | 172.233.57.232:443 | 149.89ms | 0️⃣2️⃣",
+            "tag": "REALITY | @V2rayngninja | US🇺🇸 | 172.233.57.232:443 | 134.4ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "172.233.57.232",
             "server_port": 443,
@@ -261,7 +194,7 @@
             }
         },
         {
-            "tag": "REALITY | @fnet00 | DE🇩🇪 | 49.13.72.241:443 | 159.29ms | 0️⃣1️⃣",
+            "tag": "REALITY | @fnet00 | DE🇩🇪 | 49.13.72.241:443 | 143.56ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "49.13.72.241",
             "server_port": 443,
@@ -296,7 +229,7 @@
             }
         },
         {
-            "tag": "REALITY | @polproxy | DE🇩🇪 | 159.69.126.121:31642 | 159.48ms | 0️⃣1️⃣",
+            "tag": "REALITY | @polproxy | DE🇩🇪 | 159.69.126.121:31642 | 144.23ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "159.69.126.121",
             "server_port": 31642,
