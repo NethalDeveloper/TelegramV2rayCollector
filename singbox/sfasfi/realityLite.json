@@ -102,23 +102,62 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @v2rayNG_Matsuri | SE🇸🇪 | 13.49.231.106:8080 | 159.95ms | 0️⃣3️⃣",
-                "REALITY | @V2rayngninja | US🇺🇸 | 172.233.57.232:443 | 136.01ms | 0️⃣2️⃣"
+                "REALITY | @ARv2ray | DE🇩🇪 | 167.235.194.77:443 | 94.43ms | 0️⃣3️⃣",
+                "REALITY | @v2rayNG_Matsuri | SE🇸🇪 | 13.49.231.106:8080 | 107.04ms | 0️⃣3️⃣",
+                "REALITY | @V2rayngninja | US🇺🇸 | 172.233.57.232:443 | 81.74ms | 0️⃣2️⃣",
+                "REALITY | @Outlinev2rayNG | SE🇸🇪 | 13.49.231.106:8080 | 105.44ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @v2rayNG_Matsuri | SE🇸🇪 | 13.49.231.106:8080 | 159.95ms | 0️⃣3️⃣",
-                "REALITY | @V2rayngninja | US🇺🇸 | 172.233.57.232:443 | 136.01ms | 0️⃣2️⃣"
+                "REALITY | @ARv2ray | DE🇩🇪 | 167.235.194.77:443 | 94.43ms | 0️⃣3️⃣",
+                "REALITY | @v2rayNG_Matsuri | SE🇸🇪 | 13.49.231.106:8080 | 107.04ms | 0️⃣3️⃣",
+                "REALITY | @V2rayngninja | US🇺🇸 | 172.233.57.232:443 | 81.74ms | 0️⃣2️⃣",
+                "REALITY | @Outlinev2rayNG | SE🇸🇪 | 13.49.231.106:8080 | 105.44ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @v2rayNG_Matsuri | SE🇸🇪 | 13.49.231.106:8080 | 159.95ms | 0️⃣3️⃣",
+            "tag": "REALITY | @ARv2ray | DE🇩🇪 | 167.235.194.77:443 | 94.43ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "167.235.194.77",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "pIFvcgFp13CJmY2HyzTeaJ3vT3iGauyQBv5II_TwDx0",
+                    "short_id": "21ff260b"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @v2rayNG_Matsuri | SE🇸🇪 | 13.49.231.106:8080 | 107.04ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "13.49.231.106",
             "server_port": 8080,
@@ -153,7 +192,7 @@
             }
         },
         {
-            "tag": "REALITY | @V2rayngninja | US🇺🇸 | 172.233.57.232:443 | 136.01ms | 0️⃣2️⃣",
+            "tag": "REALITY | @V2rayngninja | US🇺🇸 | 172.233.57.232:443 | 81.74ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "172.233.57.232",
             "server_port": 443,
@@ -182,6 +221,41 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @Outlinev2rayNG | SE🇸🇪 | 13.49.231.106:8080 | 105.44ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "13.49.231.106",
+            "server_port": 8080,
+            "uuid": "049f97b8-7180-4b67-d79d-9541ff116fe8",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "*.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "tj4NuuQRH5GMJqWUYRYsCPvhR4KCRQ58TqF7gqCf9lQ",
+                    "short_id": "21e3"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@kiava",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
