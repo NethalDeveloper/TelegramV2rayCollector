@@ -104,101 +104,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @ipV2Ray | DE🇩🇪 | 104.248.134.5:443 | 133.61ms | 0️⃣1️⃣",
-                "REALITY | @ipV2Ray | US🇺🇸 | 152.42.132.236:443 | 133.59ms | 0️⃣2️⃣",
-                "REALITY | @v2ray_swhil | DE🇩🇪 | germany.mmdtitaniom.com:2053 | 215.7ms | 0️⃣1️⃣",
-                "REALITY | @VmessProtocol | FI🇫🇮 | fi-01.allhub.ltd:443 | 341.15ms | 0️⃣2️⃣",
-                "REALITY | @Outlinev2rayNG | DE🇩🇪 | kamyarconfigs.camdve.store:443 | 173.06ms | 0️⃣1️⃣",
-                "REALITY | @Capital_NET | NL🇳🇱 | 159.223.4.137:38915 | 134.05ms | 0️⃣1️⃣"
+                "REALITY | @v2ray_swhil | DE🇩🇪 | germany.mmdtitaniom.com:2053 | 184.27ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | FI🇫🇮 | fi-01.allhub.ltd:443 | 780.64ms | 0️⃣2️⃣",
+                "REALITY | @Outlinev2rayNG | DE🇩🇪 | kamyarconfigs.camdve.store:443 | 165.69ms | 0️⃣1️⃣",
+                "REALITY | @Capital_NET | NL🇳🇱 | 159.223.4.137:38915 | 151.75ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ipV2Ray | DE🇩🇪 | 104.248.134.5:443 | 133.61ms | 0️⃣1️⃣",
-                "REALITY | @ipV2Ray | US🇺🇸 | 152.42.132.236:443 | 133.59ms | 0️⃣2️⃣",
-                "REALITY | @v2ray_swhil | DE🇩🇪 | germany.mmdtitaniom.com:2053 | 215.7ms | 0️⃣1️⃣",
-                "REALITY | @VmessProtocol | FI🇫🇮 | fi-01.allhub.ltd:443 | 341.15ms | 0️⃣2️⃣",
-                "REALITY | @Outlinev2rayNG | DE🇩🇪 | kamyarconfigs.camdve.store:443 | 173.06ms | 0️⃣1️⃣",
-                "REALITY | @Capital_NET | NL🇳🇱 | 159.223.4.137:38915 | 134.05ms | 0️⃣1️⃣"
+                "REALITY | @v2ray_swhil | DE🇩🇪 | germany.mmdtitaniom.com:2053 | 184.27ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | FI🇫🇮 | fi-01.allhub.ltd:443 | 780.64ms | 0️⃣2️⃣",
+                "REALITY | @Outlinev2rayNG | DE🇩🇪 | kamyarconfigs.camdve.store:443 | 165.69ms | 0️⃣1️⃣",
+                "REALITY | @Capital_NET | NL🇳🇱 | 159.223.4.137:38915 | 151.75ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | 104.248.134.5:443 | 133.61ms | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "104.248.134.5",
-            "server_port": 443,
-            "uuid": "cbe86cff-48ff-44ca-949b-3f6e4c03e41e",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "dnschecker.org",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "4pwFpFNcO_oJRC40e3xHZrKYnSsF-xTbcgTyEi4Jqz8",
-                    "short_id": "18ee56a6"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "REALITY | @ipV2Ray | US🇺🇸 | 152.42.132.236:443 | 133.59ms | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "152.42.132.236",
-            "server_port": 443,
-            "uuid": "b73ed8b6-40d2-41cb-ae36-2d00d7eaa1dd",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "feat.agency",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "eS374Xks1P-TLKV_pNaRPJNZfQKrMTLFvacPWPGVlFw",
-                    "short_id": "e14a3c0d"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "REALITY | @v2ray_swhil | DE🇩🇪 | germany.mmdtitaniom.com:2053 | 215.7ms | 0️⃣1️⃣",
+            "tag": "REALITY | @v2ray_swhil | DE🇩🇪 | germany.mmdtitaniom.com:2053 | 184.27ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "germany.mmdtitaniom.com",
             "server_port": 2053,
@@ -233,7 +159,7 @@
             }
         },
         {
-            "tag": "REALITY | @VmessProtocol | FI🇫🇮 | fi-01.allhub.ltd:443 | 341.15ms | 0️⃣2️⃣",
+            "tag": "REALITY | @VmessProtocol | FI🇫🇮 | fi-01.allhub.ltd:443 | 780.64ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "fi-01.allhub.ltd",
             "server_port": 443,
@@ -268,7 +194,7 @@
             }
         },
         {
-            "tag": "REALITY | @Outlinev2rayNG | DE🇩🇪 | kamyarconfigs.camdve.store:443 | 173.06ms | 0️⃣1️⃣",
+            "tag": "REALITY | @Outlinev2rayNG | DE🇩🇪 | kamyarconfigs.camdve.store:443 | 165.69ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "kamyarconfigs.camdve.store",
             "server_port": 443,
@@ -303,7 +229,7 @@
             }
         },
         {
-            "tag": "REALITY | @Capital_NET | NL🇳🇱 | 159.223.4.137:38915 | 134.05ms | 0️⃣1️⃣",
+            "tag": "REALITY | @Capital_NET | NL🇳🇱 | 159.223.4.137:38915 | 151.75ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "159.223.4.137",
             "server_port": 38915,
