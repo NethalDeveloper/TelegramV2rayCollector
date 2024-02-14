@@ -104,25 +104,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @ipV2Ray | DE🇩🇪 | 49.13.149.114:443 | 88.8ms | 0️⃣1️⃣",
-                "REALITY | @ipV2Ray | US🇺🇸 | 164.90.144.213:443 | 69.14ms | 0️⃣2️⃣",
-                "REALITY | @v2raycollectordonate | RU🇷🇺 | finland.nodes.mrzb.artydev.ru:8443 | 475.69ms | 0️⃣6️⃣"
+                "REALITY | @ipV2Ray | DE🇩🇪 | 49.13.149.114:443 | 158.7ms | 0️⃣1️⃣",
+                "REALITY | @ipV2Ray | US🇺🇸 | 164.90.144.213:443 | 2.14ms | 0️⃣2️⃣",
+                "REALITY | @ARv2ray | DE🇩🇪 | 49.13.70.21:443 | 163.53ms | 0️⃣3️⃣",
+                "REALITY | @v2raycollectordonate | RU🇷🇺 | finland.nodes.mrzb.artydev.ru:8443 | 721.96ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ipV2Ray | DE🇩🇪 | 49.13.149.114:443 | 88.8ms | 0️⃣1️⃣",
-                "REALITY | @ipV2Ray | US🇺🇸 | 164.90.144.213:443 | 69.14ms | 0️⃣2️⃣",
-                "REALITY | @v2raycollectordonate | RU🇷🇺 | finland.nodes.mrzb.artydev.ru:8443 | 475.69ms | 0️⃣6️⃣"
+                "REALITY | @ipV2Ray | DE🇩🇪 | 49.13.149.114:443 | 158.7ms | 0️⃣1️⃣",
+                "REALITY | @ipV2Ray | US🇺🇸 | 164.90.144.213:443 | 2.14ms | 0️⃣2️⃣",
+                "REALITY | @ARv2ray | DE🇩🇪 | 49.13.70.21:443 | 163.53ms | 0️⃣3️⃣",
+                "REALITY | @v2raycollectordonate | RU🇷🇺 | finland.nodes.mrzb.artydev.ru:8443 | 721.96ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | 49.13.149.114:443 | 88.8ms | 0️⃣1️⃣",
+            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | 49.13.149.114:443 | 158.7ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "49.13.149.114",
             "server_port": 443,
@@ -157,7 +159,7 @@
             }
         },
         {
-            "tag": "REALITY | @ipV2Ray | US🇺🇸 | 164.90.144.213:443 | 69.14ms | 0️⃣2️⃣",
+            "tag": "REALITY | @ipV2Ray | US🇺🇸 | 164.90.144.213:443 | 2.14ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "164.90.144.213",
             "server_port": 443,
@@ -192,7 +194,42 @@
             }
         },
         {
-            "tag": "REALITY | @v2raycollectordonate | RU🇷🇺 | finland.nodes.mrzb.artydev.ru:8443 | 475.69ms | 0️⃣6️⃣",
+            "tag": "REALITY | @ARv2ray | DE🇩🇪 | 49.13.70.21:443 | 163.53ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "49.13.70.21",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "WW9eLQRXqBwgXLR73dgHcaeEC1Snp7pxVYjs9gzqnnk",
+                    "short_id": "73cffc50"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @v2raycollectordonate | RU🇷🇺 | finland.nodes.mrzb.artydev.ru:8443 | 721.96ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "finland.nodes.mrzb.artydev.ru",
             "server_port": 8443,
