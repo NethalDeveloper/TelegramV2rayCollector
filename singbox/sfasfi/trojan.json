@@ -102,47 +102,36 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "RELAY🚩",
-                "DE🇩🇪",
+                "CA🇨🇦",
                 "FR🇫🇷",
-                "GB🇬🇧"
+                "GB🇬🇧",
+                "IE🇮🇪",
+                "RELAY🚩"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2raycollectordonate | RELAY🚩 | 104.16.0.0:443 | 16.81ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | RELAY🚩 | 162.159.1.94:443 | 8.65ms | 0️⃣1️⃣",
-                "@fnet00 | RELAY🚩 | cdn13.cdn2cdn.com:2083 | 29.21ms | 0️⃣1️⃣",
-                "@PrivateVPNs | DE🇩🇪 | 3.73.155.108:22222 | 161.09ms | 0️⃣1️⃣",
-                "@PrivateVPNs | DE🇩🇪 | 3.76.136.2:22222 | 182.66ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 35.181.133.244:22222 | 144.62ms | 0️⃣1️⃣",
-                "@DirectVPN | GB🇬🇧 | 13.41.123.117:22222 | 127.51ms | 0️⃣2️⃣",
-                "@DirectVPN | GB🇬🇧 | 18.169.32.83:22222 | 129.27ms | 0️⃣3️⃣"
+                "@v2raycollectordonate | CA🇨🇦 | ca1.test3.net:443 | 143.73ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 15.188.170.29:22222 | 179.83ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 52.47.53.178:22222 | 193.24ms | 0️⃣2️⃣",
+                "@PrivateVPNs | GB🇬🇧 | 18.169.212.197:22222 | 125.51ms | 0️⃣3️⃣",
+                "@DirectVPN | GB🇬🇧 | 18.169.32.83:22222 | 127.78ms | 0️⃣1️⃣",
+                "@DirectVPN | IE🇮🇪 | 52.215.164.132:22222 | 153.95ms | 0️⃣2️⃣",
+                "@DirectVPN | IE🇮🇪 | 63.35.107.18:22222 | 114.24ms | 0️⃣3️⃣",
+                "@oneclickvpnkeys | RELAY🚩 | 162.159.1.94:443 | 8.71ms | 0️⃣1️⃣",
+                "@fnet00 | RELAY🚩 | cdn13.cdn2cdn.com:2083 | 77.61ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "RELAY🚩",
+            "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@v2raycollectordonate | RELAY🚩 | 104.16.0.0:443 | 16.81ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | RELAY🚩 | 162.159.1.94:443 | 8.65ms | 0️⃣1️⃣",
-                "@fnet00 | RELAY🚩 | cdn13.cdn2cdn.com:2083 | 29.21ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "@PrivateVPNs | DE🇩🇪 | 3.73.155.108:22222 | 161.09ms | 0️⃣1️⃣",
-                "@PrivateVPNs | DE🇩🇪 | 3.76.136.2:22222 | 182.66ms | 0️⃣2️⃣"
+                "@v2raycollectordonate | CA🇨🇦 | ca1.test3.net:443 | 143.73ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -152,7 +141,8 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@DirectVPN | FR🇫🇷 | 35.181.133.244:22222 | 144.62ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 15.188.170.29:22222 | 179.83ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 52.47.53.178:22222 | 193.24ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -162,19 +152,41 @@
             "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "@DirectVPN | GB🇬🇧 | 13.41.123.117:22222 | 127.51ms | 0️⃣2️⃣",
-                "@DirectVPN | GB🇬🇧 | 18.169.32.83:22222 | 129.27ms | 0️⃣3️⃣"
+                "@PrivateVPNs | GB🇬🇧 | 18.169.212.197:22222 | 125.51ms | 0️⃣3️⃣",
+                "@DirectVPN | GB🇬🇧 | 18.169.32.83:22222 | 127.78ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2raycollectordonate | RELAY🚩 | 104.16.0.0:443 | 16.81ms | 0️⃣1️⃣",
+            "tag": "IE🇮🇪",
+            "type": "urltest",
+            "outbounds": [
+                "@DirectVPN | IE🇮🇪 | 52.215.164.132:22222 | 153.95ms | 0️⃣2️⃣",
+                "@DirectVPN | IE🇮🇪 | 63.35.107.18:22222 | 114.24ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "@oneclickvpnkeys | RELAY🚩 | 162.159.1.94:443 | 8.71ms | 0️⃣1️⃣",
+                "@fnet00 | RELAY🚩 | cdn13.cdn2cdn.com:2083 | 77.61ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@v2raycollectordonate | CA🇨🇦 | ca1.test3.net:443 | 143.73ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "104.16.0.0",
+            "server": "ca1.test3.net",
             "server_port": 443,
-            "password": "EYOCZiCLYH",
+            "password": "28317610-cbed-11ee-805e-1239d0255272",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -182,23 +194,142 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "optical-lesson-dell-lead.trycloudflare.com",
+                "server_name": "sep.shaparak.ir",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
+            }
+        },
+        {
+            "tag": "@PrivateVPNs | FR🇫🇷 | 15.188.170.29:22222 | 179.83ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "15.188.170.29",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/?ed=2048",
-                "headers": {
-                    "Host": "optical-lesson-dell-lead.trycloudflare.com"
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.miwan.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
                 }
             }
         },
         {
-            "tag": "@oneclickvpnkeys | RELAY🚩 | 162.159.1.94:443 | 8.65ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 52.47.53.178:22222 | 193.24ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "52.47.53.178",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.miwan.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@PrivateVPNs | GB🇬🇧 | 18.169.212.197:22222 | 125.51ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "18.169.212.197",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.miwan.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | GB🇬🇧 | 18.169.32.83:22222 | 127.78ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "18.169.32.83",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.miwan.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | IE🇮🇪 | 52.215.164.132:22222 | 153.95ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "52.215.164.132",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.miwan.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | IE🇮🇪 | 63.35.107.18:22222 | 114.24ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "63.35.107.18",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.miwan.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@oneclickvpnkeys | RELAY🚩 | 162.159.1.94:443 | 8.71ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "162.159.1.94",
             "server_port": 443,
@@ -226,7 +357,7 @@
             }
         },
         {
-            "tag": "@fnet00 | RELAY🚩 | cdn13.cdn2cdn.com:2083 | 29.21ms | 0️⃣1️⃣",
+            "tag": "@fnet00 | RELAY🚩 | cdn13.cdn2cdn.com:2083 | 77.61ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "cdn13.cdn2cdn.com",
             "server_port": 2083,
@@ -250,111 +381,6 @@
                 "path": "\/\/",
                 "headers": {
                     "Host": null
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | DE🇩🇪 | 3.73.155.108:22222 | 161.09ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "3.73.155.108",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.miwan.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | DE🇩🇪 | 3.76.136.2:22222 | 182.66ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "3.76.136.2",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.miwan.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@DirectVPN | FR🇫🇷 | 35.181.133.244:22222 | 144.62ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "35.181.133.244",
-            "server_port": 22222,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.miwan.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@DirectVPN | GB🇬🇧 | 13.41.123.117:22222 | 127.51ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "13.41.123.117",
-            "server_port": 22222,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.miwan.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@DirectVPN | GB🇬🇧 | 18.169.32.83:22222 | 129.27ms | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "18.169.32.83",
-            "server_port": 22222,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.miwan.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
                 }
             }
         },
