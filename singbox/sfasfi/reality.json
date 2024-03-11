@@ -102,18 +102,19 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "DE🇩🇪",
-                "GB🇬🇧"
+                "DE🇩🇪"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @NIM_VPN_ir | DE🇩🇪 | 78.46.233.103:34883 | 143.44ms | 0️⃣3️⃣",
-                "REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 3.77.151.153:2087 | 144.09ms | 0️⃣2️⃣",
-                "REALITY | @v2ray_swhil | DE🇩🇪 | tataloo.mmdgogoli.top:2096 | 358.19ms | 0️⃣3️⃣",
-                "REALITY | @ARv2ray | GB🇬🇧 | 198.244.141.119:443 | 142.87ms | 0️⃣3️⃣"
+                "REALITY | @NIM_VPN_ir | DE🇩🇪 | 78.46.233.103:34883 | 113.26ms | 0️⃣3️⃣",
+                "REALITY | @ipV2Ray | DE🇩🇪 | 167.235.254.182:443 | 116.44ms | 0️⃣1️⃣",
+                "REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 3.77.151.153:2087 | 134.61ms | 0️⃣2️⃣",
+                "REALITY | @v2ray_swhil | DE🇩🇪 | tataloo.mmdgogoli.top:2096 | 339.04ms | 0️⃣3️⃣",
+                "REALITY | @proxyymeliii | DE🇩🇪 | 167.235.254.182:443 | 113.47ms | 0️⃣3️⃣",
+                "REALITY | @lrnbymaa | DE🇩🇪 | ng.nourycazablanka.online:11426 | 144.39ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -123,26 +124,19 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @NIM_VPN_ir | DE🇩🇪 | 78.46.233.103:34883 | 143.44ms | 0️⃣3️⃣",
-                "REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 3.77.151.153:2087 | 144.09ms | 0️⃣2️⃣",
-                "REALITY | @v2ray_swhil | DE🇩🇪 | tataloo.mmdgogoli.top:2096 | 358.19ms | 0️⃣3️⃣"
+                "REALITY | @NIM_VPN_ir | DE🇩🇪 | 78.46.233.103:34883 | 113.26ms | 0️⃣3️⃣",
+                "REALITY | @ipV2Ray | DE🇩🇪 | 167.235.254.182:443 | 116.44ms | 0️⃣1️⃣",
+                "REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 3.77.151.153:2087 | 134.61ms | 0️⃣2️⃣",
+                "REALITY | @v2ray_swhil | DE🇩🇪 | tataloo.mmdgogoli.top:2096 | 339.04ms | 0️⃣3️⃣",
+                "REALITY | @proxyymeliii | DE🇩🇪 | 167.235.254.182:443 | 113.47ms | 0️⃣3️⃣",
+                "REALITY | @lrnbymaa | DE🇩🇪 | ng.nourycazablanka.online:11426 | 144.39ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "GB🇬🇧",
-            "type": "urltest",
-            "outbounds": [
-                "REALITY | @ARv2ray | GB🇬🇧 | 198.244.141.119:443 | 142.87ms | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "REALITY | @NIM_VPN_ir | DE🇩🇪 | 78.46.233.103:34883 | 143.44ms | 0️⃣3️⃣",
+            "tag": "REALITY | @NIM_VPN_ir | DE🇩🇪 | 78.46.233.103:34883 | 113.26ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "78.46.233.103",
             "server_port": 34883,
@@ -170,7 +164,42 @@
             }
         },
         {
-            "tag": "REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 3.77.151.153:2087 | 144.09ms | 0️⃣2️⃣",
+            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | 167.235.254.182:443 | 116.44ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "167.235.254.182",
+            "server_port": 443,
+            "uuid": "731b6dc7-d0d8-4cc5-a0fb-058250ca94df",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "*.linguisticstudio.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "PRfphXMS_5ViAiBcRDMdYTTuOeiQJ-TbQpif6nEpbQw",
+                    "short_id": "c7be06f8"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 3.77.151.153:2087 | 134.61ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "3.77.151.153",
             "server_port": 2087,
@@ -205,7 +234,7 @@
             }
         },
         {
-            "tag": "REALITY | @v2ray_swhil | DE🇩🇪 | tataloo.mmdgogoli.top:2096 | 358.19ms | 0️⃣3️⃣",
+            "tag": "REALITY | @v2ray_swhil | DE🇩🇪 | tataloo.mmdgogoli.top:2096 | 339.04ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "tataloo.mmdgogoli.top",
             "server_port": 2096,
@@ -240,11 +269,11 @@
             }
         },
         {
-            "tag": "REALITY | @ARv2ray | GB🇬🇧 | 198.244.141.119:443 | 142.87ms | 0️⃣3️⃣",
+            "tag": "REALITY | @proxyymeliii | DE🇩🇪 | 167.235.254.182:443 | 113.47ms | 0️⃣3️⃣",
             "type": "vless",
-            "server": "198.244.141.119",
+            "server": "167.235.254.182",
             "server_port": 443,
-            "uuid": "telegram-id-ArV2ray",
+            "uuid": "731b6dc7-d0d8-4cc5-a0fb-058250ca94df",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -254,7 +283,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "greenpepper.ir",
+                "server_name": "",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -262,16 +291,44 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "QP1JYtA4ofSTisYybOL0o0_jEL0pi7unhhtlKe5lylQ",
-                    "short_id": "994ac4f7"
+                    "public_key": "PRfphXMS_5ViAiBcRDMdYTTuOeiQJ-TbQpif6nEpbQw",
+                    "short_id": ""
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "service_name": "",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @lrnbymaa | DE🇩🇪 | ng.nourycazablanka.online:11426 | 144.39ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "ng.nourycazablanka.online",
+            "server_port": 11426,
+            "uuid": "8d8b36e3-9237-49c6-b09c-e3c9dfc6be4e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ng.nourycazablanka.online",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "xv9dgE3CwwjEFMGfEn3EXyUvH3qfotIeu9v2xxm4sg4",
+                    "short_id": "266b4610"
+                }
             }
         },
         {
