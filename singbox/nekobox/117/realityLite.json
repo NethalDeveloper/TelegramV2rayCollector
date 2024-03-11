@@ -99,23 +99,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @ipV2Ray | DE🇩🇪 | 49.13.28.210:443 | 163.8ms | 0️⃣1️⃣",
-                "REALITY | @v2ray_swhil | DE🇩🇪 | tataloo.mmdgogoli.top:2096 | 360.21ms | 0️⃣3️⃣"
+                "REALITY | @ipV2Ray | DE🇩🇪 | 49.13.28.210:443 | 96.9ms | 0️⃣1️⃣",
+                "REALITY | @ARv2ray | GB🇬🇧 | 198.244.141.119:443 | 77.52ms | 0️⃣3️⃣",
+                "REALITY | @v2ray_swhil | DE🇩🇪 | tataloo.mmdgogoli.top:2096 | 315.31ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ipV2Ray | DE🇩🇪 | 49.13.28.210:443 | 163.8ms | 0️⃣1️⃣",
-                "REALITY | @v2ray_swhil | DE🇩🇪 | tataloo.mmdgogoli.top:2096 | 360.21ms | 0️⃣3️⃣"
+                "REALITY | @ipV2Ray | DE🇩🇪 | 49.13.28.210:443 | 96.9ms | 0️⃣1️⃣",
+                "REALITY | @ARv2ray | GB🇬🇧 | 198.244.141.119:443 | 77.52ms | 0️⃣3️⃣",
+                "REALITY | @v2ray_swhil | DE🇩🇪 | tataloo.mmdgogoli.top:2096 | 315.31ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | 49.13.28.210:443 | 163.8ms | 0️⃣1️⃣",
+            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | 49.13.28.210:443 | 96.9ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "49.13.28.210",
             "server_port": 443,
@@ -150,7 +152,42 @@
             }
         },
         {
-            "tag": "REALITY | @v2ray_swhil | DE🇩🇪 | tataloo.mmdgogoli.top:2096 | 360.21ms | 0️⃣3️⃣",
+            "tag": "REALITY | @ARv2ray | GB🇬🇧 | 198.244.141.119:443 | 77.52ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "198.244.141.119",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "greenpepper.ir",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "QP1JYtA4ofSTisYybOL0o0_jEL0pi7unhhtlKe5lylQ",
+                    "short_id": "994ac4f7"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @v2ray_swhil | DE🇩🇪 | tataloo.mmdgogoli.top:2096 | 315.31ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "tataloo.mmdgogoli.top",
             "server_port": 2096,
