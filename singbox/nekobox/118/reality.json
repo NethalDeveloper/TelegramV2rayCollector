@@ -104,14 +104,17 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "FI🇫🇮"
+                "FI🇫🇮",
+                "DE🇩🇪"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ipV2Ray | FI🇫🇮 | 95.216.171.190:443 | 114.6ms | 0️⃣2️⃣"
+                "REALITY | @ipV2Ray | FI🇫🇮 | 95.216.171.190:443 | 172.38ms | 0️⃣2️⃣",
+                "REALITY | @ARv2ray | DE🇩🇪 | 91.107.166.66:443 | 150.39ms | 0️⃣2️⃣",
+                "REALITY | @ARv2ray | DE🇩🇪 | 91.107.190.119:443 | 151.13ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -121,14 +124,25 @@
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ipV2Ray | FI🇫🇮 | 95.216.171.190:443 | 114.6ms | 0️⃣2️⃣"
+                "REALITY | @ipV2Ray | FI🇫🇮 | 95.216.171.190:443 | 172.38ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @ipV2Ray | FI🇫🇮 | 95.216.171.190:443 | 114.6ms | 0️⃣2️⃣",
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "REALITY | @ARv2ray | DE🇩🇪 | 91.107.166.66:443 | 150.39ms | 0️⃣2️⃣",
+                "REALITY | @ARv2ray | DE🇩🇪 | 91.107.190.119:443 | 151.13ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "REALITY | @ipV2Ray | FI🇫🇮 | 95.216.171.190:443 | 172.38ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "95.216.171.190",
             "server_port": 443,
@@ -157,6 +171,76 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "@ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @ARv2ray | DE🇩🇪 | 91.107.166.66:443 | 150.39ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "91.107.166.66",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ftp.debian.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "KFOzSzVlzex1wZ67ZdIye-E69IGaa-ZjkDNLj9OHPU8",
+                    "short_id": "673b7256"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @ARv2ray | DE🇩🇪 | 91.107.190.119:443 | 151.13ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "91.107.190.119",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "*.hetzner.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "z_YPbzYxvoilaT-xq4WyRPNuNTqFwID2oSwIBzsO9is",
+                    "short_id": "38630c46"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
