@@ -97,15 +97,48 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST",
+                "REALITY | @v2rayNG_Matsuri | FI🇫🇮 | 65.21.185.201:443 | 115.58ms | 0️⃣3️⃣"
+            ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "REALITY | @v2rayNG_Matsuri | FI🇫🇮 | 65.21.185.201:443 | 115.58ms | 0️⃣3️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "REALITY | @v2rayNG_Matsuri | FI🇫🇮 | 65.21.185.201:443 | 115.58ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "65.21.185.201",
+            "server_port": 443,
+            "uuid": "81b6acbf-dc4e-4138-9823-f22cf0e32ce7",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Cre3tb9lB-uxv-sn8AAXsB0dKnya6CBzwjI0ZF7auWk",
+                    "short_id": "73d9060b"
+                }
+            }
         },
         {
             "tag": "direct",
