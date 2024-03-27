@@ -100,48 +100,15 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": [
-                "URL-TEST",
-                "REALITY | @v2ray1_ng | NL🇳🇱 | allrevolt.r8volt.com:8443 | 93.51ms | 0️⃣2️⃣"
-            ]
+            "outbounds": null
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [
-                "REALITY | @v2ray1_ng | NL🇳🇱 | allrevolt.r8volt.com:8443 | 93.51ms | 0️⃣2️⃣"
-            ],
+            "outbounds": null,
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
-        },
-        {
-            "tag": "REALITY | @v2ray1_ng | NL🇳🇱 | allrevolt.r8volt.com:8443 | 93.51ms | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "allrevolt.r8volt.com",
-            "server_port": 8443,
-            "uuid": "ae5aed77-be23-4f6c-bd51-c73745038952",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "maps.google.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "NbtOWq_km9k_SKgCJatXla3Jl7gGKVbjQ-GAtGg4bEk",
-                    "short_id": "bfde1c85a6a4112a"
-                }
-            }
         },
         {
             "tag": "direct",
