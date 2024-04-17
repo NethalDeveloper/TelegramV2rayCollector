@@ -102,25 +102,23 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @VmessProtocol | GB🇬🇧 | 45.140.167.94:8443 | 78.56ms | 0️⃣1️⃣",
-                "REALITY | @VmessProtocol | FR🇫🇷 | 185.234.64.35:8443 | 81.68ms | 0️⃣2️⃣",
-                "REALITY | @ConfigsHUB | TR🇹🇷 | 185.17.136.169:8443 | 117.1ms | 0️⃣3️⃣"
+                "REALITY | @VmessProtocol | GB🇬🇧 | 45.140.167.94:8443 | 150.97ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | FR🇫🇷 | 185.234.64.35:8443 | 150.28ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @VmessProtocol | GB🇬🇧 | 45.140.167.94:8443 | 78.56ms | 0️⃣1️⃣",
-                "REALITY | @VmessProtocol | FR🇫🇷 | 185.234.64.35:8443 | 81.68ms | 0️⃣2️⃣",
-                "REALITY | @ConfigsHUB | TR🇹🇷 | 185.17.136.169:8443 | 117.1ms | 0️⃣3️⃣"
+                "REALITY | @VmessProtocol | GB🇬🇧 | 45.140.167.94:8443 | 150.97ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | FR🇫🇷 | 185.234.64.35:8443 | 150.28ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @VmessProtocol | GB🇬🇧 | 45.140.167.94:8443 | 78.56ms | 0️⃣1️⃣",
+            "tag": "REALITY | @VmessProtocol | GB🇬🇧 | 45.140.167.94:8443 | 150.97ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "45.140.167.94",
             "server_port": 8443,
@@ -155,7 +153,7 @@
             }
         },
         {
-            "tag": "REALITY | @VmessProtocol | FR🇫🇷 | 185.234.64.35:8443 | 81.68ms | 0️⃣2️⃣",
+            "tag": "REALITY | @VmessProtocol | FR🇫🇷 | 185.234.64.35:8443 | 150.28ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "185.234.64.35",
             "server_port": 8443,
@@ -184,41 +182,6 @@
             "transport": {
                 "type": "grpc",
                 "service_name": "grpc",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "REALITY | @ConfigsHUB | TR🇹🇷 | 185.17.136.169:8443 | 117.1ms | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "185.17.136.169",
-            "server_port": 8443,
-            "uuid": "4f3a30ab-87cc-45a5-972f-f4631f11c914",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "wordpress.org",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "J0CUj7Ae6z0sq16diTikhJUTi_NIRc4jaEUH-4khoCc",
-                    "short_id": "876b28ef"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@Monjamed",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
