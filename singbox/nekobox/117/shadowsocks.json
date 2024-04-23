@@ -99,6 +99,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "GB🇬🇧",
                 "CA🇨🇦",
                 "RU🇷🇺",
                 "US🇺🇸"
@@ -108,11 +109,23 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | ca.yangon.club:443 | 85.86ms | 0️⃣1️⃣",
-                "@free4allVPN | CA🇨🇦 | ca.yangon.club:443 | 96.06ms | 0️⃣2️⃣",
-                "@VmessProtocol | RU🇷🇺 | 95.174.94.76:6666 | 147.68ms | 0️⃣1️⃣",
-                "@OutlineVpnOfficial | US🇺🇸 | 142.202.48.99:8091 | 23.28ms | 0️⃣1️⃣",
-                "@OutlineVpnOfficial | US🇺🇸 | 38.68.135.18:6697 | 62.61ms | 0️⃣2️⃣"
+                "@free4allVPN | GB🇬🇧 | 46.250.237.91:443 | 171.04ms | 0️⃣1️⃣",
+                "@free4allVPN | CA🇨🇦 | ca.yangon.club:443 | 64.05ms | 0️⃣2️⃣",
+                "@free4allVPN | CA🇨🇦 | ca.yangon.club:443 | 38.87ms | 0️⃣3️⃣",
+                "@VmessProtocol | RU🇷🇺 | 95.174.94.76:6666 | 166.79ms | 0️⃣1️⃣",
+                "@OutlineVpnOfficial | US🇺🇸 | 142.202.48.99:8091 | 68.83ms | 0️⃣1️⃣",
+                "@OutlineVpnOfficial | US🇺🇸 | 38.143.66.87:3306 | 37.86ms | 0️⃣2️⃣",
+                "@OutlineVpnOfficial | US🇺🇸 | 38.68.135.18:6697 | 58.11ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "@free4allVPN | GB🇬🇧 | 46.250.237.91:443 | 171.04ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -122,8 +135,8 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | ca.yangon.club:443 | 85.86ms | 0️⃣1️⃣",
-                "@free4allVPN | CA🇨🇦 | ca.yangon.club:443 | 96.06ms | 0️⃣2️⃣"
+                "@free4allVPN | CA🇨🇦 | ca.yangon.club:443 | 64.05ms | 0️⃣2️⃣",
+                "@free4allVPN | CA🇨🇦 | ca.yangon.club:443 | 38.87ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,7 +146,7 @@
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | RU🇷🇺 | 95.174.94.76:6666 | 147.68ms | 0️⃣1️⃣"
+                "@VmessProtocol | RU🇷🇺 | 95.174.94.76:6666 | 166.79ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,15 +156,26 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@OutlineVpnOfficial | US🇺🇸 | 142.202.48.99:8091 | 23.28ms | 0️⃣1️⃣",
-                "@OutlineVpnOfficial | US🇺🇸 | 38.68.135.18:6697 | 62.61ms | 0️⃣2️⃣"
+                "@OutlineVpnOfficial | US🇺🇸 | 142.202.48.99:8091 | 68.83ms | 0️⃣1️⃣",
+                "@OutlineVpnOfficial | US🇺🇸 | 38.143.66.87:3306 | 37.86ms | 0️⃣2️⃣",
+                "@OutlineVpnOfficial | US🇺🇸 | 38.68.135.18:6697 | 58.11ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | CA🇨🇦 | ca.yangon.club:443 | 85.86ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | GB🇬🇧 | 46.250.237.91:443 | 171.04ms | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "46.250.237.91",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "21RNQoKRWtF74kGl4dAuf5",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@free4allVPN | CA🇨🇦 | ca.yangon.club:443 | 64.05ms | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "ca.yangon.club",
             "server_port": 443,
@@ -161,7 +185,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@free4allVPN | CA🇨🇦 | ca.yangon.club:443 | 96.06ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | CA🇨🇦 | ca.yangon.club:443 | 38.87ms | 0️⃣3️⃣",
             "type": "shadowsocks",
             "server": "ca.yangon.club",
             "server_port": 443,
@@ -171,7 +195,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@VmessProtocol | RU🇷🇺 | 95.174.94.76:6666 | 147.68ms | 0️⃣1️⃣",
+            "tag": "@VmessProtocol | RU🇷🇺 | 95.174.94.76:6666 | 166.79ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "95.174.94.76",
             "server_port": 6666,
@@ -181,7 +205,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@OutlineVpnOfficial | US🇺🇸 | 142.202.48.99:8091 | 23.28ms | 0️⃣1️⃣",
+            "tag": "@OutlineVpnOfficial | US🇺🇸 | 142.202.48.99:8091 | 68.83ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "142.202.48.99",
             "server_port": 8091,
@@ -191,7 +215,17 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@OutlineVpnOfficial | US🇺🇸 | 38.68.135.18:6697 | 62.61ms | 0️⃣2️⃣",
+            "tag": "@OutlineVpnOfficial | US🇺🇸 | 38.143.66.87:3306 | 37.86ms | 0️⃣2️⃣",
+            "type": "shadowsocks",
+            "server": "38.143.66.87",
+            "server_port": 3306,
+            "method": "aes-256-gcm",
+            "password": "Y6R9pAtvxxzmGC",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@OutlineVpnOfficial | US🇺🇸 | 38.68.135.18:6697 | 58.11ms | 0️⃣3️⃣",
             "type": "shadowsocks",
             "server": "38.68.135.18",
             "server_port": 6697,
