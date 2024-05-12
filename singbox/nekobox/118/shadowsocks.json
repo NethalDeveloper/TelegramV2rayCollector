@@ -114,10 +114,11 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RU🇷🇺 | fi.dartvpn.team:443 | 191.79ms | 0️⃣1️⃣",
-                "@VmessProtocol | GB🇬🇧 | series-a2-mec.varzesh360.co:443 | 207.57ms | 0️⃣1️⃣",
-                "@OutlineVpnOfficial | US🇺🇸 | 45.158.171.227:8080 | 100.61ms | 0️⃣1️⃣",
-                "@OutlineVpnOfficial | PL🇵🇱 | 51.77.53.200:4444 | 123.27ms | 0️⃣2️⃣"
+                "@free4allVPN | RU🇷🇺 | fi.dartvpn.team:443 | 210.93ms | 0️⃣1️⃣",
+                "@VmessProtocol | GB🇬🇧 | series-a2-mec.varzesh360.co:443 | 4659.56ms | 0️⃣1️⃣",
+                "@OutlineVpnOfficial | GB🇬🇧 | 145.239.6.202:8008 | 143.09ms | 0️⃣1️⃣",
+                "@OutlineVpnOfficial | US🇺🇸 | 45.158.171.227:8080 | 133.96ms | 0️⃣2️⃣",
+                "@OutlineVpnOfficial | PL🇵🇱 | 51.77.53.200:4444 | 172.65ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -127,7 +128,7 @@
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RU🇷🇺 | fi.dartvpn.team:443 | 191.79ms | 0️⃣1️⃣"
+                "@free4allVPN | RU🇷🇺 | fi.dartvpn.team:443 | 210.93ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -137,7 +138,8 @@
             "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | GB🇬🇧 | series-a2-mec.varzesh360.co:443 | 207.57ms | 0️⃣1️⃣"
+                "@VmessProtocol | GB🇬🇧 | series-a2-mec.varzesh360.co:443 | 4659.56ms | 0️⃣1️⃣",
+                "@OutlineVpnOfficial | GB🇬🇧 | 145.239.6.202:8008 | 143.09ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -147,7 +149,7 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@OutlineVpnOfficial | US🇺🇸 | 45.158.171.227:8080 | 100.61ms | 0️⃣1️⃣"
+                "@OutlineVpnOfficial | US🇺🇸 | 45.158.171.227:8080 | 133.96ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -157,14 +159,14 @@
             "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
-                "@OutlineVpnOfficial | PL🇵🇱 | 51.77.53.200:4444 | 123.27ms | 0️⃣2️⃣"
+                "@OutlineVpnOfficial | PL🇵🇱 | 51.77.53.200:4444 | 172.65ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RU🇷🇺 | fi.dartvpn.team:443 | 191.79ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RU🇷🇺 | fi.dartvpn.team:443 | 210.93ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "fi.dartvpn.team",
             "server_port": 443,
@@ -174,7 +176,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@VmessProtocol | GB🇬🇧 | series-a2-mec.varzesh360.co:443 | 207.57ms | 0️⃣1️⃣",
+            "tag": "@VmessProtocol | GB🇬🇧 | series-a2-mec.varzesh360.co:443 | 4659.56ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "series-a2-mec.varzesh360.co",
             "server_port": 443,
@@ -184,7 +186,17 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@OutlineVpnOfficial | US🇺🇸 | 45.158.171.227:8080 | 100.61ms | 0️⃣1️⃣",
+            "tag": "@OutlineVpnOfficial | GB🇬🇧 | 145.239.6.202:8008 | 143.09ms | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "145.239.6.202",
+            "server_port": 8008,
+            "method": "aes-256-gcm",
+            "password": "XKFKl2rULjIp74",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@OutlineVpnOfficial | US🇺🇸 | 45.158.171.227:8080 | 133.96ms | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "45.158.171.227",
             "server_port": 8080,
@@ -194,7 +206,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@OutlineVpnOfficial | PL🇵🇱 | 51.77.53.200:4444 | 123.27ms | 0️⃣2️⃣",
+            "tag": "@OutlineVpnOfficial | PL🇵🇱 | 51.77.53.200:4444 | 172.65ms | 0️⃣3️⃣",
             "type": "shadowsocks",
             "server": "51.77.53.200",
             "server_port": 4444,
