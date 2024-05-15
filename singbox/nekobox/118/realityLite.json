@@ -102,15 +102,122 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST",
+                "REALITY | @VmessProtocol | DE🇩🇪 | 49.13.69.46:35689 | 92.46ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:443 | 105.78ms | 0️⃣2️⃣",
+                "REALITY | @VmessProtocol | SE🇸🇪 | 77.221.143.183:33000 | 124.59ms | 0️⃣3️⃣"
+            ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "REALITY | @VmessProtocol | DE🇩🇪 | 49.13.69.46:35689 | 92.46ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:443 | 105.78ms | 0️⃣2️⃣",
+                "REALITY | @VmessProtocol | SE🇸🇪 | 77.221.143.183:33000 | 124.59ms | 0️⃣3️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "REALITY | @VmessProtocol | DE🇩🇪 | 49.13.69.46:35689 | 92.46ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "49.13.69.46",
+            "server_port": 35689,
+            "uuid": "f0815d23-7a73-49ff-b3e5-2dbd787eeddd",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ea.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "4ShiXcO4VVtmlyWzNE2DAtIwkeD7KKZgwgY-lfkNm3w",
+                    "short_id": "11b12101"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:443 | 105.78ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "185.125.171.13",
+            "server_port": 443,
+            "uuid": "a09373e2-e120-457d-9ec9-ea7fe8bedb52",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "partner.g2.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @VmessProtocol | SE🇸🇪 | 77.221.143.183:33000 | 124.59ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "77.221.143.183",
+            "server_port": 33000,
+            "uuid": "d5e775de-0530-4062-a654-25dd2ba648d2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "JrN7nZEbUeBJFHTAKwtz5Dmd10SGgA8UCHEMLA2xOg0",
+                    "short_id": "be7f13dd"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "b",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "direct",
