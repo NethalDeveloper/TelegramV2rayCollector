@@ -104,53 +104,21 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @melov2ray | DE🇩🇪 | 91.107.177.233:443 | 93.95ms | 0️⃣3️⃣",
-                "REALITY | @vless_vmess | FR🇫🇷 | 141.95.75.212:443 | 101.27ms | 0️⃣3️⃣",
-                "REALITY | @FreakConfig | DE🇩🇪 | 49.13.69.46:35689 | 93.94ms | 0️⃣2️⃣"
+                "REALITY | @vless_vmess | FR🇫🇷 | 141.95.75.212:443 | 159.95ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @melov2ray | DE🇩🇪 | 91.107.177.233:443 | 93.95ms | 0️⃣3️⃣",
-                "REALITY | @vless_vmess | FR🇫🇷 | 141.95.75.212:443 | 101.27ms | 0️⃣3️⃣",
-                "REALITY | @FreakConfig | DE🇩🇪 | 49.13.69.46:35689 | 93.94ms | 0️⃣2️⃣"
+                "REALITY | @vless_vmess | FR🇫🇷 | 141.95.75.212:443 | 159.95ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @melov2ray | DE🇩🇪 | 91.107.177.233:443 | 93.95ms | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "91.107.177.233",
-            "server_port": 443,
-            "uuid": "f932faab-06ca-4dc1-941e-b141c737acd7",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ftp.debian.org",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "X8cTJaj6y_8qU9iyJm61MDQda_5h0gPES2J8myYiSjA",
-                    "short_id": "2ff994e7"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @vless_vmess | FR🇫🇷 | 141.95.75.212:443 | 101.27ms | 0️⃣3️⃣",
+            "tag": "REALITY | @vless_vmess | FR🇫🇷 | 141.95.75.212:443 | 159.95ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "141.95.75.212",
             "server_port": 443,
@@ -175,41 +143,6 @@
                     "public_key": "yiHA11T4BplJbQxAfsQkiiAzAmyxWau-KR7dQptwjDU",
                     "short_id": "c741ad33"
                 }
-            }
-        },
-        {
-            "tag": "REALITY | @FreakConfig | DE🇩🇪 | 49.13.69.46:35689 | 93.94ms | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "49.13.69.46",
-            "server_port": 35689,
-            "uuid": "f0815d23-7a73-49ff-b3e5-2dbd787eeddd",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ea.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "4ShiXcO4VVtmlyWzNE2DAtIwkeD7KKZgwgY-lfkNm3w",
-                    "short_id": "11b12101"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
