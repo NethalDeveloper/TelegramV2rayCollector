@@ -102,25 +102,62 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @proxyymeliii | IR🇮🇷 | order.gomgom.tech:2004 | 429.51ms | 0️⃣2️⃣"
+                "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:8443 | 121.83ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:443 | 121.79ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @proxyymeliii | IR🇮🇷 | order.gomgom.tech:2004 | 429.51ms | 0️⃣2️⃣"
+                "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:8443 | 121.83ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:443 | 121.79ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @proxyymeliii | IR🇮🇷 | order.gomgom.tech:2004 | 429.51ms | 0️⃣2️⃣",
+            "tag": "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:8443 | 121.83ms | 0️⃣1️⃣",
             "type": "vless",
-            "server": "order.gomgom.tech",
-            "server_port": 2004,
-            "uuid": "08fe3471-6e81-4af3-819f-9f8e03c81336",
+            "server": "185.125.171.13",
+            "server_port": 8443,
+            "uuid": "a09373e2-e120-457d-9ec9-ea7fe8bedb52",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "partner.g2.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "g2com",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:443 | 121.79ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "185.125.171.13",
+            "server_port": 443,
+            "uuid": "a09373e2-e120-457d-9ec9-ea7fe8bedb52",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -130,7 +167,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.speedtest.net",
+                "server_name": "partner.g2.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -138,8 +175,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "SHVNyUSseB1aZcaBOtrb4Tm4o5kDob6DgzRcRgaEpAE",
-                    "short_id": "585a3054"
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
                 }
             }
         },
