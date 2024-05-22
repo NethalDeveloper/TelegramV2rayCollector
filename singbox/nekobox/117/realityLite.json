@@ -99,27 +99,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:8443 | 122.13ms | 0️⃣1️⃣",
-                "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:443 | 122.41ms | 0️⃣2️⃣"
+                "REALITY | @VmessProtocol | US🇺🇸 | 164.92.104.200:443 | 4.15ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:8443 | 122.13ms | 0️⃣1️⃣",
-                "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:443 | 122.41ms | 0️⃣2️⃣"
+                "REALITY | @VmessProtocol | US🇺🇸 | 164.92.104.200:443 | 4.15ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:8443 | 122.13ms | 0️⃣1️⃣",
+            "tag": "REALITY | @VmessProtocol | US🇺🇸 | 164.92.104.200:443 | 4.15ms | 0️⃣1️⃣",
             "type": "vless",
-            "server": "185.125.171.13",
-            "server_port": 8443,
-            "uuid": "a09373e2-e120-457d-9ec9-ea7fe8bedb52",
+            "server": "164.92.104.200",
+            "server_port": 443,
+            "uuid": "739545b9-591f-4ed6-8aec-80e516a4cf73",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -129,7 +127,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "partner.g2.com",
+                "server_name": "cdn.discordapp.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -137,43 +135,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-                    "short_id": ""
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "g2com",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:443 | 122.41ms | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "185.125.171.13",
-            "server_port": 443,
-            "uuid": "a09373e2-e120-457d-9ec9-ea7fe8bedb52",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "partner.g2.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-                    "short_id": ""
+                    "public_key": "9VrYAqhhPlEMyc0EIs0rJ7FalFFPk5Tml_Zt7JRPjVQ",
+                    "short_id": "350ace1f"
                 }
             }
         },
