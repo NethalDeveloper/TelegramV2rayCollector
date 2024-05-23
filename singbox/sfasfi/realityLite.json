@@ -102,26 +102,26 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @v2rayNG_Matsuri | NL🇳🇱 | 185.142.238.222:8443 | 80.84ms | 0️⃣3️⃣"
+                "REALITY | @v2rayNG_Matsuri | SE🇸🇪 | 147.45.75.15:443 | 115.09ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @v2rayNG_Matsuri | NL🇳🇱 | 185.142.238.222:8443 | 80.84ms | 0️⃣3️⃣"
+                "REALITY | @v2rayNG_Matsuri | SE🇸🇪 | 147.45.75.15:443 | 115.09ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @v2rayNG_Matsuri | NL🇳🇱 | 185.142.238.222:8443 | 80.84ms | 0️⃣3️⃣",
+            "tag": "REALITY | @v2rayNG_Matsuri | SE🇸🇪 | 147.45.75.15:443 | 115.09ms | 0️⃣1️⃣",
             "type": "vless",
-            "server": "185.142.238.222",
-            "server_port": 8443,
-            "uuid": "ae5aed77-be23-4f6c-bd51-c73745038952",
-            "flow": "xtls-rprx-vision",
+            "server": "147.45.75.15",
+            "server_port": 443,
+            "uuid": "4e92b5fa-1f26-4a81-8442-5867a8fa0c4f",
+            "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -130,7 +130,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "maps.google.com",
+                "server_name": "discord.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -138,9 +138,16 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "NbtOWq_km9k_SKgCJatXla3Jl7gGKVbjQ-GAtGg4bEk",
-                    "short_id": "bfde1c85a6a4112a"
+                    "public_key": "MDGcyoAKUOBI2qJt-qvnBZRueuDxw-eSDV5DEBH_Flo",
+                    "short_id": "0c8275a5"
                 }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@set_v2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
