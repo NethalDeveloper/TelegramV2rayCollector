@@ -100,15 +100,85 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST",
+                "REALITY | @v2rayNG_Matsuri | US🇺🇸 | 5.161.159.111:39379 | 49.55ms | 0️⃣2️⃣",
+                "REALITY | @v2rayNG_Matsuri | NL🇳🇱 | 185.142.238.222:443 | 150.88ms | 0️⃣3️⃣"
+            ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "REALITY | @v2rayNG_Matsuri | US🇺🇸 | 5.161.159.111:39379 | 49.55ms | 0️⃣2️⃣",
+                "REALITY | @v2rayNG_Matsuri | NL🇳🇱 | 185.142.238.222:443 | 150.88ms | 0️⃣3️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "REALITY | @v2rayNG_Matsuri | US🇺🇸 | 5.161.159.111:39379 | 49.55ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "5.161.159.111",
+            "server_port": 39379,
+            "uuid": "37b9c44c-bba1-4add-ac39-2f01774caa7d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "discord.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "3TO2yeC8KYTVCLzLRR9dW4AAzHFGxorRZzvxdV2kDW4",
+                    "short_id": "0333e61c"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @v2rayNG_Matsuri | NL🇳🇱 | 185.142.238.222:443 | 150.88ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "185.142.238.222",
+            "server_port": 443,
+            "uuid": "ae5aed77-be23-4f6c-bd51-c73745038952",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vu.nl",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Pk--Og6oefYaJlSVLEleq267EVt6NaNRIc0PR-4K9nk",
+                    "short_id": "77895d125b69cf7c"
+                }
+            }
         },
         {
             "tag": "direct",
