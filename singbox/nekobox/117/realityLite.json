@@ -99,23 +99,23 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @ARv2ray | DE🇩🇪 | 136.243.33.215:443 | 159.17ms | 0️⃣1️⃣",
-                "REALITY | @ARv2ray | DE🇩🇪 | 91.107.141.59:443 | 160.7ms | 0️⃣3️⃣"
+                "REALITY | @ARv2ray | DE🇩🇪 | 136.243.33.215:443 | 90.32ms | 0️⃣2️⃣",
+                "REALITY | @Outlinev2rayNG | DE🇩🇪 | 91.107.176.13:8080 | 90.47ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ARv2ray | DE🇩🇪 | 136.243.33.215:443 | 159.17ms | 0️⃣1️⃣",
-                "REALITY | @ARv2ray | DE🇩🇪 | 91.107.141.59:443 | 160.7ms | 0️⃣3️⃣"
+                "REALITY | @ARv2ray | DE🇩🇪 | 136.243.33.215:443 | 90.32ms | 0️⃣2️⃣",
+                "REALITY | @Outlinev2rayNG | DE🇩🇪 | 91.107.176.13:8080 | 90.47ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @ARv2ray | DE🇩🇪 | 136.243.33.215:443 | 159.17ms | 0️⃣1️⃣",
+            "tag": "REALITY | @ARv2ray | DE🇩🇪 | 136.243.33.215:443 | 90.32ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "136.243.33.215",
             "server_port": 443,
@@ -150,12 +150,12 @@
             }
         },
         {
-            "tag": "REALITY | @ARv2ray | DE🇩🇪 | 91.107.141.59:443 | 160.7ms | 0️⃣3️⃣",
+            "tag": "REALITY | @Outlinev2rayNG | DE🇩🇪 | 91.107.176.13:8080 | 90.47ms | 0️⃣3️⃣",
             "type": "vless",
-            "server": "91.107.141.59",
-            "server_port": 443,
-            "uuid": "9257ee7e-3872-4ce5-96fd-4a549240092c",
-            "flow": "",
+            "server": "91.107.176.13",
+            "server_port": 8080,
+            "uuid": "07669291-5061-4e74-a5d7-1f94a5a36367",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -164,7 +164,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.speedtest.net",
+                "server_name": "mdundo.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -172,16 +172,9 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "bDymiFq6ATz9MhNxbsaaQ1ZYapBudWc07qBADxJ7GFM",
-                    "short_id": "0fb028ed"
+                    "public_key": "UQcENeMy3VVqYDJIPm68FVHz9r2lC34ydM5chOKa5RU",
+                    "short_id": "18cada"
                 }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
