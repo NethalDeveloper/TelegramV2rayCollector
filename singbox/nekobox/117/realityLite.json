@@ -97,15 +97,48 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST",
+                "REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 3.76.7.64:443 | 115.73ms | 0️⃣3️⃣"
+            ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 3.76.7.64:443 | 115.73ms | 0️⃣3️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "REALITY | @v2rayNG_Matsuri | DE🇩🇪 | 3.76.7.64:443 | 115.73ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "3.76.7.64",
+            "server_port": 443,
+            "uuid": "4c10355d-4269-43c1-96cb-e7a794d102fc",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.tgju.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mgL6BgbmKbzsngIMqe_PTsFdFBVuYJVkGoTDgIn3O2M",
+                    "short_id": "39a26a2ba3b26562"
+                }
+            }
         },
         {
             "tag": "direct",
