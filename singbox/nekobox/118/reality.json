@@ -112,10 +112,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @Outline_Vpn | DE🇩🇪 | 162.55.56.225:443 | 153.27ms | 0️⃣3️⃣",
-                "REALITY | @VmessProtocol | US🇺🇸 | 104.168.107.230:7550 | 92.32ms | 0️⃣1️⃣",
-                "REALITY | @VmessProtocol | US🇺🇸 | 104.168.107.230:8339 | 82.69ms | 0️⃣2️⃣",
-                "REALITY | @VmessProtocol | US🇺🇸 | 104.168.107.230:5676 | 92.4ms | 0️⃣3️⃣"
+                "REALITY | @Outline_Vpn | DE🇩🇪 | 162.55.56.225:443 | 88.98ms | 0️⃣3️⃣",
+                "REALITY | @VmessProtocol | US🇺🇸 | 104.168.107.230:8339 | 17.29ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | US🇺🇸 | 104.168.107.230:5676 | 26.94ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -125,7 +124,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @Outline_Vpn | DE🇩🇪 | 162.55.56.225:443 | 153.27ms | 0️⃣3️⃣"
+                "REALITY | @Outline_Vpn | DE🇩🇪 | 162.55.56.225:443 | 88.98ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -135,16 +134,15 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @VmessProtocol | US🇺🇸 | 104.168.107.230:7550 | 92.32ms | 0️⃣1️⃣",
-                "REALITY | @VmessProtocol | US🇺🇸 | 104.168.107.230:8339 | 82.69ms | 0️⃣2️⃣",
-                "REALITY | @VmessProtocol | US🇺🇸 | 104.168.107.230:5676 | 92.4ms | 0️⃣3️⃣"
+                "REALITY | @VmessProtocol | US🇺🇸 | 104.168.107.230:8339 | 17.29ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | US🇺🇸 | 104.168.107.230:5676 | 26.94ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @Outline_Vpn | DE🇩🇪 | 162.55.56.225:443 | 153.27ms | 0️⃣3️⃣",
+            "tag": "REALITY | @Outline_Vpn | DE🇩🇪 | 162.55.56.225:443 | 88.98ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "162.55.56.225",
             "server_port": 443,
@@ -172,35 +170,7 @@
             }
         },
         {
-            "tag": "REALITY | @VmessProtocol | US🇺🇸 | 104.168.107.230:7550 | 92.32ms | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "104.168.107.230",
-            "server_port": 7550,
-            "uuid": "e58d0ee3-7d14-4dcf-99e7-ad219a781299",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "pixabay.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "QQHxQK7ocGHvaCmqtW3QapnKiBVd4ZjjM3zhCGVMPS4",
-                    "short_id": "db68e802226b21cd"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @VmessProtocol | US🇺🇸 | 104.168.107.230:8339 | 82.69ms | 0️⃣2️⃣",
+            "tag": "REALITY | @VmessProtocol | US🇺🇸 | 104.168.107.230:8339 | 17.29ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "104.168.107.230",
             "server_port": 8339,
@@ -228,7 +198,7 @@
             }
         },
         {
-            "tag": "REALITY | @VmessProtocol | US🇺🇸 | 104.168.107.230:5676 | 92.4ms | 0️⃣3️⃣",
+            "tag": "REALITY | @VmessProtocol | US🇺🇸 | 104.168.107.230:5676 | 26.94ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "104.168.107.230",
             "server_port": 5676,
