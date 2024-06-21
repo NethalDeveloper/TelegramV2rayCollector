@@ -99,23 +99,51 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @V2rayngninja | NL🇳🇱 | 78.141.221.194:8080 | 84.91ms | 0️⃣3️⃣",
-                "REALITY | @v2rayng_vpnrog | KR🇰🇷 | 132.226.172.147:62001 | 184.05ms | 0️⃣1️⃣"
+                "REALITY | @VmessProtocol | NL🇳🇱 | 185.142.238.222:8443 | 82.6ms | 0️⃣1️⃣",
+                "REALITY | @V2rayngninja | NL🇳🇱 | 78.141.221.194:8080 | 81.14ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @V2rayngninja | NL🇳🇱 | 78.141.221.194:8080 | 84.91ms | 0️⃣3️⃣",
-                "REALITY | @v2rayng_vpnrog | KR🇰🇷 | 132.226.172.147:62001 | 184.05ms | 0️⃣1️⃣"
+                "REALITY | @VmessProtocol | NL🇳🇱 | 185.142.238.222:8443 | 82.6ms | 0️⃣1️⃣",
+                "REALITY | @V2rayngninja | NL🇳🇱 | 78.141.221.194:8080 | 81.14ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @V2rayngninja | NL🇳🇱 | 78.141.221.194:8080 | 84.91ms | 0️⃣3️⃣",
+            "tag": "REALITY | @VmessProtocol | NL🇳🇱 | 185.142.238.222:8443 | 82.6ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "185.142.238.222",
+            "server_port": 8443,
+            "uuid": "ae5aed77-be23-4f6c-bd51-c73745038952",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maps.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "NbtOWq_km9k_SKgCJatXla3Jl7gGKVbjQ-GAtGg4bEk",
+                    "short_id": "bfde1c85a6a4112a"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @V2rayngninja | NL🇳🇱 | 78.141.221.194:8080 | 81.14ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "78.141.221.194",
             "server_port": 8080,
@@ -139,34 +167,6 @@
                     "enabled": true,
                     "public_key": "67A3nqrlKiXipqzNn9DNoWFuxRXQ6xTa-UzLFDJryVQ",
                     "short_id": "b1938907"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @v2rayng_vpnrog | KR🇰🇷 | 132.226.172.147:62001 | 184.05ms | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "132.226.172.147",
-            "server_port": 62001,
-            "uuid": "f61e2705-1fa7-4202-9724-d8a9e4d63917",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "swdist.apple.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "9rx7JwMO-KRZZEM9TQBO19BOAmmGjJyjN86ll2J7uVc",
-                    "short_id": ""
                 }
             }
         },
