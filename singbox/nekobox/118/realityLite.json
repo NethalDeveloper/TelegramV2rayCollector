@@ -104,25 +104,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @iP_CF | DE🇩🇪 | 49.13.142.254:8443 | 141.56ms | 0️⃣1️⃣",
-                "REALITY | @iP_CF | DE🇩🇪 | 159.69.114.213:8443 | 139.15ms | 0️⃣2️⃣",
-                "REALITY | @FreakConfig | FR🇫🇷 | 141.95.75.212:443 | 155.26ms | 0️⃣1️⃣"
+                "REALITY | @iP_CF | DE🇩🇪 | 49.13.142.254:8443 | 92.44ms | 0️⃣1️⃣",
+                "REALITY | @iP_CF | DE🇩🇪 | 159.69.114.213:8443 | 93.09ms | 0️⃣2️⃣",
+                "REALITY | @VmessProtocol | HK🇭🇰 | 47.76.44.200:14566 | 199.68ms | 0️⃣2️⃣",
+                "REALITY | @FreakConfig | FR🇫🇷 | 141.95.75.212:443 | 90.81ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @iP_CF | DE🇩🇪 | 49.13.142.254:8443 | 141.56ms | 0️⃣1️⃣",
-                "REALITY | @iP_CF | DE🇩🇪 | 159.69.114.213:8443 | 139.15ms | 0️⃣2️⃣",
-                "REALITY | @FreakConfig | FR🇫🇷 | 141.95.75.212:443 | 155.26ms | 0️⃣1️⃣"
+                "REALITY | @iP_CF | DE🇩🇪 | 49.13.142.254:8443 | 92.44ms | 0️⃣1️⃣",
+                "REALITY | @iP_CF | DE🇩🇪 | 159.69.114.213:8443 | 93.09ms | 0️⃣2️⃣",
+                "REALITY | @VmessProtocol | HK🇭🇰 | 47.76.44.200:14566 | 199.68ms | 0️⃣2️⃣",
+                "REALITY | @FreakConfig | FR🇫🇷 | 141.95.75.212:443 | 90.81ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @iP_CF | DE🇩🇪 | 49.13.142.254:8443 | 141.56ms | 0️⃣1️⃣",
+            "tag": "REALITY | @iP_CF | DE🇩🇪 | 49.13.142.254:8443 | 92.44ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "49.13.142.254",
             "server_port": 8443,
@@ -150,7 +152,7 @@
             }
         },
         {
-            "tag": "REALITY | @iP_CF | DE🇩🇪 | 159.69.114.213:8443 | 139.15ms | 0️⃣2️⃣",
+            "tag": "REALITY | @iP_CF | DE🇩🇪 | 159.69.114.213:8443 | 93.09ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "159.69.114.213",
             "server_port": 8443,
@@ -178,7 +180,35 @@
             }
         },
         {
-            "tag": "REALITY | @FreakConfig | FR🇫🇷 | 141.95.75.212:443 | 155.26ms | 0️⃣1️⃣",
+            "tag": "REALITY | @VmessProtocol | HK🇭🇰 | 47.76.44.200:14566 | 199.68ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "47.76.44.200",
+            "server_port": 14566,
+            "uuid": "f2d8cde4-ef7d-49e8-f518-33497f61be35",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "swdist.apple.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @FreakConfig | FR🇫🇷 | 141.95.75.212:443 | 90.81ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "141.95.75.212",
             "server_port": 443,
