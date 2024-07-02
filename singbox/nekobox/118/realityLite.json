@@ -102,15 +102,92 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST",
+                "REALITY | @ARv2ray | DE🇩🇪 | 128.140.103.6:443 | 158.91ms | 0️⃣3️⃣",
+                "REALITY | @V2RayTz | DE🇩🇪 | 128.140.103.6:443 | 158.03ms | 0️⃣1️⃣"
+            ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "REALITY | @ARv2ray | DE🇩🇪 | 128.140.103.6:443 | 158.91ms | 0️⃣3️⃣",
+                "REALITY | @V2RayTz | DE🇩🇪 | 128.140.103.6:443 | 158.03ms | 0️⃣1️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "REALITY | @ARv2ray | DE🇩🇪 | 128.140.103.6:443 | 158.91ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "128.140.103.6",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "_Cqsa8jf_2YBoWdxAViZxrAYCHWv-upptFNJFUro7D4",
+                    "short_id": "21de9eac"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @V2RayTz | DE🇩🇪 | 128.140.103.6:443 | 158.03ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "128.140.103.6",
+            "server_port": 443,
+            "uuid": "telegram-id-ArV2ray",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "_Cqsa8jf_2YBoWdxAViZxrAYCHWv-upptFNJFUro7D4",
+                    "short_id": "21de9eac"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray,@ArV2ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "direct",
