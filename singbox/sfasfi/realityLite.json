@@ -102,27 +102,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @ipV2Ray | DE🇩🇪 | 188.245.69.77:443 | 158.16ms | 0️⃣2️⃣",
-                "REALITY | @ipV2Ray | DE🇩🇪 | 188.245.69.77:443 | 166.06ms | 0️⃣3️⃣",
-                "REALITY | @free_v2rayyy | DE🇩🇪 | 49.13.80.84:443 | 160.55ms | 0️⃣2️⃣",
-                "REALITY | @VmessProtocol | IT🇮🇹 | 185.247.184.147:2060 | 165.03ms | 0️⃣3️⃣"
+                "REALITY | @ipV2Ray | DE🇩🇪 | 188.245.69.77:443 | 95.51ms | 0️⃣2️⃣",
+                "REALITY | @ipV2Ray | DE🇩🇪 | 188.245.69.77:443 | 95.94ms | 0️⃣3️⃣",
+                "REALITY | @free_v2rayyy | DE🇩🇪 | 49.13.80.84:443 | 95.24ms | 0️⃣2️⃣",
+                "REALITY | @VmessProtocol | IT🇮🇹 | 185.247.184.147:2060 | 102.28ms | 0️⃣3️⃣",
+                "REALITY | @Outlinev2rayNG | FR🇫🇷 | 141.95.75.212:443 | 91.45ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ipV2Ray | DE🇩🇪 | 188.245.69.77:443 | 158.16ms | 0️⃣2️⃣",
-                "REALITY | @ipV2Ray | DE🇩🇪 | 188.245.69.77:443 | 166.06ms | 0️⃣3️⃣",
-                "REALITY | @free_v2rayyy | DE🇩🇪 | 49.13.80.84:443 | 160.55ms | 0️⃣2️⃣",
-                "REALITY | @VmessProtocol | IT🇮🇹 | 185.247.184.147:2060 | 165.03ms | 0️⃣3️⃣"
+                "REALITY | @ipV2Ray | DE🇩🇪 | 188.245.69.77:443 | 95.51ms | 0️⃣2️⃣",
+                "REALITY | @ipV2Ray | DE🇩🇪 | 188.245.69.77:443 | 95.94ms | 0️⃣3️⃣",
+                "REALITY | @free_v2rayyy | DE🇩🇪 | 49.13.80.84:443 | 95.24ms | 0️⃣2️⃣",
+                "REALITY | @VmessProtocol | IT🇮🇹 | 185.247.184.147:2060 | 102.28ms | 0️⃣3️⃣",
+                "REALITY | @Outlinev2rayNG | FR🇫🇷 | 141.95.75.212:443 | 91.45ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | 188.245.69.77:443 | 158.16ms | 0️⃣2️⃣",
+            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | 188.245.69.77:443 | 95.51ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "188.245.69.77",
             "server_port": 443,
@@ -157,7 +159,7 @@
             }
         },
         {
-            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | 188.245.69.77:443 | 166.06ms | 0️⃣3️⃣",
+            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | 188.245.69.77:443 | 95.94ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "188.245.69.77",
             "server_port": 443,
@@ -192,7 +194,7 @@
             }
         },
         {
-            "tag": "REALITY | @free_v2rayyy | DE🇩🇪 | 49.13.80.84:443 | 160.55ms | 0️⃣2️⃣",
+            "tag": "REALITY | @free_v2rayyy | DE🇩🇪 | 49.13.80.84:443 | 95.24ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "49.13.80.84",
             "server_port": 443,
@@ -227,7 +229,7 @@
             }
         },
         {
-            "tag": "REALITY | @VmessProtocol | IT🇮🇹 | 185.247.184.147:2060 | 165.03ms | 0️⃣3️⃣",
+            "tag": "REALITY | @VmessProtocol | IT🇮🇹 | 185.247.184.147:2060 | 102.28ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "185.247.184.147",
             "server_port": 2060,
@@ -259,6 +261,34 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @Outlinev2rayNG | FR🇫🇷 | 141.95.75.212:443 | 91.45ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "141.95.75.212",
+            "server_port": 443,
+            "uuid": "200e059b-51ec-4825-8e95-5e49db5d22ad",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "analytics.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "yiHA11T4BplJbQxAfsQkiiAzAmyxWau-KR7dQptwjDU",
+                    "short_id": "c741ad33"
+                }
             }
         },
         {
