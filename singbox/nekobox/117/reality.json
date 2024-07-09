@@ -99,16 +99,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "FI🇫🇮",
-                "DE🇩🇪"
+                "FI🇫🇮"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @melov2ray | FI🇫🇮 | 95.217.243.174:2096 | 181.2ms | 0️⃣3️⃣",
-                "REALITY | @ARv2ray | DE🇩🇪 | 94.130.104.103:443 | 158.28ms | 0️⃣1️⃣"
+                "REALITY | @melov2ray | FI🇫🇮 | 95.217.243.174:2096 | 135.41ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -118,24 +116,14 @@
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @melov2ray | FI🇫🇮 | 95.217.243.174:2096 | 181.2ms | 0️⃣3️⃣"
+                "REALITY | @melov2ray | FI🇫🇮 | 95.217.243.174:2096 | 135.41ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "REALITY | @ARv2ray | DE🇩🇪 | 94.130.104.103:443 | 158.28ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "REALITY | @melov2ray | FI🇫🇮 | 95.217.243.174:2096 | 181.2ms | 0️⃣3️⃣",
+            "tag": "REALITY | @melov2ray | FI🇫🇮 | 95.217.243.174:2096 | 135.41ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "95.217.243.174",
             "server_port": 2096,
@@ -160,41 +148,6 @@
                     "public_key": "iJh0Xj4nsXjxC0aNywuz4FvW2oYdmCKMRJbj-b5FjQY",
                     "short_id": "6952fc62"
                 }
-            }
-        },
-        {
-            "tag": "REALITY | @ARv2ray | DE🇩🇪 | 94.130.104.103:443 | 158.28ms | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "94.130.104.103",
-            "server_port": 443,
-            "uuid": "telegram-id-ArV2ray",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.speedtest.net",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "YL2D7AH8z3XwmI3w2wOItAaLxhADodJwVXQ5h4Rfi2w",
-                    "short_id": "1493c94d"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray,telegram-ArV2ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
