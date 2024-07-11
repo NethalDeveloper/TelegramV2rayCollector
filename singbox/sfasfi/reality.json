@@ -101,16 +101,57 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "GB🇬🇧"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "REALITY | @VmessProtocol | GB🇬🇧 | 82.153.135.50:34171 | 171.45ms | 0️⃣3️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "REALITY | @VmessProtocol | GB🇬🇧 | 82.153.135.50:34171 | 171.45ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "REALITY | @VmessProtocol | GB🇬🇧 | 82.153.135.50:34171 | 171.45ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "82.153.135.50",
+            "server_port": 34171,
+            "uuid": "ac74dfae-6039-43c0-fa55-fbf6e6630df6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dmcc.ae",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "W9BjX6YmCIVsjhKMlz233Yoe0xcf0SVHfvPKqbf3vCg",
+                    "short_id": ""
+                }
+            }
         },
         {
             "tag": "direct",
