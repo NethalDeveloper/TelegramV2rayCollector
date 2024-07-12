@@ -100,6 +100,7 @@
             "outbounds": [
                 "URL-TEST",
                 "KR🇰🇷",
+                "HK🇭🇰",
                 "RU🇷🇺"
             ]
         },
@@ -107,8 +108,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @VmessProtocol | KR🇰🇷 | 132.226.172.147:62001 | 192.15ms | 0️⃣1️⃣",
-                "REALITY | @VmessProtocol | RU🇷🇺 | 5.42.107.93:1234 | 97.06ms | 0️⃣2️⃣"
+                "REALITY | @VmessProtocol | KR🇰🇷 | 132.226.172.147:62001 | 132.08ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | HK🇭🇰 | 157.254.21.242:33600 | 152.64ms | 0️⃣2️⃣",
+                "REALITY | @VmessProtocol | RU🇷🇺 | 5.42.107.93:1234 | 156.81ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -118,7 +120,17 @@
             "tag": "KR🇰🇷",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @VmessProtocol | KR🇰🇷 | 132.226.172.147:62001 | 192.15ms | 0️⃣1️⃣"
+                "REALITY | @VmessProtocol | KR🇰🇷 | 132.226.172.147:62001 | 132.08ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "REALITY | @VmessProtocol | HK🇭🇰 | 157.254.21.242:33600 | 152.64ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -128,14 +140,14 @@
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @VmessProtocol | RU🇷🇺 | 5.42.107.93:1234 | 97.06ms | 0️⃣2️⃣"
+                "REALITY | @VmessProtocol | RU🇷🇺 | 5.42.107.93:1234 | 156.81ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @VmessProtocol | KR🇰🇷 | 132.226.172.147:62001 | 192.15ms | 0️⃣1️⃣",
+            "tag": "REALITY | @VmessProtocol | KR🇰🇷 | 132.226.172.147:62001 | 132.08ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "132.226.172.147",
             "server_port": 62001,
@@ -163,7 +175,35 @@
             }
         },
         {
-            "tag": "REALITY | @VmessProtocol | RU🇷🇺 | 5.42.107.93:1234 | 97.06ms | 0️⃣2️⃣",
+            "tag": "REALITY | @VmessProtocol | HK🇭🇰 | 157.254.21.242:33600 | 152.64ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "157.254.21.242",
+            "server_port": 33600,
+            "uuid": "44c6e217-7e65-4cfd-b1ad-df48a6085c86",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.python.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "487NTwO5yyrUqkI1_p0MM6iZmyTgxBLD8_WGLX9xPjU",
+                    "short_id": "e47fd975"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @VmessProtocol | RU🇷🇺 | 5.42.107.93:1234 | 156.81ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "5.42.107.93",
             "server_port": 1234,
