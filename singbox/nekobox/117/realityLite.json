@@ -97,15 +97,55 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST",
+                "REALITY | @azadi_az_inja_migzare | US🇺🇸 | 45.152.112.218:2083 | 81ms | 0️⃣1️⃣"
+            ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "REALITY | @azadi_az_inja_migzare | US🇺🇸 | 45.152.112.218:2083 | 81ms | 0️⃣1️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "REALITY | @azadi_az_inja_migzare | US🇺🇸 | 45.152.112.218:2083 | 81ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "45.152.112.218",
+            "server_port": 2083,
+            "uuid": "163c97c1-8466-4889-aa50-6b79bb439c63",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "b14Nibi1pMPwFPqgiyZRS3a6-Y-Q8EsE5urKnA-RkAc",
+                    "short_id": "adf8a1f5689177a2"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
         },
         {
             "tag": "direct",
