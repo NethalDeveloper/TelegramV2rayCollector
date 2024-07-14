@@ -101,6 +101,7 @@
                 "URL-TEST",
                 "US🇺🇸",
                 "FR🇫🇷",
+                "DE🇩🇪",
                 "GB🇬🇧"
             ]
         },
@@ -108,11 +109,11 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | US🇺🇸 | series-a2-mec.varzesh360.co:443 | 322.95ms | 0️⃣1️⃣",
-                "@OutlineVpnOfficial | US🇺🇸 | 205.134.180.137:443 | 6.52ms | 0️⃣1️⃣",
-                "@OutlineVpnOfficial | FR🇫🇷 | 92.243.27.51:9802 | 84.56ms | 0️⃣2️⃣",
-                "@bright_vpn | GB🇬🇧 | series-a1.samanehha.co:443 | 200.42ms | 0️⃣1️⃣",
-                "@bright_vpn | GB🇬🇧 | series-a2.samanehha.co:443 | 110.97ms | 0️⃣2️⃣"
+                "@OutlineVpnOfficial | US🇺🇸 | 205.134.180.137:443 | 60.65ms | 0️⃣1️⃣",
+                "@OutlineVpnOfficial | FR🇫🇷 | 92.243.27.51:9802 | 127.87ms | 0️⃣2️⃣",
+                "@OutlineVpnOfficial | DE🇩🇪 | 81.19.141.45:52873 | 137.3ms | 0️⃣3️⃣",
+                "@bright_vpn | GB🇬🇧 | series-a1.samanehha.co:443 | 273.69ms | 0️⃣1️⃣",
+                "@bright_vpn | GB🇬🇧 | series-a2.samanehha.co:443 | 129.11ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -122,8 +123,7 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | US🇺🇸 | series-a2-mec.varzesh360.co:443 | 322.95ms | 0️⃣1️⃣",
-                "@OutlineVpnOfficial | US🇺🇸 | 205.134.180.137:443 | 6.52ms | 0️⃣1️⃣"
+                "@OutlineVpnOfficial | US🇺🇸 | 205.134.180.137:443 | 60.65ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,7 +133,17 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@OutlineVpnOfficial | FR🇫🇷 | 92.243.27.51:9802 | 84.56ms | 0️⃣2️⃣"
+                "@OutlineVpnOfficial | FR🇫🇷 | 92.243.27.51:9802 | 127.87ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "@OutlineVpnOfficial | DE🇩🇪 | 81.19.141.45:52873 | 137.3ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,25 +153,15 @@
             "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "@bright_vpn | GB🇬🇧 | series-a1.samanehha.co:443 | 200.42ms | 0️⃣1️⃣",
-                "@bright_vpn | GB🇬🇧 | series-a2.samanehha.co:443 | 110.97ms | 0️⃣2️⃣"
+                "@bright_vpn | GB🇬🇧 | series-a1.samanehha.co:443 | 273.69ms | 0️⃣1️⃣",
+                "@bright_vpn | GB🇬🇧 | series-a2.samanehha.co:443 | 129.11ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@VmessProtocol | US🇺🇸 | series-a2-mec.varzesh360.co:443 | 322.95ms | 0️⃣1️⃣",
-            "type": "shadowsocks",
-            "server": "series-a2-mec.varzesh360.co",
-            "server_port": 443,
-            "method": "chacha20-ietf-poly1305",
-            "password": "u17T3BvpYaaiuW2c",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "@OutlineVpnOfficial | US🇺🇸 | 205.134.180.137:443 | 6.52ms | 0️⃣1️⃣",
+            "tag": "@OutlineVpnOfficial | US🇺🇸 | 205.134.180.137:443 | 60.65ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "205.134.180.137",
             "server_port": 443,
@@ -171,7 +171,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@OutlineVpnOfficial | FR🇫🇷 | 92.243.27.51:9802 | 84.56ms | 0️⃣2️⃣",
+            "tag": "@OutlineVpnOfficial | FR🇫🇷 | 92.243.27.51:9802 | 127.87ms | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "92.243.27.51",
             "server_port": 9802,
@@ -181,7 +181,17 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@bright_vpn | GB🇬🇧 | series-a1.samanehha.co:443 | 200.42ms | 0️⃣1️⃣",
+            "tag": "@OutlineVpnOfficial | DE🇩🇪 | 81.19.141.45:52873 | 137.3ms | 0️⃣3️⃣",
+            "type": "shadowsocks",
+            "server": "81.19.141.45",
+            "server_port": 52873,
+            "method": "chacha20-ietf-poly1305",
+            "password": "HYJzG4Pf7Kh5M47EzzqeBU",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@bright_vpn | GB🇬🇧 | series-a1.samanehha.co:443 | 273.69ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "series-a1.samanehha.co",
             "server_port": 443,
@@ -191,7 +201,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@bright_vpn | GB🇬🇧 | series-a2.samanehha.co:443 | 110.97ms | 0️⃣2️⃣",
+            "tag": "@bright_vpn | GB🇬🇧 | series-a2.samanehha.co:443 | 129.11ms | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "series-a2.samanehha.co",
             "server_port": 443,
