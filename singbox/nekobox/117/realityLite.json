@@ -97,15 +97,48 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST",
+                "REALITY | @ConfigsHUB | FI🇫🇮 | 65.108.220.44:2087 | 128.37ms | 0️⃣2️⃣"
+            ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "REALITY | @ConfigsHUB | FI🇫🇮 | 65.108.220.44:2087 | 128.37ms | 0️⃣2️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "REALITY | @ConfigsHUB | FI🇫🇮 | 65.108.220.44:2087 | 128.37ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "65.108.220.44",
+            "server_port": 2087,
+            "uuid": "50a24f6f-3190-477f-bccf-35289131ce5d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "5Lms4pr_aOtRLckiJRgDfiDjD4fuYpN4zBLiAUu_e10",
+                    "short_id": "fe3b7d814f0c2e0f"
+                }
+            }
         },
         {
             "tag": "direct",
