@@ -101,57 +101,16 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST",
-                "GB🇬🇧"
+                "URL-TEST"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [
-                "REALITY | @vless_vmess | GB🇬🇧 | 45.140.167.94:2096 | 100.32ms | 0️⃣2️⃣"
-            ],
+            "outbounds": null,
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
-        },
-        {
-            "tag": "GB🇬🇧",
-            "type": "urltest",
-            "outbounds": [
-                "REALITY | @vless_vmess | GB🇬🇧 | 45.140.167.94:2096 | 100.32ms | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "REALITY | @vless_vmess | GB🇬🇧 | 45.140.167.94:2096 | 100.32ms | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "45.140.167.94",
-            "server_port": 2096,
-            "uuid": "c274799d-6bbd-48a8-b985-e203217f79b2",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "2606:4700:4700::1111",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "IqnFESYrPnkV7KUaekX8cL8TSRwDZHuUIKmD0N99Fxc",
-                    "short_id": "2880ee24bb417d46"
-                }
-            }
         },
         {
             "tag": "direct",
