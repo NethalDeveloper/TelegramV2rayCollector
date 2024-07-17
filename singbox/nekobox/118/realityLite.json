@@ -102,15 +102,122 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST",
+                "REALITY | @VmessProtocol | IT🇮🇹 | 185.247.184.147:2060 | 92.9ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:8443 | 105.78ms | 0️⃣2️⃣",
+                "REALITY | @VmessProtocol | DE🇩🇪 | 136.244.84.182:443 | 90.3ms | 0️⃣3️⃣"
+            ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "REALITY | @VmessProtocol | IT🇮🇹 | 185.247.184.147:2060 | 92.9ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:8443 | 105.78ms | 0️⃣2️⃣",
+                "REALITY | @VmessProtocol | DE🇩🇪 | 136.244.84.182:443 | 90.3ms | 0️⃣3️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "REALITY | @VmessProtocol | IT🇮🇹 | 185.247.184.147:2060 | 92.9ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "185.247.184.147",
+            "server_port": 2060,
+            "uuid": "4a60a8e0-b51d-41ae-8500-1b0b6724c6e6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dash.cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "1k5jM49Bx5DEAfS5Vpqz93t2XOXk-kwXl0V5Q9jn_WY",
+                    "short_id": "f77e5398"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @VmessProtocol | NO🇳🇴 | 185.125.171.13:8443 | 105.78ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "185.125.171.13",
+            "server_port": 8443,
+            "uuid": "a09373e2-e120-457d-9ec9-ea7fe8bedb52",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "partner.g2.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": ""
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "g2com",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @VmessProtocol | DE🇩🇪 | 136.244.84.182:443 | 90.3ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "136.244.84.182",
+            "server_port": 443,
+            "uuid": "abaf193b-eeb9-4a8a-afa7-6b6385156e94",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.iranserver.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "JiXxyKEi_TmEqRzyvOsBEKciioXup7SbW5rvTa6CnA4",
+                    "short_id": "f1"
+                }
+            }
         },
         {
             "tag": "direct",
