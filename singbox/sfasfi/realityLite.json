@@ -100,15 +100,115 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST",
+                "REALITY | @VmessProtocol | IE🇮🇪 | 85.159.229.8:2087 | 133.41ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | US🇺🇸 | 147.182.190.240:12345 | 59.69ms | 0️⃣2️⃣",
+                "REALITY | @VmessProtocol | US🇺🇸 | 137.184.69.5:12345 | 60.05ms | 0️⃣3️⃣"
+            ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "REALITY | @VmessProtocol | IE🇮🇪 | 85.159.229.8:2087 | 133.41ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | US🇺🇸 | 147.182.190.240:12345 | 59.69ms | 0️⃣2️⃣",
+                "REALITY | @VmessProtocol | US🇺🇸 | 137.184.69.5:12345 | 60.05ms | 0️⃣3️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "REALITY | @VmessProtocol | IE🇮🇪 | 85.159.229.8:2087 | 133.41ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "85.159.229.8",
+            "server_port": 2087,
+            "uuid": "e4527384-4f20-4378-95dc-403996f12588",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dash.cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "GicA8fPbS9LksttApqa8gzOstomRFncKNoYGLCOqQF8",
+                    "short_id": "fc805835"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @VmessProtocol | US🇺🇸 | 147.182.190.240:12345 | 59.69ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "147.182.190.240",
+            "server_port": 12345,
+            "uuid": "177dfbdf-8337-40ea-8791-906924b9fb2f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "0hue6xKKmwuEefA0eMXQszxESSoagq2kqLB_gPrRc3s",
+                    "short_id": "c57d2373"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @VmessProtocol | US🇺🇸 | 137.184.69.5:12345 | 60.05ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "137.184.69.5",
+            "server_port": 12345,
+            "uuid": "177dfbdf-8337-40ea-8791-906924b9fb2f",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "0hue6xKKmwuEefA0eMXQszxESSoagq2kqLB_gPrRc3s",
+                    "short_id": "c57d2373"
+                }
+            }
         },
         {
             "tag": "direct",
