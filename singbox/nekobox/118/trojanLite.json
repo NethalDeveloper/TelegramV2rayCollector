@@ -104,75 +104,35 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@PrivateVPNs | IE🇮🇪 | 54.76.244.145:22222 | 166.64ms | 0️⃣1️⃣",
-                "@PrivateVPNs | SE🇸🇪 | 13.50.214.119:22222 | 183.92ms | 0️⃣2️⃣",
-                "@PrivateVPNs | SE🇸🇪 | 16.170.113.120:22222 | 174.17ms | 0️⃣3️⃣",
-                "@DirectVPN | GB🇬🇧 | 18.135.172.255:22222 | 145.75ms | 0️⃣1️⃣",
-                "@DirectVPN | IE🇮🇪 | 34.241.207.114:22222 | 136.6ms | 0️⃣2️⃣",
-                "@DirectVPN | IE🇮🇪 | 52.16.85.89:22222 | 170.44ms | 0️⃣3️⃣",
-                "@oneclickvpnkeys | RELAY🚩 | icook.hk:443 | 59.76ms | 0️⃣1️⃣"
+                "@PrivateVPNs | SE🇸🇪 | 16.170.113.120:22222 | 174.63ms | 0️⃣1️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 3.79.134.7:22222 | 158.71ms | 0️⃣2️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 52.29.213.147:22222 | 158.19ms | 0️⃣3️⃣",
+                "@DirectVPN | GB🇬🇧 | 18.135.172.255:22222 | 147.72ms | 0️⃣1️⃣",
+                "@DirectVPN | IE🇮🇪 | 34.241.207.114:22222 | 136.69ms | 0️⃣2️⃣",
+                "@DirectVPN | IE🇮🇪 | 52.16.85.89:22222 | 137.72ms | 0️⃣3️⃣",
+                "@oneclickvpnkeys | RELAY🚩 | icook.hk:443 | 82.56ms | 0️⃣1️⃣",
+                "@yaney_01 | CN🇨🇳 | df.xiguajiasu.xyz:46002 | 542.39ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | IE🇮🇪 | 54.76.244.145:22222 | 166.64ms | 0️⃣1️⃣",
-                "@PrivateVPNs | SE🇸🇪 | 13.50.214.119:22222 | 183.92ms | 0️⃣2️⃣",
-                "@PrivateVPNs | SE🇸🇪 | 16.170.113.120:22222 | 174.17ms | 0️⃣3️⃣",
-                "@DirectVPN | GB🇬🇧 | 18.135.172.255:22222 | 145.75ms | 0️⃣1️⃣",
-                "@DirectVPN | IE🇮🇪 | 34.241.207.114:22222 | 136.6ms | 0️⃣2️⃣",
-                "@DirectVPN | IE🇮🇪 | 52.16.85.89:22222 | 170.44ms | 0️⃣3️⃣",
-                "@oneclickvpnkeys | RELAY🚩 | icook.hk:443 | 59.76ms | 0️⃣1️⃣"
+                "@PrivateVPNs | SE🇸🇪 | 16.170.113.120:22222 | 174.63ms | 0️⃣1️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 3.79.134.7:22222 | 158.71ms | 0️⃣2️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 52.29.213.147:22222 | 158.19ms | 0️⃣3️⃣",
+                "@DirectVPN | GB🇬🇧 | 18.135.172.255:22222 | 147.72ms | 0️⃣1️⃣",
+                "@DirectVPN | IE🇮🇪 | 34.241.207.114:22222 | 136.69ms | 0️⃣2️⃣",
+                "@DirectVPN | IE🇮🇪 | 52.16.85.89:22222 | 137.72ms | 0️⃣3️⃣",
+                "@oneclickvpnkeys | RELAY🚩 | icook.hk:443 | 82.56ms | 0️⃣1️⃣",
+                "@yaney_01 | CN🇨🇳 | df.xiguajiasu.xyz:46002 | 542.39ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | IE🇮🇪 | 54.76.244.145:22222 | 166.64ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "54.76.244.145",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | SE🇸🇪 | 13.50.214.119:22222 | 183.92ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "13.50.214.119",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | SE🇸🇪 | 16.170.113.120:22222 | 174.17ms | 0️⃣3️⃣",
+            "tag": "@PrivateVPNs | SE🇸🇪 | 16.170.113.120:22222 | 174.63ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "16.170.113.120",
             "server_port": 22222,
@@ -193,7 +153,49 @@
             }
         },
         {
-            "tag": "@DirectVPN | GB🇬🇧 | 18.135.172.255:22222 | 145.75ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | DE🇩🇪 | 3.79.134.7:22222 | 158.71ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "3.79.134.7",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@PrivateVPNs | DE🇩🇪 | 52.29.213.147:22222 | 158.19ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "52.29.213.147",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | GB🇬🇧 | 18.135.172.255:22222 | 147.72ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "18.135.172.255",
             "server_port": 22222,
@@ -214,7 +216,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | IE🇮🇪 | 34.241.207.114:22222 | 136.6ms | 0️⃣2️⃣",
+            "tag": "@DirectVPN | IE🇮🇪 | 34.241.207.114:22222 | 136.69ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "34.241.207.114",
             "server_port": 22222,
@@ -235,7 +237,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | IE🇮🇪 | 52.16.85.89:22222 | 170.44ms | 0️⃣3️⃣",
+            "tag": "@DirectVPN | IE🇮🇪 | 52.16.85.89:22222 | 137.72ms | 0️⃣3️⃣",
             "type": "trojan",
             "server": "52.16.85.89",
             "server_port": 22222,
@@ -256,7 +258,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | RELAY🚩 | icook.hk:443 | 59.76ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | RELAY🚩 | icook.hk:443 | 82.56ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "icook.hk",
             "server_port": 443,
@@ -281,6 +283,18 @@
                 "headers": {
                     "Host": "159d770e-fd74-4069-a73b-fe6ececa7951.f82aee4c-752c-4b0c-9793-380d4d76435c.ddnsgeek.com"
                 }
+            }
+        },
+        {
+            "tag": "@yaney_01 | CN🇨🇳 | df.xiguajiasu.xyz:46002 | 542.39ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "df.xiguajiasu.xyz",
+            "server_port": 46002,
+            "password": "4ea1d07c-41c2-42b5-954d-414fee051856",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
