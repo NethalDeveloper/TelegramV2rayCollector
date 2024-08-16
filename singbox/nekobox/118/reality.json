@@ -105,7 +105,6 @@
             "outbounds": [
                 "URL-TEST",
                 "DE🇩🇪",
-                "AE🇦🇪",
                 "RU🇷🇺",
                 "US🇺🇸"
             ]
@@ -114,10 +113,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 88.24ms | 0️⃣1️⃣",
-                "REALITY | @VmessProtocol | AE🇦🇪 | 193.123.77.11:23702 | 195.87ms | 0️⃣1️⃣",
-                "REALITY | @VmessProtocol | RU🇷🇺 | 45.67.32.147:37665 | 119.83ms | 0️⃣2️⃣",
-                "REALITY | @VmessProtocol | US🇺🇸 | 143.244.149.168:12345 | 7.3ms | 0️⃣3️⃣"
+                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 158.11ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | RU🇷🇺 | 45.67.32.147:37665 | 192.65ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | US🇺🇸 | 143.244.149.168:12345 | 76.68ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -127,17 +125,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 88.24ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "AE🇦🇪",
-            "type": "urltest",
-            "outbounds": [
-                "REALITY | @VmessProtocol | AE🇦🇪 | 193.123.77.11:23702 | 195.87ms | 0️⃣1️⃣"
+                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 158.11ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -147,7 +135,7 @@
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @VmessProtocol | RU🇷🇺 | 45.67.32.147:37665 | 119.83ms | 0️⃣2️⃣"
+                "REALITY | @VmessProtocol | RU🇷🇺 | 45.67.32.147:37665 | 192.65ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -157,14 +145,14 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @VmessProtocol | US🇺🇸 | 143.244.149.168:12345 | 7.3ms | 0️⃣3️⃣"
+                "REALITY | @VmessProtocol | US🇺🇸 | 143.244.149.168:12345 | 76.68ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 88.24ms | 0️⃣1️⃣",
+            "tag": "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 158.11ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "49.12.193.246",
             "server_port": 443,
@@ -178,35 +166,7 @@
             }
         },
         {
-            "tag": "REALITY | @VmessProtocol | AE🇦🇪 | 193.123.77.11:23702 | 195.87ms | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "193.123.77.11",
-            "server_port": 23702,
-            "uuid": "66a3a32a-9493-417b-8aec-9c1e82146dc3",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.python.org",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "tchQjYmlQaMfS_nz2zDaA4cdo_4jxv27nnk40ggxpGU",
-                    "short_id": "bbddf1ac"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @VmessProtocol | RU🇷🇺 | 45.67.32.147:37665 | 119.83ms | 0️⃣2️⃣",
+            "tag": "REALITY | @VmessProtocol | RU🇷🇺 | 45.67.32.147:37665 | 192.65ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "45.67.32.147",
             "server_port": 37665,
@@ -234,7 +194,7 @@
             }
         },
         {
-            "tag": "REALITY | @VmessProtocol | US🇺🇸 | 143.244.149.168:12345 | 7.3ms | 0️⃣3️⃣",
+            "tag": "REALITY | @VmessProtocol | US🇺🇸 | 143.244.149.168:12345 | 76.68ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "143.244.149.168",
             "server_port": 12345,
