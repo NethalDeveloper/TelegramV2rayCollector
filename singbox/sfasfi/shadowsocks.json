@@ -103,18 +103,16 @@
             "outbounds": [
                 "URL-TEST",
                 "US🇺🇸",
-                "GB🇬🇧",
-                "SG🇸🇬"
+                "GB🇬🇧"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | US🇺🇸 | 205.134.180.139:443 | 64.8ms | 0️⃣1️⃣",
-                "@VmessProtocol | US🇺🇸 | 69.50.92.72:8881 | 44.46ms | 0️⃣1️⃣",
-                "@free4allVPN | GB🇬🇧 | 141.98.101.178:443 | 143.63ms | 0️⃣2️⃣",
-                "@free4allVPN | SG🇸🇬 | 159.65.129.128:18814 | 173.96ms | 0️⃣3️⃣"
+                "@free4allVPN | US🇺🇸 | 205.134.180.139:443 | 22.7ms | 0️⃣1️⃣",
+                "@VmessProtocol | US🇺🇸 | 69.50.92.72:8881 | 35.43ms | 0️⃣1️⃣",
+                "@free4allVPN | GB🇬🇧 | 141.98.101.178:443 | 122.24ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -124,8 +122,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | US🇺🇸 | 205.134.180.139:443 | 64.8ms | 0️⃣1️⃣",
-                "@VmessProtocol | US🇺🇸 | 69.50.92.72:8881 | 44.46ms | 0️⃣1️⃣"
+                "@free4allVPN | US🇺🇸 | 205.134.180.139:443 | 22.7ms | 0️⃣1️⃣",
+                "@VmessProtocol | US🇺🇸 | 69.50.92.72:8881 | 35.43ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -135,24 +133,14 @@
             "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | GB🇬🇧 | 141.98.101.178:443 | 143.63ms | 0️⃣2️⃣"
+                "@free4allVPN | GB🇬🇧 | 141.98.101.178:443 | 122.24ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "SG🇸🇬",
-            "type": "urltest",
-            "outbounds": [
-                "@free4allVPN | SG🇸🇬 | 159.65.129.128:18814 | 173.96ms | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "@free4allVPN | US🇺🇸 | 205.134.180.139:443 | 64.8ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | US🇺🇸 | 205.134.180.139:443 | 22.7ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "205.134.180.139",
             "server_port": 443,
@@ -162,7 +150,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@VmessProtocol | US🇺🇸 | 69.50.92.72:8881 | 44.46ms | 0️⃣1️⃣",
+            "tag": "@VmessProtocol | US🇺🇸 | 69.50.92.72:8881 | 35.43ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "69.50.92.72",
             "server_port": 8881,
@@ -172,22 +160,12 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@free4allVPN | GB🇬🇧 | 141.98.101.178:443 | 143.63ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | GB🇬🇧 | 141.98.101.178:443 | 122.24ms | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "141.98.101.178",
             "server_port": 443,
             "method": "aes-128-gcm",
             "password": "shadowsocks7",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "@free4allVPN | SG🇸🇬 | 159.65.129.128:18814 | 173.96ms | 0️⃣3️⃣",
-            "type": "shadowsocks",
-            "server": "159.65.129.128",
-            "server_port": 18814,
-            "method": "chacha20-ietf-poly1305",
-            "password": "ZdWZ9QvFlbOOGreMoE3Bq8",
             "plugin": "",
             "plugin_opts": ""
         },
