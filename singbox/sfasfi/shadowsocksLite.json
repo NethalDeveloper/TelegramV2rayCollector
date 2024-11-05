@@ -102,23 +102,47 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | GB🇬🇧 | 141.98.101.178:443 | 121.51ms | 0️⃣1️⃣"
+                "@free4allVPN | US🇺🇸 | 37.19.198.243:443 | 7.35ms | 0️⃣1️⃣",
+                "@free4allVPN | US🇺🇸 | 205.134.180.139:443 | 2.7ms | 0️⃣2️⃣",
+                "@free4allVPN | CA🇨🇦 | 149.22.95.183:443 | 67.46ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | GB🇬🇧 | 141.98.101.178:443 | 121.51ms | 0️⃣1️⃣"
+                "@free4allVPN | US🇺🇸 | 37.19.198.243:443 | 7.35ms | 0️⃣1️⃣",
+                "@free4allVPN | US🇺🇸 | 205.134.180.139:443 | 2.7ms | 0️⃣2️⃣",
+                "@free4allVPN | CA🇨🇦 | 149.22.95.183:443 | 67.46ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | GB🇬🇧 | 141.98.101.178:443 | 121.51ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | US🇺🇸 | 37.19.198.243:443 | 7.35ms | 0️⃣1️⃣",
             "type": "shadowsocks",
-            "server": "141.98.101.178",
+            "server": "37.19.198.243",
+            "server_port": 443,
+            "method": "aes-128-gcm",
+            "password": "shadowsocks7",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@free4allVPN | US🇺🇸 | 205.134.180.139:443 | 2.7ms | 0️⃣2️⃣",
+            "type": "shadowsocks",
+            "server": "205.134.180.139",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "lWaGPVFjmnag7",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@free4allVPN | CA🇨🇦 | 149.22.95.183:443 | 67.46ms | 0️⃣3️⃣",
+            "type": "shadowsocks",
+            "server": "149.22.95.183",
             "server_port": 443,
             "method": "aes-128-gcm",
             "password": "shadowsocks7",
