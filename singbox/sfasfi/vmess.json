@@ -103,19 +103,18 @@
             "outbounds": [
                 "URL-TEST",
                 "RELAY🚩",
-                "RU🇷🇺"
+                "US🇺🇸"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 23.41ms | 0️⃣1️⃣",
-                "@ShadowProxy66 | RELAY🚩 | adenc36v.xtooltech.cfd:443 | 215.69ms | 0️⃣1️⃣",
-                "@ShadowProxy66 | RELAY🚩 | hms02.fxiaomi.sbs:443 | 21.74ms | 0️⃣2️⃣",
-                "@v2ray1_ng | RELAY🚩 | linde06.indiavideo.sbs:443 | 58.74ms | 0️⃣1️⃣",
-                "@v2ray1_ng | RELAY🚩 | linja05.hwcar.sbs:443 | 21.15ms | 0️⃣2️⃣",
-                "@v2ray1_ng | RU🇷🇺 | 45.8.158.32:3168 | 174.54ms | 0️⃣3️⃣"
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 21.5ms | 0️⃣1️⃣",
+                "@v2ray1_ng | RELAY🚩 | linde06.indiavideo.sbs:443 | 40.62ms | 0️⃣1️⃣",
+                "@v2ray1_ng | RELAY🚩 | linja05.hwcar.sbs:443 | 20.96ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | 82uple-bird-b087.pemed58443.workers.dev:8080 | 25.16ms | 0️⃣2️⃣",
+                "@Hope_Net | US🇺🇸 | ip20.6016725.xyz:2095 | 92.15ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -125,28 +124,27 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 23.41ms | 0️⃣1️⃣",
-                "@ShadowProxy66 | RELAY🚩 | adenc36v.xtooltech.cfd:443 | 215.69ms | 0️⃣1️⃣",
-                "@ShadowProxy66 | RELAY🚩 | hms02.fxiaomi.sbs:443 | 21.74ms | 0️⃣2️⃣",
-                "@v2ray1_ng | RELAY🚩 | linde06.indiavideo.sbs:443 | 58.74ms | 0️⃣1️⃣",
-                "@v2ray1_ng | RELAY🚩 | linja05.hwcar.sbs:443 | 21.15ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 21.5ms | 0️⃣1️⃣",
+                "@v2ray1_ng | RELAY🚩 | linde06.indiavideo.sbs:443 | 40.62ms | 0️⃣1️⃣",
+                "@v2ray1_ng | RELAY🚩 | linja05.hwcar.sbs:443 | 20.96ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | 82uple-bird-b087.pemed58443.workers.dev:8080 | 25.16ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "RU🇷🇺",
+            "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | RU🇷🇺 | 45.8.158.32:3168 | 174.54ms | 0️⃣3️⃣"
+                "@Hope_Net | US🇺🇸 | ip20.6016725.xyz:2095 | 92.15ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 23.41ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 21.5ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.156.210",
             "server_port": 443,
@@ -182,79 +180,7 @@
             }
         },
         {
-            "tag": "@ShadowProxy66 | RELAY🚩 | adenc36v.xtooltech.cfd:443 | 215.69ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "104.21.24.170",
-            "server_port": 443,
-            "uuid": "b321fd5d-e6ec-4293-a644-164e3885f52e",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "adenc36v.xtooltech.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/linkws",
-                "headers": {
-                    "Host": "104.21.24.170"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@ShadowProxy66 | RELAY🚩 | hms02.fxiaomi.sbs:443 | 21.74ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "172.67.223.119",
-            "server_port": 443,
-            "uuid": "6c168fcc-2231-4f3b-8c1e-f6391692df4a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "hms02.fxiaomi.sbs",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/link",
-                "headers": {
-                    "Host": "172.67.223.119"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2ray1_ng | RELAY🚩 | linde06.indiavideo.sbs:443 | 58.74ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | RELAY🚩 | linde06.indiavideo.sbs:443 | 40.62ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "188.114.97.210",
             "server_port": 443,
@@ -290,7 +216,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | RELAY🚩 | linja05.hwcar.sbs:443 | 21.15ms | 0️⃣2️⃣",
+            "tag": "@v2ray1_ng | RELAY🚩 | linja05.hwcar.sbs:443 | 20.96ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "172.67.220.83",
             "server_port": 443,
@@ -326,11 +252,11 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | RU🇷🇺 | 45.8.158.32:3168 | 174.54ms | 0️⃣3️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | 82uple-bird-b087.pemed58443.workers.dev:8080 | 25.16ms | 0️⃣2️⃣",
             "type": "vmess",
-            "server": "45.8.158.32",
-            "server_port": 3168,
-            "uuid": "398ce84e-4849-4e5f-9b1a-a56fbe233b81",
+            "server": "104.16.60.8",
+            "server_port": 8080,
+            "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -343,9 +269,35 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/\/ivideos.sbs\/linkws",
                 "headers": {
-                    "Host": "45.8.158.32"
+                    "Host": "104.16.60.8"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | US🇺🇸 | ip20.6016725.xyz:2095 | 92.15ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "104.19.46.103",
+            "server_port": 2095,
+            "uuid": "18d96190-c10f-448f-a82a-2d36df5c3cde",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/github.com\/Alvin9999",
+                "headers": {
+                    "Host": "104.19.46.103"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
