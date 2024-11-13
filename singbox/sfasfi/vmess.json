@@ -102,18 +102,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "RELAY🚩",
-                "US🇺🇸"
+                "SG🇸🇬",
+                "RELAY🚩"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 418.66ms | 0️⃣1️⃣",
-                "@v2ray1_ng | RELAY🚩 | obdii.cfd:443 | 208.5ms | 0️⃣1️⃣",
-                "@Awlix_ir | RELAY🚩 | lammaland.org:443 | 328.11ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | 38.91.107.205:443 | 33.95ms | 0️⃣1️⃣"
+                "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 177.72ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 32.64ms | 0️⃣2️⃣",
+                "@v2ray1_ng | RELAY🚩 | obdii.cfd:443 | 10.02ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | sb24.ir.016b95aba48658eb.www.speedtest.net.kish.ir.tabnak.ir.entekhab.ir.leader.ir.asiatech.ir.divar.ir.shahr-bank.ir.postbank.ir.qmb.ir.sid.ir.codal.ir.anten.ir.011010100110111101110011011101000110000101110010110111010001100.dE.:80 | 170.17ms | 0️⃣1️⃣",
+                "@Awlix_ir | RELAY🚩 | lammaland.org:443 | 116.79ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 177.72ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -123,26 +134,34 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 418.66ms | 0️⃣1️⃣",
-                "@v2ray1_ng | RELAY🚩 | obdii.cfd:443 | 208.5ms | 0️⃣1️⃣",
-                "@Awlix_ir | RELAY🚩 | lammaland.org:443 | 328.11ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 32.64ms | 0️⃣2️⃣",
+                "@v2ray1_ng | RELAY🚩 | obdii.cfd:443 | 10.02ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | sb24.ir.016b95aba48658eb.www.speedtest.net.kish.ir.tabnak.ir.entekhab.ir.leader.ir.asiatech.ir.divar.ir.shahr-bank.ir.postbank.ir.qmb.ir.sid.ir.codal.ir.anten.ir.011010100110111101110011011101000110000101110010110111010001100.dE.:80 | 170.17ms | 0️⃣1️⃣",
+                "@Awlix_ir | RELAY🚩 | lammaland.org:443 | 116.79ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
-            "type": "urltest",
-            "outbounds": [
-                "@Hope_Net | US🇺🇸 | 38.91.107.205:443 | 33.95ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
+            "tag": "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 177.72ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "5.34.176.111",
+            "server_port": 57614,
+            "uuid": "4e55ce40-9f8e-417d-f8ae-aa6af97a7097",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 418.66ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 32.64ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "172.67.156.210",
             "server_port": 443,
@@ -178,7 +197,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | RELAY🚩 | obdii.cfd:443 | 208.5ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | RELAY🚩 | obdii.cfd:443 | 10.02ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "188.114.96.2",
             "server_port": 443,
@@ -214,7 +233,24 @@
             }
         },
         {
-            "tag": "@Awlix_ir | RELAY🚩 | lammaland.org:443 | 328.11ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | sb24.ir.016b95aba48658eb.www.speedtest.net.kish.ir.tabnak.ir.entekhab.ir.leader.ir.asiatech.ir.divar.ir.shahr-bank.ir.postbank.ir.qmb.ir.sid.ir.codal.ir.anten.ir.011010100110111101110011011101000110000101110010110111010001100.dE.:80 | 170.17ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "103.184.45.164",
+            "server_port": 80,
+            "uuid": "782efefc-aac2-a7f2-6e2b-e42f7bc5d75a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@Awlix_ir | RELAY🚩 | lammaland.org:443 | 116.79ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.190.98",
             "server_port": 443,
@@ -244,42 +280,6 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": "172.67.190.98"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | US🇺🇸 | 38.91.107.205:443 | 33.95ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "38.91.107.205",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 1,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": null,
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "38.91.107.205"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
