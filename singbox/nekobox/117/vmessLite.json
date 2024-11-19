@@ -99,46 +99,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 169.1ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 312.19ms | 0️⃣2️⃣",
-                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 236.06ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 89.91ms | 0️⃣2️⃣",
-                "@Hope_Net | SG🇸🇬 | sg5.wish.ml:2052 | 1584.19ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 187.48ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 201.62ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 132.49ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | 172.67.71.122:8080 | 5.59ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 169.1ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 312.19ms | 0️⃣2️⃣",
-                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 236.06ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 89.91ms | 0️⃣2️⃣",
-                "@Hope_Net | SG🇸🇬 | sg5.wish.ml:2052 | 1584.19ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 187.48ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 201.62ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 132.49ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | 172.67.71.122:8080 | 5.59ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 169.1ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "5.34.176.111",
-            "server_port": 57614,
-            "uuid": "4e55ce40-9f8e-417d-f8ae-aa6af97a7097",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 312.19ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 187.48ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.156.210",
             "server_port": 443,
@@ -174,7 +155,7 @@
             }
         },
         {
-            "tag": "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 236.06ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 201.62ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "Back.MsV2ray.online",
             "server_port": 443,
@@ -210,7 +191,7 @@
             }
         },
         {
-            "tag": "@customv2ray | RELAY🚩 | d.masjide.org:443 | 89.91ms | 0️⃣2️⃣",
+            "tag": "@customv2ray | RELAY🚩 | d.masjide.org:443 | 132.49ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "d.masjide.org",
             "server_port": 443,
@@ -246,11 +227,11 @@
             }
         },
         {
-            "tag": "@Hope_Net | SG🇸🇬 | sg5.wish.ml:2052 | 1584.19ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | 172.67.71.122:8080 | 5.59ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "hk.wish.ml",
-            "server_port": 2052,
-            "uuid": "7d417084-d308-4b35-96c8-99dfb2547ec2",
+            "server": "172.67.71.122",
+            "server_port": 8080,
+            "uuid": "b7c56170-edb4-4c4a-bb64-ed5ef40b8739",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -263,9 +244,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/",
+                "path": "\/",
                 "headers": {
-                    "Host": "hk.wish.ml"
+                    "Host": ""
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
