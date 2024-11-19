@@ -102,7 +102,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "SG🇸🇬",
                 "RELAY🚩",
                 "FI🇫🇮"
             ]
@@ -111,23 +110,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 177.22ms | 0️⃣1️⃣",
-                "@Hope_Net | SG🇸🇬 | sg5.wish.ml:2052 | 472.93ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 208.02ms | 0️⃣2️⃣",
-                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 88.95ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 16.22ms | 0️⃣2️⃣",
-                "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 198.55ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "SG🇸🇬",
-            "type": "urltest",
-            "outbounds": [
-                "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 177.22ms | 0️⃣1️⃣",
-                "@Hope_Net | SG🇸🇬 | sg5.wish.ml:2052 | 472.93ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 134.45ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 20.5ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 178.72ms | 0️⃣2️⃣",
+                "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 298.8ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -137,9 +123,9 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 208.02ms | 0️⃣2️⃣",
-                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 88.95ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 16.22ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 134.45ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 20.5ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 178.72ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -149,57 +135,14 @@
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 198.55ms | 0️⃣1️⃣"
+                "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 298.8ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 177.22ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "5.34.176.111",
-            "server_port": 57614,
-            "uuid": "4e55ce40-9f8e-417d-f8ae-aa6af97a7097",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@Hope_Net | SG🇸🇬 | sg5.wish.ml:2052 | 472.93ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "104.19.48.236",
-            "server_port": 2052,
-            "uuid": "7d417084-d308-4b35-96c8-99dfb2547ec2",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "104.19.48.236"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 208.02ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 134.45ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.156.210",
             "server_port": 443,
@@ -235,7 +178,7 @@
             }
         },
         {
-            "tag": "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 88.95ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 20.5ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "Back.MsV2ray.online",
             "server_port": 443,
@@ -271,7 +214,7 @@
             }
         },
         {
-            "tag": "@customv2ray | RELAY🚩 | d.masjide.org:443 | 16.22ms | 0️⃣2️⃣",
+            "tag": "@customv2ray | RELAY🚩 | d.masjide.org:443 | 178.72ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "d.masjide.org",
             "server_port": 443,
@@ -307,7 +250,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 198.55ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 298.8ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "hra.app-browser.org",
             "server_port": 443,
