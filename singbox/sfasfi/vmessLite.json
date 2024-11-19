@@ -102,29 +102,50 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 264.84ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 28.7ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 24.08ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | gwdef.sbs:443 | 61.36ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 172.67.71.122:8080 | 3.11ms | 0️⃣1️⃣"
+                "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 183.26ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 212.9ms | 0️⃣2️⃣",
+                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 161.43ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 164.75ms | 0️⃣2️⃣",
+                "@ConfigsHUB | RELAY🚩 | obdii.cfd:443 | 195.72ms | 0️⃣1️⃣",
+                "@Hope_Net | SG🇸🇬 | sg5.wish.ml:2052 | 463.95ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 172.67.71.122:8080 | 8.55ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 264.84ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 28.7ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 24.08ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | gwdef.sbs:443 | 61.36ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 172.67.71.122:8080 | 3.11ms | 0️⃣1️⃣"
+                "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 183.26ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 212.9ms | 0️⃣2️⃣",
+                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 161.43ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 164.75ms | 0️⃣2️⃣",
+                "@ConfigsHUB | RELAY🚩 | obdii.cfd:443 | 195.72ms | 0️⃣1️⃣",
+                "@Hope_Net | SG🇸🇬 | sg5.wish.ml:2052 | 463.95ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 172.67.71.122:8080 | 8.55ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 264.84ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 183.26ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "5.34.176.111",
+            "server_port": 57614,
+            "uuid": "4e55ce40-9f8e-417d-f8ae-aa6af97a7097",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 212.9ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "172.67.156.210",
             "server_port": 443,
@@ -160,7 +181,7 @@
             }
         },
         {
-            "tag": "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 28.7ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 161.43ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "Back.MsV2ray.online",
             "server_port": 443,
@@ -196,7 +217,7 @@
             }
         },
         {
-            "tag": "@customv2ray | RELAY🚩 | d.masjide.org:443 | 24.08ms | 0️⃣2️⃣",
+            "tag": "@customv2ray | RELAY🚩 | d.masjide.org:443 | 164.75ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "d.masjide.org",
             "server_port": 443,
@@ -232,11 +253,11 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | RELAY🚩 | gwdef.sbs:443 | 61.36ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | obdii.cfd:443 | 195.72ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.21.82.17",
+            "server": "2.189.59.7",
             "server_port": 443,
-            "uuid": "bc864078-dcf3-4bf4-8dbf-ca9f200b56be",
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -249,7 +270,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "gwdef.sbs",
+                "server_name": "obdii.cfd",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -261,14 +282,40 @@
                 "type": "ws",
                 "path": "\/\/linkws",
                 "headers": {
-                    "Host": "104.21.82.17"
+                    "Host": "2.189.59.7"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | 172.67.71.122:8080 | 3.11ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | SG🇸🇬 | sg5.wish.ml:2052 | 463.95ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "hk.wish.ml",
+            "server_port": 2052,
+            "uuid": "7d417084-d308-4b35-96c8-99dfb2547ec2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "hk.wish.ml"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | 172.67.71.122:8080 | 8.55ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "172.67.71.122",
             "server_port": 8080,
