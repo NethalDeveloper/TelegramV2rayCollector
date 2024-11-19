@@ -99,31 +99,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 9.27ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 12.93ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 166.89ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | valkinin.org:443 | 122.84ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 100-207-132-205.s2.db-link02.top:2082 | 219.77ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | 65.75.192.48:37543 | 68.16ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 133.21ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 22.35ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 487.85ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 9.27ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 12.93ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 166.89ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | valkinin.org:443 | 122.84ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 100-207-132-205.s2.db-link02.top:2082 | 219.77ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | 65.75.192.48:37543 | 68.16ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 133.21ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 22.35ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 487.85ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 9.27ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 133.21ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.156.210",
             "server_port": 443,
@@ -159,7 +153,7 @@
             }
         },
         {
-            "tag": "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 12.93ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 22.35ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "Back.MsV2ray.online",
             "server_port": 443,
@@ -195,7 +189,7 @@
             }
         },
         {
-            "tag": "@customv2ray | RELAY🚩 | d.masjide.org:443 | 166.89ms | 0️⃣2️⃣",
+            "tag": "@customv2ray | RELAY🚩 | d.masjide.org:443 | 487.85ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "d.masjide.org",
             "server_port": 443,
@@ -225,94 +219,6 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": "d.masjide.org"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@ConfigsHUB | RELAY🚩 | valkinin.org:443 | 122.84ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "valkinin.org",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 1,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "valkinin.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "valkinin.org"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | RELAY🚩 | 100-207-132-205.s2.db-link02.top:2082 | 219.77ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "198.41.209.70",
-            "server_port": 2082,
-            "uuid": "1c713b69-0abe-3a1e-bf70-b0579ea2f772",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/dabai.in172.64.25.37",
-                "headers": {
-                    "Host": "198.41.209.70"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | US🇺🇸 | 65.75.192.48:37543 | 68.16ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "65.75.192.48",
-            "server_port": 37543,
-            "uuid": "4674cbfc-f9ab-4c47-eec1-ba0a98ae370e",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/67jfsf",
-                "headers": {
-                    "Host": "65.75.192.48"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
