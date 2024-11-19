@@ -100,20 +100,21 @@
             "outbounds": [
                 "URL-TEST",
                 "SG🇸🇬",
-                "RELAY🚩"
+                "RELAY🚩",
+                "US🇺🇸"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 183.26ms | 0️⃣1️⃣",
-                "@Hope_Net | SG🇸🇬 | sg5.wish.ml:2052 | 463.95ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 212.9ms | 0️⃣2️⃣",
-                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 161.43ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 164.75ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | obdii.cfd:443 | 195.72ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 172.67.71.122:8080 | 8.55ms | 0️⃣2️⃣"
+                "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 185.59ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 203.77ms | 0️⃣2️⃣",
+                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 56.73ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 171.24ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | http1.9290254.xyz:8443 | 62.27ms | 0️⃣3️⃣",
+                "@Hope_Net | US🇺🇸 | ip11.6016725.xyz:2095 | 48.21ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | ip20.6016725.xyz:2095 | 61.04ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -123,8 +124,7 @@
             "tag": "SG🇸🇬",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 183.26ms | 0️⃣1️⃣",
-                "@Hope_Net | SG🇸🇬 | sg5.wish.ml:2052 | 463.95ms | 0️⃣1️⃣"
+                "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 185.59ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -134,18 +134,28 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 212.9ms | 0️⃣2️⃣",
-                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 161.43ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 164.75ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | obdii.cfd:443 | 195.72ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 172.67.71.122:8080 | 8.55ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 203.77ms | 0️⃣2️⃣",
+                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 56.73ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | d.masjide.org:443 | 171.24ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | http1.9290254.xyz:8443 | 62.27ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 183.26ms | 0️⃣1️⃣",
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "@Hope_Net | US🇺🇸 | ip11.6016725.xyz:2095 | 48.21ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | ip20.6016725.xyz:2095 | 61.04ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 185.59ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "5.34.176.111",
             "server_port": 57614,
@@ -162,33 +172,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | SG🇸🇬 | sg5.wish.ml:2052 | 463.95ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "hk.wish.ml",
-            "server_port": 2052,
-            "uuid": "7d417084-d308-4b35-96c8-99dfb2547ec2",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "hk.wish.ml"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 212.9ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 203.77ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "172.67.156.210",
             "server_port": 443,
@@ -224,7 +208,7 @@
             }
         },
         {
-            "tag": "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 161.43ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 56.73ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "Back.MsV2ray.online",
             "server_port": 443,
@@ -260,7 +244,7 @@
             }
         },
         {
-            "tag": "@customv2ray | RELAY🚩 | d.masjide.org:443 | 164.75ms | 0️⃣2️⃣",
+            "tag": "@customv2ray | RELAY🚩 | d.masjide.org:443 | 171.24ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "d.masjide.org",
             "server_port": 443,
@@ -296,11 +280,11 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | RELAY🚩 | obdii.cfd:443 | 195.72ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | http1.9290254.xyz:8443 | 62.27ms | 0️⃣3️⃣",
             "type": "vmess",
-            "server": "2.189.59.7",
-            "server_port": 443,
-            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "server": "104.21.238.202",
+            "server_port": 8443,
+            "uuid": "9201ffaa-6ca3-4f57-8b1f-266a2f390e43",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -313,7 +297,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "obdii.cfd",
+                "server_name": null,
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -323,20 +307,20 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/linkws",
+                "path": "\/github.com\/Alvin9999",
                 "headers": {
-                    "Host": "2.189.59.7"
+                    "Host": "104.21.238.202"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | 172.67.71.122:8080 | 8.55ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | US🇺🇸 | ip11.6016725.xyz:2095 | 48.21ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "172.67.71.122",
-            "server_port": 8080,
-            "uuid": "b7c56170-edb4-4c4a-bb64-ed5ef40b8739",
+            "server": "singapore.com",
+            "server_port": 2095,
+            "uuid": "18d96190-c10f-448f-a82a-2d36df5c3cde",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -349,9 +333,35 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/",
+                "path": "\/\/github.com\/Alvin9999",
                 "headers": {
-                    "Host": ""
+                    "Host": "singapore.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | US🇺🇸 | ip20.6016725.xyz:2095 | 61.04ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "singapore.com",
+            "server_port": 2095,
+            "uuid": "18d96190-c10f-448f-a82a-2d36df5c3cde",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/github.com\/Alvin9999",
+                "headers": {
+                    "Host": "singapore.com"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
