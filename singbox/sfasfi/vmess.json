@@ -102,20 +102,33 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "SG🇸🇬",
                 "RELAY🚩",
                 "FI🇫🇮",
-                "GB🇬🇧"
+                "RU🇷🇺"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 27.8ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 23.42ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | e.kampong.org:443 | 186.03ms | 0️⃣1️⃣",
-                "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 304.97ms | 0️⃣1️⃣",
-                "@Hope_Net | GB🇬🇧 | 62.112.221.47:3939 | 85.55ms | 0️⃣2️⃣"
+                "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 182.93ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 9.55ms | 0️⃣2️⃣",
+                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 297.84ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | be.taward.org:443 | 174.57ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | http1.9290254.xyz:8443 | 12.18ms | 0️⃣1️⃣",
+                "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 298.42ms | 0️⃣1️⃣",
+                "@Hope_Net | RU🇷🇺 | somethings.iseasy.tw:20664 | 288.05ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 182.93ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -125,9 +138,10 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 27.8ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 23.42ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | e.kampong.org:443 | 186.03ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 9.55ms | 0️⃣2️⃣",
+                "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 297.84ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | be.taward.org:443 | 174.57ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | http1.9290254.xyz:8443 | 12.18ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -137,24 +151,41 @@
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 304.97ms | 0️⃣1️⃣"
+                "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 298.42ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "GB🇬🇧",
+            "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | GB🇬🇧 | 62.112.221.47:3939 | 85.55ms | 0️⃣2️⃣"
+                "@Hope_Net | RU🇷🇺 | somethings.iseasy.tw:20664 | 288.05ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 27.8ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 182.93ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "5.34.176.111",
+            "server_port": 57614,
+            "uuid": "4e55ce40-9f8e-417d-f8ae-aa6af97a7097",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 9.55ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "172.67.156.210",
             "server_port": 443,
@@ -190,7 +221,7 @@
             }
         },
         {
-            "tag": "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 23.42ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | RELAY🚩 | jahfkjha.cfd:443 | 297.84ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "Back.MsV2ray.online",
             "server_port": 443,
@@ -226,11 +257,47 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | e.kampong.org:443 | 186.03ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | be.taward.org:443 | 174.57ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "172.67.128.110",
+            "server": "be.taward.org",
             "server_port": 443,
             "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 1,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "be.taward.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkvws",
+                "headers": {
+                    "Host": "be.taward.org"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | http1.9290254.xyz:8443 | 12.18ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "104.21.238.200",
+            "server_port": 8443,
+            "uuid": "9201ffaa-6ca3-4f57-8b1f-266a2f390e43",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -243,7 +310,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "e.kampong.org",
+                "server_name": "http1.9290254.xyz",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -253,16 +320,16 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/linkvws",
+                "path": "\/github.com\/Alvin9999",
                 "headers": {
-                    "Host": "172.67.128.110"
+                    "Host": "104.21.238.200"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 304.97ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 298.42ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "hra.app-browser.org",
             "server_port": 443,
@@ -289,11 +356,11 @@
             }
         },
         {
-            "tag": "@Hope_Net | GB🇬🇧 | 62.112.221.47:3939 | 85.55ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | RU🇷🇺 | somethings.iseasy.tw:20664 | 288.05ms | 0️⃣2️⃣",
             "type": "vmess",
-            "server": "62.112.221.47",
-            "server_port": 3939,
-            "uuid": "f0b7bad9-b386-4e89-a7c0-8efe63813226",
+            "server": "45.67.32.147",
+            "server_port": 20664,
+            "uuid": "a5483118-8d40-48da-bde1-b20445d8c380",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -303,6 +370,25 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "somethings.iseasy.tw",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/socks5tobefree",
+                "headers": {
+                    "Host": "45.67.32.147"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
