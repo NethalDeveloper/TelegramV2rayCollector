@@ -102,8 +102,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "GB🇬🇧",
                 "IE🇮🇪",
+                "SE🇸🇪",
+                "CA🇨🇦",
                 "NO🇳🇴",
                 "US🇺🇸",
                 "RELAY🚩"
@@ -113,28 +114,16 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | GB🇬🇧 | 18.169.41.50:22222 | 80.59ms | 0️⃣1️⃣",
-                "@PrivateVPNs | GB🇬🇧 | 35.179.22.195:22222 | 81.33ms | 0️⃣2️⃣",
-                "@DirectVPN | GB🇬🇧 | 35.176.147.88:22222 | 81.24ms | 0️⃣1️⃣",
-                "@PrivateVPNs | IE🇮🇪 | 52.211.43.105:22222 | 82.27ms | 0️⃣3️⃣",
-                "@DirectVPN | IE🇮🇪 | 34.242.177.91:22222 | 85.63ms | 0️⃣2️⃣",
-                "@DirectVPN | IE🇮🇪 | 52.17.229.95:22222 | 107.93ms | 0️⃣3️⃣",
-                "@v2ray1_ng | NO🇳🇴 | customer-95-164-38-151.stark-industries.solutions:443 | 220.17ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | 199.68.156.69:443 | 5.28ms | 0️⃣3️⃣",
-                "@ConfigsHUB | RELAY🚩 | 104.17.147.11:443 | 5.32ms | 0️⃣1️⃣",
-                "@proxystore11 | RELAY🚩 | 104.20.21.199:443 | 5.25ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "GB🇬🇧",
-            "type": "urltest",
-            "outbounds": [
-                "@PrivateVPNs | GB🇬🇧 | 18.169.41.50:22222 | 80.59ms | 0️⃣1️⃣",
-                "@PrivateVPNs | GB🇬🇧 | 35.179.22.195:22222 | 81.33ms | 0️⃣2️⃣",
-                "@DirectVPN | GB🇬🇧 | 35.176.147.88:22222 | 81.24ms | 0️⃣1️⃣"
+                "@PrivateVPNs | IE🇮🇪 | 52.211.43.105:22222 | 124.67ms | 0️⃣1️⃣",
+                "@PrivateVPNs | IE🇮🇪 | 34.252.164.177:22222 | 76.1ms | 0️⃣2️⃣",
+                "@DirectVPN | IE🇮🇪 | 34.242.177.91:22222 | 82.04ms | 0️⃣1️⃣",
+                "@DirectVPN | IE🇮🇪 | 52.17.229.95:22222 | 67.06ms | 0️⃣2️⃣",
+                "@PrivateVPNs | SE🇸🇪 | 51.21.8.249:22222 | 100.61ms | 0️⃣3️⃣",
+                "@DirectVPN | CA🇨🇦 | 35.183.201.213:22222 | 20.17ms | 0️⃣3️⃣",
+                "@v2ray1_ng | NO🇳🇴 | customer-95-164-38-151.stark-industries.solutions:443 | 259.6ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | 199.68.156.69:443 | 1.1ms | 0️⃣3️⃣",
+                "@ConfigsHUB | RELAY🚩 | 104.17.147.11:443 | 1.1ms | 0️⃣1️⃣",
+                "@proxystore11 | RELAY🚩 | 104.20.21.199:443 | 1.25ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -144,9 +133,30 @@
             "tag": "IE🇮🇪",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | IE🇮🇪 | 52.211.43.105:22222 | 82.27ms | 0️⃣3️⃣",
-                "@DirectVPN | IE🇮🇪 | 34.242.177.91:22222 | 85.63ms | 0️⃣2️⃣",
-                "@DirectVPN | IE🇮🇪 | 52.17.229.95:22222 | 107.93ms | 0️⃣3️⃣"
+                "@PrivateVPNs | IE🇮🇪 | 52.211.43.105:22222 | 124.67ms | 0️⃣1️⃣",
+                "@PrivateVPNs | IE🇮🇪 | 34.252.164.177:22222 | 76.1ms | 0️⃣2️⃣",
+                "@DirectVPN | IE🇮🇪 | 34.242.177.91:22222 | 82.04ms | 0️⃣1️⃣",
+                "@DirectVPN | IE🇮🇪 | 52.17.229.95:22222 | 67.06ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SE🇸🇪",
+            "type": "urltest",
+            "outbounds": [
+                "@PrivateVPNs | SE🇸🇪 | 51.21.8.249:22222 | 100.61ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CA🇨🇦",
+            "type": "urltest",
+            "outbounds": [
+                "@DirectVPN | CA🇨🇦 | 35.183.201.213:22222 | 20.17ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -156,7 +166,7 @@
             "tag": "NO🇳🇴",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | NO🇳🇴 | customer-95-164-38-151.stark-industries.solutions:443 | 220.17ms | 0️⃣1️⃣"
+                "@v2ray1_ng | NO🇳🇴 | customer-95-164-38-151.stark-industries.solutions:443 | 259.6ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -166,7 +176,7 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | US🇺🇸 | 199.68.156.69:443 | 5.28ms | 0️⃣3️⃣"
+                "@v2ray1_ng | US🇺🇸 | 199.68.156.69:443 | 1.1ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -176,78 +186,15 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@ConfigsHUB | RELAY🚩 | 104.17.147.11:443 | 5.32ms | 0️⃣1️⃣",
-                "@proxystore11 | RELAY🚩 | 104.20.21.199:443 | 5.25ms | 0️⃣1️⃣"
+                "@ConfigsHUB | RELAY🚩 | 104.17.147.11:443 | 1.1ms | 0️⃣1️⃣",
+                "@proxystore11 | RELAY🚩 | 104.20.21.199:443 | 1.25ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | GB🇬🇧 | 18.169.41.50:22222 | 80.59ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "18.169.41.50",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | GB🇬🇧 | 35.179.22.195:22222 | 81.33ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "35.179.22.195",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@DirectVPN | GB🇬🇧 | 35.176.147.88:22222 | 81.24ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "35.176.147.88",
-            "server_port": 22222,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | IE🇮🇪 | 52.211.43.105:22222 | 82.27ms | 0️⃣3️⃣",
+            "tag": "@PrivateVPNs | IE🇮🇪 | 52.211.43.105:22222 | 124.67ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "52.211.43.105",
             "server_port": 22222,
@@ -268,7 +215,28 @@
             }
         },
         {
-            "tag": "@DirectVPN | IE🇮🇪 | 34.242.177.91:22222 | 85.63ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | IE🇮🇪 | 34.252.164.177:22222 | 76.1ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "34.252.164.177",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | IE🇮🇪 | 34.242.177.91:22222 | 82.04ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "34.242.177.91",
             "server_port": 22222,
@@ -289,7 +257,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | IE🇮🇪 | 52.17.229.95:22222 | 107.93ms | 0️⃣3️⃣",
+            "tag": "@DirectVPN | IE🇮🇪 | 52.17.229.95:22222 | 67.06ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "52.17.229.95",
             "server_port": 22222,
@@ -310,7 +278,49 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | NO🇳🇴 | customer-95-164-38-151.stark-industries.solutions:443 | 220.17ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | SE🇸🇪 | 51.21.8.249:22222 | 100.61ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "51.21.8.249",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | CA🇨🇦 | 35.183.201.213:22222 | 20.17ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "35.183.201.213",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | NO🇳🇴 | customer-95-164-38-151.stark-industries.solutions:443 | 259.6ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "customer-95-164-38-151.stark-industries.solutions",
             "server_port": 443,
@@ -331,7 +341,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | 199.68.156.69:443 | 5.28ms | 0️⃣3️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | 199.68.156.69:443 | 1.1ms | 0️⃣3️⃣",
             "type": "trojan",
             "server": "199.68.156.69",
             "server_port": 443,
@@ -359,7 +369,7 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | RELAY🚩 | 104.17.147.11:443 | 5.32ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | 104.17.147.11:443 | 1.1ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "104.17.147.11",
             "server_port": 443,
@@ -387,7 +397,7 @@
             }
         },
         {
-            "tag": "@proxystore11 | RELAY🚩 | 104.20.21.199:443 | 5.25ms | 0️⃣1️⃣",
+            "tag": "@proxystore11 | RELAY🚩 | 104.20.21.199:443 | 1.25ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "104.20.21.199",
             "server_port": 443,
