@@ -104,46 +104,31 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 191.4ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 41.94ms | 0️⃣2️⃣",
-                "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 305.91ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | ip18.6929198.xyz:2082 | 23.57ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | 38.174.190.80:38007 | 2.23ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 29.07ms | 0️⃣1️⃣",
+                "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 309.11ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | linde06.indiavideo.sbs:443 | 28.98ms | 0️⃣1️⃣",
+                "@Hope_Net | IR🇮🇷 | 46.38.147.138:6060 | 184.91ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | 38.174.190.80:38007 | 70.97ms | 0️⃣2️⃣",
+                "@Hope_Net | US🇺🇸 | ip2.6016725.xyz:2095 | 80.97ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 191.4ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 41.94ms | 0️⃣2️⃣",
-                "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 305.91ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | ip18.6929198.xyz:2082 | 23.57ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | 38.174.190.80:38007 | 2.23ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 29.07ms | 0️⃣1️⃣",
+                "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 309.11ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | linde06.indiavideo.sbs:443 | 28.98ms | 0️⃣1️⃣",
+                "@Hope_Net | IR🇮🇷 | 46.38.147.138:6060 | 184.91ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | 38.174.190.80:38007 | 70.97ms | 0️⃣2️⃣",
+                "@Hope_Net | US🇺🇸 | ip2.6016725.xyz:2095 | 80.97ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | SG🇸🇬 | 5.34.176.111:57614 | 191.4ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "5.34.176.111",
-            "server_port": 57614,
-            "uuid": "4e55ce40-9f8e-417d-f8ae-aa6af97a7097",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 41.94ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | glweidf.sbs:443 | 29.07ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.156.210",
             "server_port": 443,
@@ -179,7 +164,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 305.91ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | FI🇫🇮 | hra.app-browser.org:443 | 309.11ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "hra.app-browser.org",
             "server_port": 443,
@@ -206,11 +191,11 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | ip18.6929198.xyz:2082 | 23.57ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | linde06.indiavideo.sbs:443 | 28.98ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "www.visa.com",
-            "server_port": 2082,
-            "uuid": "5f3f09ad-89cb-4e94-a7ad-aa8239913555",
+            "server": "104.21.15.36",
+            "server_port": 443,
+            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -221,18 +206,45 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "linde06.indiavideo.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/\/github.com\/Alvin9999",
+                "path": "\/\/linkws",
                 "headers": {
-                    "Host": "www.visa.com"
+                    "Host": "104.21.15.36"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | 38.174.190.80:38007 | 2.23ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | IR🇮🇷 | 46.38.147.138:6060 | 184.91ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "46.38.147.138",
+            "server_port": 6060,
+            "uuid": "64e09f77-d4a3-4138-9797-378425af6eef",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@Hope_Net | US🇺🇸 | 38.174.190.80:38007 | 70.97ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "38.174.190.80",
             "server_port": 38007,
@@ -261,7 +273,33 @@
                 "type": "ws",
                 "path": "\/\/path\/102206282005",
                 "headers": {
-                    "Host": ""
+                    "Host": "38.174.190.80"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | US🇺🇸 | ip2.6016725.xyz:2095 | 80.97ms | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "162.159.140.77",
+            "server_port": 2095,
+            "uuid": "18d96190-c10f-448f-a82a-2d36df5c3cde",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/github.com\/Alvin9999",
+                "headers": {
+                    "Host": "162.159.140.77"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
