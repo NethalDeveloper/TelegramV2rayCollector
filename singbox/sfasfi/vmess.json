@@ -102,30 +102,31 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "US🇺🇸",
-                "RELAY🚩"
+                "DE🇩🇪",
+                "RELAY🚩",
+                "US🇺🇸"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | US🇺🇸 | glweidf.sbs:443 | 248.58ms | 0️⃣1️⃣",
-                "@vless_vmess | RELAY🚩 | es.pulau.org:443 | 181.14ms | 0️⃣1️⃣",
-                "@vless_vmess | RELAY🚩 | bs.putihb.org:443 | 131.91ms | 0️⃣2️⃣",
-                "@vless_vmess | RELAY🚩 | jamekk.org:443 | 177.08ms | 0️⃣3️⃣",
-                "@Hope_Net | RELAY🚩 | 100-207-132-205.s2.db-link02.top:2082 | 312.52ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 100-36-256-124.s2.db-link02.top:2086 | 229.2ms | 0️⃣2️⃣"
+                "@free4allVPN | DE🇩🇪 | glweidf.sbs:443 | 204.83ms | 0️⃣1️⃣",
+                "@vless_vmess | RELAY🚩 | es.pulau.org:443 | 127.08ms | 0️⃣1️⃣",
+                "@vless_vmess | RELAY🚩 | bs.putihb.org:443 | 177.88ms | 0️⃣2️⃣",
+                "@vless_vmess | RELAY🚩 | jamekk.org:443 | 190.27ms | 0️⃣3️⃣",
+                "@Hope_Net | RELAY🚩 | 100-36-256-124.s2.db-link02.top:2086 | 228.58ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | ip20.6016725.xyz:2095 | 83.26ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
+            "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | US🇺🇸 | glweidf.sbs:443 | 248.58ms | 0️⃣1️⃣"
+                "@free4allVPN | DE🇩🇪 | glweidf.sbs:443 | 204.83ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -135,18 +136,27 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@vless_vmess | RELAY🚩 | es.pulau.org:443 | 181.14ms | 0️⃣1️⃣",
-                "@vless_vmess | RELAY🚩 | bs.putihb.org:443 | 131.91ms | 0️⃣2️⃣",
-                "@vless_vmess | RELAY🚩 | jamekk.org:443 | 177.08ms | 0️⃣3️⃣",
-                "@Hope_Net | RELAY🚩 | 100-207-132-205.s2.db-link02.top:2082 | 312.52ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 100-36-256-124.s2.db-link02.top:2086 | 229.2ms | 0️⃣2️⃣"
+                "@vless_vmess | RELAY🚩 | es.pulau.org:443 | 127.08ms | 0️⃣1️⃣",
+                "@vless_vmess | RELAY🚩 | bs.putihb.org:443 | 177.88ms | 0️⃣2️⃣",
+                "@vless_vmess | RELAY🚩 | jamekk.org:443 | 190.27ms | 0️⃣3️⃣",
+                "@Hope_Net | RELAY🚩 | 100-36-256-124.s2.db-link02.top:2086 | 228.58ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | US🇺🇸 | glweidf.sbs:443 | 248.58ms | 0️⃣1️⃣",
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "@Hope_Net | US🇺🇸 | ip20.6016725.xyz:2095 | 83.26ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@free4allVPN | DE🇩🇪 | glweidf.sbs:443 | 204.83ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.156.210",
             "server_port": 443,
@@ -182,7 +192,7 @@
             }
         },
         {
-            "tag": "@vless_vmess | RELAY🚩 | es.pulau.org:443 | 181.14ms | 0️⃣1️⃣",
+            "tag": "@vless_vmess | RELAY🚩 | es.pulau.org:443 | 127.08ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "es.pulau.org",
             "server_port": 443,
@@ -218,7 +228,7 @@
             }
         },
         {
-            "tag": "@vless_vmess | RELAY🚩 | bs.putihb.org:443 | 131.91ms | 0️⃣2️⃣",
+            "tag": "@vless_vmess | RELAY🚩 | bs.putihb.org:443 | 177.88ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "bs.putihb.org",
             "server_port": 443,
@@ -254,7 +264,7 @@
             }
         },
         {
-            "tag": "@vless_vmess | RELAY🚩 | jamekk.org:443 | 177.08ms | 0️⃣3️⃣",
+            "tag": "@vless_vmess | RELAY🚩 | jamekk.org:443 | 190.27ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "jamekk.org",
             "server_port": 443,
@@ -290,33 +300,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | 100-207-132-205.s2.db-link02.top:2082 | 312.52ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "104.19.48.236",
-            "server_port": 2082,
-            "uuid": "1c713b69-0abe-3a1e-bf70-b0579ea2f772",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/dabai.in172.64.25.37",
-                "headers": {
-                    "Host": "104.19.48.236"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | RELAY🚩 | 100-36-256-124.s2.db-link02.top:2086 | 229.2ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | 100-36-256-124.s2.db-link02.top:2086 | 228.58ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "s2.db-link02.top",
             "server_port": 2086,
@@ -336,6 +320,32 @@
                 "path": "\/\/dabai.in104.16.98.32",
                 "headers": {
                     "Host": "s2.db-link02.top"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | US🇺🇸 | ip20.6016725.xyz:2095 | 83.26ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "172.64.166.22",
+            "server_port": 2095,
+            "uuid": "18d96190-c10f-448f-a82a-2d36df5c3cde",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/github.com\/Alvin9999",
+                "headers": {
+                    "Host": "172.64.166.22"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
