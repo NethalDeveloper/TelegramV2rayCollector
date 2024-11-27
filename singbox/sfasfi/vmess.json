@@ -103,17 +103,18 @@
             "outbounds": [
                 "URL-TEST",
                 "FR🇫🇷",
-                "TW🇹🇼",
-                "FI🇫🇮"
+                "FI🇫🇮",
+                "US🇺🇸"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 173.94ms | 0️⃣1️⃣",
-                "@free4allVPN | TW🇹🇼 | 103.159.206.35:31945 | 137.87ms | 0️⃣2️⃣",
-                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 303.08ms | 0️⃣1️⃣"
+                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 135.15ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 134.02ms | 0️⃣2️⃣",
+                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 266.9ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | ip2.6016725.xyz:2095 | 88.14ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -123,17 +124,8 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 173.94ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "TW🇹🇼",
-            "type": "urltest",
-            "outbounds": [
-                "@free4allVPN | TW🇹🇼 | 103.159.206.35:31945 | 137.87ms | 0️⃣2️⃣"
+                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 135.15ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 134.02ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,14 +135,60 @@
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 303.08ms | 0️⃣1️⃣"
+                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 266.9ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 173.94ms | 0️⃣1️⃣",
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "@Hope_Net | US🇺🇸 | ip2.6016725.xyz:2095 | 88.14ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 135.15ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.67.156.210",
+            "server_port": 443,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkws",
+                "headers": {
+                    "Host": "172.67.156.210"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 134.02ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -186,33 +224,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | TW🇹🇼 | 103.159.206.35:31945 | 137.87ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "103.159.206.35",
-            "server_port": 31945,
-            "uuid": "e2e511b0-7def-4e1b-d238-6cb5391b2e3f",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "103.159.206.35"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 303.08ms | 0️⃣1️⃣",
+            "tag": "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 266.9ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "hra.app-browser.org",
             "server_port": 443,
@@ -236,6 +248,32 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
+            }
+        },
+        {
+            "tag": "@Hope_Net | US🇺🇸 | ip2.6016725.xyz:2095 | 88.14ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.67.75.172",
+            "server_port": 2095,
+            "uuid": "18d96190-c10f-448f-a82a-2d36df5c3cde",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/github.com\/Alvin9999",
+                "headers": {
+                    "Host": "172.67.75.172"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
