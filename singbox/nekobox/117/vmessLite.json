@@ -99,29 +99,69 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 342.55ms | 0️⃣1️⃣",
-                "@free4allVPN | TW🇹🇼 | 103.159.206.35:31945 | 199.89ms | 0️⃣2️⃣",
-                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 315.11ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | us.biu001.xyz:45678 | 83.52ms | 0️⃣2️⃣",
-                "@Hope_Net | FR🇫🇷 | beyonddsz.cfd:443 | 302.82ms | 0️⃣3️⃣"
+                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 212.74ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 394.48ms | 0️⃣2️⃣",
+                "@free4allVPN | TW🇹🇼 | 103.159.206.35:31945 | 196.04ms | 0️⃣3️⃣",
+                "@customv2ray | DE🇩🇪 | adenc36v.xtooltech.cfd:443 | 168.89ms | 0️⃣1️⃣",
+                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 310.76ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | us.biu001.xyz:45678 | 95.37ms | 0️⃣1️⃣",
+                "@Hope_Net | FR🇫🇷 | beyonddsz.cfd:443 | 114.31ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 342.55ms | 0️⃣1️⃣",
-                "@free4allVPN | TW🇹🇼 | 103.159.206.35:31945 | 199.89ms | 0️⃣2️⃣",
-                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 315.11ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | us.biu001.xyz:45678 | 83.52ms | 0️⃣2️⃣",
-                "@Hope_Net | FR🇫🇷 | beyonddsz.cfd:443 | 302.82ms | 0️⃣3️⃣"
+                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 212.74ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 394.48ms | 0️⃣2️⃣",
+                "@free4allVPN | TW🇹🇼 | 103.159.206.35:31945 | 196.04ms | 0️⃣3️⃣",
+                "@customv2ray | DE🇩🇪 | adenc36v.xtooltech.cfd:443 | 168.89ms | 0️⃣1️⃣",
+                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 310.76ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | us.biu001.xyz:45678 | 95.37ms | 0️⃣1️⃣",
+                "@Hope_Net | FR🇫🇷 | beyonddsz.cfd:443 | 114.31ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 342.55ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 212.74ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.67.156.210",
+            "server_port": 443,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkws",
+                "headers": {
+                    "Host": "172.67.156.210"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 394.48ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -157,7 +197,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | TW🇹🇼 | 103.159.206.35:31945 | 199.89ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | TW🇹🇼 | 103.159.206.35:31945 | 196.04ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "103.159.206.35",
             "server_port": 31945,
@@ -183,7 +223,43 @@
             }
         },
         {
-            "tag": "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 315.11ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | DE🇩🇪 | adenc36v.xtooltech.cfd:443 | 168.89ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "denc36.xtooltech.cfd",
+            "server_port": 443,
+            "uuid": "b321fd5d-e6ec-4293-a644-164e3885f52e",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "adenc36v.xtooltech.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkws",
+                "headers": {
+                    "Host": "denc36.xtooltech.cfd"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 310.76ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "hra.app-browser.org",
             "server_port": 443,
@@ -210,7 +286,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | us.biu001.xyz:45678 | 83.52ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | US🇺🇸 | us.biu001.xyz:45678 | 95.37ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "23.187.72.105",
             "server_port": 45678,
@@ -236,7 +312,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | FR🇫🇷 | beyonddsz.cfd:443 | 302.82ms | 0️⃣3️⃣",
+            "tag": "@Hope_Net | FR🇫🇷 | beyonddsz.cfd:443 | 114.31ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "193.160.130.245",
             "server_port": 443,
