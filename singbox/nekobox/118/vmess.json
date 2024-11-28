@@ -104,32 +104,17 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "DE🇩🇪",
                 "FR🇫🇷",
-                "US🇺🇸",
-                "FI🇫🇮",
-                "RELAY🚩"
+                "DE🇩🇪"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | DE🇩🇪 | glweidf.sbs:443 | 106.58ms | 0️⃣1️⃣",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 270.09ms | 0️⃣2️⃣",
-                "@customv2ray | US🇺🇸 | adenc36v.xtooltech.cfd:443 | 108.57ms | 0️⃣1️⃣",
-                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 248.77ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | yycfde1.benbo789.me:8443 | 21.28ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "@free4allVPN | DE🇩🇪 | glweidf.sbs:443 | 106.58ms | 0️⃣1️⃣"
+                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 177.41ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 262.27ms | 0️⃣2️⃣",
+                "@ConfigsHUB | DE🇩🇪 | 94.130.190.88:7610 | 149.53ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -139,44 +124,25 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 270.09ms | 0️⃣2️⃣"
+                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 177.41ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 262.27ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
+            "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@customv2ray | US🇺🇸 | adenc36v.xtooltech.cfd:443 | 108.57ms | 0️⃣1️⃣"
+                "@ConfigsHUB | DE🇩🇪 | 94.130.190.88:7610 | 149.53ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "FI🇫🇮",
-            "type": "urltest",
-            "outbounds": [
-                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 248.77ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "RELAY🚩",
-            "type": "urltest",
-            "outbounds": [
-                "@Hope_Net | RELAY🚩 | yycfde1.benbo789.me:8443 | 21.28ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "@free4allVPN | DE🇩🇪 | glweidf.sbs:443 | 106.58ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 177.41ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.156.210",
             "server_port": 443,
@@ -212,7 +178,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 270.09ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 262.27ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -248,11 +214,11 @@
             }
         },
         {
-            "tag": "@customv2ray | US🇺🇸 | adenc36v.xtooltech.cfd:443 | 108.57ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | DE🇩🇪 | 94.130.190.88:7610 | 149.53ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "denc36.xtooltech.cfd",
-            "server_port": 443,
-            "uuid": "b321fd5d-e6ec-4293-a644-164e3885f52e",
+            "server": "94.130.190.88",
+            "server_port": 7610,
+            "uuid": "5480b44f-5823-4246-bb8e-8a371da6dc4c",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -262,88 +228,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "adenc36v.xtooltech.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/linkws",
-                "headers": {
-                    "Host": "denc36.xtooltech.cfd"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 248.77ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "hra.app-browser.org",
-            "server_port": 443,
-            "uuid": "43eae510-e1bc-4036-e919-86a628f983ef",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "hra.app-browser.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@Hope_Net | RELAY🚩 | yycfde1.benbo789.me:8443 | 21.28ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "172.67.205.239",
-            "server_port": 8443,
-            "uuid": "5f88ddb3-e37d-40b9-8cae-0aee775e3035",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yycfde1.benbo789.me",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "172.67.205.239"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
