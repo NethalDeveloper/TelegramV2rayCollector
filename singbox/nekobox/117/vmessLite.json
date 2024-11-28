@@ -99,27 +99,65 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 316.77ms | 0️⃣1️⃣",
-                "@customv2ray | DE🇩🇪 | adenc36v.xtooltech.cfd:443 | 78.27ms | 0️⃣1️⃣",
-                "@ConfigsHUB | DE🇩🇪 | 94.130.190.88:7610 | 162.72ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | yycfde1.benbo789.me:8443 | 111.87ms | 0️⃣1️⃣"
+                "@free4allVPN | US🇺🇸 | glweidf.sbs:443 | 301.61ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 136.97ms | 0️⃣2️⃣",
+                "@customv2ray | FR🇫🇷 | adenc36v.xtooltech.cfd:443 | 51.17ms | 0️⃣1️⃣",
+                "@ConfigsHUB | DE🇩🇪 | 94.130.190.88:7610 | 112.69ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | yycfde1.benbo789.me:8443 | 173.66ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 316.77ms | 0️⃣1️⃣",
-                "@customv2ray | DE🇩🇪 | adenc36v.xtooltech.cfd:443 | 78.27ms | 0️⃣1️⃣",
-                "@ConfigsHUB | DE🇩🇪 | 94.130.190.88:7610 | 162.72ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | yycfde1.benbo789.me:8443 | 111.87ms | 0️⃣1️⃣"
+                "@free4allVPN | US🇺🇸 | glweidf.sbs:443 | 301.61ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 136.97ms | 0️⃣2️⃣",
+                "@customv2ray | FR🇫🇷 | adenc36v.xtooltech.cfd:443 | 51.17ms | 0️⃣1️⃣",
+                "@ConfigsHUB | DE🇩🇪 | 94.130.190.88:7610 | 112.69ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | yycfde1.benbo789.me:8443 | 173.66ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 316.77ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | US🇺🇸 | glweidf.sbs:443 | 301.61ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.67.156.210",
+            "server_port": 443,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkws",
+                "headers": {
+                    "Host": "172.67.156.210"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 136.97ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -155,7 +193,7 @@
             }
         },
         {
-            "tag": "@customv2ray | DE🇩🇪 | adenc36v.xtooltech.cfd:443 | 78.27ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | FR🇫🇷 | adenc36v.xtooltech.cfd:443 | 51.17ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "denc36.xtooltech.cfd",
             "server_port": 443,
@@ -191,7 +229,7 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | DE🇩🇪 | 94.130.190.88:7610 | 162.72ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | DE🇩🇪 | 94.130.190.88:7610 | 112.69ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "94.130.190.88",
             "server_port": 7610,
@@ -208,7 +246,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | yycfde1.benbo789.me:8443 | 111.87ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | yycfde1.benbo789.me:8443 | 173.66ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.205.239",
             "server_port": 8443,
