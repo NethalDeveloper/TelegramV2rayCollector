@@ -104,61 +104,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | DE🇩🇪 | glweidf.sbs:443 | 164.65ms | 0️⃣1️⃣",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 175.91ms | 0️⃣2️⃣",
-                "@ConfigsHUB | DE🇩🇪 | 94.130.190.88:7610 | 161.82ms | 0️⃣1️⃣"
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 170.81ms | 0️⃣1️⃣",
+                "@ConfigsHUB | DE🇩🇪 | 94.130.190.88:7610 | 165ms | 0️⃣1️⃣",
+                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 337.21ms | 0️⃣1️⃣",
+                "@Hope_Net | PL🇵🇱 | 128.204.223.115:44085 | 167.32ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | DE🇩🇪 | glweidf.sbs:443 | 164.65ms | 0️⃣1️⃣",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 175.91ms | 0️⃣2️⃣",
-                "@ConfigsHUB | DE🇩🇪 | 94.130.190.88:7610 | 161.82ms | 0️⃣1️⃣"
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 170.81ms | 0️⃣1️⃣",
+                "@ConfigsHUB | DE🇩🇪 | 94.130.190.88:7610 | 165ms | 0️⃣1️⃣",
+                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 337.21ms | 0️⃣1️⃣",
+                "@Hope_Net | PL🇵🇱 | 128.204.223.115:44085 | 167.32ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | DE🇩🇪 | glweidf.sbs:443 | 164.65ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "172.67.156.210",
-            "server_port": 443,
-            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "glweidf.sbs",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/linkws",
-                "headers": {
-                    "Host": "172.67.156.210"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 175.91ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 170.81ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -194,11 +160,55 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | DE🇩🇪 | 94.130.190.88:7610 | 161.82ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | DE🇩🇪 | 94.130.190.88:7610 | 165ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "94.130.190.88",
             "server_port": 7610,
             "uuid": "5480b44f-5823-4246-bb8e-8a371da6dc4c",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 337.21ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "hra.app-browser.org",
+            "server_port": 443,
+            "uuid": "43eae510-e1bc-4036-e919-86a628f983ef",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hra.app-browser.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@Hope_Net | PL🇵🇱 | 128.204.223.115:44085 | 167.32ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "128.204.223.115",
+            "server_port": 44085,
+            "uuid": "1db458f2-5df2-4fa5-8754-497c7ef0681b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
