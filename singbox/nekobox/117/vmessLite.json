@@ -99,31 +99,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | DE🇩🇪 | glweidf.sbs:443 | 263.56ms | 0️⃣1️⃣",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 201.8ms | 0️⃣2️⃣",
-                "@v2ray1_ng | US🇺🇸 | adenc36v.xtooltech.cfd:443 | 181.2ms | 0️⃣1️⃣",
-                "@ConfigsHUB | FI🇫🇮 | 46.8.71.20:51984 | 133.43ms | 0️⃣1️⃣",
-                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 307.73ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | c3.6016725.xyz:2095 | 31.12ms | 0️⃣1️⃣"
+                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 94.13ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 101.07ms | 0️⃣2️⃣",
+                "@ConfigsHUB | RELAY🚩 | us-new03.daluquan.top:8880 | 297.39ms | 0️⃣1️⃣",
+                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 283.79ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | c3.6016725.xyz:2095 | 8.16ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | DE🇩🇪 | glweidf.sbs:443 | 263.56ms | 0️⃣1️⃣",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 201.8ms | 0️⃣2️⃣",
-                "@v2ray1_ng | US🇺🇸 | adenc36v.xtooltech.cfd:443 | 181.2ms | 0️⃣1️⃣",
-                "@ConfigsHUB | FI🇫🇮 | 46.8.71.20:51984 | 133.43ms | 0️⃣1️⃣",
-                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 307.73ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | c3.6016725.xyz:2095 | 31.12ms | 0️⃣1️⃣"
+                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 94.13ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 101.07ms | 0️⃣2️⃣",
+                "@ConfigsHUB | RELAY🚩 | us-new03.daluquan.top:8880 | 297.39ms | 0️⃣1️⃣",
+                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 283.79ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | c3.6016725.xyz:2095 | 8.16ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | DE🇩🇪 | glweidf.sbs:443 | 263.56ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 94.13ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.156.210",
             "server_port": 443,
@@ -159,7 +157,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 201.8ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 101.07ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -195,11 +193,11 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | adenc36v.xtooltech.cfd:443 | 181.2ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | us-new03.daluquan.top:8880 | 297.39ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "denc36.xtooltech.cfd",
-            "server_port": 443,
-            "uuid": "b321fd5d-e6ec-4293-a644-164e3885f52e",
+            "server": "us-new03.daluquan.top",
+            "server_port": 8880,
+            "uuid": "4b9a43f2-b26d-4b56-afe5-2b6678add939",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -210,45 +208,18 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "adenc36v.xtooltech.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/\/linkws",
+                "path": "\/\/itdog?ed=2560",
                 "headers": {
-                    "Host": "denc36.xtooltech.cfd"
+                    "Host": "us-new03.daluquan.top"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@ConfigsHUB | FI🇫🇮 | 46.8.71.20:51984 | 133.43ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "46.8.71.20",
-            "server_port": 51984,
-            "uuid": "1e4366c5-3138-4d1d-adb4-cb56817cfd1a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 307.73ms | 0️⃣1️⃣",
+            "tag": "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 283.79ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "hra.app-browser.org",
             "server_port": 443,
@@ -275,7 +246,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | c3.6016725.xyz:2095 | 31.12ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | c3.6016725.xyz:2095 | 8.16ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.18.114.127",
             "server_port": 2095,
