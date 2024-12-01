@@ -104,29 +104,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 503.25ms | 0️⃣1️⃣",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 392.95ms | 0️⃣2️⃣",
-                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 9ms | 0️⃣1️⃣",
-                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 318.44ms | 0️⃣1️⃣",
-                "@Hope_Net | CN🇨🇳 | 112.132.215.12:50002 | 188.93ms | 0️⃣1️⃣"
+                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 152.33ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 190.16ms | 0️⃣2️⃣",
+                "@v2ray1_ng | DE🇩🇪 | 193.108.119.112:12281 | 158.88ms | 0️⃣1️⃣",
+                "@ConfigsHUB | AU🇦🇺 | 82.115.16.179:56451 | 97.56ms | 0️⃣1️⃣",
+                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 5.79ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 503.25ms | 0️⃣1️⃣",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 392.95ms | 0️⃣2️⃣",
-                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 9ms | 0️⃣1️⃣",
-                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 318.44ms | 0️⃣1️⃣",
-                "@Hope_Net | CN🇨🇳 | 112.132.215.12:50002 | 188.93ms | 0️⃣1️⃣"
+                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 152.33ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 190.16ms | 0️⃣2️⃣",
+                "@v2ray1_ng | DE🇩🇪 | 193.108.119.112:12281 | 158.88ms | 0️⃣1️⃣",
+                "@ConfigsHUB | AU🇦🇺 | 82.115.16.179:56451 | 97.56ms | 0️⃣1️⃣",
+                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 5.79ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 503.25ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 152.33ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.156.210",
             "server_port": 443,
@@ -162,7 +162,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 392.95ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 190.16ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -198,55 +198,45 @@
             }
         },
         {
-            "tag": "@proxystore11 | US🇺🇸 | speedtest.net:80 | 9ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | DE🇩🇪 | 193.108.119.112:12281 | 158.88ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "193.108.119.112",
+            "server_port": 12281,
+            "uuid": "380eb5ae-a609-48ca-93b3-9d8564714c9c",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | AU🇦🇺 | 82.115.16.179:56451 | 97.56ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "82.115.16.179",
+            "server_port": 56451,
+            "uuid": "ae6fffb1-415a-4cad-96f3-92a3689c11e8",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@proxystore11 | US🇺🇸 | speedtest.net:80 | 5.79ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "89.42.137.103",
             "server_port": 80,
             "uuid": "30ab6920-b3fa-4f81-b4fd-1cc912353d54",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 318.44ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "hra.app-browser.org",
-            "server_port": 443,
-            "uuid": "43eae510-e1bc-4036-e919-86a628f983ef",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "hra.app-browser.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@Hope_Net | CN🇨🇳 | 112.132.215.12:50002 | 188.93ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "112.132.215.12",
-            "server_port": 50002,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
