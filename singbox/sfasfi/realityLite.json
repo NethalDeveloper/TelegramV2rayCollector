@@ -102,25 +102,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @Lockey_vpn | DE🇩🇪 | r.iphone-shopp.ir:5743 | 281.75ms | 0️⃣2️⃣",
-                "REALITY | @Lockey_vpn | DE🇩🇪 | r.iphone-shopp.ir:5843 | 193.02ms | 0️⃣3️⃣",
-                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 97.05ms | 0️⃣1️⃣"
+                "REALITY | @Lockey_vpn | DE🇩🇪 | r.iphone-shopp.ir:5743 | 289.8ms | 0️⃣2️⃣",
+                "REALITY | @Lockey_vpn | DE🇩🇪 | r.iphone-shopp.ir:5843 | 192.3ms | 0️⃣3️⃣",
+                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 96.54ms | 0️⃣1️⃣",
+                "REALITY | @ConfigsHUB | FI🇫🇮 | 65.109.194.1:443 | 119.4ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @Lockey_vpn | DE🇩🇪 | r.iphone-shopp.ir:5743 | 281.75ms | 0️⃣2️⃣",
-                "REALITY | @Lockey_vpn | DE🇩🇪 | r.iphone-shopp.ir:5843 | 193.02ms | 0️⃣3️⃣",
-                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 97.05ms | 0️⃣1️⃣"
+                "REALITY | @Lockey_vpn | DE🇩🇪 | r.iphone-shopp.ir:5743 | 289.8ms | 0️⃣2️⃣",
+                "REALITY | @Lockey_vpn | DE🇩🇪 | r.iphone-shopp.ir:5843 | 192.3ms | 0️⃣3️⃣",
+                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 96.54ms | 0️⃣1️⃣",
+                "REALITY | @ConfigsHUB | FI🇫🇮 | 65.109.194.1:443 | 119.4ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @Lockey_vpn | DE🇩🇪 | r.iphone-shopp.ir:5743 | 281.75ms | 0️⃣2️⃣",
+            "tag": "REALITY | @Lockey_vpn | DE🇩🇪 | r.iphone-shopp.ir:5743 | 289.8ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "r.iphone-shopp.ir",
             "server_port": 5743,
@@ -155,7 +157,7 @@
             }
         },
         {
-            "tag": "REALITY | @Lockey_vpn | DE🇩🇪 | r.iphone-shopp.ir:5843 | 193.02ms | 0️⃣3️⃣",
+            "tag": "REALITY | @Lockey_vpn | DE🇩🇪 | r.iphone-shopp.ir:5843 | 192.3ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "r.iphone-shopp.ir",
             "server_port": 5843,
@@ -190,7 +192,7 @@
             }
         },
         {
-            "tag": "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 97.05ms | 0️⃣1️⃣",
+            "tag": "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 96.54ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "49.12.193.246",
             "server_port": 443,
@@ -201,6 +203,34 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "REALITY | @ConfigsHUB | FI🇫🇮 | 65.109.194.1:443 | 119.4ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "65.109.194.1",
+            "server_port": 443,
+            "uuid": "a2578388-25bc-44ed-ae5a-6bf3df5edef9",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "t9FHdb0lZFJiwqIbknqKDEKGaWXcSiZTr1N7x4URW2M",
+                    "short_id": "409836dac2"
+                }
             }
         },
         {
