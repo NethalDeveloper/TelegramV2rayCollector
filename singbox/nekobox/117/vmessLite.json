@@ -99,27 +99,65 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 172.42ms | 0️⃣1️⃣",
-                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 1.19ms | 0️⃣1️⃣",
-                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 332.9ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | p1.613055.xyz:2086 | 22.19ms | 0️⃣1️⃣"
+                "@free4allVPN | GB🇬🇧 | glweidf.sbs:443 | 368.54ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 351.88ms | 0️⃣2️⃣",
+                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.69ms | 0️⃣1️⃣",
+                "@Hope_Net | JP🇯🇵 | fjlhb-g01.jp06-7c5a-vm0.entry.fr0307a.art:28783 | 215.83ms | 0️⃣1️⃣",
+                "@Hope_Net | JP🇯🇵 | k68xu-g06.jp03-7d22-vm0.entry.fr0307a.art:21586 | 489.3ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 172.42ms | 0️⃣1️⃣",
-                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 1.19ms | 0️⃣1️⃣",
-                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 332.9ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | p1.613055.xyz:2086 | 22.19ms | 0️⃣1️⃣"
+                "@free4allVPN | GB🇬🇧 | glweidf.sbs:443 | 368.54ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 351.88ms | 0️⃣2️⃣",
+                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.69ms | 0️⃣1️⃣",
+                "@Hope_Net | JP🇯🇵 | fjlhb-g01.jp06-7c5a-vm0.entry.fr0307a.art:28783 | 215.83ms | 0️⃣1️⃣",
+                "@Hope_Net | JP🇯🇵 | k68xu-g06.jp03-7d22-vm0.entry.fr0307a.art:21586 | 489.3ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 172.42ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | GB🇬🇧 | glweidf.sbs:443 | 368.54ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.67.156.210",
+            "server_port": 443,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkws",
+                "headers": {
+                    "Host": "172.67.156.210"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 351.88ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -155,7 +193,7 @@
             }
         },
         {
-            "tag": "@proxystore11 | US🇺🇸 | speedtest.net:80 | 1.19ms | 0️⃣1️⃣",
+            "tag": "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.69ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "89.42.137.103",
             "server_port": 80,
@@ -172,13 +210,13 @@
             }
         },
         {
-            "tag": "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 332.9ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | JP🇯🇵 | fjlhb-g01.jp06-7c5a-vm0.entry.fr0307a.art:28783 | 215.83ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "hra.app-browser.org",
-            "server_port": 443,
-            "uuid": "43eae510-e1bc-4036-e919-86a628f983ef",
+            "server": "43.207.224.79",
+            "server_port": 28783,
+            "uuid": "46d2d389-2469-30ad-9e7a-21f1daa63935",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -189,7 +227,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "hra.app-browser.org",
+                "server_name": "fjlhb-g01.jp06-7c5a-vm0.entry.fr0307a.art",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -199,13 +237,13 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | p1.613055.xyz:2086 | 22.19ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | JP🇯🇵 | k68xu-g06.jp03-7d22-vm0.entry.fr0307a.art:21586 | 489.3ms | 0️⃣2️⃣",
             "type": "vmess",
-            "server": "162.159.45.195",
-            "server_port": 2086,
-            "uuid": "bc65fac2-7dc7-426f-acdd-0779a5035bde",
+            "server": "35.74.61.85",
+            "server_port": 21586,
+            "uuid": "e9537990-d286-3eaf-8596-d74249d3f347",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -214,14 +252,15 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/github.com\/Alvin9999",
-                "headers": {
-                    "Host": "162.159.45.195"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
+            "tls": {
+                "enabled": true,
+                "server_name": "k68xu-g06.jp03-7d22-vm0.entry.fr0307a.art",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
