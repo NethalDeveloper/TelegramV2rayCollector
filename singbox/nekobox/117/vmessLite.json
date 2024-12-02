@@ -99,27 +99,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 98.28ms | 0️⃣1️⃣",
-                "@v2ray1_ng | DE🇩🇪 | 193.108.119.112:12281 | 105.68ms | 0️⃣1️⃣",
-                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.48ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | ip11.6016725.xyz:2095 | 78.84ms | 0️⃣1️⃣"
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 144.04ms | 0️⃣1️⃣",
+                "@v2ray1_ng | DE🇩🇪 | 193.108.119.112:12281 | 134.69ms | 0️⃣1️⃣",
+                "@ConfigsHUB | US🇺🇸 | obdii.cfd:443 | 134.1ms | 0️⃣1️⃣",
+                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.3ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | ip11.6016725.xyz:2095 | 85.55ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 98.28ms | 0️⃣1️⃣",
-                "@v2ray1_ng | DE🇩🇪 | 193.108.119.112:12281 | 105.68ms | 0️⃣1️⃣",
-                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.48ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | ip11.6016725.xyz:2095 | 78.84ms | 0️⃣1️⃣"
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 144.04ms | 0️⃣1️⃣",
+                "@v2ray1_ng | DE🇩🇪 | 193.108.119.112:12281 | 134.69ms | 0️⃣1️⃣",
+                "@ConfigsHUB | US🇺🇸 | obdii.cfd:443 | 134.1ms | 0️⃣1️⃣",
+                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.3ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | ip11.6016725.xyz:2095 | 85.55ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 98.28ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 144.04ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -155,7 +157,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | DE🇩🇪 | 193.108.119.112:12281 | 105.68ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | DE🇩🇪 | 193.108.119.112:12281 | 134.69ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "193.108.119.112",
             "server_port": 12281,
@@ -172,7 +174,43 @@
             }
         },
         {
-            "tag": "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.48ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | US🇺🇸 | obdii.cfd:443 | 134.1ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "2.189.59.7",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "obdii.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkws",
+                "headers": {
+                    "Host": "2.189.59.7"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.3ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "89.42.137.103",
             "server_port": 80,
@@ -189,7 +227,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | ip11.6016725.xyz:2095 | 78.84ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | US🇺🇸 | ip11.6016725.xyz:2095 | 85.55ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "singapore.com",
             "server_port": 2095,
