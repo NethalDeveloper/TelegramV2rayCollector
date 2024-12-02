@@ -106,6 +106,7 @@
                 "URL-TEST",
                 "FR🇫🇷",
                 "DE🇩🇪",
+                "RELAY🚩",
                 "US🇺🇸"
             ]
         },
@@ -113,11 +114,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 144.04ms | 0️⃣1️⃣",
-                "@v2ray1_ng | DE🇩🇪 | 193.108.119.112:12281 | 134.69ms | 0️⃣1️⃣",
-                "@ConfigsHUB | US🇺🇸 | obdii.cfd:443 | 134.1ms | 0️⃣1️⃣",
-                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.3ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | ip11.6016725.xyz:2095 | 85.55ms | 0️⃣1️⃣"
+                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 89.9ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 99.09ms | 0️⃣2️⃣",
+                "@v2ray1_ng | DE🇩🇪 | 193.108.119.112:12281 | 102.33ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | background-specs-auction-cent.trycloudflare.com.:8443 | 71.96ms | 0️⃣1️⃣",
+                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 1.95ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | ip11.6016725.xyz:2095 | 63.77ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -127,7 +129,8 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 144.04ms | 0️⃣1️⃣"
+                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 89.9ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 99.09ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -137,7 +140,17 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | DE🇩🇪 | 193.108.119.112:12281 | 134.69ms | 0️⃣1️⃣"
+                "@v2ray1_ng | DE🇩🇪 | 193.108.119.112:12281 | 102.33ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | RELAY🚩 | background-specs-auction-cent.trycloudflare.com.:8443 | 71.96ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -147,16 +160,51 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@ConfigsHUB | US🇺🇸 | obdii.cfd:443 | 134.1ms | 0️⃣1️⃣",
-                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.3ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | ip11.6016725.xyz:2095 | 85.55ms | 0️⃣1️⃣"
+                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 1.95ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | ip11.6016725.xyz:2095 | 63.77ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 144.04ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 89.9ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.67.156.210",
+            "server_port": 443,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkws",
+                "headers": {
+                    "Host": "172.67.156.210"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 99.09ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -192,7 +240,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | DE🇩🇪 | 193.108.119.112:12281 | 134.69ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | DE🇩🇪 | 193.108.119.112:12281 | 102.33ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "193.108.119.112",
             "server_port": 12281,
@@ -209,11 +257,11 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | US🇺🇸 | obdii.cfd:443 | 134.1ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | background-specs-auction-cent.trycloudflare.com.:8443 | 71.96ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "2.189.59.7",
-            "server_port": 443,
-            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "server": "104.25.210.55",
+            "server_port": 8443,
+            "uuid": "6f0b5741-a954-44e8-9751-93ea67f43a57",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -226,7 +274,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "obdii.cfd",
+                "server_name": "background-specs-auction-cent.trycloudflare.com.",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -236,16 +284,16 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/linkws",
+                "path": "\/\/",
                 "headers": {
-                    "Host": "2.189.59.7"
+                    "Host": "104.25.210.55"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.3ms | 0️⃣1️⃣",
+            "tag": "@proxystore11 | US🇺🇸 | speedtest.net:80 | 1.95ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "89.42.137.103",
             "server_port": 80,
@@ -262,7 +310,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | ip11.6016725.xyz:2095 | 85.55ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | US🇺🇸 | ip11.6016725.xyz:2095 | 63.77ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "singapore.com",
             "server_port": 2095,
