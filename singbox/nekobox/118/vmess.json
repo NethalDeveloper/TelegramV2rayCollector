@@ -104,17 +104,30 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "DE🇩🇪",
                 "FR🇫🇷",
-                "US🇺🇸"
+                "US🇺🇸",
+                "FI🇫🇮"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 206.76ms | 0️⃣1️⃣",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 274.31ms | 0️⃣2️⃣",
-                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.26ms | 0️⃣1️⃣"
+                "@free4allVPN | DE🇩🇪 | glweidf.sbs:443 | 103.18ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 108.62ms | 0️⃣2️⃣",
+                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 5.77ms | 0️⃣1️⃣",
+                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 287.9ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "@free4allVPN | DE🇩🇪 | glweidf.sbs:443 | 103.18ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -124,8 +137,7 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 206.76ms | 0️⃣1️⃣",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 274.31ms | 0️⃣2️⃣"
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 108.62ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -135,14 +147,24 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.26ms | 0️⃣1️⃣"
+                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 5.77ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 206.76ms | 0️⃣1️⃣",
+            "tag": "FI🇫🇮",
+            "type": "urltest",
+            "outbounds": [
+                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 287.9ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@free4allVPN | DE🇩🇪 | glweidf.sbs:443 | 103.18ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.156.210",
             "server_port": 443,
@@ -178,7 +200,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 274.31ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 108.62ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -214,7 +236,7 @@
             }
         },
         {
-            "tag": "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.26ms | 0️⃣1️⃣",
+            "tag": "@proxystore11 | US🇺🇸 | speedtest.net:80 | 5.77ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "89.42.137.103",
             "server_port": 80,
@@ -228,6 +250,33 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 287.9ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "hra.app-browser.org",
+            "server_port": 443,
+            "uuid": "43eae510-e1bc-4036-e919-86a628f983ef",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hra.app-browser.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
