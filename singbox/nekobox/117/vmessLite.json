@@ -99,27 +99,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 407.43ms | 0️⃣1️⃣",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 509.67ms | 0️⃣2️⃣",
-                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 1.51ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | ip18.6929198.xyz:2082 | 25.89ms | 0️⃣1️⃣"
+                "@free4allVPN | US🇺🇸 | glweidf.sbs:443 | 521.03ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 539.11ms | 0️⃣2️⃣",
+                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 1.18ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | worker-flat-hat-00f2.ravapim426.workers.dev:2096 | 11.6ms | 0️⃣1️⃣",
+                "@Hope_Net | AU🇦🇺 | syd-01.oci.ee:23451 | 207.28ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 407.43ms | 0️⃣1️⃣",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 509.67ms | 0️⃣2️⃣",
-                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 1.51ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | ip18.6929198.xyz:2082 | 25.89ms | 0️⃣1️⃣"
+                "@free4allVPN | US🇺🇸 | glweidf.sbs:443 | 521.03ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 539.11ms | 0️⃣2️⃣",
+                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 1.18ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | worker-flat-hat-00f2.ravapim426.workers.dev:2096 | 11.6ms | 0️⃣1️⃣",
+                "@Hope_Net | AU🇦🇺 | syd-01.oci.ee:23451 | 207.28ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 407.43ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | US🇺🇸 | glweidf.sbs:443 | 521.03ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.156.210",
             "server_port": 443,
@@ -155,7 +157,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 509.67ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 539.11ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -191,7 +193,7 @@
             }
         },
         {
-            "tag": "@proxystore11 | US🇺🇸 | speedtest.net:80 | 1.51ms | 0️⃣1️⃣",
+            "tag": "@proxystore11 | US🇺🇸 | speedtest.net:80 | 1.18ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "89.42.137.103",
             "server_port": 80,
@@ -208,11 +210,47 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | ip18.6929198.xyz:2082 | 25.89ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | worker-flat-hat-00f2.ravapim426.workers.dev:2096 | 11.6ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "190.93.245.103",
-            "server_port": 2082,
-            "uuid": "5f3f09ad-89cb-4e94-a7ad-aa8239913555",
+            "server": "104.16.67.38",
+            "server_port": 2096,
+            "uuid": "1052f24e-7b09-45eb-b0c5-d858eb124192",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "worker-flat-hat-00f2.ravapim426.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/glweidf.cfd\/linkws",
+                "headers": {
+                    "Host": "104.16.67.38"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | AU🇦🇺 | syd-01.oci.ee:23451 | 207.28ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "140.238.195.245",
+            "server_port": 23451,
+            "uuid": "5baf9ff4-3a30-444a-bb75-e400b3b21c4f",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -225,9 +263,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/github.com\/Alvin9999",
+                "path": "\/\/",
                 "headers": {
-                    "Host": "190.93.245.103"
+                    "Host": "140.238.195.245"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
