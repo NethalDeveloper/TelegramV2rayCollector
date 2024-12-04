@@ -112,8 +112,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | JP🇯🇵 | 149.22.87.240:443 | 104.5ms | 0️⃣1️⃣",
-                "@free4allVPN | GB🇬🇧 | 141.98.101.178:443 | 153.06ms | 0️⃣2️⃣"
+                "@free4allVPN | JP🇯🇵 | 149.22.87.240:443 | 159.61ms | 0️⃣1️⃣",
+                "@free4allVPN | GB🇬🇧 | 212.102.53.198:443 | 84.13ms | 0️⃣2️⃣",
+                "@free4allVPN | GB🇬🇧 | 141.98.101.178:443 | 85.97ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -123,7 +124,7 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | JP🇯🇵 | 149.22.87.240:443 | 104.5ms | 0️⃣1️⃣"
+                "@free4allVPN | JP🇯🇵 | 149.22.87.240:443 | 159.61ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,14 +134,15 @@
             "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | GB🇬🇧 | 141.98.101.178:443 | 153.06ms | 0️⃣2️⃣"
+                "@free4allVPN | GB🇬🇧 | 212.102.53.198:443 | 84.13ms | 0️⃣2️⃣",
+                "@free4allVPN | GB🇬🇧 | 141.98.101.178:443 | 85.97ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | JP🇯🇵 | 149.22.87.240:443 | 104.5ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | JP🇯🇵 | 149.22.87.240:443 | 159.61ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "149.22.87.240",
             "server_port": 443,
@@ -150,7 +152,17 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@free4allVPN | GB🇬🇧 | 141.98.101.178:443 | 153.06ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | GB🇬🇧 | 212.102.53.198:443 | 84.13ms | 0️⃣2️⃣",
+            "type": "shadowsocks",
+            "server": "212.102.53.198",
+            "server_port": 443,
+            "method": "aes-128-gcm",
+            "password": "shadowsocks7",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@free4allVPN | GB🇬🇧 | 141.98.101.178:443 | 85.97ms | 0️⃣3️⃣",
             "type": "shadowsocks",
             "server": "141.98.101.178",
             "server_port": 443,
