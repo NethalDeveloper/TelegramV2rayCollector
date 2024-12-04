@@ -104,65 +104,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | GB🇬🇧 | glweidf.sbs:443 | 104.54ms | 0️⃣1️⃣",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 225.75ms | 0️⃣2️⃣",
-                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 6.01ms | 0️⃣1️⃣",
-                "@Hope_Net | AU🇦🇺 | syd-01.oci.ee:23451 | 235.07ms | 0️⃣1️⃣",
-                "@Hope_Net | HK🇭🇰 | 34.96.138.169:55347 | 197.48ms | 0️⃣2️⃣"
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 164.58ms | 0️⃣1️⃣",
+                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 1.63ms | 0️⃣1️⃣",
+                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 299.1ms | 0️⃣1️⃣",
+                "@Hope_Net | AU🇦🇺 | syd-01.oci.ee:23451 | 319.83ms | 0️⃣1️⃣",
+                "@Hope_Net | HK🇭🇰 | 34.96.138.169:55347 | 150.02ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | GB🇬🇧 | glweidf.sbs:443 | 104.54ms | 0️⃣1️⃣",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 225.75ms | 0️⃣2️⃣",
-                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 6.01ms | 0️⃣1️⃣",
-                "@Hope_Net | AU🇦🇺 | syd-01.oci.ee:23451 | 235.07ms | 0️⃣1️⃣",
-                "@Hope_Net | HK🇭🇰 | 34.96.138.169:55347 | 197.48ms | 0️⃣2️⃣"
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 164.58ms | 0️⃣1️⃣",
+                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 1.63ms | 0️⃣1️⃣",
+                "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 299.1ms | 0️⃣1️⃣",
+                "@Hope_Net | AU🇦🇺 | syd-01.oci.ee:23451 | 319.83ms | 0️⃣1️⃣",
+                "@Hope_Net | HK🇭🇰 | 34.96.138.169:55347 | 150.02ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | GB🇬🇧 | glweidf.sbs:443 | 104.54ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "172.67.156.210",
-            "server_port": 443,
-            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "glweidf.sbs",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/linkws",
-                "headers": {
-                    "Host": "172.67.156.210"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 225.75ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 164.58ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -198,7 +162,7 @@
             }
         },
         {
-            "tag": "@proxystore11 | US🇺🇸 | speedtest.net:80 | 6.01ms | 0️⃣1️⃣",
+            "tag": "@proxystore11 | US🇺🇸 | speedtest.net:80 | 1.63ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "89.42.137.103",
             "server_port": 80,
@@ -215,7 +179,34 @@
             }
         },
         {
-            "tag": "@Hope_Net | AU🇦🇺 | syd-01.oci.ee:23451 | 235.07ms | 0️⃣1️⃣",
+            "tag": "@free1_vpn | FI🇫🇮 | hra.app-browser.org:443 | 299.1ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "hra.app-browser.org",
+            "server_port": 443,
+            "uuid": "43eae510-e1bc-4036-e919-86a628f983ef",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hra.app-browser.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@Hope_Net | AU🇦🇺 | syd-01.oci.ee:23451 | 319.83ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "140.238.195.245",
             "server_port": 23451,
@@ -241,7 +232,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | HK🇭🇰 | 34.96.138.169:55347 | 197.48ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | HK🇭🇰 | 34.96.138.169:55347 | 150.02ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "34.96.138.169",
             "server_port": 55347,
