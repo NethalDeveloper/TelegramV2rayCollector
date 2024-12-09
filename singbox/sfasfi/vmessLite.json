@@ -102,97 +102,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 162.22ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | fr1e-yeJWUyuCL.v2freevpn.com:80 | 26.37ms | 0️⃣1️⃣",
-                "@v2ray1_ng | RELAY🚩 | soft98.ir.www.speedtest.net.ftp.debian.org.p30download.com.waltonweb.ir:80 | 187.74ms | 0️⃣1️⃣",
-                "@v2ray1_ng | DE🇩🇪 | cpanel.erade33.ir:100 | 295.92ms | 0️⃣2️⃣",
-                "@v2ray1_ng | MX🇲🇽 | 79.127.229.54:18000 | 48.38ms | 0️⃣3️⃣",
-                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.36ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | 142.4.104.33:52143 | 72.08ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | p1.613055.xyz:2086 | 73.46ms | 0️⃣2️⃣"
+                "@v2ray1_ng | RELAY🚩 | soft98.ir.www.speedtest.net.ftp.debian.org.p30download.com.waltonweb.ir:80 | 237.13ms | 0️⃣1️⃣",
+                "@v2ray1_ng | DE🇩🇪 | cpanel.erade33.ir:100 | 395.71ms | 0️⃣2️⃣",
+                "@v2ray1_ng | MX🇲🇽 | 79.127.229.54:18000 | 56.19ms | 0️⃣3️⃣",
+                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 63.82ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | p1.613055.xyz:2086 | 266.13ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 162.22ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | fr1e-yeJWUyuCL.v2freevpn.com:80 | 26.37ms | 0️⃣1️⃣",
-                "@v2ray1_ng | RELAY🚩 | soft98.ir.www.speedtest.net.ftp.debian.org.p30download.com.waltonweb.ir:80 | 187.74ms | 0️⃣1️⃣",
-                "@v2ray1_ng | DE🇩🇪 | cpanel.erade33.ir:100 | 295.92ms | 0️⃣2️⃣",
-                "@v2ray1_ng | MX🇲🇽 | 79.127.229.54:18000 | 48.38ms | 0️⃣3️⃣",
-                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.36ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | 142.4.104.33:52143 | 72.08ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | p1.613055.xyz:2086 | 73.46ms | 0️⃣2️⃣"
+                "@v2ray1_ng | RELAY🚩 | soft98.ir.www.speedtest.net.ftp.debian.org.p30download.com.waltonweb.ir:80 | 237.13ms | 0️⃣1️⃣",
+                "@v2ray1_ng | DE🇩🇪 | cpanel.erade33.ir:100 | 395.71ms | 0️⃣2️⃣",
+                "@v2ray1_ng | MX🇲🇽 | 79.127.229.54:18000 | 56.19ms | 0️⃣3️⃣",
+                "@proxystore11 | US🇺🇸 | speedtest.net:80 | 63.82ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | p1.613055.xyz:2086 | 266.13ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 162.22ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "beyonddsz.cfd",
-            "server_port": 443,
-            "uuid": "9b456c2a-f2c1-45e1-87a9-b7628b04bb24",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "beyonddsz.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/linkws",
-                "headers": {
-                    "Host": "beyonddsz.cfd"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@customv2ray | RELAY🚩 | fr1e-yeJWUyuCL.v2freevpn.com:80 | 26.37ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "fr1e-yeJWUyuCL.v2freevpn.com",
-            "server_port": 80,
-            "uuid": "2a8a10fb-9ca3-367e-a234-cf09f841be4f",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/v133PDXkklxLEcOvD",
-                "headers": {
-                    "Host": "fr1e-yeJWUyuCL.v2freevpn.com"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2ray1_ng | RELAY🚩 | soft98.ir.www.speedtest.net.ftp.debian.org.p30download.com.waltonweb.ir:80 | 187.74ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | RELAY🚩 | soft98.ir.www.speedtest.net.ftp.debian.org.p30download.com.waltonweb.ir:80 | 237.13ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -209,7 +141,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | DE🇩🇪 | cpanel.erade33.ir:100 | 295.92ms | 0️⃣2️⃣",
+            "tag": "@v2ray1_ng | DE🇩🇪 | cpanel.erade33.ir:100 | 395.71ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "cpanel.erade33.ir",
             "server_port": 100,
@@ -226,7 +158,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | MX🇲🇽 | 79.127.229.54:18000 | 48.38ms | 0️⃣3️⃣",
+            "tag": "@v2ray1_ng | MX🇲🇽 | 79.127.229.54:18000 | 56.19ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "79.127.229.54",
             "server_port": 18000,
@@ -243,7 +175,7 @@
             }
         },
         {
-            "tag": "@proxystore11 | US🇺🇸 | speedtest.net:80 | 2.36ms | 0️⃣1️⃣",
+            "tag": "@proxystore11 | US🇺🇸 | speedtest.net:80 | 63.82ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "89.42.137.103",
             "server_port": 80,
@@ -260,24 +192,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | 142.4.104.33:52143 | 72.08ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "142.4.104.33",
-            "server_port": 52143,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@Hope_Net | US🇺🇸 | p1.613055.xyz:2086 | 73.46ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | US🇺🇸 | p1.613055.xyz:2086 | 266.13ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.18.114.183",
             "server_port": 2086,
