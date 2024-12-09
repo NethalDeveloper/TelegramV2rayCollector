@@ -104,77 +104,37 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@PrivateVPNs | IE🇮🇪 | 54.228.66.120:22222 | 104.33ms | 0️⃣1️⃣",
-                "@PrivateVPNs | SE🇸🇪 | 13.50.79.149:22222 | 167.39ms | 0️⃣2️⃣",
-                "@PrivateVPNs | SE🇸🇪 | 13.61.93.232:22222 | 144ms | 0️⃣3️⃣",
-                "@DirectVPN | CA🇨🇦 | 52.60.188.169:22222 | 24.68ms | 0️⃣1️⃣",
-                "@DirectVPN | CA🇨🇦 | 15.157.83.65:22222 | 21.6ms | 0️⃣2️⃣",
-                "@VmessProtocol | RELAY🚩 | 108.162.193.55:443 | 2.83ms | 0️⃣1️⃣",
-                "@VmessProtocol | RELAY🚩 | 108.162.195.203:443 | 2.68ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | 104.24.21.220:443 | 2.19ms | 0️⃣3️⃣"
+                "@PrivateVPNs | SE🇸🇪 | 13.61.93.232:22222 | 105.68ms | 0️⃣1️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 63.176.1.44:22222 | 92.74ms | 0️⃣2️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 3.120.195.247:22222 | 117.24ms | 0️⃣3️⃣",
+                "@DirectVPN | CA🇨🇦 | 52.60.188.169:22222 | 23.26ms | 0️⃣1️⃣",
+                "@DirectVPN | CA🇨🇦 | 15.157.83.65:22222 | 22.7ms | 0️⃣2️⃣",
+                "@DirectVPN | US🇺🇸 | 3.141.130.46:22222 | 23.5ms | 0️⃣3️⃣",
+                "@VmessProtocol | RELAY🚩 | 108.162.193.55:443 | 5.55ms | 0️⃣1️⃣",
+                "@VmessProtocol | RELAY🚩 | 108.162.195.203:443 | 5.67ms | 0️⃣2️⃣",
+                "@ConfigsHUB | CA🇨🇦 | avianrecruit.com:443 | 120.07ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | IE🇮🇪 | 54.228.66.120:22222 | 104.33ms | 0️⃣1️⃣",
-                "@PrivateVPNs | SE🇸🇪 | 13.50.79.149:22222 | 167.39ms | 0️⃣2️⃣",
-                "@PrivateVPNs | SE🇸🇪 | 13.61.93.232:22222 | 144ms | 0️⃣3️⃣",
-                "@DirectVPN | CA🇨🇦 | 52.60.188.169:22222 | 24.68ms | 0️⃣1️⃣",
-                "@DirectVPN | CA🇨🇦 | 15.157.83.65:22222 | 21.6ms | 0️⃣2️⃣",
-                "@VmessProtocol | RELAY🚩 | 108.162.193.55:443 | 2.83ms | 0️⃣1️⃣",
-                "@VmessProtocol | RELAY🚩 | 108.162.195.203:443 | 2.68ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | 104.24.21.220:443 | 2.19ms | 0️⃣3️⃣"
+                "@PrivateVPNs | SE🇸🇪 | 13.61.93.232:22222 | 105.68ms | 0️⃣1️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 63.176.1.44:22222 | 92.74ms | 0️⃣2️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 3.120.195.247:22222 | 117.24ms | 0️⃣3️⃣",
+                "@DirectVPN | CA🇨🇦 | 52.60.188.169:22222 | 23.26ms | 0️⃣1️⃣",
+                "@DirectVPN | CA🇨🇦 | 15.157.83.65:22222 | 22.7ms | 0️⃣2️⃣",
+                "@DirectVPN | US🇺🇸 | 3.141.130.46:22222 | 23.5ms | 0️⃣3️⃣",
+                "@VmessProtocol | RELAY🚩 | 108.162.193.55:443 | 5.55ms | 0️⃣1️⃣",
+                "@VmessProtocol | RELAY🚩 | 108.162.195.203:443 | 5.67ms | 0️⃣2️⃣",
+                "@ConfigsHUB | CA🇨🇦 | avianrecruit.com:443 | 120.07ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | IE🇮🇪 | 54.228.66.120:22222 | 104.33ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "54.228.66.120",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | SE🇸🇪 | 13.50.79.149:22222 | 167.39ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "13.50.79.149",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | SE🇸🇪 | 13.61.93.232:22222 | 144ms | 0️⃣3️⃣",
+            "tag": "@PrivateVPNs | SE🇸🇪 | 13.61.93.232:22222 | 105.68ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "13.61.93.232",
             "server_port": 22222,
@@ -195,7 +155,49 @@
             }
         },
         {
-            "tag": "@DirectVPN | CA🇨🇦 | 52.60.188.169:22222 | 24.68ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | DE🇩🇪 | 63.176.1.44:22222 | 92.74ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "63.176.1.44",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@PrivateVPNs | DE🇩🇪 | 3.120.195.247:22222 | 117.24ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "3.120.195.247",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | CA🇨🇦 | 52.60.188.169:22222 | 23.26ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "52.60.188.169",
             "server_port": 22222,
@@ -216,7 +218,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | CA🇨🇦 | 15.157.83.65:22222 | 21.6ms | 0️⃣2️⃣",
+            "tag": "@DirectVPN | CA🇨🇦 | 15.157.83.65:22222 | 22.7ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "15.157.83.65",
             "server_port": 22222,
@@ -237,7 +239,28 @@
             }
         },
         {
-            "tag": "@VmessProtocol | RELAY🚩 | 108.162.193.55:443 | 2.83ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | US🇺🇸 | 3.141.130.46:22222 | 23.5ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "3.141.130.46",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@VmessProtocol | RELAY🚩 | 108.162.193.55:443 | 5.55ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "108.162.193.55",
             "server_port": 443,
@@ -265,7 +288,7 @@
             }
         },
         {
-            "tag": "@VmessProtocol | RELAY🚩 | 108.162.195.203:443 | 2.68ms | 0️⃣2️⃣",
+            "tag": "@VmessProtocol | RELAY🚩 | 108.162.195.203:443 | 5.67ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "108.162.195.203",
             "server_port": 443,
@@ -293,15 +316,24 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | RELAY🚩 | 104.24.21.220:443 | 2.19ms | 0️⃣3️⃣",
+            "tag": "@ConfigsHUB | CA🇨🇦 | avianrecruit.com:443 | 120.07ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "104.24.21.220",
+            "server": "avianrecruit.com",
             "server_port": 443,
-            "password": "blue2024",
+            "password": "f0eb8c92ce8946aaba856569cff1a16b",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
