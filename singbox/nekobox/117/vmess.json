@@ -99,21 +99,30 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "US🇺🇸",
                 "FR🇫🇷",
                 "RELAY🚩",
-                "DE🇩🇪",
-                "MX🇲🇽"
+                "RU🇷🇺"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 199.34ms | 0️⃣1️⃣",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 339.37ms | 0️⃣2️⃣",
-                "@customv2ray | RELAY🚩 | fr1e-yeJWUyuCL.v2freevpn.com:80 | 12.46ms | 0️⃣1️⃣",
-                "@v2ray1_ng | DE🇩🇪 | cpanel.erade33.ir:100 | 453.73ms | 0️⃣1️⃣",
-                "@v2ray1_ng | MX🇲🇽 | 79.127.229.54:18000 | 48.68ms | 0️⃣2️⃣"
+                "@free4allVPN | US🇺🇸 | glweidf.sbs:443 | 213.04ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 401.21ms | 0️⃣2️⃣",
+                "@customv2ray | RELAY🚩 | fr1e-yeJWUyuCL.v2freevpn.com:80 | 62.28ms | 0️⃣1️⃣",
+                "@Hope_Net | RU🇷🇺 | 176.32.39.160:9187 | 189.43ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "@free4allVPN | US🇺🇸 | glweidf.sbs:443 | 213.04ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -123,8 +132,7 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 199.34ms | 0️⃣1️⃣",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 339.37ms | 0️⃣2️⃣"
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 401.21ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -134,34 +142,24 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@customv2ray | RELAY🚩 | fr1e-yeJWUyuCL.v2freevpn.com:80 | 12.46ms | 0️⃣1️⃣"
+                "@customv2ray | RELAY🚩 | fr1e-yeJWUyuCL.v2freevpn.com:80 | 62.28ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "DE🇩🇪",
+            "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | DE🇩🇪 | cpanel.erade33.ir:100 | 453.73ms | 0️⃣1️⃣"
+                "@Hope_Net | RU🇷🇺 | 176.32.39.160:9187 | 189.43ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "MX🇲🇽",
-            "type": "urltest",
-            "outbounds": [
-                "@v2ray1_ng | MX🇲🇽 | 79.127.229.54:18000 | 48.68ms | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 199.34ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | US🇺🇸 | glweidf.sbs:443 | 213.04ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.156.210",
             "server_port": 443,
@@ -197,7 +195,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 339.37ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 401.21ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -233,7 +231,7 @@
             }
         },
         {
-            "tag": "@customv2ray | RELAY🚩 | fr1e-yeJWUyuCL.v2freevpn.com:80 | 12.46ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | RELAY🚩 | fr1e-yeJWUyuCL.v2freevpn.com:80 | 62.28ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "fr1e-yeJWUyuCL.v2freevpn.com",
             "server_port": 80,
@@ -259,11 +257,11 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | DE🇩🇪 | cpanel.erade33.ir:100 | 453.73ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RU🇷🇺 | 176.32.39.160:9187 | 189.43ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "cpanel.erade33.ir",
-            "server_port": 100,
-            "uuid": "ce10ecee-126c-4bb6-93d8-8a874aa19544",
+            "server": "176.32.39.160",
+            "server_port": 9187,
+            "uuid": "5d90f262-1df2-4563-8c3e-456109745385",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -273,23 +271,15 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "@v2ray1_ng | MX🇲🇽 | 79.127.229.54:18000 | 48.68ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "79.127.229.54",
-            "server_port": 18000,
-            "uuid": "fa1897db-1925-4c86-a495-939a959af900",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "176.32.39.160"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
