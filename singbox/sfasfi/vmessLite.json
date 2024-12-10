@@ -102,33 +102,71 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 204.85ms | 0️⃣1️⃣",
-                "@prrofile_purple | MX🇲🇽 | 79.127.229.54:18000 | 53.85ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | fr1e-yeJWUyuCL.v2freevpn.com:80 | 84.22ms | 0️⃣1️⃣",
-                "@v2ray1_ng | DE🇩🇪 | cpanel.erade33.ir:100 | 276.32ms | 0️⃣1️⃣",
-                "@ConfigsHUB | NL🇳🇱 | nl.569520.xyz:10002 | 90.65ms | 0️⃣1️⃣",
-                "@Hope_Net | RU🇷🇺 | 45.8.158.32:13530 | 164.09ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | e5.808075.xyz:2086 | 83.15ms | 0️⃣2️⃣"
+                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 296.42ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 276.07ms | 0️⃣2️⃣",
+                "@free4allVPN | TW🇹🇼 | 103.159.206.35:31945 | 199.01ms | 0️⃣3️⃣",
+                "@prrofile_purple | MX🇲🇽 | 79.127.229.54:18000 | 49.2ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | fr1e-yeJWUyuCL.v2freevpn.com:80 | 86.76ms | 0️⃣1️⃣",
+                "@v2ray1_ng | DE🇩🇪 | cpanel.erade33.ir:100 | 271.76ms | 0️⃣1️⃣",
+                "@Hope_Net | RU🇷🇺 | 45.8.158.32:13530 | 171.66ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | e5.808075.xyz:2086 | 74.62ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 204.85ms | 0️⃣1️⃣",
-                "@prrofile_purple | MX🇲🇽 | 79.127.229.54:18000 | 53.85ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | fr1e-yeJWUyuCL.v2freevpn.com:80 | 84.22ms | 0️⃣1️⃣",
-                "@v2ray1_ng | DE🇩🇪 | cpanel.erade33.ir:100 | 276.32ms | 0️⃣1️⃣",
-                "@ConfigsHUB | NL🇳🇱 | nl.569520.xyz:10002 | 90.65ms | 0️⃣1️⃣",
-                "@Hope_Net | RU🇷🇺 | 45.8.158.32:13530 | 164.09ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | e5.808075.xyz:2086 | 83.15ms | 0️⃣2️⃣"
+                "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 296.42ms | 0️⃣1️⃣",
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 276.07ms | 0️⃣2️⃣",
+                "@free4allVPN | TW🇹🇼 | 103.159.206.35:31945 | 199.01ms | 0️⃣3️⃣",
+                "@prrofile_purple | MX🇲🇽 | 79.127.229.54:18000 | 49.2ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | fr1e-yeJWUyuCL.v2freevpn.com:80 | 86.76ms | 0️⃣1️⃣",
+                "@v2ray1_ng | DE🇩🇪 | cpanel.erade33.ir:100 | 271.76ms | 0️⃣1️⃣",
+                "@Hope_Net | RU🇷🇺 | 45.8.158.32:13530 | 171.66ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | e5.808075.xyz:2086 | 74.62ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 204.85ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | glweidf.sbs:443 | 296.42ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.67.156.210",
+            "server_port": 443,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkws",
+                "headers": {
+                    "Host": "172.67.156.210"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 276.07ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -164,7 +202,33 @@
             }
         },
         {
-            "tag": "@prrofile_purple | MX🇲🇽 | 79.127.229.54:18000 | 53.85ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | TW🇹🇼 | 103.159.206.35:31945 | 199.01ms | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "103.159.206.35",
+            "server_port": 31945,
+            "uuid": "e2e511b0-7def-4e1b-d238-6cb5391b2e3f",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "103.159.206.35"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@prrofile_purple | MX🇲🇽 | 79.127.229.54:18000 | 49.2ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "79.127.229.54",
             "server_port": 18000,
@@ -181,7 +245,7 @@
             }
         },
         {
-            "tag": "@customv2ray | RELAY🚩 | fr1e-yeJWUyuCL.v2freevpn.com:80 | 84.22ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | RELAY🚩 | fr1e-yeJWUyuCL.v2freevpn.com:80 | 86.76ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "fr1e-yeJWUyuCL.v2freevpn.com",
             "server_port": 80,
@@ -207,7 +271,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | DE🇩🇪 | cpanel.erade33.ir:100 | 276.32ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | DE🇩🇪 | cpanel.erade33.ir:100 | 271.76ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "cpanel.erade33.ir",
             "server_port": 100,
@@ -224,43 +288,7 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | NL🇳🇱 | nl.569520.xyz:10002 | 90.65ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "104.248.89.19",
-            "server_port": 10002,
-            "uuid": "c7716936-798d-4237-b101-2d914e6d543a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "nl.569520.xyz",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/cctv13\/4k.m3u8",
-                "headers": {
-                    "Host": "104.248.89.19"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | RU🇷🇺 | 45.8.158.32:13530 | 164.09ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RU🇷🇺 | 45.8.158.32:13530 | 171.66ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "45.8.158.32",
             "server_port": 13530,
@@ -286,7 +314,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | e5.808075.xyz:2086 | 83.15ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | US🇺🇸 | e5.808075.xyz:2086 | 74.62ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "104.26.0.177",
             "server_port": 2086,
