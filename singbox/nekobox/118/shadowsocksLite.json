@@ -104,25 +104,37 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@VmessProtocol | CA🇨🇦 | 142.4.216.225:80 | 23.05ms | 0️⃣1️⃣",
-                "@VmessProtocol | US🇺🇸 | 69.50.93.86:8888 | 18.74ms | 0️⃣2️⃣",
-                "@VmessProtocol | GB🇬🇧 | 141.98.101.178:443 | 105.51ms | 0️⃣3️⃣"
+                "@free4allVPN | AU🇦🇺 | 3.27.194.148:443 | 137.47ms | 0️⃣1️⃣",
+                "@VmessProtocol | CA🇨🇦 | 142.4.216.225:80 | 67.96ms | 0️⃣1️⃣",
+                "@VmessProtocol | US🇺🇸 | 69.50.93.86:8888 | 84.14ms | 0️⃣2️⃣",
+                "@VmessProtocol | GB🇬🇧 | 141.98.101.178:443 | 144.41ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | CA🇨🇦 | 142.4.216.225:80 | 23.05ms | 0️⃣1️⃣",
-                "@VmessProtocol | US🇺🇸 | 69.50.93.86:8888 | 18.74ms | 0️⃣2️⃣",
-                "@VmessProtocol | GB🇬🇧 | 141.98.101.178:443 | 105.51ms | 0️⃣3️⃣"
+                "@free4allVPN | AU🇦🇺 | 3.27.194.148:443 | 137.47ms | 0️⃣1️⃣",
+                "@VmessProtocol | CA🇨🇦 | 142.4.216.225:80 | 67.96ms | 0️⃣1️⃣",
+                "@VmessProtocol | US🇺🇸 | 69.50.93.86:8888 | 84.14ms | 0️⃣2️⃣",
+                "@VmessProtocol | GB🇬🇧 | 141.98.101.178:443 | 144.41ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@VmessProtocol | CA🇨🇦 | 142.4.216.225:80 | 23.05ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | AU🇦🇺 | 3.27.194.148:443 | 137.47ms | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "3.27.194.148",
+            "server_port": 443,
+            "method": "chacha20-ietf-poly1305",
+            "password": "Q4YoGAjTPBVJ6Rv2vSK1mk",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@VmessProtocol | CA🇨🇦 | 142.4.216.225:80 | 67.96ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "142.4.216.225",
             "server_port": 80,
@@ -132,7 +144,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@VmessProtocol | US🇺🇸 | 69.50.93.86:8888 | 18.74ms | 0️⃣2️⃣",
+            "tag": "@VmessProtocol | US🇺🇸 | 69.50.93.86:8888 | 84.14ms | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "69.50.93.86",
             "server_port": 8888,
@@ -142,7 +154,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@VmessProtocol | GB🇬🇧 | 141.98.101.178:443 | 105.51ms | 0️⃣3️⃣",
+            "tag": "@VmessProtocol | GB🇬🇧 | 141.98.101.178:443 | 144.41ms | 0️⃣3️⃣",
             "type": "shadowsocks",
             "server": "141.98.101.178",
             "server_port": 443,
