@@ -101,17 +101,17 @@
                 "URL-TEST",
                 "FR🇫🇷",
                 "RELAY🚩",
-                "SG🇸🇬"
+                "IN🇮🇳"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 269.44ms | 0️⃣1️⃣",
-                "@Hope_Net | FR🇫🇷 | 145.239.135.253:443 | 170.84ms | 0️⃣1️⃣",
-                "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 247.89ms | 0️⃣1️⃣",
-                "@prrofile_purple | SG🇸🇬 | 20.44.241.123:80 | 182.61ms | 0️⃣2️⃣"
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 126.62ms | 0️⃣1️⃣",
+                "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 177.17ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 100-158-80-199.s2.cn-db.top:2052 | 219.33ms | 0️⃣1️⃣",
+                "@v2ray1_ng | IN🇮🇳 | 20.193.131.152:23294 | 196.55ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -121,8 +121,7 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 269.44ms | 0️⃣1️⃣",
-                "@Hope_Net | FR🇫🇷 | 145.239.135.253:443 | 170.84ms | 0️⃣1️⃣"
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 126.62ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -132,24 +131,25 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 247.89ms | 0️⃣1️⃣"
+                "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 177.17ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 100-158-80-199.s2.cn-db.top:2052 | 219.33ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "SG🇸🇬",
+            "tag": "IN🇮🇳",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | SG🇸🇬 | 20.44.241.123:80 | 182.61ms | 0️⃣2️⃣"
+                "@v2ray1_ng | IN🇮🇳 | 20.193.131.152:23294 | 196.55ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 269.44ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 126.62ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -185,34 +185,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | FR🇫🇷 | 145.239.135.253:443 | 170.84ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "145.239.135.253",
-            "server_port": 443,
-            "uuid": "a88326ec-4b05-4909-a948-05e7f976b097",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "145.239.135.253",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 247.89ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 177.17ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -229,11 +202,37 @@
             }
         },
         {
-            "tag": "@prrofile_purple | SG🇸🇬 | 20.44.241.123:80 | 182.61ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | 100-158-80-199.s2.cn-db.top:2052 | 219.33ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "20.44.241.123",
-            "server_port": 80,
-            "uuid": "b831381d-6324-4d53-ad4f-8cda48b30812",
+            "server": "172.67.110.92",
+            "server_port": 2052,
+            "uuid": "e50bb174-f2cb-3081-931e-fa4bfd69f42d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/dabai.in104.25.31.219",
+                "headers": {
+                    "Host": "172.67.110.92"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | IN🇮🇳 | 20.193.131.152:23294 | 196.55ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "20.193.131.152",
+            "server_port": 23294,
+            "uuid": "e6f0541f-af71-4e16-9cd8-5a612934b7a6",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
