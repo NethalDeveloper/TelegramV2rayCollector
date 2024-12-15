@@ -98,16 +98,39 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "HK🇭🇰"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "@VmessProtocol | HK🇭🇰 | jp.1.thap.xyz:58146 | 453.28ms | 0️⃣1️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "@VmessProtocol | HK🇭🇰 | jp.1.thap.xyz:58146 | 453.28ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@VmessProtocol | HK🇭🇰 | jp.1.thap.xyz:58146 | 453.28ms | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "jp.1.thap.xyz",
+            "server_port": 58146,
+            "method": "chacha20-ietf-poly1305",
+            "password": "ba8d6492-f3f5-4376-aa88-1c3bda57a6d97",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "direct",
