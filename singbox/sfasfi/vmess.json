@@ -104,17 +104,17 @@
                 "URL-TEST",
                 "FR🇫🇷",
                 "RELAY🚩",
-                "IN🇮🇳"
+                "HK🇭🇰"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 222.84ms | 0️⃣1️⃣",
-                "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 195.61ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 100-158-80-199.s2.cn-db.top:2052 | 252.85ms | 0️⃣1️⃣",
-                "@v2ray1_ng | IN🇮🇳 | 20.193.131.152:23294 | 199.81ms | 0️⃣1️⃣"
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 138.4ms | 0️⃣1️⃣",
+                "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 195.52ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 100-158-80-199.s2.cn-db.top:2052 | 210.72ms | 0️⃣1️⃣",
+                "@Hope_Net | HK🇭🇰 | zfa04.333210.xyz:40380 | 479.95ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -124,7 +124,7 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 222.84ms | 0️⃣1️⃣"
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 138.4ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -134,25 +134,25 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 195.61ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 100-158-80-199.s2.cn-db.top:2052 | 252.85ms | 0️⃣1️⃣"
+                "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 195.52ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 100-158-80-199.s2.cn-db.top:2052 | 210.72ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "IN🇮🇳",
+            "tag": "HK🇭🇰",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | IN🇮🇳 | 20.193.131.152:23294 | 199.81ms | 0️⃣1️⃣"
+                "@Hope_Net | HK🇭🇰 | zfa04.333210.xyz:40380 | 479.95ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 222.84ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 138.4ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -188,7 +188,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 195.61ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 195.52ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -205,7 +205,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | 100-158-80-199.s2.cn-db.top:2052 | 252.85ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | 100-158-80-199.s2.cn-db.top:2052 | 210.72ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.110.92",
             "server_port": 2052,
@@ -231,11 +231,11 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | IN🇮🇳 | 20.193.131.152:23294 | 199.81ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | HK🇭🇰 | zfa04.333210.xyz:40380 | 479.95ms | 0️⃣2️⃣",
             "type": "vmess",
-            "server": "20.193.131.152",
-            "server_port": 23294,
-            "uuid": "e6f0541f-af71-4e16-9cd8-5a612934b7a6",
+            "server": "91.199.84.112",
+            "server_port": 40380,
+            "uuid": "13364789-a8b2-4bcd-8df7-a794fb6f87e5",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -245,6 +245,16 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "zfa04.333210.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
