@@ -103,18 +103,19 @@
             "outbounds": [
                 "URL-TEST",
                 "FR🇫🇷",
+                "IR🇮🇷",
                 "RELAY🚩",
-                "US🇺🇸"
+                "IN🇮🇳"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 144.05ms | 0️⃣1️⃣",
-                "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 127.98ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | m20.155857.xyz:8880 | 32.89ms | 0️⃣2️⃣",
-                "@Hope_Net | US🇺🇸 | 142.4.104.33:52143 | 72.03ms | 0️⃣1️⃣"
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 122.36ms | 0️⃣1️⃣",
+                "@prrofile_purple | IR🇮🇷 | t1.khasgold.com:2087 | 737.48ms | 0️⃣1️⃣",
+                "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 194.36ms | 0️⃣2️⃣",
+                "@v2ray1_ng | IN🇮🇳 | 20.193.131.152:23294 | 199.94ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -124,7 +125,17 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 144.05ms | 0️⃣1️⃣"
+                "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 122.36ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "@prrofile_purple | IR🇮🇷 | t1.khasgold.com:2087 | 737.48ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -134,25 +145,24 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 127.98ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | m20.155857.xyz:8880 | 32.89ms | 0️⃣2️⃣"
+                "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 194.36ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
+            "tag": "IN🇮🇳",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | US🇺🇸 | 142.4.104.33:52143 | 72.03ms | 0️⃣1️⃣"
+                "@v2ray1_ng | IN🇮🇳 | 20.193.131.152:23294 | 199.94ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 144.05ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | beyonddsz.cfd:443 | 122.36ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "beyonddsz.cfd",
             "server_port": 443,
@@ -188,7 +198,24 @@
             }
         },
         {
-            "tag": "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 127.98ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | IR🇮🇷 | t1.khasgold.com:2087 | 737.48ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "t1.khasgold.com",
+            "server_port": 2087,
+            "uuid": "bd2ba6cd-a221-4c91-934a-2b1d48d9fdd2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@prrofile_purple | RELAY🚩 | shup-usa.karajipets.ir:80 | 194.36ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "www.speedtest.net",
             "server_port": 80,
@@ -205,39 +232,13 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | m20.155857.xyz:8880 | 32.89ms | 0️⃣2️⃣",
+            "tag": "@v2ray1_ng | IN🇮🇳 | 20.193.131.152:23294 | 199.94ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "162.159.45.246",
-            "server_port": 8880,
-            "uuid": "90f8f4dc-8092-4355-9047-05f506f5e9ab",
+            "server": "20.193.131.152",
+            "server_port": 23294,
+            "uuid": "e6f0541f-af71-4e16-9cd8-5a612934b7a6",
             "security": "auto",
             "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/github.com\/Alvin9999",
-                "headers": {
-                    "Host": "162.159.45.246"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | US🇺🇸 | 142.4.104.33:52143 | 72.03ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "142.4.104.33",
-            "server_port": 52143,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 64,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
