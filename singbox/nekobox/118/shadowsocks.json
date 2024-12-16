@@ -105,6 +105,7 @@
             "outbounds": [
                 "URL-TEST",
                 "HK🇭🇰",
+                "SG🇸🇬",
                 "US🇺🇸"
             ]
         },
@@ -112,9 +113,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | HK🇭🇰 | sg.1.thap.xyz:58226 | 297.79ms | 0️⃣1️⃣",
-                "@VmessProtocol | HK🇭🇰 | sg.3.thap.xyz:58060 | 399.08ms | 0️⃣2️⃣",
-                "@VmessProtocol | US🇺🇸 | 37.19.198.244:443 | 60.67ms | 0️⃣3️⃣"
+                "@VmessProtocol | HK🇭🇰 | sg.1.thap.xyz:58226 | 4036.18ms | 0️⃣1️⃣",
+                "@VmessProtocol | SG🇸🇬 | sg.3.thap.xyz:58060 | 5348.07ms | 0️⃣2️⃣",
+                "@VmessProtocol | US🇺🇸 | 37.19.198.244:443 | 71.76ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -124,8 +125,17 @@
             "tag": "HK🇭🇰",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | HK🇭🇰 | sg.1.thap.xyz:58226 | 297.79ms | 0️⃣1️⃣",
-                "@VmessProtocol | HK🇭🇰 | sg.3.thap.xyz:58060 | 399.08ms | 0️⃣2️⃣"
+                "@VmessProtocol | HK🇭🇰 | sg.1.thap.xyz:58226 | 4036.18ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "@VmessProtocol | SG🇸🇬 | sg.3.thap.xyz:58060 | 5348.07ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -135,14 +145,14 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | US🇺🇸 | 37.19.198.244:443 | 60.67ms | 0️⃣3️⃣"
+                "@VmessProtocol | US🇺🇸 | 37.19.198.244:443 | 71.76ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@VmessProtocol | HK🇭🇰 | sg.1.thap.xyz:58226 | 297.79ms | 0️⃣1️⃣",
+            "tag": "@VmessProtocol | HK🇭🇰 | sg.1.thap.xyz:58226 | 4036.18ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "sg.1.thap.xyz",
             "server_port": 58226,
@@ -152,7 +162,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@VmessProtocol | HK🇭🇰 | sg.3.thap.xyz:58060 | 399.08ms | 0️⃣2️⃣",
+            "tag": "@VmessProtocol | SG🇸🇬 | sg.3.thap.xyz:58060 | 5348.07ms | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "sg.3.thap.xyz",
             "server_port": 58060,
@@ -162,7 +172,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@VmessProtocol | US🇺🇸 | 37.19.198.244:443 | 60.67ms | 0️⃣3️⃣",
+            "tag": "@VmessProtocol | US🇺🇸 | 37.19.198.244:443 | 71.76ms | 0️⃣3️⃣",
             "type": "shadowsocks",
             "server": "37.19.198.244",
             "server_port": 443,
