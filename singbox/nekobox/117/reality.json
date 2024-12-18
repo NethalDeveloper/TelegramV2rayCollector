@@ -99,6 +99,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "TR🇹🇷",
                 "DE🇩🇪",
                 "FR🇫🇷",
                 "HU🇭🇺"
@@ -108,10 +109,21 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 162.73ms | 0️⃣1️⃣",
-                "REALITY | @fnet00 | DE🇩🇪 | mysql-panel.karaj-game-farsi.ir:1413 | 402.39ms | 0️⃣3️⃣",
-                "REALITY | @VmessProtocol | FR🇫🇷 | 213.176.66.228:37021 | 163.84ms | 0️⃣2️⃣",
-                "REALITY | @VmessProtocol | HU🇭🇺 | 77.91.72.166:443 | 172.43ms | 0️⃣3️⃣"
+                "REALITY | @prrofile_purple | TR🇹🇷 | 95.173.180.35:443 | 156.25ms | 0️⃣3️⃣",
+                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 114.9ms | 0️⃣1️⃣",
+                "REALITY | @fnet00 | DE🇩🇪 | mysql-panel.karaj-game-farsi.ir:1413 | 310.99ms | 0️⃣3️⃣",
+                "REALITY | @VmessProtocol | FR🇫🇷 | 213.176.66.228:37021 | 114.15ms | 0️⃣2️⃣",
+                "REALITY | @VmessProtocol | HU🇭🇺 | 77.91.72.166:443 | 121.36ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "TR🇹🇷",
+            "type": "urltest",
+            "outbounds": [
+                "REALITY | @prrofile_purple | TR🇹🇷 | 95.173.180.35:443 | 156.25ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -121,8 +133,8 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 162.73ms | 0️⃣1️⃣",
-                "REALITY | @fnet00 | DE🇩🇪 | mysql-panel.karaj-game-farsi.ir:1413 | 402.39ms | 0️⃣3️⃣"
+                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 114.9ms | 0️⃣1️⃣",
+                "REALITY | @fnet00 | DE🇩🇪 | mysql-panel.karaj-game-farsi.ir:1413 | 310.99ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -132,7 +144,7 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @VmessProtocol | FR🇫🇷 | 213.176.66.228:37021 | 163.84ms | 0️⃣2️⃣"
+                "REALITY | @VmessProtocol | FR🇫🇷 | 213.176.66.228:37021 | 114.15ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,14 +154,42 @@
             "tag": "HU🇭🇺",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @VmessProtocol | HU🇭🇺 | 77.91.72.166:443 | 172.43ms | 0️⃣3️⃣"
+                "REALITY | @VmessProtocol | HU🇭🇺 | 77.91.72.166:443 | 121.36ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 162.73ms | 0️⃣1️⃣",
+            "tag": "REALITY | @prrofile_purple | TR🇹🇷 | 95.173.180.35:443 | 156.25ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "95.173.180.35",
+            "server_port": 443,
+            "uuid": "6ff213b8-ccc7-4b5a-b4aa-37f7b792a1f1",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.apple.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "B5i03yc1WUTOQD8v_N0UrCUaR4AgMJ40rEl8tXUJY0g",
+                    "short_id": "01b200e90e250221"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 114.9ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "49.12.193.246",
             "server_port": 443,
@@ -163,7 +203,7 @@
             }
         },
         {
-            "tag": "REALITY | @fnet00 | DE🇩🇪 | mysql-panel.karaj-game-farsi.ir:1413 | 402.39ms | 0️⃣3️⃣",
+            "tag": "REALITY | @fnet00 | DE🇩🇪 | mysql-panel.karaj-game-farsi.ir:1413 | 310.99ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "mysql-panel.karaj-game-farsi.ir",
             "server_port": 1413,
@@ -198,7 +238,7 @@
             }
         },
         {
-            "tag": "REALITY | @VmessProtocol | FR🇫🇷 | 213.176.66.228:37021 | 163.84ms | 0️⃣2️⃣",
+            "tag": "REALITY | @VmessProtocol | FR🇫🇷 | 213.176.66.228:37021 | 114.15ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "213.176.66.228",
             "server_port": 37021,
@@ -226,7 +266,7 @@
             }
         },
         {
-            "tag": "REALITY | @VmessProtocol | HU🇭🇺 | 77.91.72.166:443 | 172.43ms | 0️⃣3️⃣",
+            "tag": "REALITY | @VmessProtocol | HU🇭🇺 | 77.91.72.166:443 | 121.36ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "77.91.72.166",
             "server_port": 443,
