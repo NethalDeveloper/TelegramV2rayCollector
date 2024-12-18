@@ -102,23 +102,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 112.18ms | 0️⃣1️⃣",
-                "REALITY | @fnet00 | DE🇩🇪 | mysql-panel.karaj-game-farsi.ir:1413 | 307.99ms | 0️⃣3️⃣"
+                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 93.52ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | FR🇫🇷 | 213.176.66.228:37021 | 94.32ms | 0️⃣2️⃣",
+                "REALITY | @fnet00 | DE🇩🇪 | mysql-panel.karaj-game-farsi.ir:1413 | 262.88ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 112.18ms | 0️⃣1️⃣",
-                "REALITY | @fnet00 | DE🇩🇪 | mysql-panel.karaj-game-farsi.ir:1413 | 307.99ms | 0️⃣3️⃣"
+                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 93.52ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | FR🇫🇷 | 213.176.66.228:37021 | 94.32ms | 0️⃣2️⃣",
+                "REALITY | @fnet00 | DE🇩🇪 | mysql-panel.karaj-game-farsi.ir:1413 | 262.88ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 112.18ms | 0️⃣1️⃣",
+            "tag": "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 93.52ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "49.12.193.246",
             "server_port": 443,
@@ -132,7 +134,35 @@
             }
         },
         {
-            "tag": "REALITY | @fnet00 | DE🇩🇪 | mysql-panel.karaj-game-farsi.ir:1413 | 307.99ms | 0️⃣3️⃣",
+            "tag": "REALITY | @VmessProtocol | FR🇫🇷 | 213.176.66.228:37021 | 94.32ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "213.176.66.228",
+            "server_port": 37021,
+            "uuid": "8363e5e4-b97f-4ddf-bbcd-4e8f8d826a35",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Gk3eR3mV55k5P3tg-MzqMpNolmML8q9zBOf6A102e1Y",
+                    "short_id": "bc721eb6"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @fnet00 | DE🇩🇪 | mysql-panel.karaj-game-farsi.ir:1413 | 262.88ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "mysql-panel.karaj-game-farsi.ir",
             "server_port": 1413,
