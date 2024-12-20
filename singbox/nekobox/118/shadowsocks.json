@@ -104,16 +104,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "FR🇫🇷",
-                "MD🇲🇩"
+                "FR🇫🇷"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | FR🇫🇷 | 213.176.66.228:24495 | 115.81ms | 0️⃣1️⃣",
-                "@VmessProtocol | MD🇲🇩 | 86.104.74.243:14255 | 101.43ms | 0️⃣2️⃣"
+                "@VmessProtocol | FR🇫🇷 | 213.176.66.228:24495 | 167.88ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -123,39 +121,19 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | FR🇫🇷 | 213.176.66.228:24495 | 115.81ms | 0️⃣1️⃣"
+                "@VmessProtocol | FR🇫🇷 | 213.176.66.228:24495 | 167.88ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "MD🇲🇩",
-            "type": "urltest",
-            "outbounds": [
-                "@VmessProtocol | MD🇲🇩 | 86.104.74.243:14255 | 101.43ms | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "@VmessProtocol | FR🇫🇷 | 213.176.66.228:24495 | 115.81ms | 0️⃣1️⃣",
+            "tag": "@VmessProtocol | FR🇫🇷 | 213.176.66.228:24495 | 167.88ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "213.176.66.228",
             "server_port": 24495,
             "method": "chacha20-ietf-poly1305",
             "password": "xk5c6OgvtSu9d2mUTYZPiI",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "@VmessProtocol | MD🇲🇩 | 86.104.74.243:14255 | 101.43ms | 0️⃣2️⃣",
-            "type": "shadowsocks",
-            "server": "86.104.74.243",
-            "server_port": 14255,
-            "method": "chacha20-ietf-poly1305",
-            "password": "fDDmH4QefmWqMJ8UURZrGh",
             "plugin": "",
             "plugin_opts": ""
         },
