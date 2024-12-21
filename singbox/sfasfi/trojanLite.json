@@ -102,54 +102,33 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@PrivateVPNs | IE🇮🇪 | 52.214.243.84:22222 | 93.57ms | 0️⃣1️⃣",
-                "@PrivateVPNs | IE🇮🇪 | 54.75.224.123:22222 | 120.53ms | 0️⃣2️⃣",
-                "@PrivateVPNs | SE🇸🇪 | 13.48.90.200:22222 | 102.27ms | 0️⃣3️⃣",
-                "@DirectVPN | IE🇮🇪 | 52.49.151.83:22222 | 91.44ms | 0️⃣1️⃣",
-                "@DirectVPN | CA🇨🇦 | 15.157.109.216:22222 | 18.97ms | 0️⃣2️⃣",
-                "@VmessProtocol | BR🇧🇷 | bz02.ssr.ee:443 | 230.97ms | 0️⃣1️⃣",
-                "@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi&security=tls&alpn=http\/1.1&host=bangladeshipatri.com&fp=safari&type=ws&sni=bangladeshipatri.com#@proxystore11 | RELAY🚩 | 104.17.147.22:443 | 1.25ms | 0️⃣1️⃣"
+                "@PrivateVPNs | IE🇮🇪 | 54.75.224.123:22222 | 87.53ms | 0️⃣1️⃣",
+                "@PrivateVPNs | SE🇸🇪 | 13.48.90.200:22222 | 121.14ms | 0️⃣2️⃣",
+                "@PrivateVPNs | SE🇸🇪 | 13.61.56.232:22222 | 121.18ms | 0️⃣3️⃣",
+                "@DirectVPN | IE🇮🇪 | 52.49.151.83:22222 | 98.18ms | 0️⃣1️⃣",
+                "@DirectVPN | CA🇨🇦 | 15.157.109.216:22222 | 70.26ms | 0️⃣2️⃣",
+                "@DirectVPN | CA🇨🇦 | 3.99.96.248:22222 | 21.77ms | 0️⃣3️⃣",
+                "@VmessProtocol | BR🇧🇷 | bz02.ssr.ee:443 | 177ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | IE🇮🇪 | 52.214.243.84:22222 | 93.57ms | 0️⃣1️⃣",
-                "@PrivateVPNs | IE🇮🇪 | 54.75.224.123:22222 | 120.53ms | 0️⃣2️⃣",
-                "@PrivateVPNs | SE🇸🇪 | 13.48.90.200:22222 | 102.27ms | 0️⃣3️⃣",
-                "@DirectVPN | IE🇮🇪 | 52.49.151.83:22222 | 91.44ms | 0️⃣1️⃣",
-                "@DirectVPN | CA🇨🇦 | 15.157.109.216:22222 | 18.97ms | 0️⃣2️⃣",
-                "@VmessProtocol | BR🇧🇷 | bz02.ssr.ee:443 | 230.97ms | 0️⃣1️⃣",
-                "@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi&security=tls&alpn=http\/1.1&host=bangladeshipatri.com&fp=safari&type=ws&sni=bangladeshipatri.com#@proxystore11 | RELAY🚩 | 104.17.147.22:443 | 1.25ms | 0️⃣1️⃣"
+                "@PrivateVPNs | IE🇮🇪 | 54.75.224.123:22222 | 87.53ms | 0️⃣1️⃣",
+                "@PrivateVPNs | SE🇸🇪 | 13.48.90.200:22222 | 121.14ms | 0️⃣2️⃣",
+                "@PrivateVPNs | SE🇸🇪 | 13.61.56.232:22222 | 121.18ms | 0️⃣3️⃣",
+                "@DirectVPN | IE🇮🇪 | 52.49.151.83:22222 | 98.18ms | 0️⃣1️⃣",
+                "@DirectVPN | CA🇨🇦 | 15.157.109.216:22222 | 70.26ms | 0️⃣2️⃣",
+                "@DirectVPN | CA🇨🇦 | 3.99.96.248:22222 | 21.77ms | 0️⃣3️⃣",
+                "@VmessProtocol | BR🇧🇷 | bz02.ssr.ee:443 | 177ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | IE🇮🇪 | 52.214.243.84:22222 | 93.57ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "52.214.243.84",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | IE🇮🇪 | 54.75.224.123:22222 | 120.53ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | IE🇮🇪 | 54.75.224.123:22222 | 87.53ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "54.75.224.123",
             "server_port": 22222,
@@ -170,7 +149,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | SE🇸🇪 | 13.48.90.200:22222 | 102.27ms | 0️⃣3️⃣",
+            "tag": "@PrivateVPNs | SE🇸🇪 | 13.48.90.200:22222 | 121.14ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "13.48.90.200",
             "server_port": 22222,
@@ -191,7 +170,28 @@
             }
         },
         {
-            "tag": "@DirectVPN | IE🇮🇪 | 52.49.151.83:22222 | 91.44ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | SE🇸🇪 | 13.61.56.232:22222 | 121.18ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "13.61.56.232",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | IE🇮🇪 | 52.49.151.83:22222 | 98.18ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "52.49.151.83",
             "server_port": 22222,
@@ -212,7 +212,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | CA🇨🇦 | 15.157.109.216:22222 | 18.97ms | 0️⃣2️⃣",
+            "tag": "@DirectVPN | CA🇨🇦 | 15.157.109.216:22222 | 70.26ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "15.157.109.216",
             "server_port": 22222,
@@ -233,7 +233,28 @@
             }
         },
         {
-            "tag": "@VmessProtocol | BR🇧🇷 | bz02.ssr.ee:443 | 230.97ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | CA🇨🇦 | 3.99.96.248:22222 | 21.77ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "3.99.96.248",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@VmessProtocol | BR🇧🇷 | bz02.ssr.ee:443 | 177ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "bz02.ssr.ee",
             "server_port": 443,
@@ -251,18 +272,6 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi,@alpha_v2ray_fazayi&security=tls&alpn=http\/1.1&host=bangladeshipatri.com&fp=safari&type=ws&sni=bangladeshipatri.com#@proxystore11 | RELAY🚩 | 104.17.147.22:443 | 1.25ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "104.17.147.22",
-            "server_port": 443,
-            "password": "4732adfa16c6450bbef87264e41332db",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
