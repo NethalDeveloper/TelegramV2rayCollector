@@ -106,16 +106,18 @@
                 "URL-TEST",
                 "DE🇩🇪",
                 "FR🇫🇷",
-                "TW🇹🇼"
+                "TW🇹🇼",
+                "SE🇸🇪"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 150.91ms | 0️⃣1️⃣",
-                "REALITY | @VmessProtocol | FR🇫🇷 | cuvip.doubledou.icu:443 | 81.3ms | 0️⃣2️⃣",
-                "REALITY | @VmessProtocol | TW🇹🇼 | twb.doubledou.icu:443 | 196.85ms | 0️⃣3️⃣"
+                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 112.97ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | FR🇫🇷 | cuvip.doubledou.icu:443 | 104.71ms | 0️⃣2️⃣",
+                "REALITY | @VmessProtocol | TW🇹🇼 | twb.doubledou.icu:443 | 196.54ms | 0️⃣3️⃣",
+                "REALITY | @ConfigsHUB | SE🇸🇪 | 138.124.25.81:3990 | 128ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -125,7 +127,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 150.91ms | 0️⃣1️⃣"
+                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 112.97ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -135,7 +137,7 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @VmessProtocol | FR🇫🇷 | cuvip.doubledou.icu:443 | 81.3ms | 0️⃣2️⃣"
+                "REALITY | @VmessProtocol | FR🇫🇷 | cuvip.doubledou.icu:443 | 104.71ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -145,14 +147,24 @@
             "tag": "TW🇹🇼",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @VmessProtocol | TW🇹🇼 | twb.doubledou.icu:443 | 196.85ms | 0️⃣3️⃣"
+                "REALITY | @VmessProtocol | TW🇹🇼 | twb.doubledou.icu:443 | 196.54ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 150.91ms | 0️⃣1️⃣",
+            "tag": "SE🇸🇪",
+            "type": "urltest",
+            "outbounds": [
+                "REALITY | @ConfigsHUB | SE🇸🇪 | 138.124.25.81:3990 | 128ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 112.97ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "49.12.193.246",
             "server_port": 443,
@@ -166,7 +178,7 @@
             }
         },
         {
-            "tag": "REALITY | @VmessProtocol | FR🇫🇷 | cuvip.doubledou.icu:443 | 81.3ms | 0️⃣2️⃣",
+            "tag": "REALITY | @VmessProtocol | FR🇫🇷 | cuvip.doubledou.icu:443 | 104.71ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "cuvip.doubledou.icu",
             "server_port": 443,
@@ -194,7 +206,7 @@
             }
         },
         {
-            "tag": "REALITY | @VmessProtocol | TW🇹🇼 | twb.doubledou.icu:443 | 196.85ms | 0️⃣3️⃣",
+            "tag": "REALITY | @VmessProtocol | TW🇹🇼 | twb.doubledou.icu:443 | 196.54ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "twb.doubledou.icu",
             "server_port": 443,
@@ -218,6 +230,34 @@
                     "enabled": true,
                     "public_key": "zRZhlkKjUeqtIk9j6yy95aX-2krqQVyWORLv5tQkQGM",
                     "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @ConfigsHUB | SE🇸🇪 | 138.124.25.81:3990 | 128ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "138.124.25.81",
+            "server_port": 3990,
+            "uuid": "33dc6301-e4bf-4612-94f5-7006fe062892",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "9Rb63f9TzE_MfARSSWTge7s3RpfPZfErIauYjKruRhQ",
+                    "short_id": "1dfbb004e009c8f9"
                 }
             }
         },
