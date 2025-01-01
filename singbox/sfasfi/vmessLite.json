@@ -102,29 +102,31 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 22.75ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | plex.com:80 | 90.81ms | 0️⃣1️⃣",
-                "@prrofile_purple | IR🇮🇷 | 2.188.213.45:2015 | 192.55ms | 0️⃣2️⃣",
-                "@Hope_Net | RELAY🚩 | kus.htg8866.us.kg:2096 | 4903.34ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:443 | 338.3ms | 0️⃣2️⃣"
+                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 199.45ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | plex.com:80 | 116.16ms | 0️⃣1️⃣",
+                "@ShadowProxy66 | US🇺🇸 | obdii.cfd:443 | 185.18ms | 0️⃣1️⃣",
+                "@ShadowProxy66 | US🇺🇸 | obdii.cfd:443 | 74.35ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | kus.htg8866.us.kg:2096 | 284.01ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:443 | 335.2ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 22.75ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | plex.com:80 | 90.81ms | 0️⃣1️⃣",
-                "@prrofile_purple | IR🇮🇷 | 2.188.213.45:2015 | 192.55ms | 0️⃣2️⃣",
-                "@Hope_Net | RELAY🚩 | kus.htg8866.us.kg:2096 | 4903.34ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:443 | 338.3ms | 0️⃣2️⃣"
+                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 199.45ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | plex.com:80 | 116.16ms | 0️⃣1️⃣",
+                "@ShadowProxy66 | US🇺🇸 | obdii.cfd:443 | 185.18ms | 0️⃣1️⃣",
+                "@ShadowProxy66 | US🇺🇸 | obdii.cfd:443 | 74.35ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | kus.htg8866.us.kg:2096 | 284.01ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:443 | 335.2ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 22.75ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 199.45ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "denc36.xtooltech.cfd",
             "server_port": 443,
@@ -160,7 +162,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | US🇺🇸 | plex.com:80 | 90.81ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | US🇺🇸 | plex.com:80 | 116.16ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "151.101.2.216",
             "server_port": 80,
@@ -186,11 +188,11 @@
             }
         },
         {
-            "tag": "@prrofile_purple | IR🇮🇷 | 2.188.213.45:2015 | 192.55ms | 0️⃣2️⃣",
+            "tag": "@ShadowProxy66 | US🇺🇸 | obdii.cfd:443 | 185.18ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "2.188.213.45",
-            "server_port": 2015,
-            "uuid": "3e9a0cbf-fb9d-4159-9ff1-08b3869b62d8",
+            "server": "2.189.59.3",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -200,10 +202,65 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "obdii.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkws",
+                "headers": {
+                    "Host": "2.189.59.3"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | kus.htg8866.us.kg:2096 | 4903.34ms | 0️⃣1️⃣",
+            "tag": "@ShadowProxy66 | US🇺🇸 | obdii.cfd:443 | 74.35ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "obdii.cfd",
+            "server_port": 443,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "obdii.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkws",
+                "headers": {
+                    "Host": "obdii.cfd"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | kus.htg8866.us.kg:2096 | 284.01ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.18.79.53",
             "server_port": 2096,
@@ -239,7 +296,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:443 | 338.3ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:443 | 335.2ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "141.147.154.214",
             "server_port": 443,
