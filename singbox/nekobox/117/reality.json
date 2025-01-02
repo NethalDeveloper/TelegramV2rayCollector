@@ -99,33 +99,19 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "AM🇦🇲",
                 "DE🇩🇪",
-                "NL🇳🇱",
-                "IT🇮🇹"
+                "NL🇳🇱"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 172.22ms | 0️⃣2️⃣",
-                "REALITY | @ipV2Ray | DE🇩🇪 | c1.vact.ir:2083 | 222.18ms | 0️⃣2️⃣",
-                "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 301.01ms | 0️⃣3️⃣",
-                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 112.75ms | 0️⃣1️⃣",
-                "REALITY | @Outlinev2rayNG | DE🇩🇪 | c2.vact.ir:2083 | 308.44ms | 0️⃣2️⃣",
-                "REALITY | @ShadowProxy66 | NL🇳🇱 | 174.138.13.224:15891 | 102.76ms | 0️⃣2️⃣",
-                "REALITY | @ConfigsHUB | IT🇮🇹 | 194.165.59.20:443 | 133.9ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "AM🇦🇲",
-            "type": "urltest",
-            "outbounds": [
-                "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 172.22ms | 0️⃣2️⃣"
+                "REALITY | @ipV2Ray | DE🇩🇪 | c1.vact.ir:2083 | 395.68ms | 0️⃣2️⃣",
+                "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 318.75ms | 0️⃣3️⃣",
+                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 162.17ms | 0️⃣1️⃣",
+                "REALITY | @Outlinev2rayNG | DE🇩🇪 | c2.vact.ir:2083 | 317.93ms | 0️⃣2️⃣",
+                "REALITY | @ShadowProxy66 | NL🇳🇱 | 174.138.13.224:15891 | 152.4ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -135,10 +121,10 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ipV2Ray | DE🇩🇪 | c1.vact.ir:2083 | 222.18ms | 0️⃣2️⃣",
-                "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 301.01ms | 0️⃣3️⃣",
-                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 112.75ms | 0️⃣1️⃣",
-                "REALITY | @Outlinev2rayNG | DE🇩🇪 | c2.vact.ir:2083 | 308.44ms | 0️⃣2️⃣"
+                "REALITY | @ipV2Ray | DE🇩🇪 | c1.vact.ir:2083 | 395.68ms | 0️⃣2️⃣",
+                "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 318.75ms | 0️⃣3️⃣",
+                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 162.17ms | 0️⃣1️⃣",
+                "REALITY | @Outlinev2rayNG | DE🇩🇪 | c2.vact.ir:2083 | 317.93ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -148,59 +134,14 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ShadowProxy66 | NL🇳🇱 | 174.138.13.224:15891 | 102.76ms | 0️⃣2️⃣"
+                "REALITY | @ShadowProxy66 | NL🇳🇱 | 174.138.13.224:15891 | 152.4ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "IT🇮🇹",
-            "type": "urltest",
-            "outbounds": [
-                "REALITY | @ConfigsHUB | IT🇮🇹 | 194.165.59.20:443 | 133.9ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 172.22ms | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "45.129.185.185",
-            "server_port": 2087,
-            "uuid": "26a45f68-0dd0-4952-ab1e-2c3d023d2431",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "dash.cloudflare.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "StgXQYbkKSkAHHzakVldKHVmrBXhe_J87e7bydUIOGw",
-                    "short_id": "83cdb009"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | c1.vact.ir:2083 | 222.18ms | 0️⃣2️⃣",
+            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | c1.vact.ir:2083 | 395.68ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "c1.vact.ir",
             "server_port": 2083,
@@ -235,7 +176,7 @@
             }
         },
         {
-            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 301.01ms | 0️⃣3️⃣",
+            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 318.75ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "c2.vact.ir",
             "server_port": 2083,
@@ -270,7 +211,7 @@
             }
         },
         {
-            "tag": "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 112.75ms | 0️⃣1️⃣",
+            "tag": "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 162.17ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "49.12.193.246",
             "server_port": 443,
@@ -284,7 +225,7 @@
             }
         },
         {
-            "tag": "REALITY | @Outlinev2rayNG | DE🇩🇪 | c2.vact.ir:2083 | 308.44ms | 0️⃣2️⃣",
+            "tag": "REALITY | @Outlinev2rayNG | DE🇩🇪 | c2.vact.ir:2083 | 317.93ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "c2.vact.ir",
             "server_port": 2083,
@@ -319,7 +260,7 @@
             }
         },
         {
-            "tag": "REALITY | @ShadowProxy66 | NL🇳🇱 | 174.138.13.224:15891 | 102.76ms | 0️⃣2️⃣",
+            "tag": "REALITY | @ShadowProxy66 | NL🇳🇱 | 174.138.13.224:15891 | 152.4ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "174.138.13.224",
             "server_port": 15891,
@@ -343,34 +284,6 @@
                     "enabled": true,
                     "public_key": "4FNDHgDP2lnetuRioH6DsE9kMnDyhkJ2NHLMpZgyci0",
                     "short_id": "10f1"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @ConfigsHUB | IT🇮🇹 | 194.165.59.20:443 | 133.9ms | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "194.165.59.20",
-            "server_port": 443,
-            "uuid": "80c32a2b-d074-4069-b82f-cf5f0bcf8aaf",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cdnjs.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "p1dCL7vkrK9KPfZ0EudMxZXyZbBaH2Asqvd6NHJfnyE",
-                    "short_id": "2eec1cff2b290424"
                 }
             }
         },
