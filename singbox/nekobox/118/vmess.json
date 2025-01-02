@@ -105,7 +105,9 @@
             "outbounds": [
                 "URL-TEST",
                 "CA🇨🇦",
+                "IR🇮🇷",
                 "US🇺🇸",
+                "GB🇬🇧",
                 "RELAY🚩"
             ]
         },
@@ -113,11 +115,14 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 275.75ms | 0️⃣1️⃣",
-                "@ShadowProxy66 | US🇺🇸 | obdii.cfd:443 | 196.21ms | 0️⃣1️⃣",
-                "@ShadowProxy66 | US🇺🇸 | mlq001.facai2024.com:443 | 46.69ms | 0️⃣2️⃣",
-                "@Hope_Net | US🇺🇸 | rac.679888.xyz:443 | 96.17ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:2053 | 193.32ms | 0️⃣2️⃣"
+                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 21.66ms | 0️⃣1️⃣",
+                "@prrofile_purple | IR🇮🇷 | 2.188.213.45:2015 | 194.38ms | 0️⃣1️⃣",
+                "@v2ray1_ng | IR🇮🇷 | 92.242.220.22:37885 | 187.31ms | 0️⃣1️⃣",
+                "@ShadowProxy66 | US🇺🇸 | obdii.cfd:443 | 186.63ms | 0️⃣1️⃣",
+                "@ShadowProxy66 | US🇺🇸 | mlq001.facai2024.com:443 | 38.4ms | 0️⃣2️⃣",
+                "@Hope_Net | US🇺🇸 | rac.679888.xyz:443 | 93.02ms | 0️⃣1️⃣",
+                "@Hope_Net | GB🇬🇧 | 185.168.195.211:8080 | 117.49ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:2053 | 325.65ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -127,7 +132,18 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 275.75ms | 0️⃣1️⃣"
+                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 21.66ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "@prrofile_purple | IR🇮🇷 | 2.188.213.45:2015 | 194.38ms | 0️⃣1️⃣",
+                "@v2ray1_ng | IR🇮🇷 | 92.242.220.22:37885 | 187.31ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -137,9 +153,19 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@ShadowProxy66 | US🇺🇸 | obdii.cfd:443 | 196.21ms | 0️⃣1️⃣",
-                "@ShadowProxy66 | US🇺🇸 | mlq001.facai2024.com:443 | 46.69ms | 0️⃣2️⃣",
-                "@Hope_Net | US🇺🇸 | rac.679888.xyz:443 | 96.17ms | 0️⃣1️⃣"
+                "@ShadowProxy66 | US🇺🇸 | obdii.cfd:443 | 186.63ms | 0️⃣1️⃣",
+                "@ShadowProxy66 | US🇺🇸 | mlq001.facai2024.com:443 | 38.4ms | 0️⃣2️⃣",
+                "@Hope_Net | US🇺🇸 | rac.679888.xyz:443 | 93.02ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "@Hope_Net | GB🇬🇧 | 185.168.195.211:8080 | 117.49ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -149,14 +175,14 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:2053 | 193.32ms | 0️⃣2️⃣"
+                "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:2053 | 325.65ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 275.75ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 21.66ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "denc36.xtooltech.cfd",
             "server_port": 443,
@@ -192,7 +218,41 @@
             }
         },
         {
-            "tag": "@ShadowProxy66 | US🇺🇸 | obdii.cfd:443 | 196.21ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | IR🇮🇷 | 2.188.213.45:2015 | 194.38ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "2.188.213.45",
+            "server_port": 2015,
+            "uuid": "3e9a0cbf-fb9d-4159-9ff1-08b3869b62d8",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | IR🇮🇷 | 92.242.220.22:37885 | 187.31ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "92.242.220.22",
+            "server_port": 37885,
+            "uuid": "8dee19ab-50ce-4d06-be42-5e53c8989ccc",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@ShadowProxy66 | US🇺🇸 | obdii.cfd:443 | 186.63ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "obdii.cfd",
             "server_port": 443,
@@ -228,7 +288,7 @@
             }
         },
         {
-            "tag": "@ShadowProxy66 | US🇺🇸 | mlq001.facai2024.com:443 | 46.69ms | 0️⃣2️⃣",
+            "tag": "@ShadowProxy66 | US🇺🇸 | mlq001.facai2024.com:443 | 38.4ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "mlq001.facai2024.com",
             "server_port": 443,
@@ -264,7 +324,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | rac.679888.xyz:443 | 96.17ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | US🇺🇸 | rac.679888.xyz:443 | 93.02ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.18.112.107",
             "server_port": 443,
@@ -300,7 +360,24 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:2053 | 193.32ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | GB🇬🇧 | 185.168.195.211:8080 | 117.49ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "185.168.195.211",
+            "server_port": 8080,
+            "uuid": "02788b47-d952-55e0-98de-d743d01bd007",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:2053 | 325.65ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "152.70.155.147",
             "server_port": 2053,
