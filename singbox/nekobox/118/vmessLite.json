@@ -104,23 +104,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 80.23ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | df.htg8866.us.kg:2087 | 374.36ms | 0️⃣1️⃣"
+                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 77.67ms | 0️⃣1️⃣",
+                "@ConfigsHUB | US🇺🇸 | mio.splashthat.com:443 | 35.09ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:443 | 18.62ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 80.23ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | df.htg8866.us.kg:2087 | 374.36ms | 0️⃣1️⃣"
+                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 77.67ms | 0️⃣1️⃣",
+                "@ConfigsHUB | US🇺🇸 | mio.splashthat.com:443 | 35.09ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:443 | 18.62ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 80.23ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 77.67ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "denc36.xtooltech.cfd",
             "server_port": 443,
@@ -156,11 +158,47 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | df.htg8866.us.kg:2087 | 374.36ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | US🇺🇸 | mio.splashthat.com:443 | 35.09ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "2606:4700:99e1:2b3c:2914:1a59:13d1:fa92",
-            "server_port": 2087,
-            "uuid": "5669a125-54cb-42c5-d41f-3d5caf1213b7",
+            "server": "151.101.194.133",
+            "server_port": 443,
+            "uuid": "fd79106e-0f6c-4ad7-af1b-40a079afdf67",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mio.splashthat.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/RACEVPN",
+                "headers": {
+                    "Host": "151.101.194.133"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:443 | 18.62ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "129.159.84.71",
+            "server_port": 443,
+            "uuid": "60c0bbfa-c54f-49a9-81ba-779b0206a9fd",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -183,9 +221,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/87iof67ri754s6456",
+                "path": "\/\/ylks",
                 "headers": {
-                    "Host": "2606:4700:99e1:2b3c:2914:1a59:13d1:fa92"
+                    "Host": "129.159.84.71"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
