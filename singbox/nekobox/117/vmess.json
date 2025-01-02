@@ -100,7 +100,6 @@
             "outbounds": [
                 "URL-TEST",
                 "CA🇨🇦",
-                "US🇺🇸",
                 "RELAY🚩"
             ]
         },
@@ -108,9 +107,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 77.67ms | 0️⃣1️⃣",
-                "@ConfigsHUB | US🇺🇸 | mio.splashthat.com:443 | 35.09ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:443 | 18.62ms | 0️⃣1️⃣"
+                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 74.58ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:443 | 328.46ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -120,17 +118,7 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 77.67ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "US🇺🇸",
-            "type": "urltest",
-            "outbounds": [
-                "@ConfigsHUB | US🇺🇸 | mio.splashthat.com:443 | 35.09ms | 0️⃣1️⃣"
+                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 74.58ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -140,14 +128,14 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:443 | 18.62ms | 0️⃣1️⃣"
+                "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:443 | 328.46ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 77.67ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 74.58ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "denc36.xtooltech.cfd",
             "server_port": 443,
@@ -183,43 +171,7 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | US🇺🇸 | mio.splashthat.com:443 | 35.09ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "151.101.194.133",
-            "server_port": 443,
-            "uuid": "fd79106e-0f6c-4ad7-af1b-40a079afdf67",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "mio.splashthat.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/RACEVPN",
-                "headers": {
-                    "Host": "151.101.194.133"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:443 | 18.62ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | nl.zhuk.us.kg:443 | 328.46ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "129.159.84.71",
             "server_port": 443,
