@@ -104,62 +104,23 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 151.79ms | 0️⃣2️⃣",
-                "REALITY | @ARv2ray | DE🇩🇪 | 193.46.81.83:563 | 93.48ms | 0️⃣2️⃣",
-                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 97.01ms | 0️⃣1️⃣",
-                "REALITY | @ConfigsHUB | FR🇫🇷 | speedy.o3co.ir:5600 | 257.05ms | 0️⃣1️⃣"
+                "REALITY | @ARv2ray | DE🇩🇪 | 193.46.81.83:563 | 145.8ms | 0️⃣2️⃣",
+                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 144.72ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 151.79ms | 0️⃣2️⃣",
-                "REALITY | @ARv2ray | DE🇩🇪 | 193.46.81.83:563 | 93.48ms | 0️⃣2️⃣",
-                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 97.01ms | 0️⃣1️⃣",
-                "REALITY | @ConfigsHUB | FR🇫🇷 | speedy.o3co.ir:5600 | 257.05ms | 0️⃣1️⃣"
+                "REALITY | @ARv2ray | DE🇩🇪 | 193.46.81.83:563 | 145.8ms | 0️⃣2️⃣",
+                "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 144.72ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 151.79ms | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "45.129.185.185",
-            "server_port": 2087,
-            "uuid": "26a45f68-0dd0-4952-ab1e-2c3d023d2431",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "dash.cloudflare.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "StgXQYbkKSkAHHzakVldKHVmrBXhe_J87e7bydUIOGw",
-                    "short_id": "83cdb009"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "REALITY | @ARv2ray | DE🇩🇪 | 193.46.81.83:563 | 93.48ms | 0️⃣2️⃣",
+            "tag": "REALITY | @ARv2ray | DE🇩🇪 | 193.46.81.83:563 | 145.8ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "193.46.81.83",
             "server_port": 563,
@@ -194,7 +155,7 @@
             }
         },
         {
-            "tag": "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 97.01ms | 0️⃣1️⃣",
+            "tag": "REALITY | @proxyymeliii | DE🇩🇪 | 49.12.193.246:443 | 144.72ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "49.12.193.246",
             "server_port": 443,
@@ -205,34 +166,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "REALITY | @ConfigsHUB | FR🇫🇷 | speedy.o3co.ir:5600 | 257.05ms | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "speedy.o3co.ir",
-            "server_port": 5600,
-            "uuid": "2bbaf73f-434a-414f-b4f0-2520a2c5155e",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "y6JSkggQ__RA_nmCJpX1_ddSQC6vzDUPaN7KyvjVuic",
-                    "short_id": ""
-                }
             }
         },
         {
