@@ -102,29 +102,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@PrivateVPNs | FR🇫🇷 | 35.181.221.89:22222 | 102.43ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 51.44.91.28:22222 | 90.43ms | 0️⃣2️⃣",
-                "@PrivateVPNs | GB🇬🇧 | 18.175.78.252:22222 | 82.63ms | 0️⃣3️⃣",
-                "@VmessProtocol | US🇺🇸 | 216.24.57.30:443 | 5.5ms | 0️⃣1️⃣"
+                "@PrivateVPNs | IE🇮🇪 | 52.30.22.44:22222 | 73.46ms | 0️⃣1️⃣",
+                "@VmessProtocol | US🇺🇸 | 216.24.57.30:443 | 1.92ms | 0️⃣1️⃣",
+                "@ConfigsHUB | PL🇵🇱 | 91.206.179.73:443 | 119.75ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 35.181.221.89:22222 | 102.43ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 51.44.91.28:22222 | 90.43ms | 0️⃣2️⃣",
-                "@PrivateVPNs | GB🇬🇧 | 18.175.78.252:22222 | 82.63ms | 0️⃣3️⃣",
-                "@VmessProtocol | US🇺🇸 | 216.24.57.30:443 | 5.5ms | 0️⃣1️⃣"
+                "@PrivateVPNs | IE🇮🇪 | 52.30.22.44:22222 | 73.46ms | 0️⃣1️⃣",
+                "@VmessProtocol | US🇺🇸 | 216.24.57.30:443 | 1.92ms | 0️⃣1️⃣",
+                "@ConfigsHUB | PL🇵🇱 | 91.206.179.73:443 | 119.75ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 35.181.221.89:22222 | 102.43ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | IE🇮🇪 | 52.30.22.44:22222 | 73.46ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "35.181.221.89",
+            "server": "52.30.22.44",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -143,49 +141,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 51.44.91.28:22222 | 90.43ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "51.44.91.28",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | GB🇬🇧 | 18.175.78.252:22222 | 82.63ms | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "18.175.78.252",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@VmessProtocol | US🇺🇸 | 216.24.57.30:443 | 5.5ms | 0️⃣1️⃣",
+            "tag": "@VmessProtocol | US🇺🇸 | 216.24.57.30:443 | 1.92ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "216.24.57.30",
             "server_port": 443,
@@ -210,6 +166,18 @@
                 "headers": {
                     "Host": "torjan.xn--xhq44j.eu.org"
                 }
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | PL🇵🇱 | 91.206.179.73:443 | 119.75ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "91.206.179.73",
+            "server_port": 443,
+            "password": "3723507166611775488",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
