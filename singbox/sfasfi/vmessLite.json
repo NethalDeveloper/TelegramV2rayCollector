@@ -102,21 +102,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 228.48ms | 0️⃣1️⃣"
+                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 23.9ms | 0️⃣1️⃣",
+                "@prrofile_purple | IR🇮🇷 | 2.188.213.45:2015 | 196.95ms | 0️⃣1️⃣",
+                "@ConfigsHUB | IR🇮🇷 | soft98.ir:2082 | 749.49ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 228.48ms | 0️⃣1️⃣"
+                "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 23.9ms | 0️⃣1️⃣",
+                "@prrofile_purple | IR🇮🇷 | 2.188.213.45:2015 | 196.95ms | 0️⃣1️⃣",
+                "@ConfigsHUB | IR🇮🇷 | soft98.ir:2082 | 749.49ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 228.48ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | CA🇨🇦 | adenc36v.xtooltech.cfd:443 | 23.9ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "denc36.xtooltech.cfd",
             "server_port": 443,
@@ -149,6 +153,40 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@prrofile_purple | IR🇮🇷 | 2.188.213.45:2015 | 196.95ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "2.188.213.45",
+            "server_port": 2015,
+            "uuid": "3e9a0cbf-fb9d-4159-9ff1-08b3869b62d8",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | IR🇮🇷 | soft98.ir:2082 | 749.49ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "139.59.142.237",
+            "server_port": 2082,
+            "uuid": "ba80b11b-2578-43c4-929d-89095af066ba",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
