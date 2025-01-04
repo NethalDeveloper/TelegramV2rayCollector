@@ -104,6 +104,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "AM🇦🇲",
                 "DE🇩🇪",
                 "FI🇫🇮",
                 "FR🇫🇷"
@@ -113,10 +114,21 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ShadowProxy66 | DE🇩🇪 | 91.107.155.193:4050 | 144.81ms | 0️⃣2️⃣",
-                "REALITY | @v2ray1_ng | DE🇩🇪 | joinpersianvpn69byamirfbi.seyhello.news:80 | 463.93ms | 0️⃣2️⃣",
-                "REALITY | @ShadowProxy66 | FI🇫🇮 | 65.109.199.233:4050 | 177.73ms | 0️⃣3️⃣",
-                "REALITY | @v2ray1_ng | FR🇫🇷 | 136.244.115.217:8080 | 128.2ms | 0️⃣1️⃣"
+                "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 150.98ms | 0️⃣2️⃣",
+                "REALITY | @ShadowProxy66 | DE🇩🇪 | 91.107.155.193:4050 | 102.92ms | 0️⃣2️⃣",
+                "REALITY | @v2ray1_ng | DE🇩🇪 | joinpersianvpn69byamirfbi.seyhello.news:80 | 289.68ms | 0️⃣2️⃣",
+                "REALITY | @ShadowProxy66 | FI🇫🇮 | 65.109.199.233:4050 | 126.09ms | 0️⃣3️⃣",
+                "REALITY | @v2ray1_ng | FR🇫🇷 | 136.244.115.217:8080 | 80.53ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "AM🇦🇲",
+            "type": "urltest",
+            "outbounds": [
+                "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 150.98ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -126,8 +138,8 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ShadowProxy66 | DE🇩🇪 | 91.107.155.193:4050 | 144.81ms | 0️⃣2️⃣",
-                "REALITY | @v2ray1_ng | DE🇩🇪 | joinpersianvpn69byamirfbi.seyhello.news:80 | 463.93ms | 0️⃣2️⃣"
+                "REALITY | @ShadowProxy66 | DE🇩🇪 | 91.107.155.193:4050 | 102.92ms | 0️⃣2️⃣",
+                "REALITY | @v2ray1_ng | DE🇩🇪 | joinpersianvpn69byamirfbi.seyhello.news:80 | 289.68ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -137,7 +149,7 @@
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ShadowProxy66 | FI🇫🇮 | 65.109.199.233:4050 | 177.73ms | 0️⃣3️⃣"
+                "REALITY | @ShadowProxy66 | FI🇫🇮 | 65.109.199.233:4050 | 126.09ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -147,14 +159,49 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @v2ray1_ng | FR🇫🇷 | 136.244.115.217:8080 | 128.2ms | 0️⃣1️⃣"
+                "REALITY | @v2ray1_ng | FR🇫🇷 | 136.244.115.217:8080 | 80.53ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @ShadowProxy66 | DE🇩🇪 | 91.107.155.193:4050 | 144.81ms | 0️⃣2️⃣",
+            "tag": "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 150.98ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "45.129.185.185",
+            "server_port": 2087,
+            "uuid": "26a45f68-0dd0-4952-ab1e-2c3d023d2431",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dash.cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "StgXQYbkKSkAHHzakVldKHVmrBXhe_J87e7bydUIOGw",
+                    "short_id": "83cdb009"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @ShadowProxy66 | DE🇩🇪 | 91.107.155.193:4050 | 102.92ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "91.107.155.193",
             "server_port": 4050,
@@ -182,7 +229,7 @@
             }
         },
         {
-            "tag": "REALITY | @v2ray1_ng | DE🇩🇪 | joinpersianvpn69byamirfbi.seyhello.news:80 | 463.93ms | 0️⃣2️⃣",
+            "tag": "REALITY | @v2ray1_ng | DE🇩🇪 | joinpersianvpn69byamirfbi.seyhello.news:80 | 289.68ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "joinpersianvpn69byamirfbi.seyhello.news",
             "server_port": 80,
@@ -210,7 +257,7 @@
             }
         },
         {
-            "tag": "REALITY | @ShadowProxy66 | FI🇫🇮 | 65.109.199.233:4050 | 177.73ms | 0️⃣3️⃣",
+            "tag": "REALITY | @ShadowProxy66 | FI🇫🇮 | 65.109.199.233:4050 | 126.09ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "65.109.199.233",
             "server_port": 4050,
@@ -238,7 +285,7 @@
             }
         },
         {
-            "tag": "REALITY | @v2ray1_ng | FR🇫🇷 | 136.244.115.217:8080 | 128.2ms | 0️⃣1️⃣",
+            "tag": "REALITY | @v2ray1_ng | FR🇫🇷 | 136.244.115.217:8080 | 80.53ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "136.244.115.217",
             "server_port": 8080,
