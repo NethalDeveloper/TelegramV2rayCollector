@@ -102,23 +102,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 156.84ms | 0️⃣2️⃣",
-                "REALITY | @v2ray1_ng | FR🇫🇷 | 136.244.115.217:8080 | 80.2ms | 0️⃣2️⃣"
+                "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 148.37ms | 0️⃣2️⃣",
+                "REALITY | @prrofile_purple | DE🇩🇪 | 185.161.251.211:1633 | 88.38ms | 0️⃣3️⃣",
+                "REALITY | @v2ray1_ng | FR🇫🇷 | 136.244.115.217:8080 | 82.17ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 156.84ms | 0️⃣2️⃣",
-                "REALITY | @v2ray1_ng | FR🇫🇷 | 136.244.115.217:8080 | 80.2ms | 0️⃣2️⃣"
+                "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 148.37ms | 0️⃣2️⃣",
+                "REALITY | @prrofile_purple | DE🇩🇪 | 185.161.251.211:1633 | 88.38ms | 0️⃣3️⃣",
+                "REALITY | @v2ray1_ng | FR🇫🇷 | 136.244.115.217:8080 | 82.17ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 156.84ms | 0️⃣2️⃣",
+            "tag": "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 148.37ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "45.129.185.185",
             "server_port": 2087,
@@ -153,7 +155,35 @@
             }
         },
         {
-            "tag": "REALITY | @v2ray1_ng | FR🇫🇷 | 136.244.115.217:8080 | 80.2ms | 0️⃣2️⃣",
+            "tag": "REALITY | @prrofile_purple | DE🇩🇪 | 185.161.251.211:1633 | 88.38ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "185.161.251.211",
+            "server_port": 1633,
+            "uuid": "8886974d-e25c-4311-9385-7dc6be0c33d4",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "ANlgAsYC8HmKfJnc5SFvru822urkxG1PzW1Zw4Vbm0Q",
+                    "short_id": "9bc0a55a5379c0ed"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @v2ray1_ng | FR🇫🇷 | 136.244.115.217:8080 | 82.17ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "136.244.115.217",
             "server_port": 8080,
