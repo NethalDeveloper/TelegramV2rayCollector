@@ -99,6 +99,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "AM🇦🇲",
                 "DE🇩🇪"
             ]
         },
@@ -106,7 +107,18 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @prrofile_purple | DE🇩🇪 | 185.161.251.211:1633 | 158.3ms | 0️⃣3️⃣"
+                "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 149.91ms | 0️⃣2️⃣",
+                "REALITY | @prrofile_purple | DE🇩🇪 | 185.161.251.211:1633 | 92.14ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "AM🇦🇲",
+            "type": "urltest",
+            "outbounds": [
+                "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 149.91ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -116,14 +128,49 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @prrofile_purple | DE🇩🇪 | 185.161.251.211:1633 | 158.3ms | 0️⃣3️⃣"
+                "REALITY | @prrofile_purple | DE🇩🇪 | 185.161.251.211:1633 | 92.14ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @prrofile_purple | DE🇩🇪 | 185.161.251.211:1633 | 158.3ms | 0️⃣3️⃣",
+            "tag": "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 149.91ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "45.129.185.185",
+            "server_port": 2087,
+            "uuid": "26a45f68-0dd0-4952-ab1e-2c3d023d2431",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dash.cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "StgXQYbkKSkAHHzakVldKHVmrBXhe_J87e7bydUIOGw",
+                    "short_id": "83cdb009"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @prrofile_purple | DE🇩🇪 | 185.161.251.211:1633 | 92.14ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "185.161.251.211",
             "server_port": 1633,
