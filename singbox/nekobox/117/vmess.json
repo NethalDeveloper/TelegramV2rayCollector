@@ -99,6 +99,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "FR🇫🇷",
                 "RELAY🚩",
                 "US🇺🇸",
                 "IR🇮🇷"
@@ -108,11 +109,22 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 10.58ms | 0️⃣1️⃣",
-                "@proxystore11 | RELAY🚩 | cinnamon.parsifast78.ir:443 | 170.87ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | mtn.zm:80 | 701.55ms | 0️⃣1️⃣",
-                "@free1_vpn | US🇺🇸 | mio.splashthat.com:443 | 113.21ms | 0️⃣1️⃣",
-                "@proxystore11 | IR🇮🇷 | hani.mgpingmg.shop:54796 | 178.7ms | 0️⃣2️⃣"
+                "@free4allVPN | FR🇫🇷 | adenc36v.xtooltech.cfd:443 | 244.19ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 133.53ms | 0️⃣2️⃣",
+                "@proxystore11 | RELAY🚩 | cinnamon.parsifast78.ir:443 | 101.94ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | mtn.zm:80 | 716.55ms | 0️⃣1️⃣",
+                "@free1_vpn | US🇺🇸 | mio.splashthat.com:443 | 56.92ms | 0️⃣1️⃣",
+                "@proxystore11 | IR🇮🇷 | hani.mgpingmg.shop:54796 | 192.51ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "@free4allVPN | FR🇫🇷 | adenc36v.xtooltech.cfd:443 | 244.19ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -122,8 +134,8 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 10.58ms | 0️⃣1️⃣",
-                "@proxystore11 | RELAY🚩 | cinnamon.parsifast78.ir:443 | 170.87ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 133.53ms | 0️⃣2️⃣",
+                "@proxystore11 | RELAY🚩 | cinnamon.parsifast78.ir:443 | 101.94ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,8 +145,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | US🇺🇸 | mtn.zm:80 | 701.55ms | 0️⃣1️⃣",
-                "@free1_vpn | US🇺🇸 | mio.splashthat.com:443 | 113.21ms | 0️⃣1️⃣"
+                "@v2ray1_ng | US🇺🇸 | mtn.zm:80 | 716.55ms | 0️⃣1️⃣",
+                "@free1_vpn | US🇺🇸 | mio.splashthat.com:443 | 56.92ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -144,14 +156,50 @@
             "tag": "IR🇮🇷",
             "type": "urltest",
             "outbounds": [
-                "@proxystore11 | IR🇮🇷 | hani.mgpingmg.shop:54796 | 178.7ms | 0️⃣2️⃣"
+                "@proxystore11 | IR🇮🇷 | hani.mgpingmg.shop:54796 | 192.51ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 10.58ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | FR🇫🇷 | adenc36v.xtooltech.cfd:443 | 244.19ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "denc36.xtooltech.cfd",
+            "server_port": 443,
+            "uuid": "b321fd5d-e6ec-4293-a644-164e3885f52e",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "denc36.xtooltech.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkws",
+                "headers": {
+                    "Host": "denc36.xtooltech.cfd"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 133.53ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "104.17.221.248",
             "server_port": 80,
@@ -177,7 +225,7 @@
             }
         },
         {
-            "tag": "@proxystore11 | RELAY🚩 | cinnamon.parsifast78.ir:443 | 170.87ms | 0️⃣1️⃣",
+            "tag": "@proxystore11 | RELAY🚩 | cinnamon.parsifast78.ir:443 | 101.94ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "cinnamon.parsifast78.ir",
             "server_port": 443,
@@ -213,7 +261,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | mtn.zm:80 | 701.55ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | mtn.zm:80 | 716.55ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "us-21.hihu.net",
             "server_port": 80,
@@ -239,7 +287,7 @@
             }
         },
         {
-            "tag": "@free1_vpn | US🇺🇸 | mio.splashthat.com:443 | 113.21ms | 0️⃣1️⃣",
+            "tag": "@free1_vpn | US🇺🇸 | mio.splashthat.com:443 | 56.92ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "151.101.194.133",
             "server_port": 443,
@@ -275,7 +323,7 @@
             }
         },
         {
-            "tag": "@proxystore11 | IR🇮🇷 | hani.mgpingmg.shop:54796 | 178.7ms | 0️⃣2️⃣",
+            "tag": "@proxystore11 | IR🇮🇷 | hani.mgpingmg.shop:54796 | 192.51ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "hani.mgpingmg.shop",
             "server_port": 54796,
