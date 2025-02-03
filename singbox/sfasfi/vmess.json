@@ -111,10 +111,13 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 28.37ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 251.23ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | cat.IR.:80 | 250.74ms | 0️⃣2️⃣",
-                "@v2ray1_ng | DE🇩🇪 | 162.55.171.226:100 | 92.18ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 356.08ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 100-151-164-47.s1.db-link01.top:2052 | 126.1ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | mods-destruction-academy-gear.trycloudflare.com:443 | 76.63ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | br.899994.xyz:443 | 77.17ms | 0️⃣3️⃣",
+                "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 245.49ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | cat.IR.:80 | 68.06ms | 0️⃣2️⃣",
+                "@v2ray1_ng | DE🇩🇪 | 162.55.171.226:100 | 141.75ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -124,7 +127,10 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 28.37ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 356.08ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 100-151-164-47.s1.db-link01.top:2052 | 126.1ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | mods-destruction-academy-gear.trycloudflare.com:443 | 76.63ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | br.899994.xyz:443 | 77.17ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -134,8 +140,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 251.23ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | cat.IR.:80 | 250.74ms | 0️⃣2️⃣"
+                "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 245.49ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | cat.IR.:80 | 68.06ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -145,14 +151,14 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | DE🇩🇪 | 162.55.171.226:100 | 92.18ms | 0️⃣1️⃣"
+                "@v2ray1_ng | DE🇩🇪 | 162.55.171.226:100 | 141.75ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 28.37ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 356.08ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.17.221.248",
             "server_port": 80,
@@ -178,7 +184,105 @@
             }
         },
         {
-            "tag": "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 251.23ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | 100-151-164-47.s1.db-link01.top:2052 | 126.1ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "s1.db-link01.top",
+            "server_port": 2052,
+            "uuid": "4b36625c-b9d9-3ea6-aed5-86d62c70e16d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/dabai.in172.67.2.142",
+                "headers": {
+                    "Host": "s1.db-link01.top"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | mods-destruction-academy-gear.trycloudflare.com:443 | 76.63ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "mods-destruction-academy-gear.trycloudflare.com",
+            "server_port": 443,
+            "uuid": "ffffffff-ffff-ffff-ffff-ffffffffffff",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mods-destruction-academy-gear.trycloudflare.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "mods-destruction-academy-gear.trycloudflare.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | br.899994.xyz:443 | 77.17ms | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "br.899994.xyz",
+            "server_port": 443,
+            "uuid": "a0605527-28e4-449c-80ee-5642cc16a8af",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "br.899994.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/index",
+                "headers": {
+                    "Host": "br.899994.xyz"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 245.49ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "biiia-vpn-whal.fast.hosting-ip.com",
             "server_port": 80,
@@ -204,7 +308,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | cat.IR.:80 | 250.74ms | 0️⃣2️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | cat.IR.:80 | 68.06ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "biiia-vpn-whal.fast.hosting-ip.com",
             "server_port": 80,
@@ -230,7 +334,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | DE🇩🇪 | 162.55.171.226:100 | 92.18ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | DE🇩🇪 | 162.55.171.226:100 | 141.75ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "162.55.171.226",
             "server_port": 100,
