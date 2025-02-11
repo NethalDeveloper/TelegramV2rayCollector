@@ -104,29 +104,70 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 401.85ms | 0️⃣1️⃣",
-                "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 392.34ms | 0️⃣2️⃣",
-                "REALITY | @prrofile_purple | DE🇩🇪 | ev2.waltonweb.ir:443 | 413.89ms | 0️⃣3️⃣",
-                "REALITY | @v2ray1_ng | DE🇩🇪 | c1.vact.ir:2083 | 167.61ms | 0️⃣1️⃣",
-                "REALITY | @flyv2ray | DE🇩🇪 | c1.vact.ir:2083 | 165.64ms | 0️⃣2️⃣"
+                "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 194.83ms | 0️⃣1️⃣",
+                "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 421.29ms | 0️⃣1️⃣",
+                "REALITY | @ipV2Ray | DE🇩🇪 | c1.vact.ir:2083 | 422.73ms | 0️⃣2️⃣",
+                "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 736.73ms | 0️⃣3️⃣",
+                "REALITY | @prrofile_purple | DE🇩🇪 | ev2.waltonweb.ir:443 | 416.27ms | 0️⃣3️⃣",
+                "REALITY | @free1_vpn | DE🇩🇪 | c1.vact.ir:2083 | 142.28ms | 0️⃣1️⃣",
+                "REALITY | @flyv2ray | DE🇩🇪 | c2.vact.ir:2083 | 158.2ms | 0️⃣2️⃣",
+                "REALITY | @flyv2ray | DE🇩🇪 | c1.vact.ir:2083 | 154.11ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 401.85ms | 0️⃣1️⃣",
-                "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 392.34ms | 0️⃣2️⃣",
-                "REALITY | @prrofile_purple | DE🇩🇪 | ev2.waltonweb.ir:443 | 413.89ms | 0️⃣3️⃣",
-                "REALITY | @v2ray1_ng | DE🇩🇪 | c1.vact.ir:2083 | 167.61ms | 0️⃣1️⃣",
-                "REALITY | @flyv2ray | DE🇩🇪 | c1.vact.ir:2083 | 165.64ms | 0️⃣2️⃣"
+                "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 194.83ms | 0️⃣1️⃣",
+                "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 421.29ms | 0️⃣1️⃣",
+                "REALITY | @ipV2Ray | DE🇩🇪 | c1.vact.ir:2083 | 422.73ms | 0️⃣2️⃣",
+                "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 736.73ms | 0️⃣3️⃣",
+                "REALITY | @prrofile_purple | DE🇩🇪 | ev2.waltonweb.ir:443 | 416.27ms | 0️⃣3️⃣",
+                "REALITY | @free1_vpn | DE🇩🇪 | c1.vact.ir:2083 | 142.28ms | 0️⃣1️⃣",
+                "REALITY | @flyv2ray | DE🇩🇪 | c2.vact.ir:2083 | 158.2ms | 0️⃣2️⃣",
+                "REALITY | @flyv2ray | DE🇩🇪 | c1.vact.ir:2083 | 154.11ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 401.85ms | 0️⃣1️⃣",
+            "tag": "REALITY | @XsV2ray | AM🇦🇲 | 45.129.185.185:2087 | 194.83ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "45.129.185.185",
+            "server_port": 2087,
+            "uuid": "26a45f68-0dd0-4952-ab1e-2c3d023d2431",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dash.cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "StgXQYbkKSkAHHzakVldKHVmrBXhe_J87e7bydUIOGw",
+                    "short_id": "83cdb009"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": null,
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 421.29ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "c2.vact.ir",
             "server_port": 2083,
@@ -161,70 +202,7 @@
             }
         },
         {
-            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 392.34ms | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "c2.vact.ir",
-            "server_port": 2083,
-            "uuid": "08c206a2-4662-49dd-8283-4468eaba7a3b",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.cdn77.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "SAeP7A2HlP9QndrqUydIxf8LQc0dqnXxTDORbINMKh0",
-                    "short_id": "0c2cffaec6"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "REALITY | @prrofile_purple | DE🇩🇪 | ev2.waltonweb.ir:443 | 413.89ms | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "ev2.waltonweb.ir",
-            "server_port": 443,
-            "uuid": "4faea2d5-c137-42f4-9212-8733fe82d64c",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "play.google.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "cPr_VYFVeDv4NmW6PPO7IV3gHUr6gpzgp3YdZP4zKEo",
-                    "short_id": "9026"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @v2ray1_ng | DE🇩🇪 | c1.vact.ir:2083 | 167.61ms | 0️⃣1️⃣",
+            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | c1.vact.ir:2083 | 422.73ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "c1.vact.ir",
             "server_port": 2083,
@@ -259,7 +237,140 @@
             }
         },
         {
-            "tag": "REALITY | @flyv2ray | DE🇩🇪 | c1.vact.ir:2083 | 165.64ms | 0️⃣2️⃣",
+            "tag": "REALITY | @ipV2Ray | DE🇩🇪 | c2.vact.ir:2083 | 736.73ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "c2.vact.ir",
+            "server_port": 2083,
+            "uuid": "08c206a2-4662-49dd-8283-4468eaba7a3b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SAeP7A2HlP9QndrqUydIxf8LQc0dqnXxTDORbINMKh0",
+                    "short_id": "0c2cffaec6"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @prrofile_purple | DE🇩🇪 | ev2.waltonweb.ir:443 | 416.27ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "ev2.waltonweb.ir",
+            "server_port": 443,
+            "uuid": "4faea2d5-c137-42f4-9212-8733fe82d64c",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "play.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "cPr_VYFVeDv4NmW6PPO7IV3gHUr6gpzgp3YdZP4zKEo",
+                    "short_id": "9026"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @free1_vpn | DE🇩🇪 | c1.vact.ir:2083 | 142.28ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "c1.vact.ir",
+            "server_port": 2083,
+            "uuid": "32048988-f16a-488b-9047-f62184c37ab9",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "wOmjhFY8A0ePI29U00Ic3VTgYZGSe8iY8bu7QlYpiRU",
+                    "short_id": "73e4feeb0580"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @flyv2ray | DE🇩🇪 | c2.vact.ir:2083 | 158.2ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "c2.vact.ir",
+            "server_port": 2083,
+            "uuid": "08c206a2-4662-49dd-8283-4468eaba7a3b",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.cdn77.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SAeP7A2HlP9QndrqUydIxf8LQc0dqnXxTDORbINMKh0",
+                    "short_id": "0c2cffaec6"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray-Telegram-ipV2Ray",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @flyv2ray | DE🇩🇪 | c1.vact.ir:2083 | 154.11ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "c1.vact.ir",
             "server_port": 2083,
