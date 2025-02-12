@@ -109,9 +109,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 30.8ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | Meht2.ruemebo.ir:2087 | 247.72ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | api2.waltonweb.ir:2096 | 294.72ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 217.81ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | Meht2.ruemebo.ir:2087 | 175.19ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | api2.waltonweb.ir:2096 | 194.6ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | api2.waltonweb.ir:2083 | 24.48ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -121,16 +122,17 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 30.8ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | Meht2.ruemebo.ir:2087 | 247.72ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | api2.waltonweb.ir:2096 | 294.72ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 217.81ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | Meht2.ruemebo.ir:2087 | 175.19ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | api2.waltonweb.ir:2096 | 194.6ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | api2.waltonweb.ir:2083 | 24.48ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 30.8ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 217.81ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.17.221.248",
             "server_port": 80,
@@ -156,7 +158,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | Meht2.ruemebo.ir:2087 | 247.72ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | Meht2.ruemebo.ir:2087 | 175.19ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.64.32.217",
             "server_port": 2087,
@@ -190,7 +192,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | api2.waltonweb.ir:2096 | 294.72ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | api2.waltonweb.ir:2096 | 194.6ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "104.17.147.22",
             "server_port": 2096,
@@ -221,6 +223,33 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | api2.waltonweb.ir:2083 | 24.48ms | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "104.17.148.22",
+            "server_port": 2083,
+            "uuid": "4ac3a8fc-dae4-4b6e-a58c-0f6b0a1a02ec",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "api2.waltonweb.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
