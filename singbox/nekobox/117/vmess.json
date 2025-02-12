@@ -99,14 +99,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "RELAY🚩"
+                "RELAY🚩",
+                "SG🇸🇬"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 43.89ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 48.68ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 100-177-17-45.s2.db-link01.top:8880 | 35.56ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 100-235-225-209.s5.db-link02.top:80 | 226.17ms | 0️⃣2️⃣",
+                "@ShadowProxy66 | SG🇸🇬 | 20.205.176.167:54550 | 181.91ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -116,14 +120,26 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 43.89ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 48.68ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 100-177-17-45.s2.db-link01.top:8880 | 35.56ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 100-235-225-209.s5.db-link02.top:80 | 226.17ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 43.89ms | 0️⃣1️⃣",
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "@ShadowProxy66 | SG🇸🇬 | 20.205.176.167:54550 | 181.91ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 48.68ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.17.221.248",
             "server_port": 80,
@@ -146,6 +162,75 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | 100-177-17-45.s2.db-link01.top:8880 | 35.56ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "s2.db-link01.top",
+            "server_port": 8880,
+            "uuid": "4b36625c-b9d9-3ea6-aed5-86d62c70e16d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/dabai.in172.67.92.156",
+                "headers": {
+                    "Host": "s2.db-link01.top"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | 100-235-225-209.s5.db-link02.top:80 | 226.17ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "s5.db-link02.top",
+            "server_port": 80,
+            "uuid": "4b36625c-b9d9-3ea6-aed5-86d62c70e16d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/dabai.in104.18.75.85",
+                "headers": {
+                    "Host": "s5.db-link02.top"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@ShadowProxy66 | SG🇸🇬 | 20.205.176.167:54550 | 181.91ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "20.205.176.167",
+            "server_port": 54550,
+            "uuid": "e696df27-62cc-4ca7-9a39-007c93cdaa46",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
