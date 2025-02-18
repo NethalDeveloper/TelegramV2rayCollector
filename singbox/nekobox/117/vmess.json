@@ -99,15 +99,17 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "RELAY🚩"
+                "RELAY🚩",
+                "CA🇨🇦"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 26.19ms | 0️⃣1️⃣",
-                "@prrofile_purple | RELAY🚩 | api3.waltonweb.ir:2096 | 126.51ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 23.83ms | 0️⃣1️⃣",
+                "@prrofile_purple | RELAY🚩 | api3.waltonweb.ir:2096 | 250.3ms | 0️⃣1️⃣",
+                "@v2ray1_ng | CA🇨🇦 | 38.111.114.153:14812 | 118.88ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -117,15 +119,25 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 26.19ms | 0️⃣1️⃣",
-                "@prrofile_purple | RELAY🚩 | api3.waltonweb.ir:2096 | 126.51ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 23.83ms | 0️⃣1️⃣",
+                "@prrofile_purple | RELAY🚩 | api3.waltonweb.ir:2096 | 250.3ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 26.19ms | 0️⃣1️⃣",
+            "tag": "CA🇨🇦",
+            "type": "urltest",
+            "outbounds": [
+                "@v2ray1_ng | CA🇨🇦 | 38.111.114.153:14812 | 118.88ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 23.83ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.17.221.248",
             "server_port": 80,
@@ -151,7 +163,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | RELAY🚩 | api3.waltonweb.ir:2096 | 126.51ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | RELAY🚩 | api3.waltonweb.ir:2096 | 250.3ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "WwW.sPEeDtEsT.NeT",
             "server_port": 2096,
@@ -182,6 +194,23 @@
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | CA🇨🇦 | 38.111.114.153:14812 | 118.88ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "38.111.114.153",
+            "server_port": 14812,
+            "uuid": "0146fc40-5962-4e9a-b36a-2b606d001467",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
