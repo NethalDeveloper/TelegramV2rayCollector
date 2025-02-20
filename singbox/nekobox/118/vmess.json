@@ -105,18 +105,18 @@
             "outbounds": [
                 "URL-TEST",
                 "RELAY🚩",
-                "US🇺🇸"
+                "US🇺🇸",
+                "PL🇵🇱"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 22.76ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 172.67.136.233:443 | 5.71ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 224.32ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | 15.204.249.0:48160 | 6.47ms | 0️⃣2️⃣",
-                "@Hope_Net | US🇺🇸 | 107.174.34.6:443 | 21.09ms | 0️⃣3️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 178.36ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | s2.db-link02.top:80 | 737.77ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 145.74ms | 0️⃣1️⃣",
+                "@Hope_Net | PL🇵🇱 | 45.144.48.128:8443 | 104.46ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -126,8 +126,8 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 22.76ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 172.67.136.233:443 | 5.71ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 178.36ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | s2.db-link02.top:80 | 737.77ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -137,16 +137,24 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 224.32ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | 15.204.249.0:48160 | 6.47ms | 0️⃣2️⃣",
-                "@Hope_Net | US🇺🇸 | 107.174.34.6:443 | 21.09ms | 0️⃣3️⃣"
+                "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 145.74ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 22.76ms | 0️⃣1️⃣",
+            "tag": "PL🇵🇱",
+            "type": "urltest",
+            "outbounds": [
+                "@Hope_Net | PL🇵🇱 | 45.144.48.128:8443 | 104.46ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 178.36ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.17.221.248",
             "server_port": 80,
@@ -172,11 +180,11 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | 172.67.136.233:443 | 5.71ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | s2.db-link02.top:80 | 737.77ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "172.67.136.233",
-            "server_port": 443,
-            "uuid": "3f638f34-8dba-4186-bc43-2716a7ddd4be",
+            "server": "s2.db-link02.top",
+            "server_port": 80,
+            "uuid": "f518cff0-ee41-3cde-a453-9f3fbccd7ff8",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -187,28 +195,18 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": null,
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
                 "path": "\/\/",
                 "headers": {
-                    "Host": "172.67.136.233"
+                    "Host": "s2.db-link02.top"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 224.32ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 145.74ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "biiia-vpn-whal.fast.hosting-ip.com",
             "server_port": 80,
@@ -234,11 +232,11 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | 15.204.249.0:48160 | 6.47ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | PL🇵🇱 | 45.144.48.128:8443 | 104.46ms | 0️⃣2️⃣",
             "type": "vmess",
-            "server": "15.204.249.0",
-            "server_port": 48160,
-            "uuid": "5b113c12-4dd4-4bb5-9c01-cff092b559e3",
+            "server": "45.144.48.128",
+            "server_port": 8443,
+            "uuid": "a4850481-9b95-430f-9b2d-192d2410b4f4",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -248,39 +246,12 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "@Hope_Net | US🇺🇸 | 107.174.34.6:443 | 21.09ms | 0️⃣3️⃣",
-            "type": "vmess",
-            "server": "107.174.34.6",
-            "server_port": 443,
-            "uuid": "4b36625c-b9d9-3ea6-aed5-86d62c70e16d",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": null,
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             },
             "transport": {
                 "type": "ws",
                 "path": "\/\/",
                 "headers": {
-                    "Host": "107.174.34.6"
+                    "Host": "45.144.48.128"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
