@@ -103,15 +103,17 @@
             "outbounds": [
                 "URL-TEST",
                 "RELAY🚩",
-                "US🇺🇸"
+                "US🇺🇸",
+                "GB🇬🇧"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 310.06ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 207.91ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 28.47ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 218.11ms | 0️⃣1️⃣",
+                "@Hope_Net | GB🇬🇧 | 46.250.253.232:46617 | 140.89ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -121,7 +123,7 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 310.06ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 28.47ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -131,14 +133,24 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 207.91ms | 0️⃣1️⃣"
+                "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 218.11ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 310.06ms | 0️⃣1️⃣",
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "@Hope_Net | GB🇬🇧 | 46.250.253.232:46617 | 140.89ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 28.47ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.17.221.248",
             "server_port": 80,
@@ -164,7 +176,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 207.91ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 218.11ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "biiia-vpn-whal.fast.hosting-ip.com",
             "server_port": 80,
@@ -187,6 +199,23 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | GB🇬🇧 | 46.250.253.232:46617 | 140.89ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "46.250.253.232",
+            "server_port": 46617,
+            "uuid": "55b88b14-0ff3-4f25-8983-e73d1f9f3a0a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
