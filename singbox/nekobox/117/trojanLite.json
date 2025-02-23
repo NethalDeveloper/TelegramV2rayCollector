@@ -99,77 +99,35 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@PrivateVPNs | FR🇫🇷 | 13.39.3.86:22222 | 85.39ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.36.124.133:22222 | 128.68ms | 0️⃣2️⃣",
-                "@PrivateVPNs | GB🇬🇧 | 13.43.142.8:22222 | 81.47ms | 0️⃣3️⃣",
-                "@DirectVPN | GB🇬🇧 | 3.9.1.44:22222 | 82.02ms | 0️⃣1️⃣",
-                "@DirectVPN | IE🇮🇪 | 34.248.134.132:22222 | 70.67ms | 0️⃣2️⃣",
-                "@DirectVPN | IE🇮🇪 | 54.171.161.153:22222 | 76.79ms | 0️⃣3️⃣",
-                "@v2ray1_ng | GB🇬🇧 | uk1.test3.net:443 | 163.14ms | 0️⃣1️⃣",
-                "@VmessProtocol | RELAY🚩 | japan.com:443 | 89.48ms | 0️⃣1️⃣"
+                "@PrivateVPNs | GB🇬🇧 | 13.43.142.8:22222 | 81.22ms | 0️⃣1️⃣",
+                "@PrivateVPNs | GB🇬🇧 | 35.177.124.241:22222 | 129.55ms | 0️⃣2️⃣",
+                "@PrivateVPNs | IE🇮🇪 | 54.220.248.101:22222 | 71.61ms | 0️⃣3️⃣",
+                "@DirectVPN | GB🇬🇧 | 3.9.1.44:22222 | 81.14ms | 0️⃣1️⃣",
+                "@DirectVPN | IE🇮🇪 | 34.248.134.132:22222 | 70.9ms | 0️⃣2️⃣",
+                "@DirectVPN | IE🇮🇪 | 54.171.161.153:22222 | 110.73ms | 0️⃣3️⃣",
+                "@v2ray1_ng | GB🇬🇧 | uk1.test3.net:443 | 170.5ms | 0️⃣1️⃣",
+                "@VmessProtocol | RELAY🚩 | japan.com:443 | 43.09ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.39.3.86:22222 | 85.39ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.36.124.133:22222 | 128.68ms | 0️⃣2️⃣",
-                "@PrivateVPNs | GB🇬🇧 | 13.43.142.8:22222 | 81.47ms | 0️⃣3️⃣",
-                "@DirectVPN | GB🇬🇧 | 3.9.1.44:22222 | 82.02ms | 0️⃣1️⃣",
-                "@DirectVPN | IE🇮🇪 | 34.248.134.132:22222 | 70.67ms | 0️⃣2️⃣",
-                "@DirectVPN | IE🇮🇪 | 54.171.161.153:22222 | 76.79ms | 0️⃣3️⃣",
-                "@v2ray1_ng | GB🇬🇧 | uk1.test3.net:443 | 163.14ms | 0️⃣1️⃣",
-                "@VmessProtocol | RELAY🚩 | japan.com:443 | 89.48ms | 0️⃣1️⃣"
+                "@PrivateVPNs | GB🇬🇧 | 13.43.142.8:22222 | 81.22ms | 0️⃣1️⃣",
+                "@PrivateVPNs | GB🇬🇧 | 35.177.124.241:22222 | 129.55ms | 0️⃣2️⃣",
+                "@PrivateVPNs | IE🇮🇪 | 54.220.248.101:22222 | 71.61ms | 0️⃣3️⃣",
+                "@DirectVPN | GB🇬🇧 | 3.9.1.44:22222 | 81.14ms | 0️⃣1️⃣",
+                "@DirectVPN | IE🇮🇪 | 34.248.134.132:22222 | 70.9ms | 0️⃣2️⃣",
+                "@DirectVPN | IE🇮🇪 | 54.171.161.153:22222 | 110.73ms | 0️⃣3️⃣",
+                "@v2ray1_ng | GB🇬🇧 | uk1.test3.net:443 | 170.5ms | 0️⃣1️⃣",
+                "@VmessProtocol | RELAY🚩 | japan.com:443 | 43.09ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.39.3.86:22222 | 85.39ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "13.39.3.86",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.36.124.133:22222 | 128.68ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "13.36.124.133",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | GB🇬🇧 | 13.43.142.8:22222 | 81.47ms | 0️⃣3️⃣",
+            "tag": "@PrivateVPNs | GB🇬🇧 | 13.43.142.8:22222 | 81.22ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "13.43.142.8",
             "server_port": 22222,
@@ -190,7 +148,49 @@
             }
         },
         {
-            "tag": "@DirectVPN | GB🇬🇧 | 3.9.1.44:22222 | 82.02ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | GB🇬🇧 | 35.177.124.241:22222 | 129.55ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "35.177.124.241",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@PrivateVPNs | IE🇮🇪 | 54.220.248.101:22222 | 71.61ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "54.220.248.101",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | GB🇬🇧 | 3.9.1.44:22222 | 81.14ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "3.9.1.44",
             "server_port": 22222,
@@ -211,7 +211,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | IE🇮🇪 | 34.248.134.132:22222 | 70.67ms | 0️⃣2️⃣",
+            "tag": "@DirectVPN | IE🇮🇪 | 34.248.134.132:22222 | 70.9ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "34.248.134.132",
             "server_port": 22222,
@@ -232,7 +232,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | IE🇮🇪 | 54.171.161.153:22222 | 76.79ms | 0️⃣3️⃣",
+            "tag": "@DirectVPN | IE🇮🇪 | 54.171.161.153:22222 | 110.73ms | 0️⃣3️⃣",
             "type": "trojan",
             "server": "54.171.161.153",
             "server_port": 22222,
@@ -253,7 +253,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | GB🇬🇧 | uk1.test3.net:443 | 163.14ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | GB🇬🇧 | uk1.test3.net:443 | 170.5ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "uk1.test3.net",
             "server_port": 443,
@@ -274,7 +274,7 @@
             }
         },
         {
-            "tag": "@VmessProtocol | RELAY🚩 | japan.com:443 | 89.48ms | 0️⃣1️⃣",
+            "tag": "@VmessProtocol | RELAY🚩 | japan.com:443 | 43.09ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "japan.com",
             "server_port": 443,
