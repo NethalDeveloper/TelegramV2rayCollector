@@ -102,25 +102,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 279.65ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 218.58ms | 0️⃣1️⃣",
-                "@Hope_Net | GB🇬🇧 | 46.250.253.232:46617 | 168.62ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 33.99ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 209.14ms | 0️⃣1️⃣",
+                "@v2ray1_ng | RELAY🚩 | qurantv.quranir.com:2053 | 80.75ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 279.65ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 218.58ms | 0️⃣1️⃣",
-                "@Hope_Net | GB🇬🇧 | 46.250.253.232:46617 | 168.62ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 33.99ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 209.14ms | 0️⃣1️⃣",
+                "@v2ray1_ng | RELAY🚩 | qurantv.quranir.com:2053 | 80.75ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 279.65ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 33.99ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.17.221.248",
             "server_port": 80,
@@ -146,7 +146,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 218.58ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | US🇺🇸 | cat.IR.:80 | 209.14ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "biiia-vpn-whal.fast.hosting-ip.com",
             "server_port": 80,
@@ -172,11 +172,11 @@
             }
         },
         {
-            "tag": "@Hope_Net | GB🇬🇧 | 46.250.253.232:46617 | 168.62ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | RELAY🚩 | qurantv.quranir.com:2053 | 80.75ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "46.250.253.232",
-            "server_port": 46617,
-            "uuid": "55b88b14-0ff3-4f25-8983-e73d1f9f3a0a",
+            "server": "104.31.16.9",
+            "server_port": 2053,
+            "uuid": "ad3d0eb7-24a6-403b-9225-feeacb8219b9",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -186,6 +186,25 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "qurantv.quranir.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "104.31.16.9"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
