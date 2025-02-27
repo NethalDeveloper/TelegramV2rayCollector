@@ -102,29 +102,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 180.72ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | 150.241.221.64:18000 | 152ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | fast.com:80 | 254.21ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | qurantv.quranir.com:2053 | 78.73ms | 0️⃣1️⃣",
-                "@Hope_Net | SG🇸🇬 | westsg2-ddns.oraclenat.cc:23452 | 240.6ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 19.45ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | 150.241.221.64:18000 | 173.29ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | fast.com:80 | 122.94ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | us03s.5d8ecf82.cfd:80 | 131ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 180.72ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | 150.241.221.64:18000 | 152ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | fast.com:80 | 254.21ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | qurantv.quranir.com:2053 | 78.73ms | 0️⃣1️⃣",
-                "@Hope_Net | SG🇸🇬 | westsg2-ddns.oraclenat.cc:23452 | 240.6ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 19.45ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | 150.241.221.64:18000 | 173.29ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | fast.com:80 | 122.94ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | us03s.5d8ecf82.cfd:80 | 131ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 180.72ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 19.45ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.17.221.248",
             "server_port": 80,
@@ -150,7 +148,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | US🇺🇸 | 150.241.221.64:18000 | 152ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | US🇺🇸 | 150.241.221.64:18000 | 173.29ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "150.241.221.64",
             "server_port": 18000,
@@ -167,7 +165,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | fast.com:80 | 254.21ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | fast.com:80 | 122.94ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "91.107.171.73",
             "server_port": 80,
@@ -184,47 +182,11 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | qurantv.quranir.com:2053 | 78.73ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | us03s.5d8ecf82.cfd:80 | 131ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.31.16.9",
-            "server_port": 2053,
-            "uuid": "ad3d0eb7-24a6-403b-9225-feeacb8219b9",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "qurantv.quranir.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "104.31.16.9"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | SG🇸🇬 | westsg2-ddns.oraclenat.cc:23452 | 240.6ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "140.245.32.81",
-            "server_port": 23452,
-            "uuid": "b466111f-0ad8-4f12-899c-5ff14446c088",
+            "server": "172.67.183.56",
+            "server_port": 80,
+            "uuid": "4bf074f4-7e9c-4e4b-a10d-156e26199729",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -239,7 +201,7 @@
                 "type": "ws",
                 "path": "\/\/",
                 "headers": {
-                    "Host": "140.245.32.81"
+                    "Host": "172.67.183.56"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
