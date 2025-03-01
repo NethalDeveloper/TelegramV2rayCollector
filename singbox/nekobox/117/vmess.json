@@ -101,19 +101,18 @@
                 "URL-TEST",
                 "RELAY🚩",
                 "US🇺🇸",
-                "DE🇩🇪",
-                "JP🇯🇵"
+                "DE🇩🇪"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 15.92ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | 150.241.221.64:18000 | 105.56ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | fast.com:80 | 187.21ms | 0️⃣1️⃣",
-                "@ShadowProxy66 | DE🇩🇪 | 193.108.118.136:15713 | 110.51ms | 0️⃣1️⃣",
-                "@Hope_Net | JP🇯🇵 | podpm-g01.jp04-3771-vm0.entry.fr0307a.art:444 | 173.37ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 245.49ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | us03s.5d8ecf82.cfd:80 | 230.13ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | 150.241.221.64:18000 | 105.16ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | fast.com:80 | 126.13ms | 0️⃣1️⃣",
+                "@ShadowProxy66 | DE🇩🇪 | 193.108.118.136:15713 | 131.44ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -123,7 +122,8 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 15.92ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 245.49ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | us03s.5d8ecf82.cfd:80 | 230.13ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,8 +133,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | US🇺🇸 | 150.241.221.64:18000 | 105.56ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | fast.com:80 | 187.21ms | 0️⃣1️⃣"
+                "@prrofile_purple | US🇺🇸 | 150.241.221.64:18000 | 105.16ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | fast.com:80 | 126.13ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -144,24 +144,14 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@ShadowProxy66 | DE🇩🇪 | 193.108.118.136:15713 | 110.51ms | 0️⃣1️⃣"
+                "@ShadowProxy66 | DE🇩🇪 | 193.108.118.136:15713 | 131.44ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "JP🇯🇵",
-            "type": "urltest",
-            "outbounds": [
-                "@Hope_Net | JP🇯🇵 | podpm-g01.jp04-3771-vm0.entry.fr0307a.art:444 | 173.37ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 15.92ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 245.49ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.17.221.248",
             "server_port": 80,
@@ -187,7 +177,33 @@
             }
         },
         {
-            "tag": "@prrofile_purple | US🇺🇸 | 150.241.221.64:18000 | 105.56ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | us03s.5d8ecf82.cfd:80 | 230.13ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.67.190.208",
+            "server_port": 80,
+            "uuid": "4bf074f4-7e9c-4e4b-a10d-156e26199729",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "172.67.190.208"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@prrofile_purple | US🇺🇸 | 150.241.221.64:18000 | 105.16ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "150.241.221.64",
             "server_port": 18000,
@@ -204,7 +220,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | fast.com:80 | 187.21ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | fast.com:80 | 126.13ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "91.107.171.73",
             "server_port": 80,
@@ -221,30 +237,13 @@
             }
         },
         {
-            "tag": "@ShadowProxy66 | DE🇩🇪 | 193.108.118.136:15713 | 110.51ms | 0️⃣1️⃣",
+            "tag": "@ShadowProxy66 | DE🇩🇪 | 193.108.118.136:15713 | 131.44ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "193.108.118.136",
             "server_port": 15713,
             "uuid": "f74e277e-84b3-46a2-8abd-2777fa5e4af9",
             "security": "auto",
             "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@Hope_Net | JP🇯🇵 | podpm-g01.jp04-3771-vm0.entry.fr0307a.art:444 | 173.37ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "57.181.175.180",
-            "server_port": 444,
-            "uuid": "02bf7660-c38f-30b4-b740-2f9b4d717704",
-            "security": "auto",
-            "alter_id": 1,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
