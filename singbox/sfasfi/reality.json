@@ -102,30 +102,21 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "DE🇩🇪",
-                "FI🇫🇮"
+                "FI🇫🇮",
+                "US🇺🇸",
+                "NL🇳🇱",
+                "DE🇩🇪"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @prrofile_purple | DE🇩🇪 | mehdi2.vact.ir:443 | 381.45ms | 0️⃣2️⃣",
-                "REALITY | @FreakConfig | DE🇩🇪 | 91.107.181.182:26528 | 146.4ms | 0️⃣1️⃣",
-                "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 163.32ms | 0️⃣2️⃣",
-                "REALITY | @v2ray1_ng | FI🇫🇮 | 65.21.181.218:443 | 177.86ms | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "REALITY | @prrofile_purple | DE🇩🇪 | mehdi2.vact.ir:443 | 381.45ms | 0️⃣2️⃣",
-                "REALITY | @FreakConfig | DE🇩🇪 | 91.107.181.182:26528 | 146.4ms | 0️⃣1️⃣",
-                "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 163.32ms | 0️⃣2️⃣"
+                "REALITY | @prrofile_purple | FI🇫🇮 | 65.21.181.218:443 | 177.21ms | 0️⃣1️⃣",
+                "REALITY | @prrofile_purple | US🇺🇸 | 3.231.152.5:443 | 56.96ms | 0️⃣3️⃣",
+                "REALITY | @Outlinev2rayNG | NL🇳🇱 | 212.111.88.184:443 | 132.42ms | 0️⃣2️⃣",
+                "REALITY | @FreakConfig | DE🇩🇪 | 91.107.181.182:26528 | 141.87ms | 0️⃣1️⃣",
+                "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 165.1ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -135,18 +126,49 @@
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @v2ray1_ng | FI🇫🇮 | 65.21.181.218:443 | 177.86ms | 0️⃣2️⃣"
+                "REALITY | @prrofile_purple | FI🇫🇮 | 65.21.181.218:443 | 177.21ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @prrofile_purple | DE🇩🇪 | mehdi2.vact.ir:443 | 381.45ms | 0️⃣2️⃣",
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "REALITY | @prrofile_purple | US🇺🇸 | 3.231.152.5:443 | 56.96ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "NL🇳🇱",
+            "type": "urltest",
+            "outbounds": [
+                "REALITY | @Outlinev2rayNG | NL🇳🇱 | 212.111.88.184:443 | 132.42ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "REALITY | @FreakConfig | DE🇩🇪 | 91.107.181.182:26528 | 141.87ms | 0️⃣1️⃣",
+                "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 165.1ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "REALITY | @prrofile_purple | FI🇫🇮 | 65.21.181.218:443 | 177.21ms | 0️⃣1️⃣",
             "type": "vless",
-            "server": "mehdi2.vact.ir",
+            "server": "65.21.181.218",
             "server_port": 443,
-            "uuid": "c7d4c1fa-2bc4-45ed-be11-b5ca8771b99e",
+            "uuid": "cdba56b7-82c5-449f-b5ef-86bf02c9797e",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -156,7 +178,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "www.cdn77.com",
+                "server_name": "stackoverflow.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -164,20 +186,76 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "GawdeEa7zVBFfOu9G10lQ6yrO65Ys0Gx5PtEOvORfEU",
-                    "short_id": "c78a6e223e2516"
+                    "public_key": "CpD2tuOBsn8rHQm8hSzErseno4fsHTdsdq58anDW3AI",
+                    "short_id": "b81f1f0ca108"
                 }
             },
             "transport": {
                 "type": "grpc",
-                "service_name": "Join--mtmvpn-Join--mtmvpn-Join--mtmvpn-Join--mtmvpn-Join--mtmvpnJoin--mtmvpnJoin--mtmvpnJoin--mtmvpn-",
+                "service_name": "@cephalon_ai_bot",
                 "idle_timeout": "15s",
                 "ping_timeout": "15s",
                 "permit_without_stream": false
             }
         },
         {
-            "tag": "REALITY | @FreakConfig | DE🇩🇪 | 91.107.181.182:26528 | 146.4ms | 0️⃣1️⃣",
+            "tag": "REALITY | @prrofile_purple | US🇺🇸 | 3.231.152.5:443 | 56.96ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "3.231.152.5",
+            "server_port": 443,
+            "uuid": "663b9c37-da88-4594-9664-733882be1e6a",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "api.cloudflare.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "tLIq2JBx1i-MNAd8K51mtFubyKEk9rClZEqWqyeXPQs",
+                    "short_id": "cfa54bfe"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @Outlinev2rayNG | NL🇳🇱 | 212.111.88.184:443 | 132.42ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "212.111.88.184",
+            "server_port": 443,
+            "uuid": "RAKETA_5889827",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "apple.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "310Tjx1xSaet9WjXtEJEngtdp-NhD6GWJs7ZQSoblhc",
+                    "short_id": "ffffffffff"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @FreakConfig | DE🇩🇪 | 91.107.181.182:26528 | 141.87ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "91.107.181.182",
             "server_port": 26528,
@@ -212,7 +290,7 @@
             }
         },
         {
-            "tag": "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 163.32ms | 0️⃣2️⃣",
+            "tag": "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 165.1ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "panel2.svgspeedtest.net",
             "server_port": 443,
@@ -237,41 +315,6 @@
                     "public_key": "Aa3FogZ9ohTiRHsdnoyiMg7TFARWEeZs_m290juxEzs",
                     "short_id": ""
                 }
-            }
-        },
-        {
-            "tag": "REALITY | @v2ray1_ng | FI🇫🇮 | 65.21.181.218:443 | 177.86ms | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "65.21.181.218",
-            "server_port": 443,
-            "uuid": "cdba56b7-82c5-449f-b5ef-86bf02c9797e",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "stackoverflow.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "CpD2tuOBsn8rHQm8hSzErseno4fsHTdsdq58anDW3AI",
-                    "short_id": "b81f1f0ca108"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "@cephalon_ai_bot",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
