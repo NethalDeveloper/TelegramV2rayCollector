@@ -104,36 +104,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "SE🇸🇪",
                 "DE🇩🇪",
                 "FR🇫🇷",
-                "RELAY🚩"
+                "SE🇸🇪",
+                "GB🇬🇧",
+                "RELAY🚩",
+                "IN🇮🇳"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | SE🇸🇪 | 13.61.247.178:22222 | 123.94ms | 0️⃣1️⃣",
-                "@DirectVPN | SE🇸🇪 | 16.171.99.150:22222 | 123.7ms | 0️⃣1️⃣",
-                "@DirectVPN | SE🇸🇪 | 13.49.28.32:22222 | 131.09ms | 0️⃣2️⃣",
-                "@PrivateVPNs | DE🇩🇪 | 63.177.144.200:22222 | 125.2ms | 0️⃣2️⃣",
-                "@PrivateVPNs | DE🇩🇪 | 3.126.90.141:22222 | 114.51ms | 0️⃣3️⃣",
-                "@DirectVPN | FR🇫🇷 | 51.44.52.4:22222 | 106.4ms | 0️⃣3️⃣",
-                "Telegram@V2ray_Alpha&security=tls&host=bpb-hd.aaronchin.xyz&type=ws&sni=bpb-hd.aaronchin.xyz#@v2ray1_ng | RELAY🚩 | 104.21.75.193:443 | 2.92ms | 0️⃣1️⃣",
-                "@v2ray_alpha&security=tls&alpn=h2,http\/1.1&host=301.pooriam.ir&fp=randomized&type=ws&sni=301.pOORiAm.ir#@v2ray1_ng | RELAY🚩 | 104.17.148.22:443 | 2.75ms | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "SE🇸🇪",
-            "type": "urltest",
-            "outbounds": [
-                "@PrivateVPNs | SE🇸🇪 | 13.61.247.178:22222 | 123.94ms | 0️⃣1️⃣",
-                "@DirectVPN | SE🇸🇪 | 16.171.99.150:22222 | 123.7ms | 0️⃣1️⃣",
-                "@DirectVPN | SE🇸🇪 | 13.49.28.32:22222 | 131.09ms | 0️⃣2️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 63.177.144.200:22222 | 92.59ms | 0️⃣1️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 3.126.90.141:22222 | 140.61ms | 0️⃣2️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 15.236.242.89:22222 | 85.77ms | 0️⃣3️⃣",
+                "@DirectVPN | FR🇫🇷 | 51.44.52.4:22222 | 89.07ms | 0️⃣2️⃣",
+                "@DirectVPN | SE🇸🇪 | 13.49.28.32:22222 | 104.79ms | 0️⃣1️⃣",
+                "@DirectVPN | GB🇬🇧 | 3.9.247.143:22222 | 79.45ms | 0️⃣3️⃣",
+                "Telegram@V2ray_Alpha&security=tls&host=bpb-hd.aaronchin.xyz&type=ws&sni=bpb-hd.aaronchin.xyz#@v2ray1_ng | RELAY🚩 | 104.21.75.193:443 | 2.14ms | 0️⃣1️⃣",
+                "@v2ray_alpha&security=tls&alpn=h2,http\/1.1&host=301.pooriam.ir&fp=randomized&type=ws&sni=301.pOORiAm.ir#@v2ray1_ng | RELAY🚩 | 104.17.148.22:443 | 2.16ms | 0️⃣3️⃣",
+                "@VmessProtocol | IN🇮🇳 | 185.67.125.177:443 | 182.11ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,8 +134,8 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | DE🇩🇪 | 63.177.144.200:22222 | 125.2ms | 0️⃣2️⃣",
-                "@PrivateVPNs | DE🇩🇪 | 3.126.90.141:22222 | 114.51ms | 0️⃣3️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 63.177.144.200:22222 | 92.59ms | 0️⃣1️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 3.126.90.141:22222 | 140.61ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -154,7 +145,28 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@DirectVPN | FR🇫🇷 | 51.44.52.4:22222 | 106.4ms | 0️⃣3️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 15.236.242.89:22222 | 85.77ms | 0️⃣3️⃣",
+                "@DirectVPN | FR🇫🇷 | 51.44.52.4:22222 | 89.07ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SE🇸🇪",
+            "type": "urltest",
+            "outbounds": [
+                "@DirectVPN | SE🇸🇪 | 13.49.28.32:22222 | 104.79ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "GB🇬🇧",
+            "type": "urltest",
+            "outbounds": [
+                "@DirectVPN | GB🇬🇧 | 3.9.247.143:22222 | 79.45ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -164,78 +176,25 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "Telegram@V2ray_Alpha&security=tls&host=bpb-hd.aaronchin.xyz&type=ws&sni=bpb-hd.aaronchin.xyz#@v2ray1_ng | RELAY🚩 | 104.21.75.193:443 | 2.92ms | 0️⃣1️⃣",
-                "@v2ray_alpha&security=tls&alpn=h2,http\/1.1&host=301.pooriam.ir&fp=randomized&type=ws&sni=301.pOORiAm.ir#@v2ray1_ng | RELAY🚩 | 104.17.148.22:443 | 2.75ms | 0️⃣3️⃣"
+                "Telegram@V2ray_Alpha&security=tls&host=bpb-hd.aaronchin.xyz&type=ws&sni=bpb-hd.aaronchin.xyz#@v2ray1_ng | RELAY🚩 | 104.21.75.193:443 | 2.14ms | 0️⃣1️⃣",
+                "@v2ray_alpha&security=tls&alpn=h2,http\/1.1&host=301.pooriam.ir&fp=randomized&type=ws&sni=301.pOORiAm.ir#@v2ray1_ng | RELAY🚩 | 104.17.148.22:443 | 2.16ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | SE🇸🇪 | 13.61.247.178:22222 | 123.94ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "13.61.247.178",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
+            "tag": "IN🇮🇳",
+            "type": "urltest",
+            "outbounds": [
+                "@VmessProtocol | IN🇮🇳 | 185.67.125.177:443 | 182.11ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
         },
         {
-            "tag": "@DirectVPN | SE🇸🇪 | 16.171.99.150:22222 | 123.7ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "16.171.99.150",
-            "server_port": 22222,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@DirectVPN | SE🇸🇪 | 13.49.28.32:22222 | 131.09ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "13.49.28.32",
-            "server_port": 22222,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | DE🇩🇪 | 63.177.144.200:22222 | 125.2ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | DE🇩🇪 | 63.177.144.200:22222 | 92.59ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "63.177.144.200",
             "server_port": 22222,
@@ -256,7 +215,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | DE🇩🇪 | 3.126.90.141:22222 | 114.51ms | 0️⃣3️⃣",
+            "tag": "@PrivateVPNs | DE🇩🇪 | 3.126.90.141:22222 | 140.61ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "3.126.90.141",
             "server_port": 22222,
@@ -277,7 +236,28 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 51.44.52.4:22222 | 106.4ms | 0️⃣3️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 15.236.242.89:22222 | 85.77ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "15.236.242.89",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | FR🇫🇷 | 51.44.52.4:22222 | 89.07ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "51.44.52.4",
             "server_port": 22222,
@@ -298,7 +278,49 @@
             }
         },
         {
-            "tag": "Telegram@V2ray_Alpha&security=tls&host=bpb-hd.aaronchin.xyz&type=ws&sni=bpb-hd.aaronchin.xyz#@v2ray1_ng | RELAY🚩 | 104.21.75.193:443 | 2.92ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | SE🇸🇪 | 13.49.28.32:22222 | 104.79ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "13.49.28.32",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | GB🇬🇧 | 3.9.247.143:22222 | 79.45ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "3.9.247.143",
+            "server_port": 22222,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "Telegram@V2ray_Alpha&security=tls&host=bpb-hd.aaronchin.xyz&type=ws&sni=bpb-hd.aaronchin.xyz#@v2ray1_ng | RELAY🚩 | 104.21.75.193:443 | 2.14ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "104.21.75.193",
             "server_port": 443,
@@ -310,7 +332,7 @@
             }
         },
         {
-            "tag": "@v2ray_alpha&security=tls&alpn=h2,http\/1.1&host=301.pooriam.ir&fp=randomized&type=ws&sni=301.pOORiAm.ir#@v2ray1_ng | RELAY🚩 | 104.17.148.22:443 | 2.75ms | 0️⃣3️⃣",
+            "tag": "@v2ray_alpha&security=tls&alpn=h2,http\/1.1&host=301.pooriam.ir&fp=randomized&type=ws&sni=301.pOORiAm.ir#@v2ray1_ng | RELAY🚩 | 104.17.148.22:443 | 2.16ms | 0️⃣3️⃣",
             "type": "trojan",
             "server": "104.17.148.22",
             "server_port": 443,
@@ -319,6 +341,27 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "@VmessProtocol | IN🇮🇳 | 185.67.125.177:443 | 182.11ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "185.67.125.177",
+            "server_port": 443,
+            "password": "3747000103274291200",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "quality-albacore.adder289.quest",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
