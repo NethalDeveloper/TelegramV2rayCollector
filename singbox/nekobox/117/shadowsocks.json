@@ -99,14 +99,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "BH🇧🇭"
+                "BH🇧🇭",
+                "HK🇭🇰"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | BH🇧🇭 | admin.c3.webramz.co:443 | 308.15ms | 0️⃣1️⃣"
+                "@VmessProtocol | BH🇧🇭 | admin.c3.webramz.co:443 | 290.09ms | 0️⃣1️⃣",
+                "@VmessProtocol | HK🇭🇰 | hkg01.dns-node.top:45573 | 314.39ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -116,19 +118,39 @@
             "tag": "BH🇧🇭",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | BH🇧🇭 | admin.c3.webramz.co:443 | 308.15ms | 0️⃣1️⃣"
+                "@VmessProtocol | BH🇧🇭 | admin.c3.webramz.co:443 | 290.09ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@VmessProtocol | BH🇧🇭 | admin.c3.webramz.co:443 | 308.15ms | 0️⃣1️⃣",
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "@VmessProtocol | HK🇭🇰 | hkg01.dns-node.top:45573 | 314.39ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@VmessProtocol | BH🇧🇭 | admin.c3.webramz.co:443 | 290.09ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "admin.c3.webramz.co",
             "server_port": 443,
             "method": "chacha20-ietf-poly1305",
             "password": "Bog0ELmMM9DSxDdQ",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@VmessProtocol | HK🇭🇰 | hkg01.dns-node.top:45573 | 314.39ms | 0️⃣2️⃣",
+            "type": "shadowsocks",
+            "server": "hkg01.dns-node.top",
+            "server_port": 45573,
+            "method": "aes-128-gcm",
+            "password": "ec201e1c-fc06-4e46-b6e7-59b8ad233451",
             "plugin": "",
             "plugin_opts": ""
         },
