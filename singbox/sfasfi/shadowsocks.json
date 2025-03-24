@@ -101,16 +101,39 @@
             "tag": "proxy",
             "type": "selector",
             "outbounds": [
-                "URL-TEST"
+                "URL-TEST",
+                "US🇺🇸"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "@VmessProtocol | US🇺🇸 | 217.77.2.244:41747 | 33.18ms | 0️⃣1️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "@VmessProtocol | US🇺🇸 | 217.77.2.244:41747 | 33.18ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@VmessProtocol | US🇺🇸 | 217.77.2.244:41747 | 33.18ms | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "217.77.2.244",
+            "server_port": 41747,
+            "method": "chacha20-ietf-poly1305",
+            "password": "2ad3daa614b4db4f",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "direct",
