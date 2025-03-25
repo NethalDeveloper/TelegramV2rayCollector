@@ -102,15 +102,42 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST",
+                "@VmessProtocol | HK🇭🇰 | hkg01.dns-node.top:45573 | 314.42ms | 0️⃣1️⃣",
+                "@VmessProtocol | US🇺🇸 | 217.77.2.244:41747 | 10.62ms | 0️⃣2️⃣"
+            ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "@VmessProtocol | HK🇭🇰 | hkg01.dns-node.top:45573 | 314.42ms | 0️⃣1️⃣",
+                "@VmessProtocol | US🇺🇸 | 217.77.2.244:41747 | 10.62ms | 0️⃣2️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "@VmessProtocol | HK🇭🇰 | hkg01.dns-node.top:45573 | 314.42ms | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "hkg01.dns-node.top",
+            "server_port": 45573,
+            "method": "aes-128-gcm",
+            "password": "ec201e1c-fc06-4e46-b6e7-59b8ad233451",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@VmessProtocol | US🇺🇸 | 217.77.2.244:41747 | 10.62ms | 0️⃣2️⃣",
+            "type": "shadowsocks",
+            "server": "217.77.2.244",
+            "server_port": 41747,
+            "method": "chacha20-ietf-poly1305",
+            "password": "2ad3daa614b4db4f",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "direct",
