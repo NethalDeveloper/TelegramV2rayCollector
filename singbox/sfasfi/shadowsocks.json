@@ -102,8 +102,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "HK🇭🇰",
-                "US🇺🇸",
                 "LT🇱🇹"
             ]
         },
@@ -111,29 +109,7 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | HK🇭🇰 | hkg01.dns-node.top:45573 | 466.25ms | 0️⃣1️⃣",
-                "@VmessProtocol | US🇺🇸 | 217.77.2.244:41747 | 11.58ms | 0️⃣2️⃣",
-                "@VmessProtocol | LT🇱🇹 | 45.87.175.181:8080 | 101.41ms | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "HK🇭🇰",
-            "type": "urltest",
-            "outbounds": [
-                "@VmessProtocol | HK🇭🇰 | hkg01.dns-node.top:45573 | 466.25ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "US🇺🇸",
-            "type": "urltest",
-            "outbounds": [
-                "@VmessProtocol | US🇺🇸 | 217.77.2.244:41747 | 11.58ms | 0️⃣2️⃣"
+                "@VmessProtocol | LT🇱🇹 | 45.87.175.181:8080 | 85.42ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,34 +119,14 @@
             "tag": "LT🇱🇹",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | LT🇱🇹 | 45.87.175.181:8080 | 101.41ms | 0️⃣3️⃣"
+                "@VmessProtocol | LT🇱🇹 | 45.87.175.181:8080 | 85.42ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@VmessProtocol | HK🇭🇰 | hkg01.dns-node.top:45573 | 466.25ms | 0️⃣1️⃣",
-            "type": "shadowsocks",
-            "server": "hkg01.dns-node.top",
-            "server_port": 45573,
-            "method": "aes-128-gcm",
-            "password": "ec201e1c-fc06-4e46-b6e7-59b8ad233451",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "@VmessProtocol | US🇺🇸 | 217.77.2.244:41747 | 11.58ms | 0️⃣2️⃣",
-            "type": "shadowsocks",
-            "server": "217.77.2.244",
-            "server_port": 41747,
-            "method": "chacha20-ietf-poly1305",
-            "password": "2ad3daa614b4db4f",
-            "plugin": "",
-            "plugin_opts": ""
-        },
-        {
-            "tag": "@VmessProtocol | LT🇱🇹 | 45.87.175.181:8080 | 101.41ms | 0️⃣3️⃣",
+            "tag": "@VmessProtocol | LT🇱🇹 | 45.87.175.181:8080 | 85.42ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "45.87.175.181",
             "server_port": 8080,
