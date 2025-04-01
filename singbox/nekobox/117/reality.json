@@ -106,7 +106,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 173.65ms | 0️⃣3️⃣"
+                "REALITY | @prrofile_purple | DE🇩🇪 | 128.140.113.40:20000 | 118.73ms | 0️⃣2️⃣",
+                "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 177.39ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -116,14 +117,43 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 173.65ms | 0️⃣3️⃣"
+                "REALITY | @prrofile_purple | DE🇩🇪 | 128.140.113.40:20000 | 118.73ms | 0️⃣2️⃣",
+                "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 177.39ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 173.65ms | 0️⃣3️⃣",
+            "tag": "REALITY | @prrofile_purple | DE🇩🇪 | 128.140.113.40:20000 | 118.73ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "128.140.113.40",
+            "server_port": 20000,
+            "uuid": "7207bedd-46ba-4f0a-a5a9-76f534a6001d",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net.vip.ger.dbsll.ir",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "PHP5Ibb_VceW-qb5RXLn-lKMHoqMTZbhrjwCMtsJZiQ",
+                    "short_id": "49d5a3bd8cd3e6b6"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 177.39ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "panel2.svgspeedtest.net",
             "server_port": 443,
