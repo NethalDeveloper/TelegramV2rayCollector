@@ -100,15 +100,30 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST",
+                "@VmessProtocol | LT🇱🇹 | 45.87.175.92:8080 | 102.25ms | 0️⃣1️⃣"
+            ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "@VmessProtocol | LT🇱🇹 | 45.87.175.92:8080 | 102.25ms | 0️⃣1️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "@VmessProtocol | LT🇱🇹 | 45.87.175.92:8080 | 102.25ms | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "45.87.175.92",
+            "server_port": 8080,
+            "method": "chacha20-ietf-poly1305",
+            "password": "oZIoA69Q8yhcQV8ka3Pa3A",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "direct",
