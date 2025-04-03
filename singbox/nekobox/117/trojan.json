@@ -100,8 +100,6 @@
             "outbounds": [
                 "URL-TEST",
                 "SE🇸🇪",
-                "FR🇫🇷",
-                "GB🇬🇧",
                 "US🇺🇸"
             ]
         },
@@ -109,10 +107,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | SE🇸🇪 | 51.21.165.255:22222 | 147.31ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.37.195.102:22222 | 92.63ms | 0️⃣1️⃣",
-                "@DirectVPN | GB🇬🇧 | 18.135.191.189:22222 | 77.1ms | 0️⃣2️⃣",
-                "@DirectVPN | US🇺🇸 | 44.216.161.110:22222 | 22.47ms | 0️⃣3️⃣"
+                "@PrivateVPNs | SE🇸🇪 | 51.21.165.255:22222 | 108.72ms | 0️⃣1️⃣",
+                "@DirectVPN | SE🇸🇪 | 51.21.39.249:22222 | 115.38ms | 0️⃣2️⃣",
+                "@DirectVPN | SE🇸🇪 | 16.16.140.207:22222 | 108.69ms | 0️⃣3️⃣",
+                "@DirectVPN | US🇺🇸 | 44.216.161.110:22222 | 6.88ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -122,27 +120,9 @@
             "tag": "SE🇸🇪",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | SE🇸🇪 | 51.21.165.255:22222 | 147.31ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "FR🇫🇷",
-            "type": "urltest",
-            "outbounds": [
-                "@DirectVPN | FR🇫🇷 | 13.37.195.102:22222 | 92.63ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "GB🇬🇧",
-            "type": "urltest",
-            "outbounds": [
-                "@DirectVPN | GB🇬🇧 | 18.135.191.189:22222 | 77.1ms | 0️⃣2️⃣"
+                "@PrivateVPNs | SE🇸🇪 | 51.21.165.255:22222 | 108.72ms | 0️⃣1️⃣",
+                "@DirectVPN | SE🇸🇪 | 51.21.39.249:22222 | 115.38ms | 0️⃣2️⃣",
+                "@DirectVPN | SE🇸🇪 | 16.16.140.207:22222 | 108.69ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -152,14 +132,14 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@DirectVPN | US🇺🇸 | 44.216.161.110:22222 | 22.47ms | 0️⃣3️⃣"
+                "@DirectVPN | US🇺🇸 | 44.216.161.110:22222 | 6.88ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | SE🇸🇪 | 51.21.165.255:22222 | 147.31ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | SE🇸🇪 | 51.21.165.255:22222 | 108.72ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "51.21.165.255",
             "server_port": 22222,
@@ -180,9 +160,9 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.37.195.102:22222 | 92.63ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | SE🇸🇪 | 51.21.39.249:22222 | 115.38ms | 0️⃣2️⃣",
             "type": "trojan",
-            "server": "13.37.195.102",
+            "server": "51.21.39.249",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -201,9 +181,9 @@
             }
         },
         {
-            "tag": "@DirectVPN | GB🇬🇧 | 18.135.191.189:22222 | 77.1ms | 0️⃣2️⃣",
+            "tag": "@DirectVPN | SE🇸🇪 | 16.16.140.207:22222 | 108.69ms | 0️⃣3️⃣",
             "type": "trojan",
-            "server": "18.135.191.189",
+            "server": "16.16.140.207",
             "server_port": 22222,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -222,7 +202,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | US🇺🇸 | 44.216.161.110:22222 | 22.47ms | 0️⃣3️⃣",
+            "tag": "@DirectVPN | US🇺🇸 | 44.216.161.110:22222 | 6.88ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "44.216.161.110",
             "server_port": 22222,
