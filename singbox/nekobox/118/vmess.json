@@ -105,6 +105,7 @@
             "outbounds": [
                 "URL-TEST",
                 "RELAY🚩",
+                "SG🇸🇬",
                 "DE🇩🇪",
                 "CH🇨🇭"
             ]
@@ -113,10 +114,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 10.4ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | us.kkp.me.eu.org:443 | 257.56ms | 0️⃣2️⃣",
-                "@prrofile_purple | DE🇩🇪 | 23.158.56.184:22324 | 90.45ms | 0️⃣1️⃣",
-                "@v2ray1_ng | CH🇨🇭 | 186.190.215.93:22324 | 101.43ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 64.29ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | us.kkp.me.eu.org:443 | 5420.11ms | 0️⃣2️⃣",
+                "@free4allVPN | SG🇸🇬 | 62.146.232.153:53144 | 191.84ms | 0️⃣3️⃣",
+                "@Hope_Net | SG🇸🇬 | westsg2-ddns.oraclenat.cc:23452 | 278.48ms | 0️⃣1️⃣",
+                "@prrofile_purple | DE🇩🇪 | 23.158.56.184:22324 | 136.16ms | 0️⃣1️⃣",
+                "@v2ray1_ng | CH🇨🇭 | 186.190.215.93:22324 | 157.59ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -126,8 +129,19 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 10.4ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | us.kkp.me.eu.org:443 | 257.56ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 64.29ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | us.kkp.me.eu.org:443 | 5420.11ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "@free4allVPN | SG🇸🇬 | 62.146.232.153:53144 | 191.84ms | 0️⃣3️⃣",
+                "@Hope_Net | SG🇸🇬 | westsg2-ddns.oraclenat.cc:23452 | 278.48ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -137,7 +151,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | DE🇩🇪 | 23.158.56.184:22324 | 90.45ms | 0️⃣1️⃣"
+                "@prrofile_purple | DE🇩🇪 | 23.158.56.184:22324 | 136.16ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -147,14 +161,14 @@
             "tag": "CH🇨🇭",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | CH🇨🇭 | 186.190.215.93:22324 | 101.43ms | 0️⃣1️⃣"
+                "@v2ray1_ng | CH🇨🇭 | 186.190.215.93:22324 | 157.59ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 10.4ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 64.29ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.17.221.248",
             "server_port": 80,
@@ -180,7 +194,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | us.kkp.me.eu.org:443 | 257.56ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | us.kkp.me.eu.org:443 | 5420.11ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "104.18.149.76",
             "server_port": 443,
@@ -216,7 +230,50 @@
             }
         },
         {
-            "tag": "@prrofile_purple | DE🇩🇪 | 23.158.56.184:22324 | 90.45ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | SG🇸🇬 | 62.146.232.153:53144 | 191.84ms | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "62.146.232.153",
+            "server_port": 53144,
+            "uuid": "13e13a3e-e981-4eea-a9fc-13e50628fd9b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@Hope_Net | SG🇸🇬 | westsg2-ddns.oraclenat.cc:23452 | 278.48ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "217.142.187.146",
+            "server_port": 23452,
+            "uuid": "786eeff8-126a-4d90-827d-da5d9410f0d4",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "217.142.187.146"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@prrofile_purple | DE🇩🇪 | 23.158.56.184:22324 | 136.16ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "23.158.56.184",
             "server_port": 22324,
@@ -233,7 +290,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | CH🇨🇭 | 186.190.215.93:22324 | 101.43ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | CH🇨🇭 | 186.190.215.93:22324 | 157.59ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "186.190.215.93",
             "server_port": 22324,
