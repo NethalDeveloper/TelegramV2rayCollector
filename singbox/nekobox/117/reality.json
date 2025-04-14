@@ -106,8 +106,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @VmessProtocol | DE🇩🇪 | 138.199.225.195:1152 | 99.56ms | 0️⃣1️⃣",
-                "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 179.49ms | 0️⃣2️⃣"
+                "REALITY | @prrofile_purple | DE🇩🇪 | de.headsetabad.ir:3037 | 298.34ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | DE🇩🇪 | 138.199.225.195:1152 | 113.99ms | 0️⃣1️⃣",
+                "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 184.15ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -117,15 +118,44 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @VmessProtocol | DE🇩🇪 | 138.199.225.195:1152 | 99.56ms | 0️⃣1️⃣",
-                "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 179.49ms | 0️⃣2️⃣"
+                "REALITY | @prrofile_purple | DE🇩🇪 | de.headsetabad.ir:3037 | 298.34ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | DE🇩🇪 | 138.199.225.195:1152 | 113.99ms | 0️⃣1️⃣",
+                "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 184.15ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @VmessProtocol | DE🇩🇪 | 138.199.225.195:1152 | 99.56ms | 0️⃣1️⃣",
+            "tag": "REALITY | @prrofile_purple | DE🇩🇪 | de.headsetabad.ir:3037 | 298.34ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "de.headsetabad.ir",
+            "server_port": 3037,
+            "uuid": "7f3e8830-70ce-4fa2-8185-e73baeb780a6",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "91bCG1r8YkOBqn138sLf8099WoHAzdsxVr24UVSZJig",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @VmessProtocol | DE🇩🇪 | 138.199.225.195:1152 | 113.99ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "138.199.225.195",
             "server_port": 1152,
@@ -153,7 +183,7 @@
             }
         },
         {
-            "tag": "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 179.49ms | 0️⃣2️⃣",
+            "tag": "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 184.15ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "panel2.svgspeedtest.net",
             "server_port": 443,
