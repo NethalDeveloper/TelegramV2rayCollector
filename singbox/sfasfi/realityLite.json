@@ -102,25 +102,55 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @prrofile_purple | SE🇸🇪 | 91.186.218.167:2083 | 176.88ms | 0️⃣2️⃣",
-                "REALITY | @free1_vpn | DE🇩🇪 | 91.107.219.8:443 | 163.5ms | 0️⃣2️⃣",
-                "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 253.94ms | 0️⃣2️⃣"
+                "REALITY | @prrofile_purple | CH🇨🇭 | 37.156.46.44:30548 | 113.7ms | 0️⃣2️⃣",
+                "REALITY | @prrofile_purple | SE🇸🇪 | 91.186.218.167:2083 | 143.77ms | 0️⃣3️⃣",
+                "REALITY | @free1_vpn | DE🇩🇪 | 91.107.219.8:443 | 114.12ms | 0️⃣2️⃣",
+                "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 130.04ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @prrofile_purple | SE🇸🇪 | 91.186.218.167:2083 | 176.88ms | 0️⃣2️⃣",
-                "REALITY | @free1_vpn | DE🇩🇪 | 91.107.219.8:443 | 163.5ms | 0️⃣2️⃣",
-                "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 253.94ms | 0️⃣2️⃣"
+                "REALITY | @prrofile_purple | CH🇨🇭 | 37.156.46.44:30548 | 113.7ms | 0️⃣2️⃣",
+                "REALITY | @prrofile_purple | SE🇸🇪 | 91.186.218.167:2083 | 143.77ms | 0️⃣3️⃣",
+                "REALITY | @free1_vpn | DE🇩🇪 | 91.107.219.8:443 | 114.12ms | 0️⃣2️⃣",
+                "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 130.04ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @prrofile_purple | SE🇸🇪 | 91.186.218.167:2083 | 176.88ms | 0️⃣2️⃣",
+            "tag": "REALITY | @prrofile_purple | CH🇨🇭 | 37.156.46.44:30548 | 113.7ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "37.156.46.44",
+            "server_port": 30548,
+            "uuid": "ba3f2120-b5f2-fa63-5b12-2f37f8240e8f",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "stackoverflow.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "KmXtdOimd1xGGg7V2rvo74_HxMd6_bzFyosF6Z5c22A",
+                    "short_id": "d6d54c08fbbf895f"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @prrofile_purple | SE🇸🇪 | 91.186.218.167:2083 | 143.77ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "91.186.218.167",
             "server_port": 2083,
@@ -155,7 +185,7 @@
             }
         },
         {
-            "tag": "REALITY | @free1_vpn | DE🇩🇪 | 91.107.219.8:443 | 163.5ms | 0️⃣2️⃣",
+            "tag": "REALITY | @free1_vpn | DE🇩🇪 | 91.107.219.8:443 | 114.12ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "91.107.219.8",
             "server_port": 443,
@@ -183,7 +213,7 @@
             }
         },
         {
-            "tag": "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 253.94ms | 0️⃣2️⃣",
+            "tag": "REALITY | @vpnmasi | DE🇩🇪 | panel2.svgspeedtest.net:443 | 130.04ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "panel2.svgspeedtest.net",
             "server_port": 443,
