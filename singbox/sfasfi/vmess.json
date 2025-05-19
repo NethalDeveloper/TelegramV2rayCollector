@@ -111,9 +111,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | FR🇫🇷 | speedtest.net.google.com.bmi.ir.altinstart.ir:8874 | 294.52ms | 0️⃣1️⃣",
-                "@ShadowProxy66 | GB🇬🇧 | 37.221.125.159:33940 | 87.9ms | 0️⃣1️⃣",
-                "@Hope_Net | DE🇩🇪 | de.vmess.comnpmjs.com:443 | 168.52ms | 0️⃣1️⃣"
+                "@prrofile_purple | FR🇫🇷 | speedtest.net.google.com.bmi.ir.altinstart.ir:8874 | 304.24ms | 0️⃣1️⃣",
+                "@Awlix_ir | FR🇫🇷 | glweidf.sbs:443 | 312.76ms | 0️⃣1️⃣",
+                "@ShadowProxy66 | GB🇬🇧 | 37.221.125.159:33940 | 92.21ms | 0️⃣1️⃣",
+                "@Hope_Net | DE🇩🇪 | de.vmess.comnpmjs.com:443 | 200.52ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -123,7 +124,8 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | FR🇫🇷 | speedtest.net.google.com.bmi.ir.altinstart.ir:8874 | 294.52ms | 0️⃣1️⃣"
+                "@prrofile_purple | FR🇫🇷 | speedtest.net.google.com.bmi.ir.altinstart.ir:8874 | 304.24ms | 0️⃣1️⃣",
+                "@Awlix_ir | FR🇫🇷 | glweidf.sbs:443 | 312.76ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,7 +135,7 @@
             "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "@ShadowProxy66 | GB🇬🇧 | 37.221.125.159:33940 | 87.9ms | 0️⃣1️⃣"
+                "@ShadowProxy66 | GB🇬🇧 | 37.221.125.159:33940 | 92.21ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,14 +145,14 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | DE🇩🇪 | de.vmess.comnpmjs.com:443 | 168.52ms | 0️⃣1️⃣"
+                "@Hope_Net | DE🇩🇪 | de.vmess.comnpmjs.com:443 | 200.52ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@prrofile_purple | FR🇫🇷 | speedtest.net.google.com.bmi.ir.altinstart.ir:8874 | 294.52ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | FR🇫🇷 | speedtest.net.google.com.bmi.ir.altinstart.ir:8874 | 304.24ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "speedtest.net.google.com.bmi.ir.altinstart.ir",
             "server_port": 8874,
@@ -167,7 +169,43 @@
             }
         },
         {
-            "tag": "@ShadowProxy66 | GB🇬🇧 | 37.221.125.159:33940 | 87.9ms | 0️⃣1️⃣",
+            "tag": "@Awlix_ir | FR🇫🇷 | glweidf.sbs:443 | 312.76ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.67.170.13",
+            "server_port": 443,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "glweidf.sbs",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkws",
+                "headers": {
+                    "Host": "172.67.170.13"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@ShadowProxy66 | GB🇬🇧 | 37.221.125.159:33940 | 92.21ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "37.221.125.159",
             "server_port": 33940,
@@ -184,7 +222,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | DE🇩🇪 | de.vmess.comnpmjs.com:443 | 168.52ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | DE🇩🇪 | de.vmess.comnpmjs.com:443 | 200.52ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "de.vmess.comnpmjs.com",
             "server_port": 443,
