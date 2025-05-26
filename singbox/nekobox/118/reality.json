@@ -104,16 +104,22 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "DE🇩🇪"
+                "DE🇩🇪",
+                "IR🇮🇷",
+                "NL🇳🇱"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ARv2ray | DE🇩🇪 | 193.46.81.83:3567 | 109.95ms | 0️⃣2️⃣",
-                "REALITY | @VmessProtocol | DE🇩🇪 | 128.140.113.136:57065 | 119.21ms | 0️⃣3️⃣",
-                "REALITY | @Outlinev2rayNG | DE🇩🇪 | 23.88.62.209:2089 | 126.15ms | 0️⃣2️⃣"
+                "REALITY | @ARv2ray | DE🇩🇪 | 193.46.81.83:3567 | 90.96ms | 0️⃣2️⃣",
+                "REALITY | @VmessProtocol | DE🇩🇪 | 128.140.113.136:57065 | 95.98ms | 0️⃣3️⃣",
+                "REALITY | @Outlinev2rayNG | DE🇩🇪 | 23.88.62.209:2089 | 94.45ms | 0️⃣2️⃣",
+                "REALITY | @proxystore11 | IR🇮🇷 | local.connectix-d1.info:44444 | 204.99ms | 0️⃣1️⃣",
+                "REALITY | @proxystore11 | IR🇮🇷 | local.connectix-d1.info:44444 | 374.39ms | 0️⃣2️⃣",
+                "REALITY | @proxystore11 | IR🇮🇷 | local.connectix-d1.info:44444 | 207.57ms | 0️⃣3️⃣",
+                "REALITY | @flyv2ray | NL🇳🇱 | 89.34.230.186:3567 | 83.46ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -123,16 +129,38 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ARv2ray | DE🇩🇪 | 193.46.81.83:3567 | 109.95ms | 0️⃣2️⃣",
-                "REALITY | @VmessProtocol | DE🇩🇪 | 128.140.113.136:57065 | 119.21ms | 0️⃣3️⃣",
-                "REALITY | @Outlinev2rayNG | DE🇩🇪 | 23.88.62.209:2089 | 126.15ms | 0️⃣2️⃣"
+                "REALITY | @ARv2ray | DE🇩🇪 | 193.46.81.83:3567 | 90.96ms | 0️⃣2️⃣",
+                "REALITY | @VmessProtocol | DE🇩🇪 | 128.140.113.136:57065 | 95.98ms | 0️⃣3️⃣",
+                "REALITY | @Outlinev2rayNG | DE🇩🇪 | 23.88.62.209:2089 | 94.45ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @ARv2ray | DE🇩🇪 | 193.46.81.83:3567 | 109.95ms | 0️⃣2️⃣",
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "REALITY | @proxystore11 | IR🇮🇷 | local.connectix-d1.info:44444 | 204.99ms | 0️⃣1️⃣",
+                "REALITY | @proxystore11 | IR🇮🇷 | local.connectix-d1.info:44444 | 374.39ms | 0️⃣2️⃣",
+                "REALITY | @proxystore11 | IR🇮🇷 | local.connectix-d1.info:44444 | 207.57ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "NL🇳🇱",
+            "type": "urltest",
+            "outbounds": [
+                "REALITY | @flyv2ray | NL🇳🇱 | 89.34.230.186:3567 | 83.46ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "REALITY | @ARv2ray | DE🇩🇪 | 193.46.81.83:3567 | 90.96ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "193.46.81.83",
             "server_port": 3567,
@@ -167,7 +195,7 @@
             }
         },
         {
-            "tag": "REALITY | @VmessProtocol | DE🇩🇪 | 128.140.113.136:57065 | 119.21ms | 0️⃣3️⃣",
+            "tag": "REALITY | @VmessProtocol | DE🇩🇪 | 128.140.113.136:57065 | 95.98ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "128.140.113.136",
             "server_port": 57065,
@@ -195,7 +223,7 @@
             }
         },
         {
-            "tag": "REALITY | @Outlinev2rayNG | DE🇩🇪 | 23.88.62.209:2089 | 126.15ms | 0️⃣2️⃣",
+            "tag": "REALITY | @Outlinev2rayNG | DE🇩🇪 | 23.88.62.209:2089 | 94.45ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "23.88.62.209",
             "server_port": 2089,
@@ -220,6 +248,125 @@
                     "public_key": "bvEBes1y2n6327dEgJyZTR6Xz_EuyfLdkEX7DxWGFFg",
                     "short_id": "e3c5c005cae07eb8"
                 }
+            }
+        },
+        {
+            "tag": "REALITY | @proxystore11 | IR🇮🇷 | local.connectix-d1.info:44444 | 204.99ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "local.connectix-d1.info",
+            "server_port": 44444,
+            "uuid": "9300ed1f-0ef3-414d-8cf7-1de35cc4548e",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @proxystore11 | IR🇮🇷 | local.connectix-d1.info:44444 | 374.39ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "local.connectix-d1.info",
+            "server_port": 44444,
+            "uuid": "94e0acd7-aa2f-4a8a-abf6-921bbba18810",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @proxystore11 | IR🇮🇷 | local.connectix-d1.info:44444 | 207.57ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "local.connectix-d1.info",
+            "server_port": 44444,
+            "uuid": "9116e758-76c5-4e9d-aef6-6fe6edd11163",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @flyv2ray | NL🇳🇱 | 89.34.230.186:3567 | 83.46ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "89.34.230.186",
+            "server_port": 3567,
+            "uuid": "e71099b1-f54b-4cd3-80b0-20c2ba854a5e",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "maps.google.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "OUFykWUCiUsuGV3oGsKRAAPmyev5dpnP3TvoJO9sECQ",
+                    "short_id": "0cc6d3a98d5c"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER,telegram-NUFiLTER",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
