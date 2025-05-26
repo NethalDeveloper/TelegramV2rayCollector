@@ -99,8 +99,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "FR🇫🇷",
                 "FI🇫🇮",
+                "FR🇫🇷",
+                "SG🇸🇬",
                 "US🇺🇸"
             ]
         },
@@ -108,19 +109,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | FR🇫🇷 | 5.196.29.123:2082 | 88.9ms | 0️⃣1️⃣",
-                "@v2ray1_ng | FI🇫🇮 | google.whatsapp.snapp.torob.basalam.netbazchanell.ir.:80 | 322.27ms | 0️⃣2️⃣",
-                "@Hope_Net | US🇺🇸 | lt.fxlcn.com:45235 | 517.61ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "FR🇫🇷",
-            "type": "urltest",
-            "outbounds": [
-                "@v2ray1_ng | FR🇫🇷 | 5.196.29.123:2082 | 88.9ms | 0️⃣1️⃣"
+                "@v2ray1_ng | FI🇫🇮 | google.whatsapp.snapp.torob.basalam.netbazchanell.ir.:80 | 501.27ms | 0️⃣1️⃣",
+                "@free1_vpn | FR🇫🇷 | 5.196.29.123:2082 | 148.85ms | 0️⃣1️⃣",
+                "@Hope_Net | SG🇸🇬 | 47.237.84.79:3030 | 191.83ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | 198.251.83.208:45271 | 142.5ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -130,7 +122,27 @@
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | FI🇫🇮 | google.whatsapp.snapp.torob.basalam.netbazchanell.ir.:80 | 322.27ms | 0️⃣2️⃣"
+                "@v2ray1_ng | FI🇫🇮 | google.whatsapp.snapp.torob.basalam.netbazchanell.ir.:80 | 501.27ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "@free1_vpn | FR🇫🇷 | 5.196.29.123:2082 | 148.85ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "@Hope_Net | SG🇸🇬 | 47.237.84.79:3030 | 191.83ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -140,40 +152,14 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | US🇺🇸 | lt.fxlcn.com:45235 | 517.61ms | 0️⃣1️⃣"
+                "@Hope_Net | US🇺🇸 | 198.251.83.208:45271 | 142.5ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2ray1_ng | FR🇫🇷 | 5.196.29.123:2082 | 88.9ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "5.196.29.123",
-            "server_port": 2082,
-            "uuid": "112ac36f-3f53-4e26-8371-d25c028e1b9a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "5.196.29.123"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2ray1_ng | FI🇫🇮 | google.whatsapp.snapp.torob.basalam.netbazchanell.ir.:80 | 322.27ms | 0️⃣2️⃣",
+            "tag": "@v2ray1_ng | FI🇫🇮 | google.whatsapp.snapp.torob.basalam.netbazchanell.ir.:80 | 501.27ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "185.146.173.25",
             "server_port": 80,
@@ -199,10 +185,53 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | lt.fxlcn.com:45235 | 517.61ms | 0️⃣1️⃣",
+            "tag": "@free1_vpn | FR🇫🇷 | 5.196.29.123:2082 | 148.85ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "5.196.29.123",
+            "server_port": 2082,
+            "uuid": "112ac36f-3f53-4e26-8371-d25c028e1b9a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "5.196.29.123"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | SG🇸🇬 | 47.237.84.79:3030 | 191.83ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "47.237.84.79",
+            "server_port": 3030,
+            "uuid": "de49138c-df11-4b6c-ed94-09e36b8fb890",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@Hope_Net | US🇺🇸 | 198.251.83.208:45271 | 142.5ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "198.251.83.208",
-            "server_port": 45235,
+            "server_port": 45271,
             "uuid": "469e0b31-30c3-4dab-800d-711232634ce1",
             "security": "auto",
             "alter_id": 0,
