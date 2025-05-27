@@ -102,31 +102,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@PrivateVPNs | FR🇫🇷 | 13.36.113.249:22222 | 122.15ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 15.237.207.107:22222 | 152.88ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.36.113.249:22223 | 111.11ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.237.207.107:22223 | 114.28ms | 0️⃣2️⃣",
-                "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 114.87ms | 0️⃣1️⃣",
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 758.66ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.36.113.249:22222 | 173.04ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 148.71ms | 0️⃣1️⃣",
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 544.84ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.36.113.249:22222 | 122.15ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 15.237.207.107:22222 | 152.88ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.36.113.249:22223 | 111.11ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.237.207.107:22223 | 114.28ms | 0️⃣2️⃣",
-                "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 114.87ms | 0️⃣1️⃣",
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 758.66ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.36.113.249:22222 | 173.04ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 148.71ms | 0️⃣1️⃣",
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 544.84ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.36.113.249:22222 | 122.15ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.36.113.249:22222 | 173.04ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "13.36.113.249",
             "server_port": 22222,
@@ -147,70 +141,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 15.237.207.107:22222 | 152.88ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "15.237.207.107",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.36.113.249:22223 | 111.11ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "13.36.113.249",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@DirectVPN | FR🇫🇷 | 15.237.207.107:22223 | 114.28ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "15.237.207.107",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 114.87ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 148.71ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "94.131.20.3",
             "server_port": 443,
@@ -231,7 +162,7 @@
             }
         },
         {
-            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 758.66ms | 0️⃣1️⃣",
+            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 544.84ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "df.xiguajiasu.xyz",
             "server_port": 46002,
