@@ -105,18 +105,18 @@
             "outbounds": [
                 "URL-TEST",
                 "FR🇫🇷",
-                "FI🇫🇮",
-                "CY🇨🇾"
+                "CY🇨🇾",
+                "FI🇫🇮"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@ShadowProxy66 | FR🇫🇷 | 135.125.182.74:28213 | 112.1ms | 0️⃣1️⃣",
-                "@proxystore11 | FR🇫🇷 | 135.125.182.74:28213 | 109.19ms | 0️⃣1️⃣",
-                "@v2ray1_ng | FI🇫🇮 | google.whatsapp.snapp.torob.basalam.sarzamiiinahang.ir.:80 | 264.39ms | 0️⃣1️⃣",
-                "@v2ray1_ng | CY🇨🇾 | 45.12.138.82:54757 | 107.92ms | 0️⃣2️⃣"
+                "@ShadowProxy66 | FR🇫🇷 | 135.125.182.74:28213 | 115.08ms | 0️⃣1️⃣",
+                "@proxystore11 | FR🇫🇷 | 135.125.182.74:28213 | 115.57ms | 0️⃣1️⃣",
+                "@v2ray1_ng | CY🇨🇾 | 45.12.138.82:54757 | 108.21ms | 0️⃣1️⃣",
+                "@v2ray1_ng | FI🇫🇮 | 157.180.113.6:29301 | 132.57ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -126,18 +126,8 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@ShadowProxy66 | FR🇫🇷 | 135.125.182.74:28213 | 112.1ms | 0️⃣1️⃣",
-                "@proxystore11 | FR🇫🇷 | 135.125.182.74:28213 | 109.19ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "FI🇫🇮",
-            "type": "urltest",
-            "outbounds": [
-                "@v2ray1_ng | FI🇫🇮 | google.whatsapp.snapp.torob.basalam.sarzamiiinahang.ir.:80 | 264.39ms | 0️⃣1️⃣"
+                "@ShadowProxy66 | FR🇫🇷 | 135.125.182.74:28213 | 115.08ms | 0️⃣1️⃣",
+                "@proxystore11 | FR🇫🇷 | 135.125.182.74:28213 | 115.57ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -147,14 +137,24 @@
             "tag": "CY🇨🇾",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | CY🇨🇾 | 45.12.138.82:54757 | 107.92ms | 0️⃣2️⃣"
+                "@v2ray1_ng | CY🇨🇾 | 45.12.138.82:54757 | 108.21ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@ShadowProxy66 | FR🇫🇷 | 135.125.182.74:28213 | 112.1ms | 0️⃣1️⃣",
+            "tag": "FI🇫🇮",
+            "type": "urltest",
+            "outbounds": [
+                "@v2ray1_ng | FI🇫🇮 | 157.180.113.6:29301 | 132.57ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@ShadowProxy66 | FR🇫🇷 | 135.125.182.74:28213 | 115.08ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "135.125.182.74",
             "server_port": 28213,
@@ -171,7 +171,7 @@
             }
         },
         {
-            "tag": "@proxystore11 | FR🇫🇷 | 135.125.182.74:28213 | 109.19ms | 0️⃣1️⃣",
+            "tag": "@proxystore11 | FR🇫🇷 | 135.125.182.74:28213 | 115.57ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "135.125.182.74",
             "server_port": 28213,
@@ -188,37 +188,28 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | FI🇫🇮 | google.whatsapp.snapp.torob.basalam.sarzamiiinahang.ir.:80 | 264.39ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "104.19.150.10",
-            "server_port": 80,
-            "uuid": "d70f5f8e-7694-4dff-95ef-cc1472e315dc",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/d3d3LmlyYW5ob3N0LmNvbQ==?ed=2560",
-                "headers": {
-                    "Host": "104.19.150.10"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2ray1_ng | CY🇨🇾 | 45.12.138.82:54757 | 107.92ms | 0️⃣2️⃣",
+            "tag": "@v2ray1_ng | CY🇨🇾 | 45.12.138.82:54757 | 108.21ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "45.12.138.82",
             "server_port": 54757,
             "uuid": "cde9f074-c930-4aa3-a558-46bbc9d0a5a1",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | FI🇫🇮 | 157.180.113.6:29301 | 132.57ms | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "157.180.113.6",
+            "server_port": 29301,
+            "uuid": "8bfe571e-efd8-434f-bb25-9fb9f0e9e1dc",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
