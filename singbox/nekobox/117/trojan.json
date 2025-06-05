@@ -99,7 +99,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "FR🇫🇷",
                 "US🇺🇸",
                 "JP🇯🇵"
             ]
@@ -108,22 +107,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.39.3.20:22222 | 101.27ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.3.20:22223 | 86.13ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | bats-paper-chump.stark-industries.solutions:443 | 173ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 87.1ms | 0️⃣2️⃣",
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 825.75ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "FR🇫🇷",
-            "type": "urltest",
-            "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.39.3.20:22222 | 101.27ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.3.20:22223 | 86.13ms | 0️⃣1️⃣"
+                "@v2ray1_ng | US🇺🇸 | bats-paper-chump.stark-industries.solutions:443 | 265.14ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 152.05ms | 0️⃣2️⃣",
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 456.01ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,8 +119,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | US🇺🇸 | bats-paper-chump.stark-industries.solutions:443 | 173ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 87.1ms | 0️⃣2️⃣"
+                "@v2ray1_ng | US🇺🇸 | bats-paper-chump.stark-industries.solutions:443 | 265.14ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 152.05ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -144,56 +130,14 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 825.75ms | 0️⃣1️⃣"
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 456.01ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.39.3.20:22222 | 101.27ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "13.39.3.20",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.39.3.20:22223 | 86.13ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "13.39.3.20",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@v2ray1_ng | US🇺🇸 | bats-paper-chump.stark-industries.solutions:443 | 173ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | bats-paper-chump.stark-industries.solutions:443 | 265.14ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "bats-paper-chump.stark-industries.solutions",
             "server_port": 443,
@@ -214,7 +158,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 87.1ms | 0️⃣2️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 152.05ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "94.131.20.3",
             "server_port": 443,
@@ -235,7 +179,7 @@
             }
         },
         {
-            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 825.75ms | 0️⃣1️⃣",
+            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 456.01ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "df.xiguajiasu.xyz",
             "server_port": 46002,
