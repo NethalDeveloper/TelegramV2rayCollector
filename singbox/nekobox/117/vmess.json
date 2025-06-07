@@ -101,16 +101,18 @@
                 "URL-TEST",
                 "US🇺🇸",
                 "FI🇫🇮",
-                "CH🇨🇭"
+                "CH🇨🇭",
+                "CN🇨🇳"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | US🇺🇸 | 142.4.119.72:57118 | 81.2ms | 0️⃣1️⃣",
-                "@v2ray1_ng | FI🇫🇮 | 157.180.89.239:29301 | 113.28ms | 0️⃣1️⃣",
-                "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 105.93ms | 0️⃣1️⃣"
+                "@prrofile_purple | US🇺🇸 | 142.4.119.72:57118 | 7.39ms | 0️⃣1️⃣",
+                "@v2ray1_ng | FI🇫🇮 | 157.180.89.239:29301 | 179.19ms | 0️⃣1️⃣",
+                "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 169.66ms | 0️⃣1️⃣",
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 419.13ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -120,7 +122,7 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | US🇺🇸 | 142.4.119.72:57118 | 81.2ms | 0️⃣1️⃣"
+                "@prrofile_purple | US🇺🇸 | 142.4.119.72:57118 | 7.39ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -130,7 +132,7 @@
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | FI🇫🇮 | 157.180.89.239:29301 | 113.28ms | 0️⃣1️⃣"
+                "@v2ray1_ng | FI🇫🇮 | 157.180.89.239:29301 | 179.19ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -140,14 +142,24 @@
             "tag": "CH🇨🇭",
             "type": "urltest",
             "outbounds": [
-                "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 105.93ms | 0️⃣1️⃣"
+                "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 169.66ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@prrofile_purple | US🇺🇸 | 142.4.119.72:57118 | 81.2ms | 0️⃣1️⃣",
+            "tag": "CN🇨🇳",
+            "type": "urltest",
+            "outbounds": [
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 419.13ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@prrofile_purple | US🇺🇸 | 142.4.119.72:57118 | 7.39ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "142.4.119.72",
             "server_port": 57118,
@@ -164,7 +176,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | FI🇫🇮 | 157.180.89.239:29301 | 113.28ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | FI🇫🇮 | 157.180.89.239:29301 | 179.19ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "157.180.89.239",
             "server_port": 29301,
@@ -181,7 +193,7 @@
             }
         },
         {
-            "tag": "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 105.93ms | 0️⃣1️⃣",
+            "tag": "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 169.66ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "186.190.215.193",
             "server_port": 22324,
@@ -195,6 +207,32 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 419.13ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "42.2.113.136",
+            "server_port": 80,
+            "uuid": "98d2b660-7218-11ec-bd7c-f23c913c8d2b",
+            "security": "auto",
+            "alter_id": 2,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "42.2.113.136"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
