@@ -99,27 +99,50 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 123.21ms | 0️⃣1️⃣",
-                "@v2ray1_ng | DK🇩🇰 | 95.164.85.39:443 | 115.41ms | 0️⃣2️⃣",
-                "@v2ray1_ng | PH🇵🇭 | 154.83.2.54:2096 | 13.57ms | 0️⃣3️⃣",
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 659.45ms | 0️⃣1️⃣"
+                "@DirectVPN | FR🇫🇷 | 13.39.206.106:22223 | 100.72ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 102.39ms | 0️⃣1️⃣",
+                "@v2ray1_ng | DK🇩🇰 | 95.164.85.39:443 | 104.61ms | 0️⃣2️⃣",
+                "@v2ray1_ng | PH🇵🇭 | 154.83.2.54:2096 | 2.86ms | 0️⃣3️⃣",
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 619.99ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 123.21ms | 0️⃣1️⃣",
-                "@v2ray1_ng | DK🇩🇰 | 95.164.85.39:443 | 115.41ms | 0️⃣2️⃣",
-                "@v2ray1_ng | PH🇵🇭 | 154.83.2.54:2096 | 13.57ms | 0️⃣3️⃣",
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 659.45ms | 0️⃣1️⃣"
+                "@DirectVPN | FR🇫🇷 | 13.39.206.106:22223 | 100.72ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 102.39ms | 0️⃣1️⃣",
+                "@v2ray1_ng | DK🇩🇰 | 95.164.85.39:443 | 104.61ms | 0️⃣2️⃣",
+                "@v2ray1_ng | PH🇵🇭 | 154.83.2.54:2096 | 2.86ms | 0️⃣3️⃣",
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 619.99ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 123.21ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 13.39.206.106:22223 | 100.72ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "13.39.206.106",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | US🇺🇸 | 94.131.20.3:443 | 102.39ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "94.131.20.3",
             "server_port": 443,
@@ -140,7 +163,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | DK🇩🇰 | 95.164.85.39:443 | 115.41ms | 0️⃣2️⃣",
+            "tag": "@v2ray1_ng | DK🇩🇰 | 95.164.85.39:443 | 104.61ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "95.164.85.39",
             "server_port": 443,
@@ -161,7 +184,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | PH🇵🇭 | 154.83.2.54:2096 | 13.57ms | 0️⃣3️⃣",
+            "tag": "@v2ray1_ng | PH🇵🇭 | 154.83.2.54:2096 | 2.86ms | 0️⃣3️⃣",
             "type": "trojan",
             "server": "154.83.2.54",
             "server_port": 2096,
@@ -189,7 +212,7 @@
             }
         },
         {
-            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 659.45ms | 0️⃣1️⃣",
+            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 619.99ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "df.xiguajiasu.xyz",
             "server_port": 46002,
