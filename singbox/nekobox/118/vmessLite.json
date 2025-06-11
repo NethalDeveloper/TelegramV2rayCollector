@@ -104,29 +104,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@ShadowProxy66 | CA🇨🇦 | 51.79.86.182:42610 | 20.21ms | 0️⃣1️⃣",
-                "@v2ray1_ng | GB🇬🇧 | 51.38.64.209:44023 | 99.06ms | 0️⃣1️⃣",
-                "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 114.88ms | 0️⃣1️⃣",
-                "@Hope_Net | HK🇭🇰 | b8ffcda3-sv2sg0-sv37gm-81nv.hk3.p5pv.com:80 | 278.44ms | 0️⃣1️⃣",
-                "@Hope_Net | HK🇭🇰 | 5c36659d-sv2sg0-swudbv-df1b.hk3.p5pv.com:80 | 258.92ms | 0️⃣2️⃣"
+                "@ShadowProxy66 | CA🇨🇦 | 51.79.86.182:42610 | 68.14ms | 0️⃣1️⃣",
+                "@v2ray1_ng | GB🇬🇧 | 51.38.64.209:44023 | 142.85ms | 0️⃣1️⃣",
+                "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 161.73ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@ShadowProxy66 | CA🇨🇦 | 51.79.86.182:42610 | 20.21ms | 0️⃣1️⃣",
-                "@v2ray1_ng | GB🇬🇧 | 51.38.64.209:44023 | 99.06ms | 0️⃣1️⃣",
-                "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 114.88ms | 0️⃣1️⃣",
-                "@Hope_Net | HK🇭🇰 | b8ffcda3-sv2sg0-sv37gm-81nv.hk3.p5pv.com:80 | 278.44ms | 0️⃣1️⃣",
-                "@Hope_Net | HK🇭🇰 | 5c36659d-sv2sg0-swudbv-df1b.hk3.p5pv.com:80 | 258.92ms | 0️⃣2️⃣"
+                "@ShadowProxy66 | CA🇨🇦 | 51.79.86.182:42610 | 68.14ms | 0️⃣1️⃣",
+                "@v2ray1_ng | GB🇬🇧 | 51.38.64.209:44023 | 142.85ms | 0️⃣1️⃣",
+                "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 161.73ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@ShadowProxy66 | CA🇨🇦 | 51.79.86.182:42610 | 20.21ms | 0️⃣1️⃣",
+            "tag": "@ShadowProxy66 | CA🇨🇦 | 51.79.86.182:42610 | 68.14ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "51.79.86.182",
             "server_port": 42610,
@@ -143,7 +139,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | GB🇬🇧 | 51.38.64.209:44023 | 99.06ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | GB🇬🇧 | 51.38.64.209:44023 | 142.85ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "51.38.64.209",
             "server_port": 44023,
@@ -160,7 +156,7 @@
             }
         },
         {
-            "tag": "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 114.88ms | 0️⃣1️⃣",
+            "tag": "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 161.73ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "186.190.215.193",
             "server_port": 22324,
@@ -174,58 +170,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "@Hope_Net | HK🇭🇰 | b8ffcda3-sv2sg0-sv37gm-81nv.hk3.p5pv.com:80 | 278.44ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "b8ffcda3-sv2sg0-sv37gm-81nv.hk3.p5pv.com",
-            "server_port": 80,
-            "uuid": "47e91fb6-25b8-df52-bc18-3cdc8548192f",
-            "security": "auto",
-            "alter_id": 2,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "b8ffcda3-sv2sg0-sv37gm-81nv.hk3.p5pv.com"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | HK🇭🇰 | 5c36659d-sv2sg0-swudbv-df1b.hk3.p5pv.com:80 | 258.92ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "5c36659d-sv2sg0-swudbv-df1b.hk3.p5pv.com",
-            "server_port": 80,
-            "uuid": "9b94a182-5a1b-11ee-b866-f23c9164ca5d",
-            "security": "auto",
-            "alter_id": 2,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "5c36659d-sv2sg0-swudbv-df1b.hk3.p5pv.com"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
