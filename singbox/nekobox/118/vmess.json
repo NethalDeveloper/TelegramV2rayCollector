@@ -105,18 +105,16 @@
             "outbounds": [
                 "URL-TEST",
                 "DE🇩🇪",
-                "CH🇨🇭",
-                "US🇺🇸"
+                "CH🇨🇭"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | DE🇩🇪 | 5.75.207.190:8443 | 92.77ms | 0️⃣1️⃣",
-                "@v2ray1_ng | DE🇩🇪 | shamo.shnovps.click:44185 | 148.64ms | 0️⃣1️⃣",
-                "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 98.83ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | ruby.passwall.one:443 | 90.92ms | 0️⃣1️⃣"
+                "@prrofile_purple | DE🇩🇪 | 5.75.207.190:8443 | 139.98ms | 0️⃣1️⃣",
+                "@v2ray1_ng | DE🇩🇪 | shamo.shnovps.click:44185 | 218.02ms | 0️⃣1️⃣",
+                "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 156.76ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -126,8 +124,8 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | DE🇩🇪 | 5.75.207.190:8443 | 92.77ms | 0️⃣1️⃣",
-                "@v2ray1_ng | DE🇩🇪 | shamo.shnovps.click:44185 | 148.64ms | 0️⃣1️⃣"
+                "@prrofile_purple | DE🇩🇪 | 5.75.207.190:8443 | 139.98ms | 0️⃣1️⃣",
+                "@v2ray1_ng | DE🇩🇪 | shamo.shnovps.click:44185 | 218.02ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -137,24 +135,14 @@
             "tag": "CH🇨🇭",
             "type": "urltest",
             "outbounds": [
-                "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 98.83ms | 0️⃣1️⃣"
+                "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 156.76ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
-            "type": "urltest",
-            "outbounds": [
-                "@Hope_Net | US🇺🇸 | ruby.passwall.one:443 | 90.92ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "@prrofile_purple | DE🇩🇪 | 5.75.207.190:8443 | 92.77ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | DE🇩🇪 | 5.75.207.190:8443 | 139.98ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "5.75.207.190",
             "server_port": 8443,
@@ -178,7 +166,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | DE🇩🇪 | shamo.shnovps.click:44185 | 148.64ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | DE🇩🇪 | shamo.shnovps.click:44185 | 218.02ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "shamo.shnovps.click",
             "server_port": 44185,
@@ -204,7 +192,7 @@
             }
         },
         {
-            "tag": "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 98.83ms | 0️⃣1️⃣",
+            "tag": "@v2ray_vpn_ir | CH🇨🇭 | 186.190.215.193:22324 | 156.76ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "186.190.215.193",
             "server_port": 22324,
@@ -218,42 +206,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "@Hope_Net | US🇺🇸 | ruby.passwall.one:443 | 90.92ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "ruby.passwall.one",
-            "server_port": 443,
-            "uuid": "417f613b-c66b-42b7-bdc6-aedc65129148",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": null,
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/v2ray",
-                "headers": {
-                    "Host": "ruby.passwall.one"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
