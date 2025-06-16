@@ -105,19 +105,17 @@
             "outbounds": [
                 "URL-TEST",
                 "FR🇫🇷",
-                "JP🇯🇵",
-                "US🇺🇸"
+                "JP🇯🇵"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@DirectVPN | FR🇫🇷 | 13.36.8.60:22223 | 128.41ms | 0️⃣1️⃣",
-                "@v2ray1_ng | FR🇫🇷 | x11-amsterdam-scaleway-v2-c88f0.devefun.org:1935 | 287.03ms | 0️⃣1️⃣",
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 762.72ms | 0️⃣1️⃣",
-                "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 86.78ms | 0️⃣1️⃣",
-                "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 87.8ms | 0️⃣2️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.36.8.60:22222 | 109.41ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.36.8.60:22223 | 82.91ms | 0️⃣1️⃣",
+                "@v2ray1_ng | FR🇫🇷 | x11-amsterdam-scaleway-v2-c88f0.devefun.org:1935 | 484.18ms | 0️⃣1️⃣",
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 735.5ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -127,8 +125,9 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@DirectVPN | FR🇫🇷 | 13.36.8.60:22223 | 128.41ms | 0️⃣1️⃣",
-                "@v2ray1_ng | FR🇫🇷 | x11-amsterdam-scaleway-v2-c88f0.devefun.org:1935 | 287.03ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.36.8.60:22222 | 109.41ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.36.8.60:22223 | 82.91ms | 0️⃣1️⃣",
+                "@v2ray1_ng | FR🇫🇷 | x11-amsterdam-scaleway-v2-c88f0.devefun.org:1935 | 484.18ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -138,25 +137,35 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 762.72ms | 0️⃣1️⃣"
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 735.5ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
-            "type": "urltest",
-            "outbounds": [
-                "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 86.78ms | 0️⃣1️⃣",
-                "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 87.8ms | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.36.8.60:22222 | 109.41ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "13.36.8.60",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.36.8.60:22223 | 128.41ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 13.36.8.60:22223 | 82.91ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "13.36.8.60",
             "server_port": 22223,
@@ -177,7 +186,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | FR🇫🇷 | x11-amsterdam-scaleway-v2-c88f0.devefun.org:1935 | 287.03ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | FR🇫🇷 | x11-amsterdam-scaleway-v2-c88f0.devefun.org:1935 | 484.18ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "x11-amsterdam-scaleway-v2-c88f0.devefun.org",
             "server_port": 1935,
@@ -198,7 +207,7 @@
             }
         },
         {
-            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 762.72ms | 0️⃣1️⃣",
+            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 735.5ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "df.xiguajiasu.xyz",
             "server_port": 46002,
@@ -207,48 +216,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 86.78ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "94.131.20.3",
-            "server_port": 443,
-            "password": "3482c71a-d01c-4ae5-b454-fa8cb3785f66",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "nacho-rerun-crepe.stark-industries.solutions",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 87.8ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "94.131.20.3",
-            "server_port": 443,
-            "password": "e6a2e741-0fce-440b-910c-b81325e2263a",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "cache-giver-wife.stark-industries.solutions",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
             }
         },
         {
