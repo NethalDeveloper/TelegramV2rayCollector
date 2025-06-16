@@ -100,15 +100,30 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST",
+                "@free4allVPN | HK🇭🇰 | 156.225.22.213:552 | 169.26ms | 0️⃣1️⃣"
+            ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "@free4allVPN | HK🇭🇰 | 156.225.22.213:552 | 169.26ms | 0️⃣1️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "@free4allVPN | HK🇭🇰 | 156.225.22.213:552 | 169.26ms | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "156.225.22.213",
+            "server_port": 552,
+            "method": "aes-128-gcm",
+            "password": "rGDbiF7gtx5TWt4r4VjneQ==",
+            "plugin": "",
+            "plugin_opts": ""
         },
         {
             "tag": "direct",
