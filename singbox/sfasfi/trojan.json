@@ -102,6 +102,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "FR🇫🇷",
                 "JP🇯🇵",
                 "US🇺🇸"
             ]
@@ -110,9 +111,22 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 5291.46ms | 0️⃣1️⃣",
-                "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 113.59ms | 0️⃣1️⃣",
-                "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 119.55ms | 0️⃣2️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 15.237.90.224:22222 | 104.19ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 15.237.90.224:22223 | 104.93ms | 0️⃣1️⃣",
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 433.4ms | 0️⃣1️⃣",
+                "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 101.69ms | 0️⃣1️⃣",
+                "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 100.62ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "@PrivateVPNs | FR🇫🇷 | 15.237.90.224:22222 | 104.19ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 15.237.90.224:22223 | 104.93ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -122,7 +136,7 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 5291.46ms | 0️⃣1️⃣"
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 433.4ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -132,15 +146,57 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 113.59ms | 0️⃣1️⃣",
-                "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 119.55ms | 0️⃣2️⃣"
+                "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 101.69ms | 0️⃣1️⃣",
+                "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 100.62ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 5291.46ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 15.237.90.224:22222 | 104.19ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "15.237.90.224",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | FR🇫🇷 | 15.237.90.224:22223 | 104.93ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "15.237.90.224",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 433.4ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "df.xiguajiasu.xyz",
             "server_port": 46002,
@@ -152,7 +208,7 @@
             }
         },
         {
-            "tag": "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 113.59ms | 0️⃣1️⃣",
+            "tag": "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 101.69ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "94.131.20.3",
             "server_port": 443,
@@ -173,7 +229,7 @@
             }
         },
         {
-            "tag": "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 119.55ms | 0️⃣2️⃣",
+            "tag": "@fnet00 | US🇺🇸 | 94.131.20.3:443 | 100.62ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "94.131.20.3",
             "server_port": 443,
