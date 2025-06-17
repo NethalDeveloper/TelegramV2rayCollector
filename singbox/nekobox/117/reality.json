@@ -99,10 +99,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "AM🇦🇲",
                 "NL🇳🇱",
                 "RU🇷🇺",
-                "IR🇮🇷",
                 "FR🇫🇷",
                 "DE🇩🇪"
             ]
@@ -111,22 +109,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ipV2Ray | AM🇦🇲 | 45.83.143.71:443 | 154.25ms | 0️⃣1️⃣",
-                "REALITY | @ipV2Ray | NL🇳🇱 | 95.164.17.75:443 | 135.63ms | 0️⃣2️⃣",
-                "REALITY | @Outline_Vpn | RU🇷🇺 | 5.181.171.10:443 | 11.01ms | 0️⃣3️⃣",
-                "REALITY | @prrofile_purple | IR🇮🇷 | ebook.streamingpower.sbs:7042 | 321.73ms | 0️⃣3️⃣",
-                "REALITY | @ShadowProxy66 | FR🇫🇷 | 146.59.15.81:443 | 103.2ms | 0️⃣1️⃣",
-                "REALITY | @ShadowProxy66 | DE🇩🇪 | 93.152.217.107:443 | 89.33ms | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "AM🇦🇲",
-            "type": "urltest",
-            "outbounds": [
-                "REALITY | @ipV2Ray | AM🇦🇲 | 45.83.143.71:443 | 154.25ms | 0️⃣1️⃣"
+                "REALITY | @ipV2Ray | NL🇳🇱 | 95.164.17.75:443 | 159.26ms | 0️⃣1️⃣",
+                "REALITY | @Outline_Vpn | RU🇷🇺 | 5.181.171.10:443 | 85.47ms | 0️⃣3️⃣",
+                "REALITY | @ShadowProxy66 | FR🇫🇷 | 146.59.15.81:443 | 166.84ms | 0️⃣1️⃣",
+                "REALITY | @ShadowProxy66 | DE🇩🇪 | 93.152.217.107:443 | 158.41ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -136,7 +122,7 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ipV2Ray | NL🇳🇱 | 95.164.17.75:443 | 135.63ms | 0️⃣2️⃣"
+                "REALITY | @ipV2Ray | NL🇳🇱 | 95.164.17.75:443 | 159.26ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -146,17 +132,7 @@
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @Outline_Vpn | RU🇷🇺 | 5.181.171.10:443 | 11.01ms | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "IR🇮🇷",
-            "type": "urltest",
-            "outbounds": [
-                "REALITY | @prrofile_purple | IR🇮🇷 | ebook.streamingpower.sbs:7042 | 321.73ms | 0️⃣3️⃣"
+                "REALITY | @Outline_Vpn | RU🇷🇺 | 5.181.171.10:443 | 85.47ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -166,7 +142,7 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ShadowProxy66 | FR🇫🇷 | 146.59.15.81:443 | 103.2ms | 0️⃣1️⃣"
+                "REALITY | @ShadowProxy66 | FR🇫🇷 | 146.59.15.81:443 | 166.84ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -176,49 +152,14 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ShadowProxy66 | DE🇩🇪 | 93.152.217.107:443 | 89.33ms | 0️⃣3️⃣"
+                "REALITY | @ShadowProxy66 | DE🇩🇪 | 93.152.217.107:443 | 158.41ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @ipV2Ray | AM🇦🇲 | 45.83.143.71:443 | 154.25ms | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "45.83.143.71",
-            "server_port": 443,
-            "uuid": "f8ff8435-f201-471b-b08b-602cef6ca180",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ftp.debian.org",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "KuXbGeSIqhg5_bFaYN1ZW7F4m4LyjLio8Yh1YEE46xM",
-                    "short_id": "8a"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "Telegram-ipV2Ry-Telegram-ipV2Ry-Telegram-ipV2Ry",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "REALITY | @ipV2Ray | NL🇳🇱 | 95.164.17.75:443 | 135.63ms | 0️⃣2️⃣",
+            "tag": "REALITY | @ipV2Ray | NL🇳🇱 | 95.164.17.75:443 | 159.26ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "95.164.17.75",
             "server_port": 443,
@@ -253,7 +194,7 @@
             }
         },
         {
-            "tag": "REALITY | @Outline_Vpn | RU🇷🇺 | 5.181.171.10:443 | 11.01ms | 0️⃣3️⃣",
+            "tag": "REALITY | @Outline_Vpn | RU🇷🇺 | 5.181.171.10:443 | 85.47ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "5.181.171.10",
             "server_port": 443,
@@ -281,35 +222,7 @@
             }
         },
         {
-            "tag": "REALITY | @prrofile_purple | IR🇮🇷 | ebook.streamingpower.sbs:7042 | 321.73ms | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "ebook.streamingpower.sbs",
-            "server_port": 7042,
-            "uuid": "b55d615a-104d-48bb-acd6-fe2a4666745a",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "refersion.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "tVj9PPwOKTxHu1ACpZUaHv1hZLGy9P0Z7Y6jJOVTLzI",
-                    "short_id": "5668ea398f7657ef"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @ShadowProxy66 | FR🇫🇷 | 146.59.15.81:443 | 103.2ms | 0️⃣1️⃣",
+            "tag": "REALITY | @ShadowProxy66 | FR🇫🇷 | 146.59.15.81:443 | 166.84ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "146.59.15.81",
             "server_port": 443,
@@ -337,7 +250,7 @@
             }
         },
         {
-            "tag": "REALITY | @ShadowProxy66 | DE🇩🇪 | 93.152.217.107:443 | 89.33ms | 0️⃣3️⃣",
+            "tag": "REALITY | @ShadowProxy66 | DE🇩🇪 | 93.152.217.107:443 | 158.41ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "93.152.217.107",
             "server_port": 443,
