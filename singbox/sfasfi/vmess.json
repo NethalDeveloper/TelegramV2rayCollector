@@ -102,17 +102,18 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "RELAY🚩"
+                "RELAY🚩",
+                "CN🇨🇳"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 26.21ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 151.18ms | 0️⃣2️⃣",
-                "@prrofile_purple | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 82.33ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 1744007578.speed.ruanewa.cccp.freefly.pp.ua:2083 | 147.63ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 23.99ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 329.6ms | 0️⃣2️⃣",
+                "@prrofile_purple | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 35.61ms | 0️⃣1️⃣",
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 273.66ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -122,17 +123,26 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 26.21ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 151.18ms | 0️⃣2️⃣",
-                "@prrofile_purple | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 82.33ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 1744007578.speed.ruanewa.cccp.freefly.pp.ua:2083 | 147.63ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 23.99ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 329.6ms | 0️⃣2️⃣",
+                "@prrofile_purple | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 35.61ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 26.21ms | 0️⃣1️⃣",
+            "tag": "CN🇨🇳",
+            "type": "urltest",
+            "outbounds": [
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 273.66ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 23.99ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.66.168.209",
             "server_port": 443,
@@ -168,7 +178,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 151.18ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 329.6ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "us01.sh-cloudflare.sbs",
             "server_port": 8443,
@@ -204,7 +214,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 82.33ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 35.61ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "npmjs.com",
             "server_port": 8080,
@@ -230,13 +240,13 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | 1744007578.speed.ruanewa.cccp.freefly.pp.ua:2083 | 147.63ms | 0️⃣1️⃣",
+            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 273.66ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "1744007541.tencentapp.cn",
-            "server_port": 2083,
-            "uuid": "381cb6d1-6ad4-4909-8494-b8d786cf78ce",
+            "server": "42.2.113.136",
+            "server_port": 80,
+            "uuid": "98d2b660-7218-11ec-bd7c-f23c913c8d2b",
             "security": "auto",
-            "alter_id": 0,
+            "alter_id": 2,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -245,21 +255,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": null,
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
                 "path": "\/\/",
                 "headers": {
-                    "Host": "1744007541.tencentapp.cn"
+                    "Host": "42.2.113.136"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
