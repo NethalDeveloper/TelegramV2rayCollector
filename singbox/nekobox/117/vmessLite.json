@@ -99,23 +99,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 19.76ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 185.99ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 15.76ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 93.72ms | 0️⃣2️⃣",
+                "@v2ray_vpn_ir | SG🇸🇬 | 38.47.176.251:56051 | 167.51ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | lax1.ibgfw.top:8443 | 170.51ms | 0️⃣1️⃣",
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 372.73ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 19.76ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 185.99ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 15.76ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 93.72ms | 0️⃣2️⃣",
+                "@v2ray_vpn_ir | SG🇸🇬 | 38.47.176.251:56051 | 167.51ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | lax1.ibgfw.top:8443 | 170.51ms | 0️⃣1️⃣",
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 372.73ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 19.76ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 15.76ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.66.168.209",
             "server_port": 443,
@@ -151,7 +157,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 185.99ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 93.72ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "us01.sh-cloudflare.sbs",
             "server_port": 8443,
@@ -181,6 +187,85 @@
                 "path": "\/\/",
                 "headers": {
                     "Host": "us01.sh-cloudflare.sbs"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2ray_vpn_ir | SG🇸🇬 | 38.47.176.251:56051 | 167.51ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "38.47.176.251",
+            "server_port": 56051,
+            "uuid": "2bca3569-0662-47f7-fdf8-421f30e71f44",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | lax1.ibgfw.top:8443 | 170.51ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "213.241.198.57",
+            "server_port": 8443,
+            "uuid": "191babc5-2aaf-4fe5-a563-f14244aefb4e",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": null,
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "213.241.198.57"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 372.73ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "42.2.113.136",
+            "server_port": 80,
+            "uuid": "98d2b660-7218-11ec-bd7c-f23c913c8d2b",
+            "security": "auto",
+            "alter_id": 2,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "42.2.113.136"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
