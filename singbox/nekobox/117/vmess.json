@@ -99,17 +99,15 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "RELAY🚩",
-                "JP🇯🇵"
+                "RELAY🚩"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 23.57ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 57.18ms | 0️⃣2️⃣",
-                "@Hope_Net | JP🇯🇵 | tls.05.node-for-bigairport.win:33443 | 418.18ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 71.54ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 183.46ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -119,25 +117,15 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 23.57ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 57.18ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 71.54ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 183.46ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "JP🇯🇵",
-            "type": "urltest",
-            "outbounds": [
-                "@Hope_Net | JP🇯🇵 | tls.05.node-for-bigairport.win:33443 | 418.18ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 23.57ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 71.54ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.66.168.209",
             "server_port": 443,
@@ -173,7 +161,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 57.18ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 183.46ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "us01.sh-cloudflare.sbs",
             "server_port": 8443,
@@ -203,42 +191,6 @@
                 "path": "\/\/",
                 "headers": {
                     "Host": "us01.sh-cloudflare.sbs"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | JP🇯🇵 | tls.05.node-for-bigairport.win:33443 | 418.18ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "35.90.56.240",
-            "server_port": 33443,
-            "uuid": "3519dfc0-fa27-41cc-8c19-981818f9f6d5",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "tls.05.node-for-bigairport.win",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "35.90.56.240"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
