@@ -102,23 +102,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 118.39ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 39.94ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 25.4ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 246.15ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | 100-70-193-42.s1.cn-db.top:2052 | 208.82ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 118.39ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 39.94ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 25.4ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 246.15ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | 100-70-193-42.s1.cn-db.top:2052 | 208.82ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 118.39ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 25.4ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.66.168.209",
             "server_port": 443,
@@ -154,7 +156,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 39.94ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 246.15ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "us01.sh-cloudflare.sbs",
             "server_port": 8443,
@@ -184,6 +186,32 @@
                 "path": "\/\/",
                 "headers": {
                     "Host": "us01.sh-cloudflare.sbs"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | 100-70-193-42.s1.cn-db.top:2052 | 208.82ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "104.17.221.248",
+            "server_port": 2052,
+            "uuid": "4b36625c-b9d9-3ea6-aed5-86d62c70e16d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/dabai.in104.18.179.207",
+                "headers": {
+                    "Host": "104.17.221.248"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
