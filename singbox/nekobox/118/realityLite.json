@@ -102,15 +102,48 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST",
+                "REALITY | @v2rayngvpn | IR🇮🇷 | mega.streamingpower.sbs:7037 | 242.07ms | 0️⃣3️⃣"
+            ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "REALITY | @v2rayngvpn | IR🇮🇷 | mega.streamingpower.sbs:7037 | 242.07ms | 0️⃣3️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "REALITY | @v2rayngvpn | IR🇮🇷 | mega.streamingpower.sbs:7037 | 242.07ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "mega.streamingpower.sbs",
+            "server_port": 7037,
+            "uuid": "901de5a2-328b-4b8f-aed6-3037608cbe65",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "refersion.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "arBoDTjjrAY-rPVR4q1wDRtcN5arHKy1cQa2DyQjFTs",
+                    "short_id": "63d7029037ba6624"
+                }
+            }
         },
         {
             "tag": "direct",
