@@ -99,27 +99,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 41.78ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 218.6ms | 0️⃣2️⃣",
-                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 42.72ms | 0️⃣3️⃣",
-                "@v2ray1_ng | CA🇨🇦 | 51.79.86.182:42610 | 22.33ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 15.83ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 168.65ms | 0️⃣2️⃣",
+                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 85.55ms | 0️⃣3️⃣",
+                "@v2ray1_ng | CA🇨🇦 | 51.79.86.182:42610 | 18.83ms | 0️⃣1️⃣",
+                "@Hope_Net | DE🇩🇪 | de-v2ray.ipracevpn.com:80 | 191.31ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 41.78ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 218.6ms | 0️⃣2️⃣",
-                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 42.72ms | 0️⃣3️⃣",
-                "@v2ray1_ng | CA🇨🇦 | 51.79.86.182:42610 | 22.33ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 15.83ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 168.65ms | 0️⃣2️⃣",
+                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 85.55ms | 0️⃣3️⃣",
+                "@v2ray1_ng | CA🇨🇦 | 51.79.86.182:42610 | 18.83ms | 0️⃣1️⃣",
+                "@Hope_Net | DE🇩🇪 | de-v2ray.ipracevpn.com:80 | 191.31ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 41.78ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 15.83ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.66.168.209",
             "server_port": 443,
@@ -155,7 +157,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 218.6ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 168.65ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "us01.sh-cloudflare.sbs",
             "server_port": 8443,
@@ -191,7 +193,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 42.72ms | 0️⃣3️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 85.55ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "104.17.176.171",
             "server_port": 8080,
@@ -217,7 +219,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | CA🇨🇦 | 51.79.86.182:42610 | 22.33ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | CA🇨🇦 | 51.79.86.182:42610 | 18.83ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "51.79.86.182",
             "server_port": 42610,
@@ -231,6 +233,32 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "@Hope_Net | DE🇩🇪 | de-v2ray.ipracevpn.com:80 | 191.31ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "www.speedtest.net",
+            "server_port": 80,
+            "uuid": "6e3ac406-a15b-461d-8b05-ca01b284d9a0",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/racevpn",
+                "headers": {
+                    "Host": "www.speedtest.net"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
