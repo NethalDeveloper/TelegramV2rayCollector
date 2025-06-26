@@ -97,15 +97,78 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": null
+            "outbounds": [
+                "URL-TEST",
+                "REALITY | @flyv2ray | DE🇩🇪 | turbooserver.ultra-irancell.com:65001 | 147.99ms | 0️⃣2️⃣",
+                "REALITY | @flyv2ray | GB🇬🇧 | turboo-server.aftabz.com:65001 | 145.14ms | 0️⃣3️⃣"
+            ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": null,
+            "outbounds": [
+                "REALITY | @flyv2ray | DE🇩🇪 | turbooserver.ultra-irancell.com:65001 | 147.99ms | 0️⃣2️⃣",
+                "REALITY | @flyv2ray | GB🇬🇧 | turboo-server.aftabz.com:65001 | 145.14ms | 0️⃣3️⃣"
+            ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
+        },
+        {
+            "tag": "REALITY | @flyv2ray | DE🇩🇪 | turbooserver.ultra-irancell.com:65001 | 147.99ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "turbooserver.ultra-irancell.com",
+            "server_port": 65001,
+            "uuid": "turboo-server",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "paXwzQ6qDGHFfMlpY1vX6-lZrkI2gUzP3nXg91ZrBQw",
+                    "short_id": "0efa0583a943"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @flyv2ray | GB🇬🇧 | turboo-server.aftabz.com:65001 | 145.14ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "turboo-server.aftabz.com",
+            "server_port": 65001,
+            "uuid": "turboo-server",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "tgju.org",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "paXwzQ6qDGHFfMlpY1vX6-lZrkI2gUzP3nXg91ZrBQw",
+                    "short_id": "0efa0583a943"
+                }
+            }
         },
         {
             "tag": "direct",
