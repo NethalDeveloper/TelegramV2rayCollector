@@ -99,27 +99,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 87.66ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 232.59ms | 0️⃣2️⃣",
-                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 199.07ms | 0️⃣3️⃣",
-                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 75.46ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 23.49ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 17.57ms | 0️⃣2️⃣",
+                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 28.47ms | 0️⃣3️⃣",
+                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 65.85ms | 0️⃣1️⃣",
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 380.02ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 87.66ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 232.59ms | 0️⃣2️⃣",
-                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 199.07ms | 0️⃣3️⃣",
-                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 75.46ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 23.49ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 17.57ms | 0️⃣2️⃣",
+                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 28.47ms | 0️⃣3️⃣",
+                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 65.85ms | 0️⃣1️⃣",
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 380.02ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 87.66ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 23.49ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.66.168.209",
             "server_port": 443,
@@ -155,7 +157,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 232.59ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 17.57ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "us01.sh-cloudflare.sbs",
             "server_port": 8443,
@@ -191,7 +193,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 199.07ms | 0️⃣3️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 28.47ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "104.17.176.171",
             "server_port": 8080,
@@ -217,7 +219,7 @@
             }
         },
         {
-            "tag": "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 75.46ms | 0️⃣1️⃣",
+            "tag": "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 65.85ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "51.79.86.182",
             "server_port": 42610,
@@ -231,6 +233,32 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 380.02ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "42.2.113.136",
+            "server_port": 80,
+            "uuid": "98d2b660-7218-11ec-bd7c-f23c913c8d2b",
+            "security": "auto",
+            "alter_id": 2,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "42.2.113.136"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
