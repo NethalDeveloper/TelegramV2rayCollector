@@ -102,23 +102,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 13.47ms | 0️⃣1️⃣",
-                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 20.02ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 25.4ms | 0️⃣1️⃣",
+                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 22.48ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 100-62-189-118.s5.db-link01.top:2052 | 306.27ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 13.47ms | 0️⃣1️⃣",
-                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 20.02ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 25.4ms | 0️⃣1️⃣",
+                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 22.48ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 100-62-189-118.s5.db-link01.top:2052 | 306.27ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 13.47ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 25.4ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.17.176.171",
             "server_port": 8080,
@@ -144,7 +146,7 @@
             }
         },
         {
-            "tag": "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 20.02ms | 0️⃣1️⃣",
+            "tag": "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 22.48ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "51.79.86.182",
             "server_port": 42610,
@@ -158,6 +160,32 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | 100-62-189-118.s5.db-link01.top:2052 | 306.27ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "104.17.221.248",
+            "server_port": 2052,
+            "uuid": "4b36625c-b9d9-3ea6-aed5-86d62c70e16d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/dabai.in104.24.204.143",
+                "headers": {
+                    "Host": "104.17.221.248"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
