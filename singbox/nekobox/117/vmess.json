@@ -100,17 +100,16 @@
             "outbounds": [
                 "URL-TEST",
                 "RELAY🚩",
-                "CA🇨🇦",
-                "FR🇫🇷"
+                "CA🇨🇦"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 61.37ms | 0️⃣1️⃣",
-                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 19.51ms | 0️⃣1️⃣",
-                "@Hope_Net | FR🇫🇷 | irvideo.cfd:443 | 135.07ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 23.11ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 100-62-189-118.s5.db-link01.top:2052 | 231ms | 0️⃣1️⃣",
+                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 22.7ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -120,7 +119,8 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 61.37ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 23.11ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 100-62-189-118.s5.db-link01.top:2052 | 231ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -130,24 +130,14 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 19.51ms | 0️⃣1️⃣"
+                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 22.7ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "FR🇫🇷",
-            "type": "urltest",
-            "outbounds": [
-                "@Hope_Net | FR🇫🇷 | irvideo.cfd:443 | 135.07ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 61.37ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 23.11ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.17.176.171",
             "server_port": 8080,
@@ -173,7 +163,33 @@
             }
         },
         {
-            "tag": "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 19.51ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | 100-62-189-118.s5.db-link01.top:2052 | 231ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "198.41.209.70",
+            "server_port": 2052,
+            "uuid": "4b36625c-b9d9-3ea6-aed5-86d62c70e16d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/dabai.in104.24.204.143",
+                "headers": {
+                    "Host": "198.41.209.70"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 22.7ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "51.79.86.182",
             "server_port": 42610,
@@ -187,42 +203,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "@Hope_Net | FR🇫🇷 | irvideo.cfd:443 | 135.07ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "152.70.57.182",
-            "server_port": 443,
-            "uuid": "e537f2f5-2a0c-4f59-92c9-832ca6433bf3",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "irvideo.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/linkws",
-                "headers": {
-                    "Host": "152.70.57.182"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
