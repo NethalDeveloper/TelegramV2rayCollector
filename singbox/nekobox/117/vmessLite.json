@@ -99,27 +99,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 64.55ms | 0️⃣1️⃣",
-                "@free4allVPN | SG🇸🇬 | 192.53.113.156:10002 | 195.66ms | 0️⃣2️⃣",
-                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 26.79ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 100-241-177-44.s5.db-link01.top:2082 | 221.51ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 180.83ms | 0️⃣1️⃣",
+                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 22.35ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top:443 | 309.86ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 64.55ms | 0️⃣1️⃣",
-                "@free4allVPN | SG🇸🇬 | 192.53.113.156:10002 | 195.66ms | 0️⃣2️⃣",
-                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 26.79ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 100-241-177-44.s5.db-link01.top:2082 | 221.51ms | 0️⃣1️⃣"
+                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 180.83ms | 0️⃣1️⃣",
+                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 22.35ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top:443 | 309.86ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 64.55ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 180.83ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.17.176.171",
             "server_port": 8080,
@@ -145,24 +143,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | SG🇸🇬 | 192.53.113.156:10002 | 195.66ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "192.53.113.156",
-            "server_port": 10002,
-            "uuid": "036a28c3-5c8d-4df3-a79b-9da622640f2b",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 26.79ms | 0️⃣1️⃣",
+            "tag": "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 22.35ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "51.79.86.182",
             "server_port": 42610,
@@ -179,11 +160,11 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | 100-241-177-44.s5.db-link01.top:2082 | 221.51ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top:443 | 309.86ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.17.213.241",
-            "server_port": 2082,
-            "uuid": "4b36625c-b9d9-3ea6-aed5-86d62c70e16d",
+            "server": "1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top",
+            "server_port": 443,
+            "uuid": "5f726fe3-d82e-4da5-a711-8af0cbb2b682",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -194,11 +175,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/\/dabai.in104.16.174.235",
+                "path": "\/\/azumase.ren",
                 "headers": {
-                    "Host": "104.17.213.241"
+                    "Host": "1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
