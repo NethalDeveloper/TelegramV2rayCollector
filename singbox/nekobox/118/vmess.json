@@ -111,9 +111,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 20.72ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 21.56ms | 0️⃣2️⃣",
-                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 96.57ms | 0️⃣3️⃣"
+                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 38.61ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 128.17ms | 0️⃣2️⃣",
+                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 95.91ms | 0️⃣3️⃣",
+                "@Hope_Net | RELAY🚩 | qurantv.iribquran.com:2053 | 108.12ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -123,16 +124,17 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 20.72ms | 0️⃣1️⃣",
-                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 21.56ms | 0️⃣2️⃣",
-                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 96.57ms | 0️⃣3️⃣"
+                "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 38.61ms | 0️⃣1️⃣",
+                "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 128.17ms | 0️⃣2️⃣",
+                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 95.91ms | 0️⃣3️⃣",
+                "@Hope_Net | RELAY🚩 | qurantv.iribquran.com:2053 | 108.12ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 20.72ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | maXNEtVIP-usA-VP3.nETKH3.SiTE:443 | 38.61ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.66.168.209",
             "server_port": 443,
@@ -168,7 +170,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 21.56ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | us01.sh-cloudflare.sbs:8443 | 128.17ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "us01.sh-cloudflare.sbs",
             "server_port": 8443,
@@ -204,7 +206,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 96.57ms | 0️⃣3️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 95.91ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "104.17.176.171",
             "server_port": 8080,
@@ -224,6 +226,42 @@
                 "path": "\/\/nasnet\/cdn",
                 "headers": {
                     "Host": "104.17.176.171"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | qurantv.iribquran.com:2053 | 108.12ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "104.21.16.100",
+            "server_port": 2053,
+            "uuid": "eb817168-5f83-4fba-af99-881ec0e547b1",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "104.21.16.100",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "104.21.16.100"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
