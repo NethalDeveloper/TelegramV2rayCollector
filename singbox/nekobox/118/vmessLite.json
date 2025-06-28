@@ -104,27 +104,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 27.75ms | 0️⃣1️⃣",
-                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 22.43ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | hknbyivfffj.site:443 | 34.81ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 27.38ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 57.82ms | 0️⃣1️⃣",
+                "@free4allVPN | SG🇸🇬 | 192.53.113.156:10002 | 195.98ms | 0️⃣2️⃣",
+                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 40.51ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 27.75ms | 0️⃣1️⃣",
-                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 22.43ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | hknbyivfffj.site:443 | 34.81ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 27.38ms | 0️⃣2️⃣"
+                "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 57.82ms | 0️⃣1️⃣",
+                "@free4allVPN | SG🇸🇬 | 192.53.113.156:10002 | 195.98ms | 0️⃣2️⃣",
+                "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 40.51ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 27.75ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | RELAY🚩 | ke7hz36ewz-4515017473.mashallahbet.com:8080 | 57.82ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.17.176.171",
             "server_port": 8080,
@@ -150,7 +148,24 @@
             }
         },
         {
-            "tag": "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 22.43ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | SG🇸🇬 | 192.53.113.156:10002 | 195.98ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "192.53.113.156",
+            "server_port": 10002,
+            "uuid": "036a28c3-5c8d-4df3-a79b-9da622640f2b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@free1_vpn | CA🇨🇦 | 51.79.86.182:42610 | 40.51ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "51.79.86.182",
             "server_port": 42610,
@@ -164,68 +179,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "@Hope_Net | RELAY🚩 | hknbyivfffj.site:443 | 34.81ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "hknbyivfffj.site",
-            "server_port": 443,
-            "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "hknbyivfffj.site",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/rbqqvws",
-                "headers": {
-                    "Host": "hknbyivfffj.site"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | RELAY🚩 | chunchuan.kejixiaoqi666.store:80 | 27.38ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "104.17.221.248",
-            "server_port": 80,
-            "uuid": "e6543319-0574-42ac-b778-1c4325d626f5",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "104.17.221.248"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
