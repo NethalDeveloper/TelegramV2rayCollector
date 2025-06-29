@@ -102,25 +102,71 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@PrivateVPNs | FR🇫🇷 | 15.188.36.170:22222 | 117.74ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.188.36.170:22223 | 117.61ms | 0️⃣1️⃣",
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 728.76ms | 0️⃣1️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 3.64.102.139:22222 | 94.58ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 15.237.11.16:22222 | 86.4ms | 0️⃣2️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 15.188.36.170:22222 | 85.83ms | 0️⃣3️⃣",
+                "@DirectVPN | FR🇫🇷 | 15.237.11.16:22223 | 87.41ms | 0️⃣1️⃣",
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 710.2ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 15.188.36.170:22222 | 117.74ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.188.36.170:22223 | 117.61ms | 0️⃣1️⃣",
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 728.76ms | 0️⃣1️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 3.64.102.139:22222 | 94.58ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 15.237.11.16:22222 | 86.4ms | 0️⃣2️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 15.188.36.170:22222 | 85.83ms | 0️⃣3️⃣",
+                "@DirectVPN | FR🇫🇷 | 15.237.11.16:22223 | 87.41ms | 0️⃣1️⃣",
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 710.2ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 15.188.36.170:22222 | 117.74ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | DE🇩🇪 | 3.64.102.139:22222 | 94.58ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "3.64.102.139",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@PrivateVPNs | FR🇫🇷 | 15.237.11.16:22222 | 86.4ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "15.237.11.16",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@PrivateVPNs | FR🇫🇷 | 15.188.36.170:22222 | 85.83ms | 0️⃣3️⃣",
             "type": "trojan",
             "server": "15.188.36.170",
             "server_port": 22222,
@@ -141,9 +187,9 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 15.188.36.170:22223 | 117.61ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 15.237.11.16:22223 | 87.41ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "15.188.36.170",
+            "server": "15.237.11.16",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -162,7 +208,7 @@
             }
         },
         {
-            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 728.76ms | 0️⃣1️⃣",
+            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 710.2ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "df.xiguajiasu.xyz",
             "server_port": 46002,
