@@ -104,6 +104,7 @@
                 "URL-TEST",
                 "JP🇯🇵",
                 "CA🇨🇦",
+                "RELAY🚩",
                 "CN🇨🇳"
             ]
         },
@@ -111,9 +112,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 148.01ms | 0️⃣1️⃣",
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 94.72ms | 0️⃣2️⃣",
-                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 375.96ms | 0️⃣1️⃣"
+                "@free4allVPN | JP🇯🇵 | 47.79.88.113:53710 | 112.34ms | 0️⃣1️⃣",
+                "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 115.99ms | 0️⃣2️⃣",
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 119.82ms | 0️⃣3️⃣",
+                "@Hope_Net | RELAY🚩 | cfcdn2.sanfencdn9.com:2052 | 1198.75ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 104.19.47.126:8080 | 8.54ms | 0️⃣2️⃣",
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 499.61ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -123,7 +127,8 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 148.01ms | 0️⃣1️⃣"
+                "@free4allVPN | JP🇯🇵 | 47.79.88.113:53710 | 112.34ms | 0️⃣1️⃣",
+                "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 115.99ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,7 +138,18 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 94.72ms | 0️⃣2️⃣"
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 119.82ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "@Hope_Net | RELAY🚩 | cfcdn2.sanfencdn9.com:2052 | 1198.75ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 104.19.47.126:8080 | 8.54ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,14 +159,31 @@
             "tag": "CN🇨🇳",
             "type": "urltest",
             "outbounds": [
-                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 375.96ms | 0️⃣1️⃣"
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 499.61ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 148.01ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | JP🇯🇵 | 47.79.88.113:53710 | 112.34ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "47.79.88.113",
+            "server_port": 53710,
+            "uuid": "1db838d0-ecd2-4b73-a7f8-5af6b401d833",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 115.99ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "5.253.41.147",
             "server_port": 27750,
@@ -167,7 +200,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 94.72ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 119.82ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "51.79.102.253",
             "server_port": 80,
@@ -193,7 +226,59 @@
             }
         },
         {
-            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 375.96ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | cfcdn2.sanfencdn9.com:2052 | 1198.75ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "cfcdn2.sanfencdn9.com",
+            "server_port": 2052,
+            "uuid": "ab1ee1ac-884c-44dc-ab65-d533d32e2b1a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "cfcdn2.sanfencdn9.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | 104.19.47.126:8080 | 8.54ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "104.19.47.126",
+            "server_port": 8080,
+            "uuid": "b551aa22-22af-11ee-b8d8-f23c932eb68d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "104.19.47.126"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 499.61ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "42.2.113.136",
             "server_port": 80,
