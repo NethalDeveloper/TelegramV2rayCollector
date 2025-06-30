@@ -102,27 +102,44 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 149.9ms | 0️⃣1️⃣",
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 60.09ms | 0️⃣2️⃣",
-                "@Hope_Net | RELAY🚩 | 104.19.47.126:8080 | 14.64ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 104.19.21.240:2052 | 14.66ms | 0️⃣2️⃣"
+                "@free4allVPN | JP🇯🇵 | 47.79.88.113:53710 | 110.19ms | 0️⃣1️⃣",
+                "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 118.45ms | 0️⃣2️⃣",
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 128.18ms | 0️⃣3️⃣",
+                "@Hope_Net | RELAY🚩 | 104.19.47.16:8080 | 8.18ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 149.9ms | 0️⃣1️⃣",
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 60.09ms | 0️⃣2️⃣",
-                "@Hope_Net | RELAY🚩 | 104.19.47.126:8080 | 14.64ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | 104.19.21.240:2052 | 14.66ms | 0️⃣2️⃣"
+                "@free4allVPN | JP🇯🇵 | 47.79.88.113:53710 | 110.19ms | 0️⃣1️⃣",
+                "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 118.45ms | 0️⃣2️⃣",
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 128.18ms | 0️⃣3️⃣",
+                "@Hope_Net | RELAY🚩 | 104.19.47.16:8080 | 8.18ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 149.9ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | JP🇯🇵 | 47.79.88.113:53710 | 110.19ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "47.79.88.113",
+            "server_port": 53710,
+            "uuid": "1db838d0-ecd2-4b73-a7f8-5af6b401d833",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 118.45ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "5.253.41.147",
             "server_port": 27750,
@@ -139,7 +156,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 60.09ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 128.18ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "51.79.102.253",
             "server_port": 80,
@@ -165,37 +182,11 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | 104.19.47.126:8080 | 14.64ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | 104.19.47.16:8080 | 8.18ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.19.47.126",
+            "server": "104.19.47.16",
             "server_port": 8080,
             "uuid": "b551aa22-22af-11ee-b8d8-f23c932eb68d",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": ""
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | RELAY🚩 | 104.19.21.240:2052 | 14.66ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "104.19.21.240",
-            "server_port": 2052,
-            "uuid": "d6b6d982-d52f-465a-b988-85670b23f64a",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
