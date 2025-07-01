@@ -102,44 +102,23 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@free4allVPN | JP🇯🇵 | 47.79.88.113:53710 | 105.83ms | 0️⃣1️⃣",
-                "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 107.58ms | 0️⃣2️⃣",
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 67.28ms | 0️⃣3️⃣",
-                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 404.76ms | 0️⃣1️⃣"
+                "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 174.38ms | 0️⃣1️⃣",
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 95.81ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | JP🇯🇵 | 47.79.88.113:53710 | 105.83ms | 0️⃣1️⃣",
-                "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 107.58ms | 0️⃣2️⃣",
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 67.28ms | 0️⃣3️⃣",
-                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 404.76ms | 0️⃣1️⃣"
+                "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 174.38ms | 0️⃣1️⃣",
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 95.81ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | JP🇯🇵 | 47.79.88.113:53710 | 105.83ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "47.79.88.113",
-            "server_port": 53710,
-            "uuid": "1db838d0-ecd2-4b73-a7f8-5af6b401d833",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 107.58ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 174.38ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "5.253.41.147",
             "server_port": 27750,
@@ -156,7 +135,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 67.28ms | 0️⃣3️⃣",
+            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 95.81ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "51.79.102.253",
             "server_port": 80,
@@ -176,32 +155,6 @@
                 "path": "\/\/IOebhLMhl1CTbFHbL95myfRX2",
                 "headers": {
                     "Host": "51.79.102.253"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 404.76ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "42.2.113.136",
-            "server_port": 80,
-            "uuid": "98d2b660-7218-11ec-bd7c-f23c913c8d2b",
-            "security": "auto",
-            "alter_id": 2,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "42.2.113.136"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
