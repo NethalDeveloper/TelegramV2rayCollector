@@ -107,8 +107,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 152.3ms | 0️⃣1️⃣",
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 63.06ms | 0️⃣2️⃣"
+                "@free4allVPN | JP🇯🇵 | 47.79.88.113:53710 | 110.25ms | 0️⃣1️⃣",
+                "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 116.28ms | 0️⃣2️⃣",
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 78.75ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -118,7 +119,8 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 152.3ms | 0️⃣1️⃣"
+                "@free4allVPN | JP🇯🇵 | 47.79.88.113:53710 | 110.25ms | 0️⃣1️⃣",
+                "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 116.28ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -128,14 +130,31 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 63.06ms | 0️⃣2️⃣"
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 78.75ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 152.3ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | JP🇯🇵 | 47.79.88.113:53710 | 110.25ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "47.79.88.113",
+            "server_port": 53710,
+            "uuid": "1db838d0-ecd2-4b73-a7f8-5af6b401d833",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@free4allVPN | JP🇯🇵 | 5.253.41.147:27750 | 116.28ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "5.253.41.147",
             "server_port": 27750,
@@ -152,7 +171,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 63.06ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 78.75ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "51.79.102.253",
             "server_port": 80,
