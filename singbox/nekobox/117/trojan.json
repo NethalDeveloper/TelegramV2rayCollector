@@ -99,8 +99,10 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "DE🇩🇪",
                 "FR🇫🇷",
                 "RELAY🚩",
+                "CZ🇨🇿",
                 "JP🇯🇵"
             ]
         },
@@ -108,10 +110,22 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.39.154.143:22222 | 150.25ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.154.143:22223 | 153.85ms | 0️⃣1️⃣",
-                "a@104.18.26.90:443?path=\/trUXByA1rnbs4YQ1Xw?ed=2560&security=tls&alpn=h3,h2,http\/1.1&host=s1.mitivpn.workers.dev&fp=randomized&type=ws&sni=S1.mitivpN.wOrKeRS.DEV#@v2ray1_ng | RELAY🚩 | 104.18.26.90:443 | 1.78ms | 0️⃣1️⃣",
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 507.92ms | 0️⃣1️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 3.121.254.201:22222 | 92.95ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.36.44.43:22222 | 109.35ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.36.44.43:22223 | 85.89ms | 0️⃣1️⃣",
+                "a@104.18.26.90:443?path=\/trUXByA1rnbs4YQ1Xw?ed=2560&security=tls&alpn=h3,h2,http\/1.1&host=s1.mitivpn.workers.dev&fp=randomized&type=ws&sni=S1.mitivpN.wOrKeRS.DEV#@v2ray1_ng | RELAY🚩 | 104.18.26.90:443 | 1.95ms | 0️⃣1️⃣",
+                "@v2ray1_ng | CZ🇨🇿 | 85.255.9.247:1935 | 99.59ms | 0️⃣2️⃣",
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 645.29ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "@PrivateVPNs | DE🇩🇪 | 3.121.254.201:22222 | 92.95ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -121,8 +135,8 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.39.154.143:22222 | 150.25ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.154.143:22223 | 153.85ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.36.44.43:22222 | 109.35ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.36.44.43:22223 | 85.89ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -132,7 +146,17 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "a@104.18.26.90:443?path=\/trUXByA1rnbs4YQ1Xw?ed=2560&security=tls&alpn=h3,h2,http\/1.1&host=s1.mitivpn.workers.dev&fp=randomized&type=ws&sni=S1.mitivpN.wOrKeRS.DEV#@v2ray1_ng | RELAY🚩 | 104.18.26.90:443 | 1.78ms | 0️⃣1️⃣"
+                "a@104.18.26.90:443?path=\/trUXByA1rnbs4YQ1Xw?ed=2560&security=tls&alpn=h3,h2,http\/1.1&host=s1.mitivpn.workers.dev&fp=randomized&type=ws&sni=S1.mitivpN.wOrKeRS.DEV#@v2ray1_ng | RELAY🚩 | 104.18.26.90:443 | 1.95ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CZ🇨🇿",
+            "type": "urltest",
+            "outbounds": [
+                "@v2ray1_ng | CZ🇨🇿 | 85.255.9.247:1935 | 99.59ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,16 +166,16 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 507.92ms | 0️⃣1️⃣"
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 645.29ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.39.154.143:22222 | 150.25ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | DE🇩🇪 | 3.121.254.201:22222 | 92.95ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "13.39.154.143",
+            "server": "3.121.254.201",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -170,9 +194,30 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.39.154.143:22223 | 153.85ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.36.44.43:22222 | 109.35ms | 0️⃣2️⃣",
             "type": "trojan",
-            "server": "13.39.154.143",
+            "server": "13.36.44.43",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | FR🇫🇷 | 13.36.44.43:22223 | 85.89ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "13.36.44.43",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -191,7 +236,7 @@
             }
         },
         {
-            "tag": "a@104.18.26.90:443?path=\/trUXByA1rnbs4YQ1Xw?ed=2560&security=tls&alpn=h3,h2,http\/1.1&host=s1.mitivpn.workers.dev&fp=randomized&type=ws&sni=S1.mitivpN.wOrKeRS.DEV#@v2ray1_ng | RELAY🚩 | 104.18.26.90:443 | 1.78ms | 0️⃣1️⃣",
+            "tag": "a@104.18.26.90:443?path=\/trUXByA1rnbs4YQ1Xw?ed=2560&security=tls&alpn=h3,h2,http\/1.1&host=s1.mitivpn.workers.dev&fp=randomized&type=ws&sni=S1.mitivpN.wOrKeRS.DEV#@v2ray1_ng | RELAY🚩 | 104.18.26.90:443 | 1.95ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "Xa4^l(;.;B",
             "server_port": 0,
@@ -203,7 +248,28 @@
             }
         },
         {
-            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 507.92ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | CZ🇨🇿 | 85.255.9.247:1935 | 99.59ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "85.255.9.247",
+            "server_port": 1935,
+            "password": "mZMgM1vKw5",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "x1-czech-aruba-v2.devefun.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 645.29ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "df.xiguajiasu.xyz",
             "server_port": 46002,
