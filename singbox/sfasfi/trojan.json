@@ -102,6 +102,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "DE🇩🇪",
+                "CZ🇨🇿",
                 "JP🇯🇵"
             ]
         },
@@ -109,7 +111,31 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 700.49ms | 0️⃣1️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 3.76.173.190:22222 | 124.27ms | 0️⃣1️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 3.74.20.115:22222 | 121.3ms | 0️⃣2️⃣",
+                "@v2ray1_ng | CZ🇨🇿 | 85.255.9.247:1935 | 129.22ms | 0️⃣1️⃣",
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 695.78ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "@PrivateVPNs | DE🇩🇪 | 3.76.173.190:22222 | 124.27ms | 0️⃣1️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 3.74.20.115:22222 | 121.3ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CZ🇨🇿",
+            "type": "urltest",
+            "outbounds": [
+                "@v2ray1_ng | CZ🇨🇿 | 85.255.9.247:1935 | 129.22ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -119,14 +145,77 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 700.49ms | 0️⃣1️⃣"
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 695.78ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 700.49ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | DE🇩🇪 | 3.76.173.190:22222 | 124.27ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "3.76.173.190",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@PrivateVPNs | DE🇩🇪 | 3.74.20.115:22222 | 121.3ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "3.74.20.115",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | CZ🇨🇿 | 85.255.9.247:1935 | 129.22ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "85.255.9.247",
+            "server_port": 1935,
+            "password": "mZMgM1vKw5",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "x1-czech-aruba-v2.devefun.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 695.78ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "df.xiguajiasu.xyz",
             "server_port": 46002,
