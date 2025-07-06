@@ -105,6 +105,7 @@
             "outbounds": [
                 "URL-TEST",
                 "PT🇵🇹",
+                "HK🇭🇰",
                 "JP🇯🇵"
             ]
         },
@@ -112,8 +113,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@azadi_az_inja_migzare | PT🇵🇹 | 185.231.233.173:989 | 116.38ms | 0️⃣1️⃣",
-                "@free4allVPN | JP🇯🇵 | 149.22.87.204:443 | 159.45ms | 0️⃣1️⃣"
+                "@azadi_az_inja_migzare | PT🇵🇹 | 185.231.233.173:989 | 130.14ms | 0️⃣1️⃣",
+                "@azadi_az_inja_migzare | HK🇭🇰 | 154.223.21.221:989 | 194.67ms | 0️⃣2️⃣",
+                "@free4allVPN | JP🇯🇵 | 149.22.87.204:443 | 142.24ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -123,7 +125,17 @@
             "tag": "PT🇵🇹",
             "type": "urltest",
             "outbounds": [
-                "@azadi_az_inja_migzare | PT🇵🇹 | 185.231.233.173:989 | 116.38ms | 0️⃣1️⃣"
+                "@azadi_az_inja_migzare | PT🇵🇹 | 185.231.233.173:989 | 130.14ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "@azadi_az_inja_migzare | HK🇭🇰 | 154.223.21.221:989 | 194.67ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,14 +145,14 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | JP🇯🇵 | 149.22.87.204:443 | 159.45ms | 0️⃣1️⃣"
+                "@free4allVPN | JP🇯🇵 | 149.22.87.204:443 | 142.24ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@azadi_az_inja_migzare | PT🇵🇹 | 185.231.233.173:989 | 116.38ms | 0️⃣1️⃣",
+            "tag": "@azadi_az_inja_migzare | PT🇵🇹 | 185.231.233.173:989 | 130.14ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "185.231.233.173",
             "server_port": 989,
@@ -150,7 +162,17 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@free4allVPN | JP🇯🇵 | 149.22.87.204:443 | 159.45ms | 0️⃣1️⃣",
+            "tag": "@azadi_az_inja_migzare | HK🇭🇰 | 154.223.21.221:989 | 194.67ms | 0️⃣2️⃣",
+            "type": "shadowsocks",
+            "server": "154.223.21.221",
+            "server_port": 989,
+            "method": "aes-256-cfb",
+            "password": "f8f7aCzcPKbsF8p3",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@free4allVPN | JP🇯🇵 | 149.22.87.204:443 | 142.24ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "149.22.87.204",
             "server_port": 443,
