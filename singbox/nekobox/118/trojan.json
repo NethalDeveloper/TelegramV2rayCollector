@@ -105,7 +105,6 @@
             "outbounds": [
                 "URL-TEST",
                 "DE🇩🇪",
-                "FR🇫🇷",
                 "CZ🇨🇿",
                 "JP🇯🇵"
             ]
@@ -114,11 +113,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | DE🇩🇪 | 3.121.254.201:22222 | 92.84ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.36.44.43:22222 | 84.65ms | 0️⃣2️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 15.236.33.94:22222 | 85.9ms | 0️⃣3️⃣",
-                "@v2ray1_ng | CZ🇨🇿 | 85.255.9.247:1935 | 103.17ms | 0️⃣1️⃣",
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 744.91ms | 0️⃣1️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 3.121.254.201:22222 | 110.49ms | 0️⃣1️⃣",
+                "@v2ray1_ng | CZ🇨🇿 | 85.255.9.247:1935 | 119.16ms | 0️⃣1️⃣",
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 672.7ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -128,18 +125,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | DE🇩🇪 | 3.121.254.201:22222 | 92.84ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "FR🇫🇷",
-            "type": "urltest",
-            "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.36.44.43:22222 | 84.65ms | 0️⃣2️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 15.236.33.94:22222 | 85.9ms | 0️⃣3️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 3.121.254.201:22222 | 110.49ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -149,7 +135,7 @@
             "tag": "CZ🇨🇿",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | CZ🇨🇿 | 85.255.9.247:1935 | 103.17ms | 0️⃣1️⃣"
+                "@v2ray1_ng | CZ🇨🇿 | 85.255.9.247:1935 | 119.16ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -159,14 +145,14 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 744.91ms | 0️⃣1️⃣"
+                "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 672.7ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | DE🇩🇪 | 3.121.254.201:22222 | 92.84ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | DE🇩🇪 | 3.121.254.201:22222 | 110.49ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "3.121.254.201",
             "server_port": 22222,
@@ -187,49 +173,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.36.44.43:22222 | 84.65ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "13.36.44.43",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 15.236.33.94:22222 | 85.9ms | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "15.236.33.94",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@v2ray1_ng | CZ🇨🇿 | 85.255.9.247:1935 | 103.17ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | CZ🇨🇿 | 85.255.9.247:1935 | 119.16ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "85.255.9.247",
             "server_port": 1935,
@@ -250,7 +194,7 @@
             }
         },
         {
-            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 744.91ms | 0️⃣1️⃣",
+            "tag": "@yaney_01 | JP🇯🇵 | df.xiguajiasu.xyz:46002 | 672.7ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "df.xiguajiasu.xyz",
             "server_port": 46002,
