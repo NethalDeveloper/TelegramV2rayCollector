@@ -100,48 +100,15 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": [
-                "URL-TEST",
-                "REALITY | @flyv2ray | DE🇩🇪 | 91.99.176.57:2025 | 92.74ms | 0️⃣2️⃣"
-            ]
+            "outbounds": null
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [
-                "REALITY | @flyv2ray | DE🇩🇪 | 91.99.176.57:2025 | 92.74ms | 0️⃣2️⃣"
-            ],
+            "outbounds": null,
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
-        },
-        {
-            "tag": "REALITY | @flyv2ray | DE🇩🇪 | 91.99.176.57:2025 | 92.74ms | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "91.99.176.57",
-            "server_port": 2025,
-            "uuid": "Telegram--SRCVPN--SRCVPN-",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "ZYOJiXfnupbX7P2IG8VmWZrZCA9QOY39GYYiTyZ21UE",
-                    "short_id": "85decdebbcf6c7bb"
-                }
-            }
         },
         {
             "tag": "direct",
