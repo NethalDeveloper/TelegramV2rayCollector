@@ -99,25 +99,48 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@PrivateVPNs | DE🇩🇪 | 3.67.117.55:22222 | 170.26ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 15.188.5.40:22222 | 153.34ms | 0️⃣2️⃣",
-                "@v2ray1_ng | ES🇪🇸 | 109.234.211.66:8443 | 1.8ms | 0️⃣1️⃣"
+                "@iP_CF | CZ🇨🇿 | 85.255.9.247:1935 | 100.19ms | 0️⃣1️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 3.67.117.55:22222 | 105.1ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 15.188.5.40:22222 | 87.29ms | 0️⃣2️⃣",
+                "@v2ray1_ng | ES🇪🇸 | 109.234.211.66:8443 | 1.84ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | DE🇩🇪 | 3.67.117.55:22222 | 170.26ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 15.188.5.40:22222 | 153.34ms | 0️⃣2️⃣",
-                "@v2ray1_ng | ES🇪🇸 | 109.234.211.66:8443 | 1.8ms | 0️⃣1️⃣"
+                "@iP_CF | CZ🇨🇿 | 85.255.9.247:1935 | 100.19ms | 0️⃣1️⃣",
+                "@PrivateVPNs | DE🇩🇪 | 3.67.117.55:22222 | 105.1ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 15.188.5.40:22222 | 87.29ms | 0️⃣2️⃣",
+                "@v2ray1_ng | ES🇪🇸 | 109.234.211.66:8443 | 1.84ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | DE🇩🇪 | 3.67.117.55:22222 | 170.26ms | 0️⃣1️⃣",
+            "tag": "@iP_CF | CZ🇨🇿 | 85.255.9.247:1935 | 100.19ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "85.255.9.247",
+            "server_port": 1935,
+            "password": "mZMgM1vKw5",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "x1-czech-aruba-v2.devefun.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@PrivateVPNs | DE🇩🇪 | 3.67.117.55:22222 | 105.1ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "3.67.117.55",
             "server_port": 22222,
@@ -138,7 +161,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 15.188.5.40:22222 | 153.34ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 15.188.5.40:22222 | 87.29ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "15.188.5.40",
             "server_port": 22222,
@@ -159,7 +182,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | ES🇪🇸 | 109.234.211.66:8443 | 1.8ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | ES🇪🇸 | 109.234.211.66:8443 | 1.84ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "109.234.211.66",
             "server_port": 8443,
