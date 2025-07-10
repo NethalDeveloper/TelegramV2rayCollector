@@ -104,8 +104,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "CZ🇨🇿",
                 "FR🇫🇷",
-                "DE🇩🇪",
                 "ES🇪🇸"
             ]
         },
@@ -113,9 +113,20 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.37.65.149:22222 | 153.36ms | 0️⃣1️⃣",
-                "@PrivateVPNs | DE🇩🇪 | 3.124.76.127:22222 | 173.1ms | 0️⃣2️⃣",
-                "@v2ray1_ng | ES🇪🇸 | 109.234.211.66:8443 | 1.96ms | 0️⃣1️⃣"
+                "@iP_CF | CZ🇨🇿 | 85.255.9.247:1935 | 97.99ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.37.65.149:22222 | 86.4ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.37.65.149:22223 | 86.37ms | 0️⃣1️⃣",
+                "@v2ray1_ng | ES🇪🇸 | 109.234.211.66:8443 | 5.41ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "CZ🇨🇿",
+            "type": "urltest",
+            "outbounds": [
+                "@iP_CF | CZ🇨🇿 | 85.255.9.247:1935 | 97.99ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -125,17 +136,8 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.37.65.149:22222 | 153.36ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "@PrivateVPNs | DE🇩🇪 | 3.124.76.127:22222 | 173.1ms | 0️⃣2️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.37.65.149:22222 | 86.4ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.37.65.149:22223 | 86.37ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -145,14 +147,35 @@
             "tag": "ES🇪🇸",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | ES🇪🇸 | 109.234.211.66:8443 | 1.96ms | 0️⃣1️⃣"
+                "@v2ray1_ng | ES🇪🇸 | 109.234.211.66:8443 | 5.41ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.37.65.149:22222 | 153.36ms | 0️⃣1️⃣",
+            "tag": "@iP_CF | CZ🇨🇿 | 85.255.9.247:1935 | 97.99ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "85.255.9.247",
+            "server_port": 1935,
+            "password": "mZMgM1vKw5",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "x1-czech-aruba-v2.devefun.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.37.65.149:22222 | 86.4ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "13.37.65.149",
             "server_port": 22222,
@@ -173,11 +196,11 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | DE🇩🇪 | 3.124.76.127:22222 | 173.1ms | 0️⃣2️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 13.37.65.149:22223 | 86.37ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "3.124.76.127",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
+            "server": "13.37.65.149",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -194,7 +217,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | ES🇪🇸 | 109.234.211.66:8443 | 1.96ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | ES🇪🇸 | 109.234.211.66:8443 | 5.41ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "109.234.211.66",
             "server_port": 8443,
