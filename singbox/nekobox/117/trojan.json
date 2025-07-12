@@ -99,26 +99,28 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "RELAY🚩",
-                "DE🇩🇪"
+                "FR🇫🇷",
+                "DE🇩🇪",
+                "RELAY🚩"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | RELAY🚩 | 104.25.165.81:8443 | 2.69ms | 0️⃣1️⃣",
-                "@v2ray1_ng | DE🇩🇪 | 104.248.18.1:1935 | 109.29ms | 0️⃣2️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 51.44.58.153:22222 | 85.33ms | 0️⃣1️⃣",
+                "@v2ray1_ng | DE🇩🇪 | 104.248.18.1:1935 | 89.06ms | 0️⃣1️⃣",
+                "@v2ray1_ng | RELAY🚩 | 104.25.165.81:8443 | 2ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "RELAY🚩",
+            "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | RELAY🚩 | 104.25.165.81:8443 | 2.69ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 51.44.58.153:22222 | 85.33ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -128,14 +130,66 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | DE🇩🇪 | 104.248.18.1:1935 | 109.29ms | 0️⃣2️⃣"
+                "@v2ray1_ng | DE🇩🇪 | 104.248.18.1:1935 | 89.06ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2ray1_ng | RELAY🚩 | 104.25.165.81:8443 | 2.69ms | 0️⃣1️⃣",
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "@v2ray1_ng | RELAY🚩 | 104.25.165.81:8443 | 2ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@PrivateVPNs | FR🇫🇷 | 51.44.58.153:22222 | 85.33ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "51.44.58.153",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | DE🇩🇪 | 104.248.18.1:1935 | 89.06ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "104.248.18.1",
+            "server_port": 1935,
+            "password": "6gZh2JbfhQ",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "x1-germany-digitalocean-v2.devefun.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | RELAY🚩 | 104.25.165.81:8443 | 2ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "104.25.165.81",
             "server_port": 8443,
@@ -159,27 +213,6 @@
                 "path": "\/\/Az1.vpn.33.TOP\/?ed=2560",
                 "headers": {
                     "Host": "top-azx.pages.dev"
-                }
-            }
-        },
-        {
-            "tag": "@v2ray1_ng | DE🇩🇪 | 104.248.18.1:1935 | 109.29ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "104.248.18.1",
-            "server_port": 1935,
-            "password": "6gZh2JbfhQ",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "x1-germany-digitalocean-v2.devefun.org",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
                 }
             }
         },
