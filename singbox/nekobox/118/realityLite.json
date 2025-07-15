@@ -104,27 +104,55 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @NIM_VPN_ir | CZ🇨🇿 | 194.182.79.117:35306 | 171.27ms | 0️⃣3️⃣",
-                "REALITY | @prrofile_purple | NL🇳🇱 | 62.212.70.229:80 | 155.39ms | 0️⃣2️⃣",
-                "REALITY | @customv2ray | GB🇬🇧 | v16.vxlimir.com:1370 | 660.9ms | 0️⃣1️⃣",
-                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 278.17ms | 0️⃣1️⃣"
+                "REALITY | @v2_team | US🇺🇸 | 54.167.27.87:15434 | 2.76ms | 0️⃣1️⃣",
+                "REALITY | @NIM_VPN_ir | CZ🇨🇿 | 194.182.79.117:35306 | 106.7ms | 0️⃣3️⃣",
+                "REALITY | @customv2ray | GB🇬🇧 | v16.vxlimir.com:1370 | 390.11ms | 0️⃣1️⃣",
+                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 179.12ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @NIM_VPN_ir | CZ🇨🇿 | 194.182.79.117:35306 | 171.27ms | 0️⃣3️⃣",
-                "REALITY | @prrofile_purple | NL🇳🇱 | 62.212.70.229:80 | 155.39ms | 0️⃣2️⃣",
-                "REALITY | @customv2ray | GB🇬🇧 | v16.vxlimir.com:1370 | 660.9ms | 0️⃣1️⃣",
-                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 278.17ms | 0️⃣1️⃣"
+                "REALITY | @v2_team | US🇺🇸 | 54.167.27.87:15434 | 2.76ms | 0️⃣1️⃣",
+                "REALITY | @NIM_VPN_ir | CZ🇨🇿 | 194.182.79.117:35306 | 106.7ms | 0️⃣3️⃣",
+                "REALITY | @customv2ray | GB🇬🇧 | v16.vxlimir.com:1370 | 390.11ms | 0️⃣1️⃣",
+                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 179.12ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @NIM_VPN_ir | CZ🇨🇿 | 194.182.79.117:35306 | 171.27ms | 0️⃣3️⃣",
+            "tag": "REALITY | @v2_team | US🇺🇸 | 54.167.27.87:15434 | 2.76ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "54.167.27.87",
+            "server_port": 15434,
+            "uuid": "a45e0c2d-388e-4e66-8720-291da22cd7eb",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "journalofbigdata.springeropen.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "K47eUyJ8fZSVg8DtY50GPcpa8VmSwnH5N3e6SKth0VM",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @NIM_VPN_ir | CZ🇨🇿 | 194.182.79.117:35306 | 106.7ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "194.182.79.117",
             "server_port": 35306,
@@ -159,35 +187,7 @@
             }
         },
         {
-            "tag": "REALITY | @prrofile_purple | NL🇳🇱 | 62.212.70.229:80 | 155.39ms | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "62.212.70.229",
-            "server_port": 80,
-            "uuid": "c256ce5f-9b2b-43a0-946a-cceeadf0d5b0",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ea.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "tGORZqRxnUHzC46UYNRlydnkDlbA06OlkhPFZrxeLCE",
-                    "short_id": "3df4"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @customv2ray | GB🇬🇧 | v16.vxlimir.com:1370 | 660.9ms | 0️⃣1️⃣",
+            "tag": "REALITY | @customv2ray | GB🇬🇧 | v16.vxlimir.com:1370 | 390.11ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "v16.vxlimir.com",
             "server_port": 1370,
@@ -215,7 +215,7 @@
             }
         },
         {
-            "tag": "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 278.17ms | 0️⃣1️⃣",
+            "tag": "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 179.12ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "vip1.proxystore11.news",
             "server_port": 2052,
