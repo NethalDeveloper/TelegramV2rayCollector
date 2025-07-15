@@ -99,31 +99,33 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @V2rayNGn | DE🇩🇪 | 91.99.141.177:443 | 126.12ms | 0️⃣2️⃣",
-                "REALITY | @customv2ray | GB🇬🇧 | v16.vxlimir.com:1370 | 690.02ms | 0️⃣1️⃣",
-                "REALITY | @vmessorg | DE🇩🇪 | 91.107.180.100:443 | 120.92ms | 0️⃣1️⃣",
-                "REALITY | @vmessorg | DE🇩🇪 | vip1.proxystore11.news:2052 | 370.86ms | 0️⃣3️⃣",
-                "REALITY | @v2rayngvpn | NL🇳🇱 | 159.223.212.67:32930 | 115.39ms | 0️⃣1️⃣",
-                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 182.01ms | 0️⃣1️⃣"
+                "REALITY | @V2rayNGn | DE🇩🇪 | 91.99.141.177:443 | 91.25ms | 0️⃣2️⃣",
+                "REALITY | @prrofile_purple | NL🇳🇱 | 62.212.70.229:80 | 86.04ms | 0️⃣2️⃣",
+                "REALITY | @prrofile_purple | DE🇩🇪 | 91.107.163.43:42370 | 94.18ms | 0️⃣3️⃣",
+                "REALITY | @customv2ray | GB🇬🇧 | v16.vxlimir.com:1370 | 668.61ms | 0️⃣1️⃣",
+                "REALITY | @vmessorg | DE🇩🇪 | 91.107.180.100:443 | 92.13ms | 0️⃣1️⃣",
+                "REALITY | @vmessorg | DE🇩🇪 | vip1.proxystore11.news:2052 | 269.97ms | 0️⃣3️⃣",
+                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 107.14ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @V2rayNGn | DE🇩🇪 | 91.99.141.177:443 | 126.12ms | 0️⃣2️⃣",
-                "REALITY | @customv2ray | GB🇬🇧 | v16.vxlimir.com:1370 | 690.02ms | 0️⃣1️⃣",
-                "REALITY | @vmessorg | DE🇩🇪 | 91.107.180.100:443 | 120.92ms | 0️⃣1️⃣",
-                "REALITY | @vmessorg | DE🇩🇪 | vip1.proxystore11.news:2052 | 370.86ms | 0️⃣3️⃣",
-                "REALITY | @v2rayngvpn | NL🇳🇱 | 159.223.212.67:32930 | 115.39ms | 0️⃣1️⃣",
-                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 182.01ms | 0️⃣1️⃣"
+                "REALITY | @V2rayNGn | DE🇩🇪 | 91.99.141.177:443 | 91.25ms | 0️⃣2️⃣",
+                "REALITY | @prrofile_purple | NL🇳🇱 | 62.212.70.229:80 | 86.04ms | 0️⃣2️⃣",
+                "REALITY | @prrofile_purple | DE🇩🇪 | 91.107.163.43:42370 | 94.18ms | 0️⃣3️⃣",
+                "REALITY | @customv2ray | GB🇬🇧 | v16.vxlimir.com:1370 | 668.61ms | 0️⃣1️⃣",
+                "REALITY | @vmessorg | DE🇩🇪 | 91.107.180.100:443 | 92.13ms | 0️⃣1️⃣",
+                "REALITY | @vmessorg | DE🇩🇪 | vip1.proxystore11.news:2052 | 269.97ms | 0️⃣3️⃣",
+                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 107.14ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @V2rayNGn | DE🇩🇪 | 91.99.141.177:443 | 126.12ms | 0️⃣2️⃣",
+            "tag": "REALITY | @V2rayNGn | DE🇩🇪 | 91.99.141.177:443 | 91.25ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "91.99.141.177",
             "server_port": 443,
@@ -151,7 +153,70 @@
             }
         },
         {
-            "tag": "REALITY | @customv2ray | GB🇬🇧 | v16.vxlimir.com:1370 | 690.02ms | 0️⃣1️⃣",
+            "tag": "REALITY | @prrofile_purple | NL🇳🇱 | 62.212.70.229:80 | 86.04ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "62.212.70.229",
+            "server_port": 80,
+            "uuid": "c256ce5f-9b2b-43a0-946a-cceeadf0d5b0",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ea.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "tGORZqRxnUHzC46UYNRlydnkDlbA06OlkhPFZrxeLCE",
+                    "short_id": "3df4"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @prrofile_purple | DE🇩🇪 | 91.107.163.43:42370 | 94.18ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "91.107.163.43",
+            "server_port": 42370,
+            "uuid": "87724fb4-12e0-4c70-9c2c-19fbd323133a",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "xSfwwBYg9e6BdXVgmH8pRW83SgKOocyvGcw57xSeHTk",
+                    "short_id": "479f4834"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "@ZedBaz_vpn",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @customv2ray | GB🇬🇧 | v16.vxlimir.com:1370 | 668.61ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "v16.vxlimir.com",
             "server_port": 1370,
@@ -179,7 +244,7 @@
             }
         },
         {
-            "tag": "REALITY | @vmessorg | DE🇩🇪 | 91.107.180.100:443 | 120.92ms | 0️⃣1️⃣",
+            "tag": "REALITY | @vmessorg | DE🇩🇪 | 91.107.180.100:443 | 92.13ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "91.107.180.100",
             "server_port": 443,
@@ -214,7 +279,7 @@
             }
         },
         {
-            "tag": "REALITY | @vmessorg | DE🇩🇪 | vip1.proxystore11.news:2052 | 370.86ms | 0️⃣3️⃣",
+            "tag": "REALITY | @vmessorg | DE🇩🇪 | vip1.proxystore11.news:2052 | 269.97ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "vip1.proxystore11.news",
             "server_port": 2052,
@@ -242,35 +307,7 @@
             }
         },
         {
-            "tag": "REALITY | @v2rayngvpn | NL🇳🇱 | 159.223.212.67:32930 | 115.39ms | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "159.223.212.67",
-            "server_port": 32930,
-            "uuid": "007f360b-dabb-450c-9161-39e6b85319a5",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "zhaket.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "l7dXkTAD4x_lKTq84oFQvr_7Alm2TqlAGBrRvJe6YEs",
-                    "short_id": "71a309"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 182.01ms | 0️⃣1️⃣",
+            "tag": "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 107.14ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "vip1.proxystore11.news",
             "server_port": 2052,
