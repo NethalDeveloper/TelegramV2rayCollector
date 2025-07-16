@@ -99,44 +99,23 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@PrivateVPNs | FR🇫🇷 | 13.36.56.86:22222 | 104.68ms | 0️⃣1️⃣",
-                "@v2ray1_ng | RELAY🚩 | 104.25.165.81:8443 | 3.06ms | 0️⃣1️⃣"
+                "@v2ray1_ng | RELAY🚩 | 104.25.165.81:8443 | 1.51ms | 0️⃣1️⃣",
+                "@v2ray1_ng | RELAY🚩 | 172.67.181.173:443 | 19.82ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.36.56.86:22222 | 104.68ms | 0️⃣1️⃣",
-                "@v2ray1_ng | RELAY🚩 | 104.25.165.81:8443 | 3.06ms | 0️⃣1️⃣"
+                "@v2ray1_ng | RELAY🚩 | 104.25.165.81:8443 | 1.51ms | 0️⃣1️⃣",
+                "@v2ray1_ng | RELAY🚩 | 172.67.181.173:443 | 19.82ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.36.56.86:22222 | 104.68ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "13.36.56.86",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@v2ray1_ng | RELAY🚩 | 104.25.165.81:8443 | 3.06ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | RELAY🚩 | 104.25.165.81:8443 | 1.51ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "104.25.165.81",
             "server_port": 8443,
@@ -160,6 +139,34 @@
                 "path": "\/\/Az1.vpn.33.TOP\/?ed=2560",
                 "headers": {
                     "Host": "top-azx.pages.dev"
+                }
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | RELAY🚩 | 172.67.181.173:443 | 19.82ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "172.67.181.173",
+            "server_port": 443,
+            "password": "f282b878-8711-45a1-8c69-5564172123c1",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vpn.stupidworld.web.id",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/Tel-@V2ray_Alpha",
+                "headers": {
+                    "Host": "vpn.stupidworld.web.id"
                 }
             }
         },
