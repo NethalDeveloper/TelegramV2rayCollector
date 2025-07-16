@@ -102,29 +102,33 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @v2_team | US🇺🇸 | 54.167.27.87:15434 | 5.57ms | 0️⃣1️⃣",
-                "REALITY | @shh_proxy | DE🇩🇪 | 193.108.117.141:32379 | 118.73ms | 0️⃣3️⃣",
-                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 384.02ms | 0️⃣1️⃣",
-                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 423.28ms | 0️⃣2️⃣",
-                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:15110 | 94.84ms | 0️⃣3️⃣"
+                "REALITY | @v2_team | US🇺🇸 | 54.167.27.87:15434 | 33.12ms | 0️⃣1️⃣",
+                "REALITY | @customv2ray | NL🇳🇱 | turbooserver.sadafspace.com:55990 | 177.62ms | 0️⃣3️⃣",
+                "REALITY | @v2rayngvpn | CZ🇨🇿 | 194.182.79.64:14073 | 129.16ms | 0️⃣1️⃣",
+                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 177.96ms | 0️⃣1️⃣",
+                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 180.16ms | 0️⃣2️⃣",
+                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:15110 | 303.34ms | 0️⃣3️⃣",
+                "REALITY | @Outlinev2rayNG | CZ🇨🇿 | 194.182.79.117:35307 | 128.9ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @v2_team | US🇺🇸 | 54.167.27.87:15434 | 5.57ms | 0️⃣1️⃣",
-                "REALITY | @shh_proxy | DE🇩🇪 | 193.108.117.141:32379 | 118.73ms | 0️⃣3️⃣",
-                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 384.02ms | 0️⃣1️⃣",
-                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 423.28ms | 0️⃣2️⃣",
-                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:15110 | 94.84ms | 0️⃣3️⃣"
+                "REALITY | @v2_team | US🇺🇸 | 54.167.27.87:15434 | 33.12ms | 0️⃣1️⃣",
+                "REALITY | @customv2ray | NL🇳🇱 | turbooserver.sadafspace.com:55990 | 177.62ms | 0️⃣3️⃣",
+                "REALITY | @v2rayngvpn | CZ🇨🇿 | 194.182.79.64:14073 | 129.16ms | 0️⃣1️⃣",
+                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 177.96ms | 0️⃣1️⃣",
+                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 180.16ms | 0️⃣2️⃣",
+                "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:15110 | 303.34ms | 0️⃣3️⃣",
+                "REALITY | @Outlinev2rayNG | CZ🇨🇿 | 194.182.79.117:35307 | 128.9ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @v2_team | US🇺🇸 | 54.167.27.87:15434 | 5.57ms | 0️⃣1️⃣",
+            "tag": "REALITY | @v2_team | US🇺🇸 | 54.167.27.87:15434 | 33.12ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "54.167.27.87",
             "server_port": 15434,
@@ -152,11 +156,11 @@
             }
         },
         {
-            "tag": "REALITY | @shh_proxy | DE🇩🇪 | 193.108.117.141:32379 | 118.73ms | 0️⃣3️⃣",
+            "tag": "REALITY | @customv2ray | NL🇳🇱 | turbooserver.sadafspace.com:55990 | 177.62ms | 0️⃣3️⃣",
             "type": "vless",
-            "server": "193.108.117.141",
-            "server_port": 32379,
-            "uuid": "83d44fab-c989-4510-a459-835c39df3bef",
+            "server": "turbooserver.sadafspace.com",
+            "server_port": 55990,
+            "uuid": "turboo-server",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -166,7 +170,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "zhaket.com",
+                "server_name": "canva.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -174,13 +178,48 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "VFq1meciB_O8ayCOw0ZDGTNIRFbRW79nwIvjAk1v8BA",
-                    "short_id": "2b6778"
+                    "public_key": "TbZDTzAIogOy-LWQjdqXElxPlUd6xdcwd9xxCqhbj04",
+                    "short_id": "eebcfab3"
                 }
             }
         },
         {
-            "tag": "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 384.02ms | 0️⃣1️⃣",
+            "tag": "REALITY | @v2rayngvpn | CZ🇨🇿 | 194.182.79.64:14073 | 129.16ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "194.182.79.64",
+            "server_port": 14073,
+            "uuid": "8b39daa8-01e0-4054-8271-0630cd517f10",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "k8x94p4pxXmLjNWkgLRsdi_raiVGIX0EPGyP70CyBVs",
+                    "short_id": "f11c49ff"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Join-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 177.96ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "vip1.proxystore11.news",
             "server_port": 2052,
@@ -208,7 +247,7 @@
             }
         },
         {
-            "tag": "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 423.28ms | 0️⃣2️⃣",
+            "tag": "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:2052 | 180.16ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "vip1.proxystore11.news",
             "server_port": 2052,
@@ -236,7 +275,7 @@
             }
         },
         {
-            "tag": "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:15110 | 94.84ms | 0️⃣3️⃣",
+            "tag": "REALITY | @proxystore11 | DE🇩🇪 | vip1.proxystore11.news:15110 | 303.34ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "vip1.proxystore11.news",
             "server_port": 15110,
@@ -261,6 +300,41 @@
                     "public_key": "y7msPZW4eWBT4CJ5v_blgiXUd06HuKvTs3rhlpw9fnk",
                     "short_id": "0570"
                 }
+            }
+        },
+        {
+            "tag": "REALITY | @Outlinev2rayNG | CZ🇨🇿 | 194.182.79.117:35307 | 128.9ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "194.182.79.117",
+            "server_port": 35307,
+            "uuid": "a879196c-d849-4416-9b87-464733270cc5",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "sourceforge.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "q9S56XnvF1SLqCwmld0MJ4TnpAu4PI2GKcl71fK4kAA",
+                    "short_id": "df322bfe"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "Join-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
             }
         },
         {
