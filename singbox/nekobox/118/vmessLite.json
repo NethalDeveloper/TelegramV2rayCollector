@@ -104,27 +104,31 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@iP_CF | RELAY🚩 | q4.19kAla.co:80 | 18.36ms | 0️⃣1️⃣",
-                "@iP_CF | RELAY🚩 | q4.19kAla.co:80 | 18.98ms | 0️⃣2️⃣",
-                "@iP_CF | RELAY🚩 | q2.19kAla.co:80 | 29.94ms | 0️⃣3️⃣",
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 112.7ms | 0️⃣1️⃣"
+                "@iP_CF | RELAY🚩 | q4.19kAla.co:80 | 23.14ms | 0️⃣1️⃣",
+                "@iP_CF | RELAY🚩 | q4.19kAla.co:80 | 6.3ms | 0️⃣2️⃣",
+                "@iP_CF | RELAY🚩 | q2.19kAla.co:80 | 39.07ms | 0️⃣3️⃣",
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 22.18ms | 0️⃣1️⃣",
+                "@customv2ray | IR🇮🇷 | sr10.minhost.sbs:2052 | 416.38ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 100-9-89-92.s2.db-link02.top:8880 | 281.11ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@iP_CF | RELAY🚩 | q4.19kAla.co:80 | 18.36ms | 0️⃣1️⃣",
-                "@iP_CF | RELAY🚩 | q4.19kAla.co:80 | 18.98ms | 0️⃣2️⃣",
-                "@iP_CF | RELAY🚩 | q2.19kAla.co:80 | 29.94ms | 0️⃣3️⃣",
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 112.7ms | 0️⃣1️⃣"
+                "@iP_CF | RELAY🚩 | q4.19kAla.co:80 | 23.14ms | 0️⃣1️⃣",
+                "@iP_CF | RELAY🚩 | q4.19kAla.co:80 | 6.3ms | 0️⃣2️⃣",
+                "@iP_CF | RELAY🚩 | q2.19kAla.co:80 | 39.07ms | 0️⃣3️⃣",
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 22.18ms | 0️⃣1️⃣",
+                "@customv2ray | IR🇮🇷 | sr10.minhost.sbs:2052 | 416.38ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 100-9-89-92.s2.db-link02.top:8880 | 281.11ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@iP_CF | RELAY🚩 | q4.19kAla.co:80 | 18.36ms | 0️⃣1️⃣",
+            "tag": "@iP_CF | RELAY🚩 | q4.19kAla.co:80 | 23.14ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.22.14",
             "server_port": 80,
@@ -150,7 +154,7 @@
             }
         },
         {
-            "tag": "@iP_CF | RELAY🚩 | q4.19kAla.co:80 | 18.98ms | 0️⃣2️⃣",
+            "tag": "@iP_CF | RELAY🚩 | q4.19kAla.co:80 | 6.3ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "104.26.13.9",
             "server_port": 80,
@@ -176,7 +180,7 @@
             }
         },
         {
-            "tag": "@iP_CF | RELAY🚩 | q2.19kAla.co:80 | 29.94ms | 0️⃣3️⃣",
+            "tag": "@iP_CF | RELAY🚩 | q2.19kAla.co:80 | 39.07ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "104.17.223.18",
             "server_port": 80,
@@ -202,7 +206,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 112.7ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 22.18ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "51.79.102.253",
             "server_port": 80,
@@ -222,6 +226,49 @@
                 "path": "\/\/IOebhLMhl1CTbFHbL95myfRX2",
                 "headers": {
                     "Host": "51.79.102.253"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@customv2ray | IR🇮🇷 | sr10.minhost.sbs:2052 | 416.38ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "sr10.minhost.sbs",
+            "server_port": 2052,
+            "uuid": "f793ac81-4ab2-459c-833b-e6a6e34873a2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | 100-9-89-92.s2.db-link02.top:8880 | 281.11ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "s2.db-link02.top",
+            "server_port": 8880,
+            "uuid": "4b36625c-b9d9-3ea6-aed5-86d62c70e16d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/dabai.in104.24.114.165",
+                "headers": {
+                    "Host": "s2.db-link02.top"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
