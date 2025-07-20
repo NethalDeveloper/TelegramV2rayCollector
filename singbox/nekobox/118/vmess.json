@@ -106,19 +106,19 @@
                 "URL-TEST",
                 "CA🇨🇦",
                 "DE🇩🇪",
-                "CN🇨🇳",
-                "RELAY🚩"
+                "RELAY🚩",
+                "SE🇸🇪"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 64.87ms | 0️⃣1️⃣",
-                "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 278.74ms | 0️⃣1️⃣",
-                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 336.94ms | 0️⃣1️⃣",
-                "@FreakConfig | RELAY🚩 | rak2d4.89060004.xyz:2053 | 23.96ms | 0️⃣1️⃣",
-                "@FreakConfig | RELAY🚩 | blaze-ger-248.blazecloudmain.site:2083 | 29.17ms | 0️⃣2️⃣"
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 89.31ms | 0️⃣1️⃣",
+                "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 315.91ms | 0️⃣1️⃣",
+                "@FreakConfig | RELAY🚩 | rak2d4.89060004.xyz:2053 | 58.38ms | 0️⃣1️⃣",
+                "@FreakConfig | RELAY🚩 | blaze-ger-248.blazecloudmain.site:2083 | 59.9ms | 0️⃣2️⃣",
+                "@FreakConfig | SE🇸🇪 | 169.150.208.83:18000 | 136.82ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -128,7 +128,7 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 64.87ms | 0️⃣1️⃣"
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 89.31ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -138,17 +138,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 278.74ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "CN🇨🇳",
-            "type": "urltest",
-            "outbounds": [
-                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 336.94ms | 0️⃣1️⃣"
+                "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 315.91ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -158,15 +148,25 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@FreakConfig | RELAY🚩 | rak2d4.89060004.xyz:2053 | 23.96ms | 0️⃣1️⃣",
-                "@FreakConfig | RELAY🚩 | blaze-ger-248.blazecloudmain.site:2083 | 29.17ms | 0️⃣2️⃣"
+                "@FreakConfig | RELAY🚩 | rak2d4.89060004.xyz:2053 | 58.38ms | 0️⃣1️⃣",
+                "@FreakConfig | RELAY🚩 | blaze-ger-248.blazecloudmain.site:2083 | 59.9ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 64.87ms | 0️⃣1️⃣",
+            "tag": "SE🇸🇪",
+            "type": "urltest",
+            "outbounds": [
+                "@FreakConfig | SE🇸🇪 | 169.150.208.83:18000 | 136.82ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 89.31ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "51.79.102.253",
             "server_port": 80,
@@ -192,7 +192,7 @@
             }
         },
         {
-            "tag": "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 278.74ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 315.91ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "panel3.ipyar.org",
             "server_port": 32017,
@@ -209,33 +209,7 @@
             }
         },
         {
-            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 336.94ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "42.2.113.136",
-            "server_port": 80,
-            "uuid": "98d2b660-7218-11ec-bd7c-f23c913c8d2b",
-            "security": "auto",
-            "alter_id": 2,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "42.2.113.136"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@FreakConfig | RELAY🚩 | rak2d4.89060004.xyz:2053 | 23.96ms | 0️⃣1️⃣",
+            "tag": "@FreakConfig | RELAY🚩 | rak2d4.89060004.xyz:2053 | 58.38ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.131.27",
             "server_port": 2053,
@@ -271,7 +245,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | RELAY🚩 | blaze-ger-248.blazecloudmain.site:2083 | 29.17ms | 0️⃣2️⃣",
+            "tag": "@FreakConfig | RELAY🚩 | blaze-ger-248.blazecloudmain.site:2083 | 59.9ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "www.meter.net",
             "server_port": 2083,
@@ -304,6 +278,23 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@FreakConfig | SE🇸🇪 | 169.150.208.83:18000 | 136.82ms | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "169.150.208.83",
+            "server_port": 18000,
+            "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
