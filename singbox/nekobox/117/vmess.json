@@ -100,6 +100,7 @@
             "outbounds": [
                 "URL-TEST",
                 "CA🇨🇦",
+                "IR🇮🇷",
                 "DE🇩🇪",
                 "RELAY🚩"
             ]
@@ -108,10 +109,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 180.04ms | 0️⃣1️⃣",
-                "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 286.35ms | 0️⃣1️⃣",
-                "@FreakConfig | RELAY🚩 | rak2d4.89060004.xyz:2053 | 38.3ms | 0️⃣2️⃣",
-                "@FreakConfig | RELAY🚩 | blaze-ger-248.blazecloudmain.site:2083 | 44.8ms | 0️⃣3️⃣"
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 87.97ms | 0️⃣1️⃣",
+                "@prrofile_purple | IR🇮🇷 | soft98.ir:80 | 683.84ms | 0️⃣1️⃣",
+                "@customv2ray | IR🇮🇷 | sr10.minhost.sbs:2052 | 363.42ms | 0️⃣1️⃣",
+                "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 119.13ms | 0️⃣2️⃣",
+                "@FreakConfig | RELAY🚩 | rak2d4.89060004.xyz:2053 | 19.4ms | 0️⃣2️⃣",
+                "@FreakConfig | RELAY🚩 | blaze-ger-248.blazecloudmain.site:2083 | 8.98ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -121,7 +124,18 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 180.04ms | 0️⃣1️⃣"
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 87.97ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "@prrofile_purple | IR🇮🇷 | soft98.ir:80 | 683.84ms | 0️⃣1️⃣",
+                "@customv2ray | IR🇮🇷 | sr10.minhost.sbs:2052 | 363.42ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -131,7 +145,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 286.35ms | 0️⃣1️⃣"
+                "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 119.13ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -141,15 +155,15 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@FreakConfig | RELAY🚩 | rak2d4.89060004.xyz:2053 | 38.3ms | 0️⃣2️⃣",
-                "@FreakConfig | RELAY🚩 | blaze-ger-248.blazecloudmain.site:2083 | 44.8ms | 0️⃣3️⃣"
+                "@FreakConfig | RELAY🚩 | rak2d4.89060004.xyz:2053 | 19.4ms | 0️⃣2️⃣",
+                "@FreakConfig | RELAY🚩 | blaze-ger-248.blazecloudmain.site:2083 | 8.98ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 180.04ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 87.97ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "51.79.102.253",
             "server_port": 80,
@@ -175,7 +189,41 @@
             }
         },
         {
-            "tag": "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 286.35ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | IR🇮🇷 | soft98.ir:80 | 683.84ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "prom.learn-new.ir",
+            "server_port": 80,
+            "uuid": "ff453ef4-1c89-4045-a42f-603f4e5850fb",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@customv2ray | IR🇮🇷 | sr10.minhost.sbs:2052 | 363.42ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "sr10.minhost.sbs",
+            "server_port": 2052,
+            "uuid": "f793ac81-4ab2-459c-833b-e6a6e34873a2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 119.13ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "panel3.ipyar.org",
             "server_port": 32017,
@@ -192,7 +240,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | RELAY🚩 | rak2d4.89060004.xyz:2053 | 38.3ms | 0️⃣2️⃣",
+            "tag": "@FreakConfig | RELAY🚩 | rak2d4.89060004.xyz:2053 | 19.4ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "172.67.131.27",
             "server_port": 2053,
@@ -228,7 +276,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | RELAY🚩 | blaze-ger-248.blazecloudmain.site:2083 | 44.8ms | 0️⃣3️⃣",
+            "tag": "@FreakConfig | RELAY🚩 | blaze-ger-248.blazecloudmain.site:2083 | 8.98ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "www.meter.net",
             "server_port": 2083,
