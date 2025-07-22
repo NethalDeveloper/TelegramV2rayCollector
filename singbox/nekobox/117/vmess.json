@@ -100,17 +100,17 @@
             "outbounds": [
                 "URL-TEST",
                 "CA🇨🇦",
-                "IR🇮🇷",
-                "DE🇩🇪"
+                "DE🇩🇪",
+                "RELAY🚩"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 18.62ms | 0️⃣1️⃣",
-                "@prrofile_purple | IR🇮🇷 | soft98.ir:80 | 783.97ms | 0️⃣1️⃣",
-                "@ShadowProxy66 | DE🇩🇪 | panel3.ipyar.org:32017 | 267.55ms | 0️⃣1️⃣"
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 48.72ms | 0️⃣1️⃣",
+                "@ShadowProxy66 | DE🇩🇪 | panel3.ipyar.org:32017 | 275.68ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | cae3mg9qsg55eo5lhq.lovebaipiao.com:2086 | 88.99ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -120,17 +120,7 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 18.62ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "IR🇮🇷",
-            "type": "urltest",
-            "outbounds": [
-                "@prrofile_purple | IR🇮🇷 | soft98.ir:80 | 783.97ms | 0️⃣1️⃣"
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 48.72ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -140,14 +130,24 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@ShadowProxy66 | DE🇩🇪 | panel3.ipyar.org:32017 | 267.55ms | 0️⃣1️⃣"
+                "@ShadowProxy66 | DE🇩🇪 | panel3.ipyar.org:32017 | 275.68ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 18.62ms | 0️⃣1️⃣",
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "@Hope_Net | RELAY🚩 | cae3mg9qsg55eo5lhq.lovebaipiao.com:2086 | 88.99ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 48.72ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "51.79.102.253",
             "server_port": 80,
@@ -173,24 +173,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | IR🇮🇷 | soft98.ir:80 | 783.97ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "prom.learn-new.ir",
-            "server_port": 80,
-            "uuid": "ff453ef4-1c89-4045-a42f-603f4e5850fb",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@ShadowProxy66 | DE🇩🇪 | panel3.ipyar.org:32017 | 267.55ms | 0️⃣1️⃣",
+            "tag": "@ShadowProxy66 | DE🇩🇪 | panel3.ipyar.org:32017 | 275.68ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "panel3.ipyar.org",
             "server_port": 32017,
@@ -204,6 +187,32 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | cae3mg9qsg55eo5lhq.lovebaipiao.com:2086 | 88.99ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "104.19.173.68",
+            "server_port": 2086,
+            "uuid": "9ca78a86-07bb-4eaf-a47d-1a7bb40928e3",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "104.19.173.68"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
