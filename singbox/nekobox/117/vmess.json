@@ -100,6 +100,7 @@
             "outbounds": [
                 "URL-TEST",
                 "CA🇨🇦",
+                "IR🇮🇷",
                 "DE🇩🇪"
             ]
         },
@@ -107,9 +108,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 79.57ms | 0️⃣1️⃣",
-                "@prrofile_purple | DE🇩🇪 | 159.89.22.229:8080 | 112.23ms | 0️⃣1️⃣",
-                "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 285.25ms | 0️⃣1️⃣"
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 124.16ms | 0️⃣1️⃣",
+                "@prrofile_purple | IR🇮🇷 | soft98.ir:80 | 835.29ms | 0️⃣1️⃣",
+                "@prrofile_purple | DE🇩🇪 | 159.89.22.229:8080 | 92.51ms | 0️⃣2️⃣",
+                "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 268.24ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -119,7 +121,17 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 79.57ms | 0️⃣1️⃣"
+                "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 124.16ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "@prrofile_purple | IR🇮🇷 | soft98.ir:80 | 835.29ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -129,15 +141,15 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | DE🇩🇪 | 159.89.22.229:8080 | 112.23ms | 0️⃣1️⃣",
-                "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 285.25ms | 0️⃣1️⃣"
+                "@prrofile_purple | DE🇩🇪 | 159.89.22.229:8080 | 92.51ms | 0️⃣2️⃣",
+                "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 268.24ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 79.57ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | CA🇨🇦 | 51.79.102.253:80 | 124.16ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "51.79.102.253",
             "server_port": 80,
@@ -163,7 +175,24 @@
             }
         },
         {
-            "tag": "@prrofile_purple | DE🇩🇪 | 159.89.22.229:8080 | 112.23ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | IR🇮🇷 | soft98.ir:80 | 835.29ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "prom.learn-new.ir",
+            "server_port": 80,
+            "uuid": "ff453ef4-1c89-4045-a42f-603f4e5850fb",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@prrofile_purple | DE🇩🇪 | 159.89.22.229:8080 | 92.51ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "159.89.22.229",
             "server_port": 8080,
@@ -180,7 +209,7 @@
             }
         },
         {
-            "tag": "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 285.25ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | DE🇩🇪 | panel3.ipyar.org:32017 | 268.24ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "panel3.ipyar.org",
             "server_port": 32017,
