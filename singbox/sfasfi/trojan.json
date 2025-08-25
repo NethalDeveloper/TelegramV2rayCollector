@@ -103,19 +103,24 @@
             "outbounds": [
                 "URL-TEST",
                 "DE🇩🇪",
-                "FR🇫🇷"
+                "FR🇫🇷",
+                "RELAY🚩",
+                "US🇺🇸"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | DE🇩🇪 | 63.179.37.208:22222 | 94.24ms | 0️⃣1️⃣",
-                "@DirectVPN | DE🇩🇪 | 63.179.37.208:22223 | 93.53ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 52.47.53.180:22222 | 84.17ms | 0️⃣2️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.37.54.205:22222 | 88.03ms | 0️⃣3️⃣",
-                "@DirectVPN | FR🇫🇷 | 52.47.53.180:22223 | 85.88ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.37.54.205:22223 | 86.46ms | 0️⃣3️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 63.179.37.208:22222 | 90.19ms | 0️⃣1️⃣",
+                "@DirectVPN | DE🇩🇪 | 63.179.37.208:22223 | 90.44ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 52.47.53.180:22222 | 84.28ms | 0️⃣2️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.37.54.205:22222 | 86.34ms | 0️⃣3️⃣",
+                "@DirectVPN | FR🇫🇷 | 52.47.53.180:22223 | 90.2ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.37.54.205:22223 | 84.26ms | 0️⃣3️⃣",
+                "@ConfigsHUB | RELAY🚩 | 172.67.214.246:2053 | 93.06ms | 0️⃣1️⃣",
+                "@ConfigsHUB | US🇺🇸 | 45.194.53.231:443 | 5.42ms | 0️⃣2️⃣",
+                "@ConfigsHUB | US🇺🇸 | 151.101.130.219:443 | 5.22ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -125,8 +130,8 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | DE🇩🇪 | 63.179.37.208:22222 | 94.24ms | 0️⃣1️⃣",
-                "@DirectVPN | DE🇩🇪 | 63.179.37.208:22223 | 93.53ms | 0️⃣1️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 63.179.37.208:22222 | 90.19ms | 0️⃣1️⃣",
+                "@DirectVPN | DE🇩🇪 | 63.179.37.208:22223 | 90.44ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -136,17 +141,38 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 52.47.53.180:22222 | 84.17ms | 0️⃣2️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.37.54.205:22222 | 88.03ms | 0️⃣3️⃣",
-                "@DirectVPN | FR🇫🇷 | 52.47.53.180:22223 | 85.88ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.37.54.205:22223 | 86.46ms | 0️⃣3️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 52.47.53.180:22222 | 84.28ms | 0️⃣2️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.37.54.205:22222 | 86.34ms | 0️⃣3️⃣",
+                "@DirectVPN | FR🇫🇷 | 52.47.53.180:22223 | 90.2ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.37.54.205:22223 | 84.26ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | DE🇩🇪 | 63.179.37.208:22222 | 94.24ms | 0️⃣1️⃣",
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | RELAY🚩 | 172.67.214.246:2053 | 93.06ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | US🇺🇸 | 45.194.53.231:443 | 5.42ms | 0️⃣2️⃣",
+                "@ConfigsHUB | US🇺🇸 | 151.101.130.219:443 | 5.22ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@PrivateVPNs | DE🇩🇪 | 63.179.37.208:22222 | 90.19ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "63.179.37.208",
             "server_port": 22222,
@@ -167,7 +193,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | DE🇩🇪 | 63.179.37.208:22223 | 93.53ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | DE🇩🇪 | 63.179.37.208:22223 | 90.44ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "63.179.37.208",
             "server_port": 22223,
@@ -188,7 +214,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 52.47.53.180:22222 | 84.17ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 52.47.53.180:22222 | 84.28ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "52.47.53.180",
             "server_port": 22222,
@@ -209,7 +235,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.37.54.205:22222 | 88.03ms | 0️⃣3️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.37.54.205:22222 | 86.34ms | 0️⃣3️⃣",
             "type": "trojan",
             "server": "13.37.54.205",
             "server_port": 22222,
@@ -230,7 +256,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 52.47.53.180:22223 | 85.88ms | 0️⃣2️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 52.47.53.180:22223 | 90.2ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "52.47.53.180",
             "server_port": 22223,
@@ -251,7 +277,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.37.54.205:22223 | 86.46ms | 0️⃣3️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 13.37.54.205:22223 | 84.26ms | 0️⃣3️⃣",
             "type": "trojan",
             "server": "13.37.54.205",
             "server_port": 22223,
@@ -268,6 +294,65 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | RELAY🚩 | 172.67.214.246:2053 | 93.06ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "172.67.214.246",
+            "server_port": 2053,
+            "password": "bpb-trojan",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | US🇺🇸 | 45.194.53.231:443 | 5.42ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "45.194.53.231",
+            "server_port": 443,
+            "password": "bpb-trojan",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/tr",
+                "headers": {
+                    "Host": "bpb.my79801.com"
+                }
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | US🇺🇸 | 151.101.130.219:443 | 5.22ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "151.101.130.219",
+            "server_port": 443,
+            "password": "Trojan-Hqv2rayNG",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "speedtest.net",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "dontskii.hqv2rayng.xyz"
                 }
             }
         },
