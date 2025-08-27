@@ -97,78 +97,15 @@
         {
             "tag": "proxy",
             "type": "selector",
-            "outbounds": [
-                "URL-TEST",
-                "@ConfigsHUB | RELAY🚩 | 172.67.180.238:443 | 2.77ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | 141.101.114.163:443 | 2.96ms | 0️⃣2️⃣"
-            ]
+            "outbounds": null
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
-            "outbounds": [
-                "@ConfigsHUB | RELAY🚩 | 172.67.180.238:443 | 2.77ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | 141.101.114.163:443 | 2.96ms | 0️⃣2️⃣"
-            ],
+            "outbounds": null,
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
-        },
-        {
-            "tag": "@ConfigsHUB | RELAY🚩 | 172.67.180.238:443 | 2.77ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "172.67.180.238",
-            "server_port": 443,
-            "password": "bpb-trojan",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "403b3611-99BC-43B7-88d7-26eD5D0825A9-3.PAges.DEV",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "403b3611-99bc-43b7-88d7-26ed5d0825a9-3.pages.dev"
-                }
-            }
-        },
-        {
-            "tag": "@ConfigsHUB | RELAY🚩 | 141.101.114.163:443 | 2.96ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "141.101.114.163",
-            "server_port": 443,
-            "password": "bpb-trojan",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "fcspring.ggff.net",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/tr?ed",
-                "headers": {
-                    "Host": "fcspring.ggff.net"
-                }
-            }
         },
         {
             "tag": "direct",
