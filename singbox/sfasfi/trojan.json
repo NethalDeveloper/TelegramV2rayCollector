@@ -102,17 +102,23 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "FR🇫🇷"
+                "FR🇫🇷",
+                "EE🇪🇪",
+                "RELAY🚩",
+                "RU🇷🇺"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 35.180.246.122:22222 | 86.68ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.37.161.126:22222 | 134.72ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 101.67ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 101.6ms | 0️⃣2️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 35.180.246.122:22222 | 110.69ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.37.161.126:22222 | 108.08ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 119.41ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 110.15ms | 0️⃣2️⃣",
+                "@ConfigsHUB | EE🇪🇪 | 45.80.110.224:443 | 14.13ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | 172.67.68.56:2096 | 33.14ms | 0️⃣2️⃣",
+                "@ConfigsHUB | RU🇷🇺 | 194.53.53.11:2096 | 14.23ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -122,17 +128,47 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 35.180.246.122:22222 | 86.68ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.37.161.126:22222 | 134.72ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 101.67ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 101.6ms | 0️⃣2️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 35.180.246.122:22222 | 110.69ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.37.161.126:22222 | 108.08ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 119.41ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 110.15ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 35.180.246.122:22222 | 86.68ms | 0️⃣1️⃣",
+            "tag": "EE🇪🇪",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | EE🇪🇪 | 45.80.110.224:443 | 14.13ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | RELAY🚩 | 172.67.68.56:2096 | 33.14ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RU🇷🇺",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | RU🇷🇺 | 194.53.53.11:2096 | 14.23ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@PrivateVPNs | FR🇫🇷 | 35.180.246.122:22222 | 110.69ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "35.180.246.122",
             "server_port": 22222,
@@ -153,7 +189,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.37.161.126:22222 | 134.72ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.37.161.126:22222 | 108.08ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "13.37.161.126",
             "server_port": 22222,
@@ -174,7 +210,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 101.67ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 119.41ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "35.180.246.122",
             "server_port": 22223,
@@ -195,7 +231,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 101.6ms | 0️⃣2️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 110.15ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "13.37.161.126",
             "server_port": 22223,
@@ -208,6 +244,69 @@
             "tls": {
                 "enabled": true,
                 "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | EE🇪🇪 | 45.80.110.224:443 | 14.13ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "45.80.110.224",
+            "server_port": 443,
+            "password": "bpb-trojan",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "bpb.my79801.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | RELAY🚩 | 172.67.68.56:2096 | 33.14ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "172.67.68.56",
+            "server_port": 2096,
+            "password": "Aimer",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "epgb.aimercc.dpdns.org",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | RU🇷🇺 | 194.53.53.11:2096 | 14.23ms | 0️⃣3️⃣",
+            "type": "trojan",
+            "server": "194.53.53.11",
+            "server_port": 2096,
+            "password": "d6b8011a-c725-435a-9fec-bf6d3530392c",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "vle.amclubssss.dpdns.org",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
