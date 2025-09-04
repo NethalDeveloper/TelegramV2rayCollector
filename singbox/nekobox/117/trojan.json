@@ -99,17 +99,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "FR🇫🇷"
+                "FR🇫🇷",
+                "RELAY🚩"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 35.180.246.122:22222 | 87.12ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.37.161.126:22222 | 120.98ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 84.26ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 89.6ms | 0️⃣2️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 35.180.246.122:22222 | 86.28ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.37.161.126:22222 | 87.84ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 87.89ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 85.16ms | 0️⃣2️⃣",
+                "@ConfigsHUB | RELAY🚩 | pardazeshvpn-tg7.pages.dev:443 | 14.42ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | 104.18.183.139:443 | 1.75ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -119,17 +122,28 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 35.180.246.122:22222 | 87.12ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.37.161.126:22222 | 120.98ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 84.26ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 89.6ms | 0️⃣2️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 35.180.246.122:22222 | 86.28ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.37.161.126:22222 | 87.84ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 87.89ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 85.16ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 35.180.246.122:22222 | 87.12ms | 0️⃣1️⃣",
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | RELAY🚩 | pardazeshvpn-tg7.pages.dev:443 | 14.42ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | 104.18.183.139:443 | 1.75ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@PrivateVPNs | FR🇫🇷 | 35.180.246.122:22222 | 86.28ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "35.180.246.122",
             "server_port": 22222,
@@ -150,7 +164,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.37.161.126:22222 | 120.98ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.37.161.126:22222 | 87.84ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "13.37.161.126",
             "server_port": 22222,
@@ -171,7 +185,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 84.26ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 87.89ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "35.180.246.122",
             "server_port": 22223,
@@ -192,7 +206,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 89.6ms | 0️⃣2️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 85.16ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "13.37.161.126",
             "server_port": 22223,
@@ -209,6 +223,62 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | RELAY🚩 | pardazeshvpn-tg7.pages.dev:443 | 14.42ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "pardazeshvpn-tg7.pages.dev",
+            "server_port": 443,
+            "password": "0ac0df1b-cfce-47b1-a286-91a0ec2fc7ef",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "pardazeshvpn-tg7.pages.dev",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/Telegram@V2ray_Alpha\/?ed=2048",
+                "headers": {
+                    "Host": "pardazeshvpn-tg7.pages.dev"
+                }
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | RELAY🚩 | 104.18.183.139:443 | 1.75ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "104.18.183.139",
+            "server_port": 443,
+            "password": "WOeXShhJpL",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "08jzus.zdzdzd.xyz",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/juzigongyi",
+                "headers": {
+                    "Host": "08jzus.zdzdzd.xyz"
                 }
             }
         },
