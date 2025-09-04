@@ -107,11 +107,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 35.180.246.122:22222 | 149.96ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 146.07ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 150.04ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | 190.93.245.12:443 | 1.28ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | 190.93.247.234:443 | 1.68ms | 0️⃣2️⃣"
+                "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 84.73ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 86.94ms | 0️⃣2️⃣",
+                "@ConfigsHUB | RELAY🚩 | 172.67.181.173:443 | 5.52ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -121,9 +119,8 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 35.180.246.122:22222 | 149.96ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 146.07ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 150.04ms | 0️⃣2️⃣"
+                "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 84.73ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 86.94ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,36 +130,14 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@ConfigsHUB | RELAY🚩 | 190.93.245.12:443 | 1.28ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | 190.93.247.234:443 | 1.68ms | 0️⃣2️⃣"
+                "@ConfigsHUB | RELAY🚩 | 172.67.181.173:443 | 5.52ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 35.180.246.122:22222 | 149.96ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "35.180.246.122",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 146.07ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 35.180.246.122:22223 | 84.73ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "35.180.246.122",
             "server_port": 22223,
@@ -183,7 +158,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 150.04ms | 0️⃣2️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 13.37.161.126:22223 | 86.94ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "13.37.161.126",
             "server_port": 22223,
@@ -204,11 +179,11 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | RELAY🚩 | 190.93.245.12:443 | 1.28ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | 172.67.181.173:443 | 5.52ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "190.93.245.12",
+            "server": "172.67.181.173",
             "server_port": 443,
-            "password": "bpb-trojan",
+            "password": "f282b878-8711-45a1-8c69-5564172123c1",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -216,7 +191,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "fcspring.ggff.net",
+                "server_name": "vpn.stupidworld.web.id",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -225,37 +200,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/tr?ed",
+                "path": "\/\/Stupid-World\/103.106.228.126-2053",
                 "headers": {
-                    "Host": "fcspring.ggff.net"
-                }
-            }
-        },
-        {
-            "tag": "@ConfigsHUB | RELAY🚩 | 190.93.247.234:443 | 1.68ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "190.93.247.234",
-            "server_port": 443,
-            "password": "NISHIKUITAN222",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "im.ylks.xyz",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "im.ylks.xyz"
+                    "Host": "vpn.stupidworld.web.id"
                 }
             }
         },
