@@ -99,27 +99,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@PrivateVPNs | DE🇩🇪 | 63.180.53.30:22222 | 154.24ms | 0️⃣1️⃣",
-                "@DirectVPN | DE🇩🇪 | 63.180.53.30:22223 | 156.18ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | pardazeshvpn-tg7.pages.dev:443 | 22.98ms | 0️⃣1️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 3.127.54.76:22222 | 91.81ms | 0️⃣1️⃣",
+                "@DirectVPN | DE🇩🇪 | 3.127.54.76:22223 | 92.39ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | DE🇩🇪 | 63.180.53.30:22222 | 154.24ms | 0️⃣1️⃣",
-                "@DirectVPN | DE🇩🇪 | 63.180.53.30:22223 | 156.18ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | pardazeshvpn-tg7.pages.dev:443 | 22.98ms | 0️⃣1️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 3.127.54.76:22222 | 91.81ms | 0️⃣1️⃣",
+                "@DirectVPN | DE🇩🇪 | 3.127.54.76:22223 | 92.39ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | DE🇩🇪 | 63.180.53.30:22222 | 154.24ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | DE🇩🇪 | 3.127.54.76:22222 | 91.81ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "63.180.53.30",
+            "server": "3.127.54.76",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -138,9 +136,9 @@
             }
         },
         {
-            "tag": "@DirectVPN | DE🇩🇪 | 63.180.53.30:22223 | 156.18ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | DE🇩🇪 | 3.127.54.76:22223 | 92.39ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "63.180.53.30",
+            "server": "3.127.54.76",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -155,34 +153,6 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@ConfigsHUB | RELAY🚩 | pardazeshvpn-tg7.pages.dev:443 | 22.98ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "pardazeshvpn-tg7.pages.dev",
-            "server_port": 443,
-            "password": "0ac0df1b-cfce-47b1-a286-91a0ec2fc7ef",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "pardazeshvpn-tg7.pages.dev",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/Telegram@V2ray_Alpha\/?ed=2048",
-                "headers": {
-                    "Host": "pardazeshvpn-tg7.pages.dev"
                 }
             }
         },
