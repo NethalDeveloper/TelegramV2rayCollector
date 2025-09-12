@@ -99,19 +99,17 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "FR🇫🇷",
-                "ES🇪🇸"
+                "FR🇫🇷"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 35.181.20.132:22222 | 86.88ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.39.201.68:22222 | 107.85ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 35.181.20.132:22223 | 116ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.201.68:22223 | 125.77ms | 0️⃣2️⃣",
-                "@ConfigsHUB | ES🇪🇸 | 185.251.80.195:2096 | 1.52ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 35.181.20.132:22222 | 145.05ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.39.201.68:22222 | 108.29ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 35.181.20.132:22223 | 108.53ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.39.201.68:22223 | 106ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -121,27 +119,17 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 35.181.20.132:22222 | 86.88ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.39.201.68:22222 | 107.85ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 35.181.20.132:22223 | 116ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.201.68:22223 | 125.77ms | 0️⃣2️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 35.181.20.132:22222 | 145.05ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.39.201.68:22222 | 108.29ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 35.181.20.132:22223 | 108.53ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.39.201.68:22223 | 106ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "ES🇪🇸",
-            "type": "urltest",
-            "outbounds": [
-                "@ConfigsHUB | ES🇪🇸 | 185.251.80.195:2096 | 1.52ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 35.181.20.132:22222 | 86.88ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 35.181.20.132:22222 | 145.05ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "35.181.20.132",
             "server_port": 22222,
@@ -162,7 +150,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.39.201.68:22222 | 107.85ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.39.201.68:22222 | 108.29ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "13.39.201.68",
             "server_port": 22222,
@@ -183,7 +171,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 35.181.20.132:22223 | 116ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 35.181.20.132:22223 | 108.53ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "35.181.20.132",
             "server_port": 22223,
@@ -204,7 +192,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.39.201.68:22223 | 125.77ms | 0️⃣2️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 13.39.201.68:22223 | 106ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "13.39.201.68",
             "server_port": 22223,
@@ -221,34 +209,6 @@
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@ConfigsHUB | ES🇪🇸 | 185.251.80.195:2096 | 1.52ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "185.251.80.195",
-            "server_port": 2096,
-            "password": "slch2024",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ocost-dy.wmlefl.cc",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/Telegram",
-                "headers": {
-                    "Host": "ocost-dy.wmlefl.cc"
                 }
             }
         },
