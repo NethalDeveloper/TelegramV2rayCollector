@@ -102,19 +102,17 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "FR🇫🇷",
-                "RELAY🚩"
+                "FR🇫🇷"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.39.73.201:22222 | 84.18ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.73.201:22223 | 84.6ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | 104.26.12.31:443 | 1.25ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | 188.114.96.113:443 | 1.35ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | 104.20.17.233:443 | 1.25ms | 0️⃣3️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.39.73.201:22222 | 108.45ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.36.216.106:22222 | 105.76ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.39.73.201:22223 | 105.67ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.36.216.106:22223 | 104.74ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -124,27 +122,17 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.39.73.201:22222 | 84.18ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.73.201:22223 | 84.6ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.39.73.201:22222 | 108.45ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.36.216.106:22222 | 105.76ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.39.73.201:22223 | 105.67ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.36.216.106:22223 | 104.74ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "RELAY🚩",
-            "type": "urltest",
-            "outbounds": [
-                "@ConfigsHUB | RELAY🚩 | 104.26.12.31:443 | 1.25ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | 188.114.96.113:443 | 1.35ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | 104.20.17.233:443 | 1.25ms | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.39.73.201:22222 | 84.18ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.39.73.201:22222 | 108.45ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "13.39.73.201",
             "server_port": 22222,
@@ -165,7 +153,28 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.39.73.201:22223 | 84.6ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.36.216.106:22222 | 105.76ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "13.36.216.106",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | FR🇫🇷 | 13.39.73.201:22223 | 105.67ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "13.39.73.201",
             "server_port": 22223,
@@ -186,11 +195,11 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | RELAY🚩 | 104.26.12.31:443 | 1.25ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 13.36.216.106:22223 | 104.74ms | 0️⃣2️⃣",
             "type": "trojan",
-            "server": "104.26.12.31",
-            "server_port": 443,
-            "password": "auto",
+            "server": "13.36.216.106",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -198,58 +207,11 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "trojanmz.pages.dev",
+                "server_name": "trojan.burgerip.co.uk",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/trojanmz.pages.dev\/?ed=2560",
-                "headers": {
-                    "Host": "trojanmz.pages.dev"
-                }
-            }
-        },
-        {
-            "tag": "@ConfigsHUB | RELAY🚩 | 188.114.96.113:443 | 1.35ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "188.114.96.113",
-            "server_port": 443,
-            "password": "NISHIKUITAN222",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@ConfigsHUB | RELAY🚩 | 104.20.17.233:443 | 1.25ms | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "104.20.17.233",
-            "server_port": 443,
-            "password": "auto",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "b96ef9ae.trojanfree-76s.pages.dev",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/b96ef9ae.trojanfree-76s.pages.dev\/",
-                "headers": {
-                    "Host": "b96ef9ae.trojanfree-76s.pages.dev"
                 }
             }
         },
