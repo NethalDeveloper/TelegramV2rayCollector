@@ -104,25 +104,33 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@iP_CF | DE🇩🇪 | serkat.org:443 | 200.22ms | 0️⃣1️⃣",
-                "@free4allVPN | DE🇩🇪 | fapeng.org:443 | 276.32ms | 0️⃣1️⃣",
-                "@prrofile_purple | CA🇨🇦 | 92.243.64.36:443 | 21.05ms | 0️⃣1️⃣"
+                "@iP_CF | CA🇨🇦 | serkat.org:443 | 178.34ms | 0️⃣1️⃣",
+                "@free4allVPN | US🇺🇸 | fapeng.org:443 | 167.81ms | 0️⃣1️⃣",
+                "@prrofile_purple | CA🇨🇦 | 92.243.64.36:443 | 65.53ms | 0️⃣1️⃣",
+                "@prrofile_purple | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.safari-df.ir.:80 | 317.3ms | 0️⃣2️⃣",
+                "@ConfigsHUB | PL🇵🇱 | kampong.org:443 | 33.16ms | 0️⃣1️⃣",
+                "@ConfigsHUB | DE🇩🇪 | yichueng.org:443 | 268.8ms | 0️⃣2️⃣",
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 549.73ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@iP_CF | DE🇩🇪 | serkat.org:443 | 200.22ms | 0️⃣1️⃣",
-                "@free4allVPN | DE🇩🇪 | fapeng.org:443 | 276.32ms | 0️⃣1️⃣",
-                "@prrofile_purple | CA🇨🇦 | 92.243.64.36:443 | 21.05ms | 0️⃣1️⃣"
+                "@iP_CF | CA🇨🇦 | serkat.org:443 | 178.34ms | 0️⃣1️⃣",
+                "@free4allVPN | US🇺🇸 | fapeng.org:443 | 167.81ms | 0️⃣1️⃣",
+                "@prrofile_purple | CA🇨🇦 | 92.243.64.36:443 | 65.53ms | 0️⃣1️⃣",
+                "@prrofile_purple | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.safari-df.ir.:80 | 317.3ms | 0️⃣2️⃣",
+                "@ConfigsHUB | PL🇵🇱 | kampong.org:443 | 33.16ms | 0️⃣1️⃣",
+                "@ConfigsHUB | DE🇩🇪 | yichueng.org:443 | 268.8ms | 0️⃣2️⃣",
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 549.73ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@iP_CF | DE🇩🇪 | serkat.org:443 | 200.22ms | 0️⃣1️⃣",
+            "tag": "@iP_CF | CA🇨🇦 | serkat.org:443 | 178.34ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "serkat.org",
             "server_port": 443,
@@ -158,7 +166,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | DE🇩🇪 | fapeng.org:443 | 276.32ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | US🇺🇸 | fapeng.org:443 | 167.81ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "fapeng.org",
             "server_port": 443,
@@ -194,7 +202,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | CA🇨🇦 | 92.243.64.36:443 | 21.05ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | CA🇨🇦 | 92.243.64.36:443 | 65.53ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "92.243.64.36",
             "server_port": 443,
@@ -224,6 +232,130 @@
                 "path": "\/\/",
                 "headers": {
                     "Host": "92.243.64.36"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@prrofile_purple | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.safari-df.ir.:80 | 317.3ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "185.146.173.25",
+            "server_port": 80,
+            "uuid": "e3cb5c38-1168-46ad-aec4-62ffd3614690",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "185.146.173.25"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | PL🇵🇱 | kampong.org:443 | 33.16ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "57.129.28.214",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "kampong.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "57.129.28.214"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | DE🇩🇪 | yichueng.org:443 | 268.8ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "91.134.8.92",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yichueng.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "91.134.8.92"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 549.73ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "42.2.113.136",
+            "server_port": 80,
+            "uuid": "98d2b660-7218-11ec-bd7c-f23c913c8d2b",
+            "security": "auto",
+            "alter_id": 2,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "42.2.113.136"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
