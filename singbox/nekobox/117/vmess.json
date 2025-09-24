@@ -108,10 +108,11 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@iP_CF | DE🇩🇪 | serkat.org:443 | 316.06ms | 0️⃣1️⃣",
-                "@free4allVPN | DE🇩🇪 | fapeng.org:443 | 303.77ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | 158.255.213.162:443 | 34.44ms | 0️⃣1️⃣",
-                "@prrofile_purple | CA🇨🇦 | 92.243.64.36:443 | 27.83ms | 0️⃣2️⃣"
+                "@iP_CF | DE🇩🇪 | serkat.org:443 | 271.73ms | 0️⃣1️⃣",
+                "@free4allVPN | DE🇩🇪 | fapeng.org:443 | 255.61ms | 0️⃣1️⃣",
+                "@prrofile_purple | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.safari-df.ir.:80 | 278.32ms | 0️⃣3️⃣",
+                "@prrofile_purple | US🇺🇸 | 158.255.213.162:443 | 7.09ms | 0️⃣1️⃣",
+                "@prrofile_purple | CA🇨🇦 | 92.243.64.36:443 | 26.07ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -121,8 +122,9 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@iP_CF | DE🇩🇪 | serkat.org:443 | 316.06ms | 0️⃣1️⃣",
-                "@free4allVPN | DE🇩🇪 | fapeng.org:443 | 303.77ms | 0️⃣1️⃣"
+                "@iP_CF | DE🇩🇪 | serkat.org:443 | 271.73ms | 0️⃣1️⃣",
+                "@free4allVPN | DE🇩🇪 | fapeng.org:443 | 255.61ms | 0️⃣1️⃣",
+                "@prrofile_purple | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.safari-df.ir.:80 | 278.32ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -132,7 +134,7 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | US🇺🇸 | 158.255.213.162:443 | 34.44ms | 0️⃣1️⃣"
+                "@prrofile_purple | US🇺🇸 | 158.255.213.162:443 | 7.09ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,14 +144,14 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | CA🇨🇦 | 92.243.64.36:443 | 27.83ms | 0️⃣2️⃣"
+                "@prrofile_purple | CA🇨🇦 | 92.243.64.36:443 | 26.07ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@iP_CF | DE🇩🇪 | serkat.org:443 | 316.06ms | 0️⃣1️⃣",
+            "tag": "@iP_CF | DE🇩🇪 | serkat.org:443 | 271.73ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "serkat.org",
             "server_port": 443,
@@ -185,7 +187,7 @@
             }
         },
         {
-            "tag": "@free4allVPN | DE🇩🇪 | fapeng.org:443 | 303.77ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | DE🇩🇪 | fapeng.org:443 | 255.61ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "fapeng.org",
             "server_port": 443,
@@ -221,7 +223,33 @@
             }
         },
         {
-            "tag": "@prrofile_purple | US🇺🇸 | 158.255.213.162:443 | 34.44ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.safari-df.ir.:80 | 278.32ms | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "185.146.173.25",
+            "server_port": 80,
+            "uuid": "e3cb5c38-1168-46ad-aec4-62ffd3614690",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "185.146.173.25"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@prrofile_purple | US🇺🇸 | 158.255.213.162:443 | 7.09ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "158.255.213.162",
             "server_port": 443,
@@ -257,7 +285,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | CA🇨🇦 | 92.243.64.36:443 | 27.83ms | 0️⃣2️⃣",
+            "tag": "@prrofile_purple | CA🇨🇦 | 92.243.64.36:443 | 26.07ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "92.243.64.36",
             "server_port": 443,
