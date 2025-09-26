@@ -103,18 +103,19 @@
             "outbounds": [
                 "URL-TEST",
                 "FR🇫🇷",
-                "AU🇦🇺"
+                "RELAY🚩"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 122.92ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 123.68ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 123.42ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.38.173.119:22223 | 126.08ms | 0️⃣2️⃣",
-                "@ConfigsHUB | AU🇦🇺 | louber.missionsec.us:443 | 223.61ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 128.32ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 138.71ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 135.62ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.38.173.119:22223 | 138.54ms | 0️⃣2️⃣",
+                "@ConfigsHUB | RELAY🚩 | 162.159.153.161:443 | 8.55ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | 104.21.88.129:443 | 8.44ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -124,27 +125,28 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 122.92ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 123.68ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 123.42ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.38.173.119:22223 | 126.08ms | 0️⃣2️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 128.32ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 138.71ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 135.62ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.38.173.119:22223 | 138.54ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "AU🇦🇺",
+            "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@ConfigsHUB | AU🇦🇺 | louber.missionsec.us:443 | 223.61ms | 0️⃣1️⃣"
+                "@ConfigsHUB | RELAY🚩 | 162.159.153.161:443 | 8.55ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | 104.21.88.129:443 | 8.44ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 122.92ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 128.32ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "13.39.186.93",
             "server_port": 22222,
@@ -165,7 +167,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 123.68ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 138.71ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "13.38.173.119",
             "server_port": 22222,
@@ -186,7 +188,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 123.42ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 135.62ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "13.39.186.93",
             "server_port": 22223,
@@ -207,7 +209,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.38.173.119:22223 | 126.08ms | 0️⃣2️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 13.38.173.119:22223 | 138.54ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "13.38.173.119",
             "server_port": 22223,
@@ -228,11 +230,11 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | AU🇦🇺 | louber.missionsec.us:443 | 223.61ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | 162.159.153.161:443 | 8.55ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "louber.missionsec.us",
+            "server": "162.159.153.161",
             "server_port": 443,
-            "password": "BAu7ZSyD3IZppnCOxCzaFXje3SECzZgX83e3x7yZA8SDCacyagKFlEO6O0AlTSwDDe4SF",
+            "password": "bpb-trojan",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -240,7 +242,28 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "",
+                "server_name": "cf.090227.xyz",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | RELAY🚩 | 104.21.88.129:443 | 8.44ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "104.21.88.129",
+            "server_port": 443,
+            "password": "vip",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "heihu880.pages.dev",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
