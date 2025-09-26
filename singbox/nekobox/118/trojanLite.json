@@ -104,25 +104,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 99.93ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 100.63ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 103.72ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 122.92ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 123.68ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 123.42ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.38.173.119:22223 | 126.08ms | 0️⃣2️⃣",
+                "@ConfigsHUB | AU🇦🇺 | louber.missionsec.us:443 | 223.61ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 99.93ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 100.63ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 103.72ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 122.92ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 123.68ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 123.42ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.38.173.119:22223 | 126.08ms | 0️⃣2️⃣",
+                "@ConfigsHUB | AU🇦🇺 | louber.missionsec.us:443 | 223.61ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 99.93ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 122.92ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "13.39.186.93",
             "server_port": 22222,
@@ -143,7 +147,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 100.63ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 123.68ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "13.38.173.119",
             "server_port": 22222,
@@ -164,7 +168,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 103.72ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 123.42ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "13.39.186.93",
             "server_port": 22223,
@@ -177,6 +181,48 @@
             "tls": {
                 "enabled": true,
                 "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | FR🇫🇷 | 13.38.173.119:22223 | 126.08ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "13.38.173.119",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | AU🇦🇺 | louber.missionsec.us:443 | 223.61ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "louber.missionsec.us",
+            "server_port": 443,
+            "password": "BAu7ZSyD3IZppnCOxCzaFXje3SECzZgX83e3x7yZA8SDCacyagKFlEO6O0AlTSwDDe4SF",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
