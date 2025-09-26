@@ -104,29 +104,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 138.53ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 135.92ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 129.12ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.38.173.119:22223 | 136.87ms | 0️⃣2️⃣",
-                "@ConfigsHUB | GB🇬🇧 | 195.22.157.104:37085 | 151.18ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 84.78ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 86.91ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 102.99ms | 0️⃣1️⃣",
+                "@ConfigsHUB | US🇺🇸 | 51.81.203.233:443 | 71.22ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 138.53ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 135.92ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 129.12ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.38.173.119:22223 | 136.87ms | 0️⃣2️⃣",
-                "@ConfigsHUB | GB🇬🇧 | 195.22.157.104:37085 | 151.18ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 84.78ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 86.91ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 102.99ms | 0️⃣1️⃣",
+                "@ConfigsHUB | US🇺🇸 | 51.81.203.233:443 | 71.22ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 138.53ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.39.186.93:22222 | 84.78ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "13.39.186.93",
             "server_port": 22222,
@@ -147,7 +145,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 135.92ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.38.173.119:22222 | 86.91ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "13.38.173.119",
             "server_port": 22222,
@@ -168,7 +166,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 129.12ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 13.39.186.93:22223 | 102.99ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "13.39.186.93",
             "server_port": 22223,
@@ -189,11 +187,11 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.38.173.119:22223 | 136.87ms | 0️⃣2️⃣",
+            "tag": "@ConfigsHUB | US🇺🇸 | 51.81.203.233:443 | 71.22ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "13.38.173.119",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
+            "server": "51.81.203.233",
+            "server_port": 443,
+            "password": "2ee85121-31de-4581-a492-eb00f606e392",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -201,28 +199,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@ConfigsHUB | GB🇬🇧 | 195.22.157.104:37085 | 151.18ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "195.22.157.104",
-            "server_port": 37085,
-            "password": "1sbtkLK7F3",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "joon.arshiacomplus.dpdns.org",
+                "server_name": "rs4.freeguard.org",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
