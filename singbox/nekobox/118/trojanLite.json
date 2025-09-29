@@ -104,27 +104,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@PrivateVPNs | FR🇫🇷 | 52.47.180.25:22222 | 193.01ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.38.203.210:22222 | 140.49ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 52.47.180.25:22223 | 140.56ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.38.203.210:22223 | 147.98ms | 0️⃣2️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 52.47.180.25:22222 | 167.06ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.38.203.210:22222 | 149.51ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.38.203.210:22223 | 140.9ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | vle.amclubsvip.dpdns.org:443 | 244.8ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | vle.amclubssss.dpdns.org:2096 | 250.25ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 52.47.180.25:22222 | 193.01ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 13.38.203.210:22222 | 140.49ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 52.47.180.25:22223 | 140.56ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.38.203.210:22223 | 147.98ms | 0️⃣2️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 52.47.180.25:22222 | 167.06ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 13.38.203.210:22222 | 149.51ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.38.203.210:22223 | 140.9ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | vle.amclubsvip.dpdns.org:443 | 244.8ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | vle.amclubssss.dpdns.org:2096 | 250.25ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 52.47.180.25:22222 | 193.01ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 52.47.180.25:22222 | 167.06ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "52.47.180.25",
             "server_port": 22222,
@@ -145,7 +147,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.38.203.210:22222 | 140.49ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.38.203.210:22222 | 149.51ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "13.38.203.210",
             "server_port": 22222,
@@ -166,9 +168,9 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 52.47.180.25:22223 | 140.56ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 13.38.203.210:22223 | 140.9ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "52.47.180.25",
+            "server": "13.38.203.210",
             "server_port": 22223,
             "password": "telegram-id-directvpn",
             "multiplex": {
@@ -187,24 +189,27 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.38.203.210:22223 | 147.98ms | 0️⃣2️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | vle.amclubsvip.dpdns.org:443 | 244.8ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "13.38.203.210",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
+            "server": "156.238.19.8",
+            "server_port": 443,
+            "password": "d6b8011a-c725-435a-9fec-bf6d3530392c",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | RELAY🚩 | vle.amclubssss.dpdns.org:2096 | 250.25ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "194.53.53.11",
+            "server_port": 2096,
+            "password": "d6b8011a-c725-435a-9fec-bf6d3530392c",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
