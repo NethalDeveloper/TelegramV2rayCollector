@@ -102,25 +102,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.16.244:443 | 151.93ms | 0️⃣1️⃣",
-                "REALITY | @v2rayNG_Matsuri | NL🇳🇱 | 195.93.253.49:33094 | 142.58ms | 0️⃣3️⃣",
-                "REALITY | @ConfigsHUB | DE🇩🇪 | fast7.hvitrin.ir:48769 | 382.42ms | 0️⃣3️⃣"
+                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.16.244:443 | 118ms | 0️⃣1️⃣",
+                "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 226.57ms | 0️⃣2️⃣",
+                "REALITY | @v2rayNG_Matsuri | NL🇳🇱 | 195.93.253.49:33094 | 108.85ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.16.244:443 | 151.93ms | 0️⃣1️⃣",
-                "REALITY | @v2rayNG_Matsuri | NL🇳🇱 | 195.93.253.49:33094 | 142.58ms | 0️⃣3️⃣",
-                "REALITY | @ConfigsHUB | DE🇩🇪 | fast7.hvitrin.ir:48769 | 382.42ms | 0️⃣3️⃣"
+                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.16.244:443 | 118ms | 0️⃣1️⃣",
+                "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 226.57ms | 0️⃣2️⃣",
+                "REALITY | @v2rayNG_Matsuri | NL🇳🇱 | 195.93.253.49:33094 | 108.85ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @Parsashonam | DE🇩🇪 | 91.99.16.244:443 | 151.93ms | 0️⃣1️⃣",
+            "tag": "REALITY | @Parsashonam | DE🇩🇪 | 91.99.16.244:443 | 118ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "91.99.16.244",
             "server_port": 443,
@@ -148,7 +148,35 @@
             }
         },
         {
-            "tag": "REALITY | @v2rayNG_Matsuri | NL🇳🇱 | 195.93.253.49:33094 | 142.58ms | 0️⃣3️⃣",
+            "tag": "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 226.57ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "hybrid.arvancloud.online",
+            "server_port": 44443,
+            "uuid": "53fff6cc-b4ec-43e8-ade5-e0c42972fc33",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @v2rayNG_Matsuri | NL🇳🇱 | 195.93.253.49:33094 | 108.85ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "195.93.253.49",
             "server_port": 33094,
@@ -172,34 +200,6 @@
                     "enabled": true,
                     "public_key": "35JazACyPS6LcDwpGibneEeMzkzGYWf4KTG_Oqp0oBE",
                     "short_id": "29489194da0d5d"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @ConfigsHUB | DE🇩🇪 | fast7.hvitrin.ir:48769 | 382.42ms | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "fast7.hvitrin.ir",
-            "server_port": 48769,
-            "uuid": "f8806934-15d7-4194-9c35-ec7a140bb6f6",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "miro.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "7nXyxyyn6fSlJzPO1DFmIEUV8LAmoP58-_1zP_MKo2E",
-                    "short_id": "177f438f"
                 }
             }
         },
