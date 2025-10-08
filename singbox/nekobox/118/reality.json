@@ -105,7 +105,7 @@
             "outbounds": [
                 "URL-TEST",
                 "DE🇩🇪",
-                "RU🇷🇺",
+                "IR🇮🇷",
                 "US🇺🇸"
             ]
         },
@@ -113,10 +113,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.16.244:443 | 127.3ms | 0️⃣1️⃣",
-                "REALITY | @ShadowProxy66 | DE🇩🇪 | 155.254.35.78:33811 | 175.63ms | 0️⃣2️⃣",
-                "REALITY | @free_v2rayyy | RU🇷🇺 | ruunion.ru:443 | 302.55ms | 0️⃣2️⃣",
-                "REALITY | @ShadowProxy66 | US🇺🇸 | 129.146.132.124:1500 | 49.98ms | 0️⃣3️⃣"
+                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.16.244:443 | 128.2ms | 0️⃣1️⃣",
+                "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 245.14ms | 0️⃣2️⃣",
+                "REALITY | @ShadowProxy66 | US🇺🇸 | 129.146.132.124:1500 | 50.58ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -126,18 +125,17 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.16.244:443 | 127.3ms | 0️⃣1️⃣",
-                "REALITY | @ShadowProxy66 | DE🇩🇪 | 155.254.35.78:33811 | 175.63ms | 0️⃣2️⃣"
+                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.16.244:443 | 128.2ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "RU🇷🇺",
+            "tag": "IR🇮🇷",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @free_v2rayyy | RU🇷🇺 | ruunion.ru:443 | 302.55ms | 0️⃣2️⃣"
+                "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 245.14ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -147,14 +145,14 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ShadowProxy66 | US🇺🇸 | 129.146.132.124:1500 | 49.98ms | 0️⃣3️⃣"
+                "REALITY | @ShadowProxy66 | US🇺🇸 | 129.146.132.124:1500 | 50.58ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @Parsashonam | DE🇩🇪 | 91.99.16.244:443 | 127.3ms | 0️⃣1️⃣",
+            "tag": "REALITY | @Parsashonam | DE🇩🇪 | 91.99.16.244:443 | 128.2ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "91.99.16.244",
             "server_port": 443,
@@ -182,46 +180,11 @@
             }
         },
         {
-            "tag": "REALITY | @ShadowProxy66 | DE🇩🇪 | 155.254.35.78:33811 | 175.63ms | 0️⃣2️⃣",
+            "tag": "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 245.14ms | 0️⃣2️⃣",
             "type": "vless",
-            "server": "155.254.35.78",
-            "server_port": 33811,
-            "uuid": "3940e9ba-d0f6-4052-bd8e-f3c2a2a76599",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "miro.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "fa3n6JDInXvPSrde2HYqogCf2YheiIgxhhO3N3gO1Qs",
-                    "short_id": "63f811342e9c75"
-                }
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": "miro.com",
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
-            }
-        },
-        {
-            "tag": "REALITY | @free_v2rayyy | RU🇷🇺 | ruunion.ru:443 | 302.55ms | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "ruunion.ru",
-            "server_port": 443,
-            "uuid": "7f74ad83-4aaf-419b-8caf-ff66c354bcbc",
+            "server": "hybrid.arvancloud.online",
+            "server_port": 44443,
+            "uuid": "53fff6cc-b4ec-43e8-ade5-e0c42972fc33",
             "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -231,7 +194,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "yahoo.com",
+                "server_name": "www.speedtest.net",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -239,13 +202,13 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "9qaBiJ3zMogUBKByaq71xT9xDu1dmN1b47rXOYUy6Rw",
-                    "short_id": "6650429727ca"
+                    "public_key": "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ",
+                    "short_id": ""
                 }
             }
         },
         {
-            "tag": "REALITY | @ShadowProxy66 | US🇺🇸 | 129.146.132.124:1500 | 49.98ms | 0️⃣3️⃣",
+            "tag": "REALITY | @ShadowProxy66 | US🇺🇸 | 129.146.132.124:1500 | 50.58ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "129.146.132.124",
             "server_port": 1500,
