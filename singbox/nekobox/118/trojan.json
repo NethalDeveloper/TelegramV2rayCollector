@@ -105,20 +105,22 @@
             "outbounds": [
                 "URL-TEST",
                 "FR🇫🇷",
-                "RELAY🚩"
+                "RELAY🚩",
+                "PL🇵🇱"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 15.236.139.116:22222 | 132.85ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 35.181.217.168:22222 | 103.04ms | 0️⃣2️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 15.237.17.57:22222 | 99.96ms | 0️⃣3️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.236.139.116:22223 | 105.87ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 35.181.217.168:22223 | 101.18ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.237.17.57:22223 | 121.07ms | 0️⃣3️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 25.59ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 15.236.139.116:22222 | 129.87ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 35.181.217.168:22222 | 99.67ms | 0️⃣2️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 15.237.17.57:22222 | 129.54ms | 0️⃣3️⃣",
+                "@DirectVPN | FR🇫🇷 | 15.236.139.116:22223 | 119.7ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 35.181.217.168:22223 | 106.32ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 15.237.17.57:22223 | 126.61ms | 0️⃣3️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 8.03ms | 0️⃣1️⃣",
+                "@ConfigsHUB | PL🇵🇱 | 91.108.249.171:443 | 129.45ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -128,12 +130,12 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 15.236.139.116:22222 | 132.85ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 35.181.217.168:22222 | 103.04ms | 0️⃣2️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 15.237.17.57:22222 | 99.96ms | 0️⃣3️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.236.139.116:22223 | 105.87ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 35.181.217.168:22223 | 101.18ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.237.17.57:22223 | 121.07ms | 0️⃣3️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 15.236.139.116:22222 | 129.87ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 35.181.217.168:22222 | 99.67ms | 0️⃣2️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 15.237.17.57:22222 | 129.54ms | 0️⃣3️⃣",
+                "@DirectVPN | FR🇫🇷 | 15.236.139.116:22223 | 119.7ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 35.181.217.168:22223 | 106.32ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 15.237.17.57:22223 | 126.61ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,14 +145,24 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 25.59ms | 0️⃣1️⃣"
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 8.03ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 15.236.139.116:22222 | 132.85ms | 0️⃣1️⃣",
+            "tag": "PL🇵🇱",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | PL🇵🇱 | 91.108.249.171:443 | 129.45ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@PrivateVPNs | FR🇫🇷 | 15.236.139.116:22222 | 129.87ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "15.236.139.116",
             "server_port": 22222,
@@ -171,7 +183,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 35.181.217.168:22222 | 103.04ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 35.181.217.168:22222 | 99.67ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "35.181.217.168",
             "server_port": 22222,
@@ -192,7 +204,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 15.237.17.57:22222 | 99.96ms | 0️⃣3️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 15.237.17.57:22222 | 129.54ms | 0️⃣3️⃣",
             "type": "trojan",
             "server": "15.237.17.57",
             "server_port": 22222,
@@ -213,7 +225,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 15.236.139.116:22223 | 105.87ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 15.236.139.116:22223 | 119.7ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "15.236.139.116",
             "server_port": 22223,
@@ -234,7 +246,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 35.181.217.168:22223 | 101.18ms | 0️⃣2️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 35.181.217.168:22223 | 106.32ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "35.181.217.168",
             "server_port": 22223,
@@ -255,7 +267,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 15.237.17.57:22223 | 121.07ms | 0️⃣3️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 15.237.17.57:22223 | 126.61ms | 0️⃣3️⃣",
             "type": "trojan",
             "server": "15.237.17.57",
             "server_port": 22223,
@@ -276,7 +288,7 @@
             }
         },
         {
-            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 25.59ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 8.03ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "creativecommons.org",
             "server_port": 2053,
@@ -301,6 +313,18 @@
                 "headers": {
                     "Host": "kotlet.arshiacomplus.dpdns.org"
                 }
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | PL🇵🇱 | 91.108.249.171:443 | 129.45ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "91.108.249.171",
+            "server_port": 443,
+            "password": "V2qblnpdB6",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
