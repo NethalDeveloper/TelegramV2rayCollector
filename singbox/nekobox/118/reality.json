@@ -104,15 +104,17 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "DE🇩🇪"
+                "DE🇩🇪",
+                "IR🇮🇷"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.16.244:443 | 95.24ms | 0️⃣1️⃣",
-                "REALITY | @free_v2rayyy | DE🇩🇪 | 87.120.186.221:443 | 91.82ms | 0️⃣2️⃣"
+                "REALITY | @Parsashonam | DE🇩🇪 | 116.203.201.167:443 | 99.87ms | 0️⃣2️⃣",
+                "REALITY | @free_v2rayyy | DE🇩🇪 | 87.120.186.221:443 | 95.47ms | 0️⃣2️⃣",
+                "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 539.12ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -122,19 +124,29 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.16.244:443 | 95.24ms | 0️⃣1️⃣",
-                "REALITY | @free_v2rayyy | DE🇩🇪 | 87.120.186.221:443 | 91.82ms | 0️⃣2️⃣"
+                "REALITY | @Parsashonam | DE🇩🇪 | 116.203.201.167:443 | 99.87ms | 0️⃣2️⃣",
+                "REALITY | @free_v2rayyy | DE🇩🇪 | 87.120.186.221:443 | 95.47ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @Parsashonam | DE🇩🇪 | 91.99.16.244:443 | 95.24ms | 0️⃣1️⃣",
+            "tag": "IR🇮🇷",
+            "type": "urltest",
+            "outbounds": [
+                "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 539.12ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "REALITY | @Parsashonam | DE🇩🇪 | 116.203.201.167:443 | 99.87ms | 0️⃣2️⃣",
             "type": "vless",
-            "server": "91.99.16.244",
+            "server": "116.203.201.167",
             "server_port": 443,
-            "uuid": "Parsashonam-312",
+            "uuid": "Parsashonam-313",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -144,7 +156,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "Google.com",
+                "server_name": "google.com",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -152,13 +164,13 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "sa5RHNjAAD3hYv4OU_YYU08gRUsmPs5JdZES5Xy3pn8",
-                    "short_id": "61e683d41fdb"
+                    "public_key": "LOi-3brURXBaOe83KFpaKZ5A4exl3J9qjeZIIWa8GCQ",
+                    "short_id": "0a8b4a1ad485"
                 }
             }
         },
         {
-            "tag": "REALITY | @free_v2rayyy | DE🇩🇪 | 87.120.186.221:443 | 91.82ms | 0️⃣2️⃣",
+            "tag": "REALITY | @free_v2rayyy | DE🇩🇪 | 87.120.186.221:443 | 95.47ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "87.120.186.221",
             "server_port": 443,
@@ -181,6 +193,34 @@
                 "reality": {
                     "enabled": true,
                     "public_key": "05_Xn4A6wgLu2bXs-ZDZKIXsHuAjEgjNUu3H7cKVjCw",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 539.12ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "hybrid.arvancloud.online",
+            "server_port": 44443,
+            "uuid": "53fff6cc-b4ec-43e8-ade5-e0c42972fc33",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.speedtest.net",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ",
                     "short_id": ""
                 }
             }
