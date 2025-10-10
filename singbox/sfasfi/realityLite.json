@@ -102,25 +102,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @Parsashonam | DE🇩🇪 | 116.203.201.167:443 | 99.98ms | 0️⃣2️⃣",
-                "REALITY | @free_v2rayyy | DE🇩🇪 | 87.120.186.221:443 | 94.92ms | 0️⃣2️⃣",
-                "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 186.4ms | 0️⃣2️⃣"
+                "REALITY | @Parsashonam | DE🇩🇪 | 116.203.201.167:443 | 123.79ms | 0️⃣2️⃣",
+                "REALITY | @free_v2rayyy | DE🇩🇪 | 87.120.186.221:443 | 114.97ms | 0️⃣2️⃣",
+                "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 230.08ms | 0️⃣2️⃣",
+                "REALITY | @ConfigsHUB | FI🇫🇮 | 45.15.127.196:443 | 135.55ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @Parsashonam | DE🇩🇪 | 116.203.201.167:443 | 99.98ms | 0️⃣2️⃣",
-                "REALITY | @free_v2rayyy | DE🇩🇪 | 87.120.186.221:443 | 94.92ms | 0️⃣2️⃣",
-                "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 186.4ms | 0️⃣2️⃣"
+                "REALITY | @Parsashonam | DE🇩🇪 | 116.203.201.167:443 | 123.79ms | 0️⃣2️⃣",
+                "REALITY | @free_v2rayyy | DE🇩🇪 | 87.120.186.221:443 | 114.97ms | 0️⃣2️⃣",
+                "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 230.08ms | 0️⃣2️⃣",
+                "REALITY | @ConfigsHUB | FI🇫🇮 | 45.15.127.196:443 | 135.55ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @Parsashonam | DE🇩🇪 | 116.203.201.167:443 | 99.98ms | 0️⃣2️⃣",
+            "tag": "REALITY | @Parsashonam | DE🇩🇪 | 116.203.201.167:443 | 123.79ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "116.203.201.167",
             "server_port": 443,
@@ -148,7 +150,7 @@
             }
         },
         {
-            "tag": "REALITY | @free_v2rayyy | DE🇩🇪 | 87.120.186.221:443 | 94.92ms | 0️⃣2️⃣",
+            "tag": "REALITY | @free_v2rayyy | DE🇩🇪 | 87.120.186.221:443 | 114.97ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "87.120.186.221",
             "server_port": 443,
@@ -176,7 +178,7 @@
             }
         },
         {
-            "tag": "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 186.4ms | 0️⃣2️⃣",
+            "tag": "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 230.08ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "hybrid.arvancloud.online",
             "server_port": 44443,
@@ -199,6 +201,34 @@
                 "reality": {
                     "enabled": true,
                     "public_key": "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @ConfigsHUB | FI🇫🇮 | 45.15.127.196:443 | 135.55ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "45.15.127.196",
+            "server_port": 443,
+            "uuid": "6d2e2298-7bef-476f-b06d-6062980d75db",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.microsoft.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "jSx3_X_tBAcNgp7SrKSfZnr5WN0cTN2ShEJv4rHceQU",
                     "short_id": ""
                 }
             }
