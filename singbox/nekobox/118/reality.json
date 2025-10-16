@@ -104,17 +104,14 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "DE🇩🇪",
-                "IR🇮🇷"
+                "DE🇩🇪"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.179.233:443 | 92.45ms | 0️⃣1️⃣",
-                "REALITY | @ConfigsHUB | DE🇩🇪 | 185.144.70.28:8443 | 87.86ms | 0️⃣1️⃣",
-                "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 221.57ms | 0️⃣2️⃣"
+                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.179.233:443 | 158.47ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -124,25 +121,14 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.179.233:443 | 92.45ms | 0️⃣1️⃣",
-                "REALITY | @ConfigsHUB | DE🇩🇪 | 185.144.70.28:8443 | 87.86ms | 0️⃣1️⃣"
+                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.179.233:443 | 158.47ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "IR🇮🇷",
-            "type": "urltest",
-            "outbounds": [
-                "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 221.57ms | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "REALITY | @Parsashonam | DE🇩🇪 | 91.99.179.233:443 | 92.45ms | 0️⃣1️⃣",
+            "tag": "REALITY | @Parsashonam | DE🇩🇪 | 91.99.179.233:443 | 158.47ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "91.99.179.233",
             "server_port": 443,
@@ -166,62 +152,6 @@
                     "enabled": true,
                     "public_key": "LOi-3brURXBaOe83KFpaKZ5A4exl3J9qjeZIIWa8GCQ",
                     "short_id": "0a8b4a1ad485"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @ConfigsHUB | DE🇩🇪 | 185.144.70.28:8443 | 87.86ms | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "185.144.70.28",
-            "server_port": 8443,
-            "uuid": "a3185438-23cb-4fe3-95da-3e5f3fc43525",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "ign.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
-                    "short_id": ""
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @V2rayNGn | IR🇮🇷 | hybrid.arvancloud.online:44443 | 221.57ms | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "hybrid.arvancloud.online",
-            "server_port": 44443,
-            "uuid": "53fff6cc-b4ec-43e8-ade5-e0c42972fc33",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.speedtest.net",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ",
-                    "short_id": ""
                 }
             }
         },
