@@ -99,27 +99,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.179.233:443 | 158.58ms | 0️⃣1️⃣",
-                "REALITY | @prrofile_purple | GB🇬🇧 | 212.134.84.108:443 | 160.54ms | 0️⃣2️⃣",
-                "REALITY | @v2rayNG_Matsuri | DE🇩🇪 | vfast7.hvitrin.ir:49330 | 657.23ms | 0️⃣1️⃣",
-                "REALITY | @FreakConfig | DE🇩🇪 | fast7.hvitrin.ir:48769 | 317.9ms | 0️⃣1️⃣"
+                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.179.233:443 | 164.28ms | 0️⃣1️⃣",
+                "REALITY | @prrofile_purple | GB🇬🇧 | 212.134.84.108:443 | 174.42ms | 0️⃣1️⃣",
+                "REALITY | @v2rayNG_Matsuri | DE🇩🇪 | vfast7.hvitrin.ir:49330 | 310.6ms | 0️⃣1️⃣",
+                "REALITY | @ConfigsHUB | CH🇨🇭 | 23.166.88.109:443 | 163.44ms | 0️⃣1️⃣",
+                "REALITY | @FreakConfig | DE🇩🇪 | fast7.hvitrin.ir:48769 | 524.52ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.179.233:443 | 158.58ms | 0️⃣1️⃣",
-                "REALITY | @prrofile_purple | GB🇬🇧 | 212.134.84.108:443 | 160.54ms | 0️⃣2️⃣",
-                "REALITY | @v2rayNG_Matsuri | DE🇩🇪 | vfast7.hvitrin.ir:49330 | 657.23ms | 0️⃣1️⃣",
-                "REALITY | @FreakConfig | DE🇩🇪 | fast7.hvitrin.ir:48769 | 317.9ms | 0️⃣1️⃣"
+                "REALITY | @Parsashonam | DE🇩🇪 | 91.99.179.233:443 | 164.28ms | 0️⃣1️⃣",
+                "REALITY | @prrofile_purple | GB🇬🇧 | 212.134.84.108:443 | 174.42ms | 0️⃣1️⃣",
+                "REALITY | @v2rayNG_Matsuri | DE🇩🇪 | vfast7.hvitrin.ir:49330 | 310.6ms | 0️⃣1️⃣",
+                "REALITY | @ConfigsHUB | CH🇨🇭 | 23.166.88.109:443 | 163.44ms | 0️⃣1️⃣",
+                "REALITY | @FreakConfig | DE🇩🇪 | fast7.hvitrin.ir:48769 | 524.52ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @Parsashonam | DE🇩🇪 | 91.99.179.233:443 | 158.58ms | 0️⃣1️⃣",
+            "tag": "REALITY | @Parsashonam | DE🇩🇪 | 91.99.179.233:443 | 164.28ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "91.99.179.233",
             "server_port": 443,
@@ -147,7 +149,7 @@
             }
         },
         {
-            "tag": "REALITY | @prrofile_purple | GB🇬🇧 | 212.134.84.108:443 | 160.54ms | 0️⃣2️⃣",
+            "tag": "REALITY | @prrofile_purple | GB🇬🇧 | 212.134.84.108:443 | 174.42ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "212.134.84.108",
             "server_port": 443,
@@ -175,7 +177,7 @@
             }
         },
         {
-            "tag": "REALITY | @v2rayNG_Matsuri | DE🇩🇪 | vfast7.hvitrin.ir:49330 | 657.23ms | 0️⃣1️⃣",
+            "tag": "REALITY | @v2rayNG_Matsuri | DE🇩🇪 | vfast7.hvitrin.ir:49330 | 310.6ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "vfast7.hvitrin.ir",
             "server_port": 49330,
@@ -203,7 +205,42 @@
             }
         },
         {
-            "tag": "REALITY | @FreakConfig | DE🇩🇪 | fast7.hvitrin.ir:48769 | 317.9ms | 0️⃣1️⃣",
+            "tag": "REALITY | @ConfigsHUB | CH🇨🇭 | 23.166.88.109:443 | 163.44ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "23.166.88.109",
+            "server_port": 443,
+            "uuid": "535915c5-b455-4ac1-a186-78353570a251",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.microsoft.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mbUkRT2YVvtaeGlZbLsfdQ-P1j07sEBBRzn9dZQ-DHY",
+                    "short_id": "be8a0c77d5ff88d5"
+                }
+            },
+            "transport": {
+                "type": "grpc",
+                "service_name": "aec69a9d2944dd7468412f47",
+                "idle_timeout": "15s",
+                "ping_timeout": "15s",
+                "permit_without_stream": false
+            }
+        },
+        {
+            "tag": "REALITY | @FreakConfig | DE🇩🇪 | fast7.hvitrin.ir:48769 | 524.52ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "fast7.hvitrin.ir",
             "server_port": 48769,
