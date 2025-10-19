@@ -105,6 +105,7 @@
             "outbounds": [
                 "URL-TEST",
                 "AE🇦🇪",
+                "FI🇫🇮",
                 "LT🇱🇹"
             ]
         },
@@ -112,9 +113,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | AE🇦🇪 | 151.242.251.147:8080 | 141.76ms | 0️⃣1️⃣",
-                "@free4allVPN | AE🇦🇪 | 78.40.198.60:47346 | 152.59ms | 0️⃣2️⃣",
-                "@vmess_vless_v2rayng | LT🇱🇹 | 45.87.175.171:8080 | 147.19ms | 0️⃣1️⃣"
+                "@free4allVPN | AE🇦🇪 | 151.242.251.147:8080 | 148.4ms | 0️⃣1️⃣",
+                "@free4allVPN | AE🇦🇪 | 78.40.198.60:47346 | 147.07ms | 0️⃣2️⃣",
+                "@vmess_vless_v2rayng | FI🇫🇮 | 83.147.216.70:64519 | 187.94ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | LT🇱🇹 | 45.87.175.171:8080 | 153.37ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -124,8 +126,18 @@
             "tag": "AE🇦🇪",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | AE🇦🇪 | 151.242.251.147:8080 | 141.76ms | 0️⃣1️⃣",
-                "@free4allVPN | AE🇦🇪 | 78.40.198.60:47346 | 152.59ms | 0️⃣2️⃣"
+                "@free4allVPN | AE🇦🇪 | 151.242.251.147:8080 | 148.4ms | 0️⃣1️⃣",
+                "@free4allVPN | AE🇦🇪 | 78.40.198.60:47346 | 147.07ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FI🇫🇮",
+            "type": "urltest",
+            "outbounds": [
+                "@vmess_vless_v2rayng | FI🇫🇮 | 83.147.216.70:64519 | 187.94ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -135,14 +147,14 @@
             "tag": "LT🇱🇹",
             "type": "urltest",
             "outbounds": [
-                "@vmess_vless_v2rayng | LT🇱🇹 | 45.87.175.171:8080 | 147.19ms | 0️⃣1️⃣"
+                "@vmess_vless_v2rayng | LT🇱🇹 | 45.87.175.171:8080 | 153.37ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | AE🇦🇪 | 151.242.251.147:8080 | 141.76ms | 0️⃣1️⃣",
+            "tag": "@free4allVPN | AE🇦🇪 | 151.242.251.147:8080 | 148.4ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "151.242.251.147",
             "server_port": 8080,
@@ -152,7 +164,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@free4allVPN | AE🇦🇪 | 78.40.198.60:47346 | 152.59ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | AE🇦🇪 | 78.40.198.60:47346 | 147.07ms | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "78.40.198.60",
             "server_port": 47346,
@@ -162,7 +174,17 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@vmess_vless_v2rayng | LT🇱🇹 | 45.87.175.171:8080 | 147.19ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | FI🇫🇮 | 83.147.216.70:64519 | 187.94ms | 0️⃣1️⃣",
+            "type": "shadowsocks",
+            "server": "83.147.216.70",
+            "server_port": 64519,
+            "method": "chacha20-ietf-poly1305",
+            "password": "UlT89D0rvcr05tKft1NB5a",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@vmess_vless_v2rayng | LT🇱🇹 | 45.87.175.171:8080 | 153.37ms | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "45.87.175.171",
             "server_port": 8080,
