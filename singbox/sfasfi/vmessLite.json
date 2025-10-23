@@ -102,107 +102,33 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 116.77ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 124.46ms | 0️⃣1️⃣",
-                "@free1_vpn | US🇺🇸 | fapeng.org:443 | 42.98ms | 0️⃣2️⃣",
-                "@Hope_Net | US🇺🇸 | d.lammaland.org:443 | 125.42ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | d.usaha.homes:443 | 219.91ms | 0️⃣2️⃣",
-                "@FreakConfig | FR🇫🇷 | jamekk.org:443 | 37.71ms | 0️⃣1️⃣",
-                "@FreakConfig | CA🇨🇦 | kampong.org:443 | 182.26ms | 0️⃣2️⃣",
-                "@FreakConfig | DE🇩🇪 | serkat.org:443 | 118ms | 0️⃣3️⃣"
+                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 219.63ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 34.76ms | 0️⃣2️⃣",
+                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 233.41ms | 0️⃣3️⃣",
+                "@Hope_Net | US🇺🇸 | d.lammaland.org:443 | 211.44ms | 0️⃣1️⃣",
+                "@FreakConfig | CA🇨🇦 | jamekk.org:443 | 196.21ms | 0️⃣1️⃣",
+                "@FreakConfig | FR🇫🇷 | kampong.org:443 | 288.44ms | 0️⃣2️⃣",
+                "@FreakConfig | FR🇫🇷 | serkat.org:443 | 264.58ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 116.77ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 124.46ms | 0️⃣1️⃣",
-                "@free1_vpn | US🇺🇸 | fapeng.org:443 | 42.98ms | 0️⃣2️⃣",
-                "@Hope_Net | US🇺🇸 | d.lammaland.org:443 | 125.42ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | d.usaha.homes:443 | 219.91ms | 0️⃣2️⃣",
-                "@FreakConfig | FR🇫🇷 | jamekk.org:443 | 37.71ms | 0️⃣1️⃣",
-                "@FreakConfig | CA🇨🇦 | kampong.org:443 | 182.26ms | 0️⃣2️⃣",
-                "@FreakConfig | DE🇩🇪 | serkat.org:443 | 118ms | 0️⃣3️⃣"
+                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 219.63ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 34.76ms | 0️⃣2️⃣",
+                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 233.41ms | 0️⃣3️⃣",
+                "@Hope_Net | US🇺🇸 | d.lammaland.org:443 | 211.44ms | 0️⃣1️⃣",
+                "@FreakConfig | CA🇨🇦 | jamekk.org:443 | 196.21ms | 0️⃣1️⃣",
+                "@FreakConfig | FR🇫🇷 | kampong.org:443 | 288.44ms | 0️⃣2️⃣",
+                "@FreakConfig | FR🇫🇷 | serkat.org:443 | 264.58ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 116.77ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "57.129.59.202",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "fapeng.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "57.129.59.202"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 124.46ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "yichueng.org",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yichueng.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "yichueng.org"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@free1_vpn | US🇺🇸 | fapeng.org:443 | 42.98ms | 0️⃣2️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 219.63ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "141.94.155.224",
             "server_port": 443,
@@ -238,7 +164,79 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | d.lammaland.org:443 | 125.42ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 34.76ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "57.129.59.202",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fapeng.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "57.129.59.202"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 233.41ms | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "146.59.70.146",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yichueng.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "146.59.70.146"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | US🇺🇸 | d.lammaland.org:443 | 211.44ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "d.lammaland.org",
             "server_port": 443,
@@ -274,43 +272,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | d.usaha.homes:443 | 219.91ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "104.21.26.129",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 1,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "d.usaha.homes",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "104.21.26.129"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@FreakConfig | FR🇫🇷 | jamekk.org:443 | 37.71ms | 0️⃣1️⃣",
+            "tag": "@FreakConfig | CA🇨🇦 | jamekk.org:443 | 196.21ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "141.95.126.134",
             "server_port": 443,
@@ -346,7 +308,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | CA🇨🇦 | kampong.org:443 | 182.26ms | 0️⃣2️⃣",
+            "tag": "@FreakConfig | FR🇫🇷 | kampong.org:443 | 288.44ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "57.129.59.195",
             "server_port": 443,
@@ -382,7 +344,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | DE🇩🇪 | serkat.org:443 | 118ms | 0️⃣3️⃣",
+            "tag": "@FreakConfig | FR🇫🇷 | serkat.org:443 | 264.58ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "91.134.8.102",
             "server_port": 443,
