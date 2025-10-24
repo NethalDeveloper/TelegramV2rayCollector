@@ -99,7 +99,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "GB🇬🇧",
                 "US🇺🇸"
             ]
         },
@@ -107,23 +106,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | GB🇬🇧 | salamdash.bedonemarz.site:444 | 102.39ms | 0️⃣1️⃣",
-                "@FreakConfig | GB🇬🇧 | salamdash.bedonemarz.site:444 | 116.76ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 38.59ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 45.72ms | 0️⃣2️⃣",
-                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 117.38ms | 0️⃣1️⃣",
-                "@free1_vpn | US🇺🇸 | fapeng.org:443 | 24.09ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "GB🇬🇧",
-            "type": "urltest",
-            "outbounds": [
-                "@oneclickvpnkeys | GB🇬🇧 | salamdash.bedonemarz.site:444 | 102.39ms | 0️⃣1️⃣",
-                "@FreakConfig | GB🇬🇧 | salamdash.bedonemarz.site:444 | 116.76ms | 0️⃣1️⃣"
+                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 46.97ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 153.5ms | 0️⃣2️⃣",
+                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 46.46ms | 0️⃣3️⃣",
+                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 44.38ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,21 +119,21 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 38.59ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 45.72ms | 0️⃣2️⃣",
-                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 117.38ms | 0️⃣1️⃣",
-                "@free1_vpn | US🇺🇸 | fapeng.org:443 | 24.09ms | 0️⃣1️⃣"
+                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 46.97ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 153.5ms | 0️⃣2️⃣",
+                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 46.46ms | 0️⃣3️⃣",
+                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 44.38ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | GB🇬🇧 | salamdash.bedonemarz.site:444 | 102.39ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 46.97ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "salamdash.bedonemarz.site",
-            "server_port": 444,
-            "uuid": "89de8c17-9b41-4632-9a0b-440f850548fd",
+            "server": "57.129.59.202",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -157,27 +143,29 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "fapeng.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "57.129.59.202"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@FreakConfig | GB🇬🇧 | salamdash.bedonemarz.site:444 | 116.76ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "salamdash.bedonemarz.site",
-            "server_port": 444,
-            "uuid": "89de8c17-9b41-4632-9a0b-440f850548fd",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 38.59ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 153.5ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "146.59.70.146",
             "server_port": 443,
@@ -213,7 +201,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 45.72ms | 0️⃣2️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 46.46ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "15.204.64.214",
             "server_port": 443,
@@ -249,7 +237,7 @@
             }
         },
         {
-            "tag": "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 117.38ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 44.38ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "yichueng.org",
             "server_port": 443,
@@ -279,42 +267,6 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": "yichueng.org"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@free1_vpn | US🇺🇸 | fapeng.org:443 | 24.09ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "57.129.59.202",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "fapeng.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "57.129.59.202"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
