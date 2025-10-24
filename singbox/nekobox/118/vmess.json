@@ -105,17 +105,20 @@
             "outbounds": [
                 "URL-TEST",
                 "GB🇬🇧",
-                "US🇺🇸"
+                "US🇺🇸",
+                "JP🇯🇵"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | GB🇬🇧 | salamdash.bedonemarz.site:444 | 122.81ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 128.41ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 44.27ms | 0️⃣1️⃣",
-                "@free1_vpn | US🇺🇸 | yichueng.org:443 | 41.54ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | GB🇬🇧 | salamdash.bedonemarz.site:444 | 164.4ms | 0️⃣1️⃣",
+                "@FreakConfig | GB🇬🇧 | salamdash.bedonemarz.site:444 | 154.08ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 42.59ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 46.64ms | 0️⃣3️⃣",
+                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 45.95ms | 0️⃣1️⃣",
+                "@ConfigsHUB | JP🇯🇵 | 8.211.164.215:20522 | 160.83ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -125,7 +128,8 @@
             "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | GB🇬🇧 | salamdash.bedonemarz.site:444 | 122.81ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | GB🇬🇧 | salamdash.bedonemarz.site:444 | 164.4ms | 0️⃣1️⃣",
+                "@FreakConfig | GB🇬🇧 | salamdash.bedonemarz.site:444 | 154.08ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -135,16 +139,26 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 128.41ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 44.27ms | 0️⃣1️⃣",
-                "@free1_vpn | US🇺🇸 | yichueng.org:443 | 41.54ms | 0️⃣1️⃣"
+                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 42.59ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 46.64ms | 0️⃣3️⃣",
+                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 45.95ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | GB🇬🇧 | salamdash.bedonemarz.site:444 | 122.81ms | 0️⃣1️⃣",
+            "tag": "JP🇯🇵",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | JP🇯🇵 | 8.211.164.215:20522 | 160.83ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@oneclickvpnkeys | GB🇬🇧 | salamdash.bedonemarz.site:444 | 164.4ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "salamdash.bedonemarz.site",
             "server_port": 444,
@@ -161,7 +175,60 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 128.41ms | 0️⃣1️⃣",
+            "tag": "@FreakConfig | GB🇬🇧 | salamdash.bedonemarz.site:444 | 154.08ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "salamdash.bedonemarz.site",
+            "server_port": 444,
+            "uuid": "89de8c17-9b41-4632-9a0b-440f850548fd",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 42.59ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "15.204.64.214",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yichueng.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "15.204.64.214"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 46.64ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "146.59.70.146",
             "server_port": 443,
@@ -197,7 +264,7 @@
             }
         },
         {
-            "tag": "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 44.27ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 45.95ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "yichueng.org",
             "server_port": 443,
@@ -233,11 +300,11 @@
             }
         },
         {
-            "tag": "@free1_vpn | US🇺🇸 | yichueng.org:443 | 41.54ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | JP🇯🇵 | 8.211.164.215:20522 | 160.83ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "15.204.64.214",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "server": "8.211.164.215",
+            "server_port": 20522,
+            "uuid": "73193cce-7ca1-4b08-93ff-4ee8b0147374",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -248,21 +315,11 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "yichueng.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/linkvws",
+                "path": "\/\/telegram_@sswia",
                 "headers": {
-                    "Host": "15.204.64.214"
+                    "Host": "8.211.164.215"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
