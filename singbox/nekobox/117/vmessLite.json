@@ -99,46 +99,31 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | GB🇬🇧 | salamdash.bedonemarz.site:444 | 190.84ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 4397.99ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 5.21ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 47.86.85.95:26006 | 193.44ms | 0️⃣1️⃣",
-                "@FreakConfig | GB🇬🇧 | salamdash.bedonemarz.site:444 | 164.74ms | 0️⃣1️⃣"
+                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 42.46ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 198.91ms | 0️⃣2️⃣",
+                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 9.81ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | az05.beyondy.cfd:443 | 373.24ms | 0️⃣1️⃣",
+                "@v2Line | HK🇭🇰 | 47.86.85.95:26006 | 196.06ms | 0️⃣1️⃣",
+                "@FreakConfig | GB🇬🇧 | salamdash.bedonemarz.site:444 | 161.35ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | GB🇬🇧 | salamdash.bedonemarz.site:444 | 190.84ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 4397.99ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 5.21ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 47.86.85.95:26006 | 193.44ms | 0️⃣1️⃣",
-                "@FreakConfig | GB🇬🇧 | salamdash.bedonemarz.site:444 | 164.74ms | 0️⃣1️⃣"
+                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 42.46ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 198.91ms | 0️⃣2️⃣",
+                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 9.81ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | az05.beyondy.cfd:443 | 373.24ms | 0️⃣1️⃣",
+                "@v2Line | HK🇭🇰 | 47.86.85.95:26006 | 196.06ms | 0️⃣1️⃣",
+                "@FreakConfig | GB🇬🇧 | salamdash.bedonemarz.site:444 | 161.35ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | GB🇬🇧 | salamdash.bedonemarz.site:444 | 190.84ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "salamdash.bedonemarz.site",
-            "server_port": 444,
-            "uuid": "89de8c17-9b41-4632-9a0b-440f850548fd",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 4397.99ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 42.46ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "15.204.64.214",
             "server_port": 443,
@@ -174,7 +159,43 @@
             }
         },
         {
-            "tag": "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 5.21ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 198.91ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "146.59.70.146",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yichueng.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "146.59.70.146"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 9.81ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "yichueng.org",
             "server_port": 443,
@@ -210,7 +231,43 @@
             }
         },
         {
-            "tag": "@v2Line | HK🇭🇰 | 47.86.85.95:26006 | 193.44ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | US🇺🇸 | az05.beyondy.cfd:443 | 373.24ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.67.136.233",
+            "server_port": 443,
+            "uuid": "3f638f34-8dba-4186-bc43-2716a7ddd4be",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "172.67.136.233",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/link",
+                "headers": {
+                    "Host": "172.67.136.233"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2Line | HK🇭🇰 | 47.86.85.95:26006 | 196.06ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "47.86.85.95",
             "server_port": 26006,
@@ -236,7 +293,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | GB🇬🇧 | salamdash.bedonemarz.site:444 | 164.74ms | 0️⃣1️⃣",
+            "tag": "@FreakConfig | GB🇬🇧 | salamdash.bedonemarz.site:444 | 161.35ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "salamdash.bedonemarz.site",
             "server_port": 444,
