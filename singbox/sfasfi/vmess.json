@@ -103,19 +103,19 @@
             "outbounds": [
                 "URL-TEST",
                 "DE🇩🇪",
-                "US🇺🇸"
+                "US🇺🇸",
+                "MY🇲🇾"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | DE🇩🇪 | dede.bedonemarz.site:444 | 190.24ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 159.94ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 24.7ms | 0️⃣3️⃣",
-                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 185.57ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | d.lammaland.org:443 | 45.5ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 205.185.116.20:8080 | 53.48ms | 0️⃣1️⃣"
+                "@prrofile_purple | DE🇩🇪 | dede.bedonemarz.site:444 | 189.03ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 235.4ms | 0️⃣1️⃣",
+                "@free1_vpn | US🇺🇸 | yichueng.org:443 | 33.87ms | 0️⃣3️⃣",
+                "@v2Line | US🇺🇸 | 205.185.116.20:8080 | 40.07ms | 0️⃣2️⃣",
+                "@v2Line | MY🇲🇾 | 38.54.113.13:443 | 187.13ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -125,7 +125,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | DE🇩🇪 | dede.bedonemarz.site:444 | 190.24ms | 0️⃣1️⃣"
+                "@prrofile_purple | DE🇩🇪 | dede.bedonemarz.site:444 | 189.03ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -135,18 +135,26 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 159.94ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 24.7ms | 0️⃣3️⃣",
-                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 185.57ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | d.lammaland.org:443 | 45.5ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 205.185.116.20:8080 | 53.48ms | 0️⃣1️⃣"
+                "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 235.4ms | 0️⃣1️⃣",
+                "@free1_vpn | US🇺🇸 | yichueng.org:443 | 33.87ms | 0️⃣3️⃣",
+                "@v2Line | US🇺🇸 | 205.185.116.20:8080 | 40.07ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@prrofile_purple | DE🇩🇪 | dede.bedonemarz.site:444 | 190.24ms | 0️⃣1️⃣",
+            "tag": "MY🇲🇾",
+            "type": "urltest",
+            "outbounds": [
+                "@v2Line | MY🇲🇾 | 38.54.113.13:443 | 187.13ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@prrofile_purple | DE🇩🇪 | dede.bedonemarz.site:444 | 189.03ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "dede.bedonemarz.site",
             "server_port": 444,
@@ -163,7 +171,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 159.94ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 235.4ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "15.204.64.214",
             "server_port": 443,
@@ -199,7 +207,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | yichueng.org:443 | 24.7ms | 0️⃣3️⃣",
+            "tag": "@free1_vpn | US🇺🇸 | yichueng.org:443 | 33.87ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "146.59.70.146",
             "server_port": 443,
@@ -235,79 +243,7 @@
             }
         },
         {
-            "tag": "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 185.57ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "yichueng.org",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yichueng.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "yichueng.org"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | US🇺🇸 | d.lammaland.org:443 | 45.5ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "d.lammaland.org",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 1,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "d.lammaland.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "d.lammaland.org"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2Line | US🇺🇸 | 205.185.116.20:8080 | 53.48ms | 0️⃣1️⃣",
+            "tag": "@v2Line | US🇺🇸 | 205.185.116.20:8080 | 40.07ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "205.185.116.20",
             "server_port": 8080,
@@ -321,6 +257,33 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "@v2Line | MY🇲🇾 | 38.54.113.13:443 | 187.13ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "38.54.113.13",
+            "server_port": 443,
+            "uuid": "e4de34c6-eaac-4528-ac90-e03b3f66f9d2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "38.54.113.13",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
