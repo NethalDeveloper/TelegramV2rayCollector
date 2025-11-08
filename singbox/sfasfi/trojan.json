@@ -102,15 +102,31 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "RELAY🚩"
+                "FR🇫🇷",
+                "RELAY🚩",
+                "US🇺🇸"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 101.99ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | 172.66.44.131:443 | 2.4ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.37.203.230:22222 | 137.3ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.37.203.230:22223 | 156.74ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 8.81ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | 104.20.8.252:443 | 2.78ms | 0️⃣1️⃣",
+                "@yaney_01 | US🇺🇸 | sg01.freeflyingcloud.xyz:35702 | 23.96ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "FR🇫🇷",
+            "type": "urltest",
+            "outbounds": [
+                "@PrivateVPNs | FR🇫🇷 | 13.37.203.230:22222 | 137.3ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.37.203.230:22223 | 156.74ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -120,15 +136,67 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 101.99ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | 172.66.44.131:443 | 2.4ms | 0️⃣1️⃣"
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 8.81ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | 104.20.8.252:443 | 2.78ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 101.99ms | 0️⃣1️⃣",
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "@yaney_01 | US🇺🇸 | sg01.freeflyingcloud.xyz:35702 | 23.96ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.37.203.230:22222 | 137.3ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "13.37.203.230",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | FR🇫🇷 | 13.37.203.230:22223 | 156.74ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "13.37.203.230",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 8.81ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "creativecommons.org",
             "server_port": 2053,
@@ -156,31 +224,27 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | RELAY🚩 | 172.66.44.131:443 | 2.4ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | 104.20.8.252:443 | 2.78ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "172.66.44.131",
+            "server": "104.20.8.252",
             "server_port": 443,
-            "password": "auto",
+            "password": "NISHIKUITAN111",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "e9464f45.trauma-2r4.pages.dev",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "e9464f45.trauma-2r4.pages.dev"
-                }
+            }
+        },
+        {
+            "tag": "@yaney_01 | US🇺🇸 | sg01.freeflyingcloud.xyz:35702 | 23.96ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "sg01.freeflyingcloud.xyz",
+            "server_port": 35702,
+            "password": "63db084a-e2ce-46db-9dd6-d4ed2c3d2663",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
