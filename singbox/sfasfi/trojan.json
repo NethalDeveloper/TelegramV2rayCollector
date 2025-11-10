@@ -111,13 +111,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 51.44.34.109:22222 | 119.72ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 35.180.222.18:22222 | 102.62ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 51.44.34.109:22223 | 142.18ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 35.180.222.18:22223 | 154.19ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | 69.84.182.108:8443 | 37.12ms | 0️⃣1️⃣",
-                "@ConfigsHUB | US🇺🇸 | 192.3.107.252:443 | 24.91ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 147.33ms | 0️⃣1️⃣"
+                "@DirectVPN | FR🇫🇷 | 51.44.34.109:22223 | 139.03ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 35.180.222.18:22223 | 147.83ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | 69.84.182.108:8443 | 9.28ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 172.22ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -127,10 +124,8 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 51.44.34.109:22222 | 119.72ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 35.180.222.18:22222 | 102.62ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 51.44.34.109:22223 | 142.18ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 35.180.222.18:22223 | 154.19ms | 0️⃣2️⃣"
+                "@DirectVPN | FR🇫🇷 | 51.44.34.109:22223 | 139.03ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 35.180.222.18:22223 | 147.83ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -140,8 +135,7 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 69.84.182.108:8443 | 37.12ms | 0️⃣1️⃣",
-                "@ConfigsHUB | US🇺🇸 | 192.3.107.252:443 | 24.91ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 69.84.182.108:8443 | 9.28ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -151,56 +145,14 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 147.33ms | 0️⃣1️⃣"
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 172.22ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 51.44.34.109:22222 | 119.72ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "51.44.34.109",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 35.180.222.18:22222 | 102.62ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "35.180.222.18",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@DirectVPN | FR🇫🇷 | 51.44.34.109:22223 | 142.18ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 51.44.34.109:22223 | 139.03ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "51.44.34.109",
             "server_port": 22223,
@@ -221,7 +173,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 35.180.222.18:22223 | 154.19ms | 0️⃣2️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 35.180.222.18:22223 | 147.83ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "35.180.222.18",
             "server_port": 22223,
@@ -242,7 +194,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 69.84.182.108:8443 | 37.12ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 69.84.182.108:8443 | 9.28ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "69.84.182.108",
             "server_port": 8443,
@@ -270,28 +222,7 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | US🇺🇸 | 192.3.107.252:443 | 24.91ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "192.3.107.252",
-            "server_port": 443,
-            "password": "2ee85121-31de-4581-a492-eb00f606e392",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "rc8.freeguard.org",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 147.33ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 172.22ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "creativecommons.org",
             "server_port": 2053,
