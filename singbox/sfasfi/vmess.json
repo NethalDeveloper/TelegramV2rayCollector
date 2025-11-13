@@ -104,19 +104,21 @@
                 "URL-TEST",
                 "US🇺🇸",
                 "RELAY🚩",
-                "VG🇻🇬"
+                "VG🇻🇬",
+                "DE🇩🇪"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 129.75ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 119.53ms | 0️⃣1️⃣",
-                "@ConfigsHUB | US🇺🇸 | 165.140.216.141:443 | 74.18ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | fapeng.org:443 | 123.73ms | 0️⃣3️⃣",
-                "@v2Line | RELAY🚩 | zula.ir:443 | 103.18ms | 0️⃣1️⃣",
-                "@v2Line | VG🇻🇬 | TABRIZ.NET:80 | 551.64ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 107.172.82.41:11814 | 70.25ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 113.66ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 124.93ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | fapeng.org:443 | 111.93ms | 0️⃣3️⃣",
+                "@v2Line | RELAY🚩 | zula.ir:443 | 231.28ms | 0️⃣1️⃣",
+                "@v2Line | VG🇻🇬 | TABRIZ.NET:80 | 357.31ms | 0️⃣2️⃣",
+                "@FreakConfig | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.torob.Mci.zarashop0.ir.:80 | 187.78ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -126,10 +128,10 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 129.75ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 119.53ms | 0️⃣1️⃣",
-                "@ConfigsHUB | US🇺🇸 | 165.140.216.141:443 | 74.18ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | fapeng.org:443 | 123.73ms | 0️⃣3️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 107.172.82.41:11814 | 70.25ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 113.66ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 124.93ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | fapeng.org:443 | 111.93ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -139,7 +141,7 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | RELAY🚩 | zula.ir:443 | 103.18ms | 0️⃣1️⃣"
+                "@v2Line | RELAY🚩 | zula.ir:443 | 231.28ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -149,14 +151,60 @@
             "tag": "VG🇻🇬",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | VG🇻🇬 | TABRIZ.NET:80 | 551.64ms | 0️⃣2️⃣"
+                "@v2Line | VG🇻🇬 | TABRIZ.NET:80 | 357.31ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 129.75ms | 0️⃣1️⃣",
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "@FreakConfig | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.torob.Mci.zarashop0.ir.:80 | 187.78ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 107.172.82.41:11814 | 70.25ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "107.172.82.41",
+            "server_port": 11814,
+            "uuid": "4f34f242-b5a7-48c1-c258-f019be3bf9c7",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "107.172.82.41",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "107.172.82.41"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 113.66ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.129.28.212",
             "server_port": 443,
@@ -192,7 +240,7 @@
             }
         },
         {
-            "tag": "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 119.53ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 124.93ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "yichueng.org",
             "server_port": 443,
@@ -228,34 +276,7 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | US🇺🇸 | 165.140.216.141:443 | 74.18ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "165.140.216.141",
-            "server_port": 443,
-            "uuid": "e7d72a8d-26f2-4b54-b366-0c43e0bcba7d",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "165.140.216.141",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@v2Line | US🇺🇸 | fapeng.org:443 | 123.73ms | 0️⃣3️⃣",
+            "tag": "@v2Line | US🇺🇸 | fapeng.org:443 | 111.93ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "141.94.155.224",
             "server_port": 443,
@@ -291,7 +312,7 @@
             }
         },
         {
-            "tag": "@v2Line | RELAY🚩 | zula.ir:443 | 103.18ms | 0️⃣1️⃣",
+            "tag": "@v2Line | RELAY🚩 | zula.ir:443 | 231.28ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.129.24.125",
             "server_port": 443,
@@ -327,7 +348,7 @@
             }
         },
         {
-            "tag": "@v2Line | VG🇻🇬 | TABRIZ.NET:80 | 551.64ms | 0️⃣2️⃣",
+            "tag": "@v2Line | VG🇻🇬 | TABRIZ.NET:80 | 357.31ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "104.18.240.238",
             "server_port": 80,
@@ -347,6 +368,32 @@
                 "path": "\/\/?BIA_TELEGRAM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1) TM (@AZARBAYJAB1)",
                 "headers": {
                     "Host": "104.18.240.238"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@FreakConfig | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.torob.Mci.zarashop0.ir.:80 | 187.78ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "185.146.173.25",
+            "server_port": 80,
+            "uuid": "ed1b5743-389b-48a2-8d60-3790eded7ca6",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "185.146.173.25"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
