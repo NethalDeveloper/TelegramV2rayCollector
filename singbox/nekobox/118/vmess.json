@@ -112,11 +112,11 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 120.51ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 120.37ms | 0️⃣1️⃣",
-                "@v2ray1_ng | DE🇩🇪 | mci.yektanet.info:55555 | 299.43ms | 0️⃣2️⃣",
-                "@v2Line | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.leoshopping77.ir.:80 | 196.53ms | 0️⃣1️⃣",
-                "@FreakConfig | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.torob.Mci.zarashop0.ir.:80 | 203.63ms | 0️⃣1️⃣"
+                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 277.64ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 251.48ms | 0️⃣1️⃣",
+                "@ConfigsHUB | US🇺🇸 | kampong.org:443 | 1797.54ms | 0️⃣1️⃣",
+                "@v2ray1_ng | DE🇩🇪 | mci.yektanet.info:55555 | 287.21ms | 0️⃣2️⃣",
+                "@v2Line | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.leoshopping77.ir.:80 | 468.39ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -126,8 +126,9 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 120.51ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 120.37ms | 0️⃣1️⃣"
+                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 277.64ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 251.48ms | 0️⃣1️⃣",
+                "@ConfigsHUB | US🇺🇸 | kampong.org:443 | 1797.54ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -137,16 +138,15 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | DE🇩🇪 | mci.yektanet.info:55555 | 299.43ms | 0️⃣2️⃣",
-                "@v2Line | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.leoshopping77.ir.:80 | 196.53ms | 0️⃣1️⃣",
-                "@FreakConfig | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.torob.Mci.zarashop0.ir.:80 | 203.63ms | 0️⃣1️⃣"
+                "@v2ray1_ng | DE🇩🇪 | mci.yektanet.info:55555 | 287.21ms | 0️⃣2️⃣",
+                "@v2Line | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.leoshopping77.ir.:80 | 468.39ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 120.51ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 277.64ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.129.28.212",
             "server_port": 443,
@@ -182,7 +182,7 @@
             }
         },
         {
-            "tag": "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 120.37ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 251.48ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "yichueng.org",
             "server_port": 443,
@@ -218,7 +218,43 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | DE🇩🇪 | mci.yektanet.info:55555 | 299.43ms | 0️⃣2️⃣",
+            "tag": "@ConfigsHUB | US🇺🇸 | kampong.org:443 | 1797.54ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "141.94.155.228",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "kampong.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/linkvws",
+                "headers": {
+                    "Host": "141.94.155.228"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | DE🇩🇪 | mci.yektanet.info:55555 | 287.21ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "mci.yektanet.info",
             "server_port": 55555,
@@ -235,7 +271,7 @@
             }
         },
         {
-            "tag": "@v2Line | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.leoshopping77.ir.:80 | 196.53ms | 0️⃣1️⃣",
+            "tag": "@v2Line | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.leoshopping77.ir.:80 | 468.39ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "5.254.85.157",
             "server_port": 80,
@@ -255,32 +291,6 @@
                 "path": "\/",
                 "headers": {
                     "Host": "5.254.85.157"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@FreakConfig | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.torob.Mci.zarashop0.ir.:80 | 203.63ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "185.146.173.25",
-            "server_port": 80,
-            "uuid": "ed1b5743-389b-48a2-8d60-3790eded7ca6",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "185.146.173.25"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
