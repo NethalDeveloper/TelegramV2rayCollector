@@ -99,33 +99,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@PrivateVPNs | FR🇫🇷 | 15.188.0.98:22222 | 178.59ms | 0️⃣1️⃣",
-                "@DirectVPN | DE🇩🇪 | 63.180.120.57:22223 | 128.21ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.188.0.98:22223 | 158.41ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | DE🇩🇪 | pdevy.zippydeal.xyz:5855 | 196.52ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | IT🇮🇹 | imcgr.zippydeal.xyz:5571 | 212.22ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | NL🇳🇱 | grdfg.zippydeal.xyz:5755 | 310.5ms | 0️⃣3️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 162.37ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 15.188.0.98:22222 | 196.53ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | DE🇩🇪 | pdevy.zippydeal.xyz:5855 | 174.95ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | IT🇮🇹 | imcgr.zippydeal.xyz:5571 | 185.04ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | NL🇳🇱 | grdfg.zippydeal.xyz:5755 | 180.73ms | 0️⃣3️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 15.47ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 15.188.0.98:22222 | 178.59ms | 0️⃣1️⃣",
-                "@DirectVPN | DE🇩🇪 | 63.180.120.57:22223 | 128.21ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.188.0.98:22223 | 158.41ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | DE🇩🇪 | pdevy.zippydeal.xyz:5855 | 196.52ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | IT🇮🇹 | imcgr.zippydeal.xyz:5571 | 212.22ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | NL🇳🇱 | grdfg.zippydeal.xyz:5755 | 310.5ms | 0️⃣3️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 162.37ms | 0️⃣1️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 15.188.0.98:22222 | 196.53ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | DE🇩🇪 | pdevy.zippydeal.xyz:5855 | 174.95ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | IT🇮🇹 | imcgr.zippydeal.xyz:5571 | 185.04ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | NL🇳🇱 | grdfg.zippydeal.xyz:5755 | 180.73ms | 0️⃣3️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 15.47ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 15.188.0.98:22222 | 178.59ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 15.188.0.98:22222 | 196.53ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "15.188.0.98",
             "server_port": 22222,
@@ -146,49 +142,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | DE🇩🇪 | 63.180.120.57:22223 | 128.21ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "63.180.120.57",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@DirectVPN | FR🇫🇷 | 15.188.0.98:22223 | 158.41ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "15.188.0.98",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@oneclickvpnkeys | DE🇩🇪 | pdevy.zippydeal.xyz:5855 | 196.52ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | DE🇩🇪 | pdevy.zippydeal.xyz:5855 | 174.95ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "pdevy.zippydeal.xyz",
             "server_port": 5855,
@@ -209,7 +163,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | IT🇮🇹 | imcgr.zippydeal.xyz:5571 | 212.22ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | IT🇮🇹 | imcgr.zippydeal.xyz:5571 | 185.04ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "imcgr.zippydeal.xyz",
             "server_port": 5571,
@@ -230,7 +184,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | NL🇳🇱 | grdfg.zippydeal.xyz:5755 | 310.5ms | 0️⃣3️⃣",
+            "tag": "@oneclickvpnkeys | NL🇳🇱 | grdfg.zippydeal.xyz:5755 | 180.73ms | 0️⃣3️⃣",
             "type": "trojan",
             "server": "grdfg.zippydeal.xyz",
             "server_port": 5755,
@@ -251,7 +205,7 @@
             }
         },
         {
-            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 162.37ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 15.47ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "creativecommons.org",
             "server_port": 2053,
