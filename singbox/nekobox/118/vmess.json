@@ -105,17 +105,20 @@
             "outbounds": [
                 "URL-TEST",
                 "US🇺🇸",
-                "DE🇩🇪"
+                "DE🇩🇪",
+                "HK🇭🇰"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 24.33ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 118.82ms | 0️⃣1️⃣",
-                "@v2Line | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.leoshopping77.ir.:80 | 344.09ms | 0️⃣1️⃣",
-                "@FreakConfig | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.torob.Mci.zarashop0.ir.:80 | 510.08ms | 0️⃣1️⃣"
+                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 173.92ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 176.29ms | 0️⃣1️⃣",
+                "@v2ray1_ng | DE🇩🇪 | mci.yektanet.info:55555 | 313.43ms | 0️⃣2️⃣",
+                "@v2Line | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.leoshopping77.ir.:80 | 262.29ms | 0️⃣1️⃣",
+                "@FreakConfig | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.torob.Mci.zarashop0.ir.:80 | 461.59ms | 0️⃣1️⃣",
+                "@v2Line | HK🇭🇰 | 8.218.120.209:15160 | 185.73ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -125,8 +128,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 24.33ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 118.82ms | 0️⃣1️⃣"
+                "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 173.92ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 176.29ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -136,15 +139,26 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.leoshopping77.ir.:80 | 344.09ms | 0️⃣1️⃣",
-                "@FreakConfig | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.torob.Mci.zarashop0.ir.:80 | 510.08ms | 0️⃣1️⃣"
+                "@v2ray1_ng | DE🇩🇪 | mci.yektanet.info:55555 | 313.43ms | 0️⃣2️⃣",
+                "@v2Line | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.leoshopping77.ir.:80 | 262.29ms | 0️⃣1️⃣",
+                "@FreakConfig | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.torob.Mci.zarashop0.ir.:80 | 461.59ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 24.33ms | 0️⃣1️⃣",
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "@v2Line | HK🇭🇰 | 8.218.120.209:15160 | 185.73ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@v2ray1_ng | US🇺🇸 | fapeng.org:443 | 173.92ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.129.28.212",
             "server_port": 443,
@@ -180,7 +194,7 @@
             }
         },
         {
-            "tag": "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 118.82ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | US🇺🇸 | yichueng.org:443 | 176.29ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "yichueng.org",
             "server_port": 443,
@@ -216,7 +230,24 @@
             }
         },
         {
-            "tag": "@v2Line | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.leoshopping77.ir.:80 | 344.09ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | DE🇩🇪 | mci.yektanet.info:55555 | 313.43ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "mci.yektanet.info",
+            "server_port": 55555,
+            "uuid": "a4b41dc8-b684-49e4-b3db-ade382c113d3",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@v2Line | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.leoshopping77.ir.:80 | 262.29ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "5.254.85.157",
             "server_port": 80,
@@ -242,7 +273,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.torob.Mci.zarashop0.ir.:80 | 510.08ms | 0️⃣1️⃣",
+            "tag": "@FreakConfig | DE🇩🇪 | google.whatsapp.snapp.torob.basalam.torob.Mci.zarashop0.ir.:80 | 461.59ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "185.146.173.25",
             "server_port": 80,
@@ -265,6 +296,23 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2Line | HK🇭🇰 | 8.218.120.209:15160 | 185.73ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "8.218.120.209",
+            "server_port": 15160,
+            "uuid": "540a9fd9-9dc8-434f-c971-a10e9befd7fa",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
