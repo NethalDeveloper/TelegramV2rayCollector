@@ -104,33 +104,35 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@PrivateVPNs | FR🇫🇷 | 52.47.116.99:22222 | 145.28ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 35.181.114.162:22222 | 158.24ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 35.181.114.162:22223 | 150.07ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | SG🇸🇬 | 38.180.191.251:443 | 170.22ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | SG🇸🇬 | 139.180.143.191:10293 | 169.11ms | 0️⃣2️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 6.16ms | 0️⃣1️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 3.127.33.50:22222 | 126.67ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 35.181.114.162:22222 | 177.61ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 52.47.116.99:22223 | 110.9ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 35.181.114.162:22223 | 123.42ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | SG🇸🇬 | 139.180.143.191:10293 | 196.62ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 32.71ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | 104.25.254.4:2087 | 23.63ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 52.47.116.99:22222 | 145.28ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 35.181.114.162:22222 | 158.24ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 35.181.114.162:22223 | 150.07ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | SG🇸🇬 | 38.180.191.251:443 | 170.22ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | SG🇸🇬 | 139.180.143.191:10293 | 169.11ms | 0️⃣2️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 6.16ms | 0️⃣1️⃣"
+                "@PrivateVPNs | DE🇩🇪 | 3.127.33.50:22222 | 126.67ms | 0️⃣1️⃣",
+                "@PrivateVPNs | FR🇫🇷 | 35.181.114.162:22222 | 177.61ms | 0️⃣2️⃣",
+                "@DirectVPN | FR🇫🇷 | 52.47.116.99:22223 | 110.9ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 35.181.114.162:22223 | 123.42ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | SG🇸🇬 | 139.180.143.191:10293 | 196.62ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 32.71ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | 104.25.254.4:2087 | 23.63ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 52.47.116.99:22222 | 145.28ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | DE🇩🇪 | 3.127.33.50:22222 | 126.67ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "52.47.116.99",
+            "server": "3.127.33.50",
             "server_port": 22222,
             "password": "telegram-id-privatevpns",
             "multiplex": {
@@ -149,7 +151,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 35.181.114.162:22222 | 158.24ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 35.181.114.162:22222 | 177.61ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "35.181.114.162",
             "server_port": 22222,
@@ -170,7 +172,28 @@
             }
         },
         {
-            "tag": "@DirectVPN | FR🇫🇷 | 35.181.114.162:22223 | 150.07ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | FR🇫🇷 | 52.47.116.99:22223 | 110.9ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "52.47.116.99",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | FR🇫🇷 | 35.181.114.162:22223 | 123.42ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "35.181.114.162",
             "server_port": 22223,
@@ -191,28 +214,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | SG🇸🇬 | 38.180.191.251:443 | 170.22ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "38.180.191.251",
-            "server_port": 443,
-            "password": "BxceQaOe",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "t.me\/ripaojiedian",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@oneclickvpnkeys | SG🇸🇬 | 139.180.143.191:10293 | 169.11ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | SG🇸🇬 | 139.180.143.191:10293 | 196.62ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "139.180.143.191",
             "server_port": 10293,
@@ -233,7 +235,7 @@
             }
         },
         {
-            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 6.16ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 32.71ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "creativecommons.org",
             "server_port": 2053,
@@ -257,6 +259,34 @@
                 "path": "\/\/yamtekodasayahhh",
                 "headers": {
                     "Host": "kotlet.arshiacomplus.dpdns.org"
+                }
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | RELAY🚩 | 104.25.254.4:2087 | 23.63ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "104.25.254.4",
+            "server_port": 2087,
+            "password": "d0298536-d670-4045-bbb1-ddd5ea68683e",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "azadnet-bdr.pages.dev",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/azadnet-bdr.pages.dev\/?ed=2560",
+                "headers": {
+                    "Host": "azadnet-bdr.pages.dev"
                 }
             }
         },
