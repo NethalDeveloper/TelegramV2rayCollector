@@ -104,17 +104,19 @@
                 "URL-TEST",
                 "RELAY🚩",
                 "US🇺🇸",
-                "HK🇭🇰"
+                "HK🇭🇰",
+                "CN🇨🇳"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | RELAY🚩 | vm.gpj1.web.id:443 | 10.05ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 197.13ms | 0️⃣2️⃣",
-                "@Hope_Net | US🇺🇸 | glweidf.cfd:443 | 516.86ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 158.44ms | 0️⃣1️⃣"
+                "@v2ray1_ng | RELAY🚩 | vm.gpj1.web.id:443 | 9.26ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 199.25ms | 0️⃣2️⃣",
+                "@Hope_Net | US🇺🇸 | glweidf.cfd:443 | 174.43ms | 0️⃣1️⃣",
+                "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 158.25ms | 0️⃣1️⃣",
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 321.36ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -124,8 +126,8 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | RELAY🚩 | vm.gpj1.web.id:443 | 10.05ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 197.13ms | 0️⃣2️⃣"
+                "@v2ray1_ng | RELAY🚩 | vm.gpj1.web.id:443 | 9.26ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 199.25ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -135,7 +137,7 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | US🇺🇸 | glweidf.cfd:443 | 516.86ms | 0️⃣1️⃣"
+                "@Hope_Net | US🇺🇸 | glweidf.cfd:443 | 174.43ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -145,14 +147,24 @@
             "tag": "HK🇭🇰",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 158.44ms | 0️⃣1️⃣"
+                "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 158.25ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2ray1_ng | RELAY🚩 | vm.gpj1.web.id:443 | 10.05ms | 0️⃣1️⃣",
+            "tag": "CN🇨🇳",
+            "type": "urltest",
+            "outbounds": [
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 321.36ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@v2ray1_ng | RELAY🚩 | vm.gpj1.web.id:443 | 9.26ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "46.183.186.57",
             "server_port": 443,
@@ -188,7 +200,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 197.13ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 199.25ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "104.19.45.114",
             "server_port": 2095,
@@ -214,7 +226,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | glweidf.cfd:443 | 516.86ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | US🇺🇸 | glweidf.cfd:443 | 174.43ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.21.4.6",
             "server_port": 443,
@@ -250,7 +262,7 @@
             }
         },
         {
-            "tag": "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 158.44ms | 0️⃣1️⃣",
+            "tag": "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 158.25ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "8.217.21.237",
             "server_port": 26998,
@@ -270,6 +282,32 @@
                 "path": "\/\/arki?ed=2048",
                 "headers": {
                     "Host": "8.217.21.237"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 321.36ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "42.2.113.136",
+            "server_port": 80,
+            "uuid": "98d2b660-7218-11ec-bd7c-f23c913c8d2b",
+            "security": "auto",
+            "alter_id": 2,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "42.2.113.136"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
