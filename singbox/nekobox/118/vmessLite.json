@@ -104,29 +104,92 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@v2ray1_ng | RELAY🚩 | vm.gpj1.web.id:443 | 18.1ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | foxlux.fovi.tk:443 | 196.85ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | glweidf.cfd:443 | 268.25ms | 0️⃣2️⃣",
-                "@v2Line | HK🇭🇰 | 47.238.247.69:25608 | 173.11ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 173.25ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | PL🇵🇱 | 176.223.131.167:55447 | 173.22ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | PL🇵🇱 | 176.223.131.167:37816 | 118.59ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | AE🇦🇪 | 89.31.120.192:443 | 184.1ms | 0️⃣3️⃣",
+                "@v2ray1_ng | RELAY🚩 | vm.gpj1.web.id:443 | 6.63ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | glweidf.cfd:443 | 191.87ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 55.9ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | RELAY🚩 | vm.gpj1.web.id:443 | 18.1ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | foxlux.fovi.tk:443 | 196.85ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | glweidf.cfd:443 | 268.25ms | 0️⃣2️⃣",
-                "@v2Line | HK🇭🇰 | 47.238.247.69:25608 | 173.11ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 173.25ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | PL🇵🇱 | 176.223.131.167:55447 | 173.22ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | PL🇵🇱 | 176.223.131.167:37816 | 118.59ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | AE🇦🇪 | 89.31.120.192:443 | 184.1ms | 0️⃣3️⃣",
+                "@v2ray1_ng | RELAY🚩 | vm.gpj1.web.id:443 | 6.63ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | glweidf.cfd:443 | 191.87ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 55.9ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2ray1_ng | RELAY🚩 | vm.gpj1.web.id:443 | 18.1ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | PL🇵🇱 | 176.223.131.167:55447 | 173.22ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "176.223.131.167",
+            "server_port": 55447,
+            "uuid": "db6576b7-6469-4166-de59-5b8f4007a470",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@oneclickvpnkeys | PL🇵🇱 | 176.223.131.167:37816 | 118.59ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "176.223.131.167",
+            "server_port": 37816,
+            "uuid": "8cb65b00-2519-4c5d-f305-6147b86d18f9",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@oneclickvpnkeys | AE🇦🇪 | 89.31.120.192:443 | 184.1ms | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "89.31.120.192",
+            "server_port": 443,
+            "uuid": "44537595-9ccc-4b83-8936-5f9ad3229019",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "89.31.120.192",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | RELAY🚩 | vm.gpj1.web.id:443 | 6.63ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "46.183.186.57",
             "server_port": 443,
@@ -162,43 +225,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | foxlux.fovi.tk:443 | 196.85ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "cf.fovi.tk",
-            "server_port": 443,
-            "uuid": "bf67437e-6c90-45ca-abc2-c7240a5ce2aa",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": null,
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/eisasqa",
-                "headers": {
-                    "Host": "cf.fovi.tk"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | US🇺🇸 | glweidf.cfd:443 | 268.25ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | US🇺🇸 | glweidf.cfd:443 | 191.87ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.21.4.6",
             "server_port": 443,
@@ -234,11 +261,11 @@
             }
         },
         {
-            "tag": "@v2Line | HK🇭🇰 | 47.238.247.69:25608 | 173.11ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 55.9ms | 0️⃣2️⃣",
             "type": "vmess",
-            "server": "47.238.247.69",
-            "server_port": 25608,
-            "uuid": "575ac013-bfe8-4b24-8e9f-cc29a6bc8151",
+            "server": "104.19.45.114",
+            "server_port": 2095,
+            "uuid": "7a737f41-b792-4260-94ff-3d864da67b80",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -251,35 +278,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/arki?ed=2048",
+                "path": "\/\/",
                 "headers": {
-                    "Host": "47.238.247.69"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 173.25ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "8.217.21.237",
-            "server_port": 26998,
-            "uuid": "248b7151-e940-4a68-b734-e206b0fa1d9a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/arki?ed=2048",
-                "headers": {
-                    "Host": "8.217.21.237"
+                    "Host": "104.19.45.114"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
