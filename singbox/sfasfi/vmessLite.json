@@ -102,27 +102,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | PL🇵🇱 | 176.223.131.167:37816 | 153.29ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | jahfkjha.cfd:443 | 244.8ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | bolder-metal-comma.glitch.me:443 | 254.73ms | 0️⃣2️⃣",
-                "@v2Line | HK🇭🇰 | 47.238.247.69:25608 | 168.49ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | PL🇵🇱 | 176.223.131.167:37816 | 136.4ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | AE🇦🇪 | 89.31.120.192:443 | 191.53ms | 0️⃣2️⃣",
+                "@Hope_Net | US🇺🇸 | jahfkjha.cfd:443 | 228.7ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | bolder-metal-comma.glitch.me:443 | 130.09ms | 0️⃣2️⃣",
+                "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 195.78ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | PL🇵🇱 | 176.223.131.167:37816 | 153.29ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | jahfkjha.cfd:443 | 244.8ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | bolder-metal-comma.glitch.me:443 | 254.73ms | 0️⃣2️⃣",
-                "@v2Line | HK🇭🇰 | 47.238.247.69:25608 | 168.49ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | PL🇵🇱 | 176.223.131.167:37816 | 136.4ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | AE🇦🇪 | 89.31.120.192:443 | 191.53ms | 0️⃣2️⃣",
+                "@Hope_Net | US🇺🇸 | jahfkjha.cfd:443 | 228.7ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | bolder-metal-comma.glitch.me:443 | 130.09ms | 0️⃣2️⃣",
+                "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 195.78ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | PL🇵🇱 | 176.223.131.167:37816 | 153.29ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | PL🇵🇱 | 176.223.131.167:37816 | 136.4ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "176.223.131.167",
             "server_port": 37816,
@@ -139,7 +141,34 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | jahfkjha.cfd:443 | 244.8ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | AE🇦🇪 | 89.31.120.192:443 | 191.53ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "89.31.120.192",
+            "server_port": 443,
+            "uuid": "44537595-9ccc-4b83-8936-5f9ad3229019",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "89.31.120.192",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@Hope_Net | US🇺🇸 | jahfkjha.cfd:443 | 228.7ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.67.183.220",
             "server_port": 443,
@@ -175,7 +204,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | bolder-metal-comma.glitch.me:443 | 254.73ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | US🇺🇸 | bolder-metal-comma.glitch.me:443 | 130.09ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "bolder-metal-comma.glitch.me",
             "server_port": 443,
@@ -211,11 +240,11 @@
             }
         },
         {
-            "tag": "@v2Line | HK🇭🇰 | 47.238.247.69:25608 | 168.49ms | 0️⃣1️⃣",
+            "tag": "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 195.78ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "47.238.247.69",
-            "server_port": 25608,
-            "uuid": "575ac013-bfe8-4b24-8e9f-cc29a6bc8151",
+            "server": "8.217.21.237",
+            "server_port": 26998,
+            "uuid": "248b7151-e940-4a68-b734-e206b0fa1d9a",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -230,7 +259,7 @@
                 "type": "ws",
                 "path": "\/\/arki?ed=2048",
                 "headers": {
-                    "Host": "47.238.247.69"
+                    "Host": "8.217.21.237"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
