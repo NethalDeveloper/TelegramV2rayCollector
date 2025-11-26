@@ -99,31 +99,21 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "US🇺🇸",
                 "KR🇰🇷",
                 "RELAY🚩",
-                "HK🇭🇰"
+                "FR🇫🇷",
+                "US🇺🇸"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 68.64.176.148:11325 | 155.02ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | KR🇰🇷 | 140.238.2.250:443 | 131.2ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | m5u9c2.keeoomboom.de:443 | 170.45ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 159.53ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 8.217.92.110:20522 | 158.56ms | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "US🇺🇸",
-            "type": "urltest",
-            "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 68.64.176.148:11325 | 155.02ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | KR🇰🇷 | 140.238.2.250:443 | 190.14ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | m5u9c2.keeoomboom.de:443 | 127.65ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | square-snowflake-486a.beshir-beisel.workers.dev:8880 | 13.08ms | 0️⃣1️⃣",
+                "@ConfigsHUB | FR🇫🇷 | node-fr-1.v2sv.top:8443 | 300.45ms | 0️⃣2️⃣",
+                "@ConfigsHUB | US🇺🇸 | node-us-1.v2sv.top:443 | 262.4ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,7 +123,7 @@
             "tag": "KR🇰🇷",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | KR🇰🇷 | 140.238.2.250:443 | 131.2ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | KR🇰🇷 | 140.238.2.250:443 | 190.14ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,42 +133,35 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@ConfigsHUB | RELAY🚩 | m5u9c2.keeoomboom.de:443 | 170.45ms | 0️⃣1️⃣"
+                "@ConfigsHUB | RELAY🚩 | m5u9c2.keeoomboom.de:443 | 127.65ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | square-snowflake-486a.beshir-beisel.workers.dev:8880 | 13.08ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "HK🇭🇰",
+            "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 159.53ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 8.217.92.110:20522 | 158.56ms | 0️⃣2️⃣"
+                "@ConfigsHUB | FR🇫🇷 | node-fr-1.v2sv.top:8443 | 300.45ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 68.64.176.148:11325 | 155.02ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "68.64.176.148",
-            "server_port": 11325,
-            "uuid": "8afb5b6d-51f6-4bf8-f4e2-0378822200b3",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | US🇺🇸 | node-us-1.v2sv.top:443 | 262.4ms | 0️⃣3️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | KR🇰🇷 | 140.238.2.250:443 | 131.2ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | KR🇰🇷 | 140.238.2.250:443 | 190.14ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "140.238.2.250",
             "server_port": 443,
@@ -205,7 +188,7 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | RELAY🚩 | m5u9c2.keeoomboom.de:443 | 170.45ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | m5u9c2.keeoomboom.de:443 | 127.65ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "m5u9c2.keeoomboom.de",
             "server_port": 443,
@@ -241,11 +224,11 @@
             }
         },
         {
-            "tag": "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 159.53ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | square-snowflake-486a.beshir-beisel.workers.dev:8880 | 13.08ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "8.217.21.237",
-            "server_port": 26998,
-            "uuid": "248b7151-e940-4a68-b734-e206b0fa1d9a",
+            "server": "104.16.60.8",
+            "server_port": 8880,
+            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -258,20 +241,20 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/arki?ed=2048",
+                "path": "\/\/linde06.indiavideo.sbs\/linkws",
                 "headers": {
-                    "Host": "8.217.21.237"
+                    "Host": "104.16.60.8"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@v2Line | HK🇭🇰 | 8.217.92.110:20522 | 158.56ms | 0️⃣2️⃣",
+            "tag": "@ConfigsHUB | FR🇫🇷 | node-fr-1.v2sv.top:8443 | 300.45ms | 0️⃣2️⃣",
             "type": "vmess",
-            "server": "8.217.92.110",
-            "server_port": 20522,
-            "uuid": "31e1f90f-0218-4097-91f9-a42df9b3334a",
+            "server": "www.speedtest.net",
+            "server_port": 8443,
+            "uuid": "576086f0-0a10-4a2c-b9ef-0217409e6381",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -282,11 +265,57 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "node-fr-1.v2sv.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/\/telegram_@sswia",
+                "path": "\/\/ws",
                 "headers": {
-                    "Host": "8.217.92.110"
+                    "Host": "www.speedtest.net"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | US🇺🇸 | node-us-1.v2sv.top:443 | 262.4ms | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "www.speedtest.net",
+            "server_port": 443,
+            "uuid": "1e0c95f0-8c76-4d72-951d-4852869552fa",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "node-us-1.v2sv.top",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/ws",
+                "headers": {
+                    "Host": "www.speedtest.net"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
