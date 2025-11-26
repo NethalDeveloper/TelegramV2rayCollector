@@ -104,25 +104,55 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | DE🇩🇪 | 5.231.56.98:3721 | 147.52ms | 0️⃣1️⃣",
-                "@ConfigsHUB | DE🇩🇪 | 88.99.86.7:8585 | 150.81ms | 0️⃣1️⃣",
-                "@FreakConfig | FI🇫🇮 | dude.nicame.space:11559 | 240.17ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | NL🇳🇱 | 89.169.13.60:28838 | 156.13ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | DE🇩🇪 | 5.231.56.98:3721 | 164.9ms | 0️⃣2️⃣",
+                "@ConfigsHUB | RELAY🚩 | m5u9c2.keeoomboom.de:443 | 76.82ms | 0️⃣1️⃣",
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 462.49ms | 0️⃣1️⃣",
+                "@FreakConfig | FI🇫🇮 | dude.nicame.space:11559 | 514.62ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | DE🇩🇪 | 5.231.56.98:3721 | 147.52ms | 0️⃣1️⃣",
-                "@ConfigsHUB | DE🇩🇪 | 88.99.86.7:8585 | 150.81ms | 0️⃣1️⃣",
-                "@FreakConfig | FI🇫🇮 | dude.nicame.space:11559 | 240.17ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | NL🇳🇱 | 89.169.13.60:28838 | 156.13ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | DE🇩🇪 | 5.231.56.98:3721 | 164.9ms | 0️⃣2️⃣",
+                "@ConfigsHUB | RELAY🚩 | m5u9c2.keeoomboom.de:443 | 76.82ms | 0️⃣1️⃣",
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 462.49ms | 0️⃣1️⃣",
+                "@FreakConfig | FI🇫🇮 | dude.nicame.space:11559 | 514.62ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | DE🇩🇪 | 5.231.56.98:3721 | 147.52ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | NL🇳🇱 | 89.169.13.60:28838 | 156.13ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "89.169.13.60",
+            "server_port": 28838,
+            "uuid": "b9d3c414-89cc-455d-b717-10c7ca1665a1",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "89.169.13.60"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@oneclickvpnkeys | DE🇩🇪 | 5.231.56.98:3721 | 164.9ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "5.231.56.98",
             "server_port": 3721,
@@ -148,11 +178,11 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | DE🇩🇪 | 88.99.86.7:8585 | 150.81ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | m5u9c2.keeoomboom.de:443 | 76.82ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "88.99.86.7",
-            "server_port": 8585,
-            "uuid": "71760ebf-6d52-41ef-a34c-e613e7780208",
+            "server": "m5u9c2.keeoomboom.de",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -162,10 +192,55 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "m5u9c2.keeoomboom.de",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/video\/26ifcat.m3u8",
+                "headers": {
+                    "Host": "m5u9c2.keeoomboom.de"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@FreakConfig | FI🇫🇮 | dude.nicame.space:11559 | 240.17ms | 0️⃣1️⃣",
+            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 462.49ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "42.2.113.136",
+            "server_port": 80,
+            "uuid": "98d2b660-7218-11ec-bd7c-f23c913c8d2b",
+            "security": "auto",
+            "alter_id": 2,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "42.2.113.136"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@FreakConfig | FI🇫🇮 | dude.nicame.space:11559 | 514.62ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "dude.nicame.space",
             "server_port": 11559,
