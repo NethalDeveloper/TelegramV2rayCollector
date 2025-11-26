@@ -104,27 +104,31 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @Parsashonam | DE🇩🇪 | 157.90.114.255:443 | 160.98ms | 0️⃣2️⃣",
-                "REALITY | @Outline_Vpn | NL🇳🇱 | 213.176.16.74:443 | 198.58ms | 0️⃣3️⃣",
-                "REALITY | @free1_vpn | DE🇩🇪 | 178.17.51.244:443 | 171.65ms | 0️⃣1️⃣",
-                "REALITY | @FreakConfig | US🇺🇸 | u.452134789645741-babayaga.hosting-free-vip.ir:31902 | 656.83ms | 0️⃣2️⃣"
+                "REALITY | @Parsashonam | DE🇩🇪 | 157.90.114.255:443 | 107.05ms | 0️⃣2️⃣",
+                "REALITY | @Outline_Vpn | NL🇳🇱 | 213.176.16.74:443 | 108.38ms | 0️⃣3️⃣",
+                "REALITY | @v2rayngvpn | TR🇹🇷 | napanel.mreza1088.com:31374 | 187.46ms | 0️⃣1️⃣",
+                "REALITY | @v2rayngvpn | CH🇨🇭 | 213.176.18.183:443 | 185.99ms | 0️⃣2️⃣",
+                "REALITY | @v2ray1_ng | DE🇩🇪 | 178.17.51.244:443 | 184.58ms | 0️⃣1️⃣",
+                "REALITY | @FreakConfig | FI🇫🇮 | xfer.mos-drywall.shop:443 | 178.93ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @Parsashonam | DE🇩🇪 | 157.90.114.255:443 | 160.98ms | 0️⃣2️⃣",
-                "REALITY | @Outline_Vpn | NL🇳🇱 | 213.176.16.74:443 | 198.58ms | 0️⃣3️⃣",
-                "REALITY | @free1_vpn | DE🇩🇪 | 178.17.51.244:443 | 171.65ms | 0️⃣1️⃣",
-                "REALITY | @FreakConfig | US🇺🇸 | u.452134789645741-babayaga.hosting-free-vip.ir:31902 | 656.83ms | 0️⃣2️⃣"
+                "REALITY | @Parsashonam | DE🇩🇪 | 157.90.114.255:443 | 107.05ms | 0️⃣2️⃣",
+                "REALITY | @Outline_Vpn | NL🇳🇱 | 213.176.16.74:443 | 108.38ms | 0️⃣3️⃣",
+                "REALITY | @v2rayngvpn | TR🇹🇷 | napanel.mreza1088.com:31374 | 187.46ms | 0️⃣1️⃣",
+                "REALITY | @v2rayngvpn | CH🇨🇭 | 213.176.18.183:443 | 185.99ms | 0️⃣2️⃣",
+                "REALITY | @v2ray1_ng | DE🇩🇪 | 178.17.51.244:443 | 184.58ms | 0️⃣1️⃣",
+                "REALITY | @FreakConfig | FI🇫🇮 | xfer.mos-drywall.shop:443 | 178.93ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @Parsashonam | DE🇩🇪 | 157.90.114.255:443 | 160.98ms | 0️⃣2️⃣",
+            "tag": "REALITY | @Parsashonam | DE🇩🇪 | 157.90.114.255:443 | 107.05ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "157.90.114.255",
             "server_port": 443,
@@ -152,7 +156,7 @@
             }
         },
         {
-            "tag": "REALITY | @Outline_Vpn | NL🇳🇱 | 213.176.16.74:443 | 198.58ms | 0️⃣3️⃣",
+            "tag": "REALITY | @Outline_Vpn | NL🇳🇱 | 213.176.16.74:443 | 108.38ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "213.176.16.74",
             "server_port": 443,
@@ -180,7 +184,63 @@
             }
         },
         {
-            "tag": "REALITY | @free1_vpn | DE🇩🇪 | 178.17.51.244:443 | 171.65ms | 0️⃣1️⃣",
+            "tag": "REALITY | @v2rayngvpn | TR🇹🇷 | napanel.mreza1088.com:31374 | 187.46ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "napanel.mreza1088.com",
+            "server_port": 31374,
+            "uuid": "8dca3cf6-0e6d-4ca3-a5e5-cdc2efa7e5a6",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.apple.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "49JyOdKP7qgl4PRdrg7AASv1p8uvq5FDBywMYOV43QY",
+                    "short_id": "b6"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @v2rayngvpn | CH🇨🇭 | 213.176.18.183:443 | 185.99ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "213.176.18.183",
+            "server_port": 443,
+            "uuid": "571bd439-e05a-4273-9f9f-d1e7de8f8d41",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "free2.tunnely.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mChFHtaRmeuO2aDuDPqZvBFaCz6f34sVJIKuJcAR130",
+                    "short_id": "fc45029be9d08fdc"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @v2ray1_ng | DE🇩🇪 | 178.17.51.244:443 | 184.58ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "178.17.51.244",
             "server_port": 443,
@@ -208,11 +268,11 @@
             }
         },
         {
-            "tag": "REALITY | @FreakConfig | US🇺🇸 | u.452134789645741-babayaga.hosting-free-vip.ir:31902 | 656.83ms | 0️⃣2️⃣",
+            "tag": "REALITY | @FreakConfig | FI🇫🇮 | xfer.mos-drywall.shop:443 | 178.93ms | 0️⃣2️⃣",
             "type": "vless",
-            "server": "u.452134789645741-babayaga.hosting-free-vip.ir",
-            "server_port": 31902,
-            "uuid": "4cd7ecda-18e0-4139-9ac7-7bcc7bc4f218",
+            "server": "xfer.mos-drywall.shop",
+            "server_port": 443,
+            "uuid": "1066d126-3412-4dfd-ab5d-42cfb26572f6",
             "flow": "",
             "packet_encoding": "xudp",
             "multiplex": {
@@ -222,7 +282,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "google.com",
+                "server_name": "xfer.my-rebar.shop",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -230,8 +290,8 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "mM8g47_EAZn539bmvXl_AAh8tbmivPHrH0FwqZUd9HQ",
-                    "short_id": "06"
+                    "public_key": "H5OKR0_3GwnEuBLAapDBXdyhGl4M0vw76grUnPpqu28",
+                    "short_id": ""
                 }
             }
         },
