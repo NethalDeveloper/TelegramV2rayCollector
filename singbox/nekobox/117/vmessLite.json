@@ -99,29 +99,31 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | NL🇳🇱 | 89.169.13.60:28838 | 92.13ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | DE🇩🇪 | 5.231.56.98:3721 | 91.25ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | m5u9c2.keeoomboom.de:443 | 115.27ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | 3w0nq7.keeoomboom.de:443 | 9.67ms | 0️⃣2️⃣",
-                "@Hope_Net | RELAY🚩 | square-snowflake-486a.beshir-beisel.workers.dev:8080 | 16.3ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | NL🇳🇱 | 89.169.13.60:28838 | 152.78ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | DE🇩🇪 | 5.231.56.98:3721 | 156.37ms | 0️⃣2️⃣",
+                "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 159.22ms | 0️⃣1️⃣",
+                "@v2Line | HK🇭🇰 | 8.217.92.110:20522 | 160.03ms | 0️⃣2️⃣",
+                "@FreakConfig | RELAY🚩 | m5u9c2.keeoomboom.de:443 | 169.48ms | 0️⃣1️⃣",
+                "@FreakConfig | DE🇩🇪 | mci.yektanet.info:55555 | 271.72ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | NL🇳🇱 | 89.169.13.60:28838 | 92.13ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | DE🇩🇪 | 5.231.56.98:3721 | 91.25ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | m5u9c2.keeoomboom.de:443 | 115.27ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | 3w0nq7.keeoomboom.de:443 | 9.67ms | 0️⃣2️⃣",
-                "@Hope_Net | RELAY🚩 | square-snowflake-486a.beshir-beisel.workers.dev:8080 | 16.3ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | NL🇳🇱 | 89.169.13.60:28838 | 152.78ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | DE🇩🇪 | 5.231.56.98:3721 | 156.37ms | 0️⃣2️⃣",
+                "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 159.22ms | 0️⃣1️⃣",
+                "@v2Line | HK🇭🇰 | 8.217.92.110:20522 | 160.03ms | 0️⃣2️⃣",
+                "@FreakConfig | RELAY🚩 | m5u9c2.keeoomboom.de:443 | 169.48ms | 0️⃣1️⃣",
+                "@FreakConfig | DE🇩🇪 | mci.yektanet.info:55555 | 271.72ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | NL🇳🇱 | 89.169.13.60:28838 | 92.13ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | NL🇳🇱 | 89.169.13.60:28838 | 152.78ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "89.169.13.60",
             "server_port": 28838,
@@ -147,7 +149,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | DE🇩🇪 | 5.231.56.98:3721 | 91.25ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | DE🇩🇪 | 5.231.56.98:3721 | 156.37ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "5.231.56.98",
             "server_port": 3721,
@@ -173,7 +175,59 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | RELAY🚩 | m5u9c2.keeoomboom.de:443 | 115.27ms | 0️⃣1️⃣",
+            "tag": "@v2Line | HK🇭🇰 | 8.217.21.237:26998 | 159.22ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "8.217.21.237",
+            "server_port": 26998,
+            "uuid": "248b7151-e940-4a68-b734-e206b0fa1d9a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/arki?ed=2048",
+                "headers": {
+                    "Host": "8.217.21.237"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2Line | HK🇭🇰 | 8.217.92.110:20522 | 160.03ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "8.217.92.110",
+            "server_port": 20522,
+            "uuid": "31e1f90f-0218-4097-91f9-a42df9b3334a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/telegram_@sswia",
+                "headers": {
+                    "Host": "8.217.92.110"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@FreakConfig | RELAY🚩 | m5u9c2.keeoomboom.de:443 | 169.48ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "m5u9c2.keeoomboom.de",
             "server_port": 443,
@@ -209,11 +263,11 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | RELAY🚩 | 3w0nq7.keeoomboom.de:443 | 9.67ms | 0️⃣2️⃣",
+            "tag": "@FreakConfig | DE🇩🇪 | mci.yektanet.info:55555 | 271.72ms | 0️⃣2️⃣",
             "type": "vmess",
-            "server": "3w0nq7.keeoomboom.de",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "server": "mci.yektanet.info",
+            "server_port": 55555,
+            "uuid": "a4b41dc8-b684-49e4-b3db-ade382c113d3",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -223,51 +277,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "3w0nq7.keeoomboom.de",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/video\/kiqgp8.m3u8",
-                "headers": {
-                    "Host": "3w0nq7.keeoomboom.de"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | RELAY🚩 | square-snowflake-486a.beshir-beisel.workers.dev:8080 | 16.3ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "104.16.67.38",
-            "server_port": 8080,
-            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/linde06.indiavideo.sbs\/linkws",
-                "headers": {
-                    "Host": "104.16.67.38"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
