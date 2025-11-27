@@ -103,7 +103,6 @@
             "outbounds": [
                 "URL-TEST",
                 "NL🇳🇱",
-                "DE🇩🇪",
                 "FI🇫🇮"
             ]
         },
@@ -111,9 +110,8 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | NL🇳🇱 | 89.169.13.60:28838 | 102.22ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | DE🇩🇪 | 5.231.56.98:3721 | 92.66ms | 0️⃣2️⃣",
-                "@FreakConfig | FI🇫🇮 | dude.nicame.space:11559 | 140.46ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | NL🇳🇱 | 89.169.13.60:28838 | 91.22ms | 0️⃣1️⃣",
+                "@FreakConfig | FI🇫🇮 | dude.nicame.space:11559 | 143.61ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -123,17 +121,7 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | NL🇳🇱 | 89.169.13.60:28838 | 102.22ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "@oneclickvpnkeys | DE🇩🇪 | 5.231.56.98:3721 | 92.66ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | NL🇳🇱 | 89.169.13.60:28838 | 91.22ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,14 +131,14 @@
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "@FreakConfig | FI🇫🇮 | dude.nicame.space:11559 | 140.46ms | 0️⃣1️⃣"
+                "@FreakConfig | FI🇫🇮 | dude.nicame.space:11559 | 143.61ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | NL🇳🇱 | 89.169.13.60:28838 | 102.22ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | NL🇳🇱 | 89.169.13.60:28838 | 91.22ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "89.169.13.60",
             "server_port": 28838,
@@ -176,33 +164,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | DE🇩🇪 | 5.231.56.98:3721 | 92.66ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "5.231.56.98",
-            "server_port": 3721,
-            "uuid": "5f2f0765-f331-4d1e-8560-d2fb533dd6fe",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "5.231.56.98"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@FreakConfig | FI🇫🇮 | dude.nicame.space:11559 | 140.46ms | 0️⃣1️⃣",
+            "tag": "@FreakConfig | FI🇫🇮 | dude.nicame.space:11559 | 143.61ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "dude.nicame.space",
             "server_port": 11559,
