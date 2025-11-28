@@ -104,27 +104,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 9.89ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 94.7ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | v2ray.codefyinc.com:443 | 110.36ms | 0️⃣3️⃣",
-                "@ConfigsHUB | FI🇫🇮 | dude.nicame.space:11559 | 190.74ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 9.72ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 77.91ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | v2ray.codefyinc.com:443 | 98.31ms | 0️⃣3️⃣",
+                "@v2ray1_ng | DE🇩🇪 | mci.yektanet.info:55555 | 271.88ms | 0️⃣1️⃣",
+                "@ConfigsHUB | TR🇹🇷 | 164.138.202.55:50475 | 184.2ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 9.89ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 94.7ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | v2ray.codefyinc.com:443 | 110.36ms | 0️⃣3️⃣",
-                "@ConfigsHUB | FI🇫🇮 | dude.nicame.space:11559 | 190.74ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 9.72ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 77.91ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | v2ray.codefyinc.com:443 | 98.31ms | 0️⃣3️⃣",
+                "@v2ray1_ng | DE🇩🇪 | mci.yektanet.info:55555 | 271.88ms | 0️⃣1️⃣",
+                "@ConfigsHUB | TR🇹🇷 | 164.138.202.55:50475 | 184.2ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 9.89ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 9.72ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.54.104.219",
             "server_port": 43966,
@@ -141,7 +143,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 94.7ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 77.91ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "209.126.84.189",
             "server_port": 443,
@@ -177,7 +179,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | v2ray.codefyinc.com:443 | 110.36ms | 0️⃣3️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | v2ray.codefyinc.com:443 | 98.31ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "v2ray.codefyinc.com",
             "server_port": 443,
@@ -213,11 +215,28 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | FI🇫🇮 | dude.nicame.space:11559 | 190.74ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | DE🇩🇪 | mci.yektanet.info:55555 | 271.88ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "dude.nicame.space",
-            "server_port": 11559,
-            "uuid": "24154417-e38b-2b1d-a075-441dcc417463",
+            "server": "mci.yektanet.info",
+            "server_port": 55555,
+            "uuid": "a4b41dc8-b684-49e4-b3db-ade382c113d3",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | TR🇹🇷 | 164.138.202.55:50475 | 184.2ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "164.138.202.55",
+            "server_port": 50475,
+            "uuid": "53397b72-5897-4cb8-a9da-a195c90811c6",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
