@@ -104,27 +104,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@v2ray1_ng | RU🇷🇺 | 45.136.244.201:49934 | 167.62ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 47.238.71.166:3721 | 168.53ms | 0️⃣1️⃣",
-                "@v2Line | RU🇷🇺 | 45.136.244.201:49934 | 179.72ms | 0️⃣2️⃣",
-                "@v2Line | HK🇭🇰 | 47.243.69.126:31904 | 168.71ms | 0️⃣3️⃣"
+                "@v2ray1_ng | RU🇷🇺 | 45.136.244.201:49934 | 132.2ms | 0️⃣1️⃣",
+                "@ConfigsHUB | NL🇳🇱 | 178.62.220.64:35416 | 92.43ms | 0️⃣1️⃣",
+                "@v2Line | RU🇷🇺 | 45.136.244.201:49934 | 132.11ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | RU🇷🇺 | 45.136.244.201:49934 | 167.62ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 47.238.71.166:3721 | 168.53ms | 0️⃣1️⃣",
-                "@v2Line | RU🇷🇺 | 45.136.244.201:49934 | 179.72ms | 0️⃣2️⃣",
-                "@v2Line | HK🇭🇰 | 47.243.69.126:31904 | 168.71ms | 0️⃣3️⃣"
+                "@v2ray1_ng | RU🇷🇺 | 45.136.244.201:49934 | 132.2ms | 0️⃣1️⃣",
+                "@ConfigsHUB | NL🇳🇱 | 178.62.220.64:35416 | 92.43ms | 0️⃣1️⃣",
+                "@v2Line | RU🇷🇺 | 45.136.244.201:49934 | 132.11ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2ray1_ng | RU🇷🇺 | 45.136.244.201:49934 | 167.62ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | RU🇷🇺 | 45.136.244.201:49934 | 132.2ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "45.136.244.201",
             "server_port": 49934,
@@ -141,11 +139,11 @@
             }
         },
         {
-            "tag": "@v2Line | HK🇭🇰 | 47.238.71.166:3721 | 168.53ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | NL🇳🇱 | 178.62.220.64:35416 | 92.43ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "47.238.71.166",
-            "server_port": 3721,
-            "uuid": "0b3da6e0-2a41-49e4-8bee-cfa705d448fc",
+            "server": "178.62.220.64",
+            "server_port": 35416,
+            "uuid": "e017d65d-6da7-4cfe-bfaa-85b46158b82e",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -155,40 +153,14 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "47.238.71.166"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@v2Line | RU🇷🇺 | 45.136.244.201:49934 | 179.72ms | 0️⃣2️⃣",
+            "tag": "@v2Line | RU🇷🇺 | 45.136.244.201:49934 | 132.11ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "45.136.244.201",
             "server_port": 49934,
             "uuid": "90afa47d-341a-497d-ae25-1d81258804d5",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@v2Line | HK🇭🇰 | 47.243.69.126:31904 | 168.71ms | 0️⃣3️⃣",
-            "type": "vmess",
-            "server": "47.243.69.126",
-            "server_port": 31904,
-            "uuid": "22550b74-3ebf-49b5-ea36-3078b5d47ed9",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
