@@ -99,23 +99,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@ConfigsHUB | NL🇳🇱 | 178.62.220.64:35416 | 127.69ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | speedtest.net:443 | 17.11ms | 0️⃣1️⃣"
+                "@ConfigsHUB | NL🇳🇱 | 178.62.220.64:35416 | 140.45ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | speedtest.net:443 | 8.36ms | 0️⃣1️⃣",
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 421.49ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@ConfigsHUB | NL🇳🇱 | 178.62.220.64:35416 | 127.69ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | speedtest.net:443 | 17.11ms | 0️⃣1️⃣"
+                "@ConfigsHUB | NL🇳🇱 | 178.62.220.64:35416 | 140.45ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | speedtest.net:443 | 8.36ms | 0️⃣1️⃣",
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 421.49ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@ConfigsHUB | NL🇳🇱 | 178.62.220.64:35416 | 127.69ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | NL🇳🇱 | 178.62.220.64:35416 | 140.45ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "178.62.220.64",
             "server_port": 35416,
@@ -132,7 +134,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | speedtest.net:443 | 17.11ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | US🇺🇸 | speedtest.net:443 | 8.36ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "151.101.66.219",
             "server_port": 443,
@@ -162,6 +164,32 @@
                 "path": "\/ws\/?ed=2048",
                 "headers": {
                     "Host": "151.101.66.219"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 421.49ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "42.2.113.136",
+            "server_port": 80,
+            "uuid": "98d2b660-7218-11ec-bd7c-f23c913c8d2b",
+            "security": "auto",
+            "alter_id": 2,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "42.2.113.136"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
