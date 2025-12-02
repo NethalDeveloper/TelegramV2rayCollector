@@ -103,20 +103,18 @@
             "outbounds": [
                 "URL-TEST",
                 "US🇺🇸",
-                "DE🇩🇪",
                 "RELAY🚩",
-                "HK🇭🇰"
+                "DE🇩🇪"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 9.55ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 16.53ms | 0️⃣2️⃣",
-                "@ConfigsHUB | DE🇩🇪 | cpanel.navar1.ir:100 | 583.02ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | rough-wildflower-0b5e.zemel-yesenia1720.workers.dev:2086 | 58.9ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 8.210.134.183:3721 | 164.86ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 64.97ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 67.26ms | 0️⃣2️⃣",
+                "@ConfigsHUB | RELAY🚩 | z.looloolooloo.com:443 | 96.04ms | 0️⃣1️⃣",
+                "@ConfigsHUB | DE🇩🇪 | cpanel.navar1.ir:100 | 202.35ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -126,18 +124,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 9.55ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 16.53ms | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "@ConfigsHUB | DE🇩🇪 | cpanel.navar1.ir:100 | 583.02ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 64.97ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 67.26ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -147,24 +135,24 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | RELAY🚩 | rough-wildflower-0b5e.zemel-yesenia1720.workers.dev:2086 | 58.9ms | 0️⃣1️⃣"
+                "@ConfigsHUB | RELAY🚩 | z.looloolooloo.com:443 | 96.04ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "HK🇭🇰",
+            "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | HK🇭🇰 | 8.210.134.183:3721 | 164.86ms | 0️⃣1️⃣"
+                "@ConfigsHUB | DE🇩🇪 | cpanel.navar1.ir:100 | 202.35ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 9.55ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 64.97ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.54.104.219",
             "server_port": 43966,
@@ -181,7 +169,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 16.53ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 67.26ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "38.14.99.179",
             "server_port": 59807,
@@ -198,7 +186,34 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | DE🇩🇪 | cpanel.navar1.ir:100 | 583.02ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | z.looloolooloo.com:443 | 96.04ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.66.40.99",
+            "server_port": 443,
+            "uuid": "37-telegram-id---V2box-v2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "z.looloolooloo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | DE🇩🇪 | cpanel.navar1.ir:100 | 202.35ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "cpanel.navar1.ir",
             "server_port": 100,
@@ -212,58 +227,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            }
-        },
-        {
-            "tag": "@Hope_Net | RELAY🚩 | rough-wildflower-0b5e.zemel-yesenia1720.workers.dev:2086 | 58.9ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "104.16.68.38",
-            "server_port": 2086,
-            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/glweidf.sbs\/linkws",
-                "headers": {
-                    "Host": "104.16.68.38"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2Line | HK🇭🇰 | 8.210.134.183:3721 | 164.86ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "8.210.134.183",
-            "server_port": 3721,
-            "uuid": "e72f5c6b-220f-40b3-a115-2d81473458cf",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "8.210.134.183"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
