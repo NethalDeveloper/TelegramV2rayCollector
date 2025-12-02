@@ -99,30 +99,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "MX🇲🇽",
                 "DE🇩🇪",
+                "MX🇲🇽",
                 "US🇺🇸",
-                "HK🇭🇰"
+                "RELAY🚩"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | MX🇲🇽 | 216.238.89.53:57283 | 46.67ms | 0️⃣1️⃣",
-                "@Hope_Net | DE🇩🇪 | glweidf.cfd:443 | 604.37ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | speedtest.net:80 | 17.58ms | 0️⃣2️⃣",
-                "@v2Line | HK🇭🇰 | 8.210.134.183:3721 | 171.29ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "MX🇲🇽",
-            "type": "urltest",
-            "outbounds": [
-                "@oneclickvpnkeys | MX🇲🇽 | 216.238.89.53:57283 | 46.67ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | DE🇩🇪 | cpanel.navar1.ir:100 | 299.14ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | MX🇲🇽 | 216.238.89.53:57283 | 54.68ms | 0️⃣2️⃣",
+                "@Hope_Net | US🇺🇸 | speedtest.net:80 | 2.46ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | snowy-river-f497.turkeys-radford.workers.dev:2082 | 15.52ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -132,7 +122,17 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | DE🇩🇪 | glweidf.cfd:443 | 604.37ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | DE🇩🇪 | cpanel.navar1.ir:100 | 299.14ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "MX🇲🇽",
+            "type": "urltest",
+            "outbounds": [
+                "@oneclickvpnkeys | MX🇲🇽 | 216.238.89.53:57283 | 54.68ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,24 +142,41 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | US🇺🇸 | speedtest.net:80 | 17.58ms | 0️⃣2️⃣"
+                "@Hope_Net | US🇺🇸 | speedtest.net:80 | 2.46ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "HK🇭🇰",
+            "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | HK🇭🇰 | 8.210.134.183:3721 | 171.29ms | 0️⃣1️⃣"
+                "@Hope_Net | RELAY🚩 | snowy-river-f497.turkeys-radford.workers.dev:2082 | 15.52ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | MX🇲🇽 | 216.238.89.53:57283 | 46.67ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | DE🇩🇪 | cpanel.navar1.ir:100 | 299.14ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "cpanel.navar1.ir",
+            "server_port": 100,
+            "uuid": "26402bc7-7895-4dd0-ae6e-151a00c71145",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@oneclickvpnkeys | MX🇲🇽 | 216.238.89.53:57283 | 54.68ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "216.238.89.53",
             "server_port": 57283,
@@ -176,43 +193,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | DE🇩🇪 | glweidf.cfd:443 | 604.37ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "172.64.103.211",
-            "server_port": 443,
-            "uuid": "1052f24e-7b09-45eb-b0c5-d858eb124192",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "glweidf.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/linkws",
-                "headers": {
-                    "Host": "172.64.103.211"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | US🇺🇸 | speedtest.net:80 | 17.58ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | US🇺🇸 | speedtest.net:80 | 2.46ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "193.151.140.30",
             "server_port": 80,
@@ -229,11 +210,11 @@
             }
         },
         {
-            "tag": "@v2Line | HK🇭🇰 | 8.210.134.183:3721 | 171.29ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | snowy-river-f497.turkeys-radford.workers.dev:2082 | 15.52ms | 0️⃣2️⃣",
             "type": "vmess",
-            "server": "8.210.134.183",
-            "server_port": 3721,
-            "uuid": "e72f5c6b-220f-40b3-a115-2d81473458cf",
+            "server": "104.16.68.38",
+            "server_port": 2082,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -246,9 +227,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/",
+                "path": "\/\/glweidf.sbs\/linkws",
                 "headers": {
-                    "Host": "8.210.134.183"
+                    "Host": "104.16.68.38"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
