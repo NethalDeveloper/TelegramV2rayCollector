@@ -106,21 +106,17 @@
                 "URL-TEST",
                 "DE🇩🇪",
                 "RELAY🚩",
-                "HK🇭🇰",
-                "CN🇨🇳"
+                "RU🇷🇺"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | DE🇩🇪 | 85.195.101.122:40878 | 132.92ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | j4658e.teeoomboom.de:443 | 330.33ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | d7t3ny.keeoomboom.de:443 | 320.99ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | dqhh36.teeoomboom.de:443 | 253.86ms | 0️⃣3️⃣",
-                "@Hope_Net | RELAY🚩 | subhk.osafari599.workers.dev:8880 | 106.11ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 8.210.134.183:3721 | 153.02ms | 0️⃣1️⃣",
-                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 624.29ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | DE🇩🇪 | 85.195.101.122:40878 | 89.84ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | subhk.osafari599.workers.dev:8880 | 27.47ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 267.32ms | 0️⃣2️⃣",
+                "@Hope_Net | RU🇷🇺 | 22.lwdh.us:12910 | 138.38ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -130,7 +126,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | DE🇩🇪 | 85.195.101.122:40878 | 132.92ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | DE🇩🇪 | 85.195.101.122:40878 | 89.84ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -140,37 +136,25 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@ConfigsHUB | RELAY🚩 | j4658e.teeoomboom.de:443 | 330.33ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | d7t3ny.keeoomboom.de:443 | 320.99ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | dqhh36.teeoomboom.de:443 | 253.86ms | 0️⃣3️⃣",
-                "@Hope_Net | RELAY🚩 | subhk.osafari599.workers.dev:8880 | 106.11ms | 0️⃣1️⃣"
+                "@Hope_Net | RELAY🚩 | subhk.osafari599.workers.dev:8880 | 27.47ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 267.32ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "HK🇭🇰",
+            "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | HK🇭🇰 | 8.210.134.183:3721 | 153.02ms | 0️⃣1️⃣"
+                "@Hope_Net | RU🇷🇺 | 22.lwdh.us:12910 | 138.38ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "CN🇨🇳",
-            "type": "urltest",
-            "outbounds": [
-                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 624.29ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "@oneclickvpnkeys | DE🇩🇪 | 85.195.101.122:40878 | 132.92ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | DE🇩🇪 | 85.195.101.122:40878 | 89.84ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "85.195.101.122",
             "server_port": 40878,
@@ -187,115 +171,7 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | RELAY🚩 | j4658e.teeoomboom.de:443 | 330.33ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "j4658e.teeoomboom.de",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "j4658e.teeoomboom.de",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/video\/k0uzb.m3u8",
-                "headers": {
-                    "Host": "j4658e.teeoomboom.de"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@ConfigsHUB | RELAY🚩 | d7t3ny.keeoomboom.de:443 | 320.99ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "d7t3ny.keeoomboom.de",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "d7t3ny.keeoomboom.de",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/video\/1jcyq.m3u8",
-                "headers": {
-                    "Host": "d7t3ny.keeoomboom.de"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@ConfigsHUB | RELAY🚩 | dqhh36.teeoomboom.de:443 | 253.86ms | 0️⃣3️⃣",
-            "type": "vmess",
-            "server": "dqhh36.teeoomboom.de",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "dqhh36.teeoomboom.de",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/video\/crf8v.m3u8",
-                "headers": {
-                    "Host": "dqhh36.teeoomboom.de"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | RELAY🚩 | subhk.osafari599.workers.dev:8880 | 106.11ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | subhk.osafari599.workers.dev:8880 | 27.47ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.16.68.38",
             "server_port": 8880,
@@ -321,11 +197,11 @@
             }
         },
         {
-            "tag": "@v2Line | HK🇭🇰 | 8.210.134.183:3721 | 153.02ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 267.32ms | 0️⃣2️⃣",
             "type": "vmess",
-            "server": "8.210.134.183",
-            "server_port": 3721,
-            "uuid": "e72f5c6b-220f-40b3-a115-2d81473458cf",
+            "server": "104.19.45.246",
+            "server_port": 2095,
+            "uuid": "7a737f41-b792-4260-94ff-3d864da67b80",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -340,20 +216,20 @@
                 "type": "ws",
                 "path": "\/\/",
                 "headers": {
-                    "Host": "8.210.134.183"
+                    "Host": "104.19.45.246"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 624.29ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RU🇷🇺 | 22.lwdh.us:12910 | 138.38ms | 0️⃣3️⃣",
             "type": "vmess",
-            "server": "42.2.113.136",
-            "server_port": 80,
-            "uuid": "98d2b660-7218-11ec-bd7c-f23c913c8d2b",
+            "server": "80.85.152.179",
+            "server_port": 12910,
+            "uuid": "8259cb1c-dd6c-4739-9c88-af550d977525",
             "security": "auto",
-            "alter_id": 2,
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -362,11 +238,21 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "22.lwdh.us",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
                 "path": "\/\/",
                 "headers": {
-                    "Host": "42.2.113.136"
+                    "Host": "80.85.152.179"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
