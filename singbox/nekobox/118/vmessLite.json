@@ -104,25 +104,23 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | DE🇩🇪 | 85.195.101.122:40878 | 152.17ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | z.looloolooloo.com:443 | 18.55ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | 51.81.223.21:443 | 18.44ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | DE🇩🇪 | 85.195.101.122:40878 | 86.75ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 81.47ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | DE🇩🇪 | 85.195.101.122:40878 | 152.17ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | z.looloolooloo.com:443 | 18.55ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | 51.81.223.21:443 | 18.44ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | DE🇩🇪 | 85.195.101.122:40878 | 86.75ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 81.47ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | DE🇩🇪 | 85.195.101.122:40878 | 152.17ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | DE🇩🇪 | 85.195.101.122:40878 | 86.75ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "85.195.101.122",
             "server_port": 40878,
@@ -139,11 +137,11 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | RELAY🚩 | z.looloolooloo.com:443 | 18.55ms | 0️⃣1️⃣",
+            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 81.47ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "172.66.40.99",
+            "server": "209.126.84.189",
             "server_port": 443,
-            "uuid": "37-telegram-id---V2box-v2",
+            "uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -156,40 +154,22 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "z.looloolooloo.com",
+                "server_name": "209.126.84.189",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "@Hope_Net | US🇺🇸 | 51.81.223.21:443 | 18.44ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "51.81.223.21",
-            "server_port": 443,
-            "uuid": "c0156451-4efb-45e2-84fc-8d315c4650db",
-            "security": "auto",
-            "alter_id": 32,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": null,
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
+            "transport": {
+                "type": "ws",
+                "path": "\/\/vmessws",
+                "headers": {
+                    "Host": "209.126.84.189"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
