@@ -102,23 +102,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 69.21ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 72.04ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 65.28ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 71.41ms | 0️⃣2️⃣",
+                "@ConfigsHUB | RELAY🚩 | z.looloolooloo.com:443 | 45.84ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 69.21ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 72.04ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 65.28ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 71.41ms | 0️⃣2️⃣",
+                "@ConfigsHUB | RELAY🚩 | z.looloolooloo.com:443 | 45.84ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 69.21ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 209.54.104.219:43966 | 65.28ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.54.104.219",
             "server_port": 43966,
@@ -135,7 +137,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 72.04ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 71.41ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "38.14.99.179",
             "server_port": 59807,
@@ -149,6 +151,33 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | RELAY🚩 | z.looloolooloo.com:443 | 45.84ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.66.40.99",
+            "server_port": 443,
+            "uuid": "37-telegram-id---V2box-v2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "z.looloolooloo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
