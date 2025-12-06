@@ -104,33 +104,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | SC🇸🇨 | 156.238.238.194:47296 | 161.03ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 16.71ms | 0️⃣2️⃣",
-                "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 84.13ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 145.41ms | 0️⃣1️⃣",
-                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 399.77ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | kampong.org:443 | 255.74ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 100ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 107.79ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | SC🇸🇨 | 156.238.238.194:47296 | 161.03ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 16.71ms | 0️⃣2️⃣",
-                "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 84.13ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 145.41ms | 0️⃣1️⃣",
-                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 399.77ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | kampong.org:443 | 255.74ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 100ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 107.79ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | SC🇸🇨 | 156.238.238.194:47296 | 161.03ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | kampong.org:443 | 255.74ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "156.238.238.194",
-            "server_port": 47296,
-            "uuid": "0524236a-e217-4cf3-9223-968a290ffce7",
+            "server": "57.129.59.199",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -141,35 +137,28 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "kampong.org",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/\/",
+                "path": "\/linkvws",
                 "headers": {
-                    "Host": "156.238.238.194"
+                    "Host": "57.129.59.199"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 16.71ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "38.14.99.179",
-            "server_port": 59807,
-            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 84.13ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 100ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.126.84.189",
             "server_port": 443,
@@ -205,7 +194,7 @@
             }
         },
         {
-            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 145.41ms | 0️⃣1️⃣",
+            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 107.79ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.126.84.189",
             "server_port": 443,
@@ -235,32 +224,6 @@
                 "path": "\/\/vmessws",
                 "headers": {
                     "Host": "209.126.84.189"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 399.77ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "42.2.113.136",
-            "server_port": 80,
-            "uuid": "98d2b660-7218-11ec-bd7c-f23c913c8d2b",
-            "security": "auto",
-            "alter_id": 2,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "42.2.113.136"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
