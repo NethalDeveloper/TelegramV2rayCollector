@@ -99,27 +99,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | US🇺🇸 | kampong.org:443 | 270.2ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 125.34ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | aq4714.keeoomboom.de:443 | 165.54ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 128.62ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | kampong.org:443 | 220.9ms | 0️⃣1️⃣",
+                "@free1_vpn | US🇺🇸 | 209.126.84.189:443 | 90.15ms | 0️⃣1️⃣",
+                "@Hope_Net | DE🇩🇪 | glweidf.sbs:443 | 447.99ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | kampong.org:443 | 270.2ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 125.34ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | aq4714.keeoomboom.de:443 | 165.54ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 128.62ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | kampong.org:443 | 220.9ms | 0️⃣1️⃣",
+                "@free1_vpn | US🇺🇸 | 209.126.84.189:443 | 90.15ms | 0️⃣1️⃣",
+                "@Hope_Net | DE🇩🇪 | glweidf.sbs:443 | 447.99ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | kampong.org:443 | 270.2ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | kampong.org:443 | 220.9ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.129.59.199",
             "server_port": 443,
@@ -155,7 +153,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 125.34ms | 0️⃣1️⃣",
+            "tag": "@free1_vpn | US🇺🇸 | 209.126.84.189:443 | 90.15ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.126.84.189",
             "server_port": 443,
@@ -191,11 +189,11 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | RELAY🚩 | aq4714.keeoomboom.de:443 | 165.54ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | DE🇩🇪 | glweidf.sbs:443 | 447.99ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "aq4714.keeoomboom.de",
+            "server": "172.67.170.13",
             "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -208,7 +206,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "aq4714.keeoomboom.de",
+                "server_name": "glweidf.sbs",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -218,45 +216,9 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/video\/bkhlciz0.m3u8",
+                "path": "\/\/linkws",
                 "headers": {
-                    "Host": "aq4714.keeoomboom.de"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 128.62ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "209.126.84.189",
-            "server_port": 443,
-            "uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "209.126.84.189",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/vmessws",
-                "headers": {
-                    "Host": "209.126.84.189"
+                    "Host": "172.67.170.13"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
