@@ -103,7 +103,6 @@
             "outbounds": [
                 "URL-TEST",
                 "SC🇸🇨",
-                "SG🇸🇬",
                 "US🇺🇸"
             ]
         },
@@ -111,13 +110,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | SC🇸🇨 | 156.238.238.194:47296 | 157.73ms | 0️⃣1️⃣",
-                "@ConfigsHUB | SC🇸🇨 | 156.238.238.194:47296 | 158.65ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | SG🇸🇬 | 82.197.69.131:39674 | 192.5ms | 0️⃣2️⃣",
-                "@v2ray1_ng | SG🇸🇬 | 82.197.69.131:39674 | 193.34ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 2.01ms | 0️⃣3️⃣",
-                "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 65.43ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 105.35ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | SC🇸🇨 | 156.238.238.194:47296 | 187.79ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 47.58ms | 0️⃣2️⃣",
+                "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 102.63ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 76.66ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -127,19 +123,7 @@
             "tag": "SC🇸🇨",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | SC🇸🇨 | 156.238.238.194:47296 | 157.73ms | 0️⃣1️⃣",
-                "@ConfigsHUB | SC🇸🇨 | 156.238.238.194:47296 | 158.65ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "SG🇸🇬",
-            "type": "urltest",
-            "outbounds": [
-                "@oneclickvpnkeys | SG🇸🇬 | 82.197.69.131:39674 | 192.5ms | 0️⃣2️⃣",
-                "@v2ray1_ng | SG🇸🇬 | 82.197.69.131:39674 | 193.34ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | SC🇸🇨 | 156.238.238.194:47296 | 187.79ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -149,16 +133,16 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 2.01ms | 0️⃣3️⃣",
-                "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 65.43ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 105.35ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 47.58ms | 0️⃣2️⃣",
+                "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 102.63ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 76.66ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | SC🇸🇨 | 156.238.238.194:47296 | 157.73ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | SC🇸🇨 | 156.238.238.194:47296 | 187.79ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "156.238.238.194",
             "server_port": 47296,
@@ -184,67 +168,7 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | SC🇸🇨 | 156.238.238.194:47296 | 158.65ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "156.238.238.194",
-            "server_port": 47296,
-            "uuid": "0524236a-e217-4cf3-9223-968a290ffce7",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "156.238.238.194"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@oneclickvpnkeys | SG🇸🇬 | 82.197.69.131:39674 | 192.5ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "82.197.69.131",
-            "server_port": 39674,
-            "uuid": "5a89386a-827b-4f54-8778-2f1b5122c6ef",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@v2ray1_ng | SG🇸🇬 | 82.197.69.131:39674 | 193.34ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "82.197.69.131",
-            "server_port": 39674,
-            "uuid": "5a89386a-827b-4f54-8778-2f1b5122c6ef",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 2.01ms | 0️⃣3️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 47.58ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "38.14.99.179",
             "server_port": 59807,
@@ -261,7 +185,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 65.43ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 102.63ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.126.84.189",
             "server_port": 443,
@@ -297,7 +221,7 @@
             }
         },
         {
-            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 105.35ms | 0️⃣1️⃣",
+            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 76.66ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.126.84.189",
             "server_port": 443,
