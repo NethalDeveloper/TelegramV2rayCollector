@@ -104,6 +104,7 @@
                 "URL-TEST",
                 "ES🇪🇸",
                 "US🇺🇸",
+                "SG🇸🇬",
                 "RELAY🚩",
                 "FR🇫🇷"
             ]
@@ -112,11 +113,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | ES🇪🇸 | 208.76.223.218:40433 | 95.32ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | 47.253.197.26:28886 | 18.62ms | 0️⃣2️⃣",
-                "@Hope_Net | RELAY🚩 | worker-mute-bar-1719.nifotok993.workers.dev:443 | 33.08ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 99.18ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 119.1ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | ES🇪🇸 | 208.76.223.218:40433 | 140.1ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | 47.253.197.26:28886 | 67.51ms | 0️⃣2️⃣",
+                "@v2ray1_ng | SG🇸🇬 | 82.197.69.131:39674 | 185.31ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | proud-union-8659.email-0kn8d.workers.dev:2052 | 14.66ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 150.85ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 164.39ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -126,7 +128,7 @@
             "tag": "ES🇪🇸",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | ES🇪🇸 | 208.76.223.218:40433 | 95.32ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | ES🇪🇸 | 208.76.223.218:40433 | 140.1ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -136,7 +138,17 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 47.253.197.26:28886 | 18.62ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 47.253.197.26:28886 | 67.51ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "SG🇸🇬",
+            "type": "urltest",
+            "outbounds": [
+                "@v2ray1_ng | SG🇸🇬 | 82.197.69.131:39674 | 185.31ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -146,7 +158,7 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | RELAY🚩 | worker-mute-bar-1719.nifotok993.workers.dev:443 | 33.08ms | 0️⃣1️⃣"
+                "@Hope_Net | RELAY🚩 | proud-union-8659.email-0kn8d.workers.dev:2052 | 14.66ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -156,15 +168,15 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 99.18ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 119.1ms | 0️⃣2️⃣"
+                "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 150.85ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 164.39ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | ES🇪🇸 | 208.76.223.218:40433 | 95.32ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | ES🇪🇸 | 208.76.223.218:40433 | 140.1ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "208.76.223.218",
             "server_port": 40433,
@@ -181,7 +193,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 47.253.197.26:28886 | 18.62ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 47.253.197.26:28886 | 67.51ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "47.253.197.26",
             "server_port": 28886,
@@ -198,11 +210,28 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | worker-mute-bar-1719.nifotok993.workers.dev:443 | 33.08ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | SG🇸🇬 | 82.197.69.131:39674 | 185.31ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "185.221.160.163",
-            "server_port": 443,
-            "uuid": "1052f24e-7b09-45eb-b0c5-d858eb124192",
+            "server": "82.197.69.131",
+            "server_port": 39674,
+            "uuid": "5a89386a-827b-4f54-8778-2f1b5122c6ef",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | proud-union-8659.email-0kn8d.workers.dev:2052 | 14.66ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "104.16.68.38",
+            "server_port": 2052,
+            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -213,28 +242,18 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": null,
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/\/glweidf.cfd\/linkws",
+                "path": "\/\/glweidf.sbs\/linkws",
                 "headers": {
-                    "Host": "185.221.160.163"
+                    "Host": "104.16.68.38"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 99.18ms | 0️⃣1️⃣",
+            "tag": "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 150.85ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "91.134.8.101",
             "server_port": 443,
@@ -270,7 +289,7 @@
             }
         },
         {
-            "tag": "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 119.1ms | 0️⃣2️⃣",
+            "tag": "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 164.39ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "146.59.85.226",
             "server_port": 443,
