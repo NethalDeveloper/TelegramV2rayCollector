@@ -104,27 +104,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | ES🇪🇸 | 208.76.223.218:40433 | 117.01ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | 47.253.197.26:28886 | 45.93ms | 0️⃣2️⃣",
-                "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 124.91ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 146.52ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | ES🇪🇸 | 208.76.223.218:40433 | 74.07ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | 47.253.197.26:28886 | 6.05ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | worker-mute-bar-1719.nifotok993.workers.dev:443 | 26.21ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 86.36ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 108.55ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | ES🇪🇸 | 208.76.223.218:40433 | 117.01ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | 47.253.197.26:28886 | 45.93ms | 0️⃣2️⃣",
-                "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 124.91ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 146.52ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | ES🇪🇸 | 208.76.223.218:40433 | 74.07ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | 47.253.197.26:28886 | 6.05ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | worker-mute-bar-1719.nifotok993.workers.dev:443 | 26.21ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 86.36ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 108.55ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | ES🇪🇸 | 208.76.223.218:40433 | 117.01ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | ES🇪🇸 | 208.76.223.218:40433 | 74.07ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "208.76.223.218",
             "server_port": 40433,
@@ -141,7 +143,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 47.253.197.26:28886 | 45.93ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 47.253.197.26:28886 | 6.05ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "47.253.197.26",
             "server_port": 28886,
@@ -158,7 +160,43 @@
             }
         },
         {
-            "tag": "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 124.91ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | worker-mute-bar-1719.nifotok993.workers.dev:443 | 26.21ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "185.221.160.163",
+            "server_port": 443,
+            "uuid": "1052f24e-7b09-45eb-b0c5-d858eb124192",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": null,
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/glweidf.cfd\/linkws",
+                "headers": {
+                    "Host": "185.221.160.163"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 86.36ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "91.134.8.101",
             "server_port": 443,
@@ -194,7 +232,7 @@
             }
         },
         {
-            "tag": "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 146.52ms | 0️⃣2️⃣",
+            "tag": "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 108.55ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "146.59.85.226",
             "server_port": 443,
