@@ -99,31 +99,31 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@v2ray1_ng | SG🇸🇬 | 82.197.69.131:39674 | 194.42ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | proud-union-8659.email-0kn8d.workers.dev:2052 | 170.62ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 143.78ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 165.49ms | 0️⃣2️⃣"
+                "@ConfigsHUB | FI🇫🇮 | pwqutbld1b9c.realdop.com:443 | 201.41ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | uare-truth-7033.rijiwex893.workers.dev:2095 | 56.88ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 85.67ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 107.36ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | SG🇸🇬 | 82.197.69.131:39674 | 194.42ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | proud-union-8659.email-0kn8d.workers.dev:2052 | 170.62ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 143.78ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 165.49ms | 0️⃣2️⃣"
+                "@ConfigsHUB | FI🇫🇮 | pwqutbld1b9c.realdop.com:443 | 201.41ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | uare-truth-7033.rijiwex893.workers.dev:2095 | 56.88ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 85.67ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 107.36ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2ray1_ng | SG🇸🇬 | 82.197.69.131:39674 | 194.42ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | FI🇫🇮 | pwqutbld1b9c.realdop.com:443 | 201.41ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "82.197.69.131",
-            "server_port": 39674,
-            "uuid": "5a89386a-827b-4f54-8778-2f1b5122c6ef",
+            "server": "pwqutbld1b9c.realdop.com",
+            "server_port": 443,
+            "uuid": "e920aa3b-4062-4ab5-a045-340291859acb",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -133,14 +133,24 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "pwqutbld1b9c.realdop.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | proud-union-8659.email-0kn8d.workers.dev:2052 | 170.62ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | uare-truth-7033.rijiwex893.workers.dev:2095 | 56.88ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.16.68.38",
-            "server_port": 2052,
-            "uuid": "76221bfb-e92f-4e80-81c5-6fe48f50ac0b",
+            "server": "104.16.67.38",
+            "server_port": 2095,
+            "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -153,16 +163,16 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/glweidf.sbs\/linkws",
+                "path": "\/\/afrhms16v.bestxray.buzz\/linkws",
                 "headers": {
-                    "Host": "104.16.68.38"
+                    "Host": "104.16.67.38"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 143.78ms | 0️⃣1️⃣",
+            "tag": "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 85.67ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "91.134.8.101",
             "server_port": 443,
@@ -198,7 +208,7 @@
             }
         },
         {
-            "tag": "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 165.49ms | 0️⃣2️⃣",
+            "tag": "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 107.36ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "146.59.85.226",
             "server_port": 443,
