@@ -104,31 +104,37 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | US🇺🇸 | 47.253.197.26:12056 | 62.93ms | 0️⃣1️⃣",
-                "@free1_vpn | SG🇸🇬 | 82.197.69.131:39674 | 178.84ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 151.09ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 164.4ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36104 | 183.78ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 182.9ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | MY🇲🇾 | ml0724.ysds168.shop:2052 | 205.15ms | 0️⃣3️⃣",
+                "@v2ray1_ng | SG🇸🇬 | 82.197.69.131:39674 | 175.91ms | 0️⃣1️⃣",
+                "@ConfigsHUB | US🇺🇸 | 173.249.209.146:20086 | 1.9ms | 0️⃣2️⃣",
+                "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 145.1ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 170.43ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 47.253.197.26:12056 | 62.93ms | 0️⃣1️⃣",
-                "@free1_vpn | SG🇸🇬 | 82.197.69.131:39674 | 178.84ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 151.09ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 164.4ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36104 | 183.78ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 182.9ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | MY🇲🇾 | ml0724.ysds168.shop:2052 | 205.15ms | 0️⃣3️⃣",
+                "@v2ray1_ng | SG🇸🇬 | 82.197.69.131:39674 | 175.91ms | 0️⃣1️⃣",
+                "@ConfigsHUB | US🇺🇸 | 173.249.209.146:20086 | 1.9ms | 0️⃣2️⃣",
+                "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 145.1ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 170.43ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 47.253.197.26:12056 | 62.93ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36104 | 183.78ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "47.253.197.26",
-            "server_port": 12056,
-            "uuid": "dd7be7f1-38ff-45e6-f1e5-b20c2190f527",
+            "server": "38.180.16.86",
+            "server_port": 36104,
+            "uuid": "E146A8CB-9D2F-449C-ADCA-8736FB",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -141,7 +147,51 @@
             }
         },
         {
-            "tag": "@free1_vpn | SG🇸🇬 | 82.197.69.131:39674 | 178.84ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 182.9ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "38.180.16.86",
+            "server_port": 36236,
+            "uuid": "a58bc1a5-8c18-49ff-9453-c331b52f45dc",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@oneclickvpnkeys | MY🇲🇾 | ml0724.ysds168.shop:2052 | 205.15ms | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "38.54.98.110",
+            "server_port": 2052,
+            "uuid": "665d9b8f-153d-4907-adac-de12afd9c851",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ml0724.ysds168.shop",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | SG🇸🇬 | 82.197.69.131:39674 | 175.91ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "82.197.69.131",
             "server_port": 39674,
@@ -158,7 +208,33 @@
             }
         },
         {
-            "tag": "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 151.09ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | US🇺🇸 | 173.249.209.146:20086 | 1.9ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "173.249.209.146",
+            "server_port": 20086,
+            "uuid": "3935c2dc-dbb0-43f7-b367-fe89abe87fdf",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "173.249.209.146"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2Line | FR🇫🇷 | 91.134.8.101:443 | 145.1ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "91.134.8.101",
             "server_port": 443,
@@ -194,7 +270,7 @@
             }
         },
         {
-            "tag": "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 164.4ms | 0️⃣2️⃣",
+            "tag": "@v2Line | FR🇫🇷 | 146.59.85.226:443 | 170.43ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "146.59.85.226",
             "server_port": 443,
