@@ -102,7 +102,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "FR🇫🇷",
                 "SE🇸🇪",
                 "RELAY🚩",
                 "PL🇵🇱"
@@ -112,22 +111,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.39.32.206:22222 | 144.49ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.32.206:22223 | 187.15ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | SE🇸🇪 | 70.34.218.149:11930 | 143.19ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 190.71ms | 0️⃣1️⃣",
-                "@VmessProtocol | PL🇵🇱 | 5.188.108.13:11790 | 161.71ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "FR🇫🇷",
-            "type": "urltest",
-            "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.39.32.206:22222 | 144.49ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.32.206:22223 | 187.15ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | SE🇸🇪 | 70.34.218.149:11930 | 95.47ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 14.2ms | 0️⃣1️⃣",
+                "@VmessProtocol | PL🇵🇱 | 5.188.108.13:11790 | 111.89ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -137,7 +123,7 @@
             "tag": "SE🇸🇪",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | SE🇸🇪 | 70.34.218.149:11930 | 143.19ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | SE🇸🇪 | 70.34.218.149:11930 | 95.47ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -147,7 +133,7 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 190.71ms | 0️⃣1️⃣"
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 14.2ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -157,56 +143,14 @@
             "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | PL🇵🇱 | 5.188.108.13:11790 | 161.71ms | 0️⃣1️⃣"
+                "@VmessProtocol | PL🇵🇱 | 5.188.108.13:11790 | 111.89ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.39.32.206:22222 | 144.49ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "13.39.32.206",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.39.32.206:22223 | 187.15ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "13.39.32.206",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@oneclickvpnkeys | SE🇸🇪 | 70.34.218.149:11930 | 143.19ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | SE🇸🇪 | 70.34.218.149:11930 | 95.47ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "70.34.218.149",
             "server_port": 11930,
@@ -227,7 +171,7 @@
             }
         },
         {
-            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 190.71ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 14.2ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "creativecommons.org",
             "server_port": 2053,
@@ -255,7 +199,7 @@
             }
         },
         {
-            "tag": "@VmessProtocol | PL🇵🇱 | 5.188.108.13:11790 | 161.71ms | 0️⃣1️⃣",
+            "tag": "@VmessProtocol | PL🇵🇱 | 5.188.108.13:11790 | 111.89ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "5.188.108.13",
             "server_port": 11790,
