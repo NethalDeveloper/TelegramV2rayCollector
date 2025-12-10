@@ -105,21 +105,21 @@
             "outbounds": [
                 "URL-TEST",
                 "DE🇩🇪",
+                "BR🇧🇷",
                 "KR🇰🇷",
-                "RELAY🚩",
-                "HK🇭🇰"
+                "RELAY🚩"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | DE🇩🇪 | 82.198.246.97:180 | 66.59ms | 0️⃣1️⃣",
-                "@free1_vpn | DE🇩🇪 | a.confignor.site:7443 | 225.46ms | 0️⃣1️⃣",
-                "@Hope_Net | DE🇩🇪 | gwdef.sbs:443 | 361.72ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | KR🇰🇷 | seoul03.zgjok.com:443 | 290.72ms | 0️⃣2️⃣",
-                "@Hope_Net | RELAY🚩 | 104.21.52.232:80 | 2.27ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 192.32ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | DE🇩🇪 | 82.198.246.97:180 | 62.25ms | 0️⃣1️⃣",
+                "@v2ray1_ng | DE🇩🇪 | a.confignor.site:7443 | 110.91ms | 0️⃣1️⃣",
+                "@Hope_Net | DE🇩🇪 | gwdef.sbs:443 | 310.35ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36104 | 121.82ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | KR🇰🇷 | seoul03.zgjok.com:443 | 209.45ms | 0️⃣3️⃣",
+                "@Hope_Net | RELAY🚩 | 104.21.52.232:80 | 1.46ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -129,9 +129,19 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | DE🇩🇪 | 82.198.246.97:180 | 66.59ms | 0️⃣1️⃣",
-                "@free1_vpn | DE🇩🇪 | a.confignor.site:7443 | 225.46ms | 0️⃣1️⃣",
-                "@Hope_Net | DE🇩🇪 | gwdef.sbs:443 | 361.72ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | DE🇩🇪 | 82.198.246.97:180 | 62.25ms | 0️⃣1️⃣",
+                "@v2ray1_ng | DE🇩🇪 | a.confignor.site:7443 | 110.91ms | 0️⃣1️⃣",
+                "@Hope_Net | DE🇩🇪 | gwdef.sbs:443 | 310.35ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "BR🇧🇷",
+            "type": "urltest",
+            "outbounds": [
+                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36104 | 121.82ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -141,7 +151,7 @@
             "tag": "KR🇰🇷",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | KR🇰🇷 | seoul03.zgjok.com:443 | 290.72ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | KR🇰🇷 | seoul03.zgjok.com:443 | 209.45ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -151,24 +161,14 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | RELAY🚩 | 104.21.52.232:80 | 2.27ms | 0️⃣1️⃣"
+                "@Hope_Net | RELAY🚩 | 104.21.52.232:80 | 1.46ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "HK🇭🇰",
-            "type": "urltest",
-            "outbounds": [
-                "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 192.32ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "@oneclickvpnkeys | DE🇩🇪 | 82.198.246.97:180 | 66.59ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | DE🇩🇪 | 82.198.246.97:180 | 62.25ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "82.198.246.97",
             "server_port": 180,
@@ -185,7 +185,7 @@
             }
         },
         {
-            "tag": "@free1_vpn | DE🇩🇪 | a.confignor.site:7443 | 225.46ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | DE🇩🇪 | a.confignor.site:7443 | 110.91ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "a.confignor.site",
             "server_port": 7443,
@@ -202,7 +202,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | DE🇩🇪 | gwdef.sbs:443 | 361.72ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | DE🇩🇪 | gwdef.sbs:443 | 310.35ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "104.21.82.17",
             "server_port": 443,
@@ -238,7 +238,24 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | KR🇰🇷 | seoul03.zgjok.com:443 | 290.72ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36104 | 121.82ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "38.180.16.86",
+            "server_port": 36104,
+            "uuid": "E146A8CB-9D2F-449C-ADCA-8736FB",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@oneclickvpnkeys | KR🇰🇷 | seoul03.zgjok.com:443 | 209.45ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "seoul03.zgjok.com",
             "server_port": 443,
@@ -274,7 +291,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | 104.21.52.232:80 | 2.27ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | 104.21.52.232:80 | 1.46ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.21.52.232",
             "server_port": 80,
@@ -297,23 +314,6 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 192.32ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "47.242.145.160",
-            "server_port": 44457,
-            "uuid": "40290609-2743-4d85-c9c3-4c72dd151b9f",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
