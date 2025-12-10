@@ -105,7 +105,6 @@
             "outbounds": [
                 "URL-TEST",
                 "CA🇨🇦",
-                "HK🇭🇰",
                 "RELAY🚩",
                 "PL🇵🇱"
             ]
@@ -114,11 +113,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | CA🇨🇦 | 23.227.38.43:443 | 1.78ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | CA🇨🇦 | 209.200.246.53:36774 | 65.7ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | HK🇭🇰 | 58.152.25.20:443 | 160.25ms | 0️⃣3️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 6.3ms | 0️⃣1️⃣",
-                "@VmessProtocol | PL🇵🇱 | 5.188.108.13:11790 | 176.53ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | CA🇨🇦 | 23.227.38.43:443 | 6.3ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | CA🇨🇦 | 209.200.246.53:36774 | 24.88ms | 0️⃣2️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 20.05ms | 0️⃣1️⃣",
+                "@VmessProtocol | PL🇵🇱 | 5.188.108.13:11790 | 111.19ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -128,18 +126,8 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | CA🇨🇦 | 23.227.38.43:443 | 1.78ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | CA🇨🇦 | 209.200.246.53:36774 | 65.7ms | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "HK🇭🇰",
-            "type": "urltest",
-            "outbounds": [
-                "@oneclickvpnkeys | HK🇭🇰 | 58.152.25.20:443 | 160.25ms | 0️⃣3️⃣"
+                "@oneclickvpnkeys | CA🇨🇦 | 23.227.38.43:443 | 6.3ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | CA🇨🇦 | 209.200.246.53:36774 | 24.88ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -149,7 +137,7 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 6.3ms | 0️⃣1️⃣"
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 20.05ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -159,14 +147,14 @@
             "tag": "PL🇵🇱",
             "type": "urltest",
             "outbounds": [
-                "@VmessProtocol | PL🇵🇱 | 5.188.108.13:11790 | 176.53ms | 0️⃣1️⃣"
+                "@VmessProtocol | PL🇵🇱 | 5.188.108.13:11790 | 111.19ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | CA🇨🇦 | 23.227.38.43:443 | 1.78ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | CA🇨🇦 | 23.227.38.43:443 | 6.3ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "23.227.38.43",
             "server_port": 443,
@@ -194,7 +182,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | CA🇨🇦 | 209.200.246.53:36774 | 65.7ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | CA🇨🇦 | 209.200.246.53:36774 | 24.88ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "209.200.246.53",
             "server_port": 36774,
@@ -213,28 +201,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | HK🇭🇰 | 58.152.25.20:443 | 160.25ms | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "58.152.25.20",
-            "server_port": 443,
-            "password": "BxceQaOe",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "t.me\/ripaojiedian",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 6.3ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 20.05ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "creativecommons.org",
             "server_port": 2053,
@@ -262,7 +229,7 @@
             }
         },
         {
-            "tag": "@VmessProtocol | PL🇵🇱 | 5.188.108.13:11790 | 176.53ms | 0️⃣1️⃣",
+            "tag": "@VmessProtocol | PL🇵🇱 | 5.188.108.13:11790 | 111.19ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "5.188.108.13",
             "server_port": 11790,
