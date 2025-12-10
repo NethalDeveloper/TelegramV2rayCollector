@@ -99,23 +99,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 131.4ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev:2052 | 13.4ms | 0️⃣1️⃣"
+                "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 151.14ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | d396-flower-d396.megare7260.workers.dev:80 | 127.45ms | 0️⃣1️⃣",
+                "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 156ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 131.4ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev:2052 | 13.4ms | 0️⃣1️⃣"
+                "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 151.14ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | d396-flower-d396.megare7260.workers.dev:80 | 127.45ms | 0️⃣1️⃣",
+                "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 156ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 131.4ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | 209.126.84.189:443 | 151.14ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.126.84.189",
             "server_port": 443,
@@ -151,11 +153,11 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev:2052 | 13.4ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | d396-flower-d396.megare7260.workers.dev:80 | 127.45ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.18.202.250",
-            "server_port": 2052,
-            "uuid": "6c168fcc-2231-4f3b-8c1e-f6391692df4a",
+            "server": "Back.MsV2ray.online",
+            "server_port": 80,
+            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -168,12 +170,29 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/hms02.fxiaomi.sbs\/link",
+                "path": "\/\/obdii.cfd\/linkws",
                 "headers": {
-                    "Host": "104.18.202.250"
+                    "Host": "Back.MsV2ray.online"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 156ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "47.242.145.160",
+            "server_port": 44457,
+            "uuid": "40290609-2743-4d85-c9c3-4c72dd151b9f",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
