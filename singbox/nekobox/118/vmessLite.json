@@ -104,33 +104,46 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | KR🇰🇷 | seoul03.zgjok.com:443 | 219.6ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | DE🇩🇪 | 91.99.27.55:8880 | 141.74ms | 0️⃣2️⃣",
-                "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 238.5ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 157.98ms | 0️⃣1️⃣",
-                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 171.21ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | ES🇪🇸 | 208.76.223.218:40433 | 74.05ms | 0️⃣1️⃣",
+                "@ConfigsHUB | US🇺🇸 | 209.126.84.189:443 | 96.16ms | 0️⃣1️⃣",
+                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 138.05ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | KR🇰🇷 | seoul03.zgjok.com:443 | 219.6ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | DE🇩🇪 | 91.99.27.55:8880 | 141.74ms | 0️⃣2️⃣",
-                "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 238.5ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 157.98ms | 0️⃣1️⃣",
-                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 171.21ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | ES🇪🇸 | 208.76.223.218:40433 | 74.05ms | 0️⃣1️⃣",
+                "@ConfigsHUB | US🇺🇸 | 209.126.84.189:443 | 96.16ms | 0️⃣1️⃣",
+                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 138.05ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | KR🇰🇷 | seoul03.zgjok.com:443 | 219.6ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | ES🇪🇸 | 208.76.223.218:40433 | 74.05ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "seoul03.zgjok.com",
+            "server": "208.76.223.218",
+            "server_port": 40433,
+            "uuid": "d8fd8955-78db-49ba-d86f-3e4729f6ac4d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | US🇺🇸 | 209.126.84.189:443 | 96.16ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "209.126.84.189",
             "server_port": 443,
-            "uuid": "72a0dac4-9689-4a57-b164-5c65bfa94772",
+            "uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -143,7 +156,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "seoul03.zgjok.com",
+                "server_name": "209.126.84.189",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -153,76 +166,16 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/",
+                "path": "\/\/vmessws",
                 "headers": {
-                    "Host": "seoul03.zgjok.com"
+                    "Host": "209.126.84.189"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@oneclickvpnkeys | DE🇩🇪 | 91.99.27.55:8880 | 141.74ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "91.99.27.55",
-            "server_port": 8880,
-            "uuid": "f3025961-167b-4f49-e4e3-86505fe980fd",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 238.5ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "104.19.45.205",
-            "server_port": 2095,
-            "uuid": "7a737f41-b792-4260-94ff-3d864da67b80",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "104.19.45.205"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 157.98ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "47.242.145.160",
-            "server_port": 44457,
-            "uuid": "40290609-2743-4d85-c9c3-4c72dd151b9f",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 171.21ms | 0️⃣2️⃣",
+            "tag": "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 138.05ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "95.164.4.88",
             "server_port": 80,
