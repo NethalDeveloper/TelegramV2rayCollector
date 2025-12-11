@@ -100,7 +100,6 @@
             "outbounds": [
                 "URL-TEST",
                 "NL🇳🇱",
-                "DE🇩🇪",
                 "RU🇷🇺"
             ]
         },
@@ -108,11 +107,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @Outline_Vpn | NL🇳🇱 | v547154.hosted-by-vdsina.com:8443 | 276.1ms | 0️⃣1️⃣",
-                "REALITY | @v2ray1_ng | NL🇳🇱 | hels3.vlessok.store:443 | 1011.03ms | 0️⃣1️⃣",
-                "REALITY | @Outline_Vpn | DE🇩🇪 | 94.156.114.200:38395 | 113.67ms | 0️⃣3️⃣",
-                "REALITY | @v2rayngvpn | RU🇷🇺 | 185.234.59.74:8443 | 121.98ms | 0️⃣3️⃣",
-                "REALITY | @VmessProtocol | RU🇷🇺 | 217.16.18.50:443 | 125.94ms | 0️⃣1️⃣"
+                "REALITY | @Outline_Vpn | NL🇳🇱 | v547154.hosted-by-vdsina.com:8443 | 390.21ms | 0️⃣1️⃣",
+                "REALITY | @v2rayngvpn | RU🇷🇺 | 185.234.59.74:8443 | 171.31ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | RU🇷🇺 | 217.16.18.50:443 | 183.03ms | 0️⃣1️⃣",
+                "REALITY | @ConfigsHUB | RU🇷🇺 | 62.113.42.65:27121 | 181.83ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -122,18 +120,7 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @Outline_Vpn | NL🇳🇱 | v547154.hosted-by-vdsina.com:8443 | 276.1ms | 0️⃣1️⃣",
-                "REALITY | @v2ray1_ng | NL🇳🇱 | hels3.vlessok.store:443 | 1011.03ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "DE🇩🇪",
-            "type": "urltest",
-            "outbounds": [
-                "REALITY | @Outline_Vpn | DE🇩🇪 | 94.156.114.200:38395 | 113.67ms | 0️⃣3️⃣"
+                "REALITY | @Outline_Vpn | NL🇳🇱 | v547154.hosted-by-vdsina.com:8443 | 390.21ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -143,15 +130,16 @@
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @v2rayngvpn | RU🇷🇺 | 185.234.59.74:8443 | 121.98ms | 0️⃣3️⃣",
-                "REALITY | @VmessProtocol | RU🇷🇺 | 217.16.18.50:443 | 125.94ms | 0️⃣1️⃣"
+                "REALITY | @v2rayngvpn | RU🇷🇺 | 185.234.59.74:8443 | 171.31ms | 0️⃣1️⃣",
+                "REALITY | @VmessProtocol | RU🇷🇺 | 217.16.18.50:443 | 183.03ms | 0️⃣1️⃣",
+                "REALITY | @ConfigsHUB | RU🇷🇺 | 62.113.42.65:27121 | 181.83ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @Outline_Vpn | NL🇳🇱 | v547154.hosted-by-vdsina.com:8443 | 276.1ms | 0️⃣1️⃣",
+            "tag": "REALITY | @Outline_Vpn | NL🇳🇱 | v547154.hosted-by-vdsina.com:8443 | 390.21ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "v547154.hosted-by-vdsina.com",
             "server_port": 8443,
@@ -179,63 +167,7 @@
             }
         },
         {
-            "tag": "REALITY | @v2ray1_ng | NL🇳🇱 | hels3.vlessok.store:443 | 1011.03ms | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "hels3.vlessok.store",
-            "server_port": 443,
-            "uuid": "7405cd73-01d9-48d5-ada9-6905378d3975",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "disk.yandex.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "wffi6nrJbxOiA0g7IuiXB4FZ7tkFtb9eRkPS9UvWPks",
-                    "short_id": "9ec7e0"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @Outline_Vpn | DE🇩🇪 | 94.156.114.200:38395 | 113.67ms | 0️⃣3️⃣",
-            "type": "vless",
-            "server": "94.156.114.200",
-            "server_port": 38395,
-            "uuid": "0f8e2cfc-fdf2-46c7-bfcd-ce8273d5ff13",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "vk.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "DvKMFkm82Jkp6Jk_7pXYb0fMXq1MsLMNxDeQfcCSbEA",
-                    "short_id": "ab12cd34"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @v2rayngvpn | RU🇷🇺 | 185.234.59.74:8443 | 121.98ms | 0️⃣3️⃣",
+            "tag": "REALITY | @v2rayngvpn | RU🇷🇺 | 185.234.59.74:8443 | 171.31ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "185.234.59.74",
             "server_port": 8443,
@@ -263,7 +195,7 @@
             }
         },
         {
-            "tag": "REALITY | @VmessProtocol | RU🇷🇺 | 217.16.18.50:443 | 125.94ms | 0️⃣1️⃣",
+            "tag": "REALITY | @VmessProtocol | RU🇷🇺 | 217.16.18.50:443 | 183.03ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "217.16.18.50",
             "server_port": 443,
@@ -287,6 +219,34 @@
                     "enabled": true,
                     "public_key": "l7cLIMrQQPS1LCyzgqCqP9O1rvoIanR9Npa3lYrz2xI",
                     "short_id": "c050b3628fab"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @ConfigsHUB | RU🇷🇺 | 62.113.42.65:27121 | 181.83ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "62.113.42.65",
+            "server_port": 27121,
+            "uuid": "cbf1ec03-2cff-4b1f-9eb5-5929c13fc20c",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.ok.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "QNLEBa5tV9JCrubA4hlAWhho06ddr2dtsT8LKZsGTgA",
+                    "short_id": "fdc8125ea6f61323"
                 }
             }
         },
