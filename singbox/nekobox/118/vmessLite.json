@@ -104,27 +104,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 178.98ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | telegram----cassiusvpn----7777778877772211333333332245422525225.mint14.workers.dev:2053 | 18.27ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 158.09ms | 0️⃣1️⃣",
-                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 175.6ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 154.02ms | 0️⃣1️⃣",
+                "@ConfigsHUB | DE🇩🇪 | a.confignor.site:7443 | 223.63ms | 0️⃣1️⃣",
+                "@ConfigsHUB | DE🇩🇪 | a.confignor.site:7443 | 140.28ms | 0️⃣3️⃣",
+                "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 171.85ms | 0️⃣1️⃣",
+                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 166.22ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 178.98ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | telegram----cassiusvpn----7777778877772211333333332245422525225.mint14.workers.dev:2053 | 18.27ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 158.09ms | 0️⃣1️⃣",
-                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 175.6ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 154.02ms | 0️⃣1️⃣",
+                "@ConfigsHUB | DE🇩🇪 | a.confignor.site:7443 | 223.63ms | 0️⃣1️⃣",
+                "@ConfigsHUB | DE🇩🇪 | a.confignor.site:7443 | 140.28ms | 0️⃣3️⃣",
+                "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 171.85ms | 0️⃣1️⃣",
+                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 166.22ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 178.98ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 154.02ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "38.180.16.86",
             "server_port": 36236,
@@ -141,11 +143,11 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | telegram----cassiusvpn----7777778877772211333333332245422525225.mint14.workers.dev:2053 | 18.27ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | DE🇩🇪 | a.confignor.site:7443 | 223.63ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.17.148.22",
-            "server_port": 2053,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "server": "a.confignor.site",
+            "server_port": 7443,
+            "uuid": "da4afba1-d003-4bb0-a09c-538468199559",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -155,29 +157,27 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "telegram----cassiusvpn----7777778877772211333333332245422525225.mint14.workers.dev",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/aveiror.com\/linkvws",
-                "headers": {
-                    "Host": "104.17.148.22"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 158.09ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | DE🇩🇪 | a.confignor.site:7443 | 140.28ms | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "a.confignor.site",
+            "server_port": 7443,
+            "uuid": "702bba54-766a-4d55-a749-b49ed5132f42",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 171.85ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "47.242.145.160",
             "server_port": 44457,
@@ -194,7 +194,7 @@
             }
         },
         {
-            "tag": "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 175.6ms | 0️⃣2️⃣",
+            "tag": "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 166.22ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "95.164.4.88",
             "server_port": 80,
