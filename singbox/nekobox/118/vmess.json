@@ -105,17 +105,17 @@
             "outbounds": [
                 "URL-TEST",
                 "BR🇧🇷",
-                "US🇺🇸"
+                "HK🇭🇰"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:38039 | 114.92ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 114.76ms | 0️⃣2️⃣",
-                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 134.31ms | 0️⃣1️⃣",
-                "@ConfigsHUB | US🇺🇸 | 209.126.84.189:443 | 26.36ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:38039 | 151.06ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 152.15ms | 0️⃣2️⃣",
+                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 155.97ms | 0️⃣2️⃣",
+                "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 173.03ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -125,26 +125,26 @@
             "tag": "BR🇧🇷",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:38039 | 114.92ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 114.76ms | 0️⃣2️⃣",
-                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 134.31ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:38039 | 151.06ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 152.15ms | 0️⃣2️⃣",
+                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 155.97ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
+            "tag": "HK🇭🇰",
             "type": "urltest",
             "outbounds": [
-                "@ConfigsHUB | US🇺🇸 | 209.126.84.189:443 | 26.36ms | 0️⃣1️⃣"
+                "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 173.03ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:38039 | 114.92ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:38039 | 151.06ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "38.180.16.86",
             "server_port": 38039,
@@ -161,7 +161,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 114.76ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 152.15ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "38.180.16.86",
             "server_port": 36236,
@@ -178,7 +178,7 @@
             }
         },
         {
-            "tag": "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 134.31ms | 0️⃣1️⃣",
+            "tag": "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 155.97ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "95.164.4.88",
             "server_port": 80,
@@ -204,11 +204,11 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | US🇺🇸 | 209.126.84.189:443 | 26.36ms | 0️⃣1️⃣",
+            "tag": "@v2Line | HK🇭🇰 | 47.242.145.160:44457 | 173.03ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "209.126.84.189",
-            "server_port": 443,
-            "uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
+            "server": "47.242.145.160",
+            "server_port": 44457,
+            "uuid": "40290609-2743-4d85-c9c3-4c72dd151b9f",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -218,25 +218,6 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "209.126.84.189",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/vmessws",
-                "headers": {
-                    "Host": "209.126.84.189"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
