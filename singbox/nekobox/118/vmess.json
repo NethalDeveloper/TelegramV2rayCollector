@@ -104,15 +104,17 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "BR🇧🇷"
+                "BR🇧🇷",
+                "DE🇩🇪"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 133.23ms | 0️⃣1️⃣",
-                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 155.25ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 119.16ms | 0️⃣1️⃣",
+                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 122.73ms | 0️⃣1️⃣",
+                "@ConfigsHUB | DE🇩🇪 | a.confignor.site:7443 | 120.81ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -122,15 +124,25 @@
             "tag": "BR🇧🇷",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 133.23ms | 0️⃣1️⃣",
-                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 155.25ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 119.16ms | 0️⃣1️⃣",
+                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 122.73ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 133.23ms | 0️⃣1️⃣",
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | DE🇩🇪 | a.confignor.site:7443 | 120.81ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 119.16ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "38.180.16.86",
             "server_port": 36236,
@@ -147,7 +159,7 @@
             }
         },
         {
-            "tag": "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 155.25ms | 0️⃣1️⃣",
+            "tag": "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 122.73ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "95.164.4.88",
             "server_port": 80,
@@ -170,6 +182,23 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | DE🇩🇪 | a.confignor.site:7443 | 120.81ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "a.confignor.site",
+            "server_port": 7443,
+            "uuid": "702bba54-766a-4d55-a749-b49ed5132f42",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
