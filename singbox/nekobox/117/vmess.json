@@ -99,28 +99,40 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "BR🇧🇷",
-                "FI🇫🇮"
+                "FR🇫🇷",
+                "US🇺🇸",
+                "FI🇫🇮",
+                "BR🇧🇷"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 117.05ms | 0️⃣1️⃣",
-                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 126.13ms | 0️⃣1️⃣",
-                "@ConfigsHUB | FI🇫🇮 | a.confignor.site:7443 | 143.22ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.230:443 | 147.88ms | 0️⃣1️⃣",
+                "@ConfigsHUB | US🇺🇸 | 209.126.84.189:443 | 133.74ms | 0️⃣1️⃣",
+                "@ConfigsHUB | FI🇫🇮 | a.confignor.site:7443 | 199.9ms | 0️⃣2️⃣",
+                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 169.27ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "BR🇧🇷",
+            "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 117.05ms | 0️⃣1️⃣",
-                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 126.13ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.230:443 | 147.88ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | US🇺🇸 | 209.126.84.189:443 | 133.74ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -130,18 +142,100 @@
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "@ConfigsHUB | FI🇫🇮 | a.confignor.site:7443 | 143.22ms | 0️⃣1️⃣"
+                "@ConfigsHUB | FI🇫🇮 | a.confignor.site:7443 | 199.9ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | BR🇧🇷 | 38.180.16.86:36236 | 117.05ms | 0️⃣1️⃣",
+            "tag": "BR🇧🇷",
+            "type": "urltest",
+            "outbounds": [
+                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 169.27ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.230:443 | 147.88ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "38.180.16.86",
-            "server_port": 36236,
-            "uuid": "a58bc1a5-8c18-49ff-9453-c331b52f45dc",
+            "server": "57.128.189.230",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "57.128.189.230",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkvws",
+                "headers": {
+                    "Host": "57.128.189.230"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | US🇺🇸 | 209.126.84.189:443 | 133.74ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "209.126.84.189",
+            "server_port": 443,
+            "uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "209.126.84.189",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/vmessws",
+                "headers": {
+                    "Host": "209.126.84.189"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | FI🇫🇮 | a.confignor.site:7443 | 199.9ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "a.confignor.site",
+            "server_port": 7443,
+            "uuid": "da4afba1-d003-4bb0-a09c-538468199559",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -154,7 +248,7 @@
             }
         },
         {
-            "tag": "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 126.13ms | 0️⃣1️⃣",
+            "tag": "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 169.27ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "95.164.4.88",
             "server_port": 80,
@@ -177,23 +271,6 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@ConfigsHUB | FI🇫🇮 | a.confignor.site:7443 | 143.22ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "a.confignor.site",
-            "server_port": 7443,
-            "uuid": "da4afba1-d003-4bb0-a09c-538468199559",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
