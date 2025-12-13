@@ -103,6 +103,7 @@
             "outbounds": [
                 "URL-TEST",
                 "FR🇫🇷",
+                "RELAY🚩",
                 "US🇺🇸",
                 "DE🇩🇪",
                 "BR🇧🇷"
@@ -112,11 +113,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.230:443 | 99.21ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.226:443 | 107.2ms | 0️⃣2️⃣",
-                "@Hope_Net | US🇺🇸 | speedtest.net:443 | 258.85ms | 0️⃣1️⃣",
-                "@Hope_Net | DE🇩🇪 | adenc36v.xtooltech.cfd:443 | 1025.27ms | 0️⃣2️⃣",
-                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 148.36ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.230:443 | 78.45ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.226:443 | 79.24ms | 0️⃣2️⃣",
+                "@ConfigsHUB | RELAY🚩 | z.looloolooloo.com:443 | 44.41ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | speedtest.net:443 | 98.17ms | 0️⃣1️⃣",
+                "@Hope_Net | DE🇩🇪 | adenc36v.xtooltech.cfd:443 | 365.45ms | 0️⃣2️⃣",
+                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 126.92ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -126,8 +128,18 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.230:443 | 99.21ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.226:443 | 107.2ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.230:443 | 78.45ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.226:443 | 79.24ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | RELAY🚩 | z.looloolooloo.com:443 | 44.41ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -137,7 +149,7 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | US🇺🇸 | speedtest.net:443 | 258.85ms | 0️⃣1️⃣"
+                "@Hope_Net | US🇺🇸 | speedtest.net:443 | 98.17ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -147,7 +159,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | DE🇩🇪 | adenc36v.xtooltech.cfd:443 | 1025.27ms | 0️⃣2️⃣"
+                "@Hope_Net | DE🇩🇪 | adenc36v.xtooltech.cfd:443 | 365.45ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -157,14 +169,14 @@
             "tag": "BR🇧🇷",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 148.36ms | 0️⃣1️⃣"
+                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 126.92ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.230:443 | 99.21ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.230:443 | 78.45ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.128.189.230",
             "server_port": 443,
@@ -200,7 +212,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.226:443 | 107.2ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.226:443 | 79.24ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "57.128.189.226",
             "server_port": 443,
@@ -236,7 +248,34 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | speedtest.net:443 | 258.85ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | z.looloolooloo.com:443 | 44.41ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.66.40.99",
+            "server_port": 443,
+            "uuid": "40-telegram-id---V2box-v2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "z.looloolooloo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@Hope_Net | US🇺🇸 | speedtest.net:443 | 98.17ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "speedtest.net",
             "server_port": 443,
@@ -272,7 +311,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | DE🇩🇪 | adenc36v.xtooltech.cfd:443 | 1025.27ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | DE🇩🇪 | adenc36v.xtooltech.cfd:443 | 365.45ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "172.67.219.194",
             "server_port": 443,
@@ -308,7 +347,7 @@
             }
         },
         {
-            "tag": "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 148.36ms | 0️⃣1️⃣",
+            "tag": "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 126.92ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "95.164.4.88",
             "server_port": 80,
