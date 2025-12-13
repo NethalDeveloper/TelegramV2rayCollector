@@ -104,25 +104,31 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.230:443 | 105.16ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | speedtest.net:443 | 198.07ms | 0️⃣1️⃣",
-                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 153.09ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.230:443 | 79.24ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.226:443 | 78.89ms | 0️⃣2️⃣",
+                "@ConfigsHUB | RELAY🚩 | z.looloolooloo.com:443 | 103.3ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | speedtest.net:443 | 90.56ms | 0️⃣1️⃣",
+                "@Hope_Net | DE🇩🇪 | adenc36v.xtooltech.cfd:443 | 199.43ms | 0️⃣2️⃣",
+                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 121.78ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.230:443 | 105.16ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | speedtest.net:443 | 198.07ms | 0️⃣1️⃣",
-                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 153.09ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.230:443 | 79.24ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.226:443 | 78.89ms | 0️⃣2️⃣",
+                "@ConfigsHUB | RELAY🚩 | z.looloolooloo.com:443 | 103.3ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | speedtest.net:443 | 90.56ms | 0️⃣1️⃣",
+                "@Hope_Net | DE🇩🇪 | adenc36v.xtooltech.cfd:443 | 199.43ms | 0️⃣2️⃣",
+                "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 121.78ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.230:443 | 105.16ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.230:443 | 79.24ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.128.189.230",
             "server_port": 443,
@@ -158,11 +164,74 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | speedtest.net:443 | 198.07ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.226:443 | 78.89ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "57.128.189.226",
+            "server_port": 443,
+            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "57.128.189.226",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkvws",
+                "headers": {
+                    "Host": "57.128.189.226"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | RELAY🚩 | z.looloolooloo.com:443 | 103.3ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.66.40.99",
+            "server_port": 443,
+            "uuid": "40-telegram-id---V2box-v2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "z.looloolooloo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@Hope_Net | US🇺🇸 | speedtest.net:443 | 90.56ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "speedtest.net",
             "server_port": 443,
-            "uuid": "4e359aba-21bc-434a-8afd-f3ea28c17fed",
+            "uuid": "c976933b-0860-41c4-8133-d598d422d20e",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -194,7 +263,43 @@
             }
         },
         {
-            "tag": "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 153.09ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | DE🇩🇪 | adenc36v.xtooltech.cfd:443 | 199.43ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "172.67.219.194",
+            "server_port": 443,
+            "uuid": "b321fd5d-e6ec-4293-a644-164e3885f52e",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "adenc36v.xtooltech.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkws",
+                "headers": {
+                    "Host": "172.67.219.194"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2Line | BR🇧🇷 | 95.164.4.88:80 | 121.78ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "95.164.4.88",
             "server_port": 80,
