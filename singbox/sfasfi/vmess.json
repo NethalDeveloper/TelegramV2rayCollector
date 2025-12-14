@@ -111,11 +111,10 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.240:443 | 78.99ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 407.22ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | RU🇷🇺 | www.vk.com:443 | 270.91ms | 0️⃣3️⃣",
-                "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 27.31ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | y-old-mode-9c0diab.wiriy73548.workers.dev:2082 | 49.82ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.240:443 | 118.92ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 529.94ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | RU🇷🇺 | www.vk.com:443 | 474.96ms | 0️⃣3️⃣",
+                "@Hope_Net | RELAY🚩 | y-old-mode-9c0diab.wiriy73548.workers.dev:2082 | 108.08ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -125,7 +124,7 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.240:443 | 78.99ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.240:443 | 118.92ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -135,8 +134,8 @@
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 407.22ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | RU🇷🇺 | www.vk.com:443 | 270.91ms | 0️⃣3️⃣"
+                "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 529.94ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | RU🇷🇺 | www.vk.com:443 | 474.96ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -146,15 +145,14 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 27.31ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | y-old-mode-9c0diab.wiriy73548.workers.dev:2082 | 49.82ms | 0️⃣2️⃣"
+                "@Hope_Net | RELAY🚩 | y-old-mode-9c0diab.wiriy73548.workers.dev:2082 | 108.08ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.240:443 | 78.99ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.240:443 | 118.92ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.128.189.240",
             "server_port": 443,
@@ -190,7 +188,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 407.22ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 529.94ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "57.128.189.241",
             "server_port": 443,
@@ -226,7 +224,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | RU🇷🇺 | www.vk.com:443 | 270.91ms | 0️⃣3️⃣",
+            "tag": "@oneclickvpnkeys | RU🇷🇺 | www.vk.com:443 | 474.96ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "57.128.189.211",
             "server_port": 443,
@@ -262,33 +260,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 27.31ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "104.19.45.178",
-            "server_port": 2095,
-            "uuid": "7a737f41-b792-4260-94ff-3d864da67b80",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "104.19.45.178"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | RELAY🚩 | y-old-mode-9c0diab.wiriy73548.workers.dev:2082 | 49.82ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | y-old-mode-9c0diab.wiriy73548.workers.dev:2082 | 108.08ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.16.61.8",
             "server_port": 2082,
