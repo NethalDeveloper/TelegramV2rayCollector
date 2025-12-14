@@ -101,17 +101,20 @@
                 "URL-TEST",
                 "FR🇫🇷",
                 "RU🇷🇺",
-                "RELAY🚩"
+                "RELAY🚩",
+                "FI🇫🇮"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.240:443 | 118.92ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 529.94ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | RU🇷🇺 | www.vk.com:443 | 474.96ms | 0️⃣3️⃣",
-                "@Hope_Net | RELAY🚩 | y-old-mode-9c0diab.wiriy73548.workers.dev:2082 | 108.08ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.240:443 | 92.24ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 469.5ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | RU🇷🇺 | www.vk.com:443 | 319.45ms | 0️⃣3️⃣",
+                "@Hope_Net | RELAY🚩 | y-old-mode-9c0diab.wiriy73548.workers.dev:2082 | 59.38ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 8bsibsh8wbbwihfhjskbbng-shape-3.mewivot154.workers.dev:8080 | 43.59ms | 0️⃣2️⃣",
+                "@v2Line | FI🇫🇮 | a.confignor.site:7443 | 169.32ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -121,7 +124,7 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.240:443 | 118.92ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.240:443 | 92.24ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -131,8 +134,8 @@
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 529.94ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | RU🇷🇺 | www.vk.com:443 | 474.96ms | 0️⃣3️⃣"
+                "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 469.5ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | RU🇷🇺 | www.vk.com:443 | 319.45ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,14 +145,25 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | RELAY🚩 | y-old-mode-9c0diab.wiriy73548.workers.dev:2082 | 108.08ms | 0️⃣1️⃣"
+                "@Hope_Net | RELAY🚩 | y-old-mode-9c0diab.wiriy73548.workers.dev:2082 | 59.38ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 8bsibsh8wbbwihfhjskbbng-shape-3.mewivot154.workers.dev:8080 | 43.59ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.240:443 | 118.92ms | 0️⃣1️⃣",
+            "tag": "FI🇫🇮",
+            "type": "urltest",
+            "outbounds": [
+                "@v2Line | FI🇫🇮 | a.confignor.site:7443 | 169.32ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.240:443 | 92.24ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.128.189.240",
             "server_port": 443,
@@ -185,7 +199,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 529.94ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 469.5ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "57.128.189.241",
             "server_port": 443,
@@ -221,7 +235,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | RU🇷🇺 | www.vk.com:443 | 474.96ms | 0️⃣3️⃣",
+            "tag": "@oneclickvpnkeys | RU🇷🇺 | www.vk.com:443 | 319.45ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "57.128.189.211",
             "server_port": 443,
@@ -257,7 +271,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | y-old-mode-9c0diab.wiriy73548.workers.dev:2082 | 108.08ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | y-old-mode-9c0diab.wiriy73548.workers.dev:2082 | 59.38ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.16.61.8",
             "server_port": 2082,
@@ -280,6 +294,49 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | 8bsibsh8wbbwihfhjskbbng-shape-3.mewivot154.workers.dev:8080 | 43.59ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "104.16.67.38",
+            "server_port": 8080,
+            "uuid": "6c168fcc-2231-4f3b-8c1e-f6391692df4a",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/hms02.fxiaomi.sbs\/link",
+                "headers": {
+                    "Host": "104.16.67.38"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2Line | FI🇫🇮 | a.confignor.site:7443 | 169.32ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "a.confignor.site",
+            "server_port": 7443,
+            "uuid": "29bfb521-7005-443b-9529-d17d0ba4e617",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
