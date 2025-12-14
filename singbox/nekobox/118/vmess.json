@@ -104,15 +104,20 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "FR🇫🇷"
+                "FR🇫🇷",
+                "US🇺🇸",
+                "RELAY🚩"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.143:443 | 100.43ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.227:443 | 101.62ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.143:443 | 143.56ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.227:443 | 149.7ms | 0️⃣2️⃣",
+                "@ConfigsHUB | US🇺🇸 | 209.126.84.189:443 | 109.37ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | turkye.looloolooloo.com:443 | 26.68ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 243.66ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -122,15 +127,36 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.143:443 | 100.43ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.227:443 | 101.62ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.143:443 | 143.56ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.227:443 | 149.7ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.143:443 | 100.43ms | 0️⃣1️⃣",
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | US🇺🇸 | 209.126.84.189:443 | 109.37ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | RELAY🚩 | turkye.looloolooloo.com:443 | 26.68ms | 0️⃣2️⃣",
+                "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 243.66ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.143:443 | 143.56ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.128.189.143",
             "server_port": 443,
@@ -166,7 +192,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.227:443 | 101.62ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | FR🇫🇷 | 57.128.189.227:443 | 149.7ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "57.128.189.227",
             "server_port": 443,
@@ -196,6 +222,104 @@
                 "path": "\/\/linkvws",
                 "headers": {
                     "Host": "57.128.189.227"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | US🇺🇸 | 209.126.84.189:443 | 109.37ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "209.126.84.189",
+            "server_port": 443,
+            "uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "209.126.84.189",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/vmessws",
+                "headers": {
+                    "Host": "209.126.84.189"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | RELAY🚩 | turkye.looloolooloo.com:443 | 26.68ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "172.66.40.99",
+            "server_port": 443,
+            "uuid": "7181d266-d84a-11f0-a557-07cf6d010b33",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "turkye.looloolooloo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/vpnjantit?telegram-id---v2box-v2\/www.speedtest.net:443?ed=2048",
+                "headers": {
+                    "Host": "172.66.40.99"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | RELAY🚩 | onea.flha.ru:2095 | 243.66ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "104.19.45.178",
+            "server_port": 2095,
+            "uuid": "7a737f41-b792-4260-94ff-3d864da67b80",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "104.19.45.178"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
