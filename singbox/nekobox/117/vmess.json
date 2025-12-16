@@ -101,18 +101,23 @@
                 "URL-TEST",
                 "RU🇷🇺",
                 "US🇺🇸",
-                "DE🇩🇪",
-                "FI🇫🇮"
+                "RELAY🚩",
+                "FI🇫🇮",
+                "CN🇨🇳",
+                "DE🇩🇪"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 322.06ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | github.com:443 | 22.27ms | 0️⃣2️⃣",
-                "@Hope_Net | DE🇩🇪 | gwdef.sbs:443 | 653.31ms | 0️⃣1️⃣",
-                "@v2Line | FI🇫🇮 | 65.109.208.217:7443 | 133.62ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 912.44ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | github.com:443 | 51.54ms | 0️⃣2️⃣",
+                "@Hope_Net | US🇺🇸 | speedtest.net:80 | 36.71ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | turkye.looloolooloo.com:443 | 41.21ms | 0️⃣1️⃣",
+                "@v2Line | FI🇫🇮 | 65.109.208.217:7443 | 164.88ms | 0️⃣1️⃣",
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 570.45ms | 0️⃣1️⃣",
+                "@FreakConfig | DE🇩🇪 | cpanel.navar1.ir:100 | 373.69ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -122,7 +127,7 @@
             "tag": "RU🇷🇺",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 322.06ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 912.44ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -132,17 +137,18 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | github.com:443 | 22.27ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | github.com:443 | 51.54ms | 0️⃣2️⃣",
+                "@Hope_Net | US🇺🇸 | speedtest.net:80 | 36.71ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "DE🇩🇪",
+            "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | DE🇩🇪 | gwdef.sbs:443 | 653.31ms | 0️⃣1️⃣"
+                "@ConfigsHUB | RELAY🚩 | turkye.looloolooloo.com:443 | 41.21ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -152,14 +158,34 @@
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | FI🇫🇮 | 65.109.208.217:7443 | 133.62ms | 0️⃣1️⃣"
+                "@v2Line | FI🇫🇮 | 65.109.208.217:7443 | 164.88ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 322.06ms | 0️⃣1️⃣",
+            "tag": "CN🇨🇳",
+            "type": "urltest",
+            "outbounds": [
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 570.45ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "DE🇩🇪",
+            "type": "urltest",
+            "outbounds": [
+                "@FreakConfig | DE🇩🇪 | cpanel.navar1.ir:100 | 373.69ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@oneclickvpnkeys | RU🇷🇺 | ads.x5.ru:443 | 912.44ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.128.189.206",
             "server_port": 443,
@@ -195,7 +221,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | github.com:443 | 22.27ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | github.com:443 | 51.54ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "57.128.189.222",
             "server_port": 443,
@@ -231,11 +257,28 @@
             }
         },
         {
-            "tag": "@Hope_Net | DE🇩🇪 | gwdef.sbs:443 | 653.31ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | US🇺🇸 | speedtest.net:80 | 36.71ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.21.82.17",
+            "server": "46.245.74.106",
+            "server_port": 80,
+            "uuid": "cb8fde2f-77a9-4bf5-b382-544aaf83d418",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | RELAY🚩 | turkye.looloolooloo.com:443 | 41.21ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.66.40.99",
             "server_port": 443,
-            "uuid": "bc864078-dcf3-4bf4-8dbf-ca9f200b56be",
+            "uuid": "7181d266-d84a-11f0-a557-07cf6d010b33",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -248,7 +291,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "gwdef.sbs",
+                "server_name": "turkye.looloolooloo.com",
                 "insecure": true,
                 "disable_sni": false,
                 "utls": {
@@ -258,20 +301,63 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/linkws",
+                "path": "\/\/vpnjantit?telegram-id---v2box-v2\/www.speedtest.net:443?ed=2048",
                 "headers": {
-                    "Host": "104.21.82.17"
+                    "Host": "172.66.40.99"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@v2Line | FI🇫🇮 | 65.109.208.217:7443 | 133.62ms | 0️⃣1️⃣",
+            "tag": "@v2Line | FI🇫🇮 | 65.109.208.217:7443 | 164.88ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "65.109.208.217",
             "server_port": 7443,
             "uuid": "8fa840bc-b035-4bae-ae1e-69a1159fe155",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 570.45ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "42.2.113.136",
+            "server_port": 80,
+            "uuid": "98d2b660-7218-11ec-bd7c-f23c913c8d2b",
+            "security": "auto",
+            "alter_id": 2,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "42.2.113.136"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@FreakConfig | DE🇩🇪 | cpanel.navar1.ir:100 | 373.69ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "cpanel.navar1.ir",
+            "server_port": 100,
+            "uuid": "95c6f6f0-84f7-4443-8a50-a59f8e66f5ee",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
