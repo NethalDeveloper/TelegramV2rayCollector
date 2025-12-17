@@ -102,25 +102,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | US🇺🇸 | github.com:443 | 21.27ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | worgold21yagranghadeyaakbarshokretbozorg.abza.workers.dev:8880 | 83.06ms | 0️⃣1️⃣",
-                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 449.59ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | github.com:443 | 21.18ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RU🇷🇺 | 45.89.52.207:39651 | 178.58ms | 0️⃣1️⃣",
+                "@Hope_Net | DE🇩🇪 | jahfkjha.cfd:443 | 613.61ms | 0️⃣1️⃣",
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 667.13ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | github.com:443 | 21.27ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | worgold21yagranghadeyaakbarshokretbozorg.abza.workers.dev:8880 | 83.06ms | 0️⃣1️⃣",
-                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 449.59ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | github.com:443 | 21.18ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RU🇷🇺 | 45.89.52.207:39651 | 178.58ms | 0️⃣1️⃣",
+                "@Hope_Net | DE🇩🇪 | jahfkjha.cfd:443 | 613.61ms | 0️⃣1️⃣",
+                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 667.13ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | github.com:443 | 21.27ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | github.com:443 | 21.18ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.128.189.222",
             "server_port": 443,
@@ -156,11 +158,28 @@
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | worgold21yagranghadeyaakbarshokretbozorg.abza.workers.dev:8880 | 83.06ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | RU🇷🇺 | 45.89.52.207:39651 | 178.58ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.16.61.8",
-            "server_port": 8880,
-            "uuid": "edbb1059-1633-4271-b66e-ed4fba47a1bf",
+            "server": "45.89.52.207",
+            "server_port": 39651,
+            "uuid": "ac4c12c5-45f2-4398-a718-9983941ede2b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@Hope_Net | DE🇩🇪 | jahfkjha.cfd:443 | 613.61ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.67.183.220",
+            "server_port": 443,
+            "uuid": "950db6aa-4926-4616-816e-ec0312dcb87b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -171,18 +190,28 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
+            "tls": {
+                "enabled": true,
+                "server_name": "jahfkjha.cfd",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
             "transport": {
                 "type": "ws",
-                "path": "\/\/linde06.indiavideo.sbs\/linkws",
+                "path": "\/\/linkws",
                 "headers": {
-                    "Host": "104.16.61.8"
+                    "Host": "172.67.183.220"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 449.59ms | 0️⃣1️⃣",
+            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 667.13ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "42.2.113.136",
             "server_port": 80,
