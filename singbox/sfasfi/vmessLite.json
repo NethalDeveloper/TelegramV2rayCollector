@@ -102,51 +102,21 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@v2Line | HK🇭🇰 | 47.243.51.237:23559 | 161.16ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 61.45ms | 0️⃣2️⃣",
-                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 275.57ms | 0️⃣1️⃣"
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.84ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | HK🇭🇰 | 47.243.51.237:23559 | 161.16ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 61.45ms | 0️⃣2️⃣",
-                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 275.57ms | 0️⃣1️⃣"
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.84ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2Line | HK🇭🇰 | 47.243.51.237:23559 | 161.16ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "47.243.51.237",
-            "server_port": 23559,
-            "uuid": "e3f4cb0e-3b3d-41ad-b24a-9cbc2927b451",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/arki",
-                "headers": {
-                    "Host": "47.243.51.237"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 61.45ms | 0️⃣2️⃣",
+            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.84ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
@@ -176,32 +146,6 @@
                 "path": "\/\/linkvws",
                 "headers": {
                     "Host": "23.162.200.227"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 275.57ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "42.2.113.136",
-            "server_port": 80,
-            "uuid": "98d2b660-7218-11ec-bd7c-f23c913c8d2b",
-            "security": "auto",
-            "alter_id": 2,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "42.2.113.136"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
