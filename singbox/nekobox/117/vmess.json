@@ -99,28 +99,50 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "RELAY🚩",
-                "CA🇨🇦",
-                "CN🇨🇳"
+                "US🇺🇸",
+                "RU🇷🇺",
+                "HK🇭🇰",
+                "CA🇨🇦"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | RELAY🚩 | mysan2.jaquay22.workers.dev:2052 | 36.9ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 59.78ms | 0️⃣1️⃣",
-                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 373.45ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 66.06ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RU🇷🇺 | 45.89.52.207:39651 | 134.19ms | 0️⃣1️⃣",
+                "@v2Line | HK🇭🇰 | 47.243.51.237:23559 | 192.78ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.93ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "RELAY🚩",
+            "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | RELAY🚩 | mysan2.jaquay22.workers.dev:2052 | 36.9ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 66.06ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RU🇷🇺",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | RU🇷🇺 | 45.89.52.207:39651 | 134.19ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "HK🇭🇰",
+            "type": "urltest",
+            "outbounds": [
+                "@v2Line | HK🇭🇰 | 47.243.51.237:23559 | 192.78ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -130,28 +152,52 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 59.78ms | 0️⃣1️⃣"
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.93ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "CN🇨🇳",
-            "type": "urltest",
-            "outbounds": [
-                "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 373.45ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "@Hope_Net | RELAY🚩 | mysan2.jaquay22.workers.dev:2052 | 36.9ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 66.06ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "lol.ps",
-            "server_port": 2052,
-            "uuid": "f584de15-2034-4170-a723-f48c2bae5e0f",
+            "server": "38.14.99.179",
+            "server_port": 59807,
+            "uuid": "418048af-a293-4b99-9b0c-98ca3580dd24",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | RU🇷🇺 | 45.89.52.207:39651 | 134.19ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "45.89.52.207",
+            "server_port": 39651,
+            "uuid": "ac4c12c5-45f2-4398-a718-9983941ede2b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@v2Line | HK🇭🇰 | 47.243.51.237:23559 | 192.78ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "47.243.51.237",
+            "server_port": 23559,
+            "uuid": "e3f4cb0e-3b3d-41ad-b24a-9cbc2927b451",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -164,16 +210,16 @@
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/afrhms16v.bestxray.buzz\/linkws",
+                "path": "\/\/arki",
                 "headers": {
-                    "Host": "lol.ps"
+                    "Host": "47.243.51.237"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 59.78ms | 0️⃣1️⃣",
+            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.93ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
@@ -203,32 +249,6 @@
                 "path": "\/\/linkvws",
                 "headers": {
                     "Host": "23.162.200.227"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Awlix_ir | CN🇨🇳 | broadcastlv.chat.bilibili.com:80 | 373.45ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "42.2.113.136",
-            "server_port": 80,
-            "uuid": "98d2b660-7218-11ec-bd7c-f23c913c8d2b",
-            "security": "auto",
-            "alter_id": 2,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "42.2.113.136"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
