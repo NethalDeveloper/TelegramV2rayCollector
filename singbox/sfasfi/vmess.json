@@ -103,19 +103,15 @@
             "outbounds": [
                 "URL-TEST",
                 "US🇺🇸",
-                "RELAY🚩",
-                "CA🇨🇦",
-                "HK🇭🇰"
+                "CA🇨🇦"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 65.2ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | turkye.looloolooloo.com:443 | 103.31ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.59ms | 0️⃣1️⃣",
-                "@FreakConfig | HK🇭🇰 | 8.218.105.196:52752 | 196.92ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 65.32ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.5ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -125,17 +121,7 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 65.2ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "RELAY🚩",
-            "type": "urltest",
-            "outbounds": [
-                "@ConfigsHUB | RELAY🚩 | turkye.looloolooloo.com:443 | 103.31ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 65.32ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -145,24 +131,14 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.59ms | 0️⃣1️⃣"
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.5ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "HK🇭🇰",
-            "type": "urltest",
-            "outbounds": [
-                "@FreakConfig | HK🇭🇰 | 8.218.105.196:52752 | 196.92ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 65.2ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 38.14.99.179:59807 | 65.32ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "38.14.99.179",
             "server_port": 59807,
@@ -179,43 +155,7 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | RELAY🚩 | turkye.looloolooloo.com:443 | 103.31ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "172.66.40.99",
-            "server_port": 443,
-            "uuid": "305e9e74-dc3a-11f0-84da-abeeaa5a5248",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "172.66.40.99",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/vpnjantit?telegram-id---v2box-v2\/www.speedtest.net:443?ed=2048",
-                "headers": {
-                    "Host": "172.66.40.99"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.59ms | 0️⃣1️⃣",
+            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.5ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
@@ -248,23 +188,6 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@FreakConfig | HK🇭🇰 | 8.218.105.196:52752 | 196.92ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "8.218.105.196",
-            "server_port": 52752,
-            "uuid": "925bdbf5-72be-4437-bebf-441c61089f6b",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
