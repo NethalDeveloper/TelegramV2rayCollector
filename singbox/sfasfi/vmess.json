@@ -104,6 +104,7 @@
                 "URL-TEST",
                 "US🇺🇸",
                 "DE🇩🇪",
+                "RELAY🚩",
                 "CA🇨🇦",
                 "JP🇯🇵"
             ]
@@ -112,14 +113,14 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.163:59807 | 1.99ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | 165.140.216.141:443 | 1.9ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 47.53ms | 0️⃣3️⃣",
-                "@v2Line | US🇺🇸 | 40.160.231.239:443 | 69.1ms | 0️⃣3️⃣",
-                "@prrofile_purple | DE🇩🇪 | a.confignor.site:7443 | 156.23ms | 0️⃣1️⃣",
-                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 8.62ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 59.41ms | 0️⃣1️⃣",
-                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 104.52ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.163:59807 | 64.98ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | 165.140.216.141:443 | 49.98ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 115.26ms | 0️⃣3️⃣",
+                "@v2Line | US🇺🇸 | 40.160.231.239:443 | 23.92ms | 0️⃣3️⃣",
+                "@prrofile_purple | DE🇩🇪 | a.confignor.site:7443 | 262.79ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | lat2.looloolooloo.com:443 | 107.87ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.78ms | 0️⃣1️⃣",
+                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 142.25ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -129,10 +130,10 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.163:59807 | 1.99ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | 165.140.216.141:443 | 1.9ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 47.53ms | 0️⃣3️⃣",
-                "@v2Line | US🇺🇸 | 40.160.231.239:443 | 69.1ms | 0️⃣3️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 38.14.99.163:59807 | 64.98ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | 165.140.216.141:443 | 49.98ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 115.26ms | 0️⃣3️⃣",
+                "@v2Line | US🇺🇸 | 40.160.231.239:443 | 23.92ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,8 +143,17 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | DE🇩🇪 | a.confignor.site:7443 | 156.23ms | 0️⃣1️⃣",
-                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 8.62ms | 0️⃣1️⃣"
+                "@prrofile_purple | DE🇩🇪 | a.confignor.site:7443 | 262.79ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | RELAY🚩 | lat2.looloolooloo.com:443 | 107.87ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -153,7 +163,7 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 59.41ms | 0️⃣1️⃣"
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.78ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -163,14 +173,14 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 104.52ms | 0️⃣2️⃣"
+                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 142.25ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 38.14.99.163:59807 | 1.99ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 38.14.99.163:59807 | 64.98ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "38.14.99.163",
             "server_port": 59807,
@@ -187,7 +197,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 165.140.216.141:443 | 1.9ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 165.140.216.141:443 | 49.98ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "165.140.216.141",
             "server_port": 443,
@@ -214,7 +224,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 47.53ms | 0️⃣3️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 115.26ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "209.126.84.189",
             "server_port": 443,
@@ -250,7 +260,7 @@
             }
         },
         {
-            "tag": "@v2Line | US🇺🇸 | 40.160.231.239:443 | 69.1ms | 0️⃣3️⃣",
+            "tag": "@v2Line | US🇺🇸 | 40.160.231.239:443 | 23.92ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "40.160.231.239",
             "server_port": 443,
@@ -286,7 +296,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | DE🇩🇪 | a.confignor.site:7443 | 156.23ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | DE🇩🇪 | a.confignor.site:7443 | 262.79ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "a.confignor.site",
             "server_port": 7443,
@@ -303,11 +313,11 @@
             }
         },
         {
-            "tag": "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 8.62ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | lat2.looloolooloo.com:443 | 107.87ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "82.198.246.97",
-            "server_port": 180,
-            "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
+            "server": "172.66.40.99",
+            "server_port": 443,
+            "uuid": "bia-to---v2box-v2",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -317,10 +327,29 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "lat2.looloolooloo.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/telegram-id---v2box-v2\/www.speedtest.net:443?ed=2048",
+                "headers": {
+                    "Host": "172.66.40.99"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 59.41ms | 0️⃣1️⃣",
+            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.78ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
@@ -356,7 +385,7 @@
             }
         },
         {
-            "tag": "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 104.52ms | 0️⃣2️⃣",
+            "tag": "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 142.25ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "172.111.146.64",
             "server_port": 80,
