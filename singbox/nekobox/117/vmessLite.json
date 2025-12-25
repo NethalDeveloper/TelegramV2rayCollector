@@ -99,23 +99,80 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 37.77ms | 0️⃣1️⃣",
-                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 38.55ms | 0️⃣1️⃣"
+                "@ConfigsHUB | DE🇩🇪 | 91.107.243.172:27587 | 99.81ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | ausgt02.bestforxray.buzz:443 | 88.76ms | 0️⃣1️⃣",
+                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 66.69ms | 0️⃣1️⃣",
+                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 71.43ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 37.77ms | 0️⃣1️⃣",
-                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 38.55ms | 0️⃣1️⃣"
+                "@ConfigsHUB | DE🇩🇪 | 91.107.243.172:27587 | 99.81ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | ausgt02.bestforxray.buzz:443 | 88.76ms | 0️⃣1️⃣",
+                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 66.69ms | 0️⃣1️⃣",
+                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 71.43ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 37.77ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | DE🇩🇪 | 91.107.243.172:27587 | 99.81ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "91.107.243.172",
+            "server_port": 27587,
+            "uuid": "c873c015-7553-40f3-ae4b-63783da95ffc",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@Hope_Net | US🇺🇸 | ausgt02.bestforxray.buzz:443 | 88.76ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "gt021.bestforxray.buzz",
+            "server_port": 443,
+            "uuid": "c1fd780a-3408-4f48-a932-5832a28ce9f6",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "ausgt02.bestforxray.buzz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/linkws",
+                "headers": {
+                    "Host": "gt021.bestforxray.buzz"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 66.69ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "82.198.246.97",
             "server_port": 180,
@@ -132,7 +189,7 @@
             }
         },
         {
-            "tag": "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 38.55ms | 0️⃣1️⃣",
+            "tag": "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 71.43ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "82.198.246.97",
             "server_port": 180,
