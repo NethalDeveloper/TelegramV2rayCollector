@@ -105,19 +105,19 @@
             "outbounds": [
                 "URL-TEST",
                 "DE🇩🇪",
-                "US🇺🇸",
-                "RELAY🚩"
+                "RELAY🚩",
+                "MD🇲🇩"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | DE🇩🇪 | 82.198.246.97:180 | 67.41ms | 0️⃣1️⃣",
-                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 67.31ms | 0️⃣1️⃣",
-                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 66.65ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | frontier-i18n.tiktokv.com:80 | 107.66ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | us-ccs.yuji2022.eu.org:8880 | 415.2ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | DE🇩🇪 | 82.198.246.97:180 | 62.16ms | 0️⃣1️⃣",
+                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 65.99ms | 0️⃣1️⃣",
+                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 62.74ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | us-ccs.yuji2022.eu.org:8880 | 200.43ms | 0️⃣1️⃣",
+                "@FreakConfig | MD🇲🇩 | 94.131.108.36:443 | 136.21ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -127,19 +127,9 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | DE🇩🇪 | 82.198.246.97:180 | 67.41ms | 0️⃣1️⃣",
-                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 67.31ms | 0️⃣1️⃣",
-                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 66.65ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "US🇺🇸",
-            "type": "urltest",
-            "outbounds": [
-                "@Hope_Net | US🇺🇸 | frontier-i18n.tiktokv.com:80 | 107.66ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | DE🇩🇪 | 82.198.246.97:180 | 62.16ms | 0️⃣1️⃣",
+                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 65.99ms | 0️⃣1️⃣",
+                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 62.74ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -149,14 +139,24 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | RELAY🚩 | us-ccs.yuji2022.eu.org:8880 | 415.2ms | 0️⃣2️⃣"
+                "@Hope_Net | RELAY🚩 | us-ccs.yuji2022.eu.org:8880 | 200.43ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | DE🇩🇪 | 82.198.246.97:180 | 67.41ms | 0️⃣1️⃣",
+            "tag": "MD🇲🇩",
+            "type": "urltest",
+            "outbounds": [
+                "@FreakConfig | MD🇲🇩 | 94.131.108.36:443 | 136.21ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@oneclickvpnkeys | DE🇩🇪 | 82.198.246.97:180 | 62.16ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "82.198.246.97",
             "server_port": 180,
@@ -173,7 +173,7 @@
             }
         },
         {
-            "tag": "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 67.31ms | 0️⃣1️⃣",
+            "tag": "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 65.99ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "82.198.246.97",
             "server_port": 180,
@@ -190,7 +190,7 @@
             }
         },
         {
-            "tag": "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 66.65ms | 0️⃣1️⃣",
+            "tag": "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 62.74ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "82.198.246.97",
             "server_port": 180,
@@ -207,33 +207,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | frontier-i18n.tiktokv.com:80 | 107.66ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "103.186.149.132",
-            "server_port": 80,
-            "uuid": "a479fc02-07c5-4864-8564-c4f147dfa488",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/shopvpn.net",
-                "headers": {
-                    "Host": "103.186.149.132"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Hope_Net | RELAY🚩 | us-ccs.yuji2022.eu.org:8880 | 415.2ms | 0️⃣2️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | us-ccs.yuji2022.eu.org:8880 | 200.43ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.17.148.22",
             "server_port": 8880,
@@ -253,6 +227,42 @@
                 "path": "\/\/XSjeg73o6ZdsheahCb5JG",
                 "headers": {
                     "Host": "104.17.148.22"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@FreakConfig | MD🇲🇩 | 94.131.108.36:443 | 136.21ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "94.131.108.36",
+            "server_port": 443,
+            "uuid": "9855f1f0-a800-40d4-8b38-c7d3eb79302d",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "94.131.108.36",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "94.131.108.36"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
