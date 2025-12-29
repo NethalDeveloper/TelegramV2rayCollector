@@ -102,8 +102,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "KR🇰🇷",
-                "RELAY🚩",
                 "JP🇯🇵",
                 "DE🇩🇪"
             ]
@@ -112,31 +110,9 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | KR🇰🇷 | seoul03.zgjok.com:443 | 274.88ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | DnSrecGER1.lOoLooLooloO.COM.:2086 | 104.81ms | 0️⃣1️⃣",
-                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 179.83ms | 0️⃣1️⃣",
-                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 62.47ms | 0️⃣2️⃣",
-                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 62.4ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "KR🇰🇷",
-            "type": "urltest",
-            "outbounds": [
-                "@oneclickvpnkeys | KR🇰🇷 | seoul03.zgjok.com:443 | 274.88ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "RELAY🚩",
-            "type": "urltest",
-            "outbounds": [
-                "@ConfigsHUB | RELAY🚩 | DnSrecGER1.lOoLooLooloO.COM.:2086 | 104.81ms | 0️⃣1️⃣"
+                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 108.27ms | 0️⃣1️⃣",
+                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 8.54ms | 0️⃣2️⃣",
+                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 11.61ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -146,7 +122,7 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 179.83ms | 0️⃣1️⃣"
+                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 108.27ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -156,77 +132,15 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 62.47ms | 0️⃣2️⃣",
-                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 62.4ms | 0️⃣1️⃣"
+                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 8.54ms | 0️⃣2️⃣",
+                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 11.61ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | KR🇰🇷 | seoul03.zgjok.com:443 | 274.88ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "seoul03.zgjok.com",
-            "server_port": 443,
-            "uuid": "72a0dac4-9689-4a57-b164-5c65bfa94772",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "seoul03.zgjok.com",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/",
-                "headers": {
-                    "Host": "seoul03.zgjok.com"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@ConfigsHUB | RELAY🚩 | DnSrecGER1.lOoLooLooloO.COM.:2086 | 104.81ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "172.66.40.99",
-            "server_port": 2086,
-            "uuid": "bia--to--@v2rayng_hub",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/@v2rayng_hub\/@v2rayng_hub\/www.speedtest.net:443?ed=2048",
-                "headers": {
-                    "Host": "172.66.40.99"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 179.83ms | 0️⃣1️⃣",
+            "tag": "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 108.27ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.111.146.64",
             "server_port": 80,
@@ -252,7 +166,7 @@
             }
         },
         {
-            "tag": "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 62.47ms | 0️⃣2️⃣",
+            "tag": "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 8.54ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "82.198.246.97",
             "server_port": 180,
@@ -269,7 +183,7 @@
             }
         },
         {
-            "tag": "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 62.4ms | 0️⃣1️⃣",
+            "tag": "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 11.61ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "82.198.246.97",
             "server_port": 180,
