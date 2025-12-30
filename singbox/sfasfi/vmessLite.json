@@ -102,23 +102,146 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 62.62ms | 0️⃣1️⃣",
-                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 66.15ms | 0️⃣1️⃣"
+                "@v2ray1_ng | RELAY🚩 | pn2w1nweb.sigmachemicals.ir:8080 | 256.83ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | mizan.andishehnegar404.ir:2096 | 253.99ms | 0️⃣1️⃣",
+                "@free1_vpn | NL🇳🇱 | f3rivpnserver1.irctf.ir:24886 | 233.83ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | speedtest.net:443 | 140.89ms | 0️⃣1️⃣",
+                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 64.3ms | 0️⃣1️⃣",
+                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 67.19ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 62.62ms | 0️⃣1️⃣",
-                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 66.15ms | 0️⃣1️⃣"
+                "@v2ray1_ng | RELAY🚩 | pn2w1nweb.sigmachemicals.ir:8080 | 256.83ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | mizan.andishehnegar404.ir:2096 | 253.99ms | 0️⃣1️⃣",
+                "@free1_vpn | NL🇳🇱 | f3rivpnserver1.irctf.ir:24886 | 233.83ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | speedtest.net:443 | 140.89ms | 0️⃣1️⃣",
+                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 64.3ms | 0️⃣1️⃣",
+                "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 67.19ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 62.62ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | RELAY🚩 | pn2w1nweb.sigmachemicals.ir:8080 | 256.83ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "104.26.15.141",
+            "server_port": 8080,
+            "uuid": "239ed41c-4af6-49ba-8156-ff2310ea5d78",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/14351\/Nextlife",
+                "headers": {
+                    "Host": "104.26.15.141"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | RELAY🚩 | mizan.andishehnegar404.ir:2096 | 253.99ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "mizan.andishehnegar404.ir",
+            "server_port": 2096,
+            "uuid": "3e332efd-ace0-469d-885a-a90a295445a3",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "mizan.andishehnegar404.ir",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@free1_vpn | NL🇳🇱 | f3rivpnserver1.irctf.ir:24886 | 233.83ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "f3rivpnserver1.irctf.ir",
+            "server_port": 24886,
+            "uuid": "3ee5d93f-8b8e-4206-8a1d-516d00de4557",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "f3rivpnserver1.irctf.ir"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@Hope_Net | US🇺🇸 | speedtest.net:443 | 140.89ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "151.101.194.219",
+            "server_port": 443,
+            "uuid": "2052dca2-008b-4f54-9bbb-dbac90dd54a5",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "speedtest.net",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/ws\/?ed=2048",
+                "headers": {
+                    "Host": "151.101.194.219"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 64.3ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "82.198.246.97",
             "server_port": 180,
@@ -135,7 +258,7 @@
             }
         },
         {
-            "tag": "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 66.15ms | 0️⃣1️⃣",
+            "tag": "@Awlix_ir | DE🇩🇪 | 82.198.246.97:180 | 67.19ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "82.198.246.97",
             "server_port": 180,
