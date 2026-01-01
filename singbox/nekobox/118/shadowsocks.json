@@ -106,18 +106,20 @@
                 "URL-TEST",
                 "DE🇩🇪",
                 "GB🇬🇧",
-                "LT🇱🇹"
+                "LT🇱🇹",
+                "CY🇨🇾"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | DE🇩🇪 | 194.59.183.134:46114 | 150.79ms | 0️⃣1️⃣",
-                "@free4allVPN | GB🇬🇧 | 82.38.31.205:8080 | 139.72ms | 0️⃣2️⃣",
-                "@OutlineVpnOfficial | GB🇬🇧 | 82.38.31.218:8080 | 141.29ms | 0️⃣2️⃣",
-                "@vmess_vless_v2rayng | LT🇱🇹 | 45.87.175.171:8080 | 148.1ms | 0️⃣1️⃣",
-                "@OutlineVpnOfficial | LT🇱🇹 | 45.87.175.167:8080 | 146.66ms | 0️⃣1️⃣"
+                "@free4allVPN | DE🇩🇪 | 194.59.183.134:46114 | 143.93ms | 0️⃣1️⃣",
+                "@free4allVPN | GB🇬🇧 | 82.38.31.205:8080 | 134.02ms | 0️⃣2️⃣",
+                "@OutlineVpnOfficial | GB🇬🇧 | 82.38.31.218:8080 | 137.44ms | 0️⃣3️⃣",
+                "@vmess_vless_v2rayng | LT🇱🇹 | 45.87.175.171:8080 | 134.91ms | 0️⃣1️⃣",
+                "@OutlineVpnOfficial | LT🇱🇹 | 45.87.175.167:8080 | 130.6ms | 0️⃣1️⃣",
+                "@OutlineVpnOfficial | CY🇨🇾 | 134.255.210.49:990 | 193.63ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -127,7 +129,7 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | DE🇩🇪 | 194.59.183.134:46114 | 150.79ms | 0️⃣1️⃣"
+                "@free4allVPN | DE🇩🇪 | 194.59.183.134:46114 | 143.93ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -137,8 +139,8 @@
             "tag": "GB🇬🇧",
             "type": "urltest",
             "outbounds": [
-                "@free4allVPN | GB🇬🇧 | 82.38.31.205:8080 | 139.72ms | 0️⃣2️⃣",
-                "@OutlineVpnOfficial | GB🇬🇧 | 82.38.31.218:8080 | 141.29ms | 0️⃣2️⃣"
+                "@free4allVPN | GB🇬🇧 | 82.38.31.205:8080 | 134.02ms | 0️⃣2️⃣",
+                "@OutlineVpnOfficial | GB🇬🇧 | 82.38.31.218:8080 | 137.44ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -148,15 +150,25 @@
             "tag": "LT🇱🇹",
             "type": "urltest",
             "outbounds": [
-                "@vmess_vless_v2rayng | LT🇱🇹 | 45.87.175.171:8080 | 148.1ms | 0️⃣1️⃣",
-                "@OutlineVpnOfficial | LT🇱🇹 | 45.87.175.167:8080 | 146.66ms | 0️⃣1️⃣"
+                "@vmess_vless_v2rayng | LT🇱🇹 | 45.87.175.171:8080 | 134.91ms | 0️⃣1️⃣",
+                "@OutlineVpnOfficial | LT🇱🇹 | 45.87.175.167:8080 | 130.6ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@free4allVPN | DE🇩🇪 | 194.59.183.134:46114 | 150.79ms | 0️⃣1️⃣",
+            "tag": "CY🇨🇾",
+            "type": "urltest",
+            "outbounds": [
+                "@OutlineVpnOfficial | CY🇨🇾 | 134.255.210.49:990 | 193.63ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@free4allVPN | DE🇩🇪 | 194.59.183.134:46114 | 143.93ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "194.59.183.134",
             "server_port": 46114,
@@ -166,7 +178,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@free4allVPN | GB🇬🇧 | 82.38.31.205:8080 | 139.72ms | 0️⃣2️⃣",
+            "tag": "@free4allVPN | GB🇬🇧 | 82.38.31.205:8080 | 134.02ms | 0️⃣2️⃣",
             "type": "shadowsocks",
             "server": "82.38.31.205",
             "server_port": 8080,
@@ -176,7 +188,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@OutlineVpnOfficial | GB🇬🇧 | 82.38.31.218:8080 | 141.29ms | 0️⃣2️⃣",
+            "tag": "@OutlineVpnOfficial | GB🇬🇧 | 82.38.31.218:8080 | 137.44ms | 0️⃣3️⃣",
             "type": "shadowsocks",
             "server": "82.38.31.218",
             "server_port": 8080,
@@ -186,7 +198,7 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@vmess_vless_v2rayng | LT🇱🇹 | 45.87.175.171:8080 | 148.1ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | LT🇱🇹 | 45.87.175.171:8080 | 134.91ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "45.87.175.171",
             "server_port": 8080,
@@ -196,12 +208,22 @@
             "plugin_opts": ""
         },
         {
-            "tag": "@OutlineVpnOfficial | LT🇱🇹 | 45.87.175.167:8080 | 146.66ms | 0️⃣1️⃣",
+            "tag": "@OutlineVpnOfficial | LT🇱🇹 | 45.87.175.167:8080 | 130.6ms | 0️⃣1️⃣",
             "type": "shadowsocks",
             "server": "45.87.175.167",
             "server_port": 8080,
             "method": "chacha20-ietf-poly1305",
             "password": "QCXDxuDlTTMD7jtgHUjIoj",
+            "plugin": "",
+            "plugin_opts": ""
+        },
+        {
+            "tag": "@OutlineVpnOfficial | CY🇨🇾 | 134.255.210.49:990 | 193.63ms | 0️⃣2️⃣",
+            "type": "shadowsocks",
+            "server": "134.255.210.49",
+            "server_port": 990,
+            "method": "chacha20-ietf-poly1305",
+            "password": "f8f7aCzcPKbsF8p3",
             "plugin": "",
             "plugin_opts": ""
         },
