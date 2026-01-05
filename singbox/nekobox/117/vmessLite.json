@@ -99,46 +99,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@prrofile_purple | IR🇮🇷 | s8.rookari.com:9016 | 267.72ms | 0️⃣1️⃣",
-                "@customv2ray | FR🇫🇷 | 162.19.248.238:550 | 90.73ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 26.74ms | 0️⃣1️⃣",
-                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 166.5ms | 0️⃣2️⃣",
-                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 62.81ms | 0️⃣3️⃣"
+                "@customv2ray | FR🇫🇷 | 162.19.248.238:550 | 160.06ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 60.22ms | 0️⃣1️⃣",
+                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 104.73ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | IR🇮🇷 | s8.rookari.com:9016 | 267.72ms | 0️⃣1️⃣",
-                "@customv2ray | FR🇫🇷 | 162.19.248.238:550 | 90.73ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 26.74ms | 0️⃣1️⃣",
-                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 166.5ms | 0️⃣2️⃣",
-                "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 62.81ms | 0️⃣3️⃣"
+                "@customv2ray | FR🇫🇷 | 162.19.248.238:550 | 160.06ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 60.22ms | 0️⃣1️⃣",
+                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 104.73ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@prrofile_purple | IR🇮🇷 | s8.rookari.com:9016 | 267.72ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "s8.rookari.com",
-            "server_port": 9016,
-            "uuid": "cf1d3cd8-c544-47db-b074-49641b026e83",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            }
-        },
-        {
-            "tag": "@customv2ray | FR🇫🇷 | 162.19.248.238:550 | 90.73ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | FR🇫🇷 | 162.19.248.238:550 | 160.06ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "162.19.248.238",
             "server_port": 550,
@@ -155,7 +134,7 @@
             }
         },
         {
-            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 26.74ms | 0️⃣1️⃣",
+            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 60.22ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
@@ -191,7 +170,7 @@
             }
         },
         {
-            "tag": "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 166.5ms | 0️⃣2️⃣",
+            "tag": "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 104.73ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "172.111.146.64",
             "server_port": 80,
@@ -214,23 +193,6 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2Line | DE🇩🇪 | 82.198.246.97:180 | 62.81ms | 0️⃣3️⃣",
-            "type": "vmess",
-            "server": "82.198.246.97",
-            "server_port": 180,
-            "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
