@@ -104,8 +104,9 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "RELAY🚩",
+                "TR🇹🇷",
                 "FR🇫🇷",
+                "RELAY🚩",
                 "US🇺🇸",
                 "CA🇨🇦",
                 "JP🇯🇵"
@@ -115,23 +116,22 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@ConfigsHUB | RELAY🚩 | foxpol.fovi.tk:8080 | 122.2ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | kingo.hightechservice.ir:2096 | 395.41ms | 0️⃣1️⃣",
-                "@ConfigsHUB | FR🇫🇷 | 217.69.5.32:443 | 132.36ms | 0️⃣2️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 108.06ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 56.19ms | 0️⃣2️⃣",
-                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 108.28ms | 0️⃣3️⃣"
+                "@v2ray1_ng | TR🇹🇷 | fast38.funfil.link:31541 | 340.89ms | 0️⃣1️⃣",
+                "@ConfigsHUB | FR🇫🇷 | 217.69.5.32:443 | 80.42ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | kingo.hightechservice.ir:2096 | 107.75ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 30.07ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 24.51ms | 0️⃣2️⃣",
+                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 159.7ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "RELAY🚩",
+            "tag": "TR🇹🇷",
             "type": "urltest",
             "outbounds": [
-                "@ConfigsHUB | RELAY🚩 | foxpol.fovi.tk:8080 | 122.2ms | 0️⃣1️⃣",
-                "@Hope_Net | RELAY🚩 | kingo.hightechservice.ir:2096 | 395.41ms | 0️⃣1️⃣"
+                "@v2ray1_ng | TR🇹🇷 | fast38.funfil.link:31541 | 340.89ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -141,7 +141,17 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@ConfigsHUB | FR🇫🇷 | 217.69.5.32:443 | 132.36ms | 0️⃣2️⃣"
+                "@ConfigsHUB | FR🇫🇷 | 217.69.5.32:443 | 80.42ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "@Hope_Net | RELAY🚩 | kingo.hightechservice.ir:2096 | 107.75ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -151,7 +161,7 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 108.06ms | 0️⃣1️⃣"
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 30.07ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -161,7 +171,7 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 56.19ms | 0️⃣2️⃣"
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 24.51ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -171,18 +181,35 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 108.28ms | 0️⃣3️⃣"
+                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 159.7ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@ConfigsHUB | RELAY🚩 | foxpol.fovi.tk:8080 | 122.2ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | TR🇹🇷 | fast38.funfil.link:31541 | 340.89ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "141.101.122.122",
-            "server_port": 8080,
-            "uuid": "bf67437e-6c90-45ca-abc2-c7240a5ce2aa",
+            "server": "fast38.funfil.link",
+            "server_port": 31541,
+            "uuid": "41792324-68e1-413b-be71-f26a28213e21",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | FR🇫🇷 | 217.69.5.32:443 | 80.42ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "217.69.5.32",
+            "server_port": 443,
+            "uuid": "ec4c349c-b3c6-4cff-be63-01eaad1dc098",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -193,18 +220,19 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/eisasqa#TM (@AZARBAYJAB1)TM (@AZARBAYJAB1)TM (@AZARBAYJAB)?ed=2560",
-                "headers": {
-                    "Host": "141.101.122.122"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
+            "tls": {
+                "enabled": true,
+                "server_name": "217.69.5.32",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             }
         },
         {
-            "tag": "@Hope_Net | RELAY🚩 | kingo.hightechservice.ir:2096 | 395.41ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | kingo.hightechservice.ir:2096 | 107.75ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "zula.ir",
             "server_port": 2096,
@@ -240,34 +268,7 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | FR🇫🇷 | 217.69.5.32:443 | 132.36ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "217.69.5.32",
-            "server_port": 443,
-            "uuid": "ec4c349c-b3c6-4cff-be63-01eaad1dc098",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "217.69.5.32",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 108.06ms | 0️⃣1️⃣",
+            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 30.07ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.126.84.189",
             "server_port": 443,
@@ -303,7 +304,7 @@
             }
         },
         {
-            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 56.19ms | 0️⃣2️⃣",
+            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 24.51ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
@@ -339,7 +340,7 @@
             }
         },
         {
-            "tag": "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 108.28ms | 0️⃣3️⃣",
+            "tag": "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 159.7ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "172.111.146.64",
             "server_port": 80,
