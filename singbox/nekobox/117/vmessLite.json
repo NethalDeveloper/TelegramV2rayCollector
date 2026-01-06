@@ -99,29 +99,46 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@customv2ray | FR🇫🇷 | 162.19.248.238:550 | 149.03ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 54.95ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 62.75ms | 0️⃣2️⃣",
-                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 108.87ms | 0️⃣3️⃣",
-                "@Awlix_ir | HK🇭🇰 | 8.218.238.254:46524 | 159.32ms | 0️⃣1️⃣"
+                "@prrofile_purple | IR🇮🇷 | s8.rookari.com:9016 | 210.47ms | 0️⃣1️⃣",
+                "@customv2ray | FR🇫🇷 | 162.19.248.238:550 | 91.11ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | late-wave-1d0a.lesijo3430.workers.dev:2086 | 41.3ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 89.57ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 27.05ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@customv2ray | FR🇫🇷 | 162.19.248.238:550 | 149.03ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 54.95ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 62.75ms | 0️⃣2️⃣",
-                "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 108.87ms | 0️⃣3️⃣",
-                "@Awlix_ir | HK🇭🇰 | 8.218.238.254:46524 | 159.32ms | 0️⃣1️⃣"
+                "@prrofile_purple | IR🇮🇷 | s8.rookari.com:9016 | 210.47ms | 0️⃣1️⃣",
+                "@customv2ray | FR🇫🇷 | 162.19.248.238:550 | 91.11ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | late-wave-1d0a.lesijo3430.workers.dev:2086 | 41.3ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 89.57ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 27.05ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@customv2ray | FR🇫🇷 | 162.19.248.238:550 | 149.03ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | IR🇮🇷 | s8.rookari.com:9016 | 210.47ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "s8.rookari.com",
+            "server_port": 9016,
+            "uuid": "cf1d3cd8-c544-47db-b074-49641b026e83",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@customv2ray | FR🇫🇷 | 162.19.248.238:550 | 91.11ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "162.19.248.238",
             "server_port": 550,
@@ -138,7 +155,33 @@
             }
         },
         {
-            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 54.95ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | late-wave-1d0a.lesijo3430.workers.dev:2086 | 41.3ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "104.16.67.38",
+            "server_port": 2086,
+            "uuid": "441da342-ce90-441e-bff9-d2ceb55e68ca",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/ivideos.sbs\/linkws",
+                "headers": {
+                    "Host": "104.16.67.38"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 89.57ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.126.84.189",
             "server_port": 443,
@@ -174,7 +217,7 @@
             }
         },
         {
-            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 62.75ms | 0️⃣2️⃣",
+            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 27.05ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
@@ -207,49 +250,6 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2Line | JP🇯🇵 | 172.111.146.64:80 | 108.87ms | 0️⃣3️⃣",
-            "type": "vmess",
-            "server": "172.111.146.64",
-            "server_port": 80,
-            "uuid": "05b8c783-7f59-47f9-9923-06a465679f6a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/vmess\/",
-                "headers": {
-                    "Host": "172.111.146.64"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@Awlix_ir | HK🇭🇰 | 8.218.238.254:46524 | 159.32ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "8.218.238.254",
-            "server_port": 46524,
-            "uuid": "5d564055-2b42-406b-9183-28cc63d8914a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
             }
         },
         {
