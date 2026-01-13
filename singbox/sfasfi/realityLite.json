@@ -102,27 +102,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @Outline_Vpn | JP🇯🇵 | japan.geodema.network:443 | 268.54ms | 0️⃣2️⃣",
-                "REALITY | @customv2ray | DE🇩🇪 | portal.ofmdirect.com:23200 | 291.24ms | 0️⃣1️⃣",
-                "REALITY | @ServerNett | RU🇷🇺 | digishop.ruxsias.ramvadminshop.com:56222 | 256.66ms | 0️⃣2️⃣",
-                "REALITY | @proxystore11 | RU🇷🇺 | 87.242.100.82:8443 | 192.21ms | 0️⃣2️⃣"
+                "REALITY | @Outline_Vpn | JP🇯🇵 | japan.geodema.network:443 | 317.12ms | 0️⃣2️⃣",
+                "REALITY | @customv2ray | DE🇩🇪 | portal.ofmdirect.com:23200 | 183.65ms | 0️⃣1️⃣",
+                "REALITY | @ServerNett | RU🇷🇺 | digishop.ruxsias.ramvadminshop.com:56222 | 218.29ms | 0️⃣2️⃣",
+                "REALITY | @ConfigsHUB | CY🇨🇾 | cze01-vlr01.tcp-reset-club.net:443 | 118.25ms | 0️⃣1️⃣",
+                "REALITY | @proxystore11 | RU🇷🇺 | 87.242.100.82:8443 | 124.65ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @Outline_Vpn | JP🇯🇵 | japan.geodema.network:443 | 268.54ms | 0️⃣2️⃣",
-                "REALITY | @customv2ray | DE🇩🇪 | portal.ofmdirect.com:23200 | 291.24ms | 0️⃣1️⃣",
-                "REALITY | @ServerNett | RU🇷🇺 | digishop.ruxsias.ramvadminshop.com:56222 | 256.66ms | 0️⃣2️⃣",
-                "REALITY | @proxystore11 | RU🇷🇺 | 87.242.100.82:8443 | 192.21ms | 0️⃣2️⃣"
+                "REALITY | @Outline_Vpn | JP🇯🇵 | japan.geodema.network:443 | 317.12ms | 0️⃣2️⃣",
+                "REALITY | @customv2ray | DE🇩🇪 | portal.ofmdirect.com:23200 | 183.65ms | 0️⃣1️⃣",
+                "REALITY | @ServerNett | RU🇷🇺 | digishop.ruxsias.ramvadminshop.com:56222 | 218.29ms | 0️⃣2️⃣",
+                "REALITY | @ConfigsHUB | CY🇨🇾 | cze01-vlr01.tcp-reset-club.net:443 | 118.25ms | 0️⃣1️⃣",
+                "REALITY | @proxystore11 | RU🇷🇺 | 87.242.100.82:8443 | 124.65ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @Outline_Vpn | JP🇯🇵 | japan.geodema.network:443 | 268.54ms | 0️⃣2️⃣",
+            "tag": "REALITY | @Outline_Vpn | JP🇯🇵 | japan.geodema.network:443 | 317.12ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "japan.geodema.network",
             "server_port": 443,
@@ -150,7 +152,7 @@
             }
         },
         {
-            "tag": "REALITY | @customv2ray | DE🇩🇪 | portal.ofmdirect.com:23200 | 291.24ms | 0️⃣1️⃣",
+            "tag": "REALITY | @customv2ray | DE🇩🇪 | portal.ofmdirect.com:23200 | 183.65ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "portal.ofmdirect.com",
             "server_port": 23200,
@@ -178,7 +180,7 @@
             }
         },
         {
-            "tag": "REALITY | @ServerNett | RU🇷🇺 | digishop.ruxsias.ramvadminshop.com:56222 | 256.66ms | 0️⃣2️⃣",
+            "tag": "REALITY | @ServerNett | RU🇷🇺 | digishop.ruxsias.ramvadminshop.com:56222 | 218.29ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "digishop.ruxsias.ramvadminshop.com",
             "server_port": 56222,
@@ -206,7 +208,35 @@
             }
         },
         {
-            "tag": "REALITY | @proxystore11 | RU🇷🇺 | 87.242.100.82:8443 | 192.21ms | 0️⃣2️⃣",
+            "tag": "REALITY | @ConfigsHUB | CY🇨🇾 | cze01-vlr01.tcp-reset-club.net:443 | 118.25ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "cze01-vlr01.tcp-reset-club.net",
+            "server_port": 443,
+            "uuid": "0a8998f4-0642-4408-9f74-ac40593efb28",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hls-svod.itunes.apple.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg",
+                    "short_id": "86e999a2cdc2"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @proxystore11 | RU🇷🇺 | 87.242.100.82:8443 | 124.65ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "87.242.100.82",
             "server_port": 8443,
