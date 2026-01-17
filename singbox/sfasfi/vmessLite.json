@@ -102,29 +102,69 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 16.89ms | 0️⃣1️⃣",
-                "@free1_vpn | FR🇫🇷 | 217.69.5.32:443 | 128.01ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 45.39ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 56.45ms | 0️⃣2️⃣",
-                "@Awlix_ir | HK🇭🇰 | 8.218.238.254:46524 | 157.72ms | 0️⃣1️⃣"
+                "@ConfigsHUB | KR🇰🇷 | dv4.789900.xyz:2096 | 153.21ms | 0️⃣1️⃣",
+                "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 2.22ms | 0️⃣1️⃣",
+                "@free1_vpn | FR🇫🇷 | 217.69.5.32:443 | 141.1ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | hdfy1c4.sassanidempire.com:443 | 26.72ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 49.84ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 72.7ms | 0️⃣2️⃣",
+                "@Awlix_ir | HK🇭🇰 | 8.218.238.254:46524 | 159.15ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 16.89ms | 0️⃣1️⃣",
-                "@free1_vpn | FR🇫🇷 | 217.69.5.32:443 | 128.01ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 45.39ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 56.45ms | 0️⃣2️⃣",
-                "@Awlix_ir | HK🇭🇰 | 8.218.238.254:46524 | 157.72ms | 0️⃣1️⃣"
+                "@ConfigsHUB | KR🇰🇷 | dv4.789900.xyz:2096 | 153.21ms | 0️⃣1️⃣",
+                "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 2.22ms | 0️⃣1️⃣",
+                "@free1_vpn | FR🇫🇷 | 217.69.5.32:443 | 141.1ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | hdfy1c4.sassanidempire.com:443 | 26.72ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 49.84ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 72.7ms | 0️⃣2️⃣",
+                "@Awlix_ir | HK🇭🇰 | 8.218.238.254:46524 | 159.15ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 16.89ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | KR🇰🇷 | dv4.789900.xyz:2096 | 153.21ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "dv4.789900.xyz",
+            "server_port": 2096,
+            "uuid": "0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dv4.789900.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05-vm",
+                "headers": {
+                    "Host": "dv4.789900.xyz"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 2.22ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "47.251.91.241",
             "server_port": 42899,
@@ -141,7 +181,7 @@
             }
         },
         {
-            "tag": "@free1_vpn | FR🇫🇷 | 217.69.5.32:443 | 128.01ms | 0️⃣1️⃣",
+            "tag": "@free1_vpn | FR🇫🇷 | 217.69.5.32:443 | 141.1ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "217.69.5.32",
             "server_port": 443,
@@ -168,7 +208,43 @@
             }
         },
         {
-            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 45.39ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | hdfy1c4.sassanidempire.com:443 | 26.72ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "bluehost.com",
+            "server_port": 443,
+            "uuid": "6b880b07-e952-4c0b-b4a3-6c9ac4cf9d3f",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "hdfy1c4.sassanidempire.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/QvtvPdDXXIlSdZMqnuxG",
+                "headers": {
+                    "Host": "bluehost.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 49.84ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.126.84.189",
             "server_port": 443,
@@ -204,7 +280,7 @@
             }
         },
         {
-            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 56.45ms | 0️⃣2️⃣",
+            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 72.7ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
@@ -240,7 +316,7 @@
             }
         },
         {
-            "tag": "@Awlix_ir | HK🇭🇰 | 8.218.238.254:46524 | 157.72ms | 0️⃣1️⃣",
+            "tag": "@Awlix_ir | HK🇭🇰 | 8.218.238.254:46524 | 159.15ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "8.218.238.254",
             "server_port": 46524,
