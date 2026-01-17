@@ -102,6 +102,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "RELAY🚩",
                 "US🇺🇸",
                 "FR🇫🇷",
                 "CA🇨🇦",
@@ -112,12 +113,23 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 2.4ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | glweidf.sbs:443 | 43.01ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 46.37ms | 0️⃣1️⃣",
-                "@free1_vpn | FR🇫🇷 | 217.69.5.32:443 | 146.51ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 59.89ms | 0️⃣2️⃣",
-                "@Awlix_ir | HK🇭🇰 | 8.218.238.254:46524 | 158.09ms | 0️⃣1️⃣"
+                "@ConfigsHUB | RELAY🚩 | biatid.ir:8080 | 116.97ms | 0️⃣1️⃣",
+                "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 46.77ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | glweidf.sbs:443 | 197.04ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 12.67ms | 0️⃣1️⃣",
+                "@free1_vpn | FR🇫🇷 | 217.69.5.32:443 | 101.98ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.64ms | 0️⃣2️⃣",
+                "@Awlix_ir | HK🇭🇰 | 8.218.238.254:46524 | 196.47ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | RELAY🚩 | biatid.ir:8080 | 116.97ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -127,9 +139,9 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 2.4ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | glweidf.sbs:443 | 43.01ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 46.37ms | 0️⃣1️⃣"
+                "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 46.77ms | 0️⃣1️⃣",
+                "@Hope_Net | US🇺🇸 | glweidf.sbs:443 | 197.04ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 12.67ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -139,7 +151,7 @@
             "tag": "FR🇫🇷",
             "type": "urltest",
             "outbounds": [
-                "@free1_vpn | FR🇫🇷 | 217.69.5.32:443 | 146.51ms | 0️⃣1️⃣"
+                "@free1_vpn | FR🇫🇷 | 217.69.5.32:443 | 101.98ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -149,7 +161,7 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 59.89ms | 0️⃣2️⃣"
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.64ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -159,14 +171,31 @@
             "tag": "HK🇭🇰",
             "type": "urltest",
             "outbounds": [
-                "@Awlix_ir | HK🇭🇰 | 8.218.238.254:46524 | 158.09ms | 0️⃣1️⃣"
+                "@Awlix_ir | HK🇭🇰 | 8.218.238.254:46524 | 196.47ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 2.4ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | biatid.ir:8080 | 116.97ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "91.206.171.169",
+            "server_port": 8080,
+            "uuid": "22ff17f6-585e-402b-95d5-e7fb0db4d6e4",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 46.77ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "47.251.91.241",
             "server_port": 42899,
@@ -183,7 +212,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | glweidf.sbs:443 | 43.01ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | US🇺🇸 | glweidf.sbs:443 | 197.04ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "502.outline-vpn.cloud",
             "server_port": 443,
@@ -219,7 +248,7 @@
             }
         },
         {
-            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 46.37ms | 0️⃣1️⃣",
+            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 12.67ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.126.84.189",
             "server_port": 443,
@@ -255,7 +284,7 @@
             }
         },
         {
-            "tag": "@free1_vpn | FR🇫🇷 | 217.69.5.32:443 | 146.51ms | 0️⃣1️⃣",
+            "tag": "@free1_vpn | FR🇫🇷 | 217.69.5.32:443 | 101.98ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "217.69.5.32",
             "server_port": 443,
@@ -282,7 +311,7 @@
             }
         },
         {
-            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 59.89ms | 0️⃣2️⃣",
+            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.64ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
@@ -318,7 +347,7 @@
             }
         },
         {
-            "tag": "@Awlix_ir | HK🇭🇰 | 8.218.238.254:46524 | 158.09ms | 0️⃣1️⃣",
+            "tag": "@Awlix_ir | HK🇭🇰 | 8.218.238.254:46524 | 196.47ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "8.218.238.254",
             "server_port": 46524,
