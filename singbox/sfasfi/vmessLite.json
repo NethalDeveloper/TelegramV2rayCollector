@@ -102,25 +102,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 67.39ms | 0️⃣1️⃣",
-                "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 162.43ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 26.61ms | 0️⃣1️⃣"
+                "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 64.61ms | 0️⃣1️⃣",
+                "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 101.7ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 38.71ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 22.64ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 67.39ms | 0️⃣1️⃣",
-                "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 162.43ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 26.61ms | 0️⃣1️⃣"
+                "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 64.61ms | 0️⃣1️⃣",
+                "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 101.7ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 38.71ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 22.64ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 67.39ms | 0️⃣1️⃣",
+            "tag": "@proxystore11 | US🇺🇸 | 47.251.91.241:42899 | 64.61ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "47.251.91.241",
             "server_port": 42899,
@@ -137,7 +139,7 @@
             }
         },
         {
-            "tag": "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 162.43ms | 0️⃣1️⃣",
+            "tag": "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 101.7ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "162.159.152.4",
             "server_port": 443,
@@ -173,7 +175,43 @@
             }
         },
         {
-            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 26.61ms | 0️⃣1️⃣",
+            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 38.71ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "209.126.84.189",
+            "server_port": 443,
+            "uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "209.126.84.189",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/vmessws",
+                "headers": {
+                    "Host": "209.126.84.189"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 22.64ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
