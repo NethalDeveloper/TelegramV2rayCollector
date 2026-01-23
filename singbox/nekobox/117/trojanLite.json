@@ -99,31 +99,73 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | RELAY🚩 | www.calmlunch.com:443 | 138.25ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | DE🇩🇪 | de.scpnb.top:44792 | 330.93ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | HK🇭🇰 | 58.152.25.236:443 | 177.54ms | 0️⃣3️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 54.92ms | 0️⃣1️⃣",
-                "@ConfigsHUB | HK🇭🇰 | 58.152.53.219:443 | 186.45ms | 0️⃣1️⃣",
-                "@ConfigsHUB | HK🇭🇰 | 58.152.25.236:443 | 177.94ms | 0️⃣3️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.39.200.50:22222 | 85.95ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.39.200.50:22223 | 86.05ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | RELAY🚩 | www.calmlunch.com:443 | 39.62ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | DE🇩🇪 | de.scpnb.top:44792 | 321.46ms | 0️⃣2️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 23.02ms | 0️⃣1️⃣",
+                "@ConfigsHUB | US🇺🇸 | cdn.turbooserver.com:80 | 86.96ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | RELAY🚩 | www.calmlunch.com:443 | 138.25ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | DE🇩🇪 | de.scpnb.top:44792 | 330.93ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | HK🇭🇰 | 58.152.25.236:443 | 177.54ms | 0️⃣3️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 54.92ms | 0️⃣1️⃣",
-                "@ConfigsHUB | HK🇭🇰 | 58.152.53.219:443 | 186.45ms | 0️⃣1️⃣",
-                "@ConfigsHUB | HK🇭🇰 | 58.152.25.236:443 | 177.94ms | 0️⃣3️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 13.39.200.50:22222 | 85.95ms | 0️⃣1️⃣",
+                "@DirectVPN | FR🇫🇷 | 13.39.200.50:22223 | 86.05ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | RELAY🚩 | www.calmlunch.com:443 | 39.62ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | DE🇩🇪 | de.scpnb.top:44792 | 321.46ms | 0️⃣2️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 23.02ms | 0️⃣1️⃣",
+                "@ConfigsHUB | US🇺🇸 | cdn.turbooserver.com:80 | 86.96ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | RELAY🚩 | www.calmlunch.com:443 | 138.25ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 13.39.200.50:22222 | 85.95ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "13.39.200.50",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | FR🇫🇷 | 13.39.200.50:22223 | 86.05ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "13.39.200.50",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@oneclickvpnkeys | RELAY🚩 | www.calmlunch.com:443 | 39.62ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "www.calmlunch.com",
             "server_port": 443,
@@ -151,7 +193,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | DE🇩🇪 | de.scpnb.top:44792 | 330.93ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | DE🇩🇪 | de.scpnb.top:44792 | 321.46ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "de.scpnb.top",
             "server_port": 44792,
@@ -170,28 +212,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | HK🇭🇰 | 58.152.25.236:443 | 177.54ms | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "58.152.25.236",
-            "server_port": 443,
-            "password": "BxceQaOe",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "t.me\/ripaojiedian",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 54.92ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 23.02ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "creativecommons.org",
             "server_port": 2053,
@@ -219,44 +240,21 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | HK🇭🇰 | 58.152.53.219:443 | 186.45ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | US🇺🇸 | cdn.turbooserver.com:80 | 86.96ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "58.152.53.219",
-            "server_port": 443,
-            "password": "BxceQaOe",
+            "server": "cdn.turbooserver.com",
+            "server_port": 80,
+            "password": "TurbooServer",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "t.me\/ripaojiedian",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@ConfigsHUB | HK🇭🇰 | 58.152.25.236:443 | 177.94ms | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "58.152.25.236",
-            "server_port": 443,
-            "password": "BxceQaOe",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "t.me\/ripaojiedian",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
+            "transport": {
+                "type": "ws",
+                "path": "\/\/ed=25",
+                "headers": {
+                    "Host": "jone-turboo-server.com"
                 }
             }
         },
