@@ -102,35 +102,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "FR🇫🇷",
-                "RELAY🚩",
-                "US🇺🇸"
+                "GR🇬🇷",
+                "RELAY🚩"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.39.197.201:22222 | 134.08ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 15.236.72.233:22222 | 134.06ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.197.201:22223 | 136.05ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.236.72.233:22223 | 134.12ms | 0️⃣2️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 175.86ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | www.gossipglove.com:443 | 81.23ms | 0️⃣2️⃣",
-                "@ConfigsHUB | US🇺🇸 | free1.aattaash.com:443 | 65.39ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | GR🇬🇷 | 217.12.204.110:8443 | 180.03ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 29.58ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | 104.18.32.47:443 | 10.3ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "FR🇫🇷",
+            "tag": "GR🇬🇷",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | FR🇫🇷 | 13.39.197.201:22222 | 134.08ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 15.236.72.233:22222 | 134.06ms | 0️⃣2️⃣",
-                "@DirectVPN | FR🇫🇷 | 13.39.197.201:22223 | 136.05ms | 0️⃣1️⃣",
-                "@DirectVPN | FR🇫🇷 | 15.236.72.233:22223 | 134.12ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | GR🇬🇷 | 217.12.204.110:8443 | 180.03ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -140,29 +132,19 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 175.86ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | www.gossipglove.com:443 | 81.23ms | 0️⃣2️⃣"
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 29.58ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | 104.18.32.47:443 | 10.3ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "US🇺🇸",
-            "type": "urltest",
-            "outbounds": [
-                "@ConfigsHUB | US🇺🇸 | free1.aattaash.com:443 | 65.39ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 13.39.197.201:22222 | 134.08ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | GR🇬🇷 | 217.12.204.110:8443 | 180.03ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "13.39.197.201",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
+            "server": "217.12.204.110",
+            "server_port": 8443,
+            "password": "8pzQCWvRF8vC8UxFma4RvutAwV7ccN",
             "multiplex": {
                 "enabled": false,
                 "protocol": "smux",
@@ -170,7 +152,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
+                "server_name": "chat.speedload.ru",
                 "insecure": true,
                 "utls": {
                     "enabled": true,
@@ -179,70 +161,7 @@
             }
         },
         {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 15.236.72.233:22222 | 134.06ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "15.236.72.233",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@DirectVPN | FR🇫🇷 | 13.39.197.201:22223 | 136.05ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "13.39.197.201",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@DirectVPN | FR🇫🇷 | 15.236.72.233:22223 | 134.12ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "15.236.72.233",
-            "server_port": 22223,
-            "password": "telegram-id-directvpn",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 175.86ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 29.58ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "creativecommons.org",
             "server_port": 2053,
@@ -270,9 +189,9 @@
             }
         },
         {
-            "tag": "@ConfigsHUB | RELAY🚩 | www.gossipglove.com:443 | 81.23ms | 0️⃣2️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | 104.18.32.47:443 | 10.3ms | 0️⃣1️⃣",
             "type": "trojan",
-            "server": "www.gossipglove.com",
+            "server": "104.18.32.47",
             "server_port": 443,
             "password": "humanity",
             "multiplex": {
@@ -293,35 +212,7 @@
                 "type": "ws",
                 "path": "\/\/assignment",
                 "headers": {
-                    "Host": null
-                }
-            }
-        },
-        {
-            "tag": "@ConfigsHUB | US🇺🇸 | free1.aattaash.com:443 | 65.39ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "free1.aattaash.com",
-            "server_port": 443,
-            "password": "humanity",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.creationlong.org",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/assignment",
-                "headers": {
-                    "Host": "www.creationlong.org"
+                    "Host": "www.gossipglove.com"
                 }
             }
         },
