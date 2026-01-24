@@ -104,6 +104,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "GR🇬🇷",
                 "RELAY🚩"
             ]
         },
@@ -111,7 +112,20 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 165.39ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | GR🇬🇷 | 217.12.204.110:8443 | 196.71ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 6.75ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | chatgpt.com:443 | 2.39ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | chatgpt.com:443 | 2.26ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "GR🇬🇷",
+            "type": "urltest",
+            "outbounds": [
+                "@oneclickvpnkeys | GR🇬🇷 | 217.12.204.110:8443 | 196.71ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -121,14 +135,37 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 165.39ms | 0️⃣1️⃣"
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 6.75ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | chatgpt.com:443 | 2.39ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | chatgpt.com:443 | 2.26ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 165.39ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | GR🇬🇷 | 217.12.204.110:8443 | 196.71ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "217.12.204.110",
+            "server_port": 8443,
+            "password": "8pzQCWvRF8vC8UxFma4RvutAwV7ccN",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "chat.speedload.ru",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 6.75ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "creativecommons.org",
             "server_port": 2053,
@@ -152,6 +189,62 @@
                 "path": "\/\/yamtekodasayahhh",
                 "headers": {
                     "Host": "kotlet.arshiacomplus.dpdns.org"
+                }
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | RELAY🚩 | chatgpt.com:443 | 2.39ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "chatgpt.com",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.gossipglove.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/assignment",
+                "headers": {
+                    "Host": "www.gossipglove.com"
+                }
+            }
+        },
+        {
+            "tag": "@ConfigsHUB | RELAY🚩 | chatgpt.com:443 | 2.26ms | 0️⃣2️⃣",
+            "type": "trojan",
+            "server": "chatgpt.com",
+            "server_port": 443,
+            "password": "humanity",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "www.gossipglove.com",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/assignment",
+                "headers": {
+                    "Host": "www.gossipglove.com"
                 }
             }
         },
