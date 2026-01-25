@@ -103,18 +103,17 @@
             "outbounds": [
                 "URL-TEST",
                 "RELAY🚩",
-                "JP🇯🇵",
-                "HK🇭🇰"
+                "JP🇯🇵"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | RELAY🚩 | 104.18.32.47:443 | 13.99ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 34.61ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | JP🇯🇵 | 160.16.72.205:544 | 133.61ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | HK🇭🇰 | hk.scpnb.top:19066 | 391.31ms | 0️⃣3️⃣"
+                "@oneclickvpnkeys | RELAY🚩 | 104.18.32.47:443 | 2.13ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 179.86ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | tgju.org:2087 | 169.89ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | JP🇯🇵 | 160.16.72.205:544 | 166.42ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -124,8 +123,9 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | RELAY🚩 | 104.18.32.47:443 | 13.99ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 34.61ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | RELAY🚩 | 104.18.32.47:443 | 2.13ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 179.86ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | tgju.org:2087 | 169.89ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -135,24 +135,14 @@
             "tag": "JP🇯🇵",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | JP🇯🇵 | 160.16.72.205:544 | 133.61ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | JP🇯🇵 | 160.16.72.205:544 | 166.42ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "HK🇭🇰",
-            "type": "urltest",
-            "outbounds": [
-                "@oneclickvpnkeys | HK🇭🇰 | hk.scpnb.top:19066 | 391.31ms | 0️⃣3️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "@oneclickvpnkeys | RELAY🚩 | 104.18.32.47:443 | 13.99ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | RELAY🚩 | 104.18.32.47:443 | 2.13ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "104.18.32.47",
             "server_port": 443,
@@ -180,7 +170,7 @@
             }
         },
         {
-            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 34.61ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 179.86ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "creativecommons.org",
             "server_port": 2053,
@@ -208,7 +198,35 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | JP🇯🇵 | 160.16.72.205:544 | 133.61ms | 0️⃣2️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | tgju.org:2087 | 169.89ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "tgju.org",
+            "server_port": 2087,
+            "password": "FiXxzSgYoyWtU-sHsVCVWA",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "nlall.chellservice.ir",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "nlall.chellservice.ir"
+                }
+            }
+        },
+        {
+            "tag": "@oneclickvpnkeys | JP🇯🇵 | 160.16.72.205:544 | 166.42ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "160.16.72.205",
             "server_port": 544,
@@ -226,25 +244,6 @@
                     "enabled": true,
                     "fingerprint": "chrome"
                 }
-            }
-        },
-        {
-            "tag": "@oneclickvpnkeys | HK🇭🇰 | hk.scpnb.top:19066 | 391.31ms | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "hk.scpnb.top",
-            "server_port": 19066,
-            "password": "q4oerwN2UA",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "grpc",
-                "service_name": null,
-                "idle_timeout": "15s",
-                "ping_timeout": "15s",
-                "permit_without_stream": false
             }
         },
         {
