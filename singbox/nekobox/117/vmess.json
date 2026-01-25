@@ -100,6 +100,7 @@
             "outbounds": [
                 "URL-TEST",
                 "HK🇭🇰",
+                "RELAY🚩",
                 "US🇺🇸",
                 "CA🇨🇦"
             ]
@@ -108,10 +109,11 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | HK🇭🇰 | lithusha.riyon.cfd:8443 | 369.49ms | 0️⃣1️⃣",
-                "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 83.41ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 49.62ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 59.32ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | HK🇭🇰 | lithusha.riyon.cfd:8443 | 206.99ms | 0️⃣1️⃣",
+                "@ConfigsHUB | RELAY🚩 | dl3.hupcloud.com:443 | 83.05ms | 0️⃣1️⃣",
+                "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 112.87ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 49.98ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 58.98ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -121,7 +123,17 @@
             "tag": "HK🇭🇰",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | HK🇭🇰 | lithusha.riyon.cfd:8443 | 369.49ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | HK🇭🇰 | lithusha.riyon.cfd:8443 | 206.99ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "@ConfigsHUB | RELAY🚩 | dl3.hupcloud.com:443 | 83.05ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -131,8 +143,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 83.41ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 49.62ms | 0️⃣1️⃣"
+                "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 112.87ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 49.98ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -142,14 +154,14 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 59.32ms | 0️⃣2️⃣"
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 58.98ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | HK🇭🇰 | lithusha.riyon.cfd:8443 | 369.49ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | HK🇭🇰 | lithusha.riyon.cfd:8443 | 206.99ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.66.40.229",
             "server_port": 8443,
@@ -185,7 +197,43 @@
             }
         },
         {
-            "tag": "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 83.41ms | 0️⃣1️⃣",
+            "tag": "@ConfigsHUB | RELAY🚩 | dl3.hupcloud.com:443 | 83.05ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "chatgpt.com",
+            "server_port": 443,
+            "uuid": "ac158da9-7ec9-4e23-a6d7-80836da39895",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "dl3.hupcloud.com",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/?ed=2048",
+                "headers": {
+                    "Host": "chatgpt.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 112.87ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "162.159.152.4",
             "server_port": 443,
@@ -221,7 +269,7 @@
             }
         },
         {
-            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 49.62ms | 0️⃣1️⃣",
+            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 49.98ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.126.84.189",
             "server_port": 443,
@@ -257,7 +305,7 @@
             }
         },
         {
-            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 59.32ms | 0️⃣2️⃣",
+            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 58.98ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
