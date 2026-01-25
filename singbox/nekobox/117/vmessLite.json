@@ -99,31 +99,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | HK🇭🇰 | lithusha.riyon.cfd:8443 | 179.64ms | 0️⃣1️⃣",
-                "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 144.59ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 59.1ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 62.07ms | 0️⃣2️⃣"
+                "@prrofile_purple | US🇺🇸 | 172.234.132.232:10001 | 15.61ms | 0️⃣1️⃣",
+                "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 181.56ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 13.84ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | HK🇭🇰 | lithusha.riyon.cfd:8443 | 179.64ms | 0️⃣1️⃣",
-                "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 144.59ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 59.1ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 62.07ms | 0️⃣2️⃣"
+                "@prrofile_purple | US🇺🇸 | 172.234.132.232:10001 | 15.61ms | 0️⃣1️⃣",
+                "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 181.56ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 13.84ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | HK🇭🇰 | lithusha.riyon.cfd:8443 | 179.64ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | US🇺🇸 | 172.234.132.232:10001 | 15.61ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "172.66.40.229",
-            "server_port": 8443,
-            "uuid": "f9227d36-b630-4758-8805-cf16a47e4e63",
+            "server": "172.234.132.232",
+            "server_port": 10001,
+            "uuid": "a6b99c05-8e0a-4f7e-bf7b-e4b9febb9589",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -133,29 +131,10 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "lithusha.riyon.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/lithusha",
-                "headers": {
-                    "Host": "172.66.40.229"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 144.59ms | 0️⃣1️⃣",
+            "tag": "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 181.56ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "162.159.152.4",
             "server_port": 443,
@@ -191,43 +170,7 @@
             }
         },
         {
-            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 59.1ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "209.126.84.189",
-            "server_port": 443,
-            "uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "209.126.84.189",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/vmessws",
-                "headers": {
-                    "Host": "209.126.84.189"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 62.07ms | 0️⃣2️⃣",
+            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 13.84ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
