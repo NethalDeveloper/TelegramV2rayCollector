@@ -113,10 +113,11 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | HK🇭🇰 | lithusha.riyon.cfd:8443 | 240.05ms | 0️⃣1️⃣",
-                "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 124.73ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 8.08ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.7ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | HK🇭🇰 | lithusha.riyon.cfd:8443 | 430.13ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | 172.234.132.232:10001 | 16.16ms | 0️⃣1️⃣",
+                "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 54.43ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 79.49ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.47ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -126,7 +127,7 @@
             "tag": "HK🇭🇰",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | HK🇭🇰 | lithusha.riyon.cfd:8443 | 240.05ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | HK🇭🇰 | lithusha.riyon.cfd:8443 | 430.13ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -136,8 +137,9 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 124.73ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 8.08ms | 0️⃣1️⃣"
+                "@prrofile_purple | US🇺🇸 | 172.234.132.232:10001 | 16.16ms | 0️⃣1️⃣",
+                "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 54.43ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 79.49ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -147,14 +149,14 @@
             "tag": "CA🇨🇦",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.7ms | 0️⃣2️⃣"
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.47ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | HK🇭🇰 | lithusha.riyon.cfd:8443 | 240.05ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | HK🇭🇰 | lithusha.riyon.cfd:8443 | 430.13ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "172.66.40.229",
             "server_port": 8443,
@@ -190,7 +192,24 @@
             }
         },
         {
-            "tag": "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 124.73ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | US🇺🇸 | 172.234.132.232:10001 | 16.16ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "172.234.132.232",
+            "server_port": 10001,
+            "uuid": "a6b99c05-8e0a-4f7e-bf7b-e4b9febb9589",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@fnet00 | US🇺🇸 | v2ray.codefyinc.com:443 | 54.43ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "162.159.152.4",
             "server_port": 443,
@@ -226,7 +245,7 @@
             }
         },
         {
-            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 8.08ms | 0️⃣1️⃣",
+            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 79.49ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.126.84.189",
             "server_port": 443,
@@ -262,7 +281,7 @@
             }
         },
         {
-            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.7ms | 0️⃣2️⃣",
+            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 12.47ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
