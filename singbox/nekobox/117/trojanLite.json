@@ -99,33 +99,73 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | RELAY🚩 | 172.64.152.23:443 | 1.93ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | NO🇳🇴 | 80.173.231.254:12420 | 158.79ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | PL🇵🇱 | 176.105.253.102:8443 | 173.65ms | 0️⃣3️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 7.13ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | 104.18.32.47:443 | 2.32ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | 104.18.32.47:443 | 1.93ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | 104.18.32.47:443 | 1.88ms | 0️⃣3️⃣"
+                "@PrivateVPNs | RELAY🚩 | 15.188.224.186:22222 | 144.15ms | 0️⃣1️⃣",
+                "@DirectVPN | RELAY🚩 | 15.188.224.186:22223 | 126.32ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | RELAY🚩 | 172.64.152.23:443 | 54.73ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | NO🇳🇴 | 80.173.231.254:12420 | 122.15ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | RELAY🚩 | 176.105.253.102:8443 | 119.7ms | 0️⃣3️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 72.33ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | RELAY🚩 | 172.64.152.23:443 | 1.93ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | NO🇳🇴 | 80.173.231.254:12420 | 158.79ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | PL🇵🇱 | 176.105.253.102:8443 | 173.65ms | 0️⃣3️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 7.13ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | 104.18.32.47:443 | 2.32ms | 0️⃣1️⃣",
-                "@ConfigsHUB | RELAY🚩 | 104.18.32.47:443 | 1.93ms | 0️⃣2️⃣",
-                "@ConfigsHUB | RELAY🚩 | 104.18.32.47:443 | 1.88ms | 0️⃣3️⃣"
+                "@PrivateVPNs | RELAY🚩 | 15.188.224.186:22222 | 144.15ms | 0️⃣1️⃣",
+                "@DirectVPN | RELAY🚩 | 15.188.224.186:22223 | 126.32ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | RELAY🚩 | 172.64.152.23:443 | 54.73ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | NO🇳🇴 | 80.173.231.254:12420 | 122.15ms | 0️⃣2️⃣",
+                "@oneclickvpnkeys | RELAY🚩 | 176.105.253.102:8443 | 119.7ms | 0️⃣3️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 72.33ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | RELAY🚩 | 172.64.152.23:443 | 1.93ms | 0️⃣1️⃣",
+            "tag": "@PrivateVPNs | RELAY🚩 | 15.188.224.186:22222 | 144.15ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "15.188.224.186",
+            "server_port": 22222,
+            "password": "telegram-id-privatevpns",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@DirectVPN | RELAY🚩 | 15.188.224.186:22223 | 126.32ms | 0️⃣1️⃣",
+            "type": "trojan",
+            "server": "15.188.224.186",
+            "server_port": 22223,
+            "password": "telegram-id-directvpn",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "trojan.burgerip.co.uk",
+                "insecure": true,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            }
+        },
+        {
+            "tag": "@oneclickvpnkeys | RELAY🚩 | 172.64.152.23:443 | 54.73ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "172.64.152.23",
             "server_port": 443,
@@ -153,7 +193,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | NO🇳🇴 | 80.173.231.254:12420 | 158.79ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | NO🇳🇴 | 80.173.231.254:12420 | 122.15ms | 0️⃣2️⃣",
             "type": "trojan",
             "server": "80.173.231.254",
             "server_port": 12420,
@@ -174,7 +214,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | PL🇵🇱 | 176.105.253.102:8443 | 173.65ms | 0️⃣3️⃣",
+            "tag": "@oneclickvpnkeys | RELAY🚩 | 176.105.253.102:8443 | 119.7ms | 0️⃣3️⃣",
             "type": "trojan",
             "server": "176.105.253.102",
             "server_port": 8443,
@@ -202,7 +242,7 @@
             }
         },
         {
-            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 7.13ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | RELAY🚩 | creativecommons.org:2053 | 72.33ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "creativecommons.org",
             "server_port": 2053,
@@ -226,90 +266,6 @@
                 "path": "\/\/yamtekodasayahhh",
                 "headers": {
                     "Host": "kotlet.arshiacomplus.dpdns.org"
-                }
-            }
-        },
-        {
-            "tag": "@ConfigsHUB | RELAY🚩 | 104.18.32.47:443 | 2.32ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "104.18.32.47",
-            "server_port": 443,
-            "password": "humanity",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.gossipglove.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/assignment",
-                "headers": {
-                    "Host": null
-                }
-            }
-        },
-        {
-            "tag": "@ConfigsHUB | RELAY🚩 | 104.18.32.47:443 | 1.93ms | 0️⃣2️⃣",
-            "type": "trojan",
-            "server": "104.18.32.47",
-            "server_port": 443,
-            "password": "humanity",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.multiplydose.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/assignment",
-                "headers": {
-                    "Host": null
-                }
-            }
-        },
-        {
-            "tag": "@ConfigsHUB | RELAY🚩 | 104.18.32.47:443 | 1.88ms | 0️⃣3️⃣",
-            "type": "trojan",
-            "server": "104.18.32.47",
-            "server_port": 443,
-            "password": "humanity",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.gossipglove.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/assignment",
-                "headers": {
-                    "Host": "www.gossipglove.com"
                 }
             }
         },
