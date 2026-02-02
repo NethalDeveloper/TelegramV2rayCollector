@@ -104,87 +104,31 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 31.23ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 2.24ms | 0️⃣2️⃣",
-                "@prrofile_purple | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 16.3ms | 0️⃣1️⃣",
-                "@prrofile_purple | RELAY🚩 | nasnet-5712964102.sharghdaily.co:8080 | 20.22ms | 0️⃣2️⃣",
-                "@prrofile_purple | RELAY🚩 | de.looloolooloo.com:8080 | 26.11ms | 0️⃣3️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 90.49ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 78.3ms | 0️⃣2️⃣",
-                "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 157.78ms | 0️⃣1️⃣"
+                "@prrofile_purple | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 23.42ms | 0️⃣1️⃣",
+                "@prrofile_purple | RELAY🚩 | nasnet-5712964102.sharghdaily.co:8080 | 16.13ms | 0️⃣2️⃣",
+                "@prrofile_purple | RELAY🚩 | de.looloolooloo.com:8080 | 72.27ms | 0️⃣3️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 93.16ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 63.72ms | 0️⃣2️⃣",
+                "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 206.5ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 31.23ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 2.24ms | 0️⃣2️⃣",
-                "@prrofile_purple | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 16.3ms | 0️⃣1️⃣",
-                "@prrofile_purple | RELAY🚩 | nasnet-5712964102.sharghdaily.co:8080 | 20.22ms | 0️⃣2️⃣",
-                "@prrofile_purple | RELAY🚩 | de.looloolooloo.com:8080 | 26.11ms | 0️⃣3️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 90.49ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 78.3ms | 0️⃣2️⃣",
-                "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 157.78ms | 0️⃣1️⃣"
+                "@prrofile_purple | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 23.42ms | 0️⃣1️⃣",
+                "@prrofile_purple | RELAY🚩 | nasnet-5712964102.sharghdaily.co:8080 | 16.13ms | 0️⃣2️⃣",
+                "@prrofile_purple | RELAY🚩 | de.looloolooloo.com:8080 | 72.27ms | 0️⃣3️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 93.16ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 63.72ms | 0️⃣2️⃣",
+                "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 206.5ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 31.23ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "172.67.204.84",
-            "server_port": 8080,
-            "uuid": "nasnet",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/nasnet\/cdn",
-                "headers": {
-                    "Host": "172.67.204.84"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@oneclickvpnkeys | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 2.24ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "104.21.69.44",
-            "server_port": 8080,
-            "uuid": "nasnet",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/nasnet\/cdn",
-                "headers": {
-                    "Host": "104.21.69.44"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@prrofile_purple | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 16.3ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 23.42ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "188.114.98.0",
             "server_port": 8080,
@@ -210,7 +154,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | RELAY🚩 | nasnet-5712964102.sharghdaily.co:8080 | 20.22ms | 0️⃣2️⃣",
+            "tag": "@prrofile_purple | RELAY🚩 | nasnet-5712964102.sharghdaily.co:8080 | 16.13ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "172.64.149.182",
             "server_port": 8080,
@@ -236,7 +180,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | RELAY🚩 | de.looloolooloo.com:8080 | 26.11ms | 0️⃣3️⃣",
+            "tag": "@prrofile_purple | RELAY🚩 | de.looloolooloo.com:8080 | 72.27ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "chatgpt.com",
             "server_port": 8080,
@@ -253,7 +197,7 @@
             }
         },
         {
-            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 90.49ms | 0️⃣1️⃣",
+            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 93.16ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.126.84.189",
             "server_port": 443,
@@ -289,7 +233,7 @@
             }
         },
         {
-            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 78.3ms | 0️⃣2️⃣",
+            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 63.72ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
@@ -325,7 +269,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 157.78ms | 0️⃣1️⃣",
+            "tag": "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 206.5ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "seoul03.zgjok.com",
             "server_port": 443,
