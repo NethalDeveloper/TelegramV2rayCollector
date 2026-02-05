@@ -99,31 +99,35 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@prrofile_purple | RELAY🚩 | bedrid.denizhosting.me:443 | 36.58ms | 0️⃣1️⃣",
-                "@v2ray1_ng | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 36.82ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 74.35ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 24.98ms | 0️⃣2️⃣",
-                "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 228.03ms | 0️⃣1️⃣",
-                "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 315.93ms | 0️⃣2️⃣"
+                "@prrofile_purple | RELAY🚩 | bedrid.denizhosting.me:443 | 99.94ms | 0️⃣1️⃣",
+                "@prrofile_purple | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 70.38ms | 0️⃣2️⃣",
+                "@v2ray1_ng | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 3.41ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 89.65ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 13.01ms | 0️⃣2️⃣",
+                "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 177.48ms | 0️⃣1️⃣",
+                "@FreakConfig | HK🇭🇰 | 8.217.13.74:31769 | 194.26ms | 0️⃣2️⃣",
+                "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 284.5ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | RELAY🚩 | bedrid.denizhosting.me:443 | 36.58ms | 0️⃣1️⃣",
-                "@v2ray1_ng | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 36.82ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 74.35ms | 0️⃣1️⃣",
-                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 24.98ms | 0️⃣2️⃣",
-                "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 228.03ms | 0️⃣1️⃣",
-                "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 315.93ms | 0️⃣2️⃣"
+                "@prrofile_purple | RELAY🚩 | bedrid.denizhosting.me:443 | 99.94ms | 0️⃣1️⃣",
+                "@prrofile_purple | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 70.38ms | 0️⃣2️⃣",
+                "@v2ray1_ng | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 3.41ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 209.126.84.189:443 | 89.65ms | 0️⃣1️⃣",
+                "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 13.01ms | 0️⃣2️⃣",
+                "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 177.48ms | 0️⃣1️⃣",
+                "@FreakConfig | HK🇭🇰 | 8.217.13.74:31769 | 194.26ms | 0️⃣2️⃣",
+                "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 284.5ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@prrofile_purple | RELAY🚩 | bedrid.denizhosting.me:443 | 36.58ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | RELAY🚩 | bedrid.denizhosting.me:443 | 99.94ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "::ffff:ac40:9bd1",
             "server_port": 443,
@@ -159,7 +163,33 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 36.82ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 70.38ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "172.67.204.84",
+            "server_port": 8080,
+            "uuid": "nasnet",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/nasnet\/cdn",
+                "headers": {
+                    "Host": "172.67.204.84"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2ray1_ng | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 3.41ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.21.69.44",
             "server_port": 8080,
@@ -185,7 +215,7 @@
             }
         },
         {
-            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 74.35ms | 0️⃣1️⃣",
+            "tag": "@v2Line | US🇺🇸 | 209.126.84.189:443 | 89.65ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.126.84.189",
             "server_port": 443,
@@ -221,7 +251,7 @@
             }
         },
         {
-            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 24.98ms | 0️⃣2️⃣",
+            "tag": "@v2Line | CA🇨🇦 | 23.162.200.227:443 | 13.01ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "23.162.200.227",
             "server_port": 443,
@@ -257,7 +287,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 228.03ms | 0️⃣1️⃣",
+            "tag": "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 177.48ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "tr1-smart.adelping.com",
             "server_port": 80,
@@ -283,7 +313,24 @@
             }
         },
         {
-            "tag": "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 315.93ms | 0️⃣2️⃣",
+            "tag": "@FreakConfig | HK🇭🇰 | 8.217.13.74:31769 | 194.26ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "8.217.13.74",
+            "server_port": 31769,
+            "uuid": "cf1ad6c7-5987-4314-82bb-b4399040d047",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 284.5ms | 0️⃣3️⃣",
             "type": "vmess",
             "server": "seoul03.zgjok.com",
             "server_port": 443,
