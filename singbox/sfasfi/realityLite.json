@@ -102,31 +102,97 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "REALITY | @ShadowSocks_s | DE🇩🇪 | 57.129.49.1:23576 | 106.83ms | 0️⃣1️⃣",
-                "REALITY | @customv2ray | DE🇩🇪 | switzerland.boot-lee.ru:8443 | 162.39ms | 0️⃣1️⃣",
-                "REALITY | @FalconPolV2rayNG | MD🇲🇩 | 94.232.247.168:41360 | 101.12ms | 0️⃣2️⃣",
-                "REALITY | @lrnbymaa | NL🇳🇱 | 188.253.26.39:442 | 115.28ms | 0️⃣1️⃣",
-                "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 104.93ms | 0️⃣1️⃣"
+                "REALITY | @iP_CF | NL🇳🇱 | 62.84.102.127:4443 | 153.81ms | 0️⃣2️⃣",
+                "REALITY | @Outline_Vpn | HU🇭🇺 | 5.182.38.91:17267 | 164.63ms | 0️⃣3️⃣",
+                "REALITY | @ShadowSocks_s | DE🇩🇪 | 57.129.53.182:23576 | 156.84ms | 0️⃣3️⃣",
+                "REALITY | @customv2ray | DE🇩🇪 | switzerland.boot-lee.ru:8443 | 380.88ms | 0️⃣2️⃣",
+                "REALITY | @lrnbymaa | RU🇷🇺 | 109.120.188.166:443 | 183.15ms | 0️⃣1️⃣",
+                "REALITY | @lrnbymaa | NL🇳🇱 | 188.253.26.39:442 | 153.49ms | 0️⃣2️⃣",
+                "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 157.53ms | 0️⃣1️⃣",
+                "REALITY | @FreakConfig | NL🇳🇱 | netherland.boot-lee.ru:8443 | 369.99ms | 0️⃣2️⃣",
+                "REALITY | @flyv2ray | HK🇭🇰 | hk.griffon-guard.com:443 | 366.14ms | 0️⃣2️⃣",
+                "REALITY | @flyv2ray | JP🇯🇵 | jp.griffon-guard.com:443 | 706.93ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @ShadowSocks_s | DE🇩🇪 | 57.129.49.1:23576 | 106.83ms | 0️⃣1️⃣",
-                "REALITY | @customv2ray | DE🇩🇪 | switzerland.boot-lee.ru:8443 | 162.39ms | 0️⃣1️⃣",
-                "REALITY | @FalconPolV2rayNG | MD🇲🇩 | 94.232.247.168:41360 | 101.12ms | 0️⃣2️⃣",
-                "REALITY | @lrnbymaa | NL🇳🇱 | 188.253.26.39:442 | 115.28ms | 0️⃣1️⃣",
-                "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 104.93ms | 0️⃣1️⃣"
+                "REALITY | @iP_CF | NL🇳🇱 | 62.84.102.127:4443 | 153.81ms | 0️⃣2️⃣",
+                "REALITY | @Outline_Vpn | HU🇭🇺 | 5.182.38.91:17267 | 164.63ms | 0️⃣3️⃣",
+                "REALITY | @ShadowSocks_s | DE🇩🇪 | 57.129.53.182:23576 | 156.84ms | 0️⃣3️⃣",
+                "REALITY | @customv2ray | DE🇩🇪 | switzerland.boot-lee.ru:8443 | 380.88ms | 0️⃣2️⃣",
+                "REALITY | @lrnbymaa | RU🇷🇺 | 109.120.188.166:443 | 183.15ms | 0️⃣1️⃣",
+                "REALITY | @lrnbymaa | NL🇳🇱 | 188.253.26.39:442 | 153.49ms | 0️⃣2️⃣",
+                "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 157.53ms | 0️⃣1️⃣",
+                "REALITY | @FreakConfig | NL🇳🇱 | netherland.boot-lee.ru:8443 | 369.99ms | 0️⃣2️⃣",
+                "REALITY | @flyv2ray | HK🇭🇰 | hk.griffon-guard.com:443 | 366.14ms | 0️⃣2️⃣",
+                "REALITY | @flyv2ray | JP🇯🇵 | jp.griffon-guard.com:443 | 706.93ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @ShadowSocks_s | DE🇩🇪 | 57.129.49.1:23576 | 106.83ms | 0️⃣1️⃣",
+            "tag": "REALITY | @iP_CF | NL🇳🇱 | 62.84.102.127:4443 | 153.81ms | 0️⃣2️⃣",
             "type": "vless",
-            "server": "57.129.49.1",
+            "server": "62.84.102.127",
+            "server_port": 4443,
+            "uuid": "3cceef33-56ff-4f21-8479-2e1719e04886",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "github.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "5XB_N3ATilH-6tp_MXht-84_y5YaJnx_Z7MbuY2otHE",
+                    "short_id": "aa7e96542880027a"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @Outline_Vpn | HU🇭🇺 | 5.182.38.91:17267 | 164.63ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "5.182.38.91",
+            "server_port": 17267,
+            "uuid": "1c7fcc38-e6be-43c5-875f-b8de2516b9f2",
+            "flow": "",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "SnWZg6ORcQepuWLI1EVCTTVc4KyfDiGWR4o_CXCMhgk",
+                    "short_id": "4ae260"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @ShadowSocks_s | DE🇩🇪 | 57.129.53.182:23576 | 156.84ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "57.129.53.182",
             "server_port": 23576,
             "uuid": "48ff2b70-e180-582f-8866-d9a2edeed5f5",
             "flow": "xtls-rprx-vision",
@@ -152,7 +218,7 @@
             }
         },
         {
-            "tag": "REALITY | @customv2ray | DE🇩🇪 | switzerland.boot-lee.ru:8443 | 162.39ms | 0️⃣1️⃣",
+            "tag": "REALITY | @customv2ray | DE🇩🇪 | switzerland.boot-lee.ru:8443 | 380.88ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "switzerland.boot-lee.ru",
             "server_port": 8443,
@@ -180,12 +246,12 @@
             }
         },
         {
-            "tag": "REALITY | @FalconPolV2rayNG | MD🇲🇩 | 94.232.247.168:41360 | 101.12ms | 0️⃣2️⃣",
+            "tag": "REALITY | @lrnbymaa | RU🇷🇺 | 109.120.188.166:443 | 183.15ms | 0️⃣1️⃣",
             "type": "vless",
-            "server": "94.232.247.168",
-            "server_port": 41360,
-            "uuid": "e16a35ea-6715-4e75-9845-d20358bd0876",
-            "flow": "",
+            "server": "109.120.188.166",
+            "server_port": 443,
+            "uuid": "7bc30425-1c2f-4823-b629-90f599a4cbfe",
+            "flow": "xtls-rprx-vision",
             "packet_encoding": "xudp",
             "multiplex": {
                 "enabled": false,
@@ -194,7 +260,7 @@
             },
             "tls": {
                 "enabled": true,
-                "server_name": "yahoo.com",
+                "server_name": "ads.x5.ru",
                 "insecure": false,
                 "utls": {
                     "enabled": true,
@@ -202,13 +268,13 @@
                 },
                 "reality": {
                     "enabled": true,
-                    "public_key": "TY6w1zP-qUFKVCAQdQT2ZEJsZBrPO4hZjZYBSS6h6DU",
-                    "short_id": "1aab45"
+                    "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+                    "short_id": "6ba85179e30d4fc2"
                 }
             }
         },
         {
-            "tag": "REALITY | @lrnbymaa | NL🇳🇱 | 188.253.26.39:442 | 115.28ms | 0️⃣1️⃣",
+            "tag": "REALITY | @lrnbymaa | NL🇳🇱 | 188.253.26.39:442 | 153.49ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "188.253.26.39",
             "server_port": 442,
@@ -236,7 +302,7 @@
             }
         },
         {
-            "tag": "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 104.93ms | 0️⃣1️⃣",
+            "tag": "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 157.53ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "80.240.23.101",
             "server_port": 443,
@@ -260,6 +326,90 @@
                     "enabled": true,
                     "public_key": "HhI0Y1IV5Vks0OqsV6N4Csvaivc1BH_IzoSbw5Ii_3o",
                     "short_id": "008c74"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @FreakConfig | NL🇳🇱 | netherland.boot-lee.ru:8443 | 369.99ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "netherland.boot-lee.ru",
+            "server_port": 8443,
+            "uuid": "05dc09d5-5c56-454b-a34e-6ef743d91e1a",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yandex.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "3JGwSDrfkiCPdU3rvQP5m0z4Ag_UB_2w8Qq3VMXmo28",
+                    "short_id": "abc123"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @flyv2ray | HK🇭🇰 | hk.griffon-guard.com:443 | 366.14ms | 0️⃣2️⃣",
+            "type": "vless",
+            "server": "hk.griffon-guard.com",
+            "server_port": 443,
+            "uuid": "193c75c1-1af1-484a-84ec-14de4828d209",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg",
+                    "short_id": ""
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @flyv2ray | JP🇯🇵 | jp.griffon-guard.com:443 | 706.93ms | 0️⃣3️⃣",
+            "type": "vless",
+            "server": "jp.griffon-guard.com",
+            "server_port": 443,
+            "uuid": "193c75c1-1af1-484a-84ec-14de4828d209",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "yahoo.com",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "IBvNLerjNLpF4OpUX-wGJp8YDZrnKoh-gEItUDNT_Bg",
+                    "short_id": ""
                 }
             }
         },
