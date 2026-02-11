@@ -99,27 +99,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@iP_CF | RELAY🚩 | bedrid.denizhosting.me:443 | 96.6ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | google.com:80 | 8.64ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | 172.233.229.91:14102 | 5.16ms | 0️⃣2️⃣",
-                "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 214.32ms | 0️⃣1️⃣"
+                "@iP_CF | RELAY🚩 | bedrid.denizhosting.me:443 | 235.42ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | google.com:80 | 3.95ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | 172.233.229.91:14102 | 17.86ms | 0️⃣2️⃣",
+                "@FreakConfig | HK🇭🇰 | 8.210.79.212:55185 | 192.4ms | 0️⃣1️⃣",
+                "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 287.77ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@iP_CF | RELAY🚩 | bedrid.denizhosting.me:443 | 96.6ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | google.com:80 | 8.64ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | 172.233.229.91:14102 | 5.16ms | 0️⃣2️⃣",
-                "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 214.32ms | 0️⃣1️⃣"
+                "@iP_CF | RELAY🚩 | bedrid.denizhosting.me:443 | 235.42ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | google.com:80 | 3.95ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | 172.233.229.91:14102 | 17.86ms | 0️⃣2️⃣",
+                "@FreakConfig | HK🇭🇰 | 8.210.79.212:55185 | 192.4ms | 0️⃣1️⃣",
+                "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 287.77ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@iP_CF | RELAY🚩 | bedrid.denizhosting.me:443 | 96.6ms | 0️⃣1️⃣",
+            "tag": "@iP_CF | RELAY🚩 | bedrid.denizhosting.me:443 | 235.42ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "::ffff:ac40:9bd1",
             "server_port": 443,
@@ -155,7 +157,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | US🇺🇸 | google.com:80 | 8.64ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | US🇺🇸 | google.com:80 | 3.95ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.129.132.223",
             "server_port": 80,
@@ -181,7 +183,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | US🇺🇸 | 172.233.229.91:14102 | 5.16ms | 0️⃣2️⃣",
+            "tag": "@prrofile_purple | US🇺🇸 | 172.233.229.91:14102 | 17.86ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "172.233.229.91",
             "server_port": 14102,
@@ -198,7 +200,33 @@
             }
         },
         {
-            "tag": "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 214.32ms | 0️⃣1️⃣",
+            "tag": "@FreakConfig | HK🇭🇰 | 8.210.79.212:55185 | 192.4ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "8.210.79.212",
+            "server_port": 55185,
+            "uuid": "aa3c3018-288b-46f3-af1c-9044e18d6e5b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/Notif_Chat",
+                "headers": {
+                    "Host": "8.210.79.212"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 287.77ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "tr1-smart.adelping.com",
             "server_port": 80,
