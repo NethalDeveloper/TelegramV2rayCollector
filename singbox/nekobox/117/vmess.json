@@ -99,7 +99,6 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "RELAY🚩",
                 "US🇺🇸",
                 "HK🇭🇰",
                 "TR🇹🇷"
@@ -109,21 +108,11 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@iP_CF | RELAY🚩 | bedrid.denizhosting.me:443 | 235.42ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | google.com:80 | 3.95ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | 172.233.229.91:14102 | 17.86ms | 0️⃣2️⃣",
-                "@FreakConfig | HK🇭🇰 | 8.210.79.212:55185 | 192.4ms | 0️⃣1️⃣",
-                "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 287.77ms | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "RELAY🚩",
-            "type": "urltest",
-            "outbounds": [
-                "@iP_CF | RELAY🚩 | bedrid.denizhosting.me:443 | 235.42ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | google.com:80 | 4.49ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | google.com:80 | 2.23ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | 172.233.229.91:14102 | 16.02ms | 0️⃣2️⃣",
+                "@FreakConfig | HK🇭🇰 | 8.210.79.212:55185 | 183.17ms | 0️⃣1️⃣",
+                "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 280.88ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,8 +122,9 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | US🇺🇸 | google.com:80 | 3.95ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | 172.233.229.91:14102 | 17.86ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | google.com:80 | 4.49ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | google.com:80 | 2.23ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | 172.233.229.91:14102 | 16.02ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -144,7 +134,7 @@
             "tag": "HK🇭🇰",
             "type": "urltest",
             "outbounds": [
-                "@FreakConfig | HK🇭🇰 | 8.210.79.212:55185 | 192.4ms | 0️⃣1️⃣"
+                "@FreakConfig | HK🇭🇰 | 8.210.79.212:55185 | 183.17ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -154,18 +144,18 @@
             "tag": "TR🇹🇷",
             "type": "urltest",
             "outbounds": [
-                "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 287.77ms | 0️⃣2️⃣"
+                "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 280.88ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@iP_CF | RELAY🚩 | bedrid.denizhosting.me:443 | 235.42ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | google.com:80 | 4.49ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "::ffff:ac40:9bd1",
-            "server_port": 443,
-            "uuid": "ffece2a9-0296-46a9-8db8-742d29d240ff",
+            "server": "51.79.103.76",
+            "server_port": 80,
+            "uuid": "58fe1542-5290-40ad-815a-77707a81afe5",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -176,28 +166,18 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "bedrid.denizhosting.me",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/ISwpYVR8SjxXcUZEUzVfNURTUC8lV29DXSgsKH1SN0g1JVpDHU1cWigKAC8QRltMCi86ABw4JV14HVMn",
+                "path": "\/\/IOebhLMhl1CTbFHbL95myfRX2",
                 "headers": {
-                    "Host": "::ffff:ac40:9bd1"
+                    "Host": "51.79.103.76"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@prrofile_purple | US🇺🇸 | google.com:80 | 3.95ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | US🇺🇸 | google.com:80 | 2.23ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.129.132.223",
             "server_port": 80,
@@ -223,7 +203,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | US🇺🇸 | 172.233.229.91:14102 | 17.86ms | 0️⃣2️⃣",
+            "tag": "@prrofile_purple | US🇺🇸 | 172.233.229.91:14102 | 16.02ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "172.233.229.91",
             "server_port": 14102,
@@ -240,7 +220,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | HK🇭🇰 | 8.210.79.212:55185 | 192.4ms | 0️⃣1️⃣",
+            "tag": "@FreakConfig | HK🇭🇰 | 8.210.79.212:55185 | 183.17ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "8.210.79.212",
             "server_port": 55185,
@@ -266,7 +246,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 287.77ms | 0️⃣2️⃣",
+            "tag": "@FreakConfig | TR🇹🇷 | tr1-smart.adelping.com:80 | 280.88ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "tr1-smart.adelping.com",
             "server_port": 80,
