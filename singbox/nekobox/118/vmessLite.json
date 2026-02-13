@@ -104,27 +104,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 79.55ms | 0️⃣1️⃣",
-                "@FreakConfig | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 80.91ms | 0️⃣1️⃣",
-                "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 224.99ms | 0️⃣2️⃣",
-                "@FreakConfig | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 83.64ms | 0️⃣3️⃣"
+                "@oneclickvpnkeys | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 67.39ms | 0️⃣1️⃣",
+                "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 246.81ms | 0️⃣1️⃣",
+                "@FreakConfig | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 87.08ms | 0️⃣2️⃣",
+                "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 156.33ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 79.55ms | 0️⃣1️⃣",
-                "@FreakConfig | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 80.91ms | 0️⃣1️⃣",
-                "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 224.99ms | 0️⃣2️⃣",
-                "@FreakConfig | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 83.64ms | 0️⃣3️⃣"
+                "@oneclickvpnkeys | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 67.39ms | 0️⃣1️⃣",
+                "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 246.81ms | 0️⃣1️⃣",
+                "@FreakConfig | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 87.08ms | 0️⃣2️⃣",
+                "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 156.33ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 79.55ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 67.39ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "digitalocean.com",
             "server_port": 8080,
@@ -150,33 +150,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 80.91ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "104.21.69.44",
-            "server_port": 8080,
-            "uuid": "nasnet",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/nasnet\/cdn",
-                "headers": {
-                    "Host": "104.21.69.44"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 224.99ms | 0️⃣2️⃣",
+            "tag": "@FreakConfig | KR🇰🇷 | seoul03.zgjok.com:443 | 246.81ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "seoul03.zgjok.com",
             "server_port": 443,
@@ -212,7 +186,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 83.64ms | 0️⃣3️⃣",
+            "tag": "@FreakConfig | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 87.08ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "tgju.org",
             "server_port": 8080,
@@ -235,6 +209,23 @@
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 156.33ms | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "95.217.25.69",
+            "server_port": 42152,
+            "uuid": "018f4459-056e-4c41-90ce-12cbc2c670b2",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
             }
         },
         {
