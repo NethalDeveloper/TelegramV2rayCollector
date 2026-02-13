@@ -99,25 +99,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | US🇺🇸 | c86s3.portablesubmarines.com:31350 | 27.84ms | 0️⃣1️⃣",
-                "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 179.79ms | 0️⃣1️⃣",
-                "@FreakConfig | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 140.69ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | c86s3.portablesubmarines.com:31350 | 84.84ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 104.19.47.79:2086 | 11.36ms | 0️⃣1️⃣",
+                "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 165.22ms | 0️⃣1️⃣",
+                "@FreakConfig | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 161.21ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | c86s3.portablesubmarines.com:31350 | 27.84ms | 0️⃣1️⃣",
-                "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 179.79ms | 0️⃣1️⃣",
-                "@FreakConfig | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 140.69ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | c86s3.portablesubmarines.com:31350 | 84.84ms | 0️⃣1️⃣",
+                "@Hope_Net | RELAY🚩 | 104.19.47.79:2086 | 11.36ms | 0️⃣1️⃣",
+                "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 165.22ms | 0️⃣1️⃣",
+                "@FreakConfig | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 161.21ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | c86s3.portablesubmarines.com:31350 | 27.84ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | c86s3.portablesubmarines.com:31350 | 84.84ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "c86s3.portablesubmarines.com",
             "server_port": 31350,
@@ -134,7 +136,33 @@
             }
         },
         {
-            "tag": "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 179.79ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | 104.19.47.79:2086 | 11.36ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "104.19.47.79",
+            "server_port": 2086,
+            "uuid": "e9e3cc13-db48-4cc1-8c24-7626439a5339",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/",
+                "headers": {
+                    "Host": "104.19.47.79"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 165.22ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "95.217.25.69",
             "server_port": 42152,
@@ -151,7 +179,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 140.69ms | 0️⃣2️⃣",
+            "tag": "@FreakConfig | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 161.21ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "104.17.77.77",
             "server_port": 8443,
