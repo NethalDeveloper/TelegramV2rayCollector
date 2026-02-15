@@ -108,12 +108,11 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | US🇺🇸 | echopress-bot.global.ssl.fastly.net:80 | 25.58ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | kampong.org:443 | 174.7ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | obdii.cfd:443 | 243.58ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | cdge.avaaaal.ir:8443 | 241.48ms | 0️⃣1️⃣",
-                "@FreakConfig | RELAY🚩 | cdge.avaaaal.ir:8443 | 9.66ms | 0️⃣1️⃣",
-                "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 163.78ms | 0️⃣2️⃣"
+                "@prrofile_purple | US🇺🇸 | echopress-bot.global.ssl.fastly.net:80 | 20.69ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | kampong.org:443 | 127.01ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | cdge.avaaaal.ir:8443 | 199.9ms | 0️⃣1️⃣",
+                "@FreakConfig | RELAY🚩 | cdge.avaaaal.ir:8443 | 6.4ms | 0️⃣1️⃣",
+                "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 118.93ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -123,9 +122,8 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | US🇺🇸 | echopress-bot.global.ssl.fastly.net:80 | 25.58ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | kampong.org:443 | 174.7ms | 0️⃣1️⃣",
-                "@Hope_Net | US🇺🇸 | obdii.cfd:443 | 243.58ms | 0️⃣1️⃣"
+                "@prrofile_purple | US🇺🇸 | echopress-bot.global.ssl.fastly.net:80 | 20.69ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | kampong.org:443 | 127.01ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -135,8 +133,8 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@customv2ray | RELAY🚩 | cdge.avaaaal.ir:8443 | 241.48ms | 0️⃣1️⃣",
-                "@FreakConfig | RELAY🚩 | cdge.avaaaal.ir:8443 | 9.66ms | 0️⃣1️⃣"
+                "@customv2ray | RELAY🚩 | cdge.avaaaal.ir:8443 | 199.9ms | 0️⃣1️⃣",
+                "@FreakConfig | RELAY🚩 | cdge.avaaaal.ir:8443 | 6.4ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -146,14 +144,14 @@
             "tag": "FI🇫🇮",
             "type": "urltest",
             "outbounds": [
-                "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 163.78ms | 0️⃣2️⃣"
+                "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 118.93ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@prrofile_purple | US🇺🇸 | echopress-bot.global.ssl.fastly.net:80 | 25.58ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | US🇺🇸 | echopress-bot.global.ssl.fastly.net:80 | 20.69ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "140.248.128.186",
             "server_port": 80,
@@ -179,7 +177,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | kampong.org:443 | 174.7ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | kampong.org:443 | 127.01ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.129.24.131",
             "server_port": 443,
@@ -215,43 +213,7 @@
             }
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | obdii.cfd:443 | 243.58ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "172.67.71.160",
-            "server_port": 443,
-            "uuid": "05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "obdii.cfd",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/linkws",
-                "headers": {
-                    "Host": "172.67.71.160"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@customv2ray | RELAY🚩 | cdge.avaaaal.ir:8443 | 241.48ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | RELAY🚩 | cdge.avaaaal.ir:8443 | 199.9ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "dll.avaaaal.ir",
             "server_port": 8443,
@@ -287,7 +249,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | RELAY🚩 | cdge.avaaaal.ir:8443 | 9.66ms | 0️⃣1️⃣",
+            "tag": "@FreakConfig | RELAY🚩 | cdge.avaaaal.ir:8443 | 6.4ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "dll.avaaaal.ir",
             "server_port": 8443,
@@ -323,7 +285,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 163.78ms | 0️⃣2️⃣",
+            "tag": "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 118.93ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "95.217.25.69",
             "server_port": 42152,
