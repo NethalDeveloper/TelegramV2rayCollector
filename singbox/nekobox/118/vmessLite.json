@@ -104,29 +104,85 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@prrofile_purple | US🇺🇸 | echopress-bot.global.ssl.fastly.net:80 | 25.39ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | cdge.avaaaal.ir:8443 | 236.48ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | kampong.org:443 | 64.24ms | 0️⃣1️⃣",
-                "@FreakConfig | RELAY🚩 | cdge.avaaaal.ir:8443 | 14.55ms | 0️⃣1️⃣",
-                "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 145.29ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 31.25ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 2.74ms | 0️⃣2️⃣",
+                "@prrofile_purple | US🇺🇸 | echopress-bot.global.ssl.fastly.net:80 | 5.62ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | cdge.avaaaal.ir:8443 | 177.83ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | kampong.org:443 | 172.64ms | 0️⃣1️⃣",
+                "@FreakConfig | RELAY🚩 | cdge.avaaaal.ir:8443 | 2.73ms | 0️⃣1️⃣",
+                "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 171.69ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@prrofile_purple | US🇺🇸 | echopress-bot.global.ssl.fastly.net:80 | 25.39ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | cdge.avaaaal.ir:8443 | 236.48ms | 0️⃣1️⃣",
-                "@v2ray1_ng | US🇺🇸 | kampong.org:443 | 64.24ms | 0️⃣1️⃣",
-                "@FreakConfig | RELAY🚩 | cdge.avaaaal.ir:8443 | 14.55ms | 0️⃣1️⃣",
-                "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 145.29ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 31.25ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 2.74ms | 0️⃣2️⃣",
+                "@prrofile_purple | US🇺🇸 | echopress-bot.global.ssl.fastly.net:80 | 5.62ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | cdge.avaaaal.ir:8443 | 177.83ms | 0️⃣1️⃣",
+                "@v2ray1_ng | US🇺🇸 | kampong.org:443 | 172.64ms | 0️⃣1️⃣",
+                "@FreakConfig | RELAY🚩 | cdge.avaaaal.ir:8443 | 2.73ms | 0️⃣1️⃣",
+                "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 171.69ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@prrofile_purple | US🇺🇸 | echopress-bot.global.ssl.fastly.net:80 | 25.39ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 31.25ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "digitalocean.com",
+            "server_port": 8080,
+            "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/NASNET\/cdn",
+                "headers": {
+                    "Host": "digitalocean.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@oneclickvpnkeys | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 2.74ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "104.19.174.68",
+            "server_port": 8080,
+            "uuid": "e8b1500b-e9e8-5492-8312-f4eadf7d0767",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/NASNET\/cdn",
+                "headers": {
+                    "Host": "104.19.174.68"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@prrofile_purple | US🇺🇸 | echopress-bot.global.ssl.fastly.net:80 | 5.62ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "140.248.128.186",
             "server_port": 80,
@@ -152,7 +208,7 @@
             }
         },
         {
-            "tag": "@customv2ray | RELAY🚩 | cdge.avaaaal.ir:8443 | 236.48ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | RELAY🚩 | cdge.avaaaal.ir:8443 | 177.83ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "dll.avaaaal.ir",
             "server_port": 8443,
@@ -188,7 +244,7 @@
             }
         },
         {
-            "tag": "@v2ray1_ng | US🇺🇸 | kampong.org:443 | 64.24ms | 0️⃣1️⃣",
+            "tag": "@v2ray1_ng | US🇺🇸 | kampong.org:443 | 172.64ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.129.24.131",
             "server_port": 443,
@@ -224,7 +280,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | RELAY🚩 | cdge.avaaaal.ir:8443 | 14.55ms | 0️⃣1️⃣",
+            "tag": "@FreakConfig | RELAY🚩 | cdge.avaaaal.ir:8443 | 2.73ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "dll.avaaaal.ir",
             "server_port": 8443,
@@ -260,7 +316,7 @@
             }
         },
         {
-            "tag": "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 145.29ms | 0️⃣2️⃣",
+            "tag": "@FreakConfig | FI🇫🇮 | 95.217.25.69:42152 | 171.69ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "95.217.25.69",
             "server_port": 42152,
