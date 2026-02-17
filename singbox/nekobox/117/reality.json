@@ -99,9 +99,8 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "KZ🇰🇿",
                 "NL🇳🇱",
-                "RU🇷🇺",
-                "MD🇲🇩",
                 "DE🇩🇪"
             ]
         },
@@ -109,12 +108,21 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @NIM_VPN_ir | NL🇳🇱 | 51.158.206.103:23576 | 158.33ms | 0️⃣1️⃣",
-                "REALITY | @prrofile_purple | RU🇷🇺 | free.joserv.online:443 | 373.54ms | 0️⃣2️⃣",
-                "REALITY | @ShadowSocks_s | MD🇲🇩 | 93.185.165.50:55211 | 197.27ms | 0️⃣2️⃣",
-                "REALITY | @customv2ray | DE🇩🇪 | 57.129.49.1:23576 | 150.47ms | 0️⃣3️⃣",
-                "REALITY | @vmess_vless_v2rayng | DE🇩🇪 | 57.129.53.181:23576 | 150.53ms | 0️⃣1️⃣",
-                "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 159.44ms | 0️⃣1️⃣"
+                "REALITY | @NIM_VPN_ir | KZ🇰🇿 | 212.111.84.187:8443 | 179.84ms | 0️⃣1️⃣",
+                "REALITY | @NIM_VPN_ir | NL🇳🇱 | 51.158.206.103:23576 | 92.61ms | 0️⃣2️⃣",
+                "REALITY | @customv2ray | DE🇩🇪 | 57.129.49.1:23576 | 89.58ms | 0️⃣3️⃣",
+                "REALITY | @vmess_vless_v2rayng | DE🇩🇪 | 57.129.53.181:23576 | 90.87ms | 0️⃣1️⃣",
+                "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 94.04ms | 0️⃣1️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "KZ🇰🇿",
+            "type": "urltest",
+            "outbounds": [
+                "REALITY | @NIM_VPN_ir | KZ🇰🇿 | 212.111.84.187:8443 | 179.84ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -124,27 +132,7 @@
             "tag": "NL🇳🇱",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @NIM_VPN_ir | NL🇳🇱 | 51.158.206.103:23576 | 158.33ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "RU🇷🇺",
-            "type": "urltest",
-            "outbounds": [
-                "REALITY | @prrofile_purple | RU🇷🇺 | free.joserv.online:443 | 373.54ms | 0️⃣2️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "MD🇲🇩",
-            "type": "urltest",
-            "outbounds": [
-                "REALITY | @ShadowSocks_s | MD🇲🇩 | 93.185.165.50:55211 | 197.27ms | 0️⃣2️⃣"
+                "REALITY | @NIM_VPN_ir | NL🇳🇱 | 51.158.206.103:23576 | 92.61ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -154,16 +142,44 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @customv2ray | DE🇩🇪 | 57.129.49.1:23576 | 150.47ms | 0️⃣3️⃣",
-                "REALITY | @vmess_vless_v2rayng | DE🇩🇪 | 57.129.53.181:23576 | 150.53ms | 0️⃣1️⃣",
-                "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 159.44ms | 0️⃣1️⃣"
+                "REALITY | @customv2ray | DE🇩🇪 | 57.129.49.1:23576 | 89.58ms | 0️⃣3️⃣",
+                "REALITY | @vmess_vless_v2rayng | DE🇩🇪 | 57.129.53.181:23576 | 90.87ms | 0️⃣1️⃣",
+                "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 94.04ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "REALITY | @NIM_VPN_ir | NL🇳🇱 | 51.158.206.103:23576 | 158.33ms | 0️⃣1️⃣",
+            "tag": "REALITY | @NIM_VPN_ir | KZ🇰🇿 | 212.111.84.187:8443 | 179.84ms | 0️⃣1️⃣",
+            "type": "vless",
+            "server": "212.111.84.187",
+            "server_port": 8443,
+            "uuid": "6d39596c-b569-4a61-86c3-28cfb83a4c95",
+            "flow": "xtls-rprx-vision",
+            "packet_encoding": "xudp",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "m.vk.ru",
+                "insecure": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                },
+                "reality": {
+                    "enabled": true,
+                    "public_key": "Qddpg8luihgzgx4g4uMJklXzlrMCd8L1igJSWrRUvSc",
+                    "short_id": "887c0d72e771a934"
+                }
+            }
+        },
+        {
+            "tag": "REALITY | @NIM_VPN_ir | NL🇳🇱 | 51.158.206.103:23576 | 92.61ms | 0️⃣2️⃣",
             "type": "vless",
             "server": "51.158.206.103",
             "server_port": 23576,
@@ -191,63 +207,7 @@
             }
         },
         {
-            "tag": "REALITY | @prrofile_purple | RU🇷🇺 | free.joserv.online:443 | 373.54ms | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "free.joserv.online",
-            "server_port": 443,
-            "uuid": "a88ea8bf-7001-4e29-a9bb-379f6778195c",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "max.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "n7PbThf3Y4O9x0Ya1sENteFwg7k4INOTnI64MxVz5UQ",
-                    "short_id": "0123456789abcdef"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @ShadowSocks_s | MD🇲🇩 | 93.185.165.50:55211 | 197.27ms | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "93.185.165.50",
-            "server_port": 55211,
-            "uuid": "1a9b771a-b717-49c8-9e93-f6b3d508d637",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "5D6U_DRxkNF9I6Sa87j6jvHD_HvhZ9j53rAbZE8Y7lQ",
-                    "short_id": "1885"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @customv2ray | DE🇩🇪 | 57.129.49.1:23576 | 150.47ms | 0️⃣3️⃣",
+            "tag": "REALITY | @customv2ray | DE🇩🇪 | 57.129.49.1:23576 | 89.58ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "57.129.49.1",
             "server_port": 23576,
@@ -275,7 +235,7 @@
             }
         },
         {
-            "tag": "REALITY | @vmess_vless_v2rayng | DE🇩🇪 | 57.129.53.181:23576 | 150.53ms | 0️⃣1️⃣",
+            "tag": "REALITY | @vmess_vless_v2rayng | DE🇩🇪 | 57.129.53.181:23576 | 90.87ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "57.129.53.181",
             "server_port": 23576,
@@ -303,7 +263,7 @@
             }
         },
         {
-            "tag": "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 159.44ms | 0️⃣1️⃣",
+            "tag": "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 94.04ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "80.240.23.101",
             "server_port": 443,
