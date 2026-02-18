@@ -110,12 +110,12 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 157.173.206.47:57449 | 8.3ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | v2ray.codefyinc.com:443 | 138.42ms | 0️⃣2️⃣",
-                "@prrofile_purple | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 91.88ms | 0️⃣1️⃣",
-                "@free1_vpn | US🇺🇸 | kampong.org:443 | 40.1ms | 0️⃣1️⃣",
-                "@FreakConfig | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 74.11ms | 0️⃣1️⃣",
-                "@FreakConfig | RELAY🚩 | seoul03.zgjok.com:443 | 81.48ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 157.173.206.47:57449 | 11.19ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | v2ray.codefyinc.com:443 | 162.41ms | 0️⃣2️⃣",
+                "@free1_vpn | US🇺🇸 | kampong.org:443 | 171.15ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 172.233.229.91:14102 | 18.34ms | 0️⃣1️⃣",
+                "@FreakConfig | RELAY🚩 | seoul03.zgjok.com:443 | 45.98ms | 0️⃣1️⃣",
+                "@FreakConfig | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 91.82ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -125,10 +125,10 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 157.173.206.47:57449 | 8.3ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | US🇺🇸 | v2ray.codefyinc.com:443 | 138.42ms | 0️⃣2️⃣",
-                "@prrofile_purple | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 91.88ms | 0️⃣1️⃣",
-                "@free1_vpn | US🇺🇸 | kampong.org:443 | 40.1ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 157.173.206.47:57449 | 11.19ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | US🇺🇸 | v2ray.codefyinc.com:443 | 162.41ms | 0️⃣2️⃣",
+                "@free1_vpn | US🇺🇸 | kampong.org:443 | 171.15ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | 172.233.229.91:14102 | 18.34ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -138,15 +138,15 @@
             "tag": "RELAY🚩",
             "type": "urltest",
             "outbounds": [
-                "@FreakConfig | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 74.11ms | 0️⃣1️⃣",
-                "@FreakConfig | RELAY🚩 | seoul03.zgjok.com:443 | 81.48ms | 0️⃣2️⃣"
+                "@FreakConfig | RELAY🚩 | seoul03.zgjok.com:443 | 45.98ms | 0️⃣1️⃣",
+                "@FreakConfig | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 91.82ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 157.173.206.47:57449 | 8.3ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 157.173.206.47:57449 | 11.19ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "157.173.206.47",
             "server_port": 57449,
@@ -163,7 +163,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | v2ray.codefyinc.com:443 | 138.42ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | v2ray.codefyinc.com:443 | 162.41ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "162.159.152.4",
             "server_port": 443,
@@ -199,43 +199,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 91.88ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "104.17.77.77",
-            "server_port": 8443,
-            "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "v2ray1.dozapp.xyz",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/lMnsZUN4\/",
-                "headers": {
-                    "Host": "104.17.77.77"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@free1_vpn | US🇺🇸 | kampong.org:443 | 40.1ms | 0️⃣1️⃣",
+            "tag": "@free1_vpn | US🇺🇸 | kampong.org:443 | 171.15ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.129.24.131",
             "server_port": 443,
@@ -271,11 +235,11 @@
             }
         },
         {
-            "tag": "@FreakConfig | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 74.11ms | 0️⃣1️⃣",
+            "tag": "@v2Line | US🇺🇸 | 172.233.229.91:14102 | 18.34ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.21.69.44",
-            "server_port": 8080,
-            "uuid": "nasnet",
+            "server": "172.233.229.91",
+            "server_port": 14102,
+            "uuid": "27ba87fc-583f-4763-9060-83cf0b9264db",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -285,19 +249,10 @@
                 "enabled": false,
                 "protocol": "smux",
                 "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/nasnet\/cdn",
-                "headers": {
-                    "Host": "104.21.69.44"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@FreakConfig | RELAY🚩 | seoul03.zgjok.com:443 | 81.48ms | 0️⃣2️⃣",
+            "tag": "@FreakConfig | RELAY🚩 | seoul03.zgjok.com:443 | 45.98ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "seoul03.zgjok.com",
             "server_port": 443,
@@ -327,6 +282,32 @@
                 "path": "\/\/",
                 "headers": {
                     "Host": "seoul03.zgjok.com"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@FreakConfig | RELAY🚩 | nasnet-511952424.mcitel.co:8080 | 91.82ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "104.21.69.44",
+            "server_port": 8080,
+            "uuid": "nasnet",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/nasnet\/cdn",
+                "headers": {
+                    "Host": "104.21.69.44"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
