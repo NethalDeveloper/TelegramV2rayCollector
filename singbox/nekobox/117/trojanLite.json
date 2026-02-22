@@ -99,54 +99,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@PrivateVPNs | DE🇩🇪 | 52.57.37.167:22222 | 176.66ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 35.181.232.8:22222 | 145.34ms | 0️⃣2️⃣",
-                "@DirectVPN | DE🇩🇪 | 52.57.37.167:22223 | 160.68ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | CH🇨🇭 | 185.18.250.245:443 | 1.72ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | CA🇨🇦 | ca05.oportal.cc:443 | 71.51ms | 0️⃣2️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | 172.64.152.23:443 | 1.79ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | v1.dabache.top:443 | 1041.58ms | 0️⃣3️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 35.181.232.8:22222 | 112.09ms | 0️⃣1️⃣",
+                "@DirectVPN | DE🇩🇪 | 52.57.37.167:22223 | 150.12ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | CA🇨🇦 | ca05.oportal.cc:443 | 148.37ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | 172.64.152.23:443 | 2.3ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | v1.dabache.top:443 | 1183.57ms | 0️⃣3️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@PrivateVPNs | DE🇩🇪 | 52.57.37.167:22222 | 176.66ms | 0️⃣1️⃣",
-                "@PrivateVPNs | FR🇫🇷 | 35.181.232.8:22222 | 145.34ms | 0️⃣2️⃣",
-                "@DirectVPN | DE🇩🇪 | 52.57.37.167:22223 | 160.68ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | CH🇨🇭 | 185.18.250.245:443 | 1.72ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | CA🇨🇦 | ca05.oportal.cc:443 | 71.51ms | 0️⃣2️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | 172.64.152.23:443 | 1.79ms | 0️⃣1️⃣",
-                "@vmess_vless_v2rayng | RELAY🚩 | v1.dabache.top:443 | 1041.58ms | 0️⃣3️⃣"
+                "@PrivateVPNs | FR🇫🇷 | 35.181.232.8:22222 | 112.09ms | 0️⃣1️⃣",
+                "@DirectVPN | DE🇩🇪 | 52.57.37.167:22223 | 150.12ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | CA🇨🇦 | ca05.oportal.cc:443 | 148.37ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | 172.64.152.23:443 | 2.3ms | 0️⃣1️⃣",
+                "@vmess_vless_v2rayng | RELAY🚩 | v1.dabache.top:443 | 1183.57ms | 0️⃣3️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@PrivateVPNs | DE🇩🇪 | 52.57.37.167:22222 | 176.66ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "52.57.37.167",
-            "server_port": 22222,
-            "password": "telegram-id-privatevpns",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "trojan.burgerip.co.uk",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@PrivateVPNs | FR🇫🇷 | 35.181.232.8:22222 | 145.34ms | 0️⃣2️⃣",
+            "tag": "@PrivateVPNs | FR🇫🇷 | 35.181.232.8:22222 | 112.09ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "35.181.232.8",
             "server_port": 22222,
@@ -167,7 +142,7 @@
             }
         },
         {
-            "tag": "@DirectVPN | DE🇩🇪 | 52.57.37.167:22223 | 160.68ms | 0️⃣1️⃣",
+            "tag": "@DirectVPN | DE🇩🇪 | 52.57.37.167:22223 | 150.12ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "52.57.37.167",
             "server_port": 22223,
@@ -188,35 +163,7 @@
             }
         },
         {
-            "tag": "@oneclickvpnkeys | CH🇨🇭 | 185.18.250.245:443 | 1.72ms | 0️⃣1️⃣",
-            "type": "trojan",
-            "server": "185.18.250.245",
-            "server_port": 443,
-            "password": "humanity",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "www.calmlunch.com",
-                "insecure": true,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/assignment",
-                "headers": {
-                    "Host": "www.calmlunch.com"
-                }
-            }
-        },
-        {
-            "tag": "@oneclickvpnkeys | CA🇨🇦 | ca05.oportal.cc:443 | 71.51ms | 0️⃣2️⃣",
+            "tag": "@oneclickvpnkeys | CA🇨🇦 | ca05.oportal.cc:443 | 148.37ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "ca05.oportal.cc",
             "server_port": 443,
@@ -237,7 +184,7 @@
             }
         },
         {
-            "tag": "@vmess_vless_v2rayng | RELAY🚩 | 172.64.152.23:443 | 1.79ms | 0️⃣1️⃣",
+            "tag": "@vmess_vless_v2rayng | RELAY🚩 | 172.64.152.23:443 | 2.3ms | 0️⃣1️⃣",
             "type": "trojan",
             "server": "172.64.152.23",
             "server_port": 443,
@@ -265,7 +212,7 @@
             }
         },
         {
-            "tag": "@vmess_vless_v2rayng | RELAY🚩 | v1.dabache.top:443 | 1041.58ms | 0️⃣3️⃣",
+            "tag": "@vmess_vless_v2rayng | RELAY🚩 | v1.dabache.top:443 | 1183.57ms | 0️⃣3️⃣",
             "type": "trojan",
             "server": "v1.dabache.top",
             "server_port": 443,
