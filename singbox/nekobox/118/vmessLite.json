@@ -104,29 +104,35 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | US🇺🇸 | kampong.org:443 | 299.25ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 83.23ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | kampong.org:443 | 89.1ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 47.242.192.233:52190 | 171.01ms | 0️⃣2️⃣",
-                "@FreakConfig | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 99.32ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | kampong.org:443 | 36.27ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 141.8ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 230.69ms | 0️⃣1️⃣",
+                "@v2Line | HK🇭🇰 | 47.242.192.233:52190 | 161.91ms | 0️⃣1️⃣",
+                "@v2Line | TW🇹🇼 | 165.154.195.38:35034 | 156.9ms | 0️⃣2️⃣",
+                "@v2Line | HK🇭🇰 | 149.88.95.217:35760 | 164.83ms | 0️⃣3️⃣",
+                "@FreakConfig | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 48.66ms | 0️⃣1️⃣",
+                "@FreakConfig | HK🇭🇰 | 8.210.79.212:55185 | 160.54ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | kampong.org:443 | 299.25ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 83.23ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | kampong.org:443 | 89.1ms | 0️⃣1️⃣",
-                "@v2Line | HK🇭🇰 | 47.242.192.233:52190 | 171.01ms | 0️⃣2️⃣",
-                "@FreakConfig | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 99.32ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | kampong.org:443 | 36.27ms | 0️⃣1️⃣",
+                "@prrofile_purple | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 141.8ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 230.69ms | 0️⃣1️⃣",
+                "@v2Line | HK🇭🇰 | 47.242.192.233:52190 | 161.91ms | 0️⃣1️⃣",
+                "@v2Line | TW🇹🇼 | 165.154.195.38:35034 | 156.9ms | 0️⃣2️⃣",
+                "@v2Line | HK🇭🇰 | 149.88.95.217:35760 | 164.83ms | 0️⃣3️⃣",
+                "@FreakConfig | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 48.66ms | 0️⃣1️⃣",
+                "@FreakConfig | HK🇭🇰 | 8.210.79.212:55185 | 160.54ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | kampong.org:443 | 299.25ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | kampong.org:443 | 36.27ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.128.216.125",
             "server_port": 443,
@@ -162,7 +168,43 @@
             }
         },
         {
-            "tag": "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 83.23ms | 0️⃣1️⃣",
+            "tag": "@prrofile_purple | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 141.8ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "104.17.77.77",
+            "server_port": 8443,
+            "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "v2ray1.dozapp.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/lMnsZUN4\/",
+                "headers": {
+                    "Host": "104.17.77.77"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 230.69ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.24.169.183",
             "server_port": 8080,
@@ -188,43 +230,7 @@
             }
         },
         {
-            "tag": "@v2Line | US🇺🇸 | kampong.org:443 | 89.1ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "57.129.28.214",
-            "server_port": 443,
-            "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "kampong.org",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/linkvws",
-                "headers": {
-                    "Host": "57.129.28.214"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2Line | HK🇭🇰 | 47.242.192.233:52190 | 171.01ms | 0️⃣2️⃣",
+            "tag": "@v2Line | HK🇭🇰 | 47.242.192.233:52190 | 161.91ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "47.242.192.233",
             "server_port": 52190,
@@ -241,7 +247,41 @@
             }
         },
         {
-            "tag": "@FreakConfig | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 99.32ms | 0️⃣1️⃣",
+            "tag": "@v2Line | TW🇹🇼 | 165.154.195.38:35034 | 156.9ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "165.154.195.38",
+            "server_port": 35034,
+            "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@v2Line | HK🇭🇰 | 149.88.95.217:35760 | 164.83ms | 0️⃣3️⃣",
+            "type": "vmess",
+            "server": "149.88.95.217",
+            "server_port": 35760,
+            "uuid": "17e96792-d8c3-4741-9c34-e5d1c11d754f",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            }
+        },
+        {
+            "tag": "@FreakConfig | RELAY🚩 | nasnet-162191099.sharghdaily.co:8080 | 48.66ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "tgju.org",
             "server_port": 8080,
@@ -261,6 +301,32 @@
                 "path": "\/\/nasnet\/cdn?ed=2560",
                 "headers": {
                     "Host": "tgju.org"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@FreakConfig | HK🇭🇰 | 8.210.79.212:55185 | 160.54ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "8.210.79.212",
+            "server_port": 55185,
+            "uuid": "aa3c3018-288b-46f3-af1c-9044e18d6e5b",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/Notif_Chat",
+                "headers": {
+                    "Host": "8.210.79.212"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
