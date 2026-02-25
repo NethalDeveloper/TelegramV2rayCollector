@@ -104,19 +104,15 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "DE🇩🇪",
-                "FI🇫🇮"
+                "DE🇩🇪"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @NIM_VPN_ir | DE🇩🇪 | 80.75.212.10:443 | 93ms | 0️⃣2️⃣",
-                "REALITY | @lrnbymaa | DE🇩🇪 | he-mtn1-h.pydari.com:8443 | 190.01ms | 0️⃣3️⃣",
-                "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 94.25ms | 0️⃣1️⃣",
-                "REALITY | @FreakConfig | DE🇩🇪 | 64.188.104.168:40721 | 88.05ms | 0️⃣1️⃣",
-                "REALITY | @prrofile_purple | FI🇫🇮 | my.kiomars.shop:6664 | 355.35ms | 0️⃣1️⃣"
+                "REALITY | @lrnbymaa | DE🇩🇪 | he-mtn1-h.pydari.com:8443 | 206.34ms | 0️⃣3️⃣",
+                "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 139.56ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -126,55 +122,15 @@
             "tag": "DE🇩🇪",
             "type": "urltest",
             "outbounds": [
-                "REALITY | @NIM_VPN_ir | DE🇩🇪 | 80.75.212.10:443 | 93ms | 0️⃣2️⃣",
-                "REALITY | @lrnbymaa | DE🇩🇪 | he-mtn1-h.pydari.com:8443 | 190.01ms | 0️⃣3️⃣",
-                "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 94.25ms | 0️⃣1️⃣",
-                "REALITY | @FreakConfig | DE🇩🇪 | 64.188.104.168:40721 | 88.05ms | 0️⃣1️⃣"
+                "REALITY | @lrnbymaa | DE🇩🇪 | he-mtn1-h.pydari.com:8443 | 206.34ms | 0️⃣3️⃣",
+                "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 139.56ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "FI🇫🇮",
-            "type": "urltest",
-            "outbounds": [
-                "REALITY | @prrofile_purple | FI🇫🇮 | my.kiomars.shop:6664 | 355.35ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "REALITY | @NIM_VPN_ir | DE🇩🇪 | 80.75.212.10:443 | 93ms | 0️⃣2️⃣",
-            "type": "vless",
-            "server": "80.75.212.10",
-            "server_port": 443,
-            "uuid": "eb071647-72a6-46be-8e89-ff3d228d52f6",
-            "flow": "xtls-rprx-vision",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "nl.jojack.ru",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "sxyxV0_y1o09gKJBL9AJJyRSEg6MiYK0j-kb5unzHh4",
-                    "short_id": "6bb3c7f9f97b45b8"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @lrnbymaa | DE🇩🇪 | he-mtn1-h.pydari.com:8443 | 190.01ms | 0️⃣3️⃣",
+            "tag": "REALITY | @lrnbymaa | DE🇩🇪 | he-mtn1-h.pydari.com:8443 | 206.34ms | 0️⃣3️⃣",
             "type": "vless",
             "server": "he-mtn1-h.pydari.com",
             "server_port": 8443,
@@ -202,7 +158,7 @@
             }
         },
         {
-            "tag": "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 94.25ms | 0️⃣1️⃣",
+            "tag": "REALITY | @V2rayngninja | DE🇩🇪 | 80.240.23.101:443 | 139.56ms | 0️⃣1️⃣",
             "type": "vless",
             "server": "80.240.23.101",
             "server_port": 443,
@@ -226,62 +182,6 @@
                     "enabled": true,
                     "public_key": "HhI0Y1IV5Vks0OqsV6N4Csvaivc1BH_IzoSbw5Ii_3o",
                     "short_id": "008c74"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @FreakConfig | DE🇩🇪 | 64.188.104.168:40721 | 88.05ms | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "64.188.104.168",
-            "server_port": 40721,
-            "uuid": "bf3e8944-8d26-47de-8748-b9aa74cce974",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "yahoo.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "TUZgwzcTvoROSbgnqMh3WorXVMxQNIF2zsEM39FQbyk",
-                    "short_id": "df8611c07d"
-                }
-            }
-        },
-        {
-            "tag": "REALITY | @prrofile_purple | FI🇫🇮 | my.kiomars.shop:6664 | 355.35ms | 0️⃣1️⃣",
-            "type": "vless",
-            "server": "my.kiomars.shop",
-            "server_port": 6664,
-            "uuid": "cfa44910-d8e0-4469-8e0c-88a9f5e96e6b",
-            "flow": "",
-            "packet_encoding": "xudp",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "play.google.com",
-                "insecure": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                },
-                "reality": {
-                    "enabled": true,
-                    "public_key": "RSnbrHpLJYL8AtxWie8gbcnfs68h9rHAZX-gS3EQtSM",
-                    "short_id": "c3b6ed4da7a983c7"
                 }
             }
         },
