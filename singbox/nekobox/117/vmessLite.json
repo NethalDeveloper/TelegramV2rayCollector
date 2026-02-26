@@ -99,35 +99,71 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | TR🇹🇷 | tr1-smart.adelping.com.:80 | 222.18ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | RELAY🚩 | bnhhy.1ll.ccwu.cc:80 | 333.47ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | RELAY🚩 | yyynm.2nn.ccwu.cc:80 | 407.36ms | 0️⃣3️⃣",
-                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 16.21ms | 0️⃣1️⃣",
-                "@v2Line | CY🇨🇾 | 45.12.132.183:80 | 166.99ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 144.2ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 45.95ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | HK🇭🇰 | 8.210.197.138:1006 | 190.46ms | 0️⃣2️⃣",
+                "@prrofile_purple | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 100.84ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 55.71ms | 0️⃣1️⃣",
+                "@v2Line | CY🇨🇾 | 45.12.132.183:80 | 137.26ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 96.17ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | TR🇹🇷 | tr1-smart.adelping.com.:80 | 222.18ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | RELAY🚩 | bnhhy.1ll.ccwu.cc:80 | 333.47ms | 0️⃣2️⃣",
-                "@oneclickvpnkeys | RELAY🚩 | yyynm.2nn.ccwu.cc:80 | 407.36ms | 0️⃣3️⃣",
-                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 16.21ms | 0️⃣1️⃣",
-                "@v2Line | CY🇨🇾 | 45.12.132.183:80 | 166.99ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 144.2ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 45.95ms | 0️⃣1️⃣",
+                "@oneclickvpnkeys | HK🇭🇰 | 8.210.197.138:1006 | 190.46ms | 0️⃣2️⃣",
+                "@prrofile_purple | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 100.84ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 55.71ms | 0️⃣1️⃣",
+                "@v2Line | CY🇨🇾 | 45.12.132.183:80 | 137.26ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 96.17ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | TR🇹🇷 | tr1-smart.adelping.com.:80 | 222.18ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 45.95ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "104.26.15.137",
-            "server_port": 80,
-            "uuid": "43dcdce1-3cea-4193-bc8d-90b92071d779",
+            "server": "209.126.84.189",
+            "server_port": 443,
+            "uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "209.126.84.189",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/vmessws",
+                "headers": {
+                    "Host": "209.126.84.189"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@oneclickvpnkeys | HK🇭🇰 | 8.210.197.138:1006 | 190.46ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "8.210.197.138",
+            "server_port": 1006,
+            "uuid": "5075953b-cc1b-4b2c-e3f6-df4ca6b8e11c",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -142,18 +178,18 @@
                 "type": "ws",
                 "path": "\/\/",
                 "headers": {
-                    "Host": "104.26.15.137"
+                    "Host": "8.210.197.138"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@oneclickvpnkeys | RELAY🚩 | bnhhy.1ll.ccwu.cc:80 | 333.47ms | 0️⃣2️⃣",
+            "tag": "@prrofile_purple | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 100.84ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "bnhhy.1ll.ccwu.cc",
-            "server_port": 80,
-            "uuid": "4e45c1b4-9107-45dd-9995-cdf7cbb44d9d",
+            "server": "104.17.77.77",
+            "server_port": 8443,
+            "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -164,44 +200,28 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/iSRWSKUJKNuXvVzsYHmsMrnO",
-                "headers": {
-                    "Host": "bnhhy.1ll.ccwu.cc"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@oneclickvpnkeys | RELAY🚩 | yyynm.2nn.ccwu.cc:80 | 407.36ms | 0️⃣3️⃣",
-            "type": "vmess",
-            "server": "yyynm.2nn.ccwu.cc",
-            "server_port": 80,
-            "uuid": "4e45c1b4-9107-45dd-9995-cdf7cbb44d9d",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
+            "tls": {
+                "enabled": true,
+                "server_name": "v2ray1.dozapp.xyz",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
             },
             "transport": {
                 "type": "ws",
-                "path": "\/\/iSRWSKUJKNuXvVzsYHmsMrnO",
+                "path": "\/\/lMnsZUN4\/",
                 "headers": {
-                    "Host": "yyynm.2nn.ccwu.cc"
+                    "Host": "104.17.77.77"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 16.21ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 55.71ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.24.169.183",
             "server_port": 8080,
@@ -227,7 +247,7 @@
             }
         },
         {
-            "tag": "@v2Line | CY🇨🇾 | 45.12.132.183:80 | 166.99ms | 0️⃣1️⃣",
+            "tag": "@v2Line | CY🇨🇾 | 45.12.132.183:80 | 137.26ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "45.12.132.183",
             "server_port": 80,
@@ -253,7 +273,7 @@
             }
         },
         {
-            "tag": "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 144.2ms | 0️⃣2️⃣",
+            "tag": "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 96.17ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "57.128.189.240",
             "server_port": 443,
