@@ -104,29 +104,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 17.84ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 134.49ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 88.65ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 109.77ms | 0️⃣1️⃣",
-                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 156.05ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 9.04ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 43.2ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 100.67ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 17.84ms | 0️⃣1️⃣",
-                "@prrofile_purple | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 134.49ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 88.65ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 109.77ms | 0️⃣1️⃣",
-                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 156.05ms | 0️⃣2️⃣"
+                "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 9.04ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 43.2ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 100.67ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 17.84ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 9.04ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "209.126.84.189",
             "server_port": 443,
@@ -162,43 +158,7 @@
             }
         },
         {
-            "tag": "@prrofile_purple | US🇺🇸 | v2ray1.dozapp.xyz:8443 | 134.49ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "104.17.77.77",
-            "server_port": 8443,
-            "uuid": "60441548-b68e-43b2-8191-e3b884be4b3c",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "v2ray1.dozapp.xyz",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/lMnsZUN4\/",
-                "headers": {
-                    "Host": "104.17.77.77"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 88.65ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 43.2ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.24.169.183",
             "server_port": 8080,
@@ -224,7 +184,7 @@
             }
         },
         {
-            "tag": "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 109.77ms | 0️⃣1️⃣",
+            "tag": "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 100.67ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.128.189.240",
             "server_port": 443,
@@ -254,32 +214,6 @@
                 "path": "\/\/linkvws",
                 "headers": {
                     "Host": "57.128.189.240"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 156.05ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "185.104.189.38",
-            "server_port": 80,
-            "uuid": "43dcdce1-3cea-4193-bc8d-90b92071d779",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "185.104.189.38"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
