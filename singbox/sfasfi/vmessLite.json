@@ -102,31 +102,29 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 118.28ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | ID🇮🇩 | neva.azlan.biz.id:443 | 463.01ms | 0️⃣2️⃣",
-                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 63.73ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 123.07ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | NL🇳🇱 | 51.158.151.24:20104 | 97.69ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 39.97ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 96.37ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 118.28ms | 0️⃣1️⃣",
-                "@oneclickvpnkeys | ID🇮🇩 | neva.azlan.biz.id:443 | 463.01ms | 0️⃣2️⃣",
-                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 63.73ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 123.07ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | NL🇳🇱 | 51.158.151.24:20104 | 97.69ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 39.97ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 96.37ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | US🇺🇸 | 209.126.84.189:443 | 118.28ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | NL🇳🇱 | 51.158.151.24:20104 | 97.69ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "209.126.84.189",
-            "server_port": 443,
-            "uuid": "2c981164-9b93-4bca-94ff-b78d3f8498d7",
+            "server": "51.158.151.24",
+            "server_port": 20104,
+            "uuid": "40e306a6-7cab-40ac-a085-a961895eb11b",
             "security": "auto",
             "alter_id": 0,
             "global_padding": false,
@@ -137,64 +135,18 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": "209.126.84.189",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/\/vmessws",
+                "path": "\/\/arki",
                 "headers": {
-                    "Host": "209.126.84.189"
+                    "Host": "51.158.151.24"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@oneclickvpnkeys | ID🇮🇩 | neva.azlan.biz.id:443 | 463.01ms | 0️⃣2️⃣",
-            "type": "vmess",
-            "server": "neva.azlan.biz.id",
-            "server_port": 443,
-            "uuid": "8072298f-cd28-4a61-8e05-5879c84b9100",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": "neva.azlan.biz.id",
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/\/vmess",
-                "headers": {
-                    "Host": "neva.azlan.biz.id"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 63.73ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 39.97ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.24.169.183",
             "server_port": 8080,
@@ -220,7 +172,7 @@
             }
         },
         {
-            "tag": "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 123.07ms | 0️⃣1️⃣",
+            "tag": "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 96.37ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.128.189.240",
             "server_port": 443,
