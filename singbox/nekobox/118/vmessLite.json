@@ -104,25 +104,27 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@oneclickvpnkeys | NL🇳🇱 | 51.158.151.24:20104 | 97.69ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 39.97ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 96.37ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | NL🇳🇱 | 51.158.151.24:20104 | 109.3ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 59.5ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 98.9ms | 0️⃣1️⃣",
+                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 153.2ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@oneclickvpnkeys | NL🇳🇱 | 51.158.151.24:20104 | 97.69ms | 0️⃣1️⃣",
-                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 39.97ms | 0️⃣1️⃣",
-                "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 96.37ms | 0️⃣1️⃣"
+                "@oneclickvpnkeys | NL🇳🇱 | 51.158.151.24:20104 | 109.3ms | 0️⃣1️⃣",
+                "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 59.5ms | 0️⃣1️⃣",
+                "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 98.9ms | 0️⃣1️⃣",
+                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 153.2ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@oneclickvpnkeys | NL🇳🇱 | 51.158.151.24:20104 | 97.69ms | 0️⃣1️⃣",
+            "tag": "@oneclickvpnkeys | NL🇳🇱 | 51.158.151.24:20104 | 109.3ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "51.158.151.24",
             "server_port": 20104,
@@ -148,7 +150,7 @@
             }
         },
         {
-            "tag": "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 39.97ms | 0️⃣1️⃣",
+            "tag": "@customv2ray | RELAY🚩 | nasnet-571299667.rahavard365.co:8080 | 59.5ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "104.24.169.183",
             "server_port": 8080,
@@ -174,7 +176,7 @@
             }
         },
         {
-            "tag": "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 96.37ms | 0️⃣1️⃣",
+            "tag": "@v2Line | FR🇫🇷 | 57.128.189.240:443 | 98.9ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "57.128.189.240",
             "server_port": 443,
@@ -204,6 +206,32 @@
                 "path": "\/\/linkvws",
                 "headers": {
                     "Host": "57.128.189.240"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 153.2ms | 0️⃣2️⃣",
+            "type": "vmess",
+            "server": "185.104.189.38",
+            "server_port": 80,
+            "uuid": "43dcdce1-3cea-4193-bc8d-90b92071d779",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "185.104.189.38"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
