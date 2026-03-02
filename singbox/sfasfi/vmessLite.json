@@ -102,78 +102,21 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@Hope_Net | CA🇨🇦 | ca-v2ray.ipracevpn.com:443 | 48.03ms | 0️⃣1️⃣",
-                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 127.1ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | kampong.org:443 | 172ms | 0️⃣2️⃣"
+                "@v2Line | US🇺🇸 | kampong.org:443 | 126.16ms | 0️⃣1️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | CA🇨🇦 | ca-v2ray.ipracevpn.com:443 | 48.03ms | 0️⃣1️⃣",
-                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 127.1ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | kampong.org:443 | 172ms | 0️⃣2️⃣"
+                "@v2Line | US🇺🇸 | kampong.org:443 | 126.16ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@Hope_Net | CA🇨🇦 | ca-v2ray.ipracevpn.com:443 | 48.03ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "ca-v2ray.ipracevpn.com",
-            "server_port": 443,
-            "uuid": "1b3d460b-91cc-46f9-909d-73823128ee0a",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "tls": {
-                "enabled": true,
-                "server_name": null,
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            }
-        },
-        {
-            "tag": "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 127.1ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "185.104.189.38",
-            "server_port": 80,
-            "uuid": "43dcdce1-3cea-4193-bc8d-90b92071d779",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "185.104.189.38"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2Line | US🇺🇸 | kampong.org:443 | 172ms | 0️⃣2️⃣",
+            "tag": "@v2Line | US🇺🇸 | kampong.org:443 | 126.16ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "15.235.85.156",
             "server_port": 443,
