@@ -102,28 +102,16 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "US🇺🇸",
-                "TR🇹🇷"
+                "TR🇹🇷",
+                "US🇺🇸"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | US🇺🇸 | 77.83.141.171:443 | 1.71ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | kampong.org:443 | 177.64ms | 0️⃣2️⃣",
-                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 126.51ms | 0️⃣1️⃣"
-            ],
-            "url": "https:\/\/www.gstatic.com\/generate_204",
-            "interval": "5m",
-            "tolerance": 50
-        },
-        {
-            "tag": "US🇺🇸",
-            "type": "urltest",
-            "outbounds": [
-                "@Hope_Net | US🇺🇸 | 77.83.141.171:443 | 1.71ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | kampong.org:443 | 177.64ms | 0️⃣2️⃣"
+                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 126.75ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | kampong.org:443 | 177.06ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -133,20 +121,30 @@
             "tag": "TR🇹🇷",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 126.51ms | 0️⃣1️⃣"
+                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 126.75ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | 77.83.141.171:443 | 1.71ms | 0️⃣1️⃣",
+            "tag": "US🇺🇸",
+            "type": "urltest",
+            "outbounds": [
+                "@v2Line | US🇺🇸 | kampong.org:443 | 177.06ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 126.75ms | 0️⃣1️⃣",
             "type": "vmess",
-            "server": "77.83.141.171",
-            "server_port": 443,
-            "uuid": "35379219-6535-4f2e-a4fe-3e44f61e0eee",
+            "server": "185.104.189.38",
+            "server_port": 80,
+            "uuid": "43dcdce1-3cea-4193-bc8d-90b92071d779",
             "security": "auto",
-            "alter_id": 32,
+            "alter_id": 0,
             "global_padding": false,
             "authenticated_length": true,
             "packet_encoding": "",
@@ -155,28 +153,18 @@
                 "protocol": "smux",
                 "max_streams": 32
             },
-            "tls": {
-                "enabled": true,
-                "server_name": null,
-                "insecure": true,
-                "disable_sni": false,
-                "utls": {
-                    "enabled": true,
-                    "fingerprint": "chrome"
-                }
-            },
             "transport": {
                 "type": "ws",
-                "path": "\/\/vc",
+                "path": "\/",
                 "headers": {
-                    "Host": "77.83.141.171"
+                    "Host": "185.104.189.38"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
             }
         },
         {
-            "tag": "@v2Line | US🇺🇸 | kampong.org:443 | 177.64ms | 0️⃣2️⃣",
+            "tag": "@v2Line | US🇺🇸 | kampong.org:443 | 177.06ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "15.235.85.156",
             "server_port": 443,
@@ -206,32 +194,6 @@
                 "path": "\/linkvws",
                 "headers": {
                     "Host": "15.235.85.156"
-                },
-                "max_early_data": 0,
-                "early_data_header_name": "Sec-WebSocket-Protocol"
-            }
-        },
-        {
-            "tag": "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 126.51ms | 0️⃣1️⃣",
-            "type": "vmess",
-            "server": "185.104.189.38",
-            "server_port": 80,
-            "uuid": "43dcdce1-3cea-4193-bc8d-90b92071d779",
-            "security": "auto",
-            "alter_id": 0,
-            "global_padding": false,
-            "authenticated_length": true,
-            "packet_encoding": "",
-            "multiplex": {
-                "enabled": false,
-                "protocol": "smux",
-                "max_streams": 32
-            },
-            "transport": {
-                "type": "ws",
-                "path": "\/",
-                "headers": {
-                    "Host": "185.104.189.38"
                 },
                 "max_early_data": 0,
                 "early_data_header_name": "Sec-WebSocket-Protocol"
