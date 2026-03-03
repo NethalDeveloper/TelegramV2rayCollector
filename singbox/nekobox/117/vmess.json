@@ -99,6 +99,7 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
+                "RELAY🚩",
                 "TR🇹🇷",
                 "US🇺🇸"
             ]
@@ -107,8 +108,19 @@
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 128.19ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | kampong.org:443 | 171.74ms | 0️⃣2️⃣"
+                "@Hope_Net | RELAY🚩 | 77h2quiet-dream-5c34.foratay741.workers.dev:443 | 45.66ms | 0️⃣1️⃣",
+                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 193.83ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | kampong.org:443 | 193.68ms | 0️⃣2️⃣"
+            ],
+            "url": "https:\/\/www.gstatic.com\/generate_204",
+            "interval": "5m",
+            "tolerance": 50
+        },
+        {
+            "tag": "RELAY🚩",
+            "type": "urltest",
+            "outbounds": [
+                "@Hope_Net | RELAY🚩 | 77h2quiet-dream-5c34.foratay741.workers.dev:443 | 45.66ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -118,7 +130,7 @@
             "tag": "TR🇹🇷",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 128.19ms | 0️⃣1️⃣"
+                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 193.83ms | 0️⃣1️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
@@ -128,14 +140,50 @@
             "tag": "US🇺🇸",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | US🇺🇸 | kampong.org:443 | 171.74ms | 0️⃣2️⃣"
+                "@v2Line | US🇺🇸 | kampong.org:443 | 193.68ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 128.19ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | RELAY🚩 | 77h2quiet-dream-5c34.foratay741.workers.dev:443 | 45.66ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "173.245.59.8",
+            "server_port": 443,
+            "uuid": "1052f24e-7b09-45eb-b0c5-d858eb124192",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": "77h2quiet-dream-5c34.foratay741.workers.dev",
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/glweidf.cfd\/linkws",
+                "headers": {
+                    "Host": "173.245.59.8"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 193.83ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "185.104.189.38",
             "server_port": 80,
@@ -161,7 +209,7 @@
             }
         },
         {
-            "tag": "@v2Line | US🇺🇸 | kampong.org:443 | 171.74ms | 0️⃣2️⃣",
+            "tag": "@v2Line | US🇺🇸 | kampong.org:443 | 193.68ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "15.235.85.156",
             "server_port": 443,
