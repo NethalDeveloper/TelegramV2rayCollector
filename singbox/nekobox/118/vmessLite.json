@@ -104,23 +104,25 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@Hope_Net | US🇺🇸 | 77.83.141.171:443 | 8.09ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | kampong.org:443 | 13.82ms | 0️⃣1️⃣"
+                "@Hope_Net | US🇺🇸 | 77.83.141.171:443 | 7.09ms | 0️⃣1️⃣",
+                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 126.05ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | kampong.org:443 | 175.61ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@Hope_Net | US🇺🇸 | 77.83.141.171:443 | 8.09ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | kampong.org:443 | 13.82ms | 0️⃣1️⃣"
+                "@Hope_Net | US🇺🇸 | 77.83.141.171:443 | 7.09ms | 0️⃣1️⃣",
+                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 126.05ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | kampong.org:443 | 175.61ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@Hope_Net | US🇺🇸 | 77.83.141.171:443 | 8.09ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | US🇺🇸 | 77.83.141.171:443 | 7.09ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "77.83.141.171",
             "server_port": 443,
@@ -156,7 +158,33 @@
             }
         },
         {
-            "tag": "@v2Line | US🇺🇸 | kampong.org:443 | 13.82ms | 0️⃣1️⃣",
+            "tag": "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 126.05ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "185.104.189.38",
+            "server_port": 80,
+            "uuid": "43dcdce1-3cea-4193-bc8d-90b92071d779",
+            "security": "auto",
+            "alter_id": 0,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/",
+                "headers": {
+                    "Host": "185.104.189.38"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2Line | US🇺🇸 | kampong.org:443 | 175.61ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "15.235.85.156",
             "server_port": 443,
