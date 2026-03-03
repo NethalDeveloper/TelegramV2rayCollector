@@ -104,23 +104,61 @@
             "type": "selector",
             "outbounds": [
                 "URL-TEST",
-                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 126.75ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | kampong.org:443 | 177.06ms | 0️⃣2️⃣"
+                "@Hope_Net | US🇺🇸 | 77.83.141.171:443 | 5.5ms | 0️⃣1️⃣",
+                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 132.03ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | kampong.org:443 | 130.02ms | 0️⃣2️⃣"
             ]
         },
         {
             "tag": "URL-TEST",
             "type": "urltest",
             "outbounds": [
-                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 126.75ms | 0️⃣1️⃣",
-                "@v2Line | US🇺🇸 | kampong.org:443 | 177.06ms | 0️⃣2️⃣"
+                "@Hope_Net | US🇺🇸 | 77.83.141.171:443 | 5.5ms | 0️⃣1️⃣",
+                "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 132.03ms | 0️⃣1️⃣",
+                "@v2Line | US🇺🇸 | kampong.org:443 | 130.02ms | 0️⃣2️⃣"
             ],
             "url": "https:\/\/www.gstatic.com\/generate_204",
             "interval": "5m",
             "tolerance": 50
         },
         {
-            "tag": "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 126.75ms | 0️⃣1️⃣",
+            "tag": "@Hope_Net | US🇺🇸 | 77.83.141.171:443 | 5.5ms | 0️⃣1️⃣",
+            "type": "vmess",
+            "server": "77.83.141.171",
+            "server_port": 443,
+            "uuid": "35379219-6535-4f2e-a4fe-3e44f61e0eee",
+            "security": "auto",
+            "alter_id": 32,
+            "global_padding": false,
+            "authenticated_length": true,
+            "packet_encoding": "",
+            "multiplex": {
+                "enabled": false,
+                "protocol": "smux",
+                "max_streams": 32
+            },
+            "tls": {
+                "enabled": true,
+                "server_name": null,
+                "insecure": true,
+                "disable_sni": false,
+                "utls": {
+                    "enabled": true,
+                    "fingerprint": "chrome"
+                }
+            },
+            "transport": {
+                "type": "ws",
+                "path": "\/\/vc",
+                "headers": {
+                    "Host": "77.83.141.171"
+                },
+                "max_early_data": 0,
+                "early_data_header_name": "Sec-WebSocket-Protocol"
+            }
+        },
+        {
+            "tag": "@v2Line | TR🇹🇷 | 185.104.189.38:80 | 132.03ms | 0️⃣1️⃣",
             "type": "vmess",
             "server": "185.104.189.38",
             "server_port": 80,
@@ -146,7 +184,7 @@
             }
         },
         {
-            "tag": "@v2Line | US🇺🇸 | kampong.org:443 | 177.06ms | 0️⃣2️⃣",
+            "tag": "@v2Line | US🇺🇸 | kampong.org:443 | 130.02ms | 0️⃣2️⃣",
             "type": "vmess",
             "server": "15.235.85.156",
             "server_port": 443,
